@@ -1,0 +1,1213 @@
+{
+  "id": "_e7ccc12c-2987-48ae-92aa-08112101d9c9",
+  "name": "C.4.0",
+  "target_namespace": "http://www.trisotech.com/definitions/_e7ccc12c-2987-48ae-92aa-08112101d9c9",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "exporter": "BPMN Modeler",
+  "exporter_version": "6.2.0",
+  "signals": [
+    {
+      "id": "_bf41cec3-da5e-4fc7-87f9-7520a720192b",
+      "name": "New employee hired",
+      "structure_ref": null
+    }
+  ],
+  "processes": [
+    {
+      "id": "_42cba3a9-a8ab-40b5-b9a4-2e8f32be364e",
+      "name": "Money Bank - Process",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "lane_sets": [
+        {
+          "id": null,
+          "name": null,
+          "lane": [
+            {
+              "id": "_ff7ff8f6-a4f1-4e93-84e1-01cdb85eb755",
+              "name": "HR Department",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ]
+            },
+            {
+              "id": "_937b5086-463f-4c8c-837d-f5eee5cbc1f4",
+              "name": "Responsible Department",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "user_tasks": [
+        {
+          "id": "_f8973a92-3d84-4672-a1a3-b0df154121e1",
+          "name": "Send \ncandidate Contract",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_aa275782-c989-49ba-bf94-c58916ca7bb5",
+          "name": "Get signature on contract and notify responsible department",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_987b9b74-333a-4043-a72a-daadf667acc7",
+          "name": "Review terms of contract",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_0e71ed63-93f9-44b6-a89d-da9628652926",
+          "name": "Inform employee of company policies",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_eba690b9-34ef-49e4-b265-1411809d9302",
+          "name": "Introduce employee to company Mission, Vision and Values",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_67944b4c-4950-45a2-a131-1c4679c6b433",
+          "name": "Perform training for time reports sick leave and holidays",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_4c95f4a0-f4ec-45ed-9fdb-7b236155d6f5",
+          "name": "Register for medical insurance",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_986cf801-0780-49d3-91cd-2cc6d3c1aac3",
+          "name": "Request preparations for a new employee",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_72da5cee-0456-4c3c-ba8d-6dd085d6f52d",
+          "name": "Introduce new employee to the team",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_e3d3ac43-74a3-48ff-9a02-e64b1358cc34",
+          "name": "Perform training for position",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_351b058e-c37c-4fb7-9d32-24075f53ce02",
+          "name": "Compile welcome package",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_52401cbb-02b8-4eaf-84f1-1edbc0854a4a",
+          "name": "Give employee welcome package",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_a4220c17-364f-4a08-ae9c-757a6468b295",
+          "name": "Candidate accepted offer",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_6d1a9d5a-127d-477a-8dbe-268f125f20d8",
+          "name": null,
+          "source_ref": "_a4220c17-364f-4a08-ae9c-757a6468b295",
+          "target_ref": "_f8973a92-3d84-4672-a1a3-b0df154121e1",
+          "is_immediate": null
+        },
+        {
+          "id": "_4d3df0ce-e5be-443b-a379-8dcd4aae4de9",
+          "name": null,
+          "source_ref": "_f8973a92-3d84-4672-a1a3-b0df154121e1",
+          "target_ref": "_f9e3cd76-809a-48b5-be1c-e84fc4324268",
+          "is_immediate": null
+        },
+        {
+          "id": "_237c8380-5449-446e-a323-aad80181176d",
+          "name": "Yes",
+          "source_ref": "_f9e3cd76-809a-48b5-be1c-e84fc4324268",
+          "target_ref": "_aa275782-c989-49ba-bf94-c58916ca7bb5",
+          "is_immediate": null
+        },
+        {
+          "id": "_7e9d8b8b-faa9-4264-858b-7454702c4ec2",
+          "name": "No",
+          "source_ref": "_f9e3cd76-809a-48b5-be1c-e84fc4324268",
+          "target_ref": "_987b9b74-333a-4043-a72a-daadf667acc7",
+          "is_immediate": null
+        },
+        {
+          "id": "_41254af9-ca6b-49ae-a58e-c48f4c6120d2",
+          "name": null,
+          "source_ref": "_aa275782-c989-49ba-bf94-c58916ca7bb5",
+          "target_ref": "_305ddf53-49a8-4105-ad06-70272a2332aa",
+          "is_immediate": null
+        },
+        {
+          "id": "_d1c906b1-8f68-4485-94ea-00e732fba73e",
+          "name": null,
+          "source_ref": "_305ddf53-49a8-4105-ad06-70272a2332aa",
+          "target_ref": "_0e71ed63-93f9-44b6-a89d-da9628652926",
+          "is_immediate": null
+        },
+        {
+          "id": "_5ae80bdd-cda7-491b-b3f7-bce2c4b35a83",
+          "name": null,
+          "source_ref": "_0e71ed63-93f9-44b6-a89d-da9628652926",
+          "target_ref": "_eba690b9-34ef-49e4-b265-1411809d9302",
+          "is_immediate": null
+        },
+        {
+          "id": "_15f3cde0-eeb5-4ad2-820a-114815aa782d",
+          "name": null,
+          "source_ref": "_eba690b9-34ef-49e4-b265-1411809d9302",
+          "target_ref": "_67944b4c-4950-45a2-a131-1c4679c6b433",
+          "is_immediate": null
+        },
+        {
+          "id": "_2d93c5db-2e41-463b-a1a6-63a05616d912",
+          "name": null,
+          "source_ref": "_67944b4c-4950-45a2-a131-1c4679c6b433",
+          "target_ref": "_4c95f4a0-f4ec-45ed-9fdb-7b236155d6f5",
+          "is_immediate": null
+        },
+        {
+          "id": "_3104b7bb-a417-4557-8c1b-d95b1c7e36a4",
+          "name": null,
+          "source_ref": "_4c95f4a0-f4ec-45ed-9fdb-7b236155d6f5",
+          "target_ref": "_82da02ca-ee9a-4403-9f3b-aad030e089b9",
+          "is_immediate": null
+        },
+        {
+          "id": "_0811a8cc-1fde-4319-a718-7fb3ce64ae0b",
+          "name": null,
+          "source_ref": "_305ddf53-49a8-4105-ad06-70272a2332aa",
+          "target_ref": "_986cf801-0780-49d3-91cd-2cc6d3c1aac3",
+          "is_immediate": null
+        },
+        {
+          "id": "_3bb98d19-0d0b-4f47-a097-30c60183e334",
+          "name": null,
+          "source_ref": "_986cf801-0780-49d3-91cd-2cc6d3c1aac3",
+          "target_ref": "_855451b0-5298-48b2-a81d-84ecbcca0a85",
+          "is_immediate": null
+        },
+        {
+          "id": "_71b2c3f1-0d34-4cfb-956c-cedf83660dfb",
+          "name": null,
+          "source_ref": "_855451b0-5298-48b2-a81d-84ecbcca0a85",
+          "target_ref": "_82da02ca-ee9a-4403-9f3b-aad030e089b9",
+          "is_immediate": null
+        },
+        {
+          "id": "_cad69ba8-8b26-41f9-87a1-372a899dcbf3",
+          "name": null,
+          "source_ref": "_82da02ca-ee9a-4403-9f3b-aad030e089b9",
+          "target_ref": "_72da5cee-0456-4c3c-ba8d-6dd085d6f52d",
+          "is_immediate": null
+        },
+        {
+          "id": "_2ef25e1e-bbdd-4cba-b411-6091ec8669d6",
+          "name": null,
+          "source_ref": "_72da5cee-0456-4c3c-ba8d-6dd085d6f52d",
+          "target_ref": "_e3d3ac43-74a3-48ff-9a02-e64b1358cc34",
+          "is_immediate": null
+        },
+        {
+          "id": "_240df34c-86c2-49fe-b1ec-58ea25d35c1f",
+          "name": null,
+          "source_ref": "_e3d3ac43-74a3-48ff-9a02-e64b1358cc34",
+          "target_ref": "_80f70d22-fb42-403f-8bdb-6805e9467bb7",
+          "is_immediate": null
+        },
+        {
+          "id": "_2be942a3-d921-4ad9-bce7-33e3411d98b4",
+          "name": null,
+          "source_ref": "_80f70d22-fb42-403f-8bdb-6805e9467bb7",
+          "target_ref": "_74e2cc7b-99ca-426b-ad53-ad70a56506aa",
+          "is_immediate": null
+        },
+        {
+          "id": "_4b186d86-fae1-4f55-a3b6-b90fa27affc1",
+          "name": null,
+          "source_ref": "_80f70d22-fb42-403f-8bdb-6805e9467bb7",
+          "target_ref": "_fe77c2f2-278f-4752-9d03-aa0c8a12af1e",
+          "is_immediate": null
+        },
+        {
+          "id": "_c1307108-5b3d-48af-ae53-11b30dd31bed",
+          "name": null,
+          "source_ref": "_80f70d22-fb42-403f-8bdb-6805e9467bb7",
+          "target_ref": "_db9147a9-7fbc-4657-a506-15e777f2cfd9",
+          "is_immediate": null
+        },
+        {
+          "id": "_e82e6ee3-24d6-419a-96c0-a147f1943c23",
+          "name": null,
+          "source_ref": "_fe77c2f2-278f-4752-9d03-aa0c8a12af1e",
+          "target_ref": "_19808f32-dfb5-462d-aaa6-e662f9932dba",
+          "is_immediate": null
+        },
+        {
+          "id": "_16e4630e-39c0-4e94-ab65-a8a622245adf",
+          "name": null,
+          "source_ref": "_74e2cc7b-99ca-426b-ad53-ad70a56506aa",
+          "target_ref": "_19808f32-dfb5-462d-aaa6-e662f9932dba",
+          "is_immediate": null
+        },
+        {
+          "id": "_c8da08ab-0b59-4c21-9386-f857d624c471",
+          "name": null,
+          "source_ref": "_db9147a9-7fbc-4657-a506-15e777f2cfd9",
+          "target_ref": "_19808f32-dfb5-462d-aaa6-e662f9932dba",
+          "is_immediate": null
+        },
+        {
+          "id": "_ece7bc06-ccf7-49f5-b5f1-99e1103cf538",
+          "name": null,
+          "source_ref": "_19808f32-dfb5-462d-aaa6-e662f9932dba",
+          "target_ref": "_351b058e-c37c-4fb7-9d32-24075f53ce02",
+          "is_immediate": null
+        },
+        {
+          "id": "_c8454490-8090-4cf7-a164-d0aded7bc4da",
+          "name": null,
+          "source_ref": "_351b058e-c37c-4fb7-9d32-24075f53ce02",
+          "target_ref": "_52401cbb-02b8-4eaf-84f1-1edbc0854a4a",
+          "is_immediate": null
+        },
+        {
+          "id": "_0fdd6987-6236-4972-a7be-3431ed6654ec",
+          "name": null,
+          "source_ref": "_52401cbb-02b8-4eaf-84f1-1edbc0854a4a",
+          "target_ref": "_36baf139-fb74-43ef-8936-d490238c2825",
+          "is_immediate": null
+        },
+        {
+          "id": "_9ca6c9e6-4aff-4ec8-9fd3-2743c06483c3",
+          "name": null,
+          "source_ref": "_987b9b74-333a-4043-a72a-daadf667acc7",
+          "target_ref": "_f8973a92-3d84-4672-a1a3-b0df154121e1",
+          "is_immediate": null
+        }
+      ],
+      "parallel_gateways": [
+        {
+          "id": "_305ddf53-49a8-4105-ad06-70272a2332aa",
+          "name": "Non-exclusive Gateway",
+          "gateway_direction": "Diverging",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_82da02ca-ee9a-4403-9f3b-aad030e089b9",
+          "name": "Non-exclusive Gateway",
+          "gateway_direction": "Converging",
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_80f70d22-fb42-403f-8bdb-6805e9467bb7",
+          "name": "Non-exclusive Gateway",
+          "gateway_direction": "Diverging",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_19808f32-dfb5-462d-aaa6-e662f9932dba",
+          "name": "Non-exclusive Gateway",
+          "gateway_direction": "Converging",
+          "incoming": [
+            {},
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "intermediate_throw_events": [
+        {
+          "id": "_855451b0-5298-48b2-a81d-84ecbcca0a85",
+          "name": "New employee in department X",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "data_input": [
+            {
+              "id": "_d5083b64-f0cd-479b-a773-b477a20408b5",
+              "name": "Employee Details",
+              "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+              "is_collection": false
+            }
+          ],
+          "data_input_association": [
+            {
+              "id": "_7a5b52f3-ad7e-4c5c-9ac2-432c8318b821"
+            }
+          ],
+          "input_set": {
+            "id": "_e304d0f8-6eaa-4a79-a6ff-b08e993d0d06",
+            "name": null,
+            "data_input_refs": [
+              {}
+            ]
+          },
+          "signal_event_definition": [
+            {
+              "id": "_e027a3d0-02f7-40a6-b84c-3b49282070ba",
+              "signal_ref": "_bf41cec3-da5e-4fc7-87f9-7520a720192b"
+            }
+          ]
+        }
+      ],
+      "intermediate_catch_events": [
+        {
+          "id": "_fe77c2f2-278f-4752-9d03-aa0c8a12af1e",
+          "name": "Input from Payroll ready",
+          "parallel_multiple": false,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "message_event_definition": [
+            {
+              "id": "_9e9bd4fc-0a94-4956-ac98-daf2ddeb001c",
+              "message_ref": null
+            }
+          ]
+        },
+        {
+          "id": "_db9147a9-7fbc-4657-a506-15e777f2cfd9",
+          "name": "Input from Facilities ready",
+          "parallel_multiple": false,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "message_event_definition": [
+            {
+              "id": "_3454f552-d717-4f8c-ae58-971bef888af0",
+              "message_ref": null
+            }
+          ]
+        },
+        {
+          "id": "_74e2cc7b-99ca-426b-ad53-ad70a56506aa",
+          "name": "Input from IT ready",
+          "parallel_multiple": false,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "message_event_definition": [
+            {
+              "id": "_940a88a5-974a-4583-afed-4510a94e5249",
+              "message_ref": null
+            }
+          ]
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "id": "_f9e3cd76-809a-48b5-be1c-e84fc4324268",
+          "name": "Contract terms accepted ?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_36baf139-fb74-43ef-8936-d490238c2825",
+          "name": "End Event",
+          "incoming": [
+            {}
+          ]
+        }
+      ],
+      "data_store_references": [
+        {
+          "id": "_f00a95f6-043e-4ec1-8731-153a707e950c",
+          "name": "Employee Details",
+          "item_subject_ref": null,
+          "data_store_ref": "_d367181e-c25a-407e-a5fb-817a27698a30"
+        }
+      ]
+    },
+    {
+      "id": "_f0035388-f829-470c-b82b-0b15c3da3399",
+      "name": "IT - Process",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "user_tasks": [
+        {
+          "id": "_7e9d2e5a-21f7-493b-9ae4-03245aa33a5c",
+          "name": "Create domain account",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_912f731a-fb6b-499b-a3f4-4c1632d606bd",
+          "name": "Assign required applications and permissions",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_ad173aff-cfe3-4098-8c65-02f783ad9e1f",
+          "name": "Prepare IT part of welcome package",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_e9306b3f-3a77-42e1-b53e-2ed8ee45486d",
+          "name": "New \nemployee\nhired",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ],
+          "data_output": [
+            {}
+          ],
+          "data_output_association": [
+            {}
+          ],
+          "output_set": {},
+          "signal_event_definition": [
+            {}
+          ]
+        }
+      ],
+      "service_tasks": [
+        {
+          "id": "_9db2d136-aa33-4de2-be76-554e7843363d",
+          "name": "Configure workstation",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##WebService",
+          "operation_ref": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_495f04a4-ed17-4e7b-a952-11c06c2230d1",
+          "name": null,
+          "source_ref": "_e9306b3f-3a77-42e1-b53e-2ed8ee45486d",
+          "target_ref": "_7e9d2e5a-21f7-493b-9ae4-03245aa33a5c",
+          "is_immediate": null
+        },
+        {
+          "id": "_0bccc7f6-0f56-49bc-98df-59d70433c043",
+          "name": null,
+          "source_ref": "_7e9d2e5a-21f7-493b-9ae4-03245aa33a5c",
+          "target_ref": "_c29af228-0768-4dfe-945a-17755e173674",
+          "is_immediate": null
+        },
+        {
+          "id": "_dcec1142-90eb-41a8-b809-458b713ab94c",
+          "name": null,
+          "source_ref": "_c29af228-0768-4dfe-945a-17755e173674",
+          "target_ref": "_912f731a-fb6b-499b-a3f4-4c1632d606bd",
+          "is_immediate": null
+        },
+        {
+          "id": "_be72815e-ed18-4d77-9252-1ab0a7438dc9",
+          "name": null,
+          "source_ref": "_912f731a-fb6b-499b-a3f4-4c1632d606bd",
+          "target_ref": "_9db2d136-aa33-4de2-be76-554e7843363d",
+          "is_immediate": null
+        },
+        {
+          "id": "_ba635734-5672-4f1b-b753-3b08c778c64e",
+          "name": null,
+          "source_ref": "_9db2d136-aa33-4de2-be76-554e7843363d",
+          "target_ref": "_ad173aff-cfe3-4098-8c65-02f783ad9e1f",
+          "is_immediate": null
+        },
+        {
+          "id": "_c904a36b-64f6-46e3-8ef1-9f2ecc3faaff",
+          "name": null,
+          "source_ref": "_ad173aff-cfe3-4098-8c65-02f783ad9e1f",
+          "target_ref": "_c82dd8eb-ce54-4aa7-b8c4-b8d3e8fd654e",
+          "is_immediate": null
+        }
+      ],
+      "manual_tasks": [
+        {
+          "id": "_c29af228-0768-4dfe-945a-17755e173674",
+          "name": "Prepare workstation",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_c82dd8eb-ce54-4aa7-b8c4-b8d3e8fd654e",
+          "name": "Workstation and permissions ready",
+          "incoming": [
+            {}
+          ],
+          "message_event_definition": [
+            {
+              "id": "_2f246656-2c54-430d-ad1b-9c50428d1b9d",
+              "message_ref": null
+            }
+          ]
+        }
+      ],
+      "data_store_references": [
+        {
+          "id": "_e355b511-e181-4e7b-a9b1-30cb48dd6cab",
+          "name": "Employee Details",
+          "item_subject_ref": null,
+          "data_store_ref": "_d367181e-c25a-407e-a5fb-817a27698a30"
+        },
+        {
+          "id": "_b60be020-1f04-46c2-b1a9-19bfc66ead82",
+          "name": "User Management",
+          "item_subject_ref": null,
+          "data_store_ref": "_7c793f30-d450-4a8e-becf-f168b14317ea"
+        }
+      ],
+      "text_annotations": [
+        {
+          "id": "_246c3cf7-fb4b-4c05-8ece-55c77fb4dc1e",
+          "text_format": "text/plain",
+          "text": "With PowerShell"
+        }
+      ],
+      "associations": [
+        {
+          "id": "_fa0de585-aa40-40bb-a3a5-965d956e884d",
+          "source_ref": "_9db2d136-aa33-4de2-be76-554e7843363d",
+          "target_ref": "_246c3cf7-fb4b-4c05-8ece-55c77fb4dc1e",
+          "association_direction": "None"
+        }
+      ]
+    },
+    {
+      "id": "_da743a6f-d9e5-4fcf-8a96-d2fd5cfb73d4",
+      "name": "Payroll - Process",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "user_tasks": [
+        {
+          "id": "_ae47ce79-bd91-452b-be68-47a2ea589e75",
+          "name": "Validate provided information",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_9dbd92a5-5c0a-4039-b741-bf4ede54ccf0",
+          "name": "Update payroll system",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_3d4130c6-48c9-47fe-8e95-2eeb56060e2b",
+          "name": "New \nemployee\nhired",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ],
+          "data_output": [
+            {}
+          ],
+          "data_output_association": [
+            {}
+          ],
+          "output_set": {},
+          "signal_event_definition": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_6b24f6f7-bc44-4d73-ab54-1ac8b638423e",
+          "name": null,
+          "source_ref": "_3d4130c6-48c9-47fe-8e95-2eeb56060e2b",
+          "target_ref": "_ae47ce79-bd91-452b-be68-47a2ea589e75",
+          "is_immediate": null
+        },
+        {
+          "id": "_d110be18-ff17-4375-818b-6463eff4e2d6",
+          "name": null,
+          "source_ref": "_ae47ce79-bd91-452b-be68-47a2ea589e75",
+          "target_ref": "_fa14ca2d-ea97-49a2-b75e-72e7d27d6fd1",
+          "is_immediate": null
+        },
+        {
+          "id": "_ca6f904d-e30d-4777-a7dd-661650e1e3a2",
+          "name": "No",
+          "source_ref": "_fa14ca2d-ea97-49a2-b75e-72e7d27d6fd1",
+          "target_ref": "_788443d9-65f0-43a4-96a8-63e8d6f380a7",
+          "is_immediate": null
+        },
+        {
+          "id": "_12e2f256-ec10-4a8d-934c-329143c588d8",
+          "name": "Yes",
+          "source_ref": "_fa14ca2d-ea97-49a2-b75e-72e7d27d6fd1",
+          "target_ref": "_9dbd92a5-5c0a-4039-b741-bf4ede54ccf0",
+          "is_immediate": null
+        },
+        {
+          "id": "_7b347349-7441-4e5c-ab24-2e614051f222",
+          "name": null,
+          "source_ref": "_788443d9-65f0-43a4-96a8-63e8d6f380a7",
+          "target_ref": "_9dbd92a5-5c0a-4039-b741-bf4ede54ccf0",
+          "is_immediate": null
+        },
+        {
+          "id": "_46c8bd85-1b7f-45fb-81c6-23d22300c0cd",
+          "name": null,
+          "source_ref": "_9dbd92a5-5c0a-4039-b741-bf4ede54ccf0",
+          "target_ref": "_efbd0983-76cd-4a4c-acf3-6dde71d7c760",
+          "is_immediate": null
+        }
+      ],
+      "manual_tasks": [
+        {
+          "id": "_788443d9-65f0-43a4-96a8-63e8d6f380a7",
+          "name": "Clarify missing points",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "standard_loop_characteristics": {
+            "id": "_be244352-1e67-4664-9a10-5d088542f02e",
+            "test_before": false,
+            "loop_maximum": null
+          }
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "id": "_fa14ca2d-ea97-49a2-b75e-72e7d27d6fd1",
+          "name": "All necessary data available?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_efbd0983-76cd-4a4c-acf3-6dde71d7c760",
+          "name": "Payroll ready",
+          "incoming": [
+            {}
+          ],
+          "message_event_definition": [
+            {
+              "id": "_0be7d261-5be3-40e4-a6fd-954d9c836607",
+              "message_ref": null
+            }
+          ]
+        }
+      ],
+      "data_store_references": [
+        {
+          "id": "_16498c9e-c33f-4f92-9033-714b89582a7c",
+          "name": "Employee Details",
+          "item_subject_ref": null,
+          "data_store_ref": "_d367181e-c25a-407e-a5fb-817a27698a30"
+        },
+        {
+          "id": "_a9cffac5-6e03-41de-83bf-d34304f28b1a",
+          "name": "Payroll system",
+          "item_subject_ref": null,
+          "data_store_ref": "_2addcc9a-638e-4496-b84f-5b0e28fe6536"
+        }
+      ]
+    },
+    {
+      "id": "_3486bf55-0a7f-4ff1-be15-1555669f58ad",
+      "name": "Facilities - Process",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "user_tasks": [
+        {
+          "id": "_737503c8-10bc-483f-8871-5461d822b469",
+          "name": "Configure access details",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_94a62738-dc7a-49f6-81d8-f5642f7ae850",
+          "name": "New \nemployee \nhired",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ],
+          "data_output": [
+            {}
+          ],
+          "data_output_association": [
+            {}
+          ],
+          "output_set": {},
+          "signal_event_definition": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_ea0e1abf-e9f6-406a-96fb-12fcdf765634",
+          "name": null,
+          "source_ref": "_94a62738-dc7a-49f6-81d8-f5642f7ae850",
+          "target_ref": "_2bf94039-15a1-44bb-9d14-81358777466c",
+          "is_immediate": null
+        },
+        {
+          "id": "_4436759d-6848-4400-93e5-3971c69b2f67",
+          "name": null,
+          "source_ref": "_2bf94039-15a1-44bb-9d14-81358777466c",
+          "target_ref": "_737503c8-10bc-483f-8871-5461d822b469",
+          "is_immediate": null
+        },
+        {
+          "id": "_f405a593-5f87-4f62-862e-bcf9f776bc95",
+          "name": null,
+          "source_ref": "_737503c8-10bc-483f-8871-5461d822b469",
+          "target_ref": "_5ee09fe4-f38f-454d-b6e4-1c3703a6a239",
+          "is_immediate": null
+        }
+      ],
+      "manual_tasks": [
+        {
+          "id": "_2bf94039-15a1-44bb-9d14-81358777466c",
+          "name": "Prepare\naccess \ncard",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_5ee09fe4-f38f-454d-b6e4-1c3703a6a239",
+          "name": "Access \ncard \nready",
+          "incoming": [
+            {}
+          ],
+          "message_event_definition": [
+            {
+              "id": "_a4a343f5-62b7-4939-95c4-93b2520d5fa6",
+              "message_ref": null
+            }
+          ]
+        }
+      ],
+      "data_store_references": [
+        {
+          "id": "_9931ba94-ede8-4f53-8081-878c549ba1c8",
+          "name": "Employee Details",
+          "item_subject_ref": null,
+          "data_store_ref": "_d367181e-c25a-407e-a5fb-817a27698a30"
+        }
+      ]
+    }
+  ],
+  "item_definitions": [
+    {
+      "id": "_triso-default-bpmnItemDefinition-string_id",
+      "structure_ref": "string",
+      "is_collection": false,
+      "item_kind": null
+    }
+  ],
+  "data_stores": [
+    {
+      "id": "_d367181e-c25a-407e-a5fb-817a27698a30",
+      "name": "Employee Details",
+      "capacity": null,
+      "is_unlimited": false,
+      "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "id": "_7c793f30-d450-4a8e-becf-f168b14317ea",
+      "name": "User Management",
+      "capacity": null,
+      "is_unlimited": false,
+      "item_subject_ref": null
+    },
+    {
+      "id": "_2addcc9a-638e-4496-b84f-5b0e28fe6536",
+      "name": "Payroll system",
+      "capacity": null,
+      "is_unlimited": false,
+      "item_subject_ref": null
+    }
+  ],
+  "collaborations": [
+    {
+      "id": "_085241a5-fb5c-44d3-8844-5366f865e353",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "_06745dd2-cbc6-4742-b11c-69281e5dcbdb",
+          "name": "Money Bank",
+          "process_ref": "_42cba3a9-a8ab-40b5-b9a4-2e8f32be364e"
+        }
+      ]
+    },
+    {
+      "id": "_674b5898-d454-4114-a8eb-66c790366e94",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "_b5172765-a1c1-4c6e-8e57-9eabaf8cecdf",
+          "name": "IT",
+          "process_ref": "_f0035388-f829-470c-b82b-0b15c3da3399"
+        }
+      ]
+    },
+    {
+      "id": "_bbdf487b-c3a3-4bfa-8ba3-79be59f08203",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "_1422af8d-518b-49f1-9563-9b6939de2818",
+          "name": "Payroll",
+          "process_ref": "_da743a6f-d9e5-4fcf-8a96-d2fd5cfb73d4"
+        }
+      ]
+    },
+    {
+      "id": "_8d4bb408-4175-4fbb-8131-18c32b7aa022",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "_fab40827-7808-470a-93b6-4a3318bf0c0e",
+          "name": "Facilities",
+          "process_ref": "_3486bf55-0a7f-4ff1-be15-1555669f58ad"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3084 @@
+{
+  "id": "sid-bdb880ac-c464-4e5c-aa56-569d709436e0",
+  "name": "C.1.1",
+  "target_namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "exporter": "Signavio Process Editor, http://www.signavio.com",
+  "exporter_version": "7.0.0",
+  "import_values": [
+    {
+      "namespace": "http://xsdTypes.org/",
+      "location": "xsdTypes.xsd",
+      "import_type": "http://www.w3.org/2001/XMLSchema"
+    }
+  ],
+  "resources": [
+    {
+      "id": "Bpmn_Resource_6vVHsLHzEeS1nbPdxxCzlg",
+      "name": "Team Assistant"
+    },
+    {
+      "id": "Bpmn_Resource_8nPrkLHzEeS1nbPdxxCzlg",
+      "name": "Approver"
+    },
+    {
+      "id": "Bpmn_Resource_-IajYLHzEeS1nbPdxxCzlg",
+      "name": "Accountant"
+    }
+  ],
+  "processes": [
+    {
+      "id": "handle-invoice",
+      "name": "Invoice Handling (OMG BPMN MIWG Demo)",
+      "process_type": "None",
+      "is_closed": true,
+      "is_executable": true,
+      "definitional_collaboration_ref": null,
+      "extension_elements": [
+        {
+          "extensions": [
+            {
+              "w4graph:graphStyle": {
+                "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                "@xmlns:camunda": "http://activiti.org/bpmn",
+                "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                "@xmlns:signavio": "http://www.signavio.com",
+                "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                "@xmlns:xs": "http://xsdTypes.org/",
+                "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                "w4graph:basic": {
+                  "@background": "255,255,255",
+                  "@foreground": "0,0,0",
+                  "@autoResize": "false",
+                  "@borderColor": "100,100,100",
+                  "@collapsed": "false"
+                },
+                "w4graph:root": {
+                  "@gridVisible": "true",
+                  "@snapToGrid": "true",
+                  "@rulerVisible": "true",
+                  "@snapToGuide": "true",
+                  "@rulerUnit": "Pixels",
+                  "Grid": {
+                    "@spacing": "15",
+                    "@color": "230,230,230"
+                  },
+                  "VerticalRuler": null,
+                  "HorizontalRuler": null
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "user_tasks": [
+        {
+          "id": "approveInvoice",
+          "name": "Approve Invoice",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffcc"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptereventtype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "documentationlink",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "test",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptertype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterconfiguration",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterclassname",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "servicereferenz",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "risiko",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "erteiltfreigabe",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "riskandcontrols",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "194,215,235",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ],
+          "potential_owners": [
+            {}
+          ]
+        },
+        {
+          "id": "assignApprover",
+          "name": "Assign\r\nApprover",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffcc"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptereventtype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "documentationlink",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "test",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptertype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterconfiguration",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterclassname",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "servicereferenz",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "risiko",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "erteiltfreigabe",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "riskandcontrols",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "194,215,235",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ],
+          "potential_owners": [
+            {}
+          ]
+        },
+        {
+          "id": "reviewInvoice",
+          "name": "Rechnung kl\u00e4ren",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffcc"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptereventtype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "documentationlink",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "test",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptertype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterconfiguration",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterclassname",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "servicereferenz",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "risiko",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "erteiltfreigabe",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "riskandcontrols",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "194,215,235",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ],
+          "potential_owners": [
+            {}
+          ]
+        },
+        {
+          "id": "prepareBankTransfer",
+          "name": "Prepare\r\nBank\r\nTransfer",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffcc"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptereventtype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "documentationlink",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "test",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptertype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterconfiguration",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterclassname",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "servicereferenz",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "risiko",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "erteiltfreigabe",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "riskandcontrols",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "194,215,235",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "potential_owners": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "StartEvent_1",
+          "name": "Invoice\r\nreceived",
+          "parallel_multiple": false,
+          "is_interrupting": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffff"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "109,183,0",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "service_tasks": [
+        {
+          "id": "archiveInvoice",
+          "name": "Archive\nInvoice",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "operation_ref": null,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "camunda:field": {
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@name": "text0",
+                    "@stringValue": "Hello World"
+                  }
+                },
+                {
+                  "camunda:field": {
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@name": "text1",
+                    "camunda:expression": "${genderBean.getGenderString(gender)}"
+                  }
+                },
+                {
+                  "camunda:field": {
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@name": "text2",
+                    "camunda:expression": "Hello ${gender == 'male' ? 'Mr.' : 'Mrs.'} ${name}"
+                  }
+                },
+                {
+                  "camunda:field": {
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@name": "text3",
+                    "camunda:string": "Hello World"
+                  }
+                },
+                {
+                  "camunda:field": {
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@name": "text4",
+                    "camunda:string": "<p>Hello World</p><br>"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffcc"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptereventtype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "documentationlink",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "test",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptertype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterconfiguration",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterclassname",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "servicereferenz",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "risiko",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "erteiltfreigabe",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "riskandcontrols",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "194,215,235",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "invoiceApproved",
+          "name": "yes",
+          "source_ref": "invoice_approved",
+          "target_ref": "prepareBankTransfer",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "condition_expression": {
+            "id": "sid-0ed8a0cb-f28a-4689-bbd8-77dafd0ccfa0"
+          }
+        },
+        {
+          "id": "invoiceNotApproved",
+          "name": "no",
+          "source_ref": "invoice_approved",
+          "target_ref": "reviewInvoice",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "condition_expression": {
+            "id": "sid-d4f3f0f7-79c3-4b1c-817e-13d9bdd96666"
+          }
+        },
+        {
+          "id": "reviewSuccessful",
+          "name": "yes",
+          "source_ref": "reviewSuccessful_gw",
+          "target_ref": "approveInvoice",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "condition_expression": {
+            "id": "sid-e669aead-8bad-4dbb-b282-e9f811e02f77"
+          }
+        },
+        {
+          "id": "reviewNotSuccessful",
+          "name": "no",
+          "source_ref": "reviewSuccessful_gw",
+          "target_ref": "invoiceNotProcessed",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "condition_expression": {
+            "id": "sid-628a2fdc-7654-4273-930d-8e3127b9e8b2"
+          }
+        },
+        {
+          "id": "sequenceFlow_180",
+          "name": null,
+          "source_ref": "approveInvoice",
+          "target_ref": "invoice_approved",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sequenceFlow_183",
+          "name": null,
+          "source_ref": "reviewInvoice",
+          "target_ref": "reviewSuccessful_gw",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sequenceFlow_178",
+          "name": null,
+          "source_ref": "assignApprover",
+          "target_ref": "approveInvoice",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SequenceFlow_2",
+          "name": null,
+          "source_ref": "prepareBankTransfer",
+          "target_ref": "archiveInvoice",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SequenceFlow_3",
+          "name": null,
+          "source_ref": "archiveInvoice",
+          "target_ref": "invoiceProcessed",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SequenceFlow_1",
+          "name": null,
+          "source_ref": "StartEvent_1",
+          "target_ref": "assignApprover",
+          "is_immediate": true,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "255,255,255",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    },
+                    "w4graph:line": {
+                      "@routerType": "Rectilinear",
+                      "@automaticRoute": "true",
+                      "@closestRoute": "false",
+                      "@avoidObstacleRoute": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "id": "invoice_approved",
+          "name": "Invoice\r\napproved?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffff"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptertype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterconfiguration",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterclassname",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "185,139,0",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "reviewSuccessful_gw",
+          "name": "Review\nsuccessful?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffff"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adaptertype",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterconfiguration",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "adapterclassname",
+                    "@metaValue": ""
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "185,139,0",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "invoiceNotProcessed",
+          "name": "Invoice not\nprocessed",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffff"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "190,0,0",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ]
+        },
+        {
+          "id": "invoiceProcessed",
+          "name": "Invoice\nprocessed",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "bgcolor",
+                    "@metaValue": "#ffffff"
+                  }
+                },
+                {
+                  "signavio:signavioMetaData": {
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@metaKey": "userstory",
+                    "@metaValue": "[]"
+                  }
+                },
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "190,0,0",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ]
+        }
+      ],
+      "data_object_references": [
+        {
+          "id": "Bpmn_DataObjectReference_assignApprover",
+          "name": "approver",
+          "item_subject_ref": null,
+          "data_object_ref": "Bpmn_DataObject_approver",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "153,153,153",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Bpmn_DataObjectReference_YGA4YLH1EeSuDf0W70XLGw",
+          "name": "approved",
+          "item_subject_ref": null,
+          "data_object_ref": "Bpmn_DataObject_WUfQYrH1EeSuDf0W70XLGw",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "153,153,153",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Bpmn_DataObjectReference_cdsDQLH1EeSuDf0W70XLGw",
+          "name": "clarified",
+          "item_subject_ref": null,
+          "data_object_ref": "Bpmn_DataObject_aT_L0rH1EeSuDf0W70XLGw",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "153,153,153",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "Bpmn_DataObject_approver",
+          "name": "approver",
+          "item_subject_ref": "xsdString",
+          "is_collection": false,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "153,153,153",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Bpmn_DataObject_WUfQYrH1EeSuDf0W70XLGw",
+          "name": "approved",
+          "item_subject_ref": "xsdBool",
+          "is_collection": false,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "153,153,153",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Bpmn_DataObject_aT_L0rH1EeSuDf0W70XLGw",
+          "name": "clarified",
+          "item_subject_ref": "xsdString",
+          "is_collection": false,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "w4graph:graphStyle": {
+                    "@xmlns:w4graph": "http://www.w4.eu/spec/BPMN/20110930/GRAPH",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:camunda": "http://activiti.org/bpmn",
+                    "@xmlns:omgdc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:omgdi": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:signavio": "http://www.signavio.com",
+                    "@xmlns:style": "http://www.w4.eu/spec/DataComposer/20120927/Diagram/Style",
+                    "@xmlns:w4": "http://www.w4.eu/spec/BPMN/20110701/MODEL",
+                    "@xmlns:xs": "http://xsdTypes.org/",
+                    "@xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "w4graph:basic": {
+                      "@background": "153,153,153",
+                      "@foreground": "0,0,0",
+                      "@autoResize": "false",
+                      "@borderColor": "100,100,100",
+                      "@collapsed": "false"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "sid-328811a0-7f72-468f-92de-6ab19e353312",
+      "name": "invoice-received-C.1.0",
+      "item_ref": null
+    }
+  ],
+  "item_definitions": [
+    {
+      "id": "xsdString",
+      "structure_ref": "xs:tString",
+      "is_collection": false,
+      "item_kind": "Information"
+    },
+    {
+      "id": "xsdBool",
+      "structure_ref": "xs:tBool",
+      "is_collection": false,
+      "item_kind": "Information"
+    }
+  ],
+  "data_stores": [
+    {
+      "id": "sid-14ef3d18-7218-4f57-98f0-bb595114754b",
+      "name": "Financial Accounting System",
+      "capacity": null,
+      "is_unlimited": false,
+      "item_subject_ref": null
+    }
+  ]
+}

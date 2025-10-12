@@ -1,0 +1,409 @@
+{
+  "id": "_1373649948794",
+  "name": "A.4.0",
+  "target_namespace": "http://www.trisotech.com/definitions/_1373649948794",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "exporter": null,
+  "exporter_version": null,
+  "processes": [
+    {
+      "id": "WFP-6-1",
+      "name": null,
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "tasks": [
+        {
+          "id": "_ab851300-b5de-4ad3-bbec-215553757fc8",
+          "name": "Task 1",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_80d1f02b-f39c-45c2-b731-43df75d81779",
+          "name": "Task 2",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_c03f2b1f-32dc-41ef-b325-c9811a814fbe",
+          "name": "Start Event 1",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+          "name": "",
+          "source_ref": "_c03f2b1f-32dc-41ef-b325-c9811a814fbe",
+          "target_ref": "_ab851300-b5de-4ad3-bbec-215553757fc8",
+          "is_immediate": null
+        },
+        {
+          "id": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+          "name": "",
+          "source_ref": "_80d1f02b-f39c-45c2-b731-43df75d81779",
+          "target_ref": "_6e79c19f-749d-48c4-8271-d9ca028354fa",
+          "is_immediate": null
+        },
+        {
+          "id": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+          "name": "",
+          "source_ref": "_ab851300-b5de-4ad3-bbec-215553757fc8",
+          "target_ref": "_80d1f02b-f39c-45c2-b731-43df75d81779",
+          "is_immediate": null
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_6e79c19f-749d-48c4-8271-d9ca028354fa",
+          "name": "End Event 1",
+          "incoming": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WFP-6-2",
+      "name": null,
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "lane_sets": [
+        {
+          "id": "ls_1373649949139",
+          "name": null,
+          "lane": [
+            {
+              "id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
+              "name": "Lane 1",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {},
+                {},
+                {},
+                {}
+              ]
+            },
+            {
+              "id": "_cc1845d0-ec34-44d3-8ba5-4981040d8dfe",
+              "name": "Lane 2",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "id": "_1c347d0d-750b-4c09-980d-6877caae409b",
+          "name": "Task 5",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
+          "name": "Task 3",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "sub_processes": [
+        {
+          "id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+          "name": "Expanded Sub-Process 1",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "triggered_by_event": false,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "tasks": [
+            {
+              "id": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
+              "name": "Task 4",
+              "is_for_compensation": false,
+              "start_quantity": 1,
+              "completion_quantity": 1,
+              "default": null,
+              "incoming": [
+                {}
+              ],
+              "outgoing": [
+                {}
+              ]
+            }
+          ],
+          "start_events": [
+            {
+              "id": "_1ffaa550-3225-4c6a-a391-3aaf224723af",
+              "name": "Start Event 3",
+              "parallel_multiple": false,
+              "is_interrupting": false,
+              "outgoing": [
+                {}
+              ]
+            }
+          ],
+          "sequence_flows": [
+            {
+              "id": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+              "name": "",
+              "source_ref": "_1ffaa550-3225-4c6a-a391-3aaf224723af",
+              "target_ref": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
+              "is_immediate": null
+            },
+            {
+              "id": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+              "name": "",
+              "source_ref": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
+              "target_ref": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004",
+              "is_immediate": null
+            }
+          ],
+          "end_events": [
+            {
+              "id": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004",
+              "name": "End Event 3",
+              "incoming": [
+                {}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
+          "name": "Expanded Sub-Process 2",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "triggered_by_event": false,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "tasks": [
+            {
+              "id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
+              "name": "Task 6",
+              "is_for_compensation": false,
+              "start_quantity": 1,
+              "completion_quantity": 1,
+              "default": null,
+              "incoming": [
+                {}
+              ],
+              "outgoing": [
+                {}
+              ]
+            }
+          ],
+          "start_events": [
+            {
+              "id": "_47bef337-7915-459d-a9cd-e9c87c98f8fa",
+              "name": "Start Event 4",
+              "parallel_multiple": false,
+              "is_interrupting": false,
+              "outgoing": [
+                {}
+              ]
+            }
+          ],
+          "sequence_flows": [
+            {
+              "id": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+              "name": "",
+              "source_ref": "_47bef337-7915-459d-a9cd-e9c87c98f8fa",
+              "target_ref": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
+              "is_immediate": null
+            },
+            {
+              "id": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+              "name": "",
+              "source_ref": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
+              "target_ref": "_bb8b7952-0991-4b7c-a851-97327832d7b8",
+              "is_immediate": null
+            }
+          ],
+          "end_events": [
+            {
+              "id": "_bb8b7952-0991-4b7c-a851-97327832d7b8",
+              "name": "End Event 4",
+              "incoming": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_65d1bebf-e613-4317-acb2-b12b69fc67ff",
+          "name": "Start Event 2",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+          "name": "",
+          "source_ref": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
+          "target_ref": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+          "is_immediate": null
+        },
+        {
+          "id": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+          "name": "",
+          "source_ref": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+          "target_ref": "_1c347d0d-750b-4c09-980d-6877caae409b",
+          "is_immediate": null
+        },
+        {
+          "id": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+          "name": "",
+          "source_ref": "_1c347d0d-750b-4c09-980d-6877caae409b",
+          "target_ref": "_7c434d45-d319-457b-9fd6-853c218bc3f1",
+          "is_immediate": null
+        },
+        {
+          "id": "_08d345a0-2bc3-4988-bfb2-7c2576839505",
+          "name": "",
+          "source_ref": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
+          "target_ref": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
+          "is_immediate": null
+        },
+        {
+          "id": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+          "name": "",
+          "source_ref": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
+          "target_ref": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
+          "is_immediate": null
+        },
+        {
+          "id": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+          "name": "",
+          "source_ref": "_65d1bebf-e613-4317-acb2-b12b69fc67ff",
+          "target_ref": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
+          "is_immediate": null
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_7c434d45-d319-457b-9fd6-853c218bc3f1",
+          "name": "End Event 2",
+          "incoming": [
+            {}
+          ]
+        },
+        {
+          "id": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
+          "name": "End Event 5",
+          "incoming": [
+            {}
+          ]
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "Message_1373649949207",
+      "name": null,
+      "item_ref": null
+    },
+    {
+      "id": "Message_1373649949208",
+      "name": null,
+      "item_ref": null
+    }
+  ],
+  "collaborations": [
+    {
+      "id": "C1373649949206",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "_046bff4f-cea3-4512-a6b1-30517fb29f2c",
+          "name": "Pool",
+          "process_ref": "WFP-6-1"
+        }
+      ],
+      "message_flows": [
+        {
+          "id": "_b467921a-ef7b-44c5-bf78-fd624c400d17",
+          "name": "Message Flow 1",
+          "source_ref": "_ab851300-b5de-4ad3-bbec-215553757fc8",
+          "target_ref": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
+          "message_ref": "Message_1373649949207"
+        },
+        {
+          "id": "_c311cc87-677e-47a4-bdb1-8744c4ec3147",
+          "name": "Message Flow 2",
+          "source_ref": "_1c347d0d-750b-4c09-980d-6877caae409b",
+          "target_ref": "_80d1f02b-f39c-45c2-b731-43df75d81779",
+          "message_ref": "Message_1373649949208"
+        }
+      ]
+    }
+  ]
+}

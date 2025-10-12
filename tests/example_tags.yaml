@@ -1,0 +1,78 @@
+association:
+  - xml: |
+      <bpmn:association id="123" associationDirection="None" sourceRef="234" targetRef="345" />
+    attributes:
+      association_direction: "None"
+      source_ref: "234"
+      target_ref: "345"
+    name: association with association_direction
+  - xml: |
+      <bpmn:association id="123" sourceRef="234" targetRef="345" />
+    attributes:
+      association_direction: "None"
+      source_ref: "234"
+      target_ref: "345"
+    name: association without association_direction
+
+group:
+  - xml: |
+      <bpmn:group id="Group_1778nvb" categoryValueRef="CategoryValue_16dpya0" />
+    attributes:
+      category_value_ref: "CategoryValue_16dpya0"
+    name: group with category_value_ref
+  - xml: |
+      <bpmn:group id="Group_1778nvb" />
+    attributes:
+      category_value_ref:
+    name: group without category_value_ref
+
+text_annotation:
+  - xml: |
+      <bpmn:textAnnotation id="TextAnnotation_13cwsrc">
+        <bpmn:text>This is a text annotation</bpmn:text>
+      </bpmn:textAnnotation>
+    attributes:
+      text: "This is a text annotation"
+      text_format: "text/plain"
+    name: simple text annotation
+  - xml: |
+      <bpmn:textAnnotation textFormat="text/markdown" id="TextAnnotation_13cwsrc">
+        <bpmn:text>This is a text annotation</bpmn:text>
+      </bpmn:textAnnotation>
+    attributes:
+      text: "This is a text annotation"
+      text_format: "text/markdown"
+    name: text annotation with format
+
+data_association:
+  - xml: |
+      <bpmn:dataInputAssociation id="123">
+        <bpmn:sourceRef>DataObjectReference_1</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    attributes:
+      target_ref: Property_1
+      transformation:
+      assignment: []
+    name: single source ref
+  - xml: |
+      <bpmn:dataOutputAssociation id="123">
+        <bpmn:targetRef>DataObjectReference_2</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    attributes:
+      source_ref: []
+      transformation:
+      target_ref: DataObjectReference_2
+      assignment: []
+    name: target ref only
+  - xml: |
+      <bpmn:dataInputAssociation id="123">
+        <bpmn:transformation>rotate(10)</bpmn:transformation>
+        <bpmn:sourceRef>DataObjectReference_1</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    attributes:
+      transformation: rotate(10)
+      target_ref: Property_1
+      assignment: []
+    name: with transformation

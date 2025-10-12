@@ -1,0 +1,146 @@
+{
+  "id": "_1373649889746",
+  "name": "A.2.0",
+  "target_namespace": "http://www.trisotech.com/definitions/_1373649889746",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "exporter": null,
+  "exporter_version": null,
+  "processes": [
+    {
+      "id": "WFP-6-",
+      "name": null,
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "tasks": [
+        {
+          "id": "_5a972b87-735d-454a-b31c-f52fb3afc5c7",
+          "name": "Task 1",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null
+        },
+        {
+          "id": "_4f7d62d7-f0e6-46bc-be00-69e02da38f65",
+          "name": "Task 2",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null
+        },
+        {
+          "id": "_e6eb725a-34bc-45c7-aed0-9f9596cd7bee",
+          "name": "Task 3",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null
+        },
+        {
+          "id": "_7d399717-1aba-47ac-8d7d-8aaa033255e0",
+          "name": "Task 4",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_6b5db6a9-037a-49ad-9201-09201e2aaa97",
+          "name": "Start Event",
+          "parallel_multiple": false,
+          "is_interrupting": false
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_b50f530c-3450-4e1a-b81f-ea346dc6e1cb",
+          "name": "",
+          "source_ref": "_6b5db6a9-037a-49ad-9201-09201e2aaa97",
+          "target_ref": "_5a972b87-735d-454a-b31c-f52fb3afc5c7",
+          "is_immediate": null
+        },
+        {
+          "id": "_fe74c141-8843-4b00-a704-5e5e13be53b0",
+          "name": "",
+          "source_ref": "_5a972b87-735d-454a-b31c-f52fb3afc5c7",
+          "target_ref": "_35fe57a7-1302-44e2-bf58-032f11af7ecb",
+          "is_immediate": null
+        },
+        {
+          "id": "_f1478fb7-98c4-4c01-8c15-68bd04c91535",
+          "name": "",
+          "source_ref": "_35fe57a7-1302-44e2-bf58-032f11af7ecb",
+          "target_ref": "_4f7d62d7-f0e6-46bc-be00-69e02da38f65",
+          "is_immediate": null
+        },
+        {
+          "id": "_a3d40a56-9b7f-417e-911e-d39e7f18b90c",
+          "name": "",
+          "source_ref": "_4f7d62d7-f0e6-46bc-be00-69e02da38f65",
+          "target_ref": "_258f51eb-b764-4a71-b681-3a01cca14143",
+          "is_immediate": null
+        },
+        {
+          "id": "_e9ebc7c7-995d-46db-86ce-d823bc2b4687",
+          "name": "",
+          "source_ref": "_e6eb725a-34bc-45c7-aed0-9f9596cd7bee",
+          "target_ref": "_33c66216-391c-49c2-aa19-d8f0b7f5f91d",
+          "is_immediate": null
+        },
+        {
+          "id": "_698b593f-18eb-42ea-b8cd-bcd51e1514cc",
+          "name": "",
+          "source_ref": "_7d399717-1aba-47ac-8d7d-8aaa033255e0",
+          "target_ref": "_33c66216-391c-49c2-aa19-d8f0b7f5f91d",
+          "is_immediate": null
+        },
+        {
+          "id": "_d4ce87c6-1373-45d6-a3b4-fbb2a04ee2e5",
+          "name": "",
+          "source_ref": "_33c66216-391c-49c2-aa19-d8f0b7f5f91d",
+          "target_ref": "_258f51eb-b764-4a71-b681-3a01cca14143",
+          "is_immediate": null
+        },
+        {
+          "id": "_a1570a53-28d2-41b1-a3a2-3e50c00d747e",
+          "name": "",
+          "source_ref": "_35fe57a7-1302-44e2-bf58-032f11af7ecb",
+          "target_ref": "_e6eb725a-34bc-45c7-aed0-9f9596cd7bee",
+          "is_immediate": null
+        },
+        {
+          "id": "_20ebb3c1-5178-4c7c-a91d-23e58f2aa73b",
+          "name": "",
+          "source_ref": "_35fe57a7-1302-44e2-bf58-032f11af7ecb",
+          "target_ref": "_7d399717-1aba-47ac-8d7d-8aaa033255e0",
+          "is_immediate": null
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "id": "_35fe57a7-1302-44e2-bf58-032f11af7ecb",
+          "name": "Gateway\n(Split Flow)",
+          "gateway_direction": "Unspecified",
+          "default": null
+        },
+        {
+          "id": "_33c66216-391c-49c2-aa19-d8f0b7f5f91d",
+          "name": "Gateway\n(Merge Flows)",
+          "gateway_direction": "Unspecified",
+          "default": null
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_258f51eb-b764-4a71-b681-3a01cca14143",
+          "name": "End Event"
+        }
+      ]
+    }
+  ]
+}

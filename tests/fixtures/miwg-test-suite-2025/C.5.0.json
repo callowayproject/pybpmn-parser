@@ -1,0 +1,1098 @@
+{
+  "id": "_5f5fbc02-46c1-4615-b2bd-89b2d938ac0b",
+  "name": "C.5.0",
+  "target_namespace": "http://www.trisotech.com/definitions/_5f5fbc02-46c1-4615-b2bd-89b2d938ac0b",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "exporter": "BPMN Modeler",
+  "exporter_version": "6.1.19.201902051502",
+  "processes": [
+    {
+      "id": "_3d1ef204-2d4c-4643-8fc5-c319cc032ec0",
+      "name": "Bank - Process",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "lane_sets": [
+        {
+          "id": null,
+          "name": null,
+          "lane": [
+            {
+              "id": "_2935f981-e194-4a1b-bb22-846ad3c0f72c",
+              "name": "Private Customer Account Manager",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ]
+            },
+            {
+              "id": "_af0d417a-6492-48d6-ace2-f70b807564a8",
+              "name": "Corporate Account Manager",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {},
+                {},
+                {}
+              ]
+            },
+            {
+              "id": "_1c6c313d-4950-47a0-b6bf-c51a4b2ea7ed",
+              "name": "Head of Market Service",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {},
+                {},
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "user_tasks": [
+        {
+          "id": "_945cd271-46b6-4d71-83a1-530e445af820",
+          "name": "Interview customer",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_17db66a1-badd-4942-9ebd-02bc5595cdde",
+          "name": "Prove/Provide identity",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_664f14a9-c1f1-490a-bbec-1f66ba4e7fe4",
+          "name": "Obtain supporting data and documents of the customer",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_d22de266-6170-4783-91f9-40832e4cc58d",
+          "name": "Check customer documents",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_87785f46-7026-4d3c-b2c0-6a9468da67f6",
+          "name": "Copy, sign, and scan documents",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_a73027a7-615e-4a4d-95ee-c4cd78ab30c4",
+          "name": "File documents in customer file",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_9c5d383f-df57-4012-b490-fa36f9f90eed",
+          "name": "Add personal data",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_be6ea91a-4f8e-4240-86e8-f85036aee96f",
+          "name": "Perform risk assessment of the customer",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_f006114d-c7cb-4ce0-9bfe-f0938c36a53e",
+          "name": "Document risk assessment",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_b360104e-8410-4b99-827a-776e2083fb96",
+          "name": "Create customer in the system",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {},
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_2fd5c7d3-797d-45a5-a0d8-dfa60654ba5e",
+          "name": "Complete data and documents",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_09074897-556d-4fd2-afb6-2f6c774e1820",
+          "name": "Perform know your customer (KYC) activities",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_f0422f0d-396b-4ee7-ad83-fdd34a8bab71",
+          "name": "Document the identity of the economic owner",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ]
+        },
+        {
+          "id": "_05a1a66a-9308-41c7-a611-4fc57627a058",
+          "name": "End business relation",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_1fc87527-9cad-4f8e-b9c7-ebe106cbe98d",
+          "name": "Check risk and decide about approval",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "id": "_1da34f39-8338-4ecb-a93f-90349fa10260",
+          "name": "Reject customer request",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_0254d83d-d943-466f-8b62-20e87cdfda4e",
+          "name": "Customer interested in Bank offer",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_bac89998-7084-4b2e-a2ea-dff839336d74",
+          "name": null,
+          "source_ref": "_0254d83d-d943-466f-8b62-20e87cdfda4e",
+          "target_ref": "_945cd271-46b6-4d71-83a1-530e445af820",
+          "is_immediate": null
+        },
+        {
+          "id": "_c132a484-8828-4f03-9a57-8201f4e9e864",
+          "name": null,
+          "source_ref": "_945cd271-46b6-4d71-83a1-530e445af820",
+          "target_ref": "_17db66a1-badd-4942-9ebd-02bc5595cdde",
+          "is_immediate": null
+        },
+        {
+          "id": "_14c352ad-cd81-4a92-89e6-85f6e658e7bb",
+          "name": null,
+          "source_ref": "_17db66a1-badd-4942-9ebd-02bc5595cdde",
+          "target_ref": "_138f9ebc-0211-4051-b7c0-1c55695d5246",
+          "is_immediate": null
+        },
+        {
+          "id": "_fcb09e30-bfe6-46b9-af01-6777c60026f2",
+          "name": "Individual Person",
+          "source_ref": "_138f9ebc-0211-4051-b7c0-1c55695d5246",
+          "target_ref": "_54d66428-417b-447e-89d5-e726c1f12659",
+          "is_immediate": null
+        },
+        {
+          "id": "_8e88b32b-90d5-4ca4-a969-00b667a92d29",
+          "name": null,
+          "source_ref": "_664f14a9-c1f1-490a-bbec-1f66ba4e7fe4",
+          "target_ref": "_d22de266-6170-4783-91f9-40832e4cc58d",
+          "is_immediate": null
+        },
+        {
+          "id": "_c2f47722-9bb7-416c-b6bc-cff4e3a6eb65",
+          "name": null,
+          "source_ref": "_d22de266-6170-4783-91f9-40832e4cc58d",
+          "target_ref": "_a4936291-3787-404c-bec7-8a3f3c5fd6e5",
+          "is_immediate": null
+        },
+        {
+          "id": "_eec53048-291a-4802-8fec-012857f845eb",
+          "name": "Yes",
+          "source_ref": "_a4936291-3787-404c-bec7-8a3f3c5fd6e5",
+          "target_ref": "_29b4f749-037a-4199-b33f-3cd3a3c7805e",
+          "is_immediate": null
+        },
+        {
+          "id": "_65fba7be-af41-4ebe-b4e8-a8f7a830a702",
+          "name": null,
+          "source_ref": "_87785f46-7026-4d3c-b2c0-6a9468da67f6",
+          "target_ref": "_a73027a7-615e-4a4d-95ee-c4cd78ab30c4",
+          "is_immediate": null
+        },
+        {
+          "id": "_0cf86177-f481-4c25-8801-cd18d91ddec6",
+          "name": null,
+          "source_ref": "_a73027a7-615e-4a4d-95ee-c4cd78ab30c4",
+          "target_ref": "_2b156883-2852-4665-aba0-d9bc57c7c225",
+          "is_immediate": null
+        },
+        {
+          "id": "_8bd8a9d5-84da-4e96-b2af-9b8e003ad5a3",
+          "name": null,
+          "source_ref": "_2b156883-2852-4665-aba0-d9bc57c7c225",
+          "target_ref": "_9c5d383f-df57-4012-b490-fa36f9f90eed",
+          "is_immediate": null
+        },
+        {
+          "id": "_c7c63b1c-bdd1-443b-903b-7c31da1e6eb9",
+          "name": null,
+          "source_ref": "_9c5d383f-df57-4012-b490-fa36f9f90eed",
+          "target_ref": "_3355cffe-aab4-4a05-8388-becf8ad599ae",
+          "is_immediate": null
+        },
+        {
+          "id": "_1a933b26-7ac6-47a8-85de-07e658241e1e",
+          "name": null,
+          "source_ref": "_3355cffe-aab4-4a05-8388-becf8ad599ae",
+          "target_ref": "_be6ea91a-4f8e-4240-86e8-f85036aee96f",
+          "is_immediate": null
+        },
+        {
+          "id": "_40c01bbe-095a-4937-a334-95fa5b5225cc",
+          "name": null,
+          "source_ref": "_be6ea91a-4f8e-4240-86e8-f85036aee96f",
+          "target_ref": "_000a0565-911b-4f71-9993-1177021edd97",
+          "is_immediate": null
+        },
+        {
+          "id": "_1887adee-8291-4640-a5fa-3dc5f33d5a34",
+          "name": "No",
+          "source_ref": "_000a0565-911b-4f71-9993-1177021edd97",
+          "target_ref": "_3f3a831c-9b08-4827-92b3-3877a749e3df",
+          "is_immediate": null
+        },
+        {
+          "id": "_f2b37ee6-7727-4106-bdd4-d93c4db15703",
+          "name": null,
+          "source_ref": "_f006114d-c7cb-4ce0-9bfe-f0938c36a53e",
+          "target_ref": "_b9338c62-a257-47dd-8c2e-88b80b73c330",
+          "is_immediate": null
+        },
+        {
+          "id": "_f974945f-f2a6-4547-9d35-0d26049dcd6f",
+          "name": null,
+          "source_ref": "_b9338c62-a257-47dd-8c2e-88b80b73c330",
+          "target_ref": "_b360104e-8410-4b99-827a-776e2083fb96",
+          "is_immediate": null
+        },
+        {
+          "id": "_0b3ae343-49aa-49dc-8b88-fe97b4ada3eb",
+          "name": null,
+          "source_ref": "_b360104e-8410-4b99-827a-776e2083fb96",
+          "target_ref": "_8055ae64-cafd-4fd0-be36-2216e3b02e37",
+          "is_immediate": null
+        },
+        {
+          "id": "_664f3a71-3efa-4c94-8797-815f2e377cf7",
+          "name": "No",
+          "source_ref": "_a4936291-3787-404c-bec7-8a3f3c5fd6e5",
+          "target_ref": "_2fd5c7d3-797d-45a5-a0d8-dfa60654ba5e",
+          "is_immediate": null
+        },
+        {
+          "id": "_52e3c106-b055-40a0-a9f9-db9529adfb38",
+          "name": null,
+          "source_ref": "_2fd5c7d3-797d-45a5-a0d8-dfa60654ba5e",
+          "target_ref": "_29b4f749-037a-4199-b33f-3cd3a3c7805e",
+          "is_immediate": null
+        },
+        {
+          "id": "_f47c4e3f-3339-4c96-b8b0-829022bada78",
+          "name": null,
+          "source_ref": "_2b156883-2852-4665-aba0-d9bc57c7c225",
+          "target_ref": "_09074897-556d-4fd2-afb6-2f6c774e1820",
+          "is_immediate": null
+        },
+        {
+          "id": "_a4eaa7b6-f9ef-458a-ba70-e1fd3ff0595a",
+          "name": null,
+          "source_ref": "_09074897-556d-4fd2-afb6-2f6c774e1820",
+          "target_ref": "_3355cffe-aab4-4a05-8388-becf8ad599ae",
+          "is_immediate": null
+        },
+        {
+          "id": "_6912e5ed-5cae-4798-b6e6-8d367ddb3f60",
+          "name": "Legal Entity",
+          "source_ref": "_138f9ebc-0211-4051-b7c0-1c55695d5246",
+          "target_ref": "_f0422f0d-396b-4ee7-ad83-fdd34a8bab71",
+          "is_immediate": null
+        },
+        {
+          "id": "_a8da83e1-4e09-4a7b-a09f-1f869b372176",
+          "name": null,
+          "source_ref": "_f0422f0d-396b-4ee7-ad83-fdd34a8bab71",
+          "target_ref": "_a393c065-4412-4b16-b04f-52d07e76b518",
+          "is_immediate": null
+        },
+        {
+          "id": "_afc35597-a482-432a-8ace-17adaf609572",
+          "name": "Yes",
+          "source_ref": "_a393c065-4412-4b16-b04f-52d07e76b518",
+          "target_ref": "_54d66428-417b-447e-89d5-e726c1f12659",
+          "is_immediate": null
+        },
+        {
+          "id": "_470d1a12-e1fa-4471-b753-cfd7dbe20d80",
+          "name": "No",
+          "source_ref": "_a393c065-4412-4b16-b04f-52d07e76b518",
+          "target_ref": "_05a1a66a-9308-41c7-a611-4fc57627a058",
+          "is_immediate": null
+        },
+        {
+          "id": "_461976fc-e457-4a39-baf3-785885c58896",
+          "name": null,
+          "source_ref": "_05a1a66a-9308-41c7-a611-4fc57627a058",
+          "target_ref": "_acfa265a-a449-4e30-baa0-1ba47dbea418",
+          "is_immediate": null
+        },
+        {
+          "id": "_e88d64c7-3aaf-4a5f-9787-4e5ba696312b",
+          "name": "Yes",
+          "source_ref": "_000a0565-911b-4f71-9993-1177021edd97",
+          "target_ref": "_1fc87527-9cad-4f8e-b9c7-ebe106cbe98d",
+          "is_immediate": null
+        },
+        {
+          "id": "_c3e90e5c-e5cf-4cfb-b15d-bdedcf0719ca",
+          "name": null,
+          "source_ref": "_1fc87527-9cad-4f8e-b9c7-ebe106cbe98d",
+          "target_ref": "_5f56934b-8a7e-4c35-b9f7-bf2605711bfd",
+          "is_immediate": null
+        },
+        {
+          "id": "_8a77d7f6-320a-47ff-a155-57ee200df478",
+          "name": "Yes",
+          "source_ref": "_5f56934b-8a7e-4c35-b9f7-bf2605711bfd",
+          "target_ref": "_3f3a831c-9b08-4827-92b3-3877a749e3df",
+          "is_immediate": null
+        },
+        {
+          "id": "_ae94e0c1-aa12-433f-bd44-a4d8a70a089e",
+          "name": "No",
+          "source_ref": "_5f56934b-8a7e-4c35-b9f7-bf2605711bfd",
+          "target_ref": "_1da34f39-8338-4ecb-a93f-90349fa10260",
+          "is_immediate": null
+        },
+        {
+          "id": "_f7820843-8922-430e-ab4a-974a1e35d89b",
+          "name": null,
+          "source_ref": "_1da34f39-8338-4ecb-a93f-90349fa10260",
+          "target_ref": "_1cf552d4-5152-4595-9218-84f31533bc70",
+          "is_immediate": null
+        },
+        {
+          "id": "_b6414e79-5e61-4a8e-a584-65201c4ea9a9",
+          "name": null,
+          "source_ref": "_54d66428-417b-447e-89d5-e726c1f12659",
+          "target_ref": "_664f14a9-c1f1-490a-bbec-1f66ba4e7fe4",
+          "is_immediate": null
+        },
+        {
+          "id": "_60066421-3da9-4318-8df2-d8b16b3011bb",
+          "name": null,
+          "source_ref": "_29b4f749-037a-4199-b33f-3cd3a3c7805e",
+          "target_ref": "_87785f46-7026-4d3c-b2c0-6a9468da67f6",
+          "is_immediate": null
+        },
+        {
+          "id": "_7ab3e406-ce00-40e0-88f7-c64bcb0b864f",
+          "name": null,
+          "source_ref": "_3f3a831c-9b08-4827-92b3-3877a749e3df",
+          "target_ref": "_f006114d-c7cb-4ce0-9bfe-f0938c36a53e",
+          "is_immediate": null
+        }
+      ],
+      "parallel_gateways": [
+        {
+          "id": "_2b156883-2852-4665-aba0-d9bc57c7c225",
+          "name": null,
+          "gateway_direction": "Diverging",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_3355cffe-aab4-4a05-8388-becf8ad599ae",
+          "name": null,
+          "gateway_direction": "Converging",
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "id": "_138f9ebc-0211-4051-b7c0-1c55695d5246",
+          "name": "Legal entity or individual?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_a4936291-3787-404c-bec7-8a3f3c5fd6e5",
+          "name": "Data complete?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_000a0565-911b-4f71-9993-1177021edd97",
+          "name": "Subject to approval?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_54d66428-417b-447e-89d5-e726c1f12659",
+          "name": null,
+          "gateway_direction": "Converging",
+          "default": null,
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_29b4f749-037a-4199-b33f-3cd3a3c7805e",
+          "name": null,
+          "gateway_direction": "Converging",
+          "default": null,
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_3f3a831c-9b08-4827-92b3-3877a749e3df",
+          "name": null,
+          "gateway_direction": "Converging",
+          "default": null,
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_a393c065-4412-4b16-b04f-52d07e76b518",
+          "name": "Identity of the economic owner certifiable?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_5f56934b-8a7e-4c35-b9f7-bf2605711bfd",
+          "name": "Approval?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_8055ae64-cafd-4fd0-be36-2216e3b02e37",
+          "name": "Identity determined and new customer created",
+          "incoming": [
+            {}
+          ],
+          "signal_event_definition": [
+            {
+              "id": "_8c6f817f-0d1e-464a-96bc-e32dbfa8110d",
+              "signal_ref": null
+            }
+          ]
+        },
+        {
+          "id": "_acfa265a-a449-4e30-baa0-1ba47dbea418",
+          "name": "Business relation ended",
+          "incoming": [
+            {}
+          ]
+        },
+        {
+          "id": "_1cf552d4-5152-4595-9218-84f31533bc70",
+          "name": "No business relation created",
+          "incoming": [
+            {}
+          ],
+          "signal_event_definition": [
+            {
+              "id": "_8374dba6-01d8-45b8-9703-103b2fdc79a7",
+              "signal_ref": null
+            }
+          ]
+        }
+      ],
+      "data_store_references": [
+        {
+          "id": "_ffd44905-4f54-4fe0-a156-0312c2a7a3cc",
+          "name": "Bank System",
+          "item_subject_ref": null,
+          "data_store_ref": "_776bd6ca-5f18-432f-a748-f1930bfdf16e"
+        },
+        {
+          "id": "_66f4a1ff-fd8a-4002-ade7-7a4d1b1d529c",
+          "name": "Customer Data (temporary storage)",
+          "item_subject_ref": null,
+          "data_store_ref": "_46aee7ee-fab2-4735-80cc-fa78092ef92e"
+        },
+        {
+          "id": "_c5285566-0657-47c5-a7ad-d09e144377f3",
+          "name": "Customer Data (temporary storage)",
+          "item_subject_ref": null,
+          "data_store_ref": "_46aee7ee-fab2-4735-80cc-fa78092ef92e"
+        }
+      ],
+      "data_object_references": [
+        {
+          "id": "_dca1cc5b-74a4-453f-8ad2-61609dde35ff",
+          "name": "ID document [for analysis]",
+          "item_subject_ref": null,
+          "data_object_ref": "_0fa2af52-a3d6-4be6-9ecc-9fad8ca4d448",
+          "data_state": {
+            "id": null,
+            "name": "for analysis"
+          }
+        },
+        {
+          "id": "_e0b6d1fe-4ddf-4e22-b84c-6d676afb389a",
+          "name": "ID document [analysed]",
+          "item_subject_ref": null,
+          "data_object_ref": "_0fa2af52-a3d6-4be6-9ecc-9fad8ca4d448",
+          "data_state": {
+            "id": null,
+            "name": "analysed"
+          }
+        },
+        {
+          "id": "_4f982ccc-c9e4-43b1-832e-b82992d4d400",
+          "name": "ID document [scanned]",
+          "item_subject_ref": null,
+          "data_object_ref": "_0fa2af52-a3d6-4be6-9ecc-9fad8ca4d448",
+          "data_state": {
+            "id": null,
+            "name": "scanned"
+          }
+        },
+        {
+          "id": "_be9fc840-d916-4495-9061-989af6035030",
+          "name": "Customer data [for KYC analysis]",
+          "item_subject_ref": null,
+          "data_object_ref": "_79993b0e-60c2-487b-a12e-0cbecc2ef5c1",
+          "data_state": {
+            "id": null,
+            "name": "for KYC analysis"
+          }
+        },
+        {
+          "id": "_4257e72e-9c36-4832-8134-b68b8919de7e",
+          "name": "Customer data [for risk assessment]",
+          "item_subject_ref": null,
+          "data_object_ref": "_79993b0e-60c2-487b-a12e-0cbecc2ef5c1",
+          "data_state": {
+            "id": null,
+            "name": "for risk assessment"
+          }
+        },
+        {
+          "id": "_dd653cc9-c874-4cfe-ba6c-146726809ea5",
+          "name": "Customer data [with connected clients analysis]",
+          "item_subject_ref": null,
+          "data_object_ref": "_79993b0e-60c2-487b-a12e-0cbecc2ef5c1",
+          "data_state": {
+            "id": null,
+            "name": "with connected clients analysis"
+          }
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "_0fa2af52-a3d6-4be6-9ecc-9fad8ca4d448",
+          "name": "ID document",
+          "item_subject_ref": null,
+          "is_collection": false
+        },
+        {
+          "id": "_79993b0e-60c2-487b-a12e-0cbecc2ef5c1",
+          "name": "Customer data",
+          "item_subject_ref": null,
+          "is_collection": false
+        }
+      ],
+      "call_activities": [
+        {
+          "id": "_b9338c62-a257-47dd-8c2e-88b80b73c330",
+          "name": "Check for connected clients",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "called_element": "_774bc005-0917-43d5-ab70-0f9fe123fbd1",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_774bc005-0917-43d5-ab70-0f9fe123fbd1",
+      "name": "Check for connected clients",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "user_tasks": [
+        {
+          "id": "_8b104885-149e-4af6-a459-d924dacd81b3",
+          "name": "Check if group of connected clients exists",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "_7507ae41-a1fa-405c-b4ea-85ed920eace5",
+          "name": "Document group of connected clients according to Capital Requirements Regulation (CRR)",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_d8214574-bb4c-42ff-aabb-398eb95b2f2a",
+          "name": "Check for connected clients",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_6c121fa1-4bab-4e82-98a6-672c6a6bb6f3",
+          "name": null,
+          "source_ref": "_d8214574-bb4c-42ff-aabb-398eb95b2f2a",
+          "target_ref": "_8b104885-149e-4af6-a459-d924dacd81b3",
+          "is_immediate": null
+        },
+        {
+          "id": "_4e00ba20-d2c5-47d6-b53f-b50d802855fd",
+          "name": null,
+          "source_ref": "_8b104885-149e-4af6-a459-d924dacd81b3",
+          "target_ref": "_080399c9-3c91-44c6-b510-80367e23a5af",
+          "is_immediate": null
+        },
+        {
+          "id": "_e25b9c2d-690e-470b-8993-112002994fc2",
+          "name": "Yes",
+          "source_ref": "_080399c9-3c91-44c6-b510-80367e23a5af",
+          "target_ref": "_7507ae41-a1fa-405c-b4ea-85ed920eace5",
+          "is_immediate": null
+        },
+        {
+          "id": "_20c68a0e-6aba-445b-94a3-6bb588dfa2d8",
+          "name": null,
+          "source_ref": "_7507ae41-a1fa-405c-b4ea-85ed920eace5",
+          "target_ref": "_956bb101-c9f7-467d-b3e2-198fa1d3e12b",
+          "is_immediate": null
+        },
+        {
+          "id": "_90d759bb-90dc-48b7-8c06-ddf8664c36ff",
+          "name": null,
+          "source_ref": "_956bb101-c9f7-467d-b3e2-198fa1d3e12b",
+          "target_ref": "_f7ce4bda-22c2-4ef9-aad9-5203dff18538",
+          "is_immediate": null
+        },
+        {
+          "id": "_c329c58d-4a71-471f-acb9-b7f7113d8547",
+          "name": "No",
+          "source_ref": "_080399c9-3c91-44c6-b510-80367e23a5af",
+          "target_ref": "_956bb101-c9f7-467d-b3e2-198fa1d3e12b",
+          "is_immediate": null
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "id": "_080399c9-3c91-44c6-b510-80367e23a5af",
+          "name": "Group of connected Clients existing?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_956bb101-c9f7-467d-b3e2-198fa1d3e12b",
+          "name": null,
+          "gateway_direction": "Converging",
+          "default": null,
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_f7ce4bda-22c2-4ef9-aad9-5203dff18538",
+          "name": null,
+          "incoming": [
+            {}
+          ]
+        }
+      ]
+    }
+  ],
+  "data_stores": [
+    {
+      "id": "_776bd6ca-5f18-432f-a748-f1930bfdf16e",
+      "name": "Bank System",
+      "capacity": null,
+      "is_unlimited": false,
+      "item_subject_ref": null
+    },
+    {
+      "id": "_46aee7ee-fab2-4735-80cc-fa78092ef92e",
+      "name": "Customer Data (temporary storage)",
+      "capacity": null,
+      "is_unlimited": false,
+      "item_subject_ref": null
+    }
+  ],
+  "collaborations": [
+    {
+      "id": "_906eeac9-47e3-41c3-a8db-b8abb8fd95e6",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "_f200a9f1-5554-4868-b895-707186915d62",
+          "name": "Bank",
+          "process_ref": "_3d1ef204-2d4c-4643-8fc5-c319cc032ec0"
+        }
+      ]
+    }
+  ]
+}

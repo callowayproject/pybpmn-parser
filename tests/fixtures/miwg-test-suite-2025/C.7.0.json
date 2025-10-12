@@ -1,0 +1,631 @@
+{
+  "id": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+  "name": "Advertise a job vacancy",
+  "target_namespace": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+  "expression_language": "http://www.omg.org/spec/DMN/20180521/FEEL/",
+  "type_language": "http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType",
+  "exporter": "Workflow Modeler",
+  "exporter_version": "6.12.3",
+  "resources": [
+    {
+      "id": "_b5b6808a-be81-426c-98ae-f33f44a2f871",
+      "name": "Hiring manager"
+    },
+    {
+      "id": "_dc7df8e9-cc60-4953-9ae5-a9ea25fd9c5b",
+      "name": "Recruiter"
+    }
+  ],
+  "processes": [
+    {
+      "id": "_4a690dd7-809a-4fa9-ad63-515ac6685375",
+      "name": "EU Bank - Process",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": false,
+      "definitional_collaboration_ref": null,
+      "io_specification": {},
+      "lane_sets": [
+        {
+          "id": null,
+          "name": null,
+          "lane": [
+            {
+              "id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
+              "name": "Hiring manager",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {},
+                {},
+                {}
+              ]
+            },
+            {
+              "id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+              "name": "Recruitment",
+              "partition_element_ref": null,
+              "flow_node_refs": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "user_tasks": [
+        {
+          "id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+          "name": "Write \ndescription",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "documentation": [
+            {}
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ],
+          "performers": [
+            {}
+          ]
+        },
+        {
+          "id": "_15b00027-5049-4081-8952-fd398e8b722a",
+          "name": "Approve advertisement",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "documentation": [
+            {}
+          ],
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "triso:graphRelations": {
+                    "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
+                    "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
+                    "@xmlns:html": "http://www.w3.org/1999/xhtml",
+                    "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
+                    "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
+                    "@xmlns:rss": "http://purl.org/rss/2.0/",
+                    "@xmlns:trisofeed": "http://trisotech.com/feed",
+                    "@xmlns:drools": "http://www.jboss.org/drools",
+                    "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+                    "triso:systemRef": {
+                      "@predicate": "where",
+                      "@id": "_b90e53a0-9483-4733-a1cf-27316061fec3",
+                      "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ],
+          "performers": [
+            {}
+          ]
+        },
+        {
+          "id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+          "name": "Complete advertisement",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "documentation": [
+            {}
+          ],
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "triso:graphRelations": {
+                    "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
+                    "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
+                    "@xmlns:html": "http://www.w3.org/1999/xhtml",
+                    "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
+                    "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
+                    "@xmlns:rss": "http://purl.org/rss/2.0/",
+                    "@xmlns:trisofeed": "http://trisotech.com/feed",
+                    "@xmlns:drools": "http://www.jboss.org/drools",
+                    "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+                    "triso:systemRef": {
+                      "@predicate": "where",
+                      "@id": "_2c8622ca-70fe-4f57-8bcd-5cbd8b1390b7",
+                      "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "data_output_associations": [
+            {}
+          ],
+          "performers": [
+            {}
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+          "name": "Job \nvacancy",
+          "parallel_multiple": false,
+          "is_interrupting": false,
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "service_tasks": [
+        {
+          "id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+          "name": "Publish on \nhomepage",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##WebService",
+          "operation_ref": null,
+          "documentation": [
+            {}
+          ],
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "triso:graphRelations": {
+                    "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
+                    "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
+                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                    "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
+                    "@xmlns:html": "http://www.w3.org/1999/xhtml",
+                    "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
+                    "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
+                    "@xmlns:rss": "http://purl.org/rss/2.0/",
+                    "@xmlns:trisofeed": "http://trisotech.com/feed",
+                    "@xmlns:drools": "http://www.jboss.org/drools",
+                    "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+                    "triso:systemRef": {
+                      "@predicate": "where",
+                      "@id": "_4ee60d07-6419-4107-9da1-5551f25f2d96",
+                      "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "performers": [
+            {}
+          ]
+        },
+        {
+          "id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+          "name": "Publish on \nother platforms",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##WebService",
+          "operation_ref": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_input_associations": [
+            {}
+          ],
+          "multi_instance_loop_characteristics": {}
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+          "name": null,
+          "source_ref": "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+          "target_ref": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+          "is_immediate": null
+        },
+        {
+          "id": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+          "name": null,
+          "source_ref": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+          "target_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+          "is_immediate": null
+        },
+        {
+          "id": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+          "name": null,
+          "source_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+          "target_ref": "_15b00027-5049-4081-8952-fd398e8b722a",
+          "is_immediate": null
+        },
+        {
+          "id": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+          "name": null,
+          "source_ref": "_15b00027-5049-4081-8952-fd398e8b722a",
+          "target_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+          "is_immediate": null
+        },
+        {
+          "id": "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+          "name": "No",
+          "source_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+          "target_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+          "is_immediate": null
+        },
+        {
+          "id": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+          "name": "Yes",
+          "source_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+          "target_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+          "is_immediate": null
+        },
+        {
+          "id": "_f476667f-44f5-4fec-9414-bf70d987853f",
+          "name": null,
+          "source_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+          "target_ref": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+          "is_immediate": null
+        },
+        {
+          "id": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+          "name": null,
+          "source_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+          "target_ref": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+          "is_immediate": null
+        },
+        {
+          "id": "_720cb9a3-20df-4da1-a923-5336b269c104",
+          "name": null,
+          "source_ref": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+          "target_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+          "is_immediate": null
+        },
+        {
+          "id": "_64ac4473-a38f-4043-973a-69c497adc88a",
+          "name": null,
+          "source_ref": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+          "target_ref": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+          "is_immediate": null
+        },
+        {
+          "id": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+          "name": null,
+          "source_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+          "target_ref": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+          "is_immediate": null
+        },
+        {
+          "id": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+          "name": null,
+          "source_ref": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+          "target_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+          "is_immediate": null
+        }
+      ],
+      "parallel_gateways": [
+        {
+          "id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+          "name": null,
+          "gateway_direction": "Diverging",
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+          "name": null,
+          "gateway_direction": "Converging",
+          "incoming": [
+            {},
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+          "name": "Advertisement approved?",
+          "gateway_direction": "Diverging",
+          "default": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+          "name": "Vacancy \nadvertised",
+          "incoming": [
+            {}
+          ]
+        }
+      ],
+      "data_object_references": [
+        {
+          "id": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+          "name": "Description",
+          "item_subject_ref": null,
+          "data_object_ref": "_8f2796af-2fbe-4f72-80c1-96933c38990f"
+        },
+        {
+          "id": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+          "name": "Advertisement",
+          "item_subject_ref": null,
+          "data_object_ref": "_f60fe1d9-58bd-462c-9d62-153e530dc79d"
+        },
+        {
+          "id": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+          "name": "Selected\n platforms",
+          "item_subject_ref": null,
+          "data_object_ref": "_ef29e636-bdfe-4eb0-9633-7d0195a8ae3a"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "_ef29e636-bdfe-4eb0-9633-7d0195a8ae3a",
+          "name": "Selected\n platforms",
+          "item_subject_ref": "_bd0e1992-4669-4a5b-98ea-641930d87150",
+          "is_collection": true
+        },
+        {
+          "id": "_8f2796af-2fbe-4f72-80c1-96933c38990f",
+          "name": "Description",
+          "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+          "is_collection": false
+        },
+        {
+          "id": "_f60fe1d9-58bd-462c-9d62-153e530dc79d",
+          "name": "Advertisement",
+          "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+          "is_collection": false
+        }
+      ],
+      "business_rule_tasks": [
+        {
+          "id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+          "name": "Select \nother platforms",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "documentation": [
+            {}
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ],
+          "io_specification": {},
+          "data_output_associations": [
+            {}
+          ],
+          "performers": [
+            {}
+          ]
+        }
+      ]
+    }
+  ],
+  "item_definitions": [
+    {
+      "id": "_triso-default-bpmnItemDefinition-string_id",
+      "structure_ref": "feel:string",
+      "is_collection": false,
+      "item_kind": null
+    },
+    {
+      "id": "_bd0e1992-4669-4a5b-98ea-641930d87150",
+      "structure_ref": "collectionOfString",
+      "is_collection": false,
+      "item_kind": null
+    }
+  ],
+  "collaborations": [
+    {
+      "id": "_0322c8c5-b921-44cc-9bf7-261dcb16f257",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "_d3aa8a96-e9df-4336-9b0d-01b17e6587ad",
+          "name": "EU Bank",
+          "process_ref": "_4a690dd7-809a-4fa9-ad63-515ac6685375"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": null,
+      "type_value": "trisoExtension",
+      "direction": null,
+      "extension_elements": [
+        {
+          "extensions": [
+            {
+              "triso:ProjectCharter": {
+                "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
+                "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
+                "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
+                "@xmlns:html": "http://www.w3.org/1999/xhtml",
+                "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
+                "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
+                "@xmlns:rss": "http://purl.org/rss/2.0/",
+                "@xmlns:trisofeed": "http://trisotech.com/feed",
+                "@xmlns:drools": "http://www.jboss.org/drools",
+                "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+                "triso:projectDescription": "<p>In this process, all activities are described how to advertise a job vacancy.</p>",
+                "triso:projectScope": "<p>Aim: Advertisement of a job vacancy conformable to law and company guidelines.<br />Trigger: Personnel requirements for filling job vacancies.<br />Result:The advertisement for the job vacancy has been reviewed and published according to the guidelines</p>",
+                "triso:projectGoals": null,
+                "triso:projectChallenges": null,
+                "triso:projectStakeholders": {
+                  "triso:responsible": null,
+                  "triso:accountable": null,
+                  "triso:consulted": null,
+                  "triso:informed": null
+                }
+              }
+            },
+            {
+              "triso:graphObjects": {
+                "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
+                "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
+                "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
+                "@xmlns:html": "http://www.w3.org/1999/xhtml",
+                "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
+                "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
+                "@xmlns:rss": "http://purl.org/rss/2.0/",
+                "@xmlns:trisofeed": "http://trisotech.com/feed",
+                "@xmlns:drools": "http://www.jboss.org/drools",
+                "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+                "triso:system": {
+                  "@name": "Online Recruiting System",
+                  "@id": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb"
+                }
+              }
+            },
+            {
+              "triso:itemDefinitions": {
+                "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
+                "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
+                "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
+                "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
+                "@xmlns:html": "http://www.w3.org/1999/xhtml",
+                "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
+                "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
+                "@xmlns:rss": "http://purl.org/rss/2.0/",
+                "@xmlns:trisofeed": "http://trisotech.com/feed",
+                "@xmlns:drools": "http://www.jboss.org/drools",
+                "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+                "triso:itemDefinition": {
+                  "@name": "collectionOfString",
+                  "@isCollection": "true",
+                  "triso:typeRef": "string"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "source": [
+        {}
+      ],
+      "target": [
+        {}
+      ]
+    }
+  ]
+}

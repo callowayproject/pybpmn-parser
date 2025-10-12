@@ -1,0 +1,274 @@
+{
+  "id": "Definitions_1",
+  "name": null,
+  "target_namespace": "http://bpmn.io/schema/bpmn/Definitions_1",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "exporter": "Camunda Web Modeler",
+  "exporter_version": "3cd8340",
+  "processes": [
+    {
+      "id": "requestDocument_en",
+      "name": "Document Request",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": true,
+      "definitional_collaboration_ref": null,
+      "user_tasks": [
+        {
+          "id": "UserTask_CallCustomer",
+          "name": "Call customer",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified"
+        }
+      ],
+      "start_events": [
+        {
+          "id": "StartEvent_DocumentRequested",
+          "name": "Document requested",
+          "parallel_multiple": false,
+          "is_interrupting": false
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "SequenceFlow_6",
+          "name": "",
+          "source_ref": "ReceiveTask_WaitForDocument",
+          "target_ref": "EndEvent_GotDocument",
+          "is_immediate": null
+        },
+        {
+          "id": "SequenceFlow_0i97ejj",
+          "name": null,
+          "source_ref": "BoundaryEvent_2",
+          "target_ref": "UserTask_CallCustomer",
+          "is_immediate": null
+        },
+        {
+          "id": "SequenceFlow_1bqpxlf",
+          "name": null,
+          "source_ref": "BoundaryEvent_1",
+          "target_ref": "SendTask_SendReminderEmail",
+          "is_immediate": null
+        },
+        {
+          "id": "SequenceFlow_2",
+          "name": "",
+          "source_ref": "SendTask_SendReminderEmail",
+          "target_ref": "EndEvent_ReminderSent",
+          "is_immediate": null
+        },
+        {
+          "id": "SequenceFlow_3",
+          "name": "",
+          "source_ref": "UserTask_CallCustomer",
+          "target_ref": "EndEvent_TalkedToCustomer",
+          "is_immediate": null
+        },
+        {
+          "id": "SequenceFlow_18a0pzl",
+          "name": null,
+          "source_ref": "SendTask_RequestDocument",
+          "target_ref": "ReceiveTask_WaitForDocument",
+          "is_immediate": null
+        },
+        {
+          "id": "SequenceFlow_0d7dzn0",
+          "name": null,
+          "source_ref": "StartEvent_DocumentRequested",
+          "target_ref": "SendTask_RequestDocument",
+          "is_immediate": null
+        }
+      ],
+      "send_tasks": [
+        {
+          "id": "SendTask_RequestDocument",
+          "name": "Request document",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##WebService",
+          "message_ref": null,
+          "operation_ref": null,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "zeebe:taskDefinition": {
+                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                    "@type": "email"
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        },
+        {
+          "id": "SendTask_SendReminderEmail",
+          "name": "Send reminder email",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##WebService",
+          "message_ref": null,
+          "operation_ref": null,
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "zeebe:taskDefinition": {
+                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                    "@type": "email"
+                  }
+                }
+              ]
+            }
+          ],
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "receive_tasks": [
+        {
+          "id": "ReceiveTask_WaitForDocument",
+          "name": "Wait for answer",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##WebService",
+          "instantiate": false,
+          "message_ref": "Message_1",
+          "operation_ref": null,
+          "incoming": [
+            {}
+          ],
+          "outgoing": [
+            {}
+          ]
+        }
+      ],
+      "end_events": [
+        {
+          "id": "EndEvent_TalkedToCustomer",
+          "name": "Answer received",
+          "incoming": [
+            {}
+          ]
+        },
+        {
+          "id": "EndEvent_GotDocument",
+          "name": "Document received",
+          "incoming": [
+            {}
+          ]
+        },
+        {
+          "id": "EndEvent_ReminderSent",
+          "name": "Email sent",
+          "incoming": [
+            {}
+          ]
+        }
+      ],
+      "boundary_events": [
+        {
+          "id": "BoundaryEvent_1",
+          "name": "daily",
+          "parallel_multiple": false,
+          "cancel_activity": false,
+          "attached_to_ref": "ReceiveTask_WaitForDocument",
+          "outgoing": [
+            {}
+          ],
+          "timer_event_definition": [
+            {}
+          ]
+        },
+        {
+          "id": "BoundaryEvent_2",
+          "name": "1 week",
+          "parallel_multiple": false,
+          "cancel_activity": false,
+          "attached_to_ref": "ReceiveTask_WaitForDocument",
+          "outgoing": [
+            {}
+          ],
+          "timer_event_definition": [
+            {}
+          ]
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "Message_1",
+      "name": "MESSAGE_documentReceived",
+      "item_ref": null,
+      "extension_elements": [
+        {
+          "extensions": [
+            {
+              "zeebe:subscription": {
+                "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "@xmlns:bpmn": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                "@correlationKey": "= documentReferenceId"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "collaborations": [
+    {
+      "id": "Collaboration_0liisio",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "Participant_02",
+          "name": "Document Request",
+          "process_ref": "requestDocument_en"
+        }
+      ]
+    }
+  ]
+}

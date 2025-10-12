@@ -1,0 +1,83 @@
+"""Represents a Data Input."""
+
+from __future__ import annotations
+
+from dataclasses import dataclass, field, fields
+from typing import TYPE_CHECKING, Optional
+
+from pybpmn_parser.bpmn.foundation.base_element import BaseElement
+from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.core import strtobool
+
+if TYPE_CHECKING:
+    from lxml import etree as ET
+
+    from pybpmn_parser.bpmn.data.data_state import DataState
+
+
+@dataclass(kw_only=True)
+class DataInput(BaseElement):
+    """A Data Input is a declaration that a particular kind of data will be used as input of the ioSpecification."""
+
+    data_state: Optional[DataState] = field(
+        default=None,
+        metadata={
+            "name": "dataState",
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+        },
+    )
+    """A reference to the DataState, which defines certain states for the data contained in the Item."""
+
+    name: Optional[str] = field(
+        default=None,
+        metadata={
+            "type": "Attribute",
+        },
+    )
+    """A descriptive name for the data input."""
+
+    item_subject_ref: Optional[str] = field(
+        default=None,
+        metadata={
+            "name": "itemSubjectRef",
+            "type": "Attribute",
+            "is_reference": True,
+        },
+    )
+    """Specification of the items that are stored by the Data Input."""
+
+    is_collection: bool = field(
+        default=False,
+        metadata={
+            "name": "isCollection",
+            "type": "Attribute",
+        },
+    )
+    """Defines if the DataOutput represents a collection of elements.
+
+    It is necessary when `item_subject_ref` is `None`.
+
+    If `item_subject_ref` is not `None`, then this attribute MUST have the same value as the `is_collection` attribute
+    of the referenced `item_subject_ref`. The default value for this attribute is false."""
+
+    @classmethod
+    def parse(cls, obj: Optional[ET.Element]) -> Optional[DataInput]:
+        """Parse the given XML element."""
+        from pybpmn_parser.bpmn.data.data_state import DataState
+
+        if obj is None:
+            return None
+
+        baseclass = BaseElement.parse(obj)
+        attributes = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
+        attributes.update(
+            {
+                "name": obj.get("name"),
+                "item_subject_ref": obj.get("itemSubjectRef"),
+                "is_collection": strtobool(obj.get("isCollection")),
+                "data_state": DataState.parse(obj.find("./bpmn:dataState", NAMESPACES)),
+            }
+        )
+
+        return cls(**attributes)

@@ -1,0 +1,580 @@
+{
+  "id": "_5SVkEIXnEeSmwfgVk-ryvQ",
+  "name": null,
+  "target_namespace": "http://camunda.org/schema/1.0/bpmn",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "exporter": "Camunda Web Modeler",
+  "exporter_version": "3cd8340",
+  "import_values": [
+    {
+      "namespace": "http://bpmn.io/schema/bpmn/Definitions_1",
+      "location": "C.9.1.bpmn",
+      "import_type": "http://www.omg.org/spec/BPMN/20100524/MODEL"
+    }
+  ],
+  "processes": [
+    {
+      "id": "ManualCheck",
+      "name": "Manual Check",
+      "process_type": "None",
+      "is_closed": false,
+      "is_executable": true,
+      "definitional_collaboration_ref": null,
+      "extension_elements": [
+        {
+          "extensions": [
+            {
+              "zeebe:userTaskForm": {
+                "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                "@id": "userTaskForm_2s8lq02",
+                "#text": "{\n  \"components\": [\n    {\n      \"key\": \"applicationNumber\",\n      \"label\": \"Application Number\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1djmro0\"\n    },\n    {\n      \"text\": \"<img src=\\\"http://localhost:8080/camunda/online/banking/img/core-img/logo.png\\\"><h2>Instructions:</h2><p>Based on internal protocal and the given information below, tick the checkbox for 'Approved' if this application should be approved.</p><p> Otherwise, leave this checkbox blank.</p>\",\n      \"type\": \"text\",\n      \"id\": \"Field_0e9521u\"\n    },\n    {\n      \"key\": \"applicantName\",\n      \"label\": \"Applicant\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1ex9187\"\n    },\n    {\n      \"key\": \"age\",\n      \"label\": \"Current Age\",\n      \"type\": \"number\",\n      \"id\": \"Field_17vnd80\"\n    },\n    {\n      \"key\": \"employment\",\n      \"label\": \"Employment\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_08mj5fv\"\n    },\n    {\n      \"key\": \"category\",\n      \"label\": \"Category\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1k7e84u\"\n    },\n    {\n      \"key\": \"priceIndication\",\n      \"label\": \"Price indication\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1d6bhc2\"\n    },\n    {\n      \"key\": \"approved\",\n      \"label\": \"Approved\",\n      \"type\": \"checkbox\",\n      \"id\": \"Field_0hwfap9\"\n    }\n  ],\n  \"schemaVersion\": 4,\n  \"type\": \"default\",\n  \"id\": \"Form_0840o2b\",\n  \"executionPlatform\": \"Camunda Cloud\",\n  \"executionPlatformVersion\": \"1.1\",\n  \"exporter\": {\n    \"name\": \"Camunda Web Modeler\",\n    \"version\": \"1db7fd4\"\n  }\n}"
+              }
+            }
+          ]
+        }
+      ],
+      "user_tasks": [
+        {
+          "id": "UserTask_DecideOnApplication",
+          "name": "Decide on application",
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "implementation": "##unspecified",
+          "extension_elements": [
+            {
+              "extensions": [
+                {
+                  "zeebe:ioMapping": {
+                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                    "zeebe:input": [
+                      {
+                        "@source": "= string join(risks, \", \")",
+                        "@target": "risksText"
+                      },
+                      {
+                        "@source": "= applicant.age",
+                        "@target": "age"
+                      },
+                      {
+                        "@source": "= applicant.name",
+                        "@target": "applicantName"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "zeebe:assignmentDefinition": {
+                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                    "@candidateGroups": "clerks"
+                  }
+                },
+                {
+                  "zeebe:formDefinition": {
+                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                    "@formKey": "camunda-forms:bpmn:userTaskForm_2s8lq02"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sub_processes": [
+        {
+          "id": "Activity_0uvp3cb",
+          "name": null,
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "triggered_by_event": false,
+          "start_events": [
+            {
+              "id": "StartMessageEvent_DocumentRequested",
+              "name": "Document requested",
+              "parallel_multiple": false,
+              "is_interrupting": false,
+              "message_event_definition": [
+                {}
+              ]
+            }
+          ],
+          "sequence_flows": [
+            {
+              "id": "Flow_0irfroh",
+              "name": null,
+              "source_ref": "StartMessageEvent_DocumentRequested",
+              "target_ref": "CallActivity_RequestDocument",
+              "is_immediate": null
+            },
+            {
+              "id": "Flow_1wwxns6",
+              "name": null,
+              "source_ref": "CallActivity_RequestDocument",
+              "target_ref": "EndEvent_DocumentReceived",
+              "is_immediate": null
+            }
+          ],
+          "end_events": [
+            {
+              "id": "EndEvent_DocumentReceived",
+              "name": "Document Received"
+            }
+          ],
+          "call_activities": [
+            {
+              "id": "CallActivity_RequestDocument",
+              "name": "Document Request",
+              "is_for_compensation": false,
+              "start_quantity": 1,
+              "completion_quantity": 1,
+              "default": null,
+              "called_element": "requestDocument_en",
+              "extension_elements": [
+                {
+                  "extensions": [
+                    {
+                      "zeebe:calledElement": {
+                        "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                        "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                        "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                        "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                        "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                        "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                        "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                        "@processId": "requestDocument_en",
+                        "@propagateAllChildVariables": "true"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "multi_instance_loop_characteristics": {
+                "id": null,
+                "documentation": [],
+                "extension_elements": [
+                  {
+                    "extensions": [
+                      {
+                        "zeebe:loopCharacteristics": {
+                          "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                          "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                          "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                          "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                          "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                          "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                          "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                          "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                          "@inputCollection": "=documents",
+                          "@inputElement": "document"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "loop_cardinality": null,
+                "loop_data_input_ref": null,
+                "loop_data_output_ref": null,
+                "input_data_item": null,
+                "output_data_item": null,
+                "complex_behavior_definition": [],
+                "completion_condition": null,
+                "is_sequential": false,
+                "behavior": "All",
+                "one_behavior_event_ref": null,
+                "none_behavior_event_ref": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "Activity_1esx1s7",
+          "name": null,
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "triggered_by_event": false,
+          "user_tasks": [
+            {
+              "id": "UserTask_AccelerateDecision",
+              "name": "Accelerate decision making",
+              "is_for_compensation": false,
+              "start_quantity": 1,
+              "completion_quantity": 1,
+              "default": null,
+              "implementation": "##unspecified",
+              "extension_elements": [
+                {
+                  "extensions": [
+                    {
+                      "zeebe:assignmentDefinition": {
+                        "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                        "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                        "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                        "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                        "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                        "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                        "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                        "@candidateGroups": "teamleaders"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "start_events": [
+            {
+              "id": "StartTimerEvent_AcceleratedDecision",
+              "name": "Accelerated decision",
+              "parallel_multiple": false,
+              "is_interrupting": false,
+              "timer_event_definition": [
+                {}
+              ]
+            }
+          ],
+          "sequence_flows": [
+            {
+              "id": "Flow_0kaot38",
+              "name": null,
+              "source_ref": "StartTimerEvent_AcceleratedDecision",
+              "target_ref": "SendTask_NotifyCustomerDelay",
+              "is_immediate": null
+            },
+            {
+              "id": "Flow_1t18skh",
+              "name": null,
+              "source_ref": "UserTask_AccelerateDecision",
+              "target_ref": "EndEvent_DecisionAccelerated",
+              "is_immediate": null
+            },
+            {
+              "id": "Flow_1octlto",
+              "name": null,
+              "source_ref": "SendTask_NotifyCustomerDelay",
+              "target_ref": "UserTask_AccelerateDecision",
+              "is_immediate": null
+            }
+          ],
+          "send_tasks": [
+            {
+              "id": "SendTask_NotifyCustomerDelay",
+              "name": "Notify customer about delay",
+              "is_for_compensation": false,
+              "start_quantity": 1,
+              "completion_quantity": 1,
+              "default": null,
+              "implementation": "##WebService",
+              "message_ref": null,
+              "operation_ref": null,
+              "extension_elements": [
+                {
+                  "extensions": [
+                    {
+                      "zeebe:taskDefinition": {
+                        "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                        "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                        "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                        "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                        "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                        "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                        "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                        "@type": "notifyCustomerDelay"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "end_events": [
+            {
+              "id": "EndEvent_DecisionAccelerated",
+              "name": "Decision accelerated"
+            }
+          ]
+        },
+        {
+          "id": "Activity_02a6b2h",
+          "name": null,
+          "is_for_compensation": false,
+          "start_quantity": 1,
+          "completion_quantity": 1,
+          "default": null,
+          "triggered_by_event": false,
+          "user_tasks": [
+            {
+              "id": "UserTask_CheckForFraud",
+              "name": "Check for Fraud",
+              "is_for_compensation": false,
+              "start_quantity": 1,
+              "completion_quantity": 1,
+              "default": null,
+              "implementation": "##unspecified",
+              "extension_elements": [
+                {
+                  "extensions": [
+                    {
+                      "zeebe:assignmentDefinition": {
+                        "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                        "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                        "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                        "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                        "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                        "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                        "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                        "@candidateGroups": "riskteam"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "start_events": [
+            {
+              "id": "StartMessageEvent_FraudSuspected",
+              "name": "Fraud suspected",
+              "parallel_multiple": false,
+              "is_interrupting": false,
+              "message_event_definition": [
+                {}
+              ]
+            }
+          ],
+          "sequence_flows": [
+            {
+              "id": "Flow_0nttki4",
+              "name": null,
+              "source_ref": "StartMessageEvent_FraudSuspected",
+              "target_ref": "UserTask_CheckForFraud",
+              "is_immediate": null
+            },
+            {
+              "id": "SequenceFlow_Yes",
+              "name": "Yes",
+              "source_ref": "Gateway_FraudDetected",
+              "target_ref": "ErrorEndEvent_FraudDetected",
+              "is_immediate": null,
+              "condition_expression": {
+                "id": null
+              }
+            },
+            {
+              "id": "Flow_1istmr0",
+              "name": null,
+              "source_ref": "UserTask_CheckForFraud",
+              "target_ref": "Gateway_FraudDetected",
+              "is_immediate": null
+            },
+            {
+              "id": "SequenceFlow_No",
+              "name": "No",
+              "source_ref": "Gateway_FraudDetected",
+              "target_ref": "EndEvent_FraudNoDetected",
+              "is_immediate": null
+            }
+          ],
+          "exclusive_gateways": [
+            {
+              "id": "Gateway_FraudDetected",
+              "name": "Fraud detected?",
+              "gateway_direction": null,
+              "default": "SequenceFlow_No"
+            }
+          ],
+          "end_events": [
+            {
+              "id": "ErrorEndEvent_FraudDetected",
+              "name": "Fraud Detected",
+              "incoming": [
+                {}
+              ],
+              "error_event_definition": [
+                {
+                  "id": "ErrorEventDefinition_06wkgx9",
+                  "error_ref": "Error_0hvt466"
+                }
+              ]
+            },
+            {
+              "id": "EndEvent_FraudNoDetected",
+              "name": "Fraud no detected"
+            }
+          ]
+        }
+      ],
+      "start_events": [
+        {
+          "id": "StartEvent_DecideManually",
+          "name": "Decide Manually",
+          "parallel_multiple": false,
+          "is_interrupting": false
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "Flow_08vmski",
+          "name": null,
+          "source_ref": "StartEvent_DecideManually",
+          "target_ref": "UserTask_DecideOnApplication",
+          "is_immediate": null
+        },
+        {
+          "id": "Flow_0vjv3ik",
+          "name": null,
+          "source_ref": "UserTask_DecideOnApplication",
+          "target_ref": "EndEvent_ManuallyDecided",
+          "is_immediate": null
+        },
+        {
+          "id": "Flow_03n7pdb",
+          "name": null,
+          "source_ref": "TimerEvent_Timeout",
+          "target_ref": "ErrorEndEvent_Timeout",
+          "is_immediate": null
+        }
+      ],
+      "end_events": [
+        {
+          "id": "ErrorEndEvent_Timeout",
+          "name": "Timeout",
+          "incoming": [
+            {}
+          ],
+          "error_event_definition": [
+            {
+              "id": "ErrorEventDefinition_0zy5rzo",
+              "error_ref": "Error_0hvt466"
+            }
+          ]
+        },
+        {
+          "id": "EndEvent_ManuallyDecided",
+          "name": "Manually Decided"
+        }
+      ],
+      "boundary_events": [
+        {
+          "id": "TimerEvent_Timeout",
+          "name": "Timeout (7 days)",
+          "parallel_multiple": false,
+          "cancel_activity": false,
+          "attached_to_ref": "UserTask_DecideOnApplication",
+          "timer_event_definition": [
+            {}
+          ]
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "Message_0fvpzfg",
+      "name": "Message_DocumentRequested",
+      "item_ref": null,
+      "extension_elements": [
+        {
+          "extensions": [
+            {
+              "zeebe:subscription": {
+                "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                "@correlationKey": "= documentReferenceId"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Message_10rm6h0",
+      "name": "Message_FraudSuspected",
+      "item_ref": null,
+      "extension_elements": [
+        {
+          "extensions": [
+            {
+              "zeebe:subscription": {
+                "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
+                "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
+                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
+                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
+                "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
+                "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
+                "@correlationKey": "=fraudSuspectedId"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "id": "Error_0hvt466",
+      "name": "Error_FraudDetected",
+      "error_code": "02",
+      "structure_ref": null
+    }
+  ],
+  "collaborations": [
+    {
+      "id": "Collaboration_ManualDecision",
+      "name": null,
+      "is_closed": false,
+      "participants": [
+        {
+          "id": "Participant_01",
+          "name": "Manual Check",
+          "process_ref": "ManualCheck"
+        }
+      ]
+    }
+  ]
+}

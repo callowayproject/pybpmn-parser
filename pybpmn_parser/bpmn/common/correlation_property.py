@@ -1,0 +1,69 @@
+"""Represents a Correlation Property."""
+
+from __future__ import annotations
+
+from dataclasses import dataclass, field, fields
+from typing import TYPE_CHECKING, Optional
+
+from pybpmn_parser.bpmn.foundation.base_element import RootElement
+
+if TYPE_CHECKING:
+    from lxml import etree as ET
+
+    from pybpmn_parser.bpmn.common.correlation_property_retrieval_expression import (
+        CorrelationPropertyRetrievalExpression,
+    )
+
+
+@dataclass(kw_only=True)
+class CorrelationProperty(RootElement):
+    """A CorrelationProperty is part of an associated CorrelationKey."""
+
+    correlation_property_retrieval_expressions: list[CorrelationPropertyRetrievalExpression] = field(
+        default_factory=list,
+        metadata={
+            "name": "correlationPropertyRetrievalExpression",
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+            "min_occurs": 1,
+        },
+    )
+    name: Optional[str] = field(
+        default=None,
+        metadata={
+            "type": "Attribute",
+        },
+    )
+    type_value: Optional[str] = field(
+        default=None,
+        metadata={
+            "name": "type",
+            "type": "Attribute",
+            "is_reference": True,
+        },
+    )
+
+    @classmethod
+    def parse(cls, obj: Optional[ET.Element]) -> Optional[CorrelationProperty]:
+        """Create an instance of this class from an XML element."""
+        from pybpmn_parser.bpmn.common.correlation_property_retrieval_expression import (
+            CorrelationPropertyRetrievalExpression,
+        )
+        from pybpmn_parser.bpmn.types import NAMESPACES
+
+        if obj is None:
+            return None
+
+        baseclass = RootElement.parse(obj)
+        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
+        attribs.update(
+            {
+                "name": obj.get("name"),
+                "type_value": obj.get("type"),
+                "correlation_property_retrieval_expressions": [
+                    CorrelationPropertyRetrievalExpression.parse(elem)
+                    for elem in obj.findall("./bpmn:correlationPropertyRetrievalExpression", NAMESPACES)
+                ],
+            }
+        )
+        return cls(**attribs)
