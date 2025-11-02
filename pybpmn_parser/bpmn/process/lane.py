@@ -10,11 +10,12 @@ import xmltodict
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 
 @dataclass(kw_only=True)
-class Lane(BaseElement):
-    """A Lane is a subpartition within a Process and will extend the entire length of the Process."""
+class BaseLane(BaseElement):
+    """BaseLane is the abstract super class for Lane."""
 
     partition_element: Optional[BaseElement] = field(
         default=None,
@@ -40,16 +41,6 @@ class Lane(BaseElement):
     )
     """The list of FlowNodes is partitioned into this Lane according to the partition_element."""
 
-    child_lane_set: Optional[LaneSet] = field(
-        default=None,
-        metadata={
-            "name": "childLaneSet",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
-    """A reference to a LaneSet element for embedded Lanes."""
-
     name: Optional[str] = field(
         default=None,
         metadata={
@@ -70,6 +61,45 @@ class Lane(BaseElement):
 
     Using this partition element, a BPMN-compliant tool can determine the FlowElements that have to be
     partitioned in this Lane."""
+
+
+@dataclass(kw_only=True)
+class EmbeddedLaneSet(BaseElement):
+    """The LaneSet element defines the container for one or more Lanes."""
+
+    lane: list[BaseLane] = field(
+        default_factory=list,
+        metadata={
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+        },
+    )
+    name: Optional[str] = field(
+        default=None,
+        metadata={
+            "type": "Attribute",
+        },
+    )
+
+
+@register_element
+@dataclass(kw_only=True)
+class Lane(BaseLane):
+    """A Lane is a subpartition within a Process and will extend the entire length of the Process."""
+
+    child_lane_set: Optional[EmbeddedLaneSet] = field(
+        default=None,
+        metadata={
+            "name": "childLaneSet",
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+        },
+    )
+    """A reference to a LaneSet element for embedded Lanes."""
+
+    class Meta:
+        name = "lane"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Lane]:
@@ -95,11 +125,16 @@ class Lane(BaseElement):
         return cls(**attribs)
 
 
+@register_element
 @dataclass(kw_only=True)
-class LaneSet(BaseElement):
+class LaneSet(EmbeddedLaneSet):
     """The LaneSet element defines the container for one or more Lanes."""
 
-    lane: list[Lane] = field(
+    class Meta:
+        name = "laneSet"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
+
+    lane: list[Lane] = field(  # type: ignore[assignment]
         default_factory=list,
         metadata={
             "type": "Element",

@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.conversation.conversation_node import ConversationNode
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -15,6 +16,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.conversation.conversation import Conversation
 
 
+@register_element
 @dataclass(kw_only=True)
 class SubConversation(ConversationNode):
     """A Sub-Conversation is a ConversationNode that is a hierarchical division within the parent Collaboration."""
@@ -50,6 +52,10 @@ class SubConversation(ConversationNode):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
+
+    class Meta:
+        name = "subConversation"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[SubConversation]:

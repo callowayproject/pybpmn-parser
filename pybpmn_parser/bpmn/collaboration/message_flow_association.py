@@ -6,11 +6,13 @@ from dataclasses import dataclass, field, fields
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class MessageFlowAssociation(BaseElement):
     """A MessageFlowAssociation links an (outer) diagram Message Flows to an (inner) diagram Message Flows."""
@@ -31,6 +33,10 @@ class MessageFlowAssociation(BaseElement):
             "is_reference": True,
         }
     )
+
+    class Meta:
+        name = "messageFlowAssociation"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[MessageFlowAssociation]:

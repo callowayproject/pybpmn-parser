@@ -7,11 +7,13 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.process.global_task import GlobalTask
 from pybpmn_parser.bpmn.types import ImplementationValue
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class GlobalBusinessRuleTask(GlobalTask):
     """A type of Global Task that represents a Business Rule Task."""
@@ -22,6 +24,10 @@ class GlobalBusinessRuleTask(GlobalTask):
             "type": "Attribute",
         },
     )
+
+    class Meta:
+        name = "globalBusinessRuleTask"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[GlobalBusinessRuleTask]:

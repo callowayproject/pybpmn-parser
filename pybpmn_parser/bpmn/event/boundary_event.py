@@ -7,11 +7,13 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.event.catch_event import CatchEvent
 from pybpmn_parser.core import strtobool
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class BoundaryEvent(CatchEvent):
     """The Boundary Event is a special kind of Catch Event that is attached to a specific Activity."""
@@ -31,6 +33,10 @@ class BoundaryEvent(CatchEvent):
             "is_reference": True,
         }
     )
+
+    class Meta:
+        name = "boundaryEvent"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[BoundaryEvent]:

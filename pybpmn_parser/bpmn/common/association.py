@@ -7,11 +7,13 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.common.artifact import Artifact
 from pybpmn_parser.bpmn.types import AssociationDirection
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class Association(Artifact):
     """An Association is used to associate information and Artifacts with Flow Objects."""
@@ -46,6 +48,10 @@ class Association(Artifact):
     """Defines whether the Association shows any directionality with an arrowhead.
     The default is None (no arrowhead). A value of One means that the arrowhead will be at the Target Object.
     A value of Both means that there will be an arrowhead at both ends of the Association line."""
+
+    class Meta:
+        name = "association"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Association]:

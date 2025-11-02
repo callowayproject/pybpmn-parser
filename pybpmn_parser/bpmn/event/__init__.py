@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.common.flow_node import FlowNode
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -14,6 +15,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.data.property import Property
 
 
+@register_element
 @dataclass(kw_only=True)
 class Event(FlowNode):  # Is Abstract
     """The Event element is used to define an event in a BPMN 2.0 process model."""
@@ -26,6 +28,10 @@ class Event(FlowNode):  # Is Abstract
         },
     )
     """Modeler-defined properties of this event."""
+
+    class Meta:
+        name = "event"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Event]:

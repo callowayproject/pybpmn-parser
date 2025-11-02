@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     import lxml.etree as ET
@@ -15,6 +16,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.event.implicit_throw_event import ImplicitThrowEvent
 
 
+@register_element
 @dataclass(kw_only=True)
 class ComplexBehaviorDefinition(BaseElement):
     """
@@ -35,6 +37,10 @@ class ComplexBehaviorDefinition(BaseElement):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
+
+    class Meta:
+        name = "complexBehaviorDefinition"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[ComplexBehaviorDefinition]:

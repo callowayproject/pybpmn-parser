@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement, RootElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -14,6 +15,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.collaboration.participant_multiplicity import ParticipantMultiplicity
 
 
+@register_element
 @dataclass(kw_only=True)
 class Participant(BaseElement):
     """A Participant is a specific or general participant in a Collaboration."""
@@ -58,6 +60,10 @@ class Participant(BaseElement):
             "is_reference": True,
         },
     )
+
+    class Meta:
+        name = "participant"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Participant]:

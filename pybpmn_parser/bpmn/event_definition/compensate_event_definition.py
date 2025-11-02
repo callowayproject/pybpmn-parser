@@ -5,15 +5,21 @@ from __future__ import annotations
 from dataclasses import dataclass, field, fields
 from typing import TYPE_CHECKING, Optional
 
-from pybpmn_parser.bpmn.event_definition import EventDefinition
+from pybpmn_parser.bpmn.event_definition.event_definition import EventDefinition
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class CompensateEventDefinition(EventDefinition):
     """The definition of a CompensateEvent."""
+
+    class Meta:
+        name = "compensateEventDefinition"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     wait_for_completion: bool = field(
         default=True,

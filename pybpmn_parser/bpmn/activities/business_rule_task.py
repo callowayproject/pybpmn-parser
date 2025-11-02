@@ -7,11 +7,13 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.activities.task import Task
 from pybpmn_parser.bpmn.types import ImplementationValue
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class BusinessRuleTask(Task):
     """
@@ -32,6 +34,10 @@ class BusinessRuleTask(Task):
     Valid values are "##unspecified" for leaving the implementation technology open,
     "##WebService" for the Web service technology, or a URI identifying any other technology or coordination protocol.
     The default technology for this task is unspecified."""
+
+    class Meta:
+        name = "businessRuleTask"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[BusinessRuleTask]:

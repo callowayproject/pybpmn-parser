@@ -7,11 +7,13 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.activities.task import Task
 from pybpmn_parser.bpmn.types import ImplementationValue
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class SendTask(Task):
     """A Send Task is a simple Task that is designed to send a Message to an external Participant."""
@@ -36,6 +38,10 @@ class SendTask(Task):
             "type": "Attribute",
         },
     )
+
+    class Meta:
+        name = "sendTask"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[SendTask]:

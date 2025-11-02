@@ -2,16 +2,23 @@
 
 from __future__ import annotations
 
-from typing import Any
+from dataclasses import dataclass
+from typing import TYPE_CHECKING, Any
 
-import lxml.etree as ET
+from pybpmn_parser.element_registry import register_element
 
-from pybpmn_parser.plugins.registry import registry
+if TYPE_CHECKING:
+    import lxml.etree as ET
 
 
-# @dataclass(kw_only=True)
+@register_element
+@dataclass(kw_only=True)
 class ExtensionElements:
     """Representation of an extensionElements tag."""
+
+    class Meta:
+        name = "extensionElements"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     # extensions: list[Any] = field(
     #     default_factory=list,
@@ -22,21 +29,16 @@ class ExtensionElements:
     # )
     # """Definitions of extension elements."""
 
-    def __init__(self, **kwargs: Any) -> None:
-        """Initialize the ExtensionElements object."""
-        for key, value in kwargs.items():
-            setattr(self, key, value)
-
     @classmethod
     def parse(cls, obj: ET.Element) -> ExtensionElements:
         """Parse an ExtensionElements object."""
-        extensions = {}
+        extensions: dict[str, Any] = {}
 
-        for child in obj.iterchildren():
-            extension_parsers = registry.get_parser_for_tag(child.tag, child.prefix)
-            for extension_parser in extension_parsers:
-                element_tag = extension_parser.element_name().split("}")[-1]
-                prefix = extension_parser.__xml_ns__
-                extensions[f"{prefix}_{element_tag}"] = extension_parser.from_xml_tree(child)
+        # for child in obj.iterchildren():
+        #     extension_parsers = registry.get_parser_for_tag(child.tag, child.prefix)
+        #     for extension_parser in extension_parsers:
+        #         element_tag = extension_parser.element_name().split("}")[-1]
+        #         prefix = extension_parser.__xml_ns__
+        #         extensions[f"{prefix}_{element_tag}"] = extension_parser.from_xml_tree(child)
 
         return cls(**extensions)

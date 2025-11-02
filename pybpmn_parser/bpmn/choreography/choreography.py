@@ -6,6 +6,7 @@ from dataclasses import dataclass, field, fields
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.collaboration.collaboration import Collaboration
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -42,6 +43,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.gateway.parallel_gateway import ParallelGateway
 
 
+@register_element
 @dataclass(kw_only=True)
 class Choreography(Collaboration):
     """Choreography formalizes the way business Participants coordinate their interactions."""
@@ -299,6 +301,10 @@ class Choreography(Collaboration):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
+
+    class Meta:
+        name = "choreography"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Choreography]:

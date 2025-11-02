@@ -5,16 +5,20 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
+from pybpmn_parser.element_registry import register_element
+
 if TYPE_CHECKING:
     import lxml.etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class Documentation:
     """The Documentation element is used to annotate the BPMN element, such as descriptions and other documentation."""
 
     class Meta:
-        name = "tDocumentation"
+        name = "documentation"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     id: Optional[str] = field(
         default=None,

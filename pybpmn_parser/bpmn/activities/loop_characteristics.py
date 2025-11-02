@@ -8,6 +8,7 @@ from typing import TYPE_CHECKING, Optional
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.bpmn.types import NAMESPACES, MultiInstanceFlowCondition
 from pybpmn_parser.core import strtobool
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -18,6 +19,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.data.data_output import DataOutput
 
 
+@register_element
 @dataclass(kw_only=True)
 class LoopCharacteristics(BaseElement):
     """
@@ -26,9 +28,12 @@ class LoopCharacteristics(BaseElement):
     LoopCharacteristics is an abstract class.
     """
 
-    pass
+    class Meta:
+        name = "loopCharacteristics"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
 
+@register_element
 @dataclass(kw_only=True)
 class MultiInstanceLoopCharacteristics(LoopCharacteristics):
     """Allows for the creation of a desired number of Activity instances."""
@@ -117,6 +122,10 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
         },
     )
 
+    class Meta:
+        name = "multiInstanceLoopCharacteristics"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
+
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[MultiInstanceLoopCharacteristics]:
         """Parse an XML element into a MultiInstanceLoopCharacteristics object."""
@@ -155,6 +164,7 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
         return cls(**attribs)
 
 
+@register_element
 @dataclass(kw_only=True)
 class StandardLoopCharacteristics(LoopCharacteristics):
     """The StandardLoopCharacteristics class defines looping behavior based on a boolean condition."""
@@ -181,6 +191,10 @@ class StandardLoopCharacteristics(LoopCharacteristics):
             "type": "Attribute",
         },
     )
+
+    class Meta:
+        name = "standardLoopCharacteristics"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[StandardLoopCharacteristics]:

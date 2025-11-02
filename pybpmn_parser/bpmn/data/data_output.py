@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -14,6 +15,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.data.data_state import DataState
 
 
+@register_element
 @dataclass(kw_only=True)
 class DataOutput(BaseElement):
     """A Data Output is a declaration that a particular kind of data will be used as output of the ioSpecification."""
@@ -59,6 +61,10 @@ class DataOutput(BaseElement):
 
     If `item_subject_ref` is not `None`, then this attribute MUST have the same value as the `is_collection` attribute
     of the referenced `item_subject_ref`. The default value for this attribute is false."""
+
+    class Meta:
+        name = "dataOutput"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[DataOutput]:

@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -14,6 +15,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.common.expression import Expression, FormalExpression
 
 
+@register_element
 @dataclass(kw_only=True)
 class ResourceAssignmentExpression(BaseElement):
     """This defines the Expression used for the Resource assignment."""
@@ -33,6 +35,10 @@ class ResourceAssignmentExpression(BaseElement):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
+
+    class Meta:
+        name = "resourceAssignmentExpression"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[ResourceAssignmentExpression]:

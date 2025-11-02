@@ -5,7 +5,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
-from pybpmn_parser.plugins.registry import registry
+from pybpmn_parser.element_registry import register_element
+from pybpmn_parser.plugins.old.registry import registry
 
 if TYPE_CHECKING:
     import lxml.etree as ET
@@ -16,6 +17,7 @@ if TYPE_CHECKING:
 from pybpmn_parser.bpmn.types import NAMESPACES
 
 
+@register_element
 @dataclass(kw_only=True)
 class BaseElement:  # Is Abstract
     """
@@ -23,6 +25,10 @@ class BaseElement:  # Is Abstract
 
     It provides the attributes id and documentation, which other elements will inherit.
     """
+
+    class Meta:
+        name = "baseElement"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     id: Optional[str] = field(
         default=None,
@@ -78,8 +84,11 @@ class BaseElement:  # Is Abstract
         return cls(**attributes)
 
 
+@register_element
 @dataclass(kw_only=True)
 class RootElement(BaseElement):
     """RootElement is the abstract super class for all BPMN elements that are contained within Definitions."""
 
-    pass
+    class Meta:
+        name = "rootElement"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"

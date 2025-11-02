@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -17,6 +18,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.data.output_set import OutputSet
 
 
+@register_element
 @dataclass(kw_only=True)
 class IoSpecification(BaseElement):
     """The ioSpecification defines the inputs and outputs and the InputSets and OutputSets for the Activity."""
@@ -74,6 +76,10 @@ class IoSpecification(BaseElement):
     An optional reference to the Data Outputs of the InputOutputSpecification.
     If the InputOutputSpecification defines no Data Output, it means no data is required to finish the Activity.
     This is an ordered set."""
+
+    class Meta:
+        name = "ioSpecification"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[IoSpecification]:

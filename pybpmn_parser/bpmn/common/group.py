@@ -6,11 +6,13 @@ from dataclasses import dataclass, field, fields
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.common.artifact import Artifact
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class Group(Artifact):
     """Groups are often used to highlight certain subclauses of a Diagram without adding additional constraints."""
@@ -23,6 +25,10 @@ class Group(Artifact):
             "is_reference": True,
         },
     )
+
+    class Meta:
+        name = "group"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Group]:

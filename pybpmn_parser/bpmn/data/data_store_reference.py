@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.common.flow_element import FlowElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -14,6 +15,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.data.data_state import DataState
 
 
+@register_element
 @dataclass(kw_only=True)
 class DataStoreReference(FlowElement):
     """A reference to a data store."""
@@ -42,6 +44,10 @@ class DataStoreReference(FlowElement):
             "is_reference": True,
         },
     )
+
+    class Meta:
+        name = "dataStoreReference"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[DataStoreReference]:

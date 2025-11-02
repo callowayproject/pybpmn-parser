@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -14,6 +15,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.common.correlation_key import CorrelationKey
 
 
+@register_element
 @dataclass(kw_only=True)
 class ConversationNode(BaseElement):
     """ConversationNode is the abstract super class for all Conversation bpmn of a Collaboration diagram."""
@@ -51,6 +53,10 @@ class ConversationNode(BaseElement):
             "type": "Attribute",
         },
     )
+
+    class Meta:
+        name = "conversationNode"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[ConversationNode]:

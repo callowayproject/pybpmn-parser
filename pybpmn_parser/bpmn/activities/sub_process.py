@@ -8,10 +8,14 @@ from typing import TYPE_CHECKING, Optional
 from pybpmn_parser.bpmn.activities.activity import Activity
 from pybpmn_parser.bpmn.types import NAMESPACES, AdHocOrdering, TransactionMethodValue
 from pybpmn_parser.core import strtobool
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
+    # from pybpmn_parser.bpmn.choreography.call_choreography import CallChoreography
+    # from pybpmn_parser.bpmn.choreography.choreography_task import ChoreographyTask
+    # from pybpmn_parser.bpmn.choreography.sub_choreography import SubChoreography
     from pybpmn_parser.bpmn.activities.business_rule_task import BusinessRuleTask
     from pybpmn_parser.bpmn.activities.call_activity import CallActivity
     from pybpmn_parser.bpmn.activities.manual_task import ManualTask
@@ -21,9 +25,6 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.activities.service_task import ServiceTask
     from pybpmn_parser.bpmn.activities.task import Task
     from pybpmn_parser.bpmn.activities.user_task import UserTask
-    from pybpmn_parser.bpmn.choreography.call_choreography import CallChoreography
-    from pybpmn_parser.bpmn.choreography.choreography_task import ChoreographyTask
-    from pybpmn_parser.bpmn.choreography.sub_choreography import SubChoreography
     from pybpmn_parser.bpmn.common.artifact import Artifact
     from pybpmn_parser.bpmn.common.association import Association
     from pybpmn_parser.bpmn.common.expression import Expression
@@ -49,9 +50,14 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.process.lane import LaneSet
 
 
+@register_element
 @dataclass(kw_only=True)
-class SubProcess(Activity):
+class TransactionlessSubProcess(Activity):
     """A SubProcess is a compound activity that represents a collection of other tasks and SubProcesses."""
+
+    class Meta:
+        name = "transactionlessSubProcess"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     lane_sets: list[LaneSet] = field(
         default_factory=list,
@@ -69,13 +75,6 @@ class SubProcess(Activity):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    transactions: list[Transaction] = field(
-        default_factory=list,
-        metadata={
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
     tasks: list[Task] = field(
         default_factory=list,
         metadata={
@@ -83,22 +82,14 @@ class SubProcess(Activity):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    sub_processes: list[SubProcess] = field(
-        default_factory=list,
-        metadata={
-            "name": "subProcess",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
-    sub_choreographies: list[SubChoreography] = field(
-        default_factory=list,
-        metadata={
-            "name": "subChoreography",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
+    # sub_choreographies: list[SubChoreography] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "subChoreography",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
     start_events: list[StartEvent] = field(
         default_factory=list,
         metadata={
@@ -258,22 +249,22 @@ class SubProcess(Activity):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    choreography_tasks: list[ChoreographyTask] = field(
-        default_factory=list,
-        metadata={
-            "name": "choreographyTask",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
-    call_choreographies: list[CallChoreography] = field(
-        default_factory=list,
-        metadata={
-            "name": "callChoreography",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
+    # choreography_tasks: list[ChoreographyTask] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "choreographyTask",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
+    # call_choreographies: list[CallChoreography] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "callChoreography",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
     call_activities: list[CallActivity] = field(
         default_factory=list,
         metadata={
@@ -294,14 +285,6 @@ class SubProcess(Activity):
         default_factory=list,
         metadata={
             "name": "boundaryEvent",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
-    ad_hoc_sub_processes: list[AdHocSubProcess] = field(
-        default_factory=list,
-        metadata={
-            "name": "adHocSubProcess",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -351,9 +334,93 @@ class SubProcess(Activity):
         },
     )
 
+
+@register_element
+@dataclass(kw_only=True)
+class Transaction(TransactionlessSubProcess):
+    """A Transaction has a special behavior that is controlled through a transaction protocol."""
+
+    class Meta:
+        name = "transaction"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
+
+    method: str | TransactionMethodValue = field(
+        default=TransactionMethodValue.COMPENSATE,
+        metadata={
+            "type": "Attribute",
+        },
+    )
+    sub_processes: list[TransactionlessSubProcess] = field(
+        default_factory=list,
+        metadata={
+            "name": "subProcess",
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+        },
+    )
+    transactions: list[Transaction] = field(
+        default_factory=list,
+        metadata={
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+        },
+    )
+
+    @classmethod
+    def parse(cls, obj: Optional[ET.Element]) -> Optional[Transaction]:
+        """Parse an XML object into a Transaction object."""
+        if obj is None:
+            return None
+
+        baseclass = SubProcess.parse(obj)
+        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
+        attribs.update(
+            {
+                "method": obj.get("method", TransactionMethodValue.COMPENSATE),
+            }
+        )
+        return cls(**attribs)
+
+
+@register_element
+@dataclass(kw_only=True)
+class SubProcess(Activity):
+    """A SubProcess is a compound activity that represents a collection of other tasks and SubProcesses."""
+
+    class Meta:
+        name = "subProcess"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
+
+    sub_processes: list[SubProcess] = field(
+        default_factory=list,
+        metadata={
+            "name": "subProcess",
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+        },
+    )
+    transactions: list[Transaction] = field(
+        default_factory=list,
+        metadata={
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+        },
+    )
+    # ad_hoc_sub_processes: list[AdHocSubProcess] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "adHocSubProcess",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
+
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[SubProcess]:
         """Parse an XML object into a SubProcess object."""
+        # from pybpmn_parser.bpmn.choreography.call_choreography import CallChoreography
+        # from pybpmn_parser.bpmn.choreography.choreography_task import ChoreographyTask
+        # from pybpmn_parser.bpmn.choreography.sub_choreography import SubChoreography
         from pybpmn_parser.bpmn.activities.business_rule_task import BusinessRuleTask
         from pybpmn_parser.bpmn.activities.call_activity import CallActivity
         from pybpmn_parser.bpmn.activities.manual_task import ManualTask
@@ -363,9 +430,6 @@ class SubProcess(Activity):
         from pybpmn_parser.bpmn.activities.service_task import ServiceTask
         from pybpmn_parser.bpmn.activities.task import Task
         from pybpmn_parser.bpmn.activities.user_task import UserTask
-        from pybpmn_parser.bpmn.choreography.call_choreography import CallChoreography
-        from pybpmn_parser.bpmn.choreography.choreography_task import ChoreographyTask
-        from pybpmn_parser.bpmn.choreography.sub_choreography import SubChoreography
         from pybpmn_parser.bpmn.common.artifact import Artifact
         from pybpmn_parser.bpmn.common.association import Association
         from pybpmn_parser.bpmn.common.flow_element import FlowElement
@@ -410,12 +474,12 @@ class SubProcess(Activity):
                 "call_activities": [
                     CallActivity.parse(elem) for elem in obj.findall("./bpmn:callActivity", NAMESPACES)
                 ],
-                "call_choreographies": [
-                    CallChoreography.parse(elem) for elem in obj.findall("./bpmn:callChoreography", NAMESPACES)
-                ],
-                "choreography_tasks": [
-                    ChoreographyTask.parse(elem) for elem in obj.findall("./bpmn:choreographyTask", NAMESPACES)
-                ],
+                # "call_choreographies": [
+                #     CallChoreography.parse(elem) for elem in obj.findall("./bpmn:callChoreography", NAMESPACES)
+                # ],
+                # "choreography_tasks": [
+                #     ChoreographyTask.parse(elem) for elem in obj.findall("./bpmn:choreographyTask", NAMESPACES)
+                # ],
                 "complex_gateways": [
                     ComplexGateway.parse(elem) for elem in obj.findall("./bpmn:complexGateway", NAMESPACES)
                 ],
@@ -463,9 +527,9 @@ class SubProcess(Activity):
                 ],
                 "service_tasks": [ServiceTask.parse(elem) for elem in obj.findall("./bpmn:serviceTask", NAMESPACES)],
                 "start_events": [StartEvent.parse(elem) for elem in obj.findall("./bpmn:startEvent", NAMESPACES)],
-                "sub_choreographies": [
-                    SubChoreography.parse(elem) for elem in obj.findall("./bpmn:subChoreography", NAMESPACES)
-                ],
+                # "sub_choreographies": [
+                #     SubChoreography.parse(elem) for elem in obj.findall("./bpmn:subChoreography", NAMESPACES)
+                # ],
                 "sub_processes": [SubProcess.parse(elem) for elem in obj.findall("./bpmn:subProcess", NAMESPACES)],
                 "tasks": [Task.parse(elem) for elem in obj.findall("./bpmn:task", NAMESPACES)],
                 "text_annotations": [
@@ -479,9 +543,23 @@ class SubProcess(Activity):
         return cls(**attribs)
 
 
+@register_element
 @dataclass(kw_only=True)
-class AdHocSubProcess(SubProcess):
+class AdHocSubProcess(TransactionlessSubProcess):
     """An AdHocSubProcess is a special kind of SubProcess."""
+
+    class Meta:
+        name = "adhocSubProcess"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
+
+    ad_hoc_sub_processes: list[AdHocSubProcess] = field(
+        default_factory=list,
+        metadata={
+            "name": "adHocSubProcess",
+            "type": "Element",
+            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+        },
+    )
 
     completion_condition: Optional[Expression] = field(
         default=None,
@@ -520,33 +598,6 @@ class AdHocSubProcess(SubProcess):
                 "completion_condition": Expression.parse(obj.find("./bpmn:completionCondition", NAMESPACES)),
                 "cancel_remaining_instances": strtobool(obj.get("cancelRemainingInstances", "true")),
                 "ordering": obj.get("ordering"),
-            }
-        )
-        return cls(**attribs)
-
-
-@dataclass(kw_only=True)
-class Transaction(SubProcess):
-    """A Transaction has a special behavior that is controlled through a transaction protocol."""
-
-    method: str | TransactionMethodValue = field(
-        default=TransactionMethodValue.COMPENSATE,
-        metadata={
-            "type": "Attribute",
-        },
-    )
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[Transaction]:
-        """Parse an XML object into a Transaction object."""
-        if obj is None:
-            return None
-
-        baseclass = SubProcess.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "method": obj.get("method", TransactionMethodValue.COMPENSATE),
             }
         )
         return cls(**attribs)

@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.process.global_task import GlobalTask
 from pybpmn_parser.bpmn.types import NAMESPACES, ImplementationValue
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -14,6 +15,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.activities.rendering import Rendering
 
 
+@register_element
 @dataclass(kw_only=True)
 class GlobalUserTask(GlobalTask):
     """A type of Global Task that represents a User Task."""
@@ -31,6 +33,10 @@ class GlobalUserTask(GlobalTask):
             "type": "Attribute",
         },
     )
+
+    class Meta:
+        name = "globalUserTask"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[GlobalUserTask]:

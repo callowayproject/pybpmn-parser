@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.choreography.choreography_activity import ChoreographyActivity
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -46,6 +47,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.gateway.parallel_gateway import ParallelGateway
 
 
+@register_element
 @dataclass(kw_only=True)
 class SubChoreography(ChoreographyActivity):
     """A SubChoreography is a compound activity that represents a collection of other tasks and SubChoreographies."""
@@ -332,6 +334,10 @@ class SubChoreography(ChoreographyActivity):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
+
+    class Meta:
+        name = "subChoreography"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[SubChoreography]:

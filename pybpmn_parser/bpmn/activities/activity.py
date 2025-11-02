@@ -8,7 +8,7 @@ from typing import TYPE_CHECKING, Optional
 from pybpmn_parser.bpmn.common.flow_node import FlowNode
 from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.core import strtobool
-from pybpmn_parser.plugins.registry import registry
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -25,6 +25,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.process.performer import HumanPerformer, Performer, PotentialOwner
 
 
+@register_element
 @dataclass(kw_only=True)
 class Activity(FlowNode):  # Is Abstract
     """
@@ -203,6 +204,10 @@ class Activity(FlowNode):  # Is Abstract
 
     The default Sequence Flow should not have a `conditionExpression`. Any such Expression is ignored."""
 
+    class Meta:
+        name = "activity"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
+
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Activity]:
         """Parse an object into this element."""
@@ -254,8 +259,5 @@ class Activity(FlowNode):  # Is Abstract
                 "properties": [Property.parse(elem) for elem in obj.findall("./bpmn:property", NAMESPACES)],
             }
         )
-        tag = obj.tag.split("}")[-1]
-        extensions = registry.get_plugins_for_tag(tag)
-        print(extensions)
 
         return cls(**attribs)

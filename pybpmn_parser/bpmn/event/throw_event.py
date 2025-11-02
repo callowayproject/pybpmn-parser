@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.event import Event
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -14,12 +15,12 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.data.data_association import DataInputAssociation
     from pybpmn_parser.bpmn.data.data_input import DataInput
     from pybpmn_parser.bpmn.data.input_set import InputSet
-    from pybpmn_parser.bpmn.event_definition import EventDefinition
     from pybpmn_parser.bpmn.event_definition.cancel_event_definition import CancelEventDefinition
     from pybpmn_parser.bpmn.event_definition.compensate_event_definition import CompensateEventDefinition
     from pybpmn_parser.bpmn.event_definition.conditional_event_definition import ConditionalEventDefinition
     from pybpmn_parser.bpmn.event_definition.error_event_definition import ErrorEventDefinition
     from pybpmn_parser.bpmn.event_definition.escalation_event_definition import EscalationEventDefinition
+    from pybpmn_parser.bpmn.event_definition.event_definition import EventDefinition
     from pybpmn_parser.bpmn.event_definition.link_event_definition import LinkEventDefinition
     from pybpmn_parser.bpmn.event_definition.message_event_definition import MessageEventDefinition
     from pybpmn_parser.bpmn.event_definition.signal_event_definition import SignalEventDefinition
@@ -27,6 +28,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.event_definition.timer_event_definition import TimerEventDefinition
 
 
+@register_element
 @dataclass(kw_only=True)
 class ThrowEvent(Event):  # Is Abstract
     """Throw events are used to "emit" a particular type of event."""
@@ -153,18 +155,22 @@ class ThrowEvent(Event):  # Is Abstract
         },
     )
 
+    class Meta:
+        name = "throwEvent"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
+
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[ThrowEvent]:
         """Parse the XML element and return an object of this class."""
         from pybpmn_parser.bpmn.data.data_association import DataInputAssociation
         from pybpmn_parser.bpmn.data.data_input import DataInput
         from pybpmn_parser.bpmn.data.input_set import InputSet
-        from pybpmn_parser.bpmn.event_definition import EventDefinition
         from pybpmn_parser.bpmn.event_definition.cancel_event_definition import CancelEventDefinition
         from pybpmn_parser.bpmn.event_definition.compensate_event_definition import CompensateEventDefinition
         from pybpmn_parser.bpmn.event_definition.conditional_event_definition import ConditionalEventDefinition
         from pybpmn_parser.bpmn.event_definition.error_event_definition import ErrorEventDefinition
         from pybpmn_parser.bpmn.event_definition.escalation_event_definition import EscalationEventDefinition
+        from pybpmn_parser.bpmn.event_definition.event_definition import EventDefinition
         from pybpmn_parser.bpmn.event_definition.link_event_definition import LinkEventDefinition
         from pybpmn_parser.bpmn.event_definition.message_event_definition import MessageEventDefinition
         from pybpmn_parser.bpmn.event_definition.signal_event_definition import SignalEventDefinition

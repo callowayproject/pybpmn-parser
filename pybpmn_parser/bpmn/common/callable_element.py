@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import RootElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -15,6 +16,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.data.io_specification import IoSpecification
 
 
+@register_element
 @dataclass(kw_only=True)
 class CallableElement(RootElement):  # Is Abstract
     """A CallableElement allows it to be referenced and reused by other Processes."""
@@ -50,6 +52,10 @@ class CallableElement(RootElement):  # Is Abstract
             "type": "Attribute",
         },
     )
+
+    class Meta:
+        name = "callableElement"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[CallableElement]:

@@ -8,14 +8,20 @@ from typing import TYPE_CHECKING, Optional
 from pybpmn_parser.bpmn.gateway import Gateway
 from pybpmn_parser.bpmn.types import EventBasedGatewayType
 from pybpmn_parser.core import strtobool
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class EventBasedGateway(Gateway):
     """The Event-Based Gateway represents a branching point in the Process based on Events that occur."""
+
+    class Meta:
+        name = "eventBasedGateway"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     instantiate: bool = field(
         default=False,

@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.common.callable_element import CallableElement
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -15,6 +16,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.process.performer import HumanPerformer, Performer, PotentialOwner
 
 
+@register_element
 @dataclass(kw_only=True)
 class GlobalTask(CallableElement):
     """A Global Task is a reusable, Task definition that can be called from within any Process by a Call Activity."""
@@ -60,6 +62,10 @@ class GlobalTask(CallableElement):
 
     The resource, e.g., a performer, can be specified in the form of a specific individual, a group, an organization
     role or position, or an organization."""
+
+    class Meta:
+        name = "globalTask"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[GlobalTask]:

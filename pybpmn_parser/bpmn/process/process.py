@@ -8,10 +8,14 @@ from typing import TYPE_CHECKING, Optional
 from pybpmn_parser.bpmn.common.callable_element import CallableElement
 from pybpmn_parser.bpmn.types import NAMESPACES, ProcessType
 from pybpmn_parser.core import strtobool
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
+    # from pybpmn_parser.bpmn.choreography.call_choreography import CallChoreography
+    # from pybpmn_parser.bpmn.choreography.choreography_task import ChoreographyTask
+    # from pybpmn_parser.bpmn.choreography.sub_choreography import SubChoreography
     from pybpmn_parser.bpmn.activities.business_rule_task import BusinessRuleTask
     from pybpmn_parser.bpmn.activities.call_activity import CallActivity
     from pybpmn_parser.bpmn.activities.manual_task import ManualTask
@@ -23,9 +27,6 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.activities.sub_process import AdHocSubProcess, SubProcess, Transaction
     from pybpmn_parser.bpmn.activities.task import Task
     from pybpmn_parser.bpmn.activities.user_task import UserTask
-    from pybpmn_parser.bpmn.choreography.call_choreography import CallChoreography
-    from pybpmn_parser.bpmn.choreography.choreography_task import ChoreographyTask
-    from pybpmn_parser.bpmn.choreography.sub_choreography import SubChoreography
     from pybpmn_parser.bpmn.common.artifact import Artifact
     from pybpmn_parser.bpmn.common.association import Association
     from pybpmn_parser.bpmn.common.correlation_subscription import CorrelationSubscription
@@ -55,6 +56,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.process.performer import HumanPerformer, Performer, PotentialOwner
 
 
+@register_element
 @dataclass(kw_only=True)
 class Process(CallableElement):
     """
@@ -82,6 +84,7 @@ class Process(CallableElement):
     properties: list[Property] = field(
         default_factory=list,
         metadata={
+            "name": "property",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -111,6 +114,7 @@ class Process(CallableElement):
     transactions: list[Transaction] = field(
         default_factory=list,
         metadata={
+            "name": "transaction",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -118,6 +122,7 @@ class Process(CallableElement):
     tasks: list[Task] = field(
         default_factory=list,
         metadata={
+            "name": "task",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -130,14 +135,14 @@ class Process(CallableElement):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    sub_choreographies: list[SubChoreography] = field(
-        default_factory=list,
-        metadata={
-            "name": "subChoreography",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
+    # sub_choreographies: list[SubChoreography] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "subChoreography",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
     start_events: list[StartEvent] = field(
         default_factory=list,
         metadata={
@@ -297,22 +302,22 @@ class Process(CallableElement):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    choreography_tasks: list[ChoreographyTask] = field(
-        default_factory=list,
-        metadata={
-            "name": "choreographyTask",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
-    call_choreographies: list[CallChoreography] = field(
-        default_factory=list,
-        metadata={
-            "name": "callChoreography",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
+    # choreography_tasks: list[ChoreographyTask] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "choreographyTask",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
+    # call_choreographies: list[CallChoreography] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "callChoreography",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
     call_activities: list[CallActivity] = field(
         default_factory=list,
         metadata={
@@ -364,6 +369,7 @@ class Process(CallableElement):
     groups: list[Group] = field(
         default_factory=list,
         metadata={
+            "name": "group",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -371,6 +377,7 @@ class Process(CallableElement):
     associations: list[Association] = field(
         default_factory=list,
         metadata={
+            "name": "association",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -378,6 +385,7 @@ class Process(CallableElement):
     artifacts: list[Artifact] = field(
         default_factory=list,
         metadata={
+            "name": "artifact",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -407,6 +415,7 @@ class Process(CallableElement):
     performers: list[Performer] = field(
         default_factory=list,
         metadata={
+            "name": "performer",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -485,6 +494,10 @@ class Process(CallableElement):
 
     More specifically, which individual service, Send or Receive Task, or Message Event, is connected to which
     Participant through Message Flows."""
+
+    class Meta:
+        name = "process"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Process]:

@@ -9,14 +9,16 @@ import xmltodict
 from lxml import etree as ET
 
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
+    # from pybpmn_parser.bpmn.choreography.choreography import Choreography
+    # from pybpmn_parser.bpmn.choreography.global_choreography_task import GlobalChoreographyTask
+
     from pybpmn_parser.bpmn.activities.global_business_rule_task import GlobalBusinessRuleTask
     from pybpmn_parser.bpmn.activities.global_manual_task import GlobalManualTask
     from pybpmn_parser.bpmn.activities.global_script_task import GlobalScriptTask
     from pybpmn_parser.bpmn.activities.global_user_task import GlobalUserTask
-    from pybpmn_parser.bpmn.choreography.choreography import Choreography
-    from pybpmn_parser.bpmn.choreography.global_choreography_task import GlobalChoreographyTask
     from pybpmn_parser.bpmn.collaboration.collaboration import Collaboration
     from pybpmn_parser.bpmn.collaboration.participant import PartnerEntity, PartnerRole
     from pybpmn_parser.bpmn.common.category import Category
@@ -29,12 +31,12 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.data.data_store import DataStore
     from pybpmn_parser.bpmn.event.escalation import Escalation
     from pybpmn_parser.bpmn.event.signal import Signal
-    from pybpmn_parser.bpmn.event_definition import EventDefinition
     from pybpmn_parser.bpmn.event_definition.cancel_event_definition import CancelEventDefinition
     from pybpmn_parser.bpmn.event_definition.compensate_event_definition import CompensateEventDefinition
     from pybpmn_parser.bpmn.event_definition.conditional_event_definition import ConditionalEventDefinition
     from pybpmn_parser.bpmn.event_definition.error_event_definition import ErrorEventDefinition
     from pybpmn_parser.bpmn.event_definition.escalation_event_definition import EscalationEventDefinition
+    from pybpmn_parser.bpmn.event_definition.event_definition import EventDefinition
     from pybpmn_parser.bpmn.event_definition.link_event_definition import LinkEventDefinition
     from pybpmn_parser.bpmn.event_definition.message_event_definition import MessageEventDefinition
     from pybpmn_parser.bpmn.event_definition.signal_event_definition import SignalEventDefinition
@@ -50,6 +52,7 @@ if TYPE_CHECKING:
     from pybpmn_parser.bpmn.service.interface import Interface
 
 
+@register_element
 @dataclass(kw_only=True)
 class Definitions:
     """
@@ -59,7 +62,7 @@ class Definitions:
     The interchange of BPMN files will always be through one or more Definitions.
     """
 
-    import_values: list[Import] = field(
+    imports: list[Import] = field(
         default_factory=list,
         metadata={
             "name": "import",
@@ -70,6 +73,7 @@ class Definitions:
     extensions: list[Extension] = field(
         default_factory=list,
         metadata={
+            "name": "extension",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -77,6 +81,7 @@ class Definitions:
     signals: list[Signal] = field(
         default_factory=list,
         metadata={
+            "name": "signal",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -84,6 +89,7 @@ class Definitions:
     resources: list[Resource] = field(
         default_factory=list,
         metadata={
+            "name": "resource",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -91,6 +97,7 @@ class Definitions:
     processes: list[Process] = field(
         default_factory=list,
         metadata={
+            "name": "process",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -114,6 +121,7 @@ class Definitions:
     messages: list[Message] = field(
         default_factory=list,
         metadata={
+            "name": "message",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -129,6 +137,7 @@ class Definitions:
     interfaces: list[Interface] = field(
         default_factory=list,
         metadata={
+            "name": "interface",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -264,6 +273,7 @@ class Definitions:
     escalations: list[Escalation] = field(
         default_factory=list,
         metadata={
+            "name": "escalation",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -271,6 +281,7 @@ class Definitions:
     errors: list[Error] = field(
         default_factory=list,
         metadata={
+            "name": "error",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -307,24 +318,26 @@ class Definitions:
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    global_choreography_tasks: list[GlobalChoreographyTask] = field(
-        default_factory=list,
-        metadata={
-            "name": "globalChoreographyTask",
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
-    choreographies: list[Choreography] = field(
-        default_factory=list,
-        metadata={
-            "type": "Element",
-            "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-        },
-    )
+    # global_choreography_tasks: list[GlobalChoreographyTask] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "globalChoreographyTask",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
+    # choreographies: list[Choreography] = field(
+    #     default_factory=list,
+    #     metadata={
+    #         "name": "choreography",
+    #         "type": "Element",
+    #         "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+    #     },
+    # )
     collaborations: list[Collaboration] = field(
         default_factory=list,
         metadata={
+            "name": "collaboration",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -332,6 +345,7 @@ class Definitions:
     categories: list[Category] = field(
         default_factory=list,
         metadata={
+            "name": "category",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -355,6 +369,7 @@ class Definitions:
     relationships: list[Relationship] = field(
         default_factory=list,
         metadata={
+            "name": "relationship",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -406,15 +421,19 @@ class Definitions:
         },
     )
 
+    class Meta:
+        name = "definitions"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
+
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Definitions]:
         """Parse an XML element into a Definitions object."""
+        # from pybpmn_parser.bpmn.choreography.choreography import Choreography
+        # from pybpmn_parser.bpmn.choreography.global_choreography_task import GlobalChoreographyTask
         from pybpmn_parser.bpmn.activities.global_business_rule_task import GlobalBusinessRuleTask
         from pybpmn_parser.bpmn.activities.global_manual_task import GlobalManualTask
         from pybpmn_parser.bpmn.activities.global_script_task import GlobalScriptTask
         from pybpmn_parser.bpmn.activities.global_user_task import GlobalUserTask
-        from pybpmn_parser.bpmn.choreography.choreography import Choreography
-        from pybpmn_parser.bpmn.choreography.global_choreography_task import GlobalChoreographyTask
         from pybpmn_parser.bpmn.collaboration.collaboration import Collaboration
         from pybpmn_parser.bpmn.collaboration.participant import PartnerEntity, PartnerRole
         from pybpmn_parser.bpmn.common.category import Category
@@ -427,12 +446,12 @@ class Definitions:
         from pybpmn_parser.bpmn.data.data_store import DataStore
         from pybpmn_parser.bpmn.event.escalation import Escalation
         from pybpmn_parser.bpmn.event.signal import Signal
-        from pybpmn_parser.bpmn.event_definition import EventDefinition
         from pybpmn_parser.bpmn.event_definition.cancel_event_definition import CancelEventDefinition
         from pybpmn_parser.bpmn.event_definition.compensate_event_definition import CompensateEventDefinition
         from pybpmn_parser.bpmn.event_definition.conditional_event_definition import ConditionalEventDefinition
         from pybpmn_parser.bpmn.event_definition.error_event_definition import ErrorEventDefinition
         from pybpmn_parser.bpmn.event_definition.escalation_event_definition import EscalationEventDefinition
+        from pybpmn_parser.bpmn.event_definition.event_definition import EventDefinition
         from pybpmn_parser.bpmn.event_definition.link_event_definition import LinkEventDefinition
         from pybpmn_parser.bpmn.event_definition.message_event_definition import MessageEventDefinition
         from pybpmn_parser.bpmn.event_definition.signal_event_definition import SignalEventDefinition
@@ -465,10 +484,10 @@ class Definitions:
             "root_elements": [RootElement.parse(elem) for elem in obj.findall("./bpmn:rootElement", NAMESPACES)],
             "categories": [Category.parse(elem) for elem in obj.findall("./bpmn:category", NAMESPACES)],
             "collaborations": [Collaboration.parse(elem) for elem in obj.findall("./bpmn:collaboration", NAMESPACES)],
-            "choreographies": [Choreography.parse(elem) for elem in obj.findall("./bpmn:choreography", NAMESPACES)],
-            "global_choreography_tasks": [
-                GlobalChoreographyTask.parse(elem) for elem in obj.findall("./bpmn:globalChoreographyTask", NAMESPACES)
-            ],
+            # "choreographies": [Choreography.parse(elem) for elem in obj.findall("./bpmn:choreography", NAMESPACES)],
+            # "global_choreography_tasks": [
+            # GlobalChoreographyTask.parse(elem) for elem in obj.findall("./bpmn:globalChoreographyTask", NAMESPACES)
+            # ],
             "global_conversations": [
                 GlobalConversation.parse(elem) for elem in obj.findall("./bpmn:globalConversation", NAMESPACES)
             ],
@@ -542,7 +561,7 @@ class Definitions:
             "resources": [Resource.parse(elem) for elem in obj.findall("./bpmn:resource", NAMESPACES)],
             "signals": [Signal.parse(elem) for elem in obj.findall("./bpmn:signal", NAMESPACES)],
             "extensions": [Extension.parse(elem) for elem in obj.findall("./bpmn:extension", NAMESPACES)],
-            "import_values": [Import.parse(elem) for elem in obj.findall("./bpmn:import", NAMESPACES)],
+            "imports": [Import.parse(elem) for elem in obj.findall("./bpmn:import", NAMESPACES)],
         }
 
         return cls(**attribs)

@@ -6,11 +6,13 @@ from dataclasses import dataclass, field, fields
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import RootElement
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class Escalation(RootElement):
     """An Escalation identifies a business situation that a Process might need to react to."""
@@ -36,6 +38,10 @@ class Escalation(RootElement):
             "is_reference": True,
         },
     )
+
+    class Meta:
+        name = "escalation"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[Escalation]:

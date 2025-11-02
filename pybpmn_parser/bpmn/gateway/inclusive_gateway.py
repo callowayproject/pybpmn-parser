@@ -6,14 +6,20 @@ from dataclasses import dataclass, field, fields
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.gateway import Gateway
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
 
 
+@register_element
 @dataclass(kw_only=True)
 class InclusiveGateway(Gateway):
     """An Inclusive Gateway can be used to create alternative but also parallel paths within a Process flow."""
+
+    class Meta:
+        name = "inclusiveGateway"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     default: Optional[str] = field(
         default=None,

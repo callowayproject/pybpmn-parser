@@ -6,6 +6,7 @@ from dataclasses import dataclass, field, fields
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import RootElement
+from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
     from lxml import etree as ET
@@ -15,6 +16,7 @@ if TYPE_CHECKING:
     )
 
 
+@register_element
 @dataclass(kw_only=True)
 class CorrelationProperty(RootElement):
     """A CorrelationProperty is part of an associated CorrelationKey."""
@@ -42,6 +44,10 @@ class CorrelationProperty(RootElement):
             "is_reference": True,
         },
     )
+
+    class Meta:
+        name = "correlationProperty"
+        namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
     def parse(cls, obj: Optional[ET.Element]) -> Optional[CorrelationProperty]:
