@@ -6,7 +6,6 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.element_registry import register_element
-from pybpmn_parser.plugins.old.registry import registry
 
 if TYPE_CHECKING:
     import lxml.etree as ET
@@ -78,8 +77,8 @@ class BaseElement:  # Is Abstract
             ],
         }
 
-        extension_parsers = registry.get_parser_for_tag(obj.tag, obj.prefix)
-        print(f"{obj.tag}, {obj.prefix} Extension parsers: {extension_parsers}")
+        # extension_parsers = registry.get_parser_for_tag(obj.tag, obj.prefix)
+        # print(f"{obj.tag}, {obj.prefix} Extension parsers: {extension_parsers}")
 
         return cls(**attributes)
 

@@ -45,7 +45,7 @@ class FormalExpression(Expression):
     )
 
     class Meta:
-        name = "tFormalExpression"
+        name = "formalExpression"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @classmethod
