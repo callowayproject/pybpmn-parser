@@ -8,5 +8,6 @@ This directory contains XML schema files for BPMN 2.0 validation.
 - `DC.xsd` - Diagram Commons schema
 - `DI.xsd` - Diagram Interchange schema
 - `BPMNDI.xsd` - BPMN Diagram Interchange schema
+- `BPMNcolor.xsd` - BPMN Color schema
 
 These files are from the official OMG BPMN 2.0 specification.
