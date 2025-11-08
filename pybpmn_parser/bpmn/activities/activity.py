@@ -47,6 +47,7 @@ class Activity(FlowNode):  # Is Abstract
     properties: list[Property] = field(
         default_factory=list,
         metadata={
+            "name": "property",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -98,6 +99,7 @@ class Activity(FlowNode):  # Is Abstract
     performers: list[Performer] = field(
         default_factory=list,
         metadata={
+            "name": "performer",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },

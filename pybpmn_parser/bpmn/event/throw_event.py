@@ -33,7 +33,7 @@ if TYPE_CHECKING:
 class ThrowEvent(Event):  # Is Abstract
     """Throw events are used to "emit" a particular type of event."""
 
-    data_input: list[DataInput] = field(
+    data_inputs: list[DataInput] = field(
         default_factory=list,
         metadata={
             "name": "dataInput",
@@ -41,7 +41,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    data_input_association: list[DataInputAssociation] = field(
+    data_input_associations: list[DataInputAssociation] = field(
         default_factory=list,
         metadata={
             "name": "dataInputAssociation",
@@ -57,7 +57,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    timer_event_definition: list[TimerEventDefinition] = field(
+    timer_event_definitions: list[TimerEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "timerEventDefinition",
@@ -65,7 +65,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    terminate_event_definition: list[TerminateEventDefinition] = field(
+    terminate_event_definitions: list[TerminateEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "terminateEventDefinition",
@@ -73,7 +73,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    signal_event_definition: list[SignalEventDefinition] = field(
+    signal_event_definitions: list[SignalEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "signalEventDefinition",
@@ -81,7 +81,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    message_event_definition: list[MessageEventDefinition] = field(
+    message_event_definitions: list[MessageEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "messageEventDefinition",
@@ -89,7 +89,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    link_event_definition: list[LinkEventDefinition] = field(
+    link_event_definitions: list[LinkEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "linkEventDefinition",
@@ -97,7 +97,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    escalation_event_definition: list[EscalationEventDefinition] = field(
+    escalation_event_definitions: list[EscalationEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "escalationEventDefinition",
@@ -105,7 +105,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    error_event_definition: list[ErrorEventDefinition] = field(
+    error_event_definitions: list[ErrorEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "errorEventDefinition",
@@ -113,7 +113,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    conditional_event_definition: list[ConditionalEventDefinition] = field(
+    conditional_event_definitions: list[ConditionalEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "conditionalEventDefinition",
@@ -121,7 +121,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    compensate_event_definition: list[CompensateEventDefinition] = field(
+    compensate_event_definitions: list[CompensateEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "compensateEventDefinition",
@@ -129,7 +129,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    cancel_event_definition: list[CancelEventDefinition] = field(
+    cancel_event_definitions: list[CancelEventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "cancelEventDefinition",
@@ -137,7 +137,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    event_definition: list[EventDefinition] = field(
+    event_definitions: list[EventDefinition] = field(
         default_factory=list,
         metadata={
             "name": "eventDefinition",
@@ -145,7 +145,7 @@ class ThrowEvent(Event):  # Is Abstract
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    event_definition_ref: list[str] = field(
+    event_definition_refs: list[str] = field(
         default_factory=list,
         metadata={
             "name": "eventDefinitionRef",
@@ -184,50 +184,50 @@ class ThrowEvent(Event):  # Is Abstract
         attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
         attribs.update(
             {
-                "cancel_event_definition": [
+                "cancel_event_definitions": [
                     CancelEventDefinition.parse(elem)
                     for elem in obj.findall("./bpmn:cancelEventDefinition", NAMESPACES)
                 ],
-                "compensate_event_definition": [
+                "compensate_event_definitions": [
                     CompensateEventDefinition.parse(elem)
                     for elem in obj.findall("./bpmn:compensateEventDefinition", NAMESPACES)
                 ],
-                "conditional_event_definition": [
+                "conditional_event_definitions": [
                     ConditionalEventDefinition.parse(elem)
                     for elem in obj.findall("./bpmn:conditionalEventDefinition", NAMESPACES)
                 ],
-                "data_input": [DataInput.parse(elem) for elem in obj.findall("./bpmn:dataInput", NAMESPACES)],
-                "data_input_association": [
+                "data_inputs": [DataInput.parse(elem) for elem in obj.findall("./bpmn:dataInput", NAMESPACES)],
+                "data_input_associations": [
                     DataInputAssociation.parse(elem) for elem in obj.findall("./bpmn:dataInputAssociation", NAMESPACES)
                 ],
-                "error_event_definition": [
+                "error_event_definitions": [
                     ErrorEventDefinition.parse(elem) for elem in obj.findall("./bpmn:errorEventDefinition", NAMESPACES)
                 ],
-                "escalation_event_definition": [
+                "escalation_event_definitions": [
                     EscalationEventDefinition.parse(elem)
                     for elem in obj.findall("./bpmn:escalationEventDefinition", NAMESPACES)
                 ],
-                "event_definition": [
+                "event_definitions": [
                     EventDefinition.parse(elem) for elem in obj.findall("./bpmn:eventDefinition", NAMESPACES)
                 ],
-                "event_definition_ref": [elem.text for elem in obj.findall("./bpmn:eventDefinitionRef", NAMESPACES)],
+                "event_definition_refs": [elem.text for elem in obj.findall("./bpmn:eventDefinitionRef", NAMESPACES)],
                 "input_set": InputSet.parse(obj.find("./bpmn:inputSet", NAMESPACES)),
-                "link_event_definition": [
+                "link_event_definitions": [
                     LinkEventDefinition.parse(elem) for elem in obj.findall("./bpmn:linkEventDefinition", NAMESPACES)
                 ],
-                "message_event_definition": [
+                "message_event_definitions": [
                     MessageEventDefinition.parse(elem)
                     for elem in obj.findall("./bpmn:messageEventDefinition", NAMESPACES)
                 ],
-                "signal_event_definition": [
+                "signal_event_definitions": [
                     SignalEventDefinition.parse(elem)
                     for elem in obj.findall("./bpmn:signalEventDefinition", NAMESPACES)
                 ],
-                "terminate_event_definition": [
+                "terminate_event_definitions": [
                     TerminateEventDefinition.parse(elem)
                     for elem in obj.findall("./bpmn:terminateEventDefinition", NAMESPACES)
                 ],
-                "timer_event_definition": [
+                "timer_event_definitions": [
                     TimerEventDefinition.parse(elem) for elem in obj.findall("./bpmn:timerEventDefinition", NAMESPACES)
                 ],
             }

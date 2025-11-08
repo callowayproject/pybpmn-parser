@@ -28,6 +28,7 @@ class UserTask(Task):
     renderings: list[Rendering] = field(
         default_factory=list,
         metadata={
+            "name": "rendering",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },

@@ -27,6 +27,7 @@ class Interface(RootElement):
     operations: list[Operation] = field(
         default_factory=list,
         metadata={
+            "name": "operation",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
             "min_occurs": 1,

@@ -258,6 +258,7 @@ class Process(CallableElement):
     events: list[Event] = field(
         default_factory=list,
         metadata={
+            "name": "event",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },

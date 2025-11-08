@@ -32,6 +32,7 @@ class SubConversation(ConversationNode):
     conversations: list[Conversation] = field(
         default_factory=list,
         metadata={
+            "name": "conversation",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },

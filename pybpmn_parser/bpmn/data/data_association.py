@@ -51,6 +51,7 @@ class DataAssociation(BaseElement):
     assignments: list[Assignment] = field(
         default_factory=list,
         metadata={
+            "name": "assignment",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },

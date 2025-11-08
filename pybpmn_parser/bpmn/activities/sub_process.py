@@ -78,6 +78,7 @@ class TransactionlessSubProcess(Activity):
     tasks: list[Task] = field(
         default_factory=list,
         metadata={
+            "name": "task",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -205,6 +206,7 @@ class TransactionlessSubProcess(Activity):
     events: list[Event] = field(
         default_factory=list,
         metadata={
+            "name": "event",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -308,6 +310,7 @@ class TransactionlessSubProcess(Activity):
     groups: list[Group] = field(
         default_factory=list,
         metadata={
+            "name": "group",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -315,6 +318,7 @@ class TransactionlessSubProcess(Activity):
     associations: list[Association] = field(
         default_factory=list,
         metadata={
+            "name": "association",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -322,6 +326,7 @@ class TransactionlessSubProcess(Activity):
     artifacts: list[Artifact] = field(
         default_factory=list,
         metadata={
+            "name": "artifact",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -361,6 +366,7 @@ class Transaction(TransactionlessSubProcess):
     transactions: list[Transaction] = field(
         default_factory=list,
         metadata={
+            "name": "transaction",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -384,7 +390,7 @@ class Transaction(TransactionlessSubProcess):
 
 @register_element
 @dataclass(kw_only=True)
-class SubProcess(Activity):
+class SubProcess(TransactionlessSubProcess):
     """A SubProcess is a compound activity that represents a collection of other tasks and SubProcesses."""
 
     class Meta:
@@ -402,6 +408,7 @@ class SubProcess(Activity):
     transactions: list[Transaction] = field(
         default_factory=list,
         metadata={
+            "name": "transaction",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },

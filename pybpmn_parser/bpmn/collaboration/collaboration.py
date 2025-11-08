@@ -38,6 +38,7 @@ class Collaboration(RootElement):
     participants: list[Participant] = field(
         default_factory=list,
         metadata={
+            "name": "participant",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -61,6 +62,7 @@ class Collaboration(RootElement):
     groups: list[Group] = field(
         default_factory=list,
         metadata={
+            "name": "group",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -68,6 +70,7 @@ class Collaboration(RootElement):
     associations: list[Association] = field(
         default_factory=list,
         metadata={
+            "name": "association",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -75,6 +78,7 @@ class Collaboration(RootElement):
     artifacts: list[Artifact] = field(
         default_factory=list,
         metadata={
+            "name": "artifact",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
@@ -90,6 +94,7 @@ class Collaboration(RootElement):
     conversations: list[Conversation] = field(
         default_factory=list,
         metadata={
+            "name": "conversation",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },

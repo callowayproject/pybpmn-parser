@@ -78,7 +78,7 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    complex_behavior_definition: list[ComplexBehaviorDefinition] = field(
+    complex_behavior_definitions: list[ComplexBehaviorDefinition] = field(
         default_factory=list,
         metadata={
             "name": "complexBehaviorDefinition",
@@ -149,7 +149,7 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
                 "loop_data_output_ref": loop_data_output_ref.text if loop_data_output_ref is not None else None,
                 "input_data_item": DataInput.parse(obj.find("./bpmn:inputDataItem", NAMESPACES)),
                 "output_data_item": DataOutput.parse(obj.find("./bpmn:outputDataItem", NAMESPACES)),
-                "complex_behavior_definition": [
+                "complex_behavior_definitions": [
                     ComplexBehaviorDefinition.parse(elem)
                     for elem in obj.findall("./bpmn:complexBehaviorDefinition", NAMESPACES)
                 ],
