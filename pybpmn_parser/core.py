@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass, fields, is_dataclass
 from enum import Enum
 from typing import Any, Callable, Dict, Optional
@@ -21,16 +20,6 @@ def get_fields_by_metadata(data_class: Any, key: str, val: Any) -> dict[str, Any
     return {
         field.name: getattr(data_class, field.name) for field in fields(data_class) if field.metadata.get(key) == val
     }
-
-
-def camel_to_snake_case(name: str) -> str:
-    """
-    Converts a camelCase string to snake_case.
-    """
-    # Insert an underscore before any uppercase letter that is not at the beginning
-    # and is not preceded by another uppercase letter (to handle acronyms like "HTTPHeader")
-    name = re.sub(r"(?<!^)(?=[A-Z])", "_", name)
-    return name.lower()
 
 
 @dataclass(frozen=True, slots=True)
@@ -55,18 +44,20 @@ class QName:
     ) -> QName:
         """Parse a QName from a string."""
         nsmap = nsmap or {}
+        default_uri = default_uri or nsmap.get(default_prefix, None)
+
         if qname.startswith("{"):
             uri, local = qname[1:].split("}")
             return cls(local, uri)
+
         if ":" in qname:
             prefix, local = qname.split(":")
-        else:
-            prefix = default_prefix
-            local = qname
-        uri = nsmap.get(prefix, default_uri)
-        if uri is None:
-            raise ValueError(f"Prefix {prefix} is not defined in the namespace map.")
-        return cls(local, uri)
+            uri = nsmap.get(prefix, default_uri)
+            if not uri:
+                raise ValueError(f"Prefix {prefix} is not defined in the namespace map.")
+            return cls(local, uri)
+
+        return cls(qname, default_uri)
 
 
 def default_empty_predicate(x: Any) -> bool:
@@ -135,7 +126,6 @@ def convert_dict(
     Converts a dictionary by transforming its keys and values and omitting entries depending on a given predicate.
 
     Summary:
-    - Keys that are dataclasses are recursively converted.
     - Keys that are Enum instances are processed based on the provided `enum_as` behavior.
     - Remaining keys are left unaltered.
     - Values are always recursively converted using internal conversion logic.
@@ -157,13 +147,7 @@ def convert_dict(
     """
     out: Dict[Any, Any] = {}
     for k, v in value.items():
-        # Convert keys only if they are dataclasses or Enums; otherwise keep as-is
-        if is_dataclass(k):
-            ck = _convert(k)
-        elif isinstance(k, Enum):
-            ck = _enum_to_primitive(k, enum_as=enum_as)
-        else:
-            ck = k
+        ck = _enum_to_primitive(k, enum_as=enum_as) if isinstance(k, Enum) else k
         cv = _convert(v)
         if skip_empty and empty_predicate(cv):
             continue
