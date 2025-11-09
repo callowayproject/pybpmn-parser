@@ -42,8 +42,8 @@ class Documentation:
 
     content: str = field(
         metadata={
+            "name": "#text",
             "type": "Wildcard",
-            "namespace": "##any",
             "mixed": True,
         },
     )
