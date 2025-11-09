@@ -1,43 +1,64 @@
 """Parse a BPMN file."""
 
 from pathlib import Path
+from typing import Any, Optional
 
-import lxml.etree as ET
+import xmltodict
 
-from pybpmn_parser.bpmn.infrastructure.definitions import Definitions
+from pybpmn_parser.bpmn import load_classes
+from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.factory import create_bpmn
+from pybpmn_parser.plugins import load_default_plugins
+from pybpmn_parser.plugins.moddle import convert_moddle_registry, load_moddle_file
 from pybpmn_parser.validator import validate
 
 
-def parse_file(xml_file: Path) -> Definitions:
-    """
-    Parse a BPMN XML file into internal representation.
+class Parser:
+    """A parser for BPMN files."""
 
-    Args:
-        xml_file: The path to a BPMN XML file
+    def __init__(self, moddle_extensions: Optional[list[Path]] = None, ns_map: Optional[dict[str, str]] = None):
+        load_classes()
+        load_default_plugins()
+        self.ns_map = NAMESPACES.copy()
+        if ns_map:
+            self.ns_map.update(ns_map)
+        self.moddle_extensions = moddle_extensions or []
+        for extension_path in self.moddle_extensions:
+            load_moddle_file(extension_path)
+        convert_moddle_registry()
 
-    Returns:
-        Definitions object
-    """
-    xml = xml_file.read_text(encoding="utf-8")
-    return parse(xml)
+    def parse_file(self, xml_file: Path) -> Any:
+        """
+        Parse a BPMN XML file into internal representation.
 
+        Args:
+            xml_file: The path to a BPMN XML file
 
-def parse(xml_str: str) -> Definitions:
-    """
-    Parse a BPMN XML string into internal representation.
+        Returns:
+            Definitions object
+        """
+        xml = xml_file.read_text(encoding="utf-8")
+        return self.parse_string(xml)
 
-    Args:
-        xml_str: A BPMN XML string
+    def parse_string(self, xml_str: str) -> Any:
+        """
+        Parse a BPMN XML string into internal representation.
 
-    Returns:
-        Dictionary containing parsed nodes and flows
-    """
-    # Validate XML first
-    validation_result = validate(xml_str)
-    for error in validation_result.errors:
-        print(error)
-    validation_result.raise_for_errors()
+        Args:
+            xml_str: A BPMN XML string
 
-    # Parse root element
-    root: ET.Element = ET.fromstring(xml_str.encode("utf-8"))
-    return Definitions.parse(root)
+        Returns:
+            Dictionary containing parsed nodes and flows
+        """
+        # Validate XML first
+        validation_result = validate(xml_str)
+        for error in validation_result.errors:
+            print(error)
+        validation_result.raise_for_errors()
+
+        # Parse root element
+        root = xmltodict.parse(xml_str)
+        result = create_bpmn(root, self.ns_map)
+        if isinstance(result, list) and len(result) == 1:
+            return result[0]
+        return result
