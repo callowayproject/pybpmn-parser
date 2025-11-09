@@ -4,11 +4,11 @@ import lxml.etree as ET  # noqa: N812
 
 from pybpmn_parser.validator import (
     ValidationError,
+    _get_unique_ids,
     _is_skippable_error,
     _parse_xml,
     _strip_extra_whitespace,
     _validate_flows,
-    _get_unique_ids,
     validate,
 )
 

@@ -1,757 +1,1259 @@
 {
-  "id": "_1373655174418",
-  "name": "B.1.0",
-  "target_namespace": "http://www.trisotech.com/definitions/_1373655174418",
-  "expression_language": "http://www.w3.org/1999/XPath",
-  "type_language": "http://www.w3.org/2001/XMLSchema",
-  "exporter": null,
-  "exporter_version": null,
-  "processes": [
+  "bpmndiagrams": [
     {
-      "id": "Process_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
-      "name": null,
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "tasks": [
+      "id": "Trisotech_Visio-_6",
+      "label_styles": [
         {
-          "id": "_c57a5344-213f-4834-a6c3-94ce878b413c",
-          "name": "Abstract Task 4",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
+          "font": {
+            "is_bold": false,
+            "is_italic": false,
+            "is_strike_through": false,
+            "is_underline": false,
+            "name": "Arial",
+            "size": 11.0
+          },
+          "id": "LS1373655174919"
         }
       ],
-      "start_events": [
-        {
-          "id": "_200f43e7-1385-46e2-a380-3ef16ebe7847",
-          "name": "Start Event None 1",
-          "parallel_multiple": false,
-          "is_interrupting": false,
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "_60ed96e6-5954-48de-861b-7d1e3c1fb23e",
-          "name": "",
-          "source_ref": "_200f43e7-1385-46e2-a380-3ef16ebe7847",
-          "target_ref": "_c57a5344-213f-4834-a6c3-94ce878b413c",
-          "is_immediate": null
-        },
-        {
-          "id": "_6c6288e8-43f6-4085-87c7-1ff21c38fe17",
-          "name": "",
-          "source_ref": "_c57a5344-213f-4834-a6c3-94ce878b413c",
-          "target_ref": "_ed405919-9fd6-47d0-bb00-9be7d5467efb",
-          "is_immediate": null
-        }
-      ],
-      "end_events": [
-        {
-          "id": "_ed405919-9fd6-47d0-bb00-9be7d5467efb",
-          "name": "End Event None 2",
-          "incoming": [
-            {}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WFP-6-1",
-      "name": null,
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "user_tasks": [
-        {
-          "id": "_f7eade87-bb98-47d3-85c7-66033a62b124",
-          "name": "User\nTask 2",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "tasks": [
-        {
-          "id": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
-          "name": "Abstract Task 1",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "start_events": [
-        {
-          "id": "_e314751e-5c3a-41f2-a1ae-4cb99efa0916",
-          "name": "Start Event Timer",
-          "parallel_multiple": false,
-          "is_interrupting": false,
-          "outgoing": [
-            {}
-          ],
-          "timer_event_definition": [
-            {}
-          ]
-        }
-      ],
-      "service_tasks": [
-        {
-          "id": "_ec919941-53ec-403d-97e1-6a163a063f21",
-          "name": "Service Task 3",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "_3eaa52c9-8d39-43d1-9528-b4047ff7fcdf",
-          "name": "",
-          "source_ref": "_e314751e-5c3a-41f2-a1ae-4cb99efa0916",
-          "target_ref": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
-          "is_immediate": null
-        },
-        {
-          "id": "_a1505d79-bbc0-42cf-866a-401a2f94b675",
-          "name": "",
-          "source_ref": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
-          "target_ref": "_f7eade87-bb98-47d3-85c7-66033a62b124",
-          "is_immediate": null
-        },
-        {
-          "id": "_ba610e14-bf4c-4150-a1b1-460fe6a29f83",
-          "name": "",
-          "source_ref": "_f7eade87-bb98-47d3-85c7-66033a62b124",
-          "target_ref": "_ec919941-53ec-403d-97e1-6a163a063f21",
-          "is_immediate": null
-        },
-        {
-          "id": "_bbb25218-69a3-4401-823f-22f468cbd80d",
-          "name": "",
-          "source_ref": "_ec919941-53ec-403d-97e1-6a163a063f21",
-          "target_ref": "_94efa7e0-2322-4fc3-a5bf-6c6296488927",
-          "is_immediate": null
-        }
-      ],
-      "end_events": [
-        {
-          "id": "_94efa7e0-2322-4fc3-a5bf-6c6296488927",
-          "name": "End Event None 1",
-          "incoming": [
-            {}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WFP-6-2",
-      "name": null,
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "lane_sets": [
-        {
-          "id": "ls_0623a9bd-fd34-462a-b09d-85cb5004be78",
-          "name": null,
-          "lane": [
-            {
-              "id": "_4a6df7ac-26d8-4718-ac05-90af463d5e23",
-              "name": "Lane 1",
-              "partition_element_ref": null,
-              "flow_node_refs": [
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {}
-              ]
+      "name": "B.1.0",
+      "plane": {
+        "bpmn_edges": [
+          {
+            "bpmn_element": "_54f45351-aa18-4c65-b0d0-edc3aa0a140d",
+            "id": "E1373655174963__54f45351-aa18-4c65-b0d0-edc3aa0a140d",
+            "waypoint": [
+              {
+                "x": 997.0,
+                "y": 783.0
+              },
+              {
+                "x": 1015.0,
+                "y": 783.0
+              },
+              {
+                "x": 1051.0,
+                "y": 783.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_5362a7ef-ce7e-4a91-9c38-66c07b1b5f49",
+            "id": "E1373655174964__5362a7ef-ce7e-4a91-9c38-66c07b1b5f49",
+            "label": {
+              "label_style": "LS1373655174919"
             },
-            {
-              "id": "_3400f56a-4565-47d1-91db-0ba17b958cb2",
-              "name": "Lane 2",
-              "partition_element_ref": null,
-              "flow_node_refs": [
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {}
-              ]
-            }
-          ]
-        }
-      ],
-      "user_tasks": [
-        {
-          "id": "_7706e700-2aed-4b94-8070-961f118aab8f",
-          "name": "User Task 5",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "sub_processes": [
-        {
-          "id": "_1eb62392-1f21-4a63-bbcb-c78880c3165e",
-          "name": "Collapsed Sub-Process",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "triggered_by_event": false,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "_7e6ccf38-e740-4537-a439-a8e984d066de",
-          "name": "Sub Process - Expanded",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "triggered_by_event": false,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "tasks": [
-            {
-              "id": "_6936f794-7bbb-4aa1-ae48-3a35bab4e2f4",
-              "name": "Abstract Task 6",
-              "is_for_compensation": false,
-              "start_quantity": 1,
-              "completion_quantity": 1,
-              "default": null,
-              "incoming": [
-                {}
-              ],
-              "outgoing": [
-                {}
-              ]
-            }
-          ],
-          "start_events": [
-            {
-              "id": "_1df01cbc-5d8c-444e-b1db-da3efdee254a",
-              "name": "Start Event None 2",
-              "parallel_multiple": false,
-              "is_interrupting": false,
-              "outgoing": [
-                {}
-              ]
-            }
-          ],
-          "sequence_flows": [
-            {
-              "id": "_2d1047ce-fdd5-4cb6-9f0c-0ee8d6d3044a",
-              "name": "",
-              "source_ref": "_1df01cbc-5d8c-444e-b1db-da3efdee254a",
-              "target_ref": "_6936f794-7bbb-4aa1-ae48-3a35bab4e2f4",
-              "is_immediate": null
+            "waypoint": [
+              {
+                "x": 497.0,
+                "y": 419.0
+              },
+              {
+                "x": 497.0,
+                "y": 300.0
+              },
+              {
+                "x": 528.0,
+                "y": 300.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_eeb6812d-d182-489f-aea2-493ab8732cfd",
+            "id": "E1373655174965__eeb6812d-d182-489f-aea2-493ab8732cfd",
+            "waypoint": [
+              {
+                "x": 365.0,
+                "y": 474.0
+              },
+              {
+                "x": 365.0,
+                "y": 589.0
+              },
+              {
+                "x": 450.0,
+                "y": 589.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_fa10ebaf-7088-4def-8cc3-d959b8876b06",
+            "id": "E1373655174966__fa10ebaf-7088-4def-8cc3-d959b8876b06",
+            "label": {
+              "label_style": "LS1373655174919"
             },
-            {
-              "id": "_062ae395-4aba-408b-ac64-4987752be95b",
-              "name": "",
-              "source_ref": "_6936f794-7bbb-4aa1-ae48-3a35bab4e2f4",
-              "target_ref": "_4f744697-3643-41a9-9d07-84c78e2df64b",
-              "is_immediate": null
+            "source_element": "S1373655174947__fea1c5af-6c76-403f-809e-26d476d92741",
+            "waypoint": [
+              {
+                "x": 527.0,
+                "y": 1034.0
+              },
+              {
+                "x": 527.0,
+                "y": 1071.0
+              },
+              {
+                "x": 649.0,
+                "y": 1071.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_a63c8cd6-eee8-4fbe-be5e-f6980b180b52",
+            "id": "E1373655174967__a63c8cd6-eee8-4fbe-be5e-f6980b180b52",
+            "waypoint": [
+              {
+                "x": 188.0,
+                "y": 453.0
+              },
+              {
+                "x": 230.0,
+                "y": 453.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_2d1047ce-fdd5-4cb6-9f0c-0ee8d6d3044a",
+            "id": "E1373655174968__2d1047ce-fdd5-4cb6-9f0c-0ee8d6d3044a",
+            "waypoint": [
+              {
+                "x": 640.0,
+                "y": 782.0
+              },
+              {
+                "x": 658.0,
+                "y": 782.0
+              },
+              {
+                "x": 694.0,
+                "y": 782.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_6ee42e88-3d90-4259-83c0-9abd4574a15a",
+            "id": "E1373655174969__6ee42e88-3d90-4259-83c0-9abd4574a15a",
+            "waypoint": [
+              {
+                "x": 346.0,
+                "y": 783.0
+              },
+              {
+                "x": 364.0,
+                "y": 783.0
+              },
+              {
+                "x": 406.0,
+                "y": 783.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_657f30ba-0690-4a14-8b8e-d8939efcc7bd",
+            "id": "E1373655174970__657f30ba-0690-4a14-8b8e-d8939efcc7bd",
+            "waypoint": [
+              {
+                "x": 555.0,
+                "y": 1000.0
+              },
+              {
+                "x": 976.0,
+                "y": 1000.0
+              },
+              {
+                "x": 976.0,
+                "y": 804.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_8f68b889-83a4-44ad-9777-d39acdd5415e",
+            "id": "E1373655174971__8f68b889-83a4-44ad-9777-d39acdd5415e",
+            "waypoint": [
+              {
+                "x": 904.0,
+                "y": 783.0
+              },
+              {
+                "x": 922.0,
+                "y": 783.0
+              },
+              {
+                "x": 955.0,
+                "y": 783.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_ba610e14-bf4c-4150-a1b1-460fe6a29f83",
+            "id": "E1373655174972__ba610e14-bf4c-4150-a1b1-460fe6a29f83",
+            "waypoint": [
+              {
+                "x": 424.0,
+                "y": 162.0
+              },
+              {
+                "x": 972.0,
+                "y": 162.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_60ed96e6-5954-48de-861b-7d1e3c1fb23e",
+            "id": "E1373655174973__60ed96e6-5954-48de-861b-7d1e3c1fb23e",
+            "waypoint": [
+              {
+                "x": 655.0,
+                "y": 440.0
+              },
+              {
+                "x": 673.0,
+                "y": 440.0
+              },
+              {
+                "x": 713.0,
+                "y": 440.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_f5c5d52a-204f-4f97-b872-817d63cf36ab",
+            "id": "E1373655174974__f5c5d52a-204f-4f97-b872-817d63cf36ab",
+            "waypoint": [
+              {
+                "x": 920.0,
+                "y": 453.0
+              },
+              {
+                "x": 977.0,
+                "y": 453.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_d30f7fb3-ec91-4a60-b73e-42419417f3be",
+            "id": "E1373655174975__d30f7fb3-ec91-4a60-b73e-42419417f3be",
+            "waypoint": [
+              {
+                "x": 272.0,
+                "y": 453.0
+              },
+              {
+                "x": 344.0,
+                "y": 453.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_9428f666-fc8a-41be-8a77-9b280e14e7ae",
+            "id": "E1373655174976__9428f666-fc8a-41be-8a77-9b280e14e7ae",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 966.436755781357,
+                "y": 299.9501761363344
+              },
+              "label_style": "LS1373655174919"
+            },
+            "waypoint": [
+              {
+                "x": 1078.0,
+                "y": 437.0
+              },
+              {
+                "x": 1078.0,
+                "y": 312.0
+              },
+              {
+                "x": 1013.0,
+                "y": 312.0
+              },
+              {
+                "x": 1013.0,
+                "y": 196.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_73afd30d-7d54-4897-9350-1f7d301ef1b2",
+            "id": "E1373655174977__73afd30d-7d54-4897-9350-1f7d301ef1b2",
+            "label": {
+              "label_style": "LS1373655174919"
+            },
+            "target_element": "S1373655174947__fea1c5af-6c76-403f-809e-26d476d92741",
+            "waypoint": [
+              {
+                "x": 427.0,
+                "y": 910.0
+              },
+              {
+                "x": 513.0,
+                "y": 910.0
+              },
+              {
+                "x": 514.0,
+                "y": 966.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_062ae395-4aba-408b-ac64-4987752be95b",
+            "id": "E1373655174978__062ae395-4aba-408b-ac64-4987752be95b",
+            "waypoint": [
+              {
+                "x": 777.0,
+                "y": 782.0
+              },
+              {
+                "x": 795.0,
+                "y": 782.0
+              },
+              {
+                "x": 836.0,
+                "y": 782.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_a1505d79-bbc0-42cf-866a-401a2f94b675",
+            "id": "E1373655174979__a1505d79-bbc0-42cf-866a-401a2f94b675",
+            "waypoint": [
+              {
+                "x": 287.0,
+                "y": 162.0
+              },
+              {
+                "x": 341.0,
+                "y": 162.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_5d195b1c-ffea-4b53-b98f-78d9616a5038",
+            "id": "E1373655174980__5d195b1c-ffea-4b53-b98f-78d9616a5038",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 196.44330587137927,
+                "y": 281.9169925395219
+              },
+              "label_style": "LS1373655174919"
+            },
+            "waypoint": [
+              {
+                "x": 246.0,
+                "y": 196.0
+              },
+              {
+                "x": 246.0,
+                "y": 300.0
+              },
+              {
+                "x": 173.0,
+                "y": 300.0
+              },
+              {
+                "x": 173.0,
+                "y": 438.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_00d30c39-29a7-4c36-86e3-bc6e893efb42",
+            "id": "E1373655174981__00d30c39-29a7-4c36-86e3-bc6e893efb42",
+            "waypoint": [
+              {
+                "x": 258.0,
+                "y": 783.0
+              },
+              {
+                "x": 276.0,
+                "y": 783.0
+              },
+              {
+                "x": 304.0,
+                "y": 783.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_d234800f-72d3-46cb-b603-30f1da7b1205",
+            "id": "E1373655174982__d234800f-72d3-46cb-b603-30f1da7b1205",
+            "waypoint": [
+              {
+                "x": 490.0,
+                "y": 783.0
+              },
+              {
+                "x": 508.0,
+                "y": 783.0
+              },
+              {
+                "x": 574.0,
+                "y": 783.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_6c6288e8-43f6-4085-87c7-1ff21c38fe17",
+            "id": "E1373655174983__6c6288e8-43f6-4085-87c7-1ff21c38fe17",
+            "waypoint": [
+              {
+                "x": 796.0,
+                "y": 440.0
+              },
+              {
+                "x": 814.0,
+                "y": 440.0
+              },
+              {
+                "x": 839.0,
+                "y": 440.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_994697ca-8927-4c84-a9a6-8682f8dee032",
+            "id": "E1373655174984__994697ca-8927-4c84-a9a6-8682f8dee032",
+            "waypoint": [
+              {
+                "x": 1019.0,
+                "y": 453.0
+              },
+              {
+                "x": 1062.0,
+                "y": 453.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_9d489bd9-9435-4692-bc98-4cdda4a61569",
+            "id": "E1373655174985__9d489bd9-9435-4692-bc98-4cdda4a61569",
+            "waypoint": [
+              {
+                "x": 386.0,
+                "y": 453.0
+              },
+              {
+                "x": 404.0,
+                "y": 453.0
+              },
+              {
+                "x": 455.0,
+                "y": 453.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_bbb25218-69a3-4401-823f-22f468cbd80d",
+            "id": "E1373655174986__bbb25218-69a3-4401-823f-22f468cbd80d",
+            "waypoint": [
+              {
+                "x": 1055.0,
+                "y": 162.0
+              },
+              {
+                "x": 1073.0,
+                "y": 162.0
+              },
+              {
+                "x": 1090.0,
+                "y": 162.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_61abe245-5604-46ba-8152-94d6e68ffda4",
+            "id": "E1373655174987__61abe245-5604-46ba-8152-94d6e68ffda4",
+            "waypoint": [
+              {
+                "x": 548.0,
+                "y": 589.0
+              },
+              {
+                "x": 998.0,
+                "y": 589.0
+              },
+              {
+                "x": 998.0,
+                "y": 474.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_6a248585-952e-40ff-82ec-b6d8f410b73a",
+            "id": "E1373655174988__6a248585-952e-40ff-82ec-b6d8f410b73a",
+            "waypoint": [
+              {
+                "x": 325.0,
+                "y": 804.0
+              },
+              {
+                "x": 325.0,
+                "y": 1000.0
+              },
+              {
+                "x": 472.0,
+                "y": 1000.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_ab34472d-95a4-459c-a13b-5ed8b8b75eca",
+            "id": "E1373655174989__ab34472d-95a4-459c-a13b-5ed8b8b75eca",
+            "waypoint": [
+              {
+                "x": 251.0,
+                "y": 474.0
+              },
+              {
+                "x": 251.0,
+                "y": 588.0
+              },
+              {
+                "x": 217.0,
+                "y": 588.0
+              },
+              {
+                "x": 217.0,
+                "y": 749.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_3eaa52c9-8d39-43d1-9528-b4047ff7fcdf",
+            "id": "E1373655174990__3eaa52c9-8d39-43d1-9528-b4047ff7fcdf",
+            "waypoint": [
+              {
+                "x": 150.0,
+                "y": 162.0
+              },
+              {
+                "x": 168.0,
+                "y": 162.0
+              },
+              {
+                "x": 204.0,
+                "y": 162.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_10a16fd5-0d56-4fdb-8529-0a0610a573be",
+            "id": "E1373655174991__10a16fd5-0d56-4fdb-8529-0a0610a573be",
+            "waypoint": [
+              {
+                "x": 538.0,
+                "y": 453.0
+              },
+              {
+                "x": 556.0,
+                "y": 453.0
+              },
+              {
+                "x": 590.0,
+                "y": 453.0
+              }
+            ]
+          }
+        ],
+        "bpmn_element": "C1373655174958",
+        "bpmn_shapes": [
+          {
+            "bounds": {
+              "height": 180.0,
+              "width": 1104.0,
+              "x": 48.0,
+              "y": 72.0
+            },
+            "bpmn_element": "_cde15ee4-b395-43a3-9f5e-9028446f8a52",
+            "id": "S1373655174918__cde15ee4-b395-43a3-9f5e-9028446f8a52",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 53.3635647444375,
+                "width": 12.804751171874997,
+                "x": 52.0,
+                "y": 135.0
+              },
+              "label_style": "LS1373655174919"
             }
-          ],
-          "end_events": [
-            {
-              "id": "_4f744697-3643-41a9-9d07-84c78e2df64b",
-              "name": "End Event None 3",
-              "incoming": [
-                {}
-              ]
+          },
+          {
+            "bounds": {
+              "height": 788.0,
+              "width": 1164.0,
+              "x": 49.0,
+              "y": 352.0
+            },
+            "bpmn_element": "_0623a9bd-fd34-462a-b09d-85cb5004be78",
+            "id": "S1373655174920__0623a9bd-fd34-462a-b09d-85cb5004be78",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 24.316811814750004,
+                "width": 12.804751171874997,
+                "x": 53.0,
+                "y": 733.0
+              },
+              "label_style": "LS1373655174919"
             }
-          ]
-        }
-      ],
-      "start_events": [
-        {
-          "id": "_a38484e2-7bdb-48b1-b62e-139d51d6a147",
-          "name": "Start Event\nMessage",
-          "parallel_multiple": false,
-          "is_interrupting": false,
-          "outgoing": [
-            {}
-          ],
-          "message_event_definition": [
-            {}
-          ]
-        }
-      ],
-      "service_tasks": [
-        {
-          "id": "_fea1c5af-6c76-403f-809e-26d476d92741",
-          "name": "Service Task 7",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "io_specification": {},
-          "data_input_associations": [
-            {}
-          ],
-          "data_output_associations": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "_a63c8cd6-eee8-4fbe-be5e-f6980b180b52",
-          "name": "",
-          "source_ref": "_a38484e2-7bdb-48b1-b62e-139d51d6a147",
-          "target_ref": "_be29f267-9d56-46ef-8bbc-e13513b25fce",
-          "is_immediate": null
-        },
-        {
-          "id": "_ab34472d-95a4-459c-a13b-5ed8b8b75eca",
-          "name": "",
-          "source_ref": "_be29f267-9d56-46ef-8bbc-e13513b25fce",
-          "target_ref": "_7706e700-2aed-4b94-8070-961f118aab8f",
-          "is_immediate": null
-        },
-        {
-          "id": "_8f68b889-83a4-44ad-9777-d39acdd5415e",
-          "name": "",
-          "source_ref": "_7e6ccf38-e740-4537-a439-a8e984d066de",
-          "target_ref": "_33f30031-2e29-46b6-b080-30a192a36b45",
-          "is_immediate": null
-        },
-        {
-          "id": "_d30f7fb3-ec91-4a60-b73e-42419417f3be",
-          "name": "",
-          "source_ref": "_be29f267-9d56-46ef-8bbc-e13513b25fce",
-          "target_ref": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
-          "is_immediate": null
-        },
-        {
-          "id": "_10a16fd5-0d56-4fdb-8529-0a0610a573be",
-          "name": "",
-          "source_ref": "_1237e756-d53c-4591-a731-dafffbf0b3f9",
-          "target_ref": "_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
-          "is_immediate": null
-        },
-        {
-          "id": "_d234800f-72d3-46cb-b603-30f1da7b1205",
-          "name": "",
-          "source_ref": "_1eb62392-1f21-4a63-bbcb-c78880c3165e",
-          "target_ref": "_7e6ccf38-e740-4537-a439-a8e984d066de",
-          "is_immediate": null
-        },
-        {
-          "id": "_61abe245-5604-46ba-8152-94d6e68ffda4",
-          "name": "",
-          "source_ref": "_fa3a8e53-5be0-4f0b-8680-d2498e255209",
-          "target_ref": "_93021cd0-6f49-485d-966f-209744c748de",
-          "is_immediate": null
-        },
-        {
-          "id": "_00d30c39-29a7-4c36-86e3-bc6e893efb42",
-          "name": "",
-          "source_ref": "_7706e700-2aed-4b94-8070-961f118aab8f",
-          "target_ref": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8",
-          "is_immediate": null
-        },
-        {
-          "id": "_6ee42e88-3d90-4259-83c0-9abd4574a15a",
-          "name": "",
-          "source_ref": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8",
-          "target_ref": "_1eb62392-1f21-4a63-bbcb-c78880c3165e",
-          "is_immediate": null
-        },
-        {
-          "id": "_6a248585-952e-40ff-82ec-b6d8f410b73a",
-          "name": "",
-          "source_ref": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8",
-          "target_ref": "_fea1c5af-6c76-403f-809e-26d476d92741",
-          "is_immediate": null
-        },
-        {
-          "id": "_f5c5d52a-204f-4f97-b872-817d63cf36ab",
-          "name": "",
-          "source_ref": "_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
-          "target_ref": "_93021cd0-6f49-485d-966f-209744c748de",
-          "is_immediate": null
-        },
-        {
-          "id": "_657f30ba-0690-4a14-8b8e-d8939efcc7bd",
-          "name": "",
-          "source_ref": "_fea1c5af-6c76-403f-809e-26d476d92741",
-          "target_ref": "_33f30031-2e29-46b6-b080-30a192a36b45",
-          "is_immediate": null
-        },
-        {
-          "id": "_54f45351-aa18-4c65-b0d0-edc3aa0a140d",
-          "name": "",
-          "source_ref": "_33f30031-2e29-46b6-b080-30a192a36b45",
-          "target_ref": "_ae916437-d9aa-4e3d-a7c3-34998c410beb",
-          "is_immediate": null
-        },
-        {
-          "id": "_9d489bd9-9435-4692-bc98-4cdda4a61569",
-          "name": "",
-          "source_ref": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
-          "target_ref": "_1237e756-d53c-4591-a731-dafffbf0b3f9",
-          "is_immediate": null
-        },
-        {
-          "id": "_eeb6812d-d182-489f-aea2-493ab8732cfd",
-          "name": "",
-          "source_ref": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
-          "target_ref": "_fa3a8e53-5be0-4f0b-8680-d2498e255209",
-          "is_immediate": null
-        },
-        {
-          "id": "_994697ca-8927-4c84-a9a6-8682f8dee032",
-          "name": "",
-          "source_ref": "_93021cd0-6f49-485d-966f-209744c748de",
-          "target_ref": "_2ee553a1-cb03-41e3-b285-345c826fc88d",
-          "is_immediate": null
-        }
-      ],
-      "parallel_gateways": [
-        {
-          "id": "_be29f267-9d56-46ef-8bbc-e13513b25fce",
-          "name": "Parallel Gateway Divergence",
-          "gateway_direction": "Unspecified",
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {},
-            {}
-          ]
-        }
-      ],
-      "exclusive_gateways": [
-        {
-          "id": "_93021cd0-6f49-485d-966f-209744c748de",
-          "name": "Exclusive Gateway Convergence 1",
-          "gateway_direction": "Unspecified",
-          "default": null,
-          "incoming": [
-            {},
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
-          "name": "Exclusive Gateway Divergence 1",
-          "gateway_direction": "Unspecified",
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {},
-            {}
-          ]
-        },
-        {
-          "id": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8",
-          "name": "Exclusive Gateway Divergence 2",
-          "gateway_direction": "Unspecified",
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {},
-            {}
-          ]
-        },
-        {
-          "id": "_33f30031-2e29-46b6-b080-30a192a36b45",
-          "name": "Exclusive Gateway Convergence 2",
-          "gateway_direction": "Unspecified",
-          "default": null,
-          "incoming": [
-            {},
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "end_events": [
-        {
-          "id": "_2ee553a1-cb03-41e3-b285-345c826fc88d",
-          "name": "End Event Message",
-          "incoming": [
-            {}
-          ],
-          "message_event_definition": [
-            {
-              "id": null,
-              "message_ref": "Message_1373655174960"
+          },
+          {
+            "bounds": {
+              "height": 313.0,
+              "width": 1133.0,
+              "x": 80.0,
+              "y": 352.0
+            },
+            "bpmn_element": "_4a6df7ac-26d8-4718-ac05-90af463d5e23",
+            "id": "S1373655174921__4a6df7ac-26d8-4718-ac05-90af463d5e23",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 35.5928127913125,
+                "width": 12.804751171874997,
+                "x": 80.0,
+                "y": 490.0
+              },
+              "label_style": "LS1373655174919"
             }
-          ]
-        },
-        {
-          "id": "_ae916437-d9aa-4e3d-a7c3-34998c410beb",
-          "name": "End Event Terminate",
-          "incoming": [
-            {}
-          ],
-          "terminate_event_definition": [
-            {
-              "id": null
+          },
+          {
+            "bounds": {
+              "height": 474.0,
+              "width": 1133.0,
+              "x": 80.0,
+              "y": 666.0
+            },
+            "bpmn_element": "_3400f56a-4565-47d1-91db-0ba17b958cb2",
+            "id": "S1373655174922__3400f56a-4565-47d1-91db-0ba17b958cb2",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 35.5928127913125,
+                "width": 12.804751171874997,
+                "x": 80.0,
+                "y": 885.0
+              },
+              "label_style": "LS1373655174919"
             }
-          ]
-        }
-      ],
-      "data_store_references": [
-        {
-          "id": "_b9385abf-d293-40b7-848b-8add4db48415",
-          "name": "Data\nStore Reference",
-          "item_subject_ref": null,
-          "data_store_ref": "DS1373655174514"
-        }
-      ],
-      "data_object_references": [
-        {
-          "id": "_3d35229f-2c75-4d5d-a066-2d14e46e442e",
-          "name": "Data Object",
-          "item_subject_ref": null,
-          "data_object_ref": "DF1373655174778"
-        }
-      ],
-      "data_objects": [
-        {
-          "id": "DF1373655174778",
-          "name": "Data Object",
-          "item_subject_ref": null,
-          "is_collection": false
-        }
-      ],
-      "call_activities": [
-        {
-          "id": "_fa3a8e53-5be0-4f0b-8680-d2498e255209",
-          "name": "Call Activity Calling a Global Task",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "called_element": "global-task",
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
-          "name": "Call Activity - Expanded",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "called_element": "Process_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "_1237e756-d53c-4591-a731-dafffbf0b3f9",
-          "name": "Call Activity Collapsed",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "called_element": "WFP-0-",
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "text_annotations": [
-        {
-          "id": "_4815ea6a-ede2-489b-8b37-2cdb2835b02c",
-          "text_format": "text/plain",
-          "text": "Text Annotation"
-        }
-      ],
-      "associations": [
-        {
-          "id": "_5362a7ef-ce7e-4a91-9c38-66c07b1b5f49",
-          "source_ref": "_1237e756-d53c-4591-a731-dafffbf0b3f9",
-          "target_ref": "_4815ea6a-ede2-489b-8b37-2cdb2835b02c",
-          "association_direction": "None"
-        }
-      ]
-    },
-    {
-      "id": "WFP-0-",
-      "name": null,
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "tasks": [
-        {
-          "id": "_47207d3b-8dc2-4679-bf33-c1e7e677765b",
-          "name": "Abstract Task 8",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "start_events": [
-        {
-          "id": "_18770c5c-c117-4570-aaf2-8c7a6910c34d",
-          "name": "Start Event None 3",
-          "parallel_multiple": false,
-          "is_interrupting": false,
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "_107de09e-8506-4d2b-ad00-3341be723dff",
-          "name": "",
-          "source_ref": "_18770c5c-c117-4570-aaf2-8c7a6910c34d",
-          "target_ref": "_47207d3b-8dc2-4679-bf33-c1e7e677765b",
-          "is_immediate": null
-        },
-        {
-          "id": "_2e21b112-d974-4add-9bee-91dafbed0a22",
-          "name": "",
-          "source_ref": "_47207d3b-8dc2-4679-bf33-c1e7e677765b",
-          "target_ref": "_ab12c75c-eaf3-4ae1-9021-ee556711757f",
-          "is_immediate": null
-        }
-      ],
-      "end_events": [
-        {
-          "id": "_ab12c75c-eaf3-4ae1-9021-ee556711757f",
-          "name": "End Event None 4",
-          "incoming": [
-            {}
-          ]
-        }
-      ]
+          },
+          {
+            "bounds": {
+              "height": 30.0,
+              "width": 30.0,
+              "x": 625.0,
+              "y": 425.0
+            },
+            "bpmn_element": "_200f43e7-1385-46e2-a380-3ef16ebe7847",
+            "id": "S1373655174923__200f43e7-1385-46e2-a380-3ef16ebe7847",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 592.6776675445728,
+                "y": 460.3333333333333
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 713.0,
+              "y": 406.0
+            },
+            "bpmn_element": "_c57a5344-213f-4834-a6c3-94ce878b413c",
+            "id": "S1373655174924__c57a5344-213f-4834-a6c3-94ce878b413c",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 72.48293963254594,
+                "x": 718.3333333333334,
+                "y": 427.1819007966289
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 839.0,
+              "y": 424.0
+            },
+            "bpmn_element": "_ed405919-9fd6-47d0-bb00-9be7d5467efb",
+            "id": "S1373655174925__ed405919-9fd6-47d0-bb00-9be7d5467efb",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 807.5963254593177,
+                "y": 461.3333333333333
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 30.0,
+              "width": 30.0,
+              "x": 120.0,
+              "y": 147.0
+            },
+            "bpmn_element": "_e314751e-5c3a-41f2-a1ae-4cb99efa0916",
+            "id": "S1373655174926__e314751e-5c3a-41f2-a1ae-4cb99efa0916",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 87.67766754457271,
+                "y": 182.33333333333334
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 1090.0,
+              "y": 146.0
+            },
+            "bpmn_element": "_94efa7e0-2322-4fc3-a5bf-6c6296488927",
+            "id": "S1373655174927__94efa7e0-2322-4fc3-a5bf-6c6296488927",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 1058.5963254593175,
+                "y": 183.33333333333334
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 204.0,
+              "y": 128.0
+            },
+            "bpmn_element": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
+            "id": "S1373655174928__219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 72.48293963254594,
+                "x": 209.33333333333334,
+                "y": 149.18190079662895
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 341.0,
+              "y": 128.0
+            },
+            "bpmn_element": "_f7eade87-bb98-47d3-85c7-66033a62b124",
+            "id": "S1373655174929__f7eade87-bb98-47d3-85c7-66033a62b124",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 72.48293963254594,
+                "x": 346.3333333333333,
+                "y": 149.18190079662895
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 972.0,
+              "y": 128.0
+            },
+            "bpmn_element": "_ec919941-53ec-403d-97e1-6a163a063f21",
+            "id": "S1373655174930__ec919941-53ec-403d-97e1-6a163a063f21",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 72.48293963254594,
+                "x": 977.3333333333334,
+                "y": 149.18190079662895
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 1062.0,
+              "y": 437.0
+            },
+            "bpmn_element": "_2ee553a1-cb03-41e3-b285-345c826fc88d",
+            "id": "S1373655174931__2ee553a1-cb03-41e3-b285-345c826fc88d",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 1030.5963254593175,
+                "y": 474.3333333333333
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 98.0,
+              "x": 450.0,
+              "y": 549.0
+            },
+            "bpmn_element": "_fa3a8e53-5be0-4f0b-8680-d2498e255209",
+            "id": "S1373655174932__fa3a8e53-5be0-4f0b-8680-d2498e255209",
+            "label": {
+              "bounds": {
+                "height": 38.404653515625,
+                "width": 87.14960629921266,
+                "x": 455.3333333333333,
+                "y": 569.7819252106915
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 150.0,
+              "width": 330.0,
+              "x": 590.0,
+              "y": 378.0
+            },
+            "bpmn_element": "_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
+            "id": "S1373655174933__ba16239e-181e-4b9f-bc5b-0bb2ee973450",
+            "is_expanded": true,
+            "label": {
+              "bounds": {
+                "height": 12.804751171875008,
+                "width": 115.60807158037508,
+                "x": 595.3333333333334,
+                "y": 383.3333333333335
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 42.0,
+              "width": 42.0,
+              "x": 977.0,
+              "y": 432.0
+            },
+            "bpmn_element": "_93021cd0-6f49-485d-966f-209744c748de",
+            "id": "S1373655174934__93021cd0-6f49-485d-966f-209744c748de",
+            "is_marker_visible": false,
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 953.541079060992,
+                "y": 392.6228456785188
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 42.0,
+              "width": 42.0,
+              "x": 344.0,
+              "y": 432.0
+            },
+            "bpmn_element": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
+            "id": "S1373655174935__3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
+            "is_marker_visible": false,
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 317.32073490813644,
+                "y": 400.3944992218256
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 30.0,
+              "width": 30.0,
+              "x": 158.0,
+              "y": 438.0
+            },
+            "bpmn_element": "_a38484e2-7bdb-48b1-b62e-139d51d6a147",
+            "id": "S1373655174936__a38484e2-7bdb-48b1-b62e-139d51d6a147",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 125.67766754457271,
+                "y": 473.3333333333333
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 42.0,
+              "width": 42.0,
+              "x": 230.0,
+              "y": 432.0
+            },
+            "bpmn_element": "_be29f267-9d56-46ef-8bbc-e13513b25fce",
+            "id": "S1373655174937__be29f267-9d56-46ef-8bbc-e13513b25fce",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 203.1395042578419,
+                "y": 394.3944992218256
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 455.0,
+              "y": 419.0
+            },
+            "bpmn_element": "_1237e756-d53c-4591-a731-dafffbf0b3f9",
+            "id": "S1373655174938__1237e756-d53c-4591-a731-dafffbf0b3f9",
+            "is_expanded": false,
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 72.48293963254594,
+                "x": 460.3333333333333,
+                "y": 440.1819007966289
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 406.0,
+              "y": 749.0
+            },
+            "bpmn_element": "_1eb62392-1f21-4a63-bbcb-c78880c3165e",
+            "id": "S1373655174939__1eb62392-1f21-4a63-bbcb-c78880c3165e",
+            "is_expanded": false,
+            "label": {
+              "bounds": {
+                "height": 38.404653515625,
+                "width": 72.48293963254594,
+                "x": 411.3333333333333,
+                "y": 763.7819252106915
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 175.0,
+              "y": 749.0
+            },
+            "bpmn_element": "_7706e700-2aed-4b94-8070-961f118aab8f",
+            "id": "S1373655174940__7706e700-2aed-4b94-8070-961f118aab8f",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 72.48293963254594,
+                "x": 180.33333333333334,
+                "y": 770.181900796629
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 42.0,
+              "width": 42.0,
+              "x": 304.0,
+              "y": 762.0
+            },
+            "bpmn_element": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8",
+            "id": "S1373655174941__ad81e6ba-40f5-43c1-9602-47d2e58804c8",
+            "is_marker_visible": false,
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 276.89432860892373,
+                "y": 729.4289433163138
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 42.0,
+              "width": 42.0,
+              "x": 955.0,
+              "y": 762.0
+            },
+            "bpmn_element": "_33f30031-2e29-46b6-b080-30a192a36b45",
+            "id": "S1373655174942__33f30031-2e29-46b6-b080-30a192a36b45",
+            "is_marker_visible": false,
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 931.8155884514442,
+                "y": 728.6228456785187
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 156.0,
+              "width": 330.0,
+              "x": 574.0,
+              "y": 705.0
+            },
+            "bpmn_element": "_7e6ccf38-e740-4537-a439-a8e984d066de",
+            "id": "S1373655174943__7e6ccf38-e740-4537-a439-a8e984d066de",
+            "is_expanded": true,
+            "label": {
+              "bounds": {
+                "height": 12.804751171875008,
+                "width": 120.96244169756255,
+                "x": 579.3333333333334,
+                "y": 710.3333333333334
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 30.0,
+              "width": 30.0,
+              "x": 610.0,
+              "y": 767.0
+            },
+            "bpmn_element": "_1df01cbc-5d8c-444e-b1db-da3efdee254a",
+            "id": "S1373655174944__1df01cbc-5d8c-444e-b1db-da3efdee254a",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 577.6776675445728,
+                "y": 802.3333333333334
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 694.0,
+              "y": 748.0
+            },
+            "bpmn_element": "_6936f794-7bbb-4aa1-ae48-3a35bab4e2f4",
+            "id": "S1373655174945__6936f794-7bbb-4aa1-ae48-3a35bab4e2f4",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 72.48293963254594,
+                "x": 699.3333333333334,
+                "y": 769.181900796629
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 836.0,
+              "y": 766.0
+            },
+            "bpmn_element": "_4f744697-3643-41a9-9d07-84c78e2df64b",
+            "id": "S1373655174946__4f744697-3643-41a9-9d07-84c78e2df64b",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 804.5963254593177,
+                "y": 803.3333333333334
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 68.0,
+              "width": 83.0,
+              "x": 472.0,
+              "y": 966.0
+            },
+            "bpmn_element": "_fea1c5af-6c76-403f-809e-26d476d92741",
+            "id": "S1373655174947__fea1c5af-6c76-403f-809e-26d476d92741",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 72.48293963254594,
+                "x": 477.3333333333333,
+                "y": 987.181900796629
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 1051.0,
+              "y": 767.0
+            },
+            "bpmn_element": "_ae916437-d9aa-4e3d-a7c3-34998c410beb",
+            "id": "S1373655174948__ae916437-d9aa-4e3d-a7c3-34998c410beb",
+            "label": {
+              "bounds": {
+                "height": 25.604702343750013,
+                "width": 94.93333333333335,
+                "x": 1019.5963254593177,
+                "y": 804.3333333333334
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 38.0,
+              "width": 30.0,
+              "x": 397.0,
+              "y": 891.0
+            },
+            "bpmn_element": "_3d35229f-2c75-4d5d-a066-2d14e46e442e",
+            "id": "S1373655174949__3d35229f-2c75-4d5d-a066-2d14e46e442e",
+            "label": {
+              "bounds": {
+                "height": 25.60470234375,
+                "width": 100.26666666666667,
+                "x": 365.1028871391077,
+                "y": 943.9897939506758
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 27.0,
+              "width": 32.0,
+              "x": 649.0,
+              "y": 1058.0
+            },
+            "bpmn_element": "_b9385abf-d293-40b7-848b-8add4db48415",
+            "id": "S1373655174950__b9385abf-d293-40b7-848b-8add4db48415",
+            "label": {
+              "bounds": {
+                "height": 38.404653515625,
+                "width": 94.93333333333335,
+                "x": 617.6583333333334,
+                "y": 1087.8797673242188
+              },
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 23.0,
+              "width": 102.0,
+              "x": 528.0,
+              "y": 288.0
+            },
+            "bpmn_element": "_4815ea6a-ede2-489b-8b37-2cdb2835b02c",
+            "id": "S1373655174953__4815ea6a-ede2-489b-8b37-2cdb2835b02c",
+            "label": {
+              "label_style": "LS1373655174919"
+            }
+          },
+          {
+            "bounds": {
+              "height": 168.0,
+              "width": 365.0,
+              "x": 143.0,
+              "y": 699.0
+            },
+            "bpmn_element": "_bd04180e-49f6-4cf0-a7d6-da59e2840b4b",
+            "id": "S1373655174962__bd04180e-49f6-4cf0-a7d6-da59e2840b4b",
+            "label": {
+              "bounds": {
+                "height": 12.804751171874997,
+                "width": 32.6140530256875,
+                "x": 467.03476587195036,
+                "y": 681.9747763871801
+              },
+              "label_style": "LS1373655174919"
+            }
+          }
+        ]
+      },
+      "resolution": 96.00000267028808
     }
   ],
-  "messages": [
+  "categories": [
     {
-      "id": "Message_1373655174959",
-      "name": null,
-      "item_ref": null
-    },
-    {
-      "id": "Message_1373655174960",
-      "name": null,
-      "item_ref": null
-    }
-  ],
-  "global_tasks": [
-    {
-      "id": "global-task",
-      "name": "Global Task"
-    }
-  ],
-  "data_stores": [
-    {
-      "id": "DS1373655174514",
-      "name": "Data\nStore Reference",
-      "capacity": "0",
-      "is_unlimited": false,
-      "item_subject_ref": null
+      "category_value": [
+        {
+          "id": "Value_Cat1373655174961",
+          "value": "Group"
+        }
+      ],
+      "id": "Cat1373655174961"
     }
   ],
   "collaborations": [
     {
+      "groups": [
+        {
+          "category_value_ref": "Value_Cat1373655174961",
+          "id": "_bd04180e-49f6-4cf0-a7d6-da59e2840b4b"
+        }
+      ],
       "id": "C1373655174958",
-      "name": null,
       "is_closed": false,
+      "message_flows": [
+        {
+          "id": "_5d195b1c-ffea-4b53-b98f-78d9616a5038",
+          "message_ref": "Message_1373655174959",
+          "name": "Message Flow 1",
+          "source_ref": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
+          "target_ref": "_a38484e2-7bdb-48b1-b62e-139d51d6a147"
+        },
+        {
+          "id": "_9428f666-fc8a-41be-8a77-9b280e14e7ae",
+          "message_ref": "Message_1373655174960",
+          "name": "Message\nFlow 2",
+          "source_ref": "_2ee553a1-cb03-41e3-b285-345c826fc88d",
+          "target_ref": "_ec919941-53ec-403d-97e1-6a163a063f21"
+        }
+      ],
       "participants": [
         {
           "id": "_cde15ee4-b395-43a3-9f5e-9028446f8a52",
@@ -763,41 +1265,571 @@
           "name": "Pool",
           "process_ref": "WFP-6-2"
         }
-      ],
-      "message_flows": [
+      ]
+    }
+  ],
+  "data_stores": [
+    {
+      "capacity": 0,
+      "id": "DS1373655174514",
+      "is_unlimited": false,
+      "name": "Data\nStore Reference"
+    }
+  ],
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "global_tasks": [
+    {
+      "id": "global-task",
+      "name": "Global Task"
+    }
+  ],
+  "id": "_1373655174418",
+  "messages": [
+    {
+      "id": "Message_1373655174959"
+    },
+    {
+      "id": "Message_1373655174960"
+    }
+  ],
+  "name": "B.1.0",
+  "processes": [
+    {
+      "end_events": [
         {
-          "id": "_5d195b1c-ffea-4b53-b98f-78d9616a5038",
-          "name": "Message Flow 1",
-          "source_ref": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
-          "target_ref": "_a38484e2-7bdb-48b1-b62e-139d51d6a147",
-          "message_ref": "Message_1373655174959"
-        },
-        {
-          "id": "_9428f666-fc8a-41be-8a77-9b280e14e7ae",
-          "name": "Message\nFlow 2",
-          "source_ref": "_2ee553a1-cb03-41e3-b285-345c826fc88d",
-          "target_ref": "_ec919941-53ec-403d-97e1-6a163a063f21",
-          "message_ref": "Message_1373655174960"
+          "id": "_ed405919-9fd6-47d0-bb00-9be7d5467efb",
+          "incoming": "_6c6288e8-43f6-4085-87c7-1ff21c38fe17",
+          "name": "End Event None 2"
         }
       ],
-      "groups": [
+      "id": "Process_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
+      "is_closed": false,
+      "is_executable": false,
+      "process_type": "None",
+      "sequence_flows": [
         {
-          "id": "_bd04180e-49f6-4cf0-a7d6-da59e2840b4b",
-          "category_value_ref": "Value_Cat1373655174961"
+          "id": "_60ed96e6-5954-48de-861b-7d1e3c1fb23e",
+          "source_ref": "_200f43e7-1385-46e2-a380-3ef16ebe7847",
+          "target_ref": "_c57a5344-213f-4834-a6c3-94ce878b413c"
+        },
+        {
+          "id": "_6c6288e8-43f6-4085-87c7-1ff21c38fe17",
+          "source_ref": "_c57a5344-213f-4834-a6c3-94ce878b413c",
+          "target_ref": "_ed405919-9fd6-47d0-bb00-9be7d5467efb"
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_200f43e7-1385-46e2-a380-3ef16ebe7847",
+          "is_interrupting": true,
+          "name": "Start Event None 1",
+          "outgoing": "_60ed96e6-5954-48de-861b-7d1e3c1fb23e",
+          "parallel_multiple": false
+        }
+      ],
+      "tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "_c57a5344-213f-4834-a6c3-94ce878b413c",
+          "incoming": "_60ed96e6-5954-48de-861b-7d1e3c1fb23e",
+          "is_for_compensation": false,
+          "name": "Abstract Task 4",
+          "outgoing": "_6c6288e8-43f6-4085-87c7-1ff21c38fe17",
+          "start_quantity": 1
+        }
+      ]
+    },
+    {
+      "end_events": [
+        {
+          "id": "_94efa7e0-2322-4fc3-a5bf-6c6296488927",
+          "incoming": "_bbb25218-69a3-4401-823f-22f468cbd80d",
+          "name": "End Event None 1"
+        }
+      ],
+      "id": "WFP-6-1",
+      "is_closed": false,
+      "is_executable": false,
+      "process_type": "None",
+      "sequence_flows": [
+        {
+          "id": "_3eaa52c9-8d39-43d1-9528-b4047ff7fcdf",
+          "source_ref": "_e314751e-5c3a-41f2-a1ae-4cb99efa0916",
+          "target_ref": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e"
+        },
+        {
+          "id": "_a1505d79-bbc0-42cf-866a-401a2f94b675",
+          "source_ref": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
+          "target_ref": "_f7eade87-bb98-47d3-85c7-66033a62b124"
+        },
+        {
+          "id": "_ba610e14-bf4c-4150-a1b1-460fe6a29f83",
+          "source_ref": "_f7eade87-bb98-47d3-85c7-66033a62b124",
+          "target_ref": "_ec919941-53ec-403d-97e1-6a163a063f21"
+        },
+        {
+          "id": "_bbb25218-69a3-4401-823f-22f468cbd80d",
+          "source_ref": "_ec919941-53ec-403d-97e1-6a163a063f21",
+          "target_ref": "_94efa7e0-2322-4fc3-a5bf-6c6296488927"
+        }
+      ],
+      "service_tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "_ec919941-53ec-403d-97e1-6a163a063f21",
+          "implementation": "##WebService",
+          "incoming": "_ba610e14-bf4c-4150-a1b1-460fe6a29f83",
+          "is_for_compensation": false,
+          "name": "Service Task 3",
+          "outgoing": "_bbb25218-69a3-4401-823f-22f468cbd80d",
+          "start_quantity": 1
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_e314751e-5c3a-41f2-a1ae-4cb99efa0916",
+          "is_interrupting": true,
+          "name": "Start Event Timer",
+          "outgoing": "_3eaa52c9-8d39-43d1-9528-b4047ff7fcdf",
+          "parallel_multiple": false
+        }
+      ],
+      "tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "_219b9ca1-d4c5-497d-a4f7-06a44a6da20e",
+          "incoming": "_3eaa52c9-8d39-43d1-9528-b4047ff7fcdf",
+          "is_for_compensation": false,
+          "name": "Abstract Task 1",
+          "outgoing": "_a1505d79-bbc0-42cf-866a-401a2f94b675",
+          "start_quantity": 1
+        }
+      ],
+      "user_tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "_f7eade87-bb98-47d3-85c7-66033a62b124",
+          "implementation": "##WebService",
+          "incoming": "_a1505d79-bbc0-42cf-866a-401a2f94b675",
+          "is_for_compensation": false,
+          "name": "User\nTask 2",
+          "outgoing": "_ba610e14-bf4c-4150-a1b1-460fe6a29f83",
+          "start_quantity": 1
+        }
+      ]
+    },
+    {
+      "associations": [
+        {
+          "association_direction": "None",
+          "id": "_5362a7ef-ce7e-4a91-9c38-66c07b1b5f49",
+          "source_ref": "_1237e756-d53c-4591-a731-dafffbf0b3f9",
+          "target_ref": "_4815ea6a-ede2-489b-8b37-2cdb2835b02c"
+        }
+      ],
+      "call_activities": [
+        {
+          "called_element": "global-task",
+          "completion_quantity": 1,
+          "id": "_fa3a8e53-5be0-4f0b-8680-d2498e255209",
+          "incoming": "_eeb6812d-d182-489f-aea2-493ab8732cfd",
+          "is_for_compensation": false,
+          "name": "Call Activity Calling a Global Task",
+          "outgoing": "_61abe245-5604-46ba-8152-94d6e68ffda4",
+          "start_quantity": 1
+        },
+        {
+          "called_element": "Process_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
+          "completion_quantity": 1,
+          "id": "_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
+          "incoming": "_10a16fd5-0d56-4fdb-8529-0a0610a573be",
+          "is_for_compensation": false,
+          "name": "Call Activity - Expanded",
+          "outgoing": "_f5c5d52a-204f-4f97-b872-817d63cf36ab",
+          "start_quantity": 1
+        },
+        {
+          "called_element": "WFP-0-",
+          "completion_quantity": 1,
+          "id": "_1237e756-d53c-4591-a731-dafffbf0b3f9",
+          "incoming": "_9d489bd9-9435-4692-bc98-4cdda4a61569",
+          "is_for_compensation": false,
+          "name": "Call Activity Collapsed",
+          "outgoing": "_10a16fd5-0d56-4fdb-8529-0a0610a573be",
+          "start_quantity": 1
+        }
+      ],
+      "data_object_references": [
+        {
+          "data_object_ref": "DF1373655174778",
+          "id": "_3d35229f-2c75-4d5d-a066-2d14e46e442e",
+          "name": "Data Object"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DF1373655174778",
+          "is_collection": false,
+          "name": "Data Object"
+        }
+      ],
+      "data_store_references": [
+        {
+          "data_store_ref": "DS1373655174514",
+          "id": "_b9385abf-d293-40b7-848b-8add4db48415",
+          "name": "Data\nStore Reference"
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_2ee553a1-cb03-41e3-b285-345c826fc88d",
+          "incoming": "_994697ca-8927-4c84-a9a6-8682f8dee032",
+          "message_event_definitions": [
+            {
+              "message_ref": "Message_1373655174960"
+            }
+          ],
+          "name": "End Event Message"
+        },
+        {
+          "id": "_ae916437-d9aa-4e3d-a7c3-34998c410beb",
+          "incoming": "_54f45351-aa18-4c65-b0d0-edc3aa0a140d",
+          "name": "End Event Terminate"
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "gateway_direction": "Unspecified",
+          "id": "_93021cd0-6f49-485d-966f-209744c748de",
+          "incoming": "['_61abe245-5604-46ba-8152-94d6e68ffda4', '_f5c5d52a-204f-4f97-b872-817d63cf36ab']",
+          "name": "Exclusive Gateway Convergence 1",
+          "outgoing": "_994697ca-8927-4c84-a9a6-8682f8dee032"
+        },
+        {
+          "gateway_direction": "Unspecified",
+          "id": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
+          "incoming": "_d30f7fb3-ec91-4a60-b73e-42419417f3be",
+          "name": "Exclusive Gateway Divergence 1",
+          "outgoing": "['_9d489bd9-9435-4692-bc98-4cdda4a61569', '_eeb6812d-d182-489f-aea2-493ab8732cfd']"
+        },
+        {
+          "gateway_direction": "Unspecified",
+          "id": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8",
+          "incoming": "_00d30c39-29a7-4c36-86e3-bc6e893efb42",
+          "name": "Exclusive Gateway Divergence 2",
+          "outgoing": "['_6ee42e88-3d90-4259-83c0-9abd4574a15a', '_6a248585-952e-40ff-82ec-b6d8f410b73a']"
+        },
+        {
+          "gateway_direction": "Unspecified",
+          "id": "_33f30031-2e29-46b6-b080-30a192a36b45",
+          "incoming": "['_8f68b889-83a4-44ad-9777-d39acdd5415e', '_657f30ba-0690-4a14-8b8e-d8939efcc7bd']",
+          "name": "Exclusive Gateway Convergence 2",
+          "outgoing": "_54f45351-aa18-4c65-b0d0-edc3aa0a140d"
+        }
+      ],
+      "id": "WFP-6-2",
+      "is_closed": false,
+      "is_executable": false,
+      "lane_sets": [
+        {
+          "id": "ls_0623a9bd-fd34-462a-b09d-85cb5004be78",
+          "lane": [
+            {
+              "flow_node_refs": "['_2ee553a1-cb03-41e3-b285-345c826fc88d', '_fa3a8e53-5be0-4f0b-8680-d2498e255209', '_ba16239e-181e-4b9f-bc5b-0bb2ee973450', '_93021cd0-6f49-485d-966f-209744c748de', '_3c8c32c3-089a-4643-bf42-6c37c0dac7e0', '_a38484e2-7bdb-48b1-b62e-139d51d6a147', '_be29f267-9d56-46ef-8bbc-e13513b25fce', '_1237e756-d53c-4591-a731-dafffbf0b3f9']",
+              "id": "_4a6df7ac-26d8-4718-ac05-90af463d5e23",
+              "name": "Lane 1"
+            },
+            {
+              "flow_node_refs": "['_1eb62392-1f21-4a63-bbcb-c78880c3165e', '_7706e700-2aed-4b94-8070-961f118aab8f', '_ad81e6ba-40f5-43c1-9602-47d2e58804c8', '_33f30031-2e29-46b6-b080-30a192a36b45', '_7e6ccf38-e740-4537-a439-a8e984d066de', '_fea1c5af-6c76-403f-809e-26d476d92741', '_ae916437-d9aa-4e3d-a7c3-34998c410beb']",
+              "id": "_3400f56a-4565-47d1-91db-0ba17b958cb2",
+              "name": "Lane 2"
+            }
+          ]
+        }
+      ],
+      "parallel_gateways": [
+        {
+          "gateway_direction": "Unspecified",
+          "id": "_be29f267-9d56-46ef-8bbc-e13513b25fce",
+          "incoming": "_a63c8cd6-eee8-4fbe-be5e-f6980b180b52",
+          "name": "Parallel Gateway Divergence",
+          "outgoing": "['_ab34472d-95a4-459c-a13b-5ed8b8b75eca', '_d30f7fb3-ec91-4a60-b73e-42419417f3be']"
+        }
+      ],
+      "process_type": "None",
+      "sequence_flows": [
+        {
+          "id": "_a63c8cd6-eee8-4fbe-be5e-f6980b180b52",
+          "source_ref": "_a38484e2-7bdb-48b1-b62e-139d51d6a147",
+          "target_ref": "_be29f267-9d56-46ef-8bbc-e13513b25fce"
+        },
+        {
+          "id": "_ab34472d-95a4-459c-a13b-5ed8b8b75eca",
+          "source_ref": "_be29f267-9d56-46ef-8bbc-e13513b25fce",
+          "target_ref": "_7706e700-2aed-4b94-8070-961f118aab8f"
+        },
+        {
+          "id": "_8f68b889-83a4-44ad-9777-d39acdd5415e",
+          "source_ref": "_7e6ccf38-e740-4537-a439-a8e984d066de",
+          "target_ref": "_33f30031-2e29-46b6-b080-30a192a36b45"
+        },
+        {
+          "id": "_d30f7fb3-ec91-4a60-b73e-42419417f3be",
+          "source_ref": "_be29f267-9d56-46ef-8bbc-e13513b25fce",
+          "target_ref": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0"
+        },
+        {
+          "id": "_10a16fd5-0d56-4fdb-8529-0a0610a573be",
+          "source_ref": "_1237e756-d53c-4591-a731-dafffbf0b3f9",
+          "target_ref": "_ba16239e-181e-4b9f-bc5b-0bb2ee973450"
+        },
+        {
+          "id": "_d234800f-72d3-46cb-b603-30f1da7b1205",
+          "source_ref": "_1eb62392-1f21-4a63-bbcb-c78880c3165e",
+          "target_ref": "_7e6ccf38-e740-4537-a439-a8e984d066de"
+        },
+        {
+          "id": "_61abe245-5604-46ba-8152-94d6e68ffda4",
+          "source_ref": "_fa3a8e53-5be0-4f0b-8680-d2498e255209",
+          "target_ref": "_93021cd0-6f49-485d-966f-209744c748de"
+        },
+        {
+          "id": "_00d30c39-29a7-4c36-86e3-bc6e893efb42",
+          "source_ref": "_7706e700-2aed-4b94-8070-961f118aab8f",
+          "target_ref": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8"
+        },
+        {
+          "id": "_6ee42e88-3d90-4259-83c0-9abd4574a15a",
+          "source_ref": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8",
+          "target_ref": "_1eb62392-1f21-4a63-bbcb-c78880c3165e"
+        },
+        {
+          "id": "_6a248585-952e-40ff-82ec-b6d8f410b73a",
+          "source_ref": "_ad81e6ba-40f5-43c1-9602-47d2e58804c8",
+          "target_ref": "_fea1c5af-6c76-403f-809e-26d476d92741"
+        },
+        {
+          "id": "_f5c5d52a-204f-4f97-b872-817d63cf36ab",
+          "source_ref": "_ba16239e-181e-4b9f-bc5b-0bb2ee973450",
+          "target_ref": "_93021cd0-6f49-485d-966f-209744c748de"
+        },
+        {
+          "id": "_657f30ba-0690-4a14-8b8e-d8939efcc7bd",
+          "source_ref": "_fea1c5af-6c76-403f-809e-26d476d92741",
+          "target_ref": "_33f30031-2e29-46b6-b080-30a192a36b45"
+        },
+        {
+          "id": "_54f45351-aa18-4c65-b0d0-edc3aa0a140d",
+          "source_ref": "_33f30031-2e29-46b6-b080-30a192a36b45",
+          "target_ref": "_ae916437-d9aa-4e3d-a7c3-34998c410beb"
+        },
+        {
+          "id": "_9d489bd9-9435-4692-bc98-4cdda4a61569",
+          "source_ref": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
+          "target_ref": "_1237e756-d53c-4591-a731-dafffbf0b3f9"
+        },
+        {
+          "id": "_eeb6812d-d182-489f-aea2-493ab8732cfd",
+          "source_ref": "_3c8c32c3-089a-4643-bf42-6c37c0dac7e0",
+          "target_ref": "_fa3a8e53-5be0-4f0b-8680-d2498e255209"
+        },
+        {
+          "id": "_994697ca-8927-4c84-a9a6-8682f8dee032",
+          "source_ref": "_93021cd0-6f49-485d-966f-209744c748de",
+          "target_ref": "_2ee553a1-cb03-41e3-b285-345c826fc88d"
+        }
+      ],
+      "service_tasks": [
+        {
+          "completion_quantity": 1,
+          "data_input_associations": [
+            {
+              "id": "_73afd30d-7d54-4897-9350-1f7d301ef1b2",
+              "source_ref": "_3d35229f-2c75-4d5d-a066-2d14e46e442e",
+              "target_ref": "Din1373655174951"
+            }
+          ],
+          "data_output_associations": [
+            {
+              "id": "_fa10ebaf-7088-4def-8cc3-d959b8876b06",
+              "source_ref": "Dout1373655174952",
+              "target_ref": "_b9385abf-d293-40b7-848b-8add4db48415"
+            }
+          ],
+          "id": "_fea1c5af-6c76-403f-809e-26d476d92741",
+          "implementation": "##WebService",
+          "incoming": "_6a248585-952e-40ff-82ec-b6d8f410b73a",
+          "io_specification": {
+            "data_inputs": [
+              {
+                "id": "Din1373655174951",
+                "is_collection": false
+              }
+            ],
+            "data_outputs": [
+              {
+                "id": "Dout1373655174952",
+                "is_collection": false
+              }
+            ],
+            "input_sets": [
+              {
+                "data_input_refs": "Din1373655174951"
+              }
+            ],
+            "output_sets": [
+              {
+                "data_output_refs": "Dout1373655174952"
+              }
+            ]
+          },
+          "is_for_compensation": false,
+          "name": "Service Task 7",
+          "outgoing": "_657f30ba-0690-4a14-8b8e-d8939efcc7bd",
+          "start_quantity": 1
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_a38484e2-7bdb-48b1-b62e-139d51d6a147",
+          "is_interrupting": true,
+          "message_event_definition": [
+            {
+              "message_ref": "Message_1373655174959"
+            }
+          ],
+          "name": "Start Event\nMessage",
+          "outgoing": "_a63c8cd6-eee8-4fbe-be5e-f6980b180b52",
+          "parallel_multiple": false
+        }
+      ],
+      "sub_processes": [
+        {
+          "completion_quantity": 1,
+          "id": "_1eb62392-1f21-4a63-bbcb-c78880c3165e",
+          "incoming": "_6ee42e88-3d90-4259-83c0-9abd4574a15a",
+          "is_for_compensation": false,
+          "name": "Collapsed Sub-Process",
+          "outgoing": "_d234800f-72d3-46cb-b603-30f1da7b1205",
+          "start_quantity": 1,
+          "triggered_by_event": false
+        },
+        {
+          "completion_quantity": 1,
+          "end_events": [
+            {
+              "id": "_4f744697-3643-41a9-9d07-84c78e2df64b",
+              "incoming": "_062ae395-4aba-408b-ac64-4987752be95b",
+              "name": "End Event None 3"
+            }
+          ],
+          "id": "_7e6ccf38-e740-4537-a439-a8e984d066de",
+          "incoming": "_d234800f-72d3-46cb-b603-30f1da7b1205",
+          "is_for_compensation": false,
+          "name": "Sub Process - Expanded",
+          "outgoing": "_8f68b889-83a4-44ad-9777-d39acdd5415e",
+          "sequence_flows": [
+            {
+              "id": "_2d1047ce-fdd5-4cb6-9f0c-0ee8d6d3044a",
+              "source_ref": "_1df01cbc-5d8c-444e-b1db-da3efdee254a",
+              "target_ref": "_6936f794-7bbb-4aa1-ae48-3a35bab4e2f4"
+            },
+            {
+              "id": "_062ae395-4aba-408b-ac64-4987752be95b",
+              "source_ref": "_6936f794-7bbb-4aa1-ae48-3a35bab4e2f4",
+              "target_ref": "_4f744697-3643-41a9-9d07-84c78e2df64b"
+            }
+          ],
+          "start_events": [
+            {
+              "id": "_1df01cbc-5d8c-444e-b1db-da3efdee254a",
+              "is_interrupting": true,
+              "name": "Start Event None 2",
+              "outgoing": "_2d1047ce-fdd5-4cb6-9f0c-0ee8d6d3044a",
+              "parallel_multiple": false
+            }
+          ],
+          "start_quantity": 1,
+          "tasks": [
+            {
+              "completion_quantity": 1,
+              "id": "_6936f794-7bbb-4aa1-ae48-3a35bab4e2f4",
+              "incoming": "_2d1047ce-fdd5-4cb6-9f0c-0ee8d6d3044a",
+              "is_for_compensation": false,
+              "name": "Abstract Task 6",
+              "outgoing": "_062ae395-4aba-408b-ac64-4987752be95b",
+              "start_quantity": 1
+            }
+          ],
+          "triggered_by_event": false
+        }
+      ],
+      "text_annotations": [
+        {
+          "id": "_4815ea6a-ede2-489b-8b37-2cdb2835b02c",
+          "text": "Text Annotation",
+          "text_format": "text/plain"
+        }
+      ],
+      "user_tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "_7706e700-2aed-4b94-8070-961f118aab8f",
+          "implementation": "##WebService",
+          "incoming": "_ab34472d-95a4-459c-a13b-5ed8b8b75eca",
+          "is_for_compensation": false,
+          "name": "User Task 5",
+          "outgoing": "_00d30c39-29a7-4c36-86e3-bc6e893efb42",
+          "start_quantity": 1
+        }
+      ]
+    },
+    {
+      "end_events": [
+        {
+          "id": "_ab12c75c-eaf3-4ae1-9021-ee556711757f",
+          "incoming": "_2e21b112-d974-4add-9bee-91dafbed0a22",
+          "name": "End Event None 4"
+        }
+      ],
+      "id": "WFP-0-",
+      "is_closed": false,
+      "is_executable": false,
+      "process_type": "None",
+      "sequence_flows": [
+        {
+          "id": "_107de09e-8506-4d2b-ad00-3341be723dff",
+          "source_ref": "_18770c5c-c117-4570-aaf2-8c7a6910c34d",
+          "target_ref": "_47207d3b-8dc2-4679-bf33-c1e7e677765b"
+        },
+        {
+          "id": "_2e21b112-d974-4add-9bee-91dafbed0a22",
+          "source_ref": "_47207d3b-8dc2-4679-bf33-c1e7e677765b",
+          "target_ref": "_ab12c75c-eaf3-4ae1-9021-ee556711757f"
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_18770c5c-c117-4570-aaf2-8c7a6910c34d",
+          "is_interrupting": true,
+          "name": "Start Event None 3",
+          "outgoing": "_107de09e-8506-4d2b-ad00-3341be723dff",
+          "parallel_multiple": false
+        }
+      ],
+      "tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "_47207d3b-8dc2-4679-bf33-c1e7e677765b",
+          "incoming": "_107de09e-8506-4d2b-ad00-3341be723dff",
+          "is_for_compensation": false,
+          "name": "Abstract Task 8",
+          "outgoing": "_2e21b112-d974-4add-9bee-91dafbed0a22",
+          "start_quantity": 1
         }
       ]
     }
   ],
-  "categories": [
-    {
-      "id": "Cat1373655174961",
-      "name": null,
-      "category_value": [
-        {
-          "id": "Value_Cat1373655174961",
-          "value": "Group"
-        }
-      ]
-    }
-  ]
+  "target_namespace": "http://www.trisotech.com/definitions/_1373655174418",
+  "type_language": "http://www.w3.org/2001/XMLSchema"
 }

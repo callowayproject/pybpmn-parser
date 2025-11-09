@@ -2,11 +2,9 @@
 
 from pathlib import Path
 
-import lxml.etree as ET  # noqa: N812
 import pytest
 
-from pybpmn_parser.bpmn.infrastructure.definitions import Definitions
-from pybpmn_parser.parse import parse, parse_file
+from pybpmn_parser.parse import Parser
 from pybpmn_parser.validator import ValidationError
 
 
@@ -16,33 +14,38 @@ class TestParse:
     def test_valid_bpmn_returns_definitions(self):
         """The parse function with a valid BPMN XML string returns a Definitions object."""
         xml_str = """<?xml version="1.0" encoding="UTF-8"?>
-        <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" targetNamespace="http://bpmn.io/schema/bpmn">
-            <process id="Process_1" />
-        </definitions>
+        <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" targetNamespace="http://bpmn.io/schema/bpmn">
+            <bpmn:process id="Process_1" />
+        </bpmn:definitions>
         """
-        result = parse(xml_str)
-        assert isinstance(result, Definitions)
+        parser = Parser()
+        result = parser.parse_string(xml_str)
+        assert result.__class__.__name__ == "Definitions"
         assert len(result.processes) == 1
         assert result.processes[0].id == "Process_1"
 
     def test_invalid_bpmn_raises_validation_error(self):
         """Test parse function with an invalid BPMN XML string."""
         invalid_xml = """<?xml version="1.0"?>
-        <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" targetNamespace="http://bpmn.io/schema/bpmn">
-            <invalidTag />
-        </definitions>
+        <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" targetNamespace="http://bpmn.io/schema/bpmn">
+            <bpmn:invalidTag />
+        </bpmn:definitions>
         """
         expected_error_message = (
             "VALIDATION_ERROR: Validation failed\n"
             "SCHEMA_ERROR: Unexpected child with tag 'bpmn:invalidTag' at position 1."
         )
+        parser = Parser()
+
         with pytest.raises(ValidationError, match=expected_error_message):
-            parse(invalid_xml)
+            parser.parse_string(invalid_xml)
 
     def test_empty_string_raises_validation_error(self):
         """Parsing an empty string raises a ValidationError."""
+        parser = Parser()
+
         with pytest.raises(ValidationError, match="EMPTY_XML: Value cannot be empty"):
-            parse("")
+            parser.parse_string("")
 
     def test_parse_non_bpmn_xml_raises_validation_error(self):
         """Parsing valid XML not conforming to BPMN raises a ValidationError."""
@@ -54,8 +57,9 @@ class TestParse:
         expected_error_message = (
             "VALIDATION_ERROR: Validation failed\nSCHEMA_ERROR: 'root' is not an element of the schema"
         )
+        parser = Parser()
         with pytest.raises(ValidationError, match=expected_error_message):
-            parse(xml_str)
+            parser.parse_string(xml_str)
 
 
 class TestParseFile:
@@ -63,11 +67,13 @@ class TestParseFile:
 
     def test_can_parse_existing_valid_file(self, fixture_dir: Path):
         """Parsing a valid BPMN file should return a Definitions object."""
-        result = parse_file(fixture_dir / "kitchen-sink.bpmn")
-        assert isinstance(result, Definitions)
+        parser = Parser()
+        result = parser.parse_file(fixture_dir / "kitchen-sink.bpmn")
+        assert result.__class__.__name__ == "Definitions"
 
     def test_missing_file_raises_file_not_found_error(self, fixture_dir: Path):
         """Parsing a non-existent file should raise a FileNotFoundError."""
+        parser = Parser()
         non_existent_file = fixture_dir / "non_existent.bpmn"
         with pytest.raises(FileNotFoundError):
-            parse_file(non_existent_file)
+            parser.parse_file(non_existent_file)

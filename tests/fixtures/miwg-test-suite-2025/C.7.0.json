@@ -1,522 +1,935 @@
 {
-  "id": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-  "name": "Advertise a job vacancy",
-  "target_namespace": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-  "expression_language": "http://www.omg.org/spec/DMN/20180521/FEEL/",
-  "type_language": "http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType",
-  "exporter": "Workflow Modeler",
-  "exporter_version": "6.12.3",
-  "resources": [
+  "bpmndiagrams": [
     {
-      "id": "_b5b6808a-be81-426c-98ae-f33f44a2f871",
-      "name": "Hiring manager"
-    },
-    {
-      "id": "_dc7df8e9-cc60-4953-9ae5-a9ea25fd9c5b",
-      "name": "Recruiter"
-    }
-  ],
-  "processes": [
-    {
-      "id": "_4a690dd7-809a-4fa9-ad63-515ac6685375",
-      "name": "EU Bank - Process",
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "io_specification": {},
-      "lane_sets": [
+      "id": "_9786170f-6612-400e-a37d-2970ab70f1f3",
+      "label_styles": [
         {
-          "id": null,
-          "name": null,
-          "lane": [
-            {
-              "id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
-              "name": "Hiring manager",
-              "partition_element_ref": null,
-              "flow_node_refs": [
-                {},
-                {},
-                {},
-                {}
-              ]
+          "font": {
+            "is_bold": false,
+            "is_italic": false,
+            "is_strike_through": false,
+            "is_underline": false,
+            "name": "arial,helvetica,sans-serif",
+            "size": 11.0
+          },
+          "id": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0"
+        }
+      ],
+      "name": "C.7.0",
+      "plane": {
+        "bpmn_edges": [
+          {
+            "bpmn_element": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+            "color_border_color": "#000000",
+            "id": "_19374b5c-d456-43e2-bc4e-3f3553583ab4",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
             },
-            {
-              "id": "_dd32321b-8e95-4801-8eed-5451399b4378",
-              "name": "Recruitment",
-              "partition_element_ref": null,
-              "flow_node_refs": [
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {}
-              ]
+            "waypoint": [
+              {
+                "x": 194.0,
+                "y": 293.5
+              },
+              {
+                "x": 250.0,
+                "y": 293.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+            "color_border_color": "#000000",
+            "id": "_cf13630a-2e86-4a3a-a2b1-8046c33ba0d9",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 346.0,
+                "y": 293.5
+              },
+              {
+                "x": 394.5,
+                "y": 293.5
+              },
+              {
+                "x": 394.5,
+                "y": 604.0
+              },
+              {
+                "x": 443.0,
+                "y": 604.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+            "color_border_color": "#000000",
+            "id": "_a60a45e1-047e-4b6b-835b-7f6018b7ad92",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 538.0,
+                "y": 604.0
+              },
+              {
+                "x": 588.5,
+                "y": 604.0
+              },
+              {
+                "x": 588.5,
+                "y": 293.5
+              },
+              {
+                "x": 639.0,
+                "y": 293.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+            "color_border_color": "#000000",
+            "id": "_ef2bb966-fe1b-4a19-a84e-40b4ecc61d47",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 734.0,
+                "y": 293.5
+              },
+              {
+                "x": 814.0,
+                "y": 293.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+            "color_border_color": "#000000",
+            "id": "_4f9ac13d-ebf2-42e5-b3fc-15ba4cdcfbab",
+            "label": {
+              "bounds": {
+                "height": 12.015625,
+                "width": 110.0,
+                "x": 796.0,
+                "y": 199.38780542612068
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_label_position": "custom"
+            },
+            "waypoint": [
+              {
+                "x": 835.0,
+                "y": 273.48780542612076
+              },
+              {
+                "x": 835.0,
+                "y": 253.48780542612076
+              },
+              {
+                "x": 491.0,
+                "y": 253.48780542612076
+              },
+              {
+                "x": 491.0,
+                "y": 566.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+            "color_border_color": "#000000",
+            "id": "_fc80eee4-2fb2-415f-b847-92e979377e1b",
+            "label": {
+              "bounds": {
+                "height": 12.015625,
+                "width": 110.0,
+                "x": 828.6066017150879,
+                "y": 273.53679555654526
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_label_position": "custom"
+            },
+            "waypoint": [
+              {
+                "x": 856.0,
+                "y": 293.28679555654526
+              },
+              {
+                "x": 892.6066017150879,
+                "y": 293.28679555654526
+              },
+              {
+                "x": 892.6066017150879,
+                "y": 603.7867955565453
+              },
+              {
+                "x": 929.2132034301758,
+                "y": 603.7867955565453
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_f476667f-44f5-4fec-9414-bf70d987853f",
+            "color_border_color": "#000000",
+            "id": "_a1bdc324-0e7c-4dd6-ba11-5abf577834dd",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 950.2132034301758,
+                "y": 583.9878054261208
+              },
+              {
+                "x": 950.2132034301758,
+                "y": 524.5
+              },
+              {
+                "x": 1089.2867965698242,
+                "y": 524.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+            "color_border_color": "#000000",
+            "id": "_8e566432-8dca-46b3-b56e-0b681dbf2b69",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 950.2132034301758,
+                "y": 624.0121945738792
+              },
+              {
+                "x": 950.2132034301758,
+                "y": 681.0
+              },
+              {
+                "x": 1013.7867965698242,
+                "y": 681.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_720cb9a3-20df-4da1-a923-5336b269c104",
+            "color_border_color": "#000000",
+            "id": "_a62d1fcf-2639-4f32-a919-0001e5403a72",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 1184.2867965698242,
+                "y": 524.5
+              },
+              {
+                "x": 1344.7867965698242,
+                "y": 524.5
+              },
+              {
+                "x": 1344.7867965698242,
+                "y": 583.9878054261208
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_64ac4473-a38f-4043-973a-69c497adc88a",
+            "color_border_color": "#000000",
+            "id": "_d481109d-4c89-406f-af68-5fda941707f9",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 1108.7867965698242,
+                "y": 681.0
+              },
+              {
+                "x": 1201.5,
+                "y": 681.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+            "color_border_color": "#000000",
+            "id": "_8e6aa554-08d3-44ec-a4a8-4aa74b66351d",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 1365.7867965698242,
+                "y": 603.7867955565453
+              },
+              {
+                "x": 1452.3603897094727,
+                "y": 604.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+            "color_border_color": "#000000",
+            "id": "_012d4172-086e-4cd7-8834-3f055e54f77f",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "waypoint": [
+              {
+                "x": 1296.5,
+                "y": 681.0
+              },
+              {
+                "x": 1344.7867965698242,
+                "y": 681.0
+              },
+              {
+                "x": 1344.7867965698242,
+                "y": 624.0121945738792
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
+            "color_border_color": "#000000",
+            "id": "_e8b6f60a-4389-4b71-9d2e-c73bcca8ffda",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "source_element": "_8ce3cd47-c554-4454-80c4-7e045d45a7cc",
+            "waypoint": [
+              {
+                "x": 298.0,
+                "y": 256.5
+              },
+              {
+                "x": 298.0,
+                "y": 179.5
+              },
+              {
+                "x": 334.0,
+                "y": 179.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_5c3fc96e-20d0-4879-8471-d41224632e24",
+            "color_border_color": "#000000",
+            "id": "_115b0056-5e1b-483a-b8a9-81677d847e18",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "target_element": "_292acb9f-6f5b-402b-adc0-0bd34c2d558d",
+            "waypoint": [
+              {
+                "x": 367.0,
+                "y": 179.5
+              },
+              {
+                "x": 462.20000000000005,
+                "y": 179.5
+              },
+              {
+                "x": 462.20000000000005,
+                "y": 566.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
+            "color_border_color": "#000000",
+            "id": "_850ff2e3-6389-4b70-895b-b9e4381e9b98",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "source_element": "_292acb9f-6f5b-402b-adc0-0bd34c2d558d",
+            "waypoint": [
+              {
+                "x": 491.0,
+                "y": 641.05
+              },
+              {
+                "x": 491.0,
+                "y": 721.0
+              },
+              {
+                "x": 551.0,
+                "y": 721.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
+            "color_border_color": "#000000",
+            "id": "_1b44492b-f117-42e7-a97e-98e7e4b7f7e3",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "target_element": "_59a87229-94ce-4df6-ab1d-b669632dc093",
+            "waypoint": [
+              {
+                "x": 584.0,
+                "y": 721.0
+              },
+              {
+                "x": 687.0,
+                "y": 721.0
+              },
+              {
+                "x": 687.0,
+                "y": 331.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
+            "color_border_color": "#000000",
+            "id": "_2cdd2564-d1ab-4d16-8a55-3c66271890ca",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "source_element": "_59a87229-94ce-4df6-ab1d-b669632dc093",
+            "waypoint": [
+              {
+                "x": 703.0,
+                "y": 255.5
+              },
+              {
+                "x": 703.0,
+                "y": 166.0
+              },
+              {
+                "x": 743.5,
+                "y": 166.0
+              }
+            ]
+          },
+          {
+            "color_border_color": "#000000",
+            "id": "_985753e3-a4ce-486b-908a-509d382259ed",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true",
+              "triso_label_position": "midbottom"
+            },
+            "source_element": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba_di",
+            "target_element": "_d481109d-4c89-406f-af68-5fda941707f9",
+            "waypoint": [
+              {
+                "x": 1118.5,
+                "y": 774.0
+              },
+              {
+                "x": 1118.5,
+                "y": 730.0
+              },
+              {
+                "x": 1151.5,
+                "y": 730.0
+              },
+              {
+                "x": 1152.5,
+                "y": 682.0
+              }
+            ]
+          }
+        ],
+        "bpmn_element": "_0322c8c5-b921-44cc-9bf7-261dcb16f257",
+        "bpmn_shapes": [
+          {
+            "bounds": {
+              "height": 824.0121945738792,
+              "width": 1483.0,
+              "x": 50.0,
+              "y": 50.0
+            },
+            "bpmn_element": "_d3aa8a96-e9df-4336-9b0d-01b17e6587ad",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_3946a034-888b-406b-a4bb-cdbee3f27655",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 818.01220703125,
+                "width": 12.015625,
+                "x": 55.0,
+                "y": 52.99999377131468
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
             }
-          ]
-        }
-      ],
-      "user_tasks": [
-        {
-          "id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
-          "name": "Write \ndescription",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##unspecified",
-          "documentation": [
-            {}
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "io_specification": {},
-          "data_output_associations": [
-            {}
-          ],
-          "performers": [
-            {}
-          ]
-        },
-        {
-          "id": "_15b00027-5049-4081-8952-fd398e8b722a",
-          "name": "Approve advertisement",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##unspecified",
-          "documentation": [
-            {}
-          ],
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "triso:graphRelations": {
-                    "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
-                    "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
-                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
-                    "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
-                    "@xmlns:html": "http://www.w3.org/1999/xhtml",
-                    "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
-                    "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
-                    "@xmlns:rss": "http://purl.org/rss/2.0/",
-                    "@xmlns:trisofeed": "http://trisotech.com/feed",
-                    "@xmlns:drools": "http://www.jboss.org/drools",
-                    "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-                    "triso:systemRef": {
-                      "@predicate": "where",
-                      "@id": "_b90e53a0-9483-4733-a1cf-27316061fec3",
-                      "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb"
-                    }
-                  }
-                }
-              ]
+          },
+          {
+            "bounds": {
+              "height": 403.0,
+              "width": 1453.0,
+              "x": 80.0,
+              "y": 50.0
+            },
+            "bpmn_element": "_b836aa5e-fb94-4479-af77-64a3a5202451",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_dbc86830-61a4-4a1f-9e5f-69a97aa06e61",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 397.0,
+                "width": 12.015625,
+                "x": 85.0,
+                "y": 53.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
             }
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "io_specification": {},
-          "data_input_associations": [
-            {}
-          ],
-          "data_output_associations": [
-            {}
-          ],
-          "performers": [
-            {}
-          ]
-        },
-        {
-          "id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
-          "name": "Complete advertisement",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##unspecified",
-          "documentation": [
-            {}
-          ],
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "triso:graphRelations": {
-                    "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
-                    "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
-                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
-                    "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
-                    "@xmlns:html": "http://www.w3.org/1999/xhtml",
-                    "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
-                    "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
-                    "@xmlns:rss": "http://purl.org/rss/2.0/",
-                    "@xmlns:trisofeed": "http://trisotech.com/feed",
-                    "@xmlns:drools": "http://www.jboss.org/drools",
-                    "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-                    "triso:systemRef": {
-                      "@predicate": "where",
-                      "@id": "_2c8622ca-70fe-4f57-8bcd-5cbd8b1390b7",
-                      "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb"
-                    }
-                  }
-                }
-              ]
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 163.0,
+              "y": 277.5
+            },
+            "bpmn_element": "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_e0800ebd-85ea-4c90-af70-c0cb3f35d7ef",
+            "label": {
+              "bounds": {
+                "height": 26.015625,
+                "width": 110.0,
+                "x": 124.0,
+                "y": 319.5
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
             }
-          ],
-          "incoming": [
-            {},
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "io_specification": {},
-          "data_input_associations": [
-            {}
-          ],
-          "data_output_associations": [
-            {}
-          ],
-          "performers": [
-            {}
-          ]
-        }
-      ],
-      "start_events": [
-        {
-          "id": "_5ba97787-8a90-4002-8277-b0895e45cf1f",
-          "name": "Job \nvacancy",
-          "parallel_multiple": false,
-          "is_interrupting": false,
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "service_tasks": [
-        {
-          "id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
-          "name": "Publish on \nhomepage",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "documentation": [
-            {}
-          ],
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "triso:graphRelations": {
-                    "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
-                    "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
-                    "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
-                    "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
-                    "@xmlns:html": "http://www.w3.org/1999/xhtml",
-                    "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
-                    "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
-                    "@xmlns:rss": "http://purl.org/rss/2.0/",
-                    "@xmlns:trisofeed": "http://trisotech.com/feed",
-                    "@xmlns:drools": "http://www.jboss.org/drools",
-                    "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-                    "triso:systemRef": {
-                      "@predicate": "where",
-                      "@id": "_4ee60d07-6419-4107-9da1-5551f25f2d96",
-                      "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb"
-                    }
-                  }
-                }
-              ]
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 250.0,
+              "y": 255.5
+            },
+            "bpmn_element": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_8ce3cd47-c554-4454-80c4-7e045d45a7cc",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 89.0,
+                "x": 253.5,
+                "y": 280.5
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
             }
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "performers": [
-            {}
-          ]
-        },
-        {
-          "id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
-          "name": "Publish on \nother platforms",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "io_specification": {},
-          "data_input_associations": [
-            {}
-          ],
-          "multi_instance_loop_characteristics": {}
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
-          "name": null,
-          "source_ref": "_5ba97787-8a90-4002-8277-b0895e45cf1f",
-          "target_ref": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
-          "is_immediate": null
-        },
-        {
-          "id": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
-          "name": null,
-          "source_ref": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
-          "target_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
-          "is_immediate": null
-        },
-        {
-          "id": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
-          "name": null,
-          "source_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
-          "target_ref": "_15b00027-5049-4081-8952-fd398e8b722a",
-          "is_immediate": null
-        },
-        {
-          "id": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
-          "name": null,
-          "source_ref": "_15b00027-5049-4081-8952-fd398e8b722a",
-          "target_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
-          "is_immediate": null
-        },
-        {
-          "id": "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
-          "name": "No",
-          "source_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
-          "target_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
-          "is_immediate": null
-        },
-        {
-          "id": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
-          "name": "Yes",
-          "source_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
-          "target_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
-          "is_immediate": null
-        },
-        {
-          "id": "_f476667f-44f5-4fec-9414-bf70d987853f",
-          "name": null,
-          "source_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
-          "target_ref": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
-          "is_immediate": null
-        },
-        {
-          "id": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
-          "name": null,
-          "source_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
-          "target_ref": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
-          "is_immediate": null
-        },
-        {
-          "id": "_720cb9a3-20df-4da1-a923-5336b269c104",
-          "name": null,
-          "source_ref": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
-          "target_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
-          "is_immediate": null
-        },
-        {
-          "id": "_64ac4473-a38f-4043-973a-69c497adc88a",
-          "name": null,
-          "source_ref": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
-          "target_ref": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
-          "is_immediate": null
-        },
-        {
-          "id": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
-          "name": null,
-          "source_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
-          "target_ref": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
-          "is_immediate": null
-        },
-        {
-          "id": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
-          "name": null,
-          "source_ref": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
-          "target_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
-          "is_immediate": null
-        }
-      ],
-      "parallel_gateways": [
-        {
-          "id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
-          "name": null,
-          "gateway_direction": "Diverging",
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {},
-            {}
-          ]
-        },
-        {
-          "id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
-          "name": null,
-          "gateway_direction": "Converging",
-          "incoming": [
-            {},
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "exclusive_gateways": [
-        {
-          "id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
-          "name": "Advertisement approved?",
-          "gateway_direction": "Diverging",
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {},
-            {}
-          ]
-        }
-      ],
-      "end_events": [
-        {
-          "id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
-          "name": "Vacancy \nadvertised",
-          "incoming": [
-            {}
-          ]
-        }
-      ],
-      "data_object_references": [
-        {
-          "id": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
-          "name": "Description",
-          "item_subject_ref": null,
-          "data_object_ref": "_8f2796af-2fbe-4f72-80c1-96933c38990f"
-        },
-        {
-          "id": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
-          "name": "Advertisement",
-          "item_subject_ref": null,
-          "data_object_ref": "_f60fe1d9-58bd-462c-9d62-153e530dc79d"
-        },
-        {
-          "id": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
-          "name": "Selected\n platforms",
-          "item_subject_ref": null,
-          "data_object_ref": "_ef29e636-bdfe-4eb0-9633-7d0195a8ae3a"
-        }
-      ],
-      "data_objects": [
-        {
-          "id": "_ef29e636-bdfe-4eb0-9633-7d0195a8ae3a",
-          "name": "Selected\n platforms",
-          "item_subject_ref": "_bd0e1992-4669-4a5b-98ea-641930d87150",
-          "is_collection": true
-        },
-        {
-          "id": "_8f2796af-2fbe-4f72-80c1-96933c38990f",
-          "name": "Description",
-          "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
-          "is_collection": false
-        },
-        {
-          "id": "_f60fe1d9-58bd-462c-9d62-153e530dc79d",
-          "name": "Advertisement",
-          "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
-          "is_collection": false
-        }
-      ],
-      "business_rule_tasks": [
-        {
-          "id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
-          "name": "Select \nother platforms",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##unspecified",
-          "documentation": [
-            {}
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "io_specification": {},
-          "data_output_associations": [
-            {}
-          ],
-          "performers": [
-            {}
-          ]
-        }
-      ]
-    }
-  ],
-  "item_definitions": [
-    {
-      "id": "_triso-default-bpmnItemDefinition-string_id",
-      "structure_ref": "feel:string",
-      "is_collection": false,
-      "item_kind": null
-    },
-    {
-      "id": "_bd0e1992-4669-4a5b-98ea-641930d87150",
-      "structure_ref": "collectionOfString",
-      "is_collection": false,
-      "item_kind": null
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 639.0,
+              "y": 255.5
+            },
+            "bpmn_element": "_15b00027-5049-4081-8952-fd398e8b722a",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_59a87229-94ce-4df6-ab1d-b669632dc093",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 89.0,
+                "x": 642.5,
+                "y": 280.5
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 40.024389147758484,
+              "width": 41.57359313964844,
+              "x": 814.0,
+              "y": 273.48780542612076
+            },
+            "bpmn_element": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_99380e5f-656e-4d5c-b43c-80a9b20c6cc8",
+            "is_marker_visible": true,
+            "label": {
+              "bounds": {
+                "height": 26.015625,
+                "width": 110.0,
+                "x": 779.7867965698242,
+                "y": 321.5170724034309
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 40.0,
+              "width": 34.0,
+              "x": 136.0,
+              "y": 130.0
+            },
+            "bpmn_element": "_d08869ef-4951-4592-bb73-363cee03cb90",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_938dfdaf-0fe4-4def-b8cc-1aade8108f2e",
+            "label": {
+              "bounds": {
+                "height": 26.015625,
+                "width": 110.0,
+                "x": 98.0,
+                "y": 175.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 40.0,
+              "width": 34.0,
+              "x": 334.0,
+              "y": 159.5
+            },
+            "bpmn_element": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd_di",
+            "label": {
+              "bounds": {
+                "height": 12.015625,
+                "width": 110.0,
+                "x": 296.0,
+                "y": 204.5
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 40.0,
+              "width": 34.0,
+              "x": 743.5,
+              "y": 146.0
+            },
+            "bpmn_element": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_927164d8-b3df-447f-bd7f-f5786c37c279",
+            "label": {
+              "bounds": {
+                "height": 26.015625,
+                "width": 110.0,
+                "x": 705.5,
+                "y": 191.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 421.01219457387924,
+              "width": 1453.0,
+              "x": 80.0,
+              "y": 453.0
+            },
+            "bpmn_element": "_dd32321b-8e95-4801-8eed-5451399b4378",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_3f64498d-0903-4b45-8c4f-fd7fab12d54c",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 415.01220703125,
+                "width": 12.015625,
+                "x": 85.0,
+                "y": 455.9999937713146
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 443.0,
+              "y": 566.0
+            },
+            "bpmn_element": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_292acb9f-6f5b-402b-adc0-0bd34c2d558d",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 89.0,
+                "x": 446.5,
+                "y": 591.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 40.024389147758484,
+              "width": 41.57359313964844,
+              "x": 929.2132034301758,
+              "y": 583.9878054261208
+            },
+            "bpmn_element": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_975aa6c7-f142-47ed-a405-ce482d61eb2b",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 1013.7867965698242,
+              "y": 643.0
+            },
+            "bpmn_element": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_fd4a4d27-2b4e-4f14-b7ff-f820f630a363",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 89.0,
+                "x": 1017.2867965698242,
+                "y": 668.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 1089.2867965698242,
+              "y": 486.5
+            },
+            "bpmn_element": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_f0775e8e-8c6a-44fd-838e-0872f5f93f0f",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 89.0,
+                "x": 1092.7867965698242,
+                "y": 511.5
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 1200.5,
+              "y": 643.0
+            },
+            "bpmn_element": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_bc8f619b-ffc6-41ad-90c0-56dada9790d4",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 89.0,
+                "x": 1204.0,
+                "y": 668.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 40.024389147758484,
+              "width": 41.57359313964844,
+              "x": 1323.7867965698242,
+              "y": 583.9878054261208
+            },
+            "bpmn_element": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_4a654e20-8f3e-4e42-bb84-56d1caf793d0",
+            "label": {
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 1452.3603897094727,
+              "y": 586.0
+            },
+            "bpmn_element": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_f80d237a-08ab-4237-a706-0df1d4fda58b",
+            "label": {
+              "bounds": {
+                "height": 26.015625,
+                "width": 110.0,
+                "x": 1415.3603897094727,
+                "y": 632.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 40.0,
+              "width": 34.0,
+              "x": 551.0,
+              "y": 701.0
+            },
+            "bpmn_element": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb_di",
+            "label": {
+              "bounds": {
+                "height": 12.015625,
+                "width": 110.0,
+                "x": 513.0,
+                "y": 746.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          },
+          {
+            "bounds": {
+              "height": 40.0,
+              "width": 34.0,
+              "x": 1101.5,
+              "y": 774.0
+            },
+            "bpmn_element": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+            "color_background_color": "#ffffff",
+            "color_border_color": "#000000",
+            "id": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba_di",
+            "label": {
+              "bounds": {
+                "height": 26.015625,
+                "width": 110.0,
+                "x": 1063.5,
+                "y": 819.0
+              },
+              "color_color": "#000000",
+              "label_style": "LS_9786170f-6612-400e-a37d-2970ab70f1f3_0",
+              "triso_default_bounds": "true"
+            }
+          }
+        ],
+        "id": "_9786170f-6612-400e-a37d-2970ab70f1f3_plane",
+        "trisobpmn_diagram_height": "924.0121945738792",
+        "trisobpmn_diagram_width": "1583"
+      }
     }
   ],
   "collaborations": [
     {
       "id": "_0322c8c5-b921-44cc-9bf7-261dcb16f257",
-      "name": null,
       "is_closed": false,
       "participants": [
         {
@@ -527,105 +940,596 @@
       ]
     }
   ],
-  "relationships": [
+  "exporter": "Workflow Modeler",
+  "exporter_version": "6.12.3",
+  "expression_language": "http://www.omg.org/spec/DMN/20180521/FEEL/",
+  "id": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+  "item_definitions": [
     {
-      "id": null,
-      "type_value": "trisoExtension",
-      "direction": null,
-      "extension_elements": [
+      "id": "_triso-default-bpmnItemDefinition-string_id",
+      "is_collection": false,
+      "item_kind": "Information",
+      "structure_ref": "feel:string",
+      "triso_basic_type": "true",
+      "triso_definition_type": "http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType",
+      "triso_name": "triso_string"
+    },
+    {
+      "id": "_bd0e1992-4669-4a5b-98ea-641930d87150",
+      "is_collection": false,
+      "item_kind": "Information",
+      "structure_ref": "collectionOfString",
+      "triso_basic_type": "false",
+      "triso_definition_type": "http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType",
+      "triso_name": "D\u00e9finition d'un item Collection de Texte"
+    }
+  ],
+  "name": "Advertise a job vacancy",
+  "processes": [
+    {
+      "business_rule_tasks": [
         {
-          "extensions": [
+          "completion_quantity": 1,
+          "data_output_associations": [
             {
-              "triso:ProjectCharter": {
-                "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
-                "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
-                "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
-                "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
-                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
-                "@xmlns:html": "http://www.w3.org/1999/xhtml",
-                "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
-                "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
-                "@xmlns:rss": "http://purl.org/rss/2.0/",
-                "@xmlns:trisofeed": "http://trisotech.com/feed",
-                "@xmlns:drools": "http://www.jboss.org/drools",
-                "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-                "triso:projectDescription": "<p>In this process, all activities are described how to advertise a job vacancy.</p>",
-                "triso:projectScope": "<p>Aim: Advertisement of a job vacancy conformable to law and company guidelines.<br />Trigger: Personnel requirements for filling job vacancies.<br />Result:The advertisement for the job vacancy has been reviewed and published according to the guidelines</p>",
-                "triso:projectGoals": null,
-                "triso:projectChallenges": null,
-                "triso:projectStakeholders": {
-                  "triso:responsible": null,
-                  "triso:accountable": null,
-                  "triso:consulted": null,
-                  "triso:informed": null
-                }
+              "id": "_d65b0a3d-8c42-4be7-9ac1-7324aa3d31f8",
+              "source_ref": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+              "target_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba"
+            }
+          ],
+          "documentation": [
+            {
+              "content": "<p>3rd party career platforms have to be selected on which the job advertisement will be published.</p>",
+              "text_format": "text/html"
+            }
+          ],
+          "id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+          "implementation": "##unspecified",
+          "incoming": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+          "io_specification": {
+            "data_outputs": [
+              {
+                "id": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+                "is_collection": true,
+                "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+                "name": "Selected\n platforms",
+                "triso_hidden": "false"
               }
+            ],
+            "output_sets": [
+              {
+                "data_output_refs": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+                "id": "_a389083a-36ae-4975-b210-9464fe82c22e"
+              }
+            ]
+          },
+          "is_for_compensation": false,
+          "name": "Select \nother platforms",
+          "outgoing": "_64ac4473-a38f-4043-973a-69c497adc88a",
+          "performers": [
+            {
+              "id": "_867590ee-ec0c-4f56-b0f0-32e444b73079",
+              "resource_ref": "_dc7df8e9-cc60-4953-9ae5-a9ea25fd9c5b"
+            }
+          ],
+          "start_quantity": 1
+        }
+      ],
+      "data_object_references": [
+        {
+          "data_object_ref": "_8f2796af-2fbe-4f72-80c1-96933c38990f",
+          "id": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+          "name": "Description"
+        },
+        {
+          "data_object_ref": "_f60fe1d9-58bd-462c-9d62-153e530dc79d",
+          "id": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+          "name": "Advertisement"
+        },
+        {
+          "data_object_ref": "_ef29e636-bdfe-4eb0-9633-7d0195a8ae3a",
+          "id": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+          "name": "Selected\n platforms"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "_ef29e636-bdfe-4eb0-9633-7d0195a8ae3a",
+          "is_collection": true,
+          "item_subject_ref": "_bd0e1992-4669-4a5b-98ea-641930d87150",
+          "name": "Selected\n platforms"
+        },
+        {
+          "id": "_8f2796af-2fbe-4f72-80c1-96933c38990f",
+          "is_collection": false,
+          "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+          "name": "Description"
+        },
+        {
+          "id": "_f60fe1d9-58bd-462c-9d62-153e530dc79d",
+          "is_collection": false,
+          "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+          "name": "Advertisement"
+        }
+      ],
+      "end_events": [
+        {
+          "id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+          "incoming": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+          "name": "Vacancy \nadvertised"
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "gateway_direction": "Diverging",
+          "id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+          "incoming": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+          "name": "Advertisement approved?",
+          "outgoing": "['_d74707c7-6af3-4db7-9403-924bfdf6a7d8', '_1d201a22-d500-4412-a32a-2c7e24ad4d6b']"
+        }
+      ],
+      "id": "_4a690dd7-809a-4fa9-ad63-515ac6685375",
+      "io_specification": {
+        "data_inputs": [
+          {
+            "id": "_d08869ef-4951-4592-bb73-363cee03cb90",
+            "is_collection": false,
+            "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+            "name": "Role \nrequired"
+          }
+        ],
+        "data_outputs": [
+          {
+            "data_state": {
+              "name": "Approved"
+            },
+            "id": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
+            "is_collection": false,
+            "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+            "name": "Advertisement"
+          }
+        ],
+        "input_sets": [
+          {
+            "data_input_refs": "_d08869ef-4951-4592-bb73-363cee03cb90",
+            "id": "_e717d617-bac8-4278-ac70-3a9767e3b27f"
+          }
+        ],
+        "output_sets": [
+          {
+            "data_output_refs": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
+            "id": "_a8015818-8340-4ba0-a3c9-84ee85a353eb"
+          }
+        ]
+      },
+      "is_closed": false,
+      "lane_sets": [
+        {
+          "lane": [
+            {
+              "flow_node_refs": "['_5ba97787-8a90-4002-8277-b0895e45cf1f', '_392c86ba-38b5-4dc9-b98d-f97ad4c2add5', '_15b00027-5049-4081-8952-fd398e8b722a', '_26c40c03-5d1f-46c5-81f1-ddd485868125']",
+              "id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
+              "name": "Hiring manager"
             },
             {
-              "triso:graphObjects": {
-                "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
-                "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
-                "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
-                "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
-                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
-                "@xmlns:html": "http://www.w3.org/1999/xhtml",
-                "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
-                "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
-                "@xmlns:rss": "http://purl.org/rss/2.0/",
-                "@xmlns:trisofeed": "http://trisotech.com/feed",
-                "@xmlns:drools": "http://www.jboss.org/drools",
-                "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-                "triso:system": {
-                  "@name": "Online Recruiting System",
-                  "@id": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb"
-                }
-              }
-            },
-            {
-              "triso:itemDefinitions": {
-                "@xmlns:triso": "http://www.trisotech.com/2015/triso/modeling",
-                "@xmlns:semantic": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                "@xmlns:dmn": "http://www.omg.org/spec/DMN/20180521/MODEL/",
-                "@xmlns:color": "http://www.omg.org/spec/BPMN/non-normative/color/1.0",
-                "@xmlns:trisobpmn": "http://www.trisotech.com/2014/triso/bpmn",
-                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "@xmlns:feel": "http://www.omg.org/spec/DMN/20180521/FEEL/",
-                "@xmlns:html": "http://www.w3.org/1999/xhtml",
-                "@xmlns:openapi": "https://openapis.org/omg/extension/1.0",
-                "@xmlns:bpsim": "http://www.bpsim.org/schemas/1.0",
-                "@xmlns:rss": "http://purl.org/rss/2.0/",
-                "@xmlns:trisofeed": "http://trisotech.com/feed",
-                "@xmlns:drools": "http://www.jboss.org/drools",
-                "@xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-                "triso:itemDefinition": {
-                  "@name": "collectionOfString",
-                  "@isCollection": "true",
-                  "triso:typeRef": "string"
-                }
-              }
+              "flow_node_refs": "['_d3435084-f2c7-43cc-abcc-c679bc4232ac', '_b13d6fa3-fc78-40c7-ae77-609be07493e9', '_64eabfe9-6947-43eb-ac45-8d331745f86c', '_eae674ce-4d6e-48ac-819c-c79e0868e40d', '_0783f019-f40c-43d6-ab40-0f1c81f8d9e7', '_c456dbcc-bbe3-4c75-b57d-9427525c0a94', '_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535']",
+              "id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+              "name": "Recruitment"
             }
           ]
         }
       ],
-      "source": [
-        {}
+      "name": "EU Bank - Process",
+      "parallel_gateways": [
+        {
+          "gateway_direction": "Diverging",
+          "id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+          "incoming": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+          "outgoing": "['_f476667f-44f5-4fec-9414-bf70d987853f', '_f3187dce-c37e-4d5b-b49c-ed28965abb73']"
+        },
+        {
+          "gateway_direction": "Converging",
+          "id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+          "incoming": "['_720cb9a3-20df-4da1-a923-5336b269c104', '_847352f2-ac0c-44be-9e24-f4c7f76bfe7e']",
+          "outgoing": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+        }
       ],
-      "target": [
-        {}
+      "process_type": "None",
+      "sequence_flows": [
+        {
+          "id": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+          "source_ref": "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+          "target_ref": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5"
+        },
+        {
+          "id": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+          "source_ref": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+          "target_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac"
+        },
+        {
+          "id": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+          "source_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+          "target_ref": "_15b00027-5049-4081-8952-fd398e8b722a"
+        },
+        {
+          "id": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+          "source_ref": "_15b00027-5049-4081-8952-fd398e8b722a",
+          "target_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+        },
+        {
+          "id": "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+          "name": "No",
+          "source_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+          "target_ref": "_d3435084-f2c7-43cc-abcc-c679bc4232ac"
+        },
+        {
+          "id": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+          "name": "Yes",
+          "source_ref": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+          "target_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9"
+        },
+        {
+          "id": "_f476667f-44f5-4fec-9414-bf70d987853f",
+          "source_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+          "target_ref": "_64eabfe9-6947-43eb-ac45-8d331745f86c"
+        },
+        {
+          "id": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+          "source_ref": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+          "target_ref": "_eae674ce-4d6e-48ac-819c-c79e0868e40d"
+        },
+        {
+          "id": "_720cb9a3-20df-4da1-a923-5336b269c104",
+          "source_ref": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+          "target_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7"
+        },
+        {
+          "id": "_64ac4473-a38f-4043-973a-69c497adc88a",
+          "source_ref": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+          "target_ref": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+          "triso_data_input_id": "_4d02fe4c-1958-4a9a-b7b7-d29a9fb857db",
+          "triso_data_output_id": "_a450adf8-a041-4658-8e36-5a417fee6c2e"
+        },
+        {
+          "id": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+          "source_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+          "target_ref": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94"
+        },
+        {
+          "id": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+          "source_ref": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+          "target_ref": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7"
+        }
+      ],
+      "service_tasks": [
+        {
+          "completion_quantity": 1,
+          "documentation": [
+            {
+              "content": "<p>The approved job advertisement has to be published on the homepage.</p>",
+              "text_format": "text/html"
+            }
+          ],
+          "extension_elements": {
+            "triso_graph_relations": {
+              "triso:systemRef": {
+                "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb",
+                "@id": "_4ee60d07-6419-4107-9da1-5551f25f2d96",
+                "@predicate": "where"
+              }
+            }
+          },
+          "id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+          "implementation": "##WebService",
+          "incoming": "_f476667f-44f5-4fec-9414-bf70d987853f",
+          "is_for_compensation": false,
+          "name": "Publish on \nhomepage",
+          "outgoing": "_720cb9a3-20df-4da1-a923-5336b269c104",
+          "performers": [
+            {
+              "id": "_2d69e812-dd75-4405-ae41-5f64be302e5f",
+              "resource_ref": "_dc7df8e9-cc60-4953-9ae5-a9ea25fd9c5b"
+            }
+          ],
+          "start_quantity": 1
+        },
+        {
+          "completion_quantity": 1,
+          "data_input_associations": [
+            {
+              "id": "_505fa8cf-5697-4e35-bc4e-63df8e99093e",
+              "source_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+              "target_ref": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4"
+            }
+          ],
+          "id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+          "implementation": "##WebService",
+          "incoming": "_64ac4473-a38f-4043-973a-69c497adc88a",
+          "io_specification": {
+            "data_inputs": [
+              {
+                "id": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
+                "is_collection": true,
+                "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+                "name": "Selected\n platforms"
+              }
+            ],
+            "input_sets": [
+              {
+                "data_input_refs": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
+                "id": "_f49af959-916f-43bc-9f37-00ef9c44e967"
+              }
+            ]
+          },
+          "is_for_compensation": false,
+          "multi_instance_loop_characteristics": {
+            "behavior": "All",
+            "id": "_970a7f54-893a-495e-8cbc-545fd631f626",
+            "is_sequential": false
+          },
+          "name": "Publish on \nother platforms",
+          "outgoing": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+          "start_quantity": 1
+        }
+      ],
+      "start_events": [
+        {
+          "id": "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+          "is_interrupting": true,
+          "name": "Job \nvacancy",
+          "outgoing": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+          "parallel_multiple": false
+        }
+      ],
+      "triso_default_name": "true",
+      "user_tasks": [
+        {
+          "completion_quantity": 1,
+          "data_output_associations": [
+            {
+              "id": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
+              "source_ref": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+              "target_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd"
+            }
+          ],
+          "documentation": [
+            {
+              "content": "<p>A very specific requirement to the job vacancy has to be written and forwarded to the recruitment department.</p>",
+              "text_format": "text/html"
+            }
+          ],
+          "id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+          "implementation": "##unspecified",
+          "incoming": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+          "io_specification": {
+            "data_outputs": [
+              {
+                "id": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+                "is_collection": false,
+                "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+                "name": "Description",
+                "triso_hidden": "false"
+              }
+            ],
+            "output_sets": [
+              {
+                "data_output_refs": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+                "id": "_0d01e81d-03c2-4002-ae80-53df972febb6"
+              }
+            ]
+          },
+          "is_for_compensation": false,
+          "name": "Write \ndescription",
+          "outgoing": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+          "performers": [
+            {
+              "id": "_c663bd75-4868-4eb4-8829-0cbbd5ae4580",
+              "resource_ref": "_b5b6808a-be81-426c-98ae-f33f44a2f871"
+            }
+          ],
+          "start_quantity": 1
+        },
+        {
+          "completion_quantity": 1,
+          "data_input_associations": [
+            {
+              "id": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
+              "source_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+              "target_ref": "_b02b2e9f-17f7-4663-b12c-255ee4351d42"
+            }
+          ],
+          "data_output_associations": [
+            {
+              "id": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
+              "source_ref": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+              "target_ref": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf"
+            }
+          ],
+          "documentation": [
+            {
+              "content": "<p>The job description edited to a job advertisement has to be checked and approved.</p>",
+              "text_format": "text/html"
+            }
+          ],
+          "extension_elements": {
+            "triso_graph_relations": {
+              "triso:systemRef": {
+                "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb",
+                "@id": "_b90e53a0-9483-4733-a1cf-27316061fec3",
+                "@predicate": "where"
+              }
+            }
+          },
+          "id": "_15b00027-5049-4081-8952-fd398e8b722a",
+          "implementation": "##unspecified",
+          "incoming": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+          "io_specification": {
+            "data_inputs": [
+              {
+                "id": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
+                "is_collection": false,
+                "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+                "name": "Advertisement"
+              }
+            ],
+            "data_outputs": [
+              {
+                "id": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+                "is_collection": false,
+                "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+                "name": "Advertisement",
+                "triso_hidden": "false"
+              }
+            ],
+            "input_sets": [
+              {
+                "data_input_refs": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
+                "id": "_0cddfa48-58e5-47f8-92f0-a5153ae17d78"
+              }
+            ],
+            "output_sets": [
+              {
+                "data_output_refs": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+                "id": "_9492b1d3-f6ff-4c9c-8707-07e2d7b07c89"
+              }
+            ]
+          },
+          "is_for_compensation": false,
+          "name": "Approve advertisement",
+          "outgoing": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+          "performers": [
+            {
+              "id": "_ceb60e9f-c1f4-43bc-aefd-6f346c176a6c",
+              "resource_ref": "_b5b6808a-be81-426c-98ae-f33f44a2f871"
+            }
+          ],
+          "start_quantity": 1
+        },
+        {
+          "completion_quantity": 1,
+          "data_input_associations": [
+            {
+              "id": "_5c3fc96e-20d0-4879-8471-d41224632e24",
+              "source_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+              "target_ref": "_c083f111-3c38-4250-9594-3f25b4620db3"
+            }
+          ],
+          "data_output_associations": [
+            {
+              "id": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
+              "source_ref": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+              "target_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb"
+            }
+          ],
+          "documentation": [
+            {
+              "content": "<p>The job description received from the specialist department has to be completed (layout, additional information etc.) to a job advertisement in accordance to the guidelines and approved by the Hiring Manager.</p>",
+              "text_format": "text/html"
+            }
+          ],
+          "extension_elements": {
+            "triso_graph_relations": {
+              "triso:systemRef": {
+                "#text": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb",
+                "@id": "_2c8622ca-70fe-4f57-8bcd-5cbd8b1390b7",
+                "@predicate": "where"
+              }
+            }
+          },
+          "id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+          "implementation": "##unspecified",
+          "incoming": "['_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3', '_d74707c7-6af3-4db7-9403-924bfdf6a7d8']",
+          "io_specification": {
+            "data_inputs": [
+              {
+                "id": "_c083f111-3c38-4250-9594-3f25b4620db3",
+                "is_collection": false,
+                "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+                "name": "Description"
+              }
+            ],
+            "data_outputs": [
+              {
+                "id": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+                "is_collection": false,
+                "item_subject_ref": "_triso-default-bpmnItemDefinition-string_id",
+                "name": "Advertisement",
+                "triso_hidden": "false"
+              }
+            ],
+            "input_sets": [
+              {
+                "data_input_refs": "_c083f111-3c38-4250-9594-3f25b4620db3",
+                "id": "_9c3de1df-92ef-4b69-9585-311d8d45952f"
+              }
+            ],
+            "output_sets": [
+              {
+                "data_output_refs": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+                "id": "_a4d61918-d67b-4038-b488-95c244824918"
+              }
+            ]
+          },
+          "is_for_compensation": false,
+          "name": "Complete advertisement",
+          "outgoing": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+          "performers": [
+            {
+              "id": "_41c0e9b3-8ef9-4657-baab-c59b6ba1b1c4",
+              "resource_ref": "_dc7df8e9-cc60-4953-9ae5-a9ea25fd9c5b"
+            }
+          ],
+          "start_quantity": 1
+        }
       ]
     }
-  ]
+  ],
+  "relationships": [
+    {
+      "extension_elements": {
+        "triso_graph_objects": {
+          "triso:system": {
+            "@id": "_b0c02ccd-0b0f-4c3c-8009-9a6af23ccaeb",
+            "@name": "Online Recruiting System"
+          }
+        },
+        "triso_item_definitions": {
+          "triso:itemDefinition": {
+            "@isCollection": "true",
+            "@name": "collectionOfString",
+            "triso:typeRef": "string"
+          }
+        },
+        "triso_project_charter": {
+          "triso:projectDescription": "<p>In this process, all activities are described how to advertise a job vacancy.</p>",
+          "triso:projectScope": "<p>Aim: Advertisement of a job vacancy conformable to law and company guidelines.<br />Trigger: Personnel requirements for filling job vacancies.<br />Result:The advertisement for the job vacancy has been reviewed and published according to the guidelines</p>",
+          "triso:projectGoals": null,
+          "triso:projectChallenges": null,
+          "triso:projectStakeholders": {
+            "triso:accountable": null,
+            "triso:consulted": null,
+            "triso:informed": null,
+            "triso:responsible": null
+          }
+        }
+      },
+      "source": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+      "target": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+      "type_value": "trisoExtension"
+    }
+  ],
+  "resources": [
+    {
+      "id": "_b5b6808a-be81-426c-98ae-f33f44a2f871",
+      "name": "Hiring manager"
+    },
+    {
+      "id": "_dc7df8e9-cc60-4953-9ae5-a9ea25fd9c5b",
+      "name": "Recruiter"
+    }
+  ],
+  "target_namespace": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+  "trisobpmn_logo_choice": "None",
+  "type_language": "http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType",
+  "xmlns": "http://www.trisotech.com/definitions/_7e80c232-2bf0-46e0-b77e-29ec586a23a6"
 }

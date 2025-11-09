@@ -1,1056 +1,802 @@
 {
-  "id": "_5SVkEIXnEeSmwfgVk-ryvQ",
-  "name": null,
-  "target_namespace": "http://camunda.org/schema/1.0/bpmn",
-  "expression_language": "http://www.w3.org/1999/XPath",
-  "type_language": "http://www.w3.org/2001/XMLSchema",
-  "exporter": "Camunda Web Modeler",
-  "exporter_version": "3cd8340",
-  "import_values": [
+  "bpmndiagrams": [
     {
-      "namespace": "http://bpmn.io/schema/bpmn/Definitions_1",
-      "location": "C.9.1.bpmn",
-      "import_type": "http://www.omg.org/spec/BPMN/20100524/MODEL"
-    }
-  ],
-  "processes": [
-    {
-      "id": "customer_onboarding_en",
-      "name": "Customer Onboarding",
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": true,
-      "definitional_collaboration_ref": null,
-      "extension_elements": [
-        {
-          "extensions": [
-            {
-              "zeebe:userTaskForm": {
-                "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                "@id": "userTaskForm_0khiqpl",
-                "#text": "{\n  \"components\": [\n    {\n      \"text\": \"<img src=\\\"http://localhost:8080/camunda/online/banking/img/core-img/logo.png\\\"><h2>Instructions:</h2><p>Based on internal protocal and the given information below, tick the checkbox for 'Approved' if this application should be approved.</p><p> Otherwise, leave this checkbox blank.</p>\",\n      \"type\": \"text\",\n      \"id\": \"Field_0e9521u\"\n    },\n    {\n      \"key\": \"applicationNumber\",\n      \"label\": \"Application Number\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1djmro0\"\n    },\n    {\n      \"key\": \"applicantName\",\n      \"label\": \"Applicant\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1ex9187\"\n    },\n    {\n      \"key\": \"age\",\n      \"label\": \"Current Age\",\n      \"type\": \"number\",\n      \"id\": \"Field_17vnd80\"\n    },\n    {\n      \"key\": \"employment\",\n      \"label\": \"Employment\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_08mj5fv\"\n    },\n    {\n      \"key\": \"category\",\n      \"label\": \"Category\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1k7e84u\"\n    },\n    {\n      \"key\": \"priceIndication\",\n      \"label\": \"Price indication\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1d6bhc2\"\n    },\n    {\n      \"label\": \"Risks\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_0qvctdt\",\n      \"key\": \"risksText\",\n      \"disabled\": true\n    },\n    {\n      \"key\": \"approved\",\n      \"label\": \"Approved\",\n      \"type\": \"checkbox\",\n      \"id\": \"Field_0hwfap9\"\n    }\n  ],\n  \"schemaVersion\": 4,\n  \"type\": \"default\",\n  \"id\": \"Form_0840o2b\",\n  \"executionPlatform\": \"Camunda Cloud\",\n  \"executionPlatformVersion\": \"1.1\",\n  \"exporter\": {\n    \"name\": \"Camunda Modeler\",\n    \"version\": \"5.0.0\"\n  }\n}"
+      "id": "BPMNDiagram_1",
+      "plane": {
+        "bpmn_edges": [
+          {
+            "bpmn_element": "Flow_151qlxc",
+            "id": "BPMNEdge_03tyru5",
+            "waypoint": [
+              {
+                "x": 256.0,
+                "y": 302.0
+              },
+              {
+                "x": 310.0,
+                "y": 302.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "Flow_0dppbeu",
+            "id": "BPMNEdge_0vhug0y",
+            "waypoint": [
+              {
+                "x": 410.0,
+                "y": 302.0
+              },
+              {
+                "x": 472.0,
+                "y": 302.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "Flow_12nmks0",
+            "id": "Flow_12nmks0_di",
+            "waypoint": [
+              {
+                "x": 256.0,
+                "y": 462.0
+              },
+              {
+                "x": 310.0,
+                "y": 462.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "Flow_19iipc6",
+            "id": "Flow_19iipc6_di",
+            "waypoint": [
+              {
+                "x": 410.0,
+                "y": 462.0
+              },
+              {
+                "x": 465.0,
+                "y": 462.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "Flow_0qrakss",
+            "id": "Flow_0qrakss_di",
+            "waypoint": [
+              {
+                "x": 515.0,
+                "y": 462.0
+              },
+              {
+                "x": 552.0,
+                "y": 462.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "Flow_1jml1az",
+            "id": "Flow_1jml1az_di",
+            "waypoint": [
+              {
+                "x": 490.0,
+                "y": 487.0
+              },
+              {
+                "x": 490.0,
+                "y": 570.0
+              },
+              {
+                "x": 552.0,
+                "y": 570.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_1gd6p37",
+            "id": "SequenceFlow_1gd6p37_di",
+            "waypoint": [
+              {
+                "x": 400.0,
+                "y": 131.0
+              },
+              {
+                "x": 460.0,
+                "y": 131.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_01vh1zw",
+            "id": "SequenceFlow_01vh1zw_di",
+            "label": {
+              "bounds": {
+                "height": 20.0,
+                "width": 90.0,
+                "x": 1009.0,
+                "y": 564.0
+              }
+            },
+            "waypoint": [
+              {
+                "x": 1349.0,
+                "y": 534.0
+              },
+              {
+                "x": 1400.0,
+                "y": 534.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_13",
+            "id": "BPMNEdge_SequenceFlow_13",
+            "label": {
+              "bounds": {
+                "height": 6.0,
+                "width": 90.0,
+                "x": 1054.0,
+                "y": 575.0
+              }
+            },
+            "source_element": "Activity_04dzezq_di",
+            "target_element": "_BPMNShape_EndEvent_3",
+            "waypoint": [
+              {
+                "x": 1500.0,
+                "y": 534.0
+              },
+              {
+                "x": 1555.0,
+                "y": 534.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_Red",
+            "id": "BPMNEdge_SequenceFlow_16",
+            "label": {
+              "bounds": {
+                "height": 14.0,
+                "width": 85.0,
+                "x": 666.0,
+                "y": 513.0
+              }
+            },
+            "source_element": "_BPMNShape_ExclusiveGateway_2",
+            "waypoint": [
+              {
+                "x": 660.0,
+                "y": 156.0
+              },
+              {
+                "x": 660.0,
+                "y": 534.0
+              },
+              {
+                "x": 1249.0,
+                "y": 534.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_2",
+            "id": "BPMNEdge_SequenceFlow_2",
+            "label": {
+              "bounds": {
+                "height": 6.0,
+                "width": 90.0,
+                "x": 301.0,
+                "y": 131.0
+              }
+            },
+            "source_element": "_BPMNShape_BusinessRuleTask_2",
+            "target_element": "_BPMNShape_ExclusiveGateway_2",
+            "waypoint": [
+              {
+                "x": 560.0,
+                "y": 131.0
+              },
+              {
+                "x": 635.0,
+                "y": 131.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_Green",
+            "id": "BPMNEdge_SequenceFlow_7",
+            "label": {
+              "bounds": {
+                "height": 14.0,
+                "width": 74.0,
+                "x": 683.0,
+                "y": 136.0
+              }
+            },
+            "source_element": "_BPMNShape_ExclusiveGateway_2",
+            "waypoint": [
+              {
+                "x": 685.0,
+                "y": 131.0
+              },
+              {
+                "x": 1249.0,
+                "y": 131.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_10",
+            "id": "BPMNEdge_SequenceFlow_10",
+            "label": {
+              "bounds": {
+                "height": 6.0,
+                "width": 90.0,
+                "x": 999.0,
+                "y": 133.0
+              }
+            },
+            "source_element": "_BPMNShape_ServiceTask_3",
+            "target_element": "_BPMNShape_SendTask_2",
+            "waypoint": [
+              {
+                "x": 1349.0,
+                "y": 131.0
+              },
+              {
+                "x": 1400.0,
+                "y": 131.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_11",
+            "id": "BPMNEdge_SequenceFlow_11",
+            "label": {
+              "bounds": {
+                "height": 6.0,
+                "width": 90.0,
+                "x": 1159.0,
+                "y": 143.0
+              }
+            },
+            "source_element": "_BPMNShape_SendTask_2",
+            "target_element": "_BPMNShape_EndEvent_2",
+            "waypoint": [
+              {
+                "x": 1500.0,
+                "y": 131.0
+              },
+              {
+                "x": 1555.0,
+                "y": 131.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_ApplicationAccepted",
+            "id": "BPMNEdge_SequenceFlow_8",
+            "label": {
+              "bounds": {
+                "height": 27.0,
+                "width": 53.0,
+                "x": 1208.0,
+                "y": 185.0
+              }
+            },
+            "source_element": "_BPMNShape_ExclusiveGateway_3",
+            "waypoint": [
+              {
+                "x": 1190.0,
+                "y": 232.0
+              },
+              {
+                "x": 1190.0,
+                "y": 149.0
+              },
+              {
+                "x": 1249.0,
+                "y": 149.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_ApplicationDeclined",
+            "id": "BPMNEdge_SequenceFlow_12",
+            "label": {
+              "bounds": {
+                "height": 27.0,
+                "width": 53.0,
+                "x": 1200.0,
+                "y": 294.0
+              }
+            },
+            "source_element": "_BPMNShape_ExclusiveGateway_3",
+            "waypoint": [
+              {
+                "x": 1190.0,
+                "y": 282.0
+              },
+              {
+                "x": 1190.0,
+                "y": 515.0
+              },
+              {
+                "x": 1249.0,
+                "y": 515.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_6",
+            "id": "BPMNEdge_SequenceFlow_6",
+            "label": {
+              "bounds": {
+                "height": 6.0,
+                "width": 90.0,
+                "x": 125.0,
+                "y": 131.0
+              }
+            },
+            "source_element": "_BPMNShape_StartEvent_4",
+            "target_element": "ServiceTask_0tixwo5_di",
+            "waypoint": [
+              {
+                "x": 242.0,
+                "y": 131.0
+              },
+              {
+                "x": 300.0,
+                "y": 131.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "SequenceFlow_Yellow",
+            "id": "Flow_0o00may_di",
+            "label": {
+              "bounds": {
+                "height": 27.0,
+                "width": 84.0,
+                "x": 669.0,
+                "y": 226.0
+              }
+            },
+            "waypoint": [
+              {
+                "x": 660.0,
+                "y": 156.0
+              },
+              {
+                "x": 660.0,
+                "y": 257.0
+              },
+              {
+                "x": 770.0,
+                "y": 257.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "Flow_0ik8h65",
+            "id": "Flow_0ik8h65_di",
+            "waypoint": [
+              {
+                "x": 870.0,
+                "y": 257.0
+              },
+              {
+                "x": 1165.0,
+                "y": 257.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "Flow_177paze",
+            "id": "Flow_177paze_di",
+            "waypoint": [
+              {
+                "x": 870.0,
+                "y": 315.0
+              },
+              {
+                "x": 870.0,
+                "y": 380.0
+              },
+              {
+                "x": 940.0,
+                "y": 380.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "Flow_0cvhizd",
+            "id": "Flow_0cvhizd_di",
+            "waypoint": [
+              {
+                "x": 1040.0,
+                "y": 380.0
+              },
+              {
+                "x": 1092.0,
+                "y": 380.0
+              }
+            ]
+          }
+        ],
+        "bpmn_element": "Collaboration_CustomerOnboarding",
+        "bpmn_shapes": [
+          {
+            "bounds": {
+              "height": 599.0,
+              "width": 1470.0,
+              "x": 156.0,
+              "y": 71.0
+            },
+            "bpmn_element": "Participant_00",
+            "id": "Participant_0477s11_di",
+            "is_horizontal": true
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 206.0,
+              "y": 113.0
+            },
+            "bpmn_element": "StartEvent_ApplicationReceived",
+            "id": "_BPMNShape_StartEvent_4",
+            "label": {
+              "bounds": {
+                "height": 27.0,
+                "width": 53.0,
+                "x": 199.0,
+                "y": 154.0
               }
             }
-          ]
-        }
-      ],
-      "sub_processes": [
-        {
-          "id": "Activity_1ke2ixr",
-          "name": null,
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "triggered_by_event": false,
-          "user_tasks": [
-            {
-              "id": "UserTask_HandleTimeout",
-              "name": "Handle Timeout",
-              "is_for_compensation": false,
-              "start_quantity": 1,
-              "completion_quantity": 1,
-              "default": null,
-              "implementation": "##unspecified",
-              "documentation": [
-                {}
-              ],
-              "incoming": [
-                {}
-              ],
-              "outgoing": [
-                {}
-              ]
-            }
-          ],
-          "start_events": [
-            {
-              "id": "StartErrorEvent_Timeout",
-              "name": "Timeout",
-              "parallel_multiple": false,
-              "is_interrupting": false,
-              "documentation": [
-                {}
-              ],
-              "outgoing": [
-                {}
-              ],
-              "error_event_definition": [
-                {}
-              ]
-            }
-          ],
-          "sequence_flows": [
-            {
-              "id": "Flow_151qlxc",
-              "name": null,
-              "source_ref": "StartErrorEvent_Timeout",
-              "target_ref": "UserTask_HandleTimeout",
-              "is_immediate": null
+          },
+          {
+            "bounds": {
+              "height": 142.0,
+              "width": 340.0,
+              "x": 200.0,
+              "y": 240.0
             },
-            {
-              "id": "Flow_0dppbeu",
-              "name": null,
-              "source_ref": "UserTask_HandleTimeout",
-              "target_ref": "EndMessageEvent_Timeout",
-              "is_immediate": null
-            }
-          ],
-          "end_events": [
-            {
-              "id": "EndMessageEvent_Timeout",
-              "name": "Timeout handled",
-              "documentation": [
-                {}
-              ],
-              "extension_elements": [
-                {
-                  "extensions": [
-                    {
-                      "zeebe:taskDefinition": {
-                        "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                        "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                        "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                        "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                        "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                        "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                        "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                        "@type": "timeoutHandled"
-                      }
-                    }
-                  ]
-                }
-              ],
-              "incoming": [
-                {}
-              ],
-              "message_event_definition": [
-                {
-                  "id": "MessageEventDefinition_0tax7tp",
-                  "message_ref": null
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "Activity_0vp33kx",
-          "name": null,
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "triggered_by_event": false,
-          "start_events": [
-            {
-              "id": "StartMessageEvent_CancellationRequested",
-              "name": "Cancelation requested",
-              "parallel_multiple": false,
-              "is_interrupting": false,
-              "documentation": [
-                {}
-              ],
-              "outgoing": [
-                {}
-              ],
-              "message_event_definition": [
-                {}
-              ]
-            }
-          ],
-          "service_tasks": [
-            {
-              "id": "ServiceTask_CancelApplication",
-              "name": "Cancel application",
-              "is_for_compensation": false,
-              "start_quantity": 1,
-              "completion_quantity": 1,
-              "default": null,
-              "implementation": "##WebService",
-              "operation_ref": null,
-              "documentation": [
-                {}
-              ],
-              "extension_elements": [
-                {
-                  "extensions": [
-                    {
-                      "zeebe:taskDefinition": {
-                        "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                        "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                        "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                        "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                        "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                        "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                        "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                        "@type": "cancelApplication"
-                      }
-                    }
-                  ]
-                }
-              ],
-              "incoming": [
-                {}
-              ],
-              "outgoing": [
-                {}
-              ]
-            }
-          ],
-          "sequence_flows": [
-            {
-              "id": "Flow_12nmks0",
-              "name": null,
-              "source_ref": "StartMessageEvent_CancellationRequested",
-              "target_ref": "ServiceTask_CancelApplication",
-              "is_immediate": null
+            "bpmn_element": "Activity_1ke2ixr",
+            "id": "BPMNShape_1quvn5y",
+            "is_expanded": true
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 472.0,
+              "y": 284.0
             },
-            {
-              "id": "Flow_19iipc6",
-              "name": null,
-              "source_ref": "ServiceTask_CancelApplication",
-              "target_ref": "ParallelGateway_CancelApplication",
-              "is_immediate": null
-            },
-            {
-              "id": "Flow_0qrakss",
-              "name": null,
-              "source_ref": "ParallelGateway_CancelApplication",
-              "target_ref": "EndMessageEvent_InformCustomer",
-              "is_immediate": null
-            },
-            {
-              "id": "Flow_1jml1az",
-              "name": null,
-              "source_ref": "ParallelGateway_CancelApplication",
-              "target_ref": "EndMessageEvent_InformOperations",
-              "is_immediate": null
-            }
-          ],
-          "parallel_gateways": [
-            {
-              "id": "ParallelGateway_CancelApplication",
-              "name": null,
-              "gateway_direction": null,
-              "incoming": [
-                {}
-              ],
-              "outgoing": [
-                {},
-                {}
-              ]
-            }
-          ],
-          "end_events": [
-            {
-              "id": "EndMessageEvent_InformCustomer",
-              "name": "Customer notified about successful cancelation",
-              "documentation": [
-                {}
-              ],
-              "extension_elements": [
-                {
-                  "extensions": [
-                    {
-                      "zeebe:taskDefinition": {
-                        "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                        "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                        "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                        "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                        "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                        "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                        "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                        "@type": "informCustomerSuccessfulCancelation"
-                      }
-                    }
-                  ]
-                }
-              ],
-              "incoming": [
-                {}
-              ],
-              "message_event_definition": [
-                {
-                  "id": "MessageEventDefinition_0j82oqj",
-                  "message_ref": null
-                }
-              ]
-            },
-            {
-              "id": "EndMessageEvent_InformOperations",
-              "name": "Operations Team notified about successful cancelation",
-              "documentation": [
-                {}
-              ],
-              "extension_elements": [
-                {
-                  "extensions": [
-                    {
-                      "zeebe:taskDefinition": {
-                        "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                        "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                        "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                        "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                        "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                        "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                        "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                        "@type": "informOperationsSuccessfulCancelation"
-                      }
-                    }
-                  ]
-                }
-              ],
-              "incoming": [
-                {}
-              ],
-              "message_event_definition": [
-                {
-                  "id": "MessageEventDefinition_1qmp27r",
-                  "message_ref": null
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "start_events": [
-        {
-          "id": "StartEvent_ApplicationReceived",
-          "name": "Application received",
-          "parallel_multiple": false,
-          "is_interrupting": false,
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:ioMapping": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "zeebe:output": {
-                      "@source": "= string(now())",
-                      "@target": "documentReferenceId"
-                    }
-                  }
-                }
-              ]
-            }
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "service_tasks": [
-        {
-          "id": "SendTask_SendPolicy",
-          "name": "Send confirmation",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:taskDefinition": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "@type": "io.camunda:sendgrid:1"
-                  }
-                },
-                {
-                  "zeebe:ioMapping": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "zeebe:input": [
-                      {
-                        "@source": "demo@camunda.com",
-                        "@target": "from.email"
-                      },
-                      {
-                        "@source": "d-0d0120b0c7f148ef8a1c262f2cf07092",
-                        "@target": "template.id"
-                      },
-                      {
-                        "@source": "secrets.SENDGRID_DEMO",
-                        "@target": "apiKey"
-                      },
-                      {
-                        "@source": "= corporation",
-                        "@target": "from.name"
-                      },
-                      {
-                        "@source": "= applicant.name",
-                        "@target": "to.name"
-                      },
-                      {
-                        "@source": "= applicant.email",
-                        "@target": "to.email"
-                      },
-                      {
-                        "@source": "= {\n    \"name\": applicant.name,\n    \"applicationNumber\": applicationNumber,\n    \"product\": product\n}",
-                        "@target": "template.data"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "ServiceTask_DeliverPolicy",
-          "name": "Deliver confirmation",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "documentation": [
-            {}
-          ],
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:taskDefinition": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "@type": "issuePolicy"
-                  }
-                }
-              ]
-            }
-          ],
-          "incoming": [
-            {},
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "ServiceTask_RejectPolicy",
-          "name": "Reject application",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "documentation": [
-            {}
-          ],
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:taskDefinition": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "@type": "rejectPolicy"
-                  }
-                }
-              ]
-            }
-          ],
-          "incoming": [
-            {},
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "SendTask_SendRejection",
-          "name": "Send rejection",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:ioMapping": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "zeebe:input": [
-                      {
-                        "@source": "secrets.SENDGRID_DEMO",
-                        "@target": "apiKey"
-                      },
-                      {
-                        "@source": "demo@camunda.com",
-                        "@target": "from.email"
-                      },
-                      {
-                        "@source": "d-aa6a58aaded54a83884518433ac2dd56",
-                        "@target": "template.id"
-                      },
-                      {
-                        "@source": "= {\n    \"name\": applicant.name\n}",
-                        "@target": "template.data"
-                      },
-                      {
-                        "@source": "= applicant.email",
-                        "@target": "to.email"
-                      },
-                      {
-                        "@source": "= applicant.name",
-                        "@target": "to.name"
-                      },
-                      {
-                        "@source": "= corporation",
-                        "@target": "from.name"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "zeebe:taskDefinition": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "@type": "io.camunda:sendgrid:1"
-                  }
-                }
-              ]
-            }
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "ServiceTask_GetCreditScore",
-          "name": "Get credit score",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "operation_ref": null,
-          "documentation": [
-            {}
-          ],
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:taskDefinition": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "@type": "calculateScore"
-                  }
-                }
-              ]
-            }
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "SequenceFlow_1gd6p37",
-          "name": null,
-          "source_ref": "ServiceTask_GetCreditScore",
-          "target_ref": "BusinessRuleTask_CheckApplicationAutomatically",
-          "is_immediate": null
-        },
-        {
-          "id": "SequenceFlow_01vh1zw",
-          "name": null,
-          "source_ref": "ServiceTask_RejectPolicy",
-          "target_ref": "SendTask_SendRejection",
-          "is_immediate": null
-        },
-        {
-          "id": "SequenceFlow_13",
-          "name": "",
-          "source_ref": "SendTask_SendRejection",
-          "target_ref": "EndEvent_ApplicationRejected",
-          "is_immediate": null
-        },
-        {
-          "id": "SequenceFlow_Red",
-          "name": "Red (severe risk)",
-          "source_ref": "ExclusiveGateway_Risk",
-          "target_ref": "ServiceTask_RejectPolicy",
-          "is_immediate": null,
-          "documentation": [
-            {}
-          ],
-          "condition_expression": {
-            "id": null
-          }
-        },
-        {
-          "id": "SequenceFlow_2",
-          "name": "",
-          "source_ref": "BusinessRuleTask_CheckApplicationAutomatically",
-          "target_ref": "ExclusiveGateway_Risk",
-          "is_immediate": null
-        },
-        {
-          "id": "SequenceFlow_Green",
-          "name": "Green (no risk)",
-          "source_ref": "ExclusiveGateway_Risk",
-          "target_ref": "ServiceTask_DeliverPolicy",
-          "is_immediate": null,
-          "documentation": [
-            {}
-          ]
-        },
-        {
-          "id": "SequenceFlow_10",
-          "name": "",
-          "source_ref": "ServiceTask_DeliverPolicy",
-          "target_ref": "SendTask_SendPolicy",
-          "is_immediate": null
-        },
-        {
-          "id": "SequenceFlow_11",
-          "name": "",
-          "source_ref": "SendTask_SendPolicy",
-          "target_ref": "EndEvent_ApplicationIssued",
-          "is_immediate": null
-        },
-        {
-          "id": "SequenceFlow_ApplicationAccepted",
-          "name": "Application accepted",
-          "source_ref": "ExclusiveGateway_Decision",
-          "target_ref": "ServiceTask_DeliverPolicy",
-          "is_immediate": null,
-          "condition_expression": {
-            "id": null
-          }
-        },
-        {
-          "id": "SequenceFlow_ApplicationDeclined",
-          "name": "Application declined",
-          "source_ref": "ExclusiveGateway_Decision",
-          "target_ref": "ServiceTask_RejectPolicy",
-          "is_immediate": null,
-          "condition_expression": {
-            "id": null
-          }
-        },
-        {
-          "id": "SequenceFlow_6",
-          "name": "",
-          "source_ref": "StartEvent_ApplicationReceived",
-          "target_ref": "ServiceTask_GetCreditScore",
-          "is_immediate": null
-        },
-        {
-          "id": "SequenceFlow_Yellow",
-          "name": "Yellow (moderate risk)",
-          "source_ref": "ExclusiveGateway_Risk",
-          "target_ref": "Activity_ManualCheck",
-          "is_immediate": null,
-          "documentation": [
-            {}
-          ],
-          "condition_expression": {
-            "id": null
-          }
-        },
-        {
-          "id": "Flow_0ik8h65",
-          "name": null,
-          "source_ref": "Activity_ManualCheck",
-          "target_ref": "ExclusiveGateway_Decision",
-          "is_immediate": null
-        },
-        {
-          "id": "Flow_177paze",
-          "name": null,
-          "source_ref": "ErrorBoundaryEvent_FraudDetected",
-          "target_ref": "SendTask_ReportFraud",
-          "is_immediate": null
-        },
-        {
-          "id": "Flow_0cvhizd",
-          "name": null,
-          "source_ref": "SendTask_ReportFraud",
-          "target_ref": "TerminateEvent_ApplicationCanceledFraud",
-          "is_immediate": null
-        }
-      ],
-      "send_tasks": [
-        {
-          "id": "SendTask_ReportFraud",
-          "name": "Report fraud",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##WebService",
-          "message_ref": null,
-          "operation_ref": null,
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:taskDefinition": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "@type": "reportFraud"
-                  }
-                }
-              ]
-            }
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "exclusive_gateways": [
-        {
-          "id": "ExclusiveGateway_Decision",
-          "name": "Decision?",
-          "gateway_direction": null,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {},
-            {}
-          ]
-        },
-        {
-          "id": "ExclusiveGateway_Risk",
-          "name": "Risk?",
-          "gateway_direction": null,
-          "default": "SequenceFlow_Green",
-          "documentation": [
-            {}
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {},
-            {},
-            {}
-          ]
-        }
-      ],
-      "end_events": [
-        {
-          "id": "EndEvent_ApplicationIssued",
-          "name": "Application\n issued",
-          "documentation": [
-            {}
-          ],
-          "incoming": [
-            {}
-          ]
-        },
-        {
-          "id": "EndEvent_ApplicationRejected",
-          "name": "Application \nrejected",
-          "documentation": [
-            {}
-          ],
-          "incoming": [
-            {}
-          ]
-        },
-        {
-          "id": "TerminateEvent_ApplicationCanceledFraud",
-          "name": "Application canceled due to fraud",
-          "documentation": [
-            {}
-          ],
-          "incoming": [
-            {}
-          ],
-          "terminate_event_definition": [
-            {
-              "id": "TerminateEventDefinition_1am7et0"
-            }
-          ]
-        }
-      ],
-      "call_activities": [
-        {
-          "id": "Activity_ManualCheck",
-          "name": "Manual Check",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "called_element": "ManualCheck",
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:calledElement": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "@processId": "ManualCheck",
-                    "@propagateAllChildVariables": "false"
-                  }
-                }
-              ]
-            }
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "business_rule_tasks": [
-        {
-          "id": "BusinessRuleTask_CheckApplicationAutomatically",
-          "name": "Check application automatically",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "implementation": "##unspecified",
-          "documentation": [
-            {}
-          ],
-          "extension_elements": [
-            {
-              "extensions": [
-                {
-                  "zeebe:ioMapping": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "zeebe:output": [
-                      {
-                        "@source": "= if result != null then result.riskLevel else [\"green\"]",
-                        "@target": "riskLevels"
-                      },
-                      {
-                        "@source": "= if result != null then result.risk else []",
-                        "@target": "risks"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "zeebe:calledDecision": {
-                    "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                    "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                    "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                    "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                    "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                    "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                    "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                    "@decisionId": "risk_check",
-                    "@resultVariable": "result"
-                  }
-                }
-              ]
-            }
-          ],
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "boundary_events": [
-        {
-          "id": "ErrorBoundaryEvent_FraudDetected",
-          "name": "Fraud detected",
-          "parallel_multiple": false,
-          "cancel_activity": false,
-          "attached_to_ref": "Activity_ManualCheck",
-          "documentation": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "error_event_definition": [
-            {}
-          ]
-        }
-      ]
-    }
-  ],
-  "messages": [
-    {
-      "id": "Message_0fvpzfg",
-      "name": "Message_DocumentRequested",
-      "item_ref": null,
-      "extension_elements": [
-        {
-          "extensions": [
-            {
-              "zeebe:subscription": {
-                "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                "@correlationKey": "= documentReferenceId"
+            "bpmn_element": "EndMessageEvent_Timeout",
+            "id": "BPMNShape_1g4vznl",
+            "label": {
+              "bounds": {
+                "height": 14.0,
+                "width": 81.0,
+                "x": 450.0,
+                "y": 327.0
               }
             }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "Message_0dm6uaq",
-      "name": "Message_CancellationRequested",
-      "item_ref": null,
-      "extension_elements": [
-        {
-          "extensions": [
-            {
-              "zeebe:subscription": {
-                "@xmlns:zeebe": "http://camunda.org/schema/zeebe/1.0",
-                "@xmlns:bpmn2": "http://www.omg.org/spec/BPMN/20100524/MODEL",
-                "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "@xmlns:bpmndi": "http://www.omg.org/spec/BPMN/20100524/DI",
-                "@xmlns:di": "http://www.omg.org/spec/DD/20100524/DI",
-                "@xmlns:dc": "http://www.omg.org/spec/DD/20100524/DC",
-                "@xmlns:modeler": "http://camunda.org/schema/modeler/1.0",
-                "@xmlns:camunda": "http://camunda.org/schema/1.0/bpmn",
-                "@correlationKey": "=01"
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 220.0,
+              "y": 284.0
+            },
+            "bpmn_element": "StartErrorEvent_Timeout",
+            "id": "Event_1urac9n_di",
+            "label": {
+              "bounds": {
+                "height": 14.0,
+                "width": 40.0,
+                "x": 219.0,
+                "y": 327.0
               }
             }
-          ]
-        }
-      ]
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 310.0,
+              "y": 262.0
+            },
+            "bpmn_element": "UserTask_HandleTimeout",
+            "id": "Activity_1ryuh2x_di"
+          },
+          {
+            "bounds": {
+              "height": 250.0,
+              "width": 440.0,
+              "x": 200.0,
+              "y": 400.0
+            },
+            "bpmn_element": "Activity_0vp33kx",
+            "id": "Activity_0q5qosr_di",
+            "is_expanded": true
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 220.0,
+              "y": 444.0
+            },
+            "bpmn_element": "StartMessageEvent_CancellationRequested",
+            "id": "Event_1xf7lj1_di",
+            "label": {
+              "bounds": {
+                "height": 27.0,
+                "width": 59.0,
+                "x": 209.0,
+                "y": 487.0
+              }
+            }
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 310.0,
+              "y": 422.0
+            },
+            "bpmn_element": "ServiceTask_CancelApplication",
+            "id": "Activity_0kuhdn6_di"
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 552.0,
+              "y": 444.0
+            },
+            "bpmn_element": "EndMessageEvent_InformCustomer",
+            "id": "Event_1ck9hv0_di",
+            "label": {
+              "bounds": {
+                "height": 40.0,
+                "width": 87.0,
+                "x": 527.0,
+                "y": 487.0
+              }
+            }
+          },
+          {
+            "bounds": {
+              "height": 50.0,
+              "width": 50.0,
+              "x": 465.0,
+              "y": 437.0
+            },
+            "bpmn_element": "ParallelGateway_CancelApplication",
+            "id": "Gateway_1a6njvb_di"
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 552.0,
+              "y": 552.0
+            },
+            "bpmn_element": "EndMessageEvent_InformOperations",
+            "id": "Event_0rel1ew_di",
+            "label": {
+              "bounds": {
+                "height": 53.0,
+                "width": 84.0,
+                "x": 528.0,
+                "y": 595.0
+              }
+            }
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 770.0,
+              "y": 217.0
+            },
+            "bpmn_element": "Activity_ManualCheck",
+            "id": "Activity_0avcol9_di"
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 1555.0,
+              "y": 113.0
+            },
+            "bpmn_element": "EndEvent_ApplicationIssued",
+            "id": "_BPMNShape_EndEvent_2",
+            "label": {
+              "bounds": {
+                "height": 27.0,
+                "width": 54.0,
+                "x": 1548.0,
+                "y": 154.0
+              }
+            }
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 1400.0,
+              "y": 91.0
+            },
+            "bpmn_element": "SendTask_SendPolicy",
+            "id": "_BPMNShape_SendTask_2"
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 1249.0,
+              "y": 91.0
+            },
+            "bpmn_element": "ServiceTask_DeliverPolicy",
+            "id": "_BPMNShape_ServiceTask_3"
+          },
+          {
+            "bounds": {
+              "height": 50.0,
+              "width": 50.0,
+              "x": 1165.0,
+              "y": 232.0
+            },
+            "bpmn_element": "ExclusiveGateway_Decision",
+            "id": "_BPMNShape_ExclusiveGateway_3",
+            "is_marker_visible": true,
+            "label": {
+              "bounds": {
+                "height": 14.0,
+                "width": 49.0,
+                "x": 1239.0,
+                "y": 247.0
+              }
+            }
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 1555.0,
+              "y": 516.0
+            },
+            "bpmn_element": "EndEvent_ApplicationRejected",
+            "id": "_BPMNShape_EndEvent_3",
+            "label": {
+              "bounds": {
+                "height": 27.0,
+                "width": 54.0,
+                "x": 1547.0,
+                "y": 557.0
+              }
+            }
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 1249.0,
+              "y": 494.0
+            },
+            "bpmn_element": "ServiceTask_RejectPolicy",
+            "id": "ServiceTask_0o3o39j_di"
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 1400.0,
+              "y": 494.0
+            },
+            "bpmn_element": "SendTask_SendRejection",
+            "id": "Activity_04dzezq_di"
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 940.0,
+              "y": 340.0
+            },
+            "bpmn_element": "SendTask_ReportFraud",
+            "id": "Activity_0aif1w3_di"
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 1092.0,
+              "y": 362.0
+            },
+            "bpmn_element": "TerminateEvent_ApplicationCanceledFraud",
+            "id": "Event_1h4o5lj_di",
+            "label": {
+              "bounds": {
+                "height": 40.0,
+                "width": 78.0,
+                "x": 1071.0,
+                "y": 405.0
+              }
+            }
+          },
+          {
+            "bounds": {
+              "height": 50.0,
+              "width": 50.0,
+              "x": 635.0,
+              "y": 106.0
+            },
+            "bpmn_element": "ExclusiveGateway_Risk",
+            "id": "_BPMNShape_ExclusiveGateway_2",
+            "is_marker_visible": true,
+            "label": {
+              "bounds": {
+                "height": 14.0,
+                "width": 28.0,
+                "x": 646.0,
+                "y": 81.0
+              }
+            }
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 460.0,
+              "y": 91.0
+            },
+            "bpmn_element": "BusinessRuleTask_CheckApplicationAutomatically",
+            "id": "_BPMNShape_BusinessRuleTask_2"
+          },
+          {
+            "bounds": {
+              "height": 80.0,
+              "width": 100.0,
+              "x": 300.0,
+              "y": 91.0
+            },
+            "bpmn_element": "ServiceTask_GetCreditScore",
+            "id": "ServiceTask_0tixwo5_di"
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 852.0,
+              "y": 279.0
+            },
+            "bpmn_element": "ErrorBoundaryEvent_FraudDetected",
+            "id": "Event_0pxe3bh_di",
+            "label": {
+              "bounds": {
+                "height": 14.0,
+                "width": 74.0,
+                "x": 893.0,
+                "y": 301.0
+              }
+            }
+          }
+        ],
+        "id": "BPMNPlane_1"
+      }
     }
   ],
-  "errors": [
-    {
-      "id": "Error_01bezxs",
-      "name": "Error_FraudDetected",
-      "error_code": "02",
-      "structure_ref": null
-    },
-    {
-      "id": "Error_1u68flh",
-      "name": "Error_Timeout",
-      "error_code": "00",
-      "structure_ref": null
-    }
-  ],
+  "camunda_diagram_relation_id": "8dc12e9b-19d8-4ead-b538-41e8a4a9b4b2",
   "collaborations": [
     {
       "id": "Collaboration_CustomerOnboarding",
-      "name": null,
       "is_closed": false,
       "participants": [
         {
@@ -1060,5 +806,728 @@
         }
       ]
     }
-  ]
+  ],
+  "errors": [
+    {
+      "error_code": "02",
+      "id": "Error_01bezxs",
+      "name": "Error_FraudDetected"
+    },
+    {
+      "error_code": "00",
+      "id": "Error_1u68flh",
+      "name": "Error_Timeout"
+    }
+  ],
+  "exporter": "Camunda Web Modeler",
+  "exporter_version": "3cd8340",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "id": "_5SVkEIXnEeSmwfgVk-ryvQ",
+  "imports": [
+    {
+      "import_type": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+      "location": "C.9.1.bpmn",
+      "namespace": "http://bpmn.io/schema/bpmn/Definitions_1"
+    }
+  ],
+  "messages": [
+    {
+      "extension_elements": {
+        "zeebe_subscription": {
+          "correlation_key": "= documentReferenceId"
+        }
+      },
+      "id": "Message_0fvpzfg",
+      "name": "Message_DocumentRequested"
+    },
+    {
+      "extension_elements": {
+        "zeebe_subscription": {
+          "correlation_key": "=01"
+        }
+      },
+      "id": "Message_0dm6uaq",
+      "name": "Message_CancellationRequested"
+    }
+  ],
+  "modeler_execution_platform": "Camunda Cloud",
+  "modeler_execution_platform_version": "8.1.0",
+  "processes": [
+    {
+      "boundary_events": [
+        {
+          "attached_to_ref": "Activity_ManualCheck",
+          "cancel_activity": true,
+          "documentation": [
+            {
+              "content": "Captures error if fraud is detected",
+              "text_format": "text/plain"
+            }
+          ],
+          "error_event_definition": [
+            {
+              "error_ref": "Error_01bezxs",
+              "id": "ErrorEventDefinition_1ylbfzv"
+            }
+          ],
+          "id": "ErrorBoundaryEvent_FraudDetected",
+          "name": "Fraud detected",
+          "outgoing": "Flow_177paze",
+          "parallel_multiple": false
+        }
+      ],
+      "business_rule_tasks": [
+        {
+          "completion_quantity": 1,
+          "documentation": [
+            {
+              "content": "Identify risk for prospect client",
+              "text_format": "text/plain"
+            }
+          ],
+          "extension_elements": {
+            "zeebe_called_decision": {
+              "decision_id": "risk_check",
+              "result_variable": "result"
+            },
+            "zeebe_io_mapping": {
+              "output_parameters": [
+                {
+                  "source": "= if result != null then result.riskLevel else [\"green\"]",
+                  "target": "riskLevels"
+                },
+                {
+                  "source": "= if result != null then result.risk else []",
+                  "target": "risks"
+                }
+              ]
+            }
+          },
+          "id": "BusinessRuleTask_CheckApplicationAutomatically",
+          "implementation": "##unspecified",
+          "incoming": "SequenceFlow_1gd6p37",
+          "is_for_compensation": false,
+          "name": "Check application automatically",
+          "outgoing": "SequenceFlow_2",
+          "start_quantity": 1
+        }
+      ],
+      "call_activities": [
+        {
+          "called_element": "ManualCheck",
+          "completion_quantity": 1,
+          "extension_elements": {
+            "zeebe_called_element": {
+              "process_id": "ManualCheck",
+              "propagate_all_child_variables": false
+            }
+          },
+          "id": "Activity_ManualCheck",
+          "incoming": "SequenceFlow_Yellow",
+          "is_for_compensation": false,
+          "name": "Manual Check",
+          "outgoing": "Flow_0ik8h65",
+          "start_quantity": 1
+        }
+      ],
+      "end_events": [
+        {
+          "documentation": [
+            {
+              "content": "Customer onboarding process end application issued",
+              "text_format": "text/plain"
+            }
+          ],
+          "id": "EndEvent_ApplicationIssued",
+          "incoming": "SequenceFlow_11",
+          "name": "Application\n issued"
+        },
+        {
+          "documentation": [
+            {
+              "content": "Customer onboarding process end application rejected",
+              "text_format": "text/plain"
+            }
+          ],
+          "id": "EndEvent_ApplicationRejected",
+          "incoming": "SequenceFlow_13",
+          "name": "Application \nrejected"
+        },
+        {
+          "documentation": [
+            {
+              "content": "Customer onboarding process terminated due to fraud",
+              "text_format": "text/plain"
+            }
+          ],
+          "id": "TerminateEvent_ApplicationCanceledFraud",
+          "incoming": "Flow_0cvhizd",
+          "name": "Application canceled due to fraud",
+          "terminate_event_definitions": [
+            {
+              "id": "TerminateEventDefinition_1am7et0"
+            }
+          ]
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "gateway_direction": "Unspecified",
+          "id": "ExclusiveGateway_Decision",
+          "incoming": "Flow_0ik8h65",
+          "name": "Decision?",
+          "outgoing": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_ApplicationDeclined']"
+        },
+        {
+          "default": "SequenceFlow_Green",
+          "documentation": [
+            {
+              "content": "Route process based on risk, \"green\" automatic onboarding, \"yellow\" manual check, \"red\" automatic rejection",
+              "text_format": "text/plain"
+            }
+          ],
+          "gateway_direction": "Unspecified",
+          "id": "ExclusiveGateway_Risk",
+          "incoming": "SequenceFlow_2",
+          "name": "Risk?",
+          "outgoing": "['SequenceFlow_Green', 'SequenceFlow_Red', 'SequenceFlow_Yellow']"
+        }
+      ],
+      "extension_elements": {
+        "zeebe_user_task_form": {
+          "body": "{\n  \"components\": [\n    {\n      \"text\": \"<img src=\\\"http://localhost:8080/camunda/online/banking/img/core-img/logo.png\\\"><h2>Instructions:</h2><p>Based on internal protocal and the given information below, tick the checkbox for 'Approved' if this application should be approved.</p><p> Otherwise, leave this checkbox blank.</p>\",\n      \"type\": \"text\",\n      \"id\": \"Field_0e9521u\"\n    },\n    {\n      \"key\": \"applicationNumber\",\n      \"label\": \"Application Number\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1djmro0\"\n    },\n    {\n      \"key\": \"applicantName\",\n      \"label\": \"Applicant\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1ex9187\"\n    },\n    {\n      \"key\": \"age\",\n      \"label\": \"Current Age\",\n      \"type\": \"number\",\n      \"id\": \"Field_17vnd80\"\n    },\n    {\n      \"key\": \"employment\",\n      \"label\": \"Employment\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_08mj5fv\"\n    },\n    {\n      \"key\": \"category\",\n      \"label\": \"Category\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1k7e84u\"\n    },\n    {\n      \"key\": \"priceIndication\",\n      \"label\": \"Price indication\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1d6bhc2\"\n    },\n    {\n      \"label\": \"Risks\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_0qvctdt\",\n      \"key\": \"risksText\",\n      \"disabled\": true\n    },\n    {\n      \"key\": \"approved\",\n      \"label\": \"Approved\",\n      \"type\": \"checkbox\",\n      \"id\": \"Field_0hwfap9\"\n    }\n  ],\n  \"schemaVersion\": 4,\n  \"type\": \"default\",\n  \"id\": \"Form_0840o2b\",\n  \"executionPlatform\": \"Camunda Cloud\",\n  \"executionPlatformVersion\": \"1.1\",\n  \"exporter\": {\n    \"name\": \"Camunda Modeler\",\n    \"version\": \"5.0.0\"\n  }\n}",
+          "id": "userTaskForm_0khiqpl"
+        }
+      },
+      "id": "customer_onboarding_en",
+      "is_closed": false,
+      "is_executable": true,
+      "name": "Customer Onboarding",
+      "process_type": "None",
+      "send_tasks": [
+        {
+          "completion_quantity": 1,
+          "extension_elements": {
+            "zeebe_task_definition": {
+              "type": "reportFraud"
+            }
+          },
+          "id": "SendTask_ReportFraud",
+          "implementation": "##WebService",
+          "incoming": "Flow_177paze",
+          "is_for_compensation": false,
+          "name": "Report fraud",
+          "outgoing": "Flow_0cvhizd",
+          "start_quantity": 1
+        }
+      ],
+      "sequence_flows": [
+        {
+          "id": "SequenceFlow_1gd6p37",
+          "source_ref": "ServiceTask_GetCreditScore",
+          "target_ref": "BusinessRuleTask_CheckApplicationAutomatically"
+        },
+        {
+          "id": "SequenceFlow_01vh1zw",
+          "source_ref": "ServiceTask_RejectPolicy",
+          "target_ref": "SendTask_SendRejection"
+        },
+        {
+          "id": "SequenceFlow_13",
+          "source_ref": "SendTask_SendRejection",
+          "target_ref": "EndEvent_ApplicationRejected"
+        },
+        {
+          "condition_expression": {
+            "value": "= some risk in riskLevels satisfies risk = \"red\"",
+            "xsi_type": "bpmn2:tFormalExpression"
+          },
+          "documentation": [
+            {
+              "content": "Automatic rejection -severe risk",
+              "text_format": "text/plain"
+            }
+          ],
+          "id": "SequenceFlow_Red",
+          "name": "Red (severe risk)",
+          "source_ref": "ExclusiveGateway_Risk",
+          "target_ref": "ServiceTask_RejectPolicy"
+        },
+        {
+          "id": "SequenceFlow_2",
+          "source_ref": "BusinessRuleTask_CheckApplicationAutomatically",
+          "target_ref": "ExclusiveGateway_Risk"
+        },
+        {
+          "documentation": [
+            {
+              "content": "Automatic approval - no risk",
+              "text_format": "text/plain"
+            }
+          ],
+          "id": "SequenceFlow_Green",
+          "name": "Green (no risk)",
+          "source_ref": "ExclusiveGateway_Risk",
+          "target_ref": "ServiceTask_DeliverPolicy"
+        },
+        {
+          "id": "SequenceFlow_10",
+          "source_ref": "ServiceTask_DeliverPolicy",
+          "target_ref": "SendTask_SendPolicy"
+        },
+        {
+          "id": "SequenceFlow_11",
+          "source_ref": "SendTask_SendPolicy",
+          "target_ref": "EndEvent_ApplicationIssued"
+        },
+        {
+          "condition_expression": {
+            "value": "= approved",
+            "xsi_type": "bpmn2:tFormalExpression"
+          },
+          "id": "SequenceFlow_ApplicationAccepted",
+          "name": "Application accepted",
+          "source_ref": "ExclusiveGateway_Decision",
+          "target_ref": "ServiceTask_DeliverPolicy"
+        },
+        {
+          "condition_expression": {
+            "value": "= not(approved)",
+            "xsi_type": "bpmn2:tFormalExpression"
+          },
+          "id": "SequenceFlow_ApplicationDeclined",
+          "name": "Application declined",
+          "source_ref": "ExclusiveGateway_Decision",
+          "target_ref": "ServiceTask_RejectPolicy"
+        },
+        {
+          "id": "SequenceFlow_6",
+          "source_ref": "StartEvent_ApplicationReceived",
+          "target_ref": "ServiceTask_GetCreditScore"
+        },
+        {
+          "condition_expression": {
+            "value": "= every risk in riskLevels satisfies risk = \"yellow\"",
+            "xsi_type": "bpmn2:tFormalExpression"
+          },
+          "documentation": [
+            {
+              "content": "Manual check - moderate risk",
+              "text_format": "text/plain"
+            }
+          ],
+          "id": "SequenceFlow_Yellow",
+          "name": "Yellow (moderate risk)",
+          "source_ref": "ExclusiveGateway_Risk",
+          "target_ref": "Activity_ManualCheck"
+        },
+        {
+          "id": "Flow_0ik8h65",
+          "source_ref": "Activity_ManualCheck",
+          "target_ref": "ExclusiveGateway_Decision"
+        },
+        {
+          "id": "Flow_177paze",
+          "source_ref": "ErrorBoundaryEvent_FraudDetected",
+          "target_ref": "SendTask_ReportFraud"
+        },
+        {
+          "id": "Flow_0cvhizd",
+          "source_ref": "SendTask_ReportFraud",
+          "target_ref": "TerminateEvent_ApplicationCanceledFraud"
+        }
+      ],
+      "service_tasks": [
+        {
+          "completion_quantity": 1,
+          "extension_elements": {
+            "zeebe_io_mapping": {
+              "input_parameters": [
+                {
+                  "source": "demo@camunda.com",
+                  "target": "from.email"
+                },
+                {
+                  "source": "d-0d0120b0c7f148ef8a1c262f2cf07092",
+                  "target": "template.id"
+                },
+                {
+                  "source": "secrets.SENDGRID_DEMO",
+                  "target": "apiKey"
+                },
+                {
+                  "source": "= corporation",
+                  "target": "from.name"
+                },
+                {
+                  "source": "= applicant.name",
+                  "target": "to.name"
+                },
+                {
+                  "source": "= applicant.email",
+                  "target": "to.email"
+                },
+                {
+                  "source": "= {\n    \"name\": applicant.name,\n    \"applicationNumber\": applicationNumber,\n    \"product\": product\n}",
+                  "target": "template.data"
+                }
+              ]
+            },
+            "zeebe_task_definition": {
+              "type": "io.camunda:sendgrid:1"
+            }
+          },
+          "id": "SendTask_SendPolicy",
+          "implementation": "##WebService",
+          "incoming": "SequenceFlow_10",
+          "is_for_compensation": false,
+          "name": "Send confirmation",
+          "outgoing": "SequenceFlow_11",
+          "start_quantity": 1,
+          "zeebe_modeler_template": "io.camunda.connectors.SendGrid.v1.template",
+          "zeebe_modeler_template_icon": "data:image/svg+xml;utf8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%2015.6846L5.43837%2015.6844V15.7143H0.285706V15.6846ZM0.285706%2010.5619H5.43837V15.6844L0.285706%2015.6846V10.5619Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%200.285706H10.5611V5.40847H5.43837V0.285706ZM10.5616%205.43837H15.7143V10.5611H10.5616V5.43837Z%22%20fill%3D%22%2300B3E3%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V5.40847H5.43837V10.5611Z%22%20fill%3D%22%23009DD9%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%200.285706H15.7143V5.40847H10.5611V0.285706Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%205.40847H15.7143V5.43837H10.5616L10.5611%205.40847Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "completion_quantity": 1,
+          "documentation": [
+            {
+              "content": "Deliver policy",
+              "text_format": "text/plain"
+            }
+          ],
+          "extension_elements": {
+            "zeebe_task_definition": {
+              "type": "issuePolicy"
+            }
+          },
+          "id": "ServiceTask_DeliverPolicy",
+          "implementation": "##WebService",
+          "incoming": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_Green']",
+          "is_for_compensation": false,
+          "name": "Deliver confirmation",
+          "outgoing": "SequenceFlow_10",
+          "start_quantity": 1
+        },
+        {
+          "completion_quantity": 1,
+          "documentation": [
+            {
+              "content": "Reject policy",
+              "text_format": "text/plain"
+            }
+          ],
+          "extension_elements": {
+            "zeebe_task_definition": {
+              "type": "rejectPolicy"
+            }
+          },
+          "id": "ServiceTask_RejectPolicy",
+          "implementation": "##WebService",
+          "incoming": "['SequenceFlow_ApplicationDeclined', 'SequenceFlow_Red']",
+          "is_for_compensation": false,
+          "name": "Reject application",
+          "outgoing": "SequenceFlow_01vh1zw",
+          "start_quantity": 1
+        },
+        {
+          "completion_quantity": 1,
+          "extension_elements": {
+            "zeebe_io_mapping": {
+              "input_parameters": [
+                {
+                  "source": "secrets.SENDGRID_DEMO",
+                  "target": "apiKey"
+                },
+                {
+                  "source": "demo@camunda.com",
+                  "target": "from.email"
+                },
+                {
+                  "source": "d-aa6a58aaded54a83884518433ac2dd56",
+                  "target": "template.id"
+                },
+                {
+                  "source": "= {\n    \"name\": applicant.name\n}",
+                  "target": "template.data"
+                },
+                {
+                  "source": "= applicant.email",
+                  "target": "to.email"
+                },
+                {
+                  "source": "= applicant.name",
+                  "target": "to.name"
+                },
+                {
+                  "source": "= corporation",
+                  "target": "from.name"
+                }
+              ]
+            },
+            "zeebe_task_definition": {
+              "type": "io.camunda:sendgrid:1"
+            }
+          },
+          "id": "SendTask_SendRejection",
+          "implementation": "##WebService",
+          "incoming": "SequenceFlow_01vh1zw",
+          "is_for_compensation": false,
+          "name": "Send rejection",
+          "outgoing": "SequenceFlow_13",
+          "start_quantity": 1,
+          "zeebe_modeler_template": "io.camunda.connectors.SendGrid.v1.template",
+          "zeebe_modeler_template_icon": "data:image/svg+xml;utf8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%205.40847H5.43837V10.5611H0.285706V5.40847Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V15.6844H5.43837V10.5611Z%22%20fill%3D%22%2399E1F4%22%2F%3E%0A%3Cpath%20d%3D%22M0.285706%2015.6846L5.43837%2015.6844V15.7143H0.285706V15.6846ZM0.285706%2010.5619H5.43837V15.6844L0.285706%2015.6846V10.5619Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%200.285706H10.5611V5.40847H5.43837V0.285706ZM10.5616%205.43837H15.7143V10.5611H10.5616V5.43837Z%22%20fill%3D%22%2300B3E3%22%2F%3E%0A%3Cpath%20d%3D%22M5.43837%2010.5611L10.5611%2010.5616V5.40847H5.43837V10.5611Z%22%20fill%3D%22%23009DD9%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%200.285706H15.7143V5.40847H10.5611V0.285706Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3Cpath%20d%3D%22M10.5611%205.40847H15.7143V5.43837H10.5616L10.5611%205.40847Z%22%20fill%3D%22%231A82E2%22%2F%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "completion_quantity": 1,
+          "documentation": [
+            {
+              "content": "Gets credit score for prospect client",
+              "text_format": "text/plain"
+            }
+          ],
+          "extension_elements": {
+            "zeebe_task_definition": {
+              "type": "calculateScore"
+            }
+          },
+          "id": "ServiceTask_GetCreditScore",
+          "implementation": "##WebService",
+          "incoming": "SequenceFlow_6",
+          "is_for_compensation": false,
+          "name": "Get credit score",
+          "outgoing": "SequenceFlow_1gd6p37",
+          "start_quantity": 1
+        }
+      ],
+      "start_events": [
+        {
+          "extension_elements": {
+            "zeebe_io_mapping": {
+              "output_parameters": {
+                "source": "= string(now())",
+                "target": "documentReferenceId"
+              }
+            }
+          },
+          "id": "StartEvent_ApplicationReceived",
+          "is_interrupting": true,
+          "name": "Application received",
+          "outgoing": "SequenceFlow_6",
+          "parallel_multiple": false
+        }
+      ],
+      "sub_processes": [
+        {
+          "completion_quantity": 1,
+          "end_events": [
+            {
+              "documentation": [
+                {
+                  "content": "Ends the subprocess and send message timeout handled",
+                  "text_format": "text/plain"
+                }
+              ],
+              "extension_elements": {
+                "zeebe_task_definition": {
+                  "type": "timeoutHandled"
+                }
+              },
+              "id": "EndMessageEvent_Timeout",
+              "incoming": "Flow_0dppbeu",
+              "message_event_definitions": [
+                {
+                  "id": "MessageEventDefinition_0tax7tp"
+                }
+              ],
+              "name": "Timeout handled"
+            }
+          ],
+          "id": "Activity_1ke2ixr",
+          "is_for_compensation": false,
+          "sequence_flows": [
+            {
+              "id": "Flow_151qlxc",
+              "source_ref": "StartErrorEvent_Timeout",
+              "target_ref": "UserTask_HandleTimeout"
+            },
+            {
+              "id": "Flow_0dppbeu",
+              "source_ref": "UserTask_HandleTimeout",
+              "target_ref": "EndMessageEvent_Timeout"
+            }
+          ],
+          "start_events": [
+            {
+              "documentation": [
+                {
+                  "content": "Catches timeout error event and starts the subprocess",
+                  "text_format": "text/plain"
+                }
+              ],
+              "error_event_definition": [
+                {
+                  "error_ref": "Error_1u68flh",
+                  "id": "ErrorEventDefinition_0ra1xn3"
+                }
+              ],
+              "id": "StartErrorEvent_Timeout",
+              "is_interrupting": true,
+              "name": "Timeout",
+              "outgoing": "Flow_151qlxc",
+              "parallel_multiple": false
+            }
+          ],
+          "start_quantity": 1,
+          "triggered_by_event": true,
+          "user_tasks": [
+            {
+              "completion_quantity": 1,
+              "documentation": [
+                {
+                  "content": "Manually handles the timeout",
+                  "text_format": "text/plain"
+                }
+              ],
+              "id": "UserTask_HandleTimeout",
+              "implementation": "##unspecified",
+              "incoming": "Flow_151qlxc",
+              "is_for_compensation": false,
+              "name": "Handle Timeout",
+              "outgoing": "Flow_0dppbeu",
+              "start_quantity": 1
+            }
+          ]
+        },
+        {
+          "completion_quantity": 1,
+          "end_events": [
+            {
+              "documentation": [
+                {
+                  "content": "Inform customer of a successful cancelation",
+                  "text_format": "text/plain"
+                }
+              ],
+              "extension_elements": {
+                "zeebe_task_definition": {
+                  "type": "informCustomerSuccessfulCancelation"
+                }
+              },
+              "id": "EndMessageEvent_InformCustomer",
+              "incoming": "Flow_0qrakss",
+              "message_event_definitions": [
+                {
+                  "id": "MessageEventDefinition_0j82oqj"
+                }
+              ],
+              "name": "Customer notified about successful cancelation"
+            },
+            {
+              "documentation": [
+                {
+                  "content": "Inform operations team of a successful cancelation",
+                  "text_format": "text/plain"
+                }
+              ],
+              "extension_elements": {
+                "zeebe_task_definition": {
+                  "type": "informOperationsSuccessfulCancelation"
+                }
+              },
+              "id": "EndMessageEvent_InformOperations",
+              "incoming": "Flow_1jml1az",
+              "message_event_definitions": [
+                {
+                  "id": "MessageEventDefinition_1qmp27r"
+                }
+              ],
+              "name": "Operations Team notified about successful cancelation"
+            }
+          ],
+          "id": "Activity_0vp33kx",
+          "is_for_compensation": false,
+          "parallel_gateways": [
+            {
+              "gateway_direction": "Unspecified",
+              "id": "ParallelGateway_CancelApplication",
+              "incoming": "Flow_19iipc6",
+              "outgoing": "['Flow_0qrakss', 'Flow_1jml1az']"
+            }
+          ],
+          "sequence_flows": [
+            {
+              "id": "Flow_12nmks0",
+              "source_ref": "StartMessageEvent_CancellationRequested",
+              "target_ref": "ServiceTask_CancelApplication"
+            },
+            {
+              "id": "Flow_19iipc6",
+              "source_ref": "ServiceTask_CancelApplication",
+              "target_ref": "ParallelGateway_CancelApplication"
+            },
+            {
+              "id": "Flow_0qrakss",
+              "source_ref": "ParallelGateway_CancelApplication",
+              "target_ref": "EndMessageEvent_InformCustomer"
+            },
+            {
+              "id": "Flow_1jml1az",
+              "source_ref": "ParallelGateway_CancelApplication",
+              "target_ref": "EndMessageEvent_InformOperations"
+            }
+          ],
+          "service_tasks": [
+            {
+              "completion_quantity": 1,
+              "documentation": [
+                {
+                  "content": "Cancel application",
+                  "text_format": "text/plain"
+                }
+              ],
+              "extension_elements": {
+                "zeebe_task_definition": {
+                  "type": "cancelApplication"
+                }
+              },
+              "id": "ServiceTask_CancelApplication",
+              "implementation": "##WebService",
+              "incoming": "Flow_12nmks0",
+              "is_for_compensation": false,
+              "name": "Cancel application",
+              "outgoing": "Flow_19iipc6",
+              "start_quantity": 1
+            }
+          ],
+          "start_events": [
+            {
+              "documentation": [
+                {
+                  "content": "Customer onboarding cancellation message received",
+                  "text_format": "text/plain"
+                }
+              ],
+              "id": "StartMessageEvent_CancellationRequested",
+              "is_interrupting": true,
+              "message_event_definition": [
+                {
+                  "id": "MessageEventDefinition_0tj9nv6",
+                  "message_ref": "Message_0dm6uaq"
+                }
+              ],
+              "name": "Cancelation requested",
+              "outgoing": "Flow_12nmks0",
+              "parallel_multiple": false
+            }
+          ],
+          "start_quantity": 1,
+          "triggered_by_event": true
+        }
+      ]
+    }
+  ],
+  "target_namespace": "http://camunda.org/schema/1.0/bpmn",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "xsi_schema_location": "http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
 }

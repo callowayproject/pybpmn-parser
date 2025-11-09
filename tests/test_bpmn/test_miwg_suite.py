@@ -6,7 +6,8 @@ from pathlib import Path
 import pytest
 from pytest import param
 
-from pybpmn_parser.parse import parse_file
+from pybpmn_parser.core import dataclass_to_dict
+from pybpmn_parser.parse import Parser
 from tests._utils import assert_attributes
 
 
@@ -38,9 +39,9 @@ from tests._utils import assert_attributes
 )
 def test_miwg(test_name: str, fixture_dir: Path):
     """Import a MIWG test suite file and validate the attributes."""
+    parser = Parser()
     file_path = fixture_dir / "miwg-test-suite-2025" / f"{test_name}.bpmn"
     expected_file = fixture_dir / "miwg-test-suite-2025" / f"{test_name}.json"
+    bpmn_model = parser.parse_file(file_path)
     expected_json = json.loads(expected_file.read_text(encoding="utf-8"))
-    bpmn_model = parse_file(file_path)
-
     assert_attributes(bpmn_model, expected_json)

@@ -1,684 +1,1305 @@
 {
-  "id": "_1aa4e08d-219c-418c-8aed-5ddf4cd45a41",
-  "name": "C.2.0",
-  "target_namespace": "http://www.trisotech.com/definitions/_1aa4e08d-219c-418c-8aed-5ddf4cd45a41",
-  "expression_language": "http://www.w3.org/1999/XPath",
-  "type_language": "http://www.w3.org/2001/XMLSchema",
-  "exporter": "BPMN 2.0 Web Modeler",
-  "exporter_version": "4.2.3",
-  "processes": [
+  "bpmndiagrams": [
     {
-      "id": "WFP-Page_1-1",
-      "name": null,
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "tasks": [
+      "id": "Page_1",
+      "label_styles": [
         {
-          "id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
-          "name": "Take Payment",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
+          "font": {
+            "is_bold": false,
+            "is_italic": false,
+            "is_strike_through": false,
+            "is_underline": false,
+            "name": "Arial",
+            "size": 11.0
+          },
+          "id": "LSPage_1"
         }
       ],
-      "start_events": [
-        {
-          "id": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436",
-          "name": "Receive Credit Card Information",
-          "parallel_multiple": false,
-          "is_interrupting": true,
-          "outgoing": [
-            {}
-          ],
-          "message_event_definition": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
-          "name": null,
-          "source_ref": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
-          "target_ref": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
-          "is_immediate": null
-        },
-        {
-          "id": "__f3f918b3-abee-4e59-8131-212d0d86b056",
-          "name": null,
-          "source_ref": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436",
-          "target_ref": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
-          "is_immediate": null
-        }
-      ],
-      "end_events": [
-        {
-          "id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
-          "name": "Send Result",
-          "incoming": [
-            {}
-          ],
-          "message_event_definition": [
-            {
-              "id": null,
-              "message_ref": "Message_1404332496320"
+      "name": "Buying at Amazon Collaboration",
+      "plane": {
+        "bpmn_edges": [
+          {
+            "bpmn_element": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+            "id": "_6b75d079-357e-49bf-a361-72b295e395a4",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1571.0,
+                "y": 721.0
+              },
+              {
+                "x": 1619.0,
+                "y": 721.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+            "id": "_fe8ba97f-4313-42a0-b728-fe8dbc65b96c",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1356.0,
+                "y": 721.0
+              },
+              {
+                "x": 1475.0,
+                "y": 721.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__474f19b8-f608-4d20-a49e-907485a789c5",
+            "id": "_1dbe0923-aa28-4908-84e3-9eccef9db46c",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1193.0,
+                "y": 721.0
+              },
+              {
+                "x": 1260.0,
+                "y": 721.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+            "id": "_8fb6b2d9-a592-4cc3-b960-70c230e25059",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1027.0,
+                "y": 130.0
+              },
+              {
+                "x": 1087.0,
+                "y": 129.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+            "id": "_ab4cd126-18c0-458a-a5ba-cc1d02bd6941",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 880.0,
+                "y": 129.0
+              },
+              {
+                "x": 931.0,
+                "y": 130.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+            "id": "_48ee3c9b-dc2f-418d-94b0-30f1634d1e9e",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 320.0,
+                "y": 394.5
+              },
+              {
+                "x": 364.0,
+                "y": 395.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+            "id": "_6074abbe-7294-4260-9553-f3f2ec74b231",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 618.5,
+                "y": 395.5
+              },
+              {
+                "x": 685.0,
+                "y": 395.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+            "id": "_3470f558-68b6-4a09-bddf-5c9af1f6690e",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 460.0,
+                "y": 395.5
+              },
+              {
+                "x": 522.5,
+                "y": 395.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__a12a7547-373d-47ec-890d-af5c177203ee",
+            "id": "_74f66f18-53f0-44ce-9bac-8a7fd2016ac8",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 19.09375,
+                "x": 767.953125,
+                "y": 400.0
+              },
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 727.0,
+                "y": 395.0
+              },
+              {
+                "x": 829.0,
+                "y": 395.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+            "id": "_4ca78b71-fa50-4ff1-a162-67359576eb8f",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1376.0,
+                "y": 395.0
+              },
+              {
+                "x": 1477.0,
+                "y": 394.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+            "id": "_596917da-c2c9-417f-a68c-14ab21616fd5",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 881.0,
+                "y": 395.0
+              },
+              {
+                "x": 930.0,
+                "y": 395.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+            "id": "_20bf2105-3693-4753-8076-ab2a637902a7",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1026.0,
+                "y": 396.0
+              },
+              {
+                "x": 1050.0,
+                "y": 395.0
+              },
+              {
+                "x": 1050.0,
+                "y": 346.0
+              },
+              {
+                "x": 1072.0,
+                "y": 346.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_63cf98c9-d0b1-4595-a4f2-9589439b311c",
+            "id": "_61c970c9-a769-4a9c-9794-46e823c4816e",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 19.09375,
+                "x": 968.078125,
+                "y": 463.0
+              },
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1072.0,
+                "y": 459.0
+              },
+              {
+                "x": 978.0,
+                "y": 458.0
+              },
+              {
+                "x": 978.0,
+                "y": 433.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+            "id": "_8b312c63-944c-4f8f-ab5b-fb94ddc0ed46",
+            "label": {
+              "bounds": {
+                "height": 12.015625,
+                "width": 14.609375,
+                "x": 1132.3619889139934,
+                "y": 463.1942490435134
+              },
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1114.0,
+                "y": 459.0
+              },
+              {
+                "x": 1165.0,
+                "y": 458.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+            "id": "_0f61322d-baeb-453d-bbe3-85e2d09b55d9",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 14.609375,
+                "x": 1084.86200234625,
+                "y": 407.0625
+              },
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1093.0,
+                "y": 367.0
+              },
+              {
+                "x": 1093.0,
+                "y": 438.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+            "id": "_62e2c7a0-693e-4203-9daf-12a8d5e10795",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 19.09375,
+                "x": 1149.43231484625,
+                "y": 350.5
+              },
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1113.0,
+                "y": 346.0
+              },
+              {
+                "x": 1204.0,
+                "y": 346.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+            "id": "_9729f22a-c0f0-41d0-a7f0-5e18fe0751c4",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1240.0,
+                "y": 346.0
+              },
+              {
+                "x": 1284.0,
+                "y": 346.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+            "id": "_bd7f52ee-93f6-4736-a13f-d1acdb1630d4",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1352.0,
+                "y": 517.0
+              },
+              {
+                "x": 1352.0,
+                "y": 546.0
+              },
+              {
+                "x": 1431.0,
+                "y": 546.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+            "id": "_07140a2c-1e99-4404-8313-93a372c2d6ae",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1573.0,
+                "y": 395.5
+              },
+              {
+                "x": 1614.0,
+                "y": 394.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
+            "id": "_46f456b4-a7b4-461a-9cdc-f62ff777fb94",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 14.59375,
+                "x": 557.703125,
+                "y": 320.5
+              },
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 706.0,
+                "y": 374.0
+              },
+              {
+                "x": 706.0,
+                "y": 315.5
+              },
+              {
+                "x": 412.0,
+                "y": 315.5
+              },
+              {
+                "x": 412.0,
+                "y": 357.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+            "id": "_f1b8e3b1-fd7e-4fdb-98e0-aa35fa62e160",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 320.0,
+                "y": 691.0
+              },
+              {
+                "x": 368.0,
+                "y": 692.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+            "id": "_60ed1a2c-fab7-4617-881f-67733c0bc41b",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 464.0,
+                "y": 692.0
+              },
+              {
+                "x": 500.0,
+                "y": 692.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+            "id": "_5a056820-21ec-484a-ac1b-9caf84481e8a",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 596.0,
+                "y": 692.0
+              },
+              {
+                "x": 618.5,
+                "y": 692.0
+              },
+              {
+                "x": 618.5,
+                "y": 828.0
+              },
+              {
+                "x": 641.0,
+                "y": 828.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+            "id": "_0bbeed98-39d7-44ef-8b9d-f7600fb8ac20",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 737.0,
+                "y": 828.0
+              },
+              {
+                "x": 784.0,
+                "y": 828.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+            "id": "_c71d97f8-5c20-4527-bed2-528e37dad504",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 880.0,
+                "y": 828.0
+              },
+              {
+                "x": 922.0,
+                "y": 828.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__13e0b8fd-91fe-4bbc-87ae-5ad657f6ef99",
+            "id": "_2fdcb9da-45a4-46c7-aab8-491d8dee9acd",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1523.0,
+                "y": 683.0
+              },
+              {
+                "x": 1524.0,
+                "y": 433.5
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__5cdd91dd-32f6-4102-b475-bd6c7992f509",
+            "id": "_8485f43a-fb2b-4466-b254-49452751e656",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 848.0,
+                "y": 790.0
+              },
+              {
+                "x": 848.0,
+                "y": 762.0
+              },
+              {
+                "x": 1177.0,
+                "y": 762.0
+              },
+              {
+                "x": 1177.0,
+                "y": 736.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__789952b8-abba-4f3f-81cd-24cbb4d0d615",
+            "id": "_d16a9f5d-c29a-4114-b7c6-65b2921b6c74",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1222.0,
+                "y": 364.0
+              },
+              {
+                "x": 1222.0,
+                "y": 519.5
+              },
+              {
+                "x": 304.0,
+                "y": 519.5
+              },
+              {
+                "x": 304.0,
+                "y": 675.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__86b33cf0-1b17-437f-a7cf-510e0766561f",
+            "id": "_a3b1d7c1-82fb-4b28-ad4f-c1daf17cc1c7",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 90.921875,
+                "x": 857.0390625,
+                "y": 233.0
+              },
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 949.0,
+                "y": 357.0
+              },
+              {
+                "x": 949.0,
+                "y": 228.0
+              },
+              {
+                "x": 864.0,
+                "y": 228.0
+              },
+              {
+                "x": 864.0,
+                "y": 145.0
+              }
+            ]
+          },
+          {
+            "bpmn_element": "__0c171c64-b342-4f84-8020-a63b6a5b296d",
+            "id": "_f10d64de-2a78-421b-8a62-69bb9560958c",
+            "label": {
+              "label_style": "LSPage_1"
+            },
+            "waypoint": [
+              {
+                "x": 1106.0,
+                "y": 147.0
+              },
+              {
+                "x": 1106.0,
+                "y": 230.0
+              },
+              {
+                "x": 1007.0,
+                "y": 230.0
+              },
+              {
+                "x": 1007.0,
+                "y": 357.0
+              }
+            ]
+          }
+        ],
+        "bpmn_element": "C1404332496310",
+        "bpmn_shapes": [
+          {
+            "bounds": {
+              "height": 150.0,
+              "width": 586.0,
+              "x": 1102.0,
+              "y": 639.0
+            },
+            "bpmn_element": "__bb6766c5-51e3-4f04-aedc-6c9e4afe0582",
+            "id": "_d156d69d-91b2-4d6e-a25f-034244e746f4",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 34.8125,
+                "width": 12.0,
+                "x": 1106.5,
+                "y": 696.09375
+              },
+              "label_style": "LSPage_1"
             }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WFP-Page_1-2",
-      "name": null,
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "tasks": [
-        {
-          "id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
-          "name": "Deliver Items",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
-          "name": "Load Truck",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "start_events": [
-        {
-          "id": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40",
-          "name": "Pick items",
-          "parallel_multiple": false,
-          "is_interrupting": true,
-          "outgoing": [
-            {}
-          ],
-          "message_event_definition": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
-          "name": null,
-          "source_ref": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
-          "target_ref": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
-          "is_immediate": null
-        },
-        {
-          "id": "__36fbe220-08cc-45e8-847b-3f55002979c2",
-          "name": null,
-          "source_ref": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
-          "target_ref": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
-          "is_immediate": null
-        },
-        {
-          "id": "__474f19b8-f608-4d20-a49e-907485a789c5",
-          "name": null,
-          "source_ref": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40",
-          "target_ref": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
-          "is_immediate": null
-        }
-      ],
-      "end_events": [
-        {
-          "id": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
-          "name": null,
-          "incoming": [
-            {}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WFP-Page_1-3",
-      "name": null,
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "tasks": [
-        {
-          "id": "__be386700-06c2-4a29-b861-c516940667fe",
-          "name": "Add Item to Cart",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
-          "name": "Receive items",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
-          "name": "Browse Products on Amazon",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {},
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "sub_processes": [
-        {
-          "id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
-          "name": "Checkout",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "triggered_by_event": false,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ],
-          "tasks": [
-            {
-              "id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-              "name": "Pay Order",
-              "is_for_compensation": false,
-              "start_quantity": 1,
-              "completion_quantity": 1,
-              "default": null,
-              "incoming": [
-                {},
-                {}
-              ],
-              "outgoing": [
-                {}
-              ]
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 1474.0,
+              "y": 683.0
+            },
+            "bpmn_element": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
+            "id": "_9e3d896e-b494-4c86-93fc-044cefddb34e",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 68.46875,
+                "x": 1487.765625,
+                "y": 714.5
+              },
+              "label_style": "LSPage_1"
             }
-          ],
-          "start_events": [
-            {
-              "id": "__a1c27e25-4aa2-43dc-8a20-b713e8393d7f",
-              "name": null,
-              "parallel_multiple": false,
-              "is_interrupting": false,
-              "outgoing": [
-                {}
-              ]
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 1259.0,
+              "y": 683.0
+            },
+            "bpmn_element": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
+            "id": "_f840ac48-7fab-46ca-82be-7d85908b23de",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 58.375,
+                "x": 1277.8125,
+                "y": 714.5
+              },
+              "label_style": "LSPage_1"
             }
-          ],
-          "sequence_flows": [
-            {
-              "id": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
-              "name": null,
-              "source_ref": "__a1c27e25-4aa2-43dc-8a20-b713e8393d7f",
-              "target_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-              "is_immediate": null
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 1619.0,
+              "y": 703.0
             },
-            {
-              "id": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
-              "name": null,
-              "source_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-              "target_ref": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-              "is_immediate": null
-            },
-            {
-              "id": "_63cf98c9-d0b1-4595-a4f2-9589439b311c",
-              "name": "Yes",
-              "source_ref": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-              "target_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-              "is_immediate": null
-            },
-            {
-              "id": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
-              "name": "No",
-              "source_ref": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-              "target_ref": "_7ea6639e-e773-4236-94bf-78f149188c30",
-              "is_immediate": null
-            },
-            {
-              "id": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
-              "name": "No",
-              "source_ref": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-              "target_ref": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-              "is_immediate": null
-            },
-            {
-              "id": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
-              "name": "Yes",
-              "source_ref": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-              "target_ref": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-              "is_immediate": null
-            },
-            {
-              "id": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
-              "name": null,
-              "source_ref": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-              "target_ref": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
-              "is_immediate": null
+            "bpmn_element": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
+            "id": "_1803f4c7-e215-4029-8ff6-bbf2daf31109",
+            "label": {
+              "label_style": "LSPage_1"
             }
-          ],
-          "intermediate_throw_events": [
-            {
-              "id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-              "name": "Send Order",
-              "incoming": [
-                {}
-              ],
-              "outgoing": [
-                {}
-              ],
-              "message_event_definition": [
-                {
-                  "id": null,
-                  "message_ref": "Message_1404332496321"
-                }
-              ]
-            }
-          ],
-          "exclusive_gateways": [
-            {
-              "id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-              "name": "Retry?",
-              "gateway_direction": "Unspecified",
-              "default": null,
-              "incoming": [
-                {}
-              ],
-              "outgoing": [
-                {},
-                {}
-              ]
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 1161.0,
+              "y": 705.0
             },
-            {
-              "id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-              "name": "Payment accepted?",
-              "gateway_direction": "Unspecified",
-              "default": null,
-              "incoming": [
-                {}
-              ],
-              "outgoing": [
-                {},
-                {}
-              ]
+            "bpmn_element": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40",
+            "id": "_8b49d284-965c-446a-a216-ebccd0691d22",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 52.75,
+                "x": 1149.625,
+                "y": 687.5
+              },
+              "label_style": "LSPage_1"
             }
-          ],
-          "end_events": [
-            {
-              "id": "_7ea6639e-e773-4236-94bf-78f149188c30",
-              "name": null,
-              "incoming": [
-                {}
-              ],
-              "error_event_definition": [
-                {
-                  "id": null,
-                  "error_ref": null
-                }
-              ]
+          },
+          {
+            "bounds": {
+              "height": 132.0,
+              "width": 382.0,
+              "x": 785.0,
+              "y": 63.0
             },
-            {
-              "id": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
-              "name": null,
-              "incoming": [
-                {}
-              ]
+            "bpmn_element": "__3cf88d6c-e5e4-489e-bc73-e2a18be946bf",
+            "id": "_841b32fb-4579-4ce5-9d5d-57b3cbbaec14",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 113.375,
+                "width": 12.0,
+                "x": 790.0,
+                "y": 72.3125
+              },
+              "label_style": "LSPage_1"
             }
-          ]
-        }
-      ],
-      "start_events": [
-        {
-          "id": "__f5b8cb41-0574-4c29-aaaa-84ecce589f84",
-          "name": null,
-          "parallel_multiple": false,
-          "is_interrupting": false,
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
-          "name": null,
-          "source_ref": "__f5b8cb41-0574-4c29-aaaa-84ecce589f84",
-          "target_ref": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
-          "is_immediate": null
-        },
-        {
-          "id": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
-          "name": null,
-          "source_ref": "__be386700-06c2-4a29-b861-c516940667fe",
-          "target_ref": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
-          "is_immediate": null
-        },
-        {
-          "id": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
-          "name": null,
-          "source_ref": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
-          "target_ref": "__be386700-06c2-4a29-b861-c516940667fe",
-          "is_immediate": null
-        },
-        {
-          "id": "__a12a7547-373d-47ec-890d-af5c177203ee",
-          "name": "Yes",
-          "source_ref": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
-          "target_ref": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
-          "is_immediate": null
-        },
-        {
-          "id": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
-          "name": null,
-          "source_ref": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
-          "target_ref": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
-          "is_immediate": null
-        },
-        {
-          "id": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
-          "name": null,
-          "source_ref": "__cec149db-adae-4b69-8ea4-b866f2eef248",
-          "target_ref": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
-          "is_immediate": null
-        },
-        {
-          "id": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
-          "name": null,
-          "source_ref": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
-          "target_ref": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
-          "is_immediate": null
-        },
-        {
-          "id": "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
-          "name": "No",
-          "source_ref": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
-          "target_ref": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
-          "is_immediate": null
-        }
-      ],
-      "exclusive_gateways": [
-        {
-          "id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
-          "name": "Done Shopping?",
-          "gateway_direction": "Unspecified",
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {},
-            {}
-          ]
-        }
-      ],
-      "end_events": [
-        {
-          "id": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
-          "name": null,
-          "incoming": [
-            {}
-          ]
-        },
-        {
-          "id": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
-          "name": null,
-          "incoming": [
-            {}
-          ]
-        }
-      ],
-      "boundary_events": [
-        {
-          "id": "__cec149db-adae-4b69-8ea4-b866f2eef248",
-          "name": null,
-          "parallel_multiple": false,
-          "cancel_activity": false,
-          "attached_to_ref": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
-          "outgoing": [
-            {}
-          ],
-          "error_event_definition": [
-            {}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WFP-Page_1-4",
-      "name": null,
-      "process_type": "None",
-      "is_closed": false,
-      "is_executable": false,
-      "definitional_collaboration_ref": null,
-      "lane_sets": [
-        {
-          "id": null,
-          "name": null,
-          "lane": [
-            {
-              "id": "__15a180db-97af-4058-ac0a-4a31247fb797",
-              "name": "Picker",
-              "partition_element_ref": null,
-              "flow_node_refs": [
-                {},
-                {},
-                {}
-              ]
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 931.0,
+              "y": 91.0
             },
-            {
-              "id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
-              "name": "Packager",
-              "partition_element_ref": null,
-              "flow_node_refs": [
-                {},
-                {},
-                {}
-              ]
+            "bpmn_element": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
+            "id": "_76535f92-31eb-4b60-8452-3eedd40ab184",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 76.34375,
+                "x": 940.453125,
+                "y": 123.0
+              },
+              "label_style": "LSPage_1"
             }
-          ]
-        }
-      ],
-      "tasks": [
-        {
-          "id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
-          "name": "Pick items",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
-          "name": "Place in bin",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
-          "name": "Receive and Package\nitems",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        },
-        {
-          "id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
-          "name": "Send to carrier dock",
-          "is_for_compensation": false,
-          "start_quantity": 1,
-          "completion_quantity": 1,
-          "default": null,
-          "incoming": [
-            {}
-          ],
-          "outgoing": [
-            {}
-          ]
-        }
-      ],
-      "start_events": [
-        {
-          "id": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
-          "name": "Receive Order",
-          "parallel_multiple": false,
-          "is_interrupting": true,
-          "outgoing": [
-            {}
-          ],
-          "message_event_definition": [
-            {}
-          ]
-        }
-      ],
-      "sequence_flows": [
-        {
-          "id": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
-          "name": null,
-          "source_ref": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
-          "target_ref": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
-          "is_immediate": null
-        },
-        {
-          "id": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
-          "name": null,
-          "source_ref": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
-          "target_ref": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
-          "is_immediate": null
-        },
-        {
-          "id": "__04700d0b-5231-46f6-ae74-698ba3864a60",
-          "name": null,
-          "source_ref": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
-          "target_ref": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
-          "is_immediate": null
-        },
-        {
-          "id": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
-          "name": null,
-          "source_ref": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
-          "target_ref": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
-          "is_immediate": null
-        },
-        {
-          "id": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
-          "name": null,
-          "source_ref": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
-          "target_ref": "__5a9abc77-7371-4213-bede-4056f9cb7808",
-          "is_immediate": null
-        }
-      ],
-      "end_events": [
-        {
-          "id": "__5a9abc77-7371-4213-bede-4056f9cb7808",
-          "name": null,
-          "incoming": [
-            {}
-          ]
-        }
-      ]
-    }
-  ],
-  "messages": [
-    {
-      "id": "Message_1404332496319",
-      "name": null,
-      "item_ref": null
-    },
-    {
-      "id": "Message_1404332496320",
-      "name": null,
-      "item_ref": null
-    },
-    {
-      "id": "Message_1404332496321",
-      "name": null,
-      "item_ref": null
-    },
-    {
-      "id": "Message_1404332496322",
-      "name": null,
-      "item_ref": null
-    },
-    {
-      "id": "Message_1404332496323",
-      "name": null,
-      "item_ref": null
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 31.0,
+              "x": 849.0,
+              "y": 113.0
+            },
+            "bpmn_element": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436",
+            "id": "_5b5df749-2e58-4dd2-aa92-90420c83b3a2",
+            "label": {
+              "bounds": {
+                "height": 40.0,
+                "width": 77.46875,
+                "x": 827.703125,
+                "y": 70.0
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 35.0,
+              "x": 1087.0,
+              "y": 111.0
+            },
+            "bpmn_element": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
+            "id": "_6160434e-d9c9-4cd2-a2fd-276b06de88a7",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 32.5625,
+                "x": 1087.34375,
+                "y": 75.0
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 295.0,
+              "width": 1467.0,
+              "x": 215.0,
+              "y": 275.0
+            },
+            "bpmn_element": "__6f70606b-6781-4f26-b207-5bfff80115d8",
+            "id": "_47d14f7b-f0f5-47ac-a2e6-08b1de420e57",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 49.40625,
+                "width": 12.015625,
+                "x": 219.5,
+                "y": 398.01652144128
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 288.0,
+              "y": 378.5
+            },
+            "bpmn_element": "__f5b8cb41-0574-4c29-aaaa-84ecce589f84",
+            "id": "_5c88e114-2108-4511-ae55-585af71fbc97",
+            "label": {
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 521.5,
+              "y": 356.5
+            },
+            "bpmn_element": "__be386700-06c2-4a29-b861-c516940667fe",
+            "id": "_b211f152-3674-4d56-8d38-6c254ec685cd",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 86.4375,
+                "x": 526.28125,
+                "y": 388.75
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 209.0,
+              "width": 547.0,
+              "x": 828.0,
+              "y": 290.0
+            },
+            "bpmn_element": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
+            "id": "_8f85b3d6-6223-446d-b4c5-2e98ae9b7ec9",
+            "is_expanded": true,
+            "label": {
+              "bounds": {
+                "height": 12.015625,
+                "width": 48.28125,
+                "x": 836.0,
+                "y": 297.5679626464844
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 849.0,
+              "y": 379.0
+            },
+            "bpmn_element": "__a1c27e25-4aa2-43dc-8a20-b713e8393d7f",
+            "id": "_2c370da6-1a92-4fae-9882-fcf3f3092c91",
+            "label": {
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 930.0,
+              "y": 357.0
+            },
+            "bpmn_element": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
+            "id": "_45e1c9ba-8c28-47f1-869d-6eb35b54d28f",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 52.75,
+                "x": 951.25,
+                "y": 388.5
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 42.0,
+              "width": 42.0,
+              "x": 1071.0,
+              "y": 437.0
+            },
+            "bpmn_element": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
+            "id": "_7bcd012d-110a-49d6-a428-f8eaa7ba8859",
+            "is_marker_visible": true,
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 33.6875,
+                "x": 1075.322998046875,
+                "y": 485.0
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 41.0,
+              "width": 41.0,
+              "x": 1072.0,
+              "y": 325.0
+            },
+            "bpmn_element": "_bb4a73bd-2291-4494-8677-5560d4842f79",
+            "id": "_290ffce5-3fa6-4fd1-84fb-2ec24a0b3a97",
+            "is_marker_visible": true,
+            "label": {
+              "bounds": {
+                "height": 12.015625,
+                "width": 105.5,
+                "x": 1037.416748046875,
+                "y": 309.0178571428571
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 1165.0,
+              "y": 440.0
+            },
+            "bpmn_element": "_7ea6639e-e773-4236-94bf-78f149188c30",
+            "id": "_d8692549-20fe-4b24-8f94-f6917e5f3465",
+            "label": {
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 1204.0,
+              "y": 328.0
+            },
+            "bpmn_element": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
+            "id": "_d46c1239-177f-4c83-98c3-1448831c562f",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 60.625,
+                "x": 1191.854248046875,
+                "y": 369.5
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 35.0,
+              "width": 36.0,
+              "x": 1284.0,
+              "y": 328.0
+            },
+            "bpmn_element": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
+            "id": "_3220bd86-e721-4d9e-9f12-2f7293617842",
+            "label": {
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 35.0,
+              "x": 1335.0,
+              "y": 481.0
+            },
+            "bpmn_element": "__cec149db-adae-4b69-8ea4-b866f2eef248",
+            "id": "_6f3fa34a-6ee9-4490-9ec3-50548e45d2cf",
+            "label": {
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 1614.0,
+              "y": 376.5
+            },
+            "bpmn_element": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
+            "id": "_b5a71451-bb2d-45fb-b075-0b4981303b99",
+            "label": {
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 1476.0,
+              "y": 356.5
+            },
+            "bpmn_element": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
+            "id": "_beca97c9-7c08-4f6a-861e-62959c6bf196",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 74.09375,
+                "x": 1486.953125,
+                "y": 388.5
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 41.0,
+              "width": 42.0,
+              "x": 685.0,
+              "y": 374.0
+            },
+            "bpmn_element": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
+            "id": "_77042d9f-425c-4c6a-b1ed-3a1f7aad33df",
+            "is_marker_visible": true,
+            "label": {
+              "bounds": {
+                "height": 12.015625,
+                "width": 89.8125,
+                "x": 660.59375,
+                "y": 420.709346269406
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 363.0,
+              "y": 356.5
+            },
+            "bpmn_element": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
+            "id": "_686fd5b2-cf88-40ac-80e1-18c4edc862c6",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 85.3125,
+                "x": 368.34375,
+                "y": 381.75
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 35.0,
+              "width": 36.0,
+              "x": 1431.0,
+              "y": 527.0
+            },
+            "bpmn_element": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
+            "id": "_98d47a62-e02d-4cef-b598-468e0f5d6651",
+            "label": {
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 254.0,
+              "width": 776.0,
+              "x": 214.0,
+              "y": 633.0
+            },
+            "bpmn_element": "__a42178ea-f777-4c5b-a0a1-c4014aee6431",
+            "id": "_248ca90e-cd8a-4bcd-8389-846dd2f35be1",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 43.78125,
+                "width": 12.0,
+                "x": 218.5,
+                "y": 738.109375
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 135.0,
+              "width": 746.0,
+              "x": 244.0,
+              "y": 633.0
+            },
+            "bpmn_element": "__15a180db-97af-4058-ac0a-4a31247fb797",
+            "id": "_9bb7ab63-1897-4f65-b55d-e67b9f519e88",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 31.4375,
+                "width": 12.0,
+                "x": 248.5,
+                "y": 684.78125
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 32.0,
+              "width": 32.0,
+              "x": 288.0,
+              "y": 675.0
+            },
+            "bpmn_element": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
+            "id": "_a7b7ffc8-f701-4c59-a1d4-a9d5bf95ef5c",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 75.21875,
+                "x": 266.390625,
+                "y": 716.59375
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 368.0,
+              "y": 653.0
+            },
+            "bpmn_element": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+            "id": "_1d93dd43-7d59-4efc-b288-6fcf57e00b26",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 52.75,
+                "x": 389.125,
+                "y": 685.0
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 500.0,
+              "y": 653.0
+            },
+            "bpmn_element": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
+            "id": "_99312dc9-2800-4107-88ea-405a3e42e20e",
+            "label": {
+              "bounds": {
+                "height": 12.0,
+                "width": 64.0,
+                "x": 515.5,
+                "y": 685.0
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 119.0,
+              "width": 746.0,
+              "x": 244.0,
+              "y": 768.0
+            },
+            "bpmn_element": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
+            "id": "_ef978cb8-c159-4f43-831a-9a3aba990372",
+            "is_horizontal": true,
+            "label": {
+              "bounds": {
+                "height": 48.28125,
+                "width": 12.0,
+                "x": 248.5,
+                "y": 803.359375
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 641.0,
+              "y": 790.0
+            },
+            "bpmn_element": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+            "id": "_497efc7e-04af-4725-bc36-fc85925783a4",
+            "label": {
+              "bounds": {
+                "height": 40.0,
+                "width": 66.21875,
+                "x": 655.390625,
+                "y": 807.5
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 76.0,
+              "width": 96.0,
+              "x": 783.0,
+              "y": 790.0
+            },
+            "bpmn_element": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+            "id": "_8707335d-fc8f-4e32-a2b7-3ecd2ac8d86c",
+            "label": {
+              "bounds": {
+                "height": 26.0,
+                "width": 77.46875,
+                "x": 792.265625,
+                "y": 814.5
+              },
+              "label_style": "LSPage_1"
+            }
+          },
+          {
+            "bounds": {
+              "height": 36.0,
+              "width": 36.0,
+              "x": 922.0,
+              "y": 810.0
+            },
+            "bpmn_element": "__5a9abc77-7371-4213-bede-4056f9cb7808",
+            "id": "_d286b0e6-9940-4d58-ad5d-f1f472bd3c2b",
+            "label": {
+              "label_style": "LSPage_1"
+            }
+          }
+        ],
+        "id": "Page_1_plane"
+      }
     }
   ],
   "collaborations": [
     {
       "id": "C1404332496310",
-      "name": null,
       "is_closed": false,
+      "message_flows": [
+        {
+          "id": "__13e0b8fd-91fe-4bbc-87ae-5ad657f6ef99",
+          "message_ref": "Message_1404332496322",
+          "source_ref": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
+          "target_ref": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79"
+        },
+        {
+          "id": "__5cdd91dd-32f6-4102-b475-bd6c7992f509",
+          "message_ref": "Message_1404332496323",
+          "source_ref": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+          "target_ref": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40"
+        },
+        {
+          "id": "__789952b8-abba-4f3f-81cd-24cbb4d0d615",
+          "message_ref": "Message_1404332496321",
+          "source_ref": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
+          "target_ref": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784"
+        },
+        {
+          "id": "__86b33cf0-1b17-437f-a7cf-510e0766561f",
+          "message_ref": "Message_1404332496319",
+          "name": "Send Credit Card Information",
+          "source_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
+          "target_ref": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436"
+        },
+        {
+          "id": "__0c171c64-b342-4f84-8020-a63b6a5b296d",
+          "message_ref": "Message_1404332496320",
+          "source_ref": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
+          "target_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209"
+        }
+      ],
       "participants": [
         {
           "id": "__bb6766c5-51e3-4f04-aedc-6c9e4afe0582",
@@ -700,44 +1321,485 @@
           "name": "Amazon",
           "process_ref": "WFP-Page_1-4"
         }
+      ]
+    }
+  ],
+  "exporter": "BPMN 2.0 Web Modeler",
+  "exporter_version": "4.2.3",
+  "expression_language": "http://www.w3.org/1999/XPath",
+  "id": "_1aa4e08d-219c-418c-8aed-5ddf4cd45a41",
+  "messages": [
+    {
+      "id": "Message_1404332496319"
+    },
+    {
+      "id": "Message_1404332496320"
+    },
+    {
+      "id": "Message_1404332496321"
+    },
+    {
+      "id": "Message_1404332496322"
+    },
+    {
+      "id": "Message_1404332496323"
+    }
+  ],
+  "name": "C.2.0",
+  "processes": [
+    {
+      "end_events": [
+        {
+          "id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
+          "incoming": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+          "message_event_definitions": [
+            {
+              "message_ref": "Message_1404332496320"
+            }
+          ],
+          "name": "Send Result"
+        }
       ],
-      "message_flows": [
+      "id": "WFP-Page_1-1",
+      "is_closed": false,
+      "is_executable": false,
+      "process_type": "None",
+      "sequence_flows": [
         {
-          "id": "__13e0b8fd-91fe-4bbc-87ae-5ad657f6ef99",
-          "name": null,
+          "id": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+          "source_ref": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
+          "target_ref": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4"
+        },
+        {
+          "id": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+          "source_ref": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436",
+          "target_ref": "__a7183fc9-402a-418c-bf2a-3b1927d3798d"
+        }
+      ],
+      "start_events": [
+        {
+          "id": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436",
+          "is_interrupting": true,
+          "message_event_definition": [
+            {
+              "message_ref": "Message_1404332496319"
+            }
+          ],
+          "name": "Receive Credit Card Information",
+          "outgoing": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+          "parallel_multiple": false
+        }
+      ],
+      "tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
+          "incoming": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+          "is_for_compensation": false,
+          "name": "Take Payment",
+          "outgoing": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+          "start_quantity": 1
+        }
+      ]
+    },
+    {
+      "end_events": [
+        {
+          "id": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
+          "incoming": "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+        }
+      ],
+      "id": "WFP-Page_1-2",
+      "is_closed": false,
+      "is_executable": false,
+      "process_type": "None",
+      "sequence_flows": [
+        {
+          "id": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
           "source_ref": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
-          "target_ref": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
-          "message_ref": "Message_1404332496322"
+          "target_ref": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf"
         },
         {
-          "id": "__5cdd91dd-32f6-4102-b475-bd6c7992f509",
-          "name": null,
+          "id": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+          "source_ref": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
+          "target_ref": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51"
+        },
+        {
+          "id": "__474f19b8-f608-4d20-a49e-907485a789c5",
+          "source_ref": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40",
+          "target_ref": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867"
+        }
+      ],
+      "start_events": [
+        {
+          "id": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40",
+          "is_interrupting": true,
+          "message_event_definition": [
+            {
+              "message_ref": "Message_1404332496323"
+            }
+          ],
+          "name": "Pick items",
+          "outgoing": "__474f19b8-f608-4d20-a49e-907485a789c5",
+          "parallel_multiple": false
+        }
+      ],
+      "tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
+          "incoming": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+          "is_for_compensation": false,
+          "name": "Deliver Items",
+          "outgoing": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+          "start_quantity": 1
+        },
+        {
+          "completion_quantity": 1,
+          "id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
+          "incoming": "__474f19b8-f608-4d20-a49e-907485a789c5",
+          "is_for_compensation": false,
+          "name": "Load Truck",
+          "outgoing": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+          "start_quantity": 1
+        }
+      ]
+    },
+    {
+      "boundary_events": [
+        {
+          "attached_to_ref": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
+          "cancel_activity": true,
+          "id": "__cec149db-adae-4b69-8ea4-b866f2eef248",
+          "outgoing": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+          "parallel_multiple": false
+        }
+      ],
+      "end_events": [
+        {
+          "id": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
+          "incoming": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+        },
+        {
+          "id": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
+          "incoming": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+        }
+      ],
+      "exclusive_gateways": [
+        {
+          "gateway_direction": "Unspecified",
+          "id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
+          "incoming": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+          "name": "Done Shopping?",
+          "outgoing": "['__ffc1486a-8a32-490a-8835-d14cc5ab0a97', '__a12a7547-373d-47ec-890d-af5c177203ee']"
+        }
+      ],
+      "id": "WFP-Page_1-3",
+      "is_closed": false,
+      "is_executable": false,
+      "process_type": "None",
+      "sequence_flows": [
+        {
+          "id": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+          "source_ref": "__f5b8cb41-0574-4c29-aaaa-84ecce589f84",
+          "target_ref": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8"
+        },
+        {
+          "id": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+          "source_ref": "__be386700-06c2-4a29-b861-c516940667fe",
+          "target_ref": "__509f09eb-5518-4995-b98b-db3cf3f8ea00"
+        },
+        {
+          "id": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+          "source_ref": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
+          "target_ref": "__be386700-06c2-4a29-b861-c516940667fe"
+        },
+        {
+          "id": "__a12a7547-373d-47ec-890d-af5c177203ee",
+          "name": "Yes",
+          "source_ref": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
+          "target_ref": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f"
+        },
+        {
+          "id": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+          "source_ref": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
+          "target_ref": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79"
+        },
+        {
+          "id": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+          "source_ref": "__cec149db-adae-4b69-8ea4-b866f2eef248",
+          "target_ref": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766"
+        },
+        {
+          "id": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+          "source_ref": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
+          "target_ref": "__e03c9539-b011-46b1-a381-0eee5f0521b8"
+        },
+        {
+          "id": "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
+          "name": "No",
+          "source_ref": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
+          "target_ref": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8"
+        }
+      ],
+      "start_events": [
+        {
+          "id": "__f5b8cb41-0574-4c29-aaaa-84ecce589f84",
+          "is_interrupting": true,
+          "outgoing": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+          "parallel_multiple": false
+        }
+      ],
+      "sub_processes": [
+        {
+          "completion_quantity": 1,
+          "end_events": [
+            {
+              "id": "_7ea6639e-e773-4236-94bf-78f149188c30",
+              "incoming": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e"
+            },
+            {
+              "id": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
+              "incoming": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+            }
+          ],
+          "exclusive_gateways": [
+            {
+              "gateway_direction": "Unspecified",
+              "id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
+              "incoming": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+              "name": "Retry?",
+              "outgoing": "['_ad0872cc-e2a9-4c44-98c6-c64e0638f37e', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']"
+            },
+            {
+              "gateway_direction": "Unspecified",
+              "id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
+              "incoming": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+              "name": "Payment accepted?",
+              "outgoing": "['_bfa5c7b2-f5d2-4487-a307-b2ea662bd059', '_50edb87c-9e46-48b1-a311-ef00e6e431e8']"
+            }
+          ],
+          "id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
+          "incoming": "__a12a7547-373d-47ec-890d-af5c177203ee",
+          "intermediate_throw_events": [
+            {
+              "id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
+              "incoming": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+              "message_event_definitions": [
+                {
+                  "message_ref": "Message_1404332496321"
+                }
+              ],
+              "name": "Send Order",
+              "outgoing": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+            }
+          ],
+          "is_for_compensation": false,
+          "name": "Checkout",
+          "outgoing": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+          "sequence_flows": [
+            {
+              "id": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+              "source_ref": "__a1c27e25-4aa2-43dc-8a20-b713e8393d7f",
+              "target_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209"
+            },
+            {
+              "id": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+              "source_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
+              "target_ref": "_bb4a73bd-2291-4494-8677-5560d4842f79"
+            },
+            {
+              "id": "_63cf98c9-d0b1-4595-a4f2-9589439b311c",
+              "name": "Yes",
+              "source_ref": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
+              "target_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209"
+            },
+            {
+              "id": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+              "name": "No",
+              "source_ref": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
+              "target_ref": "_7ea6639e-e773-4236-94bf-78f149188c30"
+            },
+            {
+              "id": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+              "name": "No",
+              "source_ref": "_bb4a73bd-2291-4494-8677-5560d4842f79",
+              "target_ref": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462"
+            },
+            {
+              "id": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+              "name": "Yes",
+              "source_ref": "_bb4a73bd-2291-4494-8677-5560d4842f79",
+              "target_ref": "_f35ee29d-018c-47e2-afeb-eebc2e25925e"
+            },
+            {
+              "id": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+              "source_ref": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
+              "target_ref": "_df393d97-f22e-4442-95be-918b8fdd4c3c"
+            }
+          ],
+          "start_events": [
+            {
+              "id": "__a1c27e25-4aa2-43dc-8a20-b713e8393d7f",
+              "is_interrupting": true,
+              "outgoing": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+              "parallel_multiple": false
+            }
+          ],
+          "start_quantity": 1,
+          "tasks": [
+            {
+              "completion_quantity": 1,
+              "id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
+              "incoming": "['__00bc466e-cf1f-473c-aa39-c78bba5cef82', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']",
+              "is_for_compensation": false,
+              "name": "Pay Order",
+              "outgoing": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+              "start_quantity": 1
+            }
+          ],
+          "triggered_by_event": false
+        }
+      ],
+      "tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "__be386700-06c2-4a29-b861-c516940667fe",
+          "incoming": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+          "is_for_compensation": false,
+          "name": "Add Item to Cart",
+          "outgoing": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+          "start_quantity": 1
+        },
+        {
+          "completion_quantity": 1,
+          "id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
+          "incoming": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+          "is_for_compensation": false,
+          "name": "Receive items",
+          "outgoing": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+          "start_quantity": 1
+        },
+        {
+          "completion_quantity": 1,
+          "id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
+          "incoming": "['__6fd770bc-8f12-4927-96cd-e3cc53d862d3', '__ffc1486a-8a32-490a-8835-d14cc5ab0a97']",
+          "is_for_compensation": false,
+          "name": "Browse Products on Amazon",
+          "outgoing": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+          "start_quantity": 1
+        }
+      ]
+    },
+    {
+      "end_events": [
+        {
+          "id": "__5a9abc77-7371-4213-bede-4056f9cb7808",
+          "incoming": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+        }
+      ],
+      "id": "WFP-Page_1-4",
+      "is_closed": false,
+      "is_executable": false,
+      "lane_sets": [
+        {
+          "lane": [
+            {
+              "flow_node_refs": "['__fd16081c-ecf9-4e0f-857f-f3404a7ee784', '__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b', '__200e3ce9-3381-4d13-8c7e-4f8790388070']",
+              "id": "__15a180db-97af-4058-ac0a-4a31247fb797",
+              "name": "Picker"
+            },
+            {
+              "flow_node_refs": "['__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379', '__c1a19847-8b3e-42db-a95d-9f21cffc50a3', '__5a9abc77-7371-4213-bede-4056f9cb7808']",
+              "id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
+              "name": "Packager"
+            }
+          ]
+        }
+      ],
+      "process_type": "None",
+      "sequence_flows": [
+        {
+          "id": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+          "source_ref": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
+          "target_ref": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b"
+        },
+        {
+          "id": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+          "source_ref": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+          "target_ref": "__200e3ce9-3381-4d13-8c7e-4f8790388070"
+        },
+        {
+          "id": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+          "source_ref": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
+          "target_ref": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379"
+        },
+        {
+          "id": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+          "source_ref": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+          "target_ref": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3"
+        },
+        {
+          "id": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
           "source_ref": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
-          "target_ref": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40",
-          "message_ref": "Message_1404332496323"
+          "target_ref": "__5a9abc77-7371-4213-bede-4056f9cb7808"
+        }
+      ],
+      "start_events": [
+        {
+          "id": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
+          "is_interrupting": true,
+          "message_event_definition": [
+            {
+              "message_ref": "Message_1404332496321"
+            }
+          ],
+          "name": "Receive Order",
+          "outgoing": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+          "parallel_multiple": false
+        }
+      ],
+      "tasks": [
+        {
+          "completion_quantity": 1,
+          "id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+          "incoming": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+          "is_for_compensation": false,
+          "name": "Pick items",
+          "outgoing": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+          "start_quantity": 1
         },
         {
-          "id": "__789952b8-abba-4f3f-81cd-24cbb4d0d615",
-          "name": null,
-          "source_ref": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-          "target_ref": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
-          "message_ref": "Message_1404332496321"
+          "completion_quantity": 1,
+          "id": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
+          "incoming": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+          "is_for_compensation": false,
+          "name": "Place in bin",
+          "outgoing": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+          "start_quantity": 1
         },
         {
-          "id": "__86b33cf0-1b17-437f-a7cf-510e0766561f",
-          "name": "Send Credit Card Information",
-          "source_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-          "target_ref": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436",
-          "message_ref": "Message_1404332496319"
+          "completion_quantity": 1,
+          "id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+          "incoming": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+          "is_for_compensation": false,
+          "name": "Receive and Package\nitems",
+          "outgoing": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+          "start_quantity": 1
         },
         {
-          "id": "__0c171c64-b342-4f84-8020-a63b6a5b296d",
-          "name": null,
-          "source_ref": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
-          "target_ref": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-          "message_ref": "Message_1404332496320"
+          "completion_quantity": 1,
+          "id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+          "incoming": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+          "is_for_compensation": false,
+          "name": "Send to carrier dock",
+          "outgoing": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+          "start_quantity": 1
         }
       ]
     }
-  ]
+  ],
+  "target_namespace": "http://www.trisotech.com/definitions/_1aa4e08d-219c-418c-8aed-5ddf4cd45a41",
+  "type_language": "http://www.w3.org/2001/XMLSchema",
+  "xmlns": "http://www.trisotech.com/definitions/_1aa4e08d-219c-418c-8aed-5ddf4cd45a41"
 }

@@ -79,6 +79,7 @@ def assert_attributes(obj: Any, attributes: dict[str, Any], parent_path: str = "
     if isinstance(obj, dict):
         assert_equal(obj, attributes, parent_path)
         return
+    print(f"{parent_path}")
 
     for key, val in attributes.items():
         obj_val = getattr(obj, key, None)
@@ -97,6 +98,7 @@ def assert_attributes(obj: Any, attributes: dict[str, Any], parent_path: str = "
         attr_val = getattr(obj, key)
         for i, item in enumerate(attr_val):
             if len(attributes[key]) <= i:
+                print(list_attributes)
                 assert False, f"Expected {parent_path}.{key} to have at least {i} items, got {len(attr_val)}"
             assert_attributes(item, attributes[key][i], f"{parent_path}.{key}[{i}]")
 

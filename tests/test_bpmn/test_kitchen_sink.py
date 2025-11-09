@@ -1,15 +1,19 @@
 """Run the Kitchen sink BPMN file."""
 
+import json
 from pathlib import Path
 
-import lxml.etree as ET  # noqa: N812
-
-from pybpmn_parser.bpmn.infrastructure.definitions import Definitions
+from pybpmn_parser.core import dataclass_to_dict
+from pybpmn_parser.parse import Parser
+from tests._utils import assert_attributes
 
 
 def test_kitchen_sink(fixture_dir: Path):
     """Run the Kitchen sink BPMN file."""
+    parser = Parser()
     bpmn_file = fixture_dir / "kitchen-sink.bpmn"
-    bpmn = bpmn_file.read_text(encoding="utf-8")
-    root: ET.Element = ET.fromstring(bpmn.encode("utf-8"))
-    Definitions.parse(root)
+    expected_file = fixture_dir / "kitchen-sink.json"
+    bpmn = parser.parse_file(bpmn_file)
+    bpmn_model = dataclass_to_dict(bpmn, skip_empty=True)
+    expected_json = json.loads(expected_file.read_text(encoding="utf-8"))
+    assert_attributes(bpmn_model, expected_json)
