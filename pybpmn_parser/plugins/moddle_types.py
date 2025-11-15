@@ -11,19 +11,6 @@ from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.core import QName
 
 
-class UndefinedType:
-    """Represents an undefined value."""
-
-    def __repr__(self):
-        return "Undefined"
-
-    def __bool__(self):
-        return False
-
-
-Undefined = UndefinedType()
-
-
 def lower_first_char(string: str) -> str:
     """Lower the first character of a string."""
     return string[0].lower() + string[1:]
@@ -58,7 +45,7 @@ class TypeProperty(BaseModel):
     is_virtual: bool = Field(
         alias="isVirtual", default=False, description="Is the property a virtual property (not serialized)?"
     )
-    default: Any = Field(default=Undefined, description="Default value of the property.")
+    default: Any = Field(default=None, description="Default value of the property.")
     redefines: Optional[str] = Field(default=None, description="Name of the property to redefine.")
     replaces: Optional[str] = Field(default=None, description="Name of the property to replace.")
     xml: Optional[Mapping[str, str]] = Field(default=None, description="Defines XML serialization details.")
