@@ -2,16 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.event import Event
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.data.data_association import DataInputAssociation
     from pybpmn_parser.bpmn.data.data_input import DataInput
     from pybpmn_parser.bpmn.data.input_set import InputSet
@@ -158,79 +155,3 @@ class ThrowEvent(Event):  # Is Abstract
     class Meta:
         name = "throwEvent"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[ThrowEvent]:
-        """Parse the XML element and return an object of this class."""
-        from pybpmn_parser.bpmn.data.data_association import DataInputAssociation
-        from pybpmn_parser.bpmn.data.data_input import DataInput
-        from pybpmn_parser.bpmn.data.input_set import InputSet
-        from pybpmn_parser.bpmn.event_definition.cancel_event_definition import CancelEventDefinition
-        from pybpmn_parser.bpmn.event_definition.compensate_event_definition import CompensateEventDefinition
-        from pybpmn_parser.bpmn.event_definition.conditional_event_definition import ConditionalEventDefinition
-        from pybpmn_parser.bpmn.event_definition.error_event_definition import ErrorEventDefinition
-        from pybpmn_parser.bpmn.event_definition.escalation_event_definition import EscalationEventDefinition
-        from pybpmn_parser.bpmn.event_definition.event_definition import EventDefinition
-        from pybpmn_parser.bpmn.event_definition.link_event_definition import LinkEventDefinition
-        from pybpmn_parser.bpmn.event_definition.message_event_definition import MessageEventDefinition
-        from pybpmn_parser.bpmn.event_definition.signal_event_definition import SignalEventDefinition
-        from pybpmn_parser.bpmn.event_definition.terminate_event_definition import TerminateEventDefinition
-        from pybpmn_parser.bpmn.event_definition.timer_event_definition import TimerEventDefinition
-
-        if obj is None:
-            return None
-
-        baseclass = Event.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "cancel_event_definitions": [
-                    CancelEventDefinition.parse(elem)
-                    for elem in obj.findall("./bpmn:cancelEventDefinition", NAMESPACES)
-                ],
-                "compensate_event_definitions": [
-                    CompensateEventDefinition.parse(elem)
-                    for elem in obj.findall("./bpmn:compensateEventDefinition", NAMESPACES)
-                ],
-                "conditional_event_definitions": [
-                    ConditionalEventDefinition.parse(elem)
-                    for elem in obj.findall("./bpmn:conditionalEventDefinition", NAMESPACES)
-                ],
-                "data_inputs": [DataInput.parse(elem) for elem in obj.findall("./bpmn:dataInput", NAMESPACES)],
-                "data_input_associations": [
-                    DataInputAssociation.parse(elem) for elem in obj.findall("./bpmn:dataInputAssociation", NAMESPACES)
-                ],
-                "error_event_definitions": [
-                    ErrorEventDefinition.parse(elem) for elem in obj.findall("./bpmn:errorEventDefinition", NAMESPACES)
-                ],
-                "escalation_event_definitions": [
-                    EscalationEventDefinition.parse(elem)
-                    for elem in obj.findall("./bpmn:escalationEventDefinition", NAMESPACES)
-                ],
-                "event_definitions": [
-                    EventDefinition.parse(elem) for elem in obj.findall("./bpmn:eventDefinition", NAMESPACES)
-                ],
-                "event_definition_refs": [elem.text for elem in obj.findall("./bpmn:eventDefinitionRef", NAMESPACES)],
-                "input_set": InputSet.parse(obj.find("./bpmn:inputSet", NAMESPACES)),
-                "link_event_definitions": [
-                    LinkEventDefinition.parse(elem) for elem in obj.findall("./bpmn:linkEventDefinition", NAMESPACES)
-                ],
-                "message_event_definitions": [
-                    MessageEventDefinition.parse(elem)
-                    for elem in obj.findall("./bpmn:messageEventDefinition", NAMESPACES)
-                ],
-                "signal_event_definitions": [
-                    SignalEventDefinition.parse(elem)
-                    for elem in obj.findall("./bpmn:signalEventDefinition", NAMESPACES)
-                ],
-                "terminate_event_definitions": [
-                    TerminateEventDefinition.parse(elem)
-                    for elem in obj.findall("./bpmn:terminateEventDefinition", NAMESPACES)
-                ],
-                "timer_event_definitions": [
-                    TimerEventDefinition.parse(elem) for elem in obj.findall("./bpmn:timerEventDefinition", NAMESPACES)
-                ],
-            }
-        )
-
-        return cls(**attribs)

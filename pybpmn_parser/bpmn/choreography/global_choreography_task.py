@@ -2,14 +2,11 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import Optional
 
 from pybpmn_parser.bpmn.choreography.choreography import Choreography
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    from lxml import etree as ET
 
 
 @register_element
@@ -28,18 +25,3 @@ class GlobalChoreographyTask(Choreography):
     class Meta:
         name = "globalChoreographyTask"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[GlobalChoreographyTask]:
-        """Parse XML into this class."""
-        if obj is None:
-            return None
-
-        baseclass = Choreography.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "initiating_participant_ref": obj.get("initiatingParticipantRef"),
-            }
-        )
-        return cls(**attribs)

@@ -2,14 +2,10 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import Optional
 
-import lxml.etree as ET
-import xmltodict
-
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
 
 
@@ -101,29 +97,6 @@ class Lane(BaseLane):
         name = "lane"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[Lane]:
-        """Parse a Lane XML element into a Lane object."""
-        if obj is None:
-            return None
-
-        baseclass = BaseElement.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        partition_element = obj.find("./bpmn:partitionElement", NAMESPACES)
-
-        attribs.update(
-            {
-                "name": obj.get("name"),
-                "partition_element_ref": obj.get("partitionElementRef"),
-                "partition_element": xmltodict.parse(ET.tostring(partition_element))
-                if partition_element is not None
-                else None,
-                "flow_node_refs": [elem.text for elem in obj.findall("./bpmn:flowNodeRef", NAMESPACES)],
-                "child_lane_set": LaneSet.parse(obj.find("./bpmn:childLaneSet", NAMESPACES)),
-            }
-        )
-        return cls(**attribs)
-
 
 @register_element
 @dataclass(kw_only=True)
@@ -147,20 +120,3 @@ class LaneSet(EmbeddedLaneSet):
             "type": "Attribute",
         },
     )
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[LaneSet]:
-        """Parse a LaneSet XML element into a LaneSet object."""
-        if obj is None:
-            return None
-
-        baseclass = BaseElement.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "name": obj.get("name"),
-                "lane": [Lane.parse(elem) for elem in obj.findall("./bpmn:lane", NAMESPACES)],
-            }
-        )
-
-        return cls(**attribs)

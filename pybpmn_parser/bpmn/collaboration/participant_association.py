@@ -2,15 +2,10 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    from lxml import etree as ET
 
 
 @register_element
@@ -40,19 +35,3 @@ class ParticipantAssociation(BaseElement):
     class Meta:
         name = "participantAssociation"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[ParticipantAssociation]:
-        """Parse an XML object into a ParticipantAssociation object."""
-        if obj is None:
-            return None
-
-        baseclass = BaseElement.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "inner_participant_ref": obj.find("./bpmn:innerParticipantRef", NAMESPACES).text,
-                "outer_participant_ref": obj.find("./bpmn:outerParticipantRef", NAMESPACES).text,
-            }
-        )
-        return cls(**attribs)

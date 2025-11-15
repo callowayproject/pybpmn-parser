@@ -2,15 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import TYPE_CHECKING
 
 from pybpmn_parser.bpmn.collaboration.collaboration import Collaboration
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.activities.business_rule_task import BusinessRuleTask
     from pybpmn_parser.bpmn.activities.call_activity import CallActivity
     from pybpmn_parser.bpmn.activities.manual_task import ManualTask
@@ -305,14 +303,3 @@ class Choreography(Collaboration):
     class Meta:
         name = "choreography"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[Choreography]:
-        """Create an instance of this class from an XML element."""
-        if obj is None:
-            return None
-
-        baseclass = Collaboration.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update({})
-        return cls(**attribs)

@@ -2,15 +2,10 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
 
 from pybpmn_parser.bpmn.common.flow_element import FlowElement
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    from lxml import etree as ET
 
 
 @register_element
@@ -38,19 +33,3 @@ class FlowNode(FlowElement):  # Is Abstract
     class Meta:
         name = "flowNode"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[FlowNode]:
-        """Parse an XML object into a FlowElement object."""
-        if obj is None:
-            return None
-
-        baseclass = FlowElement.parse(obj)
-        attributes = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attributes.update(
-            {
-                "incoming": [elem.text for elem in obj.findall("./bpmn:incoming", NAMESPACES)],
-                "outgoing": [elem.text for elem in obj.findall("./bpmn:outgoing", NAMESPACES)],
-            }
-        )
-        return cls(**attributes)

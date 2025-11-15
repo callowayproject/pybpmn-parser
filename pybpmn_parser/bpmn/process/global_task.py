@@ -2,16 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import TYPE_CHECKING
 
 from pybpmn_parser.bpmn.common.callable_element import CallableElement
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.activities.resource_role import ResourceRole
     from pybpmn_parser.bpmn.process.performer import HumanPerformer, Performer, PotentialOwner
 
@@ -67,28 +64,3 @@ class GlobalTask(CallableElement):
     class Meta:
         name = "globalTask"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[GlobalTask]:
-        """Create an instance of this class from an XML element."""
-        from pybpmn_parser.bpmn.activities.resource_role import ResourceRole
-        from pybpmn_parser.bpmn.process.performer import HumanPerformer, Performer, PotentialOwner
-
-        if obj is None:
-            return None
-
-        baseclass = CallableElement.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "human_performers": [
-                    HumanPerformer.parse(elem) for elem in obj.findall("./bpmn:humanPerformer", NAMESPACES)
-                ],
-                "performers": [Performer.parse(elem) for elem in obj.findall("./bpmn:performer", NAMESPACES)],
-                "potential_owners": [
-                    PotentialOwner.parse(elem) for elem in obj.findall("./bpmn:potentialOwner", NAMESPACES)
-                ],
-                "resources": [ResourceRole.parse(elem) for elem in obj.findall("./bpmn:resourceRole", NAMESPACES)],
-            }
-        )
-        return cls(**attribs)

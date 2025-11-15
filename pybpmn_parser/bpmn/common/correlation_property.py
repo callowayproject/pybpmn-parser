@@ -2,15 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import RootElement
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.common.correlation_property_retrieval_expression import (
         CorrelationPropertyRetrievalExpression,
     )
@@ -48,28 +46,3 @@ class CorrelationProperty(RootElement):
     class Meta:
         name = "correlationProperty"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[CorrelationProperty]:
-        """Create an instance of this class from an XML element."""
-        from pybpmn_parser.bpmn.common.correlation_property_retrieval_expression import (
-            CorrelationPropertyRetrievalExpression,
-        )
-        from pybpmn_parser.bpmn.types import NAMESPACES
-
-        if obj is None:
-            return None
-
-        baseclass = RootElement.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "name": obj.get("name"),
-                "type_value": obj.get("type"),
-                "correlation_property_retrieval_expressions": [
-                    CorrelationPropertyRetrievalExpression.parse(elem)
-                    for elem in obj.findall("./bpmn:correlationPropertyRetrievalExpression", NAMESPACES)
-                ],
-            }
-        )
-        return cls(**attribs)

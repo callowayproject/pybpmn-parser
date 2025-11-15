@@ -3,12 +3,9 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import TYPE_CHECKING, Optional
+from typing import Optional
 
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    import lxml.etree as ET
 
 
 @register_element
@@ -48,12 +45,3 @@ class Documentation:
         },
     )
     """This attribute is used to capture the text descriptions of a BPMN element."""
-
-    @classmethod
-    def parse(cls, obj: ET.Element) -> Documentation:
-        """Parse an XML element into a Documentation object."""
-        return cls(
-            id=obj.get("id"),
-            text_format=obj.get("textFormat", "text/plain"),
-            content=obj.text,
-        )

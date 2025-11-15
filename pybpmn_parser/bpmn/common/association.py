@@ -2,15 +2,11 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
 
 from pybpmn_parser.bpmn.common.artifact import Artifact
 from pybpmn_parser.bpmn.types import AssociationDirection
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    from lxml import etree as ET
 
 
 @register_element
@@ -52,21 +48,3 @@ class Association(Artifact):
     class Meta:
         name = "association"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[Association]:
-        """Parse the given XML element."""
-        if obj is None:
-            return None
-
-        baseclass = Artifact.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "source_ref": obj.get("sourceRef"),
-                "target_ref": obj.get("targetRef"),
-                "association_direction": obj.get("associationDirection", AssociationDirection.NONE),
-            }
-        )
-
-        return cls(**attribs)

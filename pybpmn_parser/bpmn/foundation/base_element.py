@@ -8,12 +8,8 @@ from typing import TYPE_CHECKING, Optional
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    import lxml.etree as ET
-
     from pybpmn_parser.bpmn.foundation.documentation import Documentation
     from pybpmn_parser.bpmn.foundation.extension_elements import ExtensionElements
-
-from pybpmn_parser.bpmn.types import NAMESPACES
 
 
 @register_element
@@ -58,29 +54,6 @@ class BaseElement:  # Is Abstract
         },
     )
     """This element is used to add additional information to the element."""
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[BaseElement]:
-        """Parse an XML element into a BaseElement object."""
-        from pybpmn_parser.bpmn.foundation.documentation import Documentation
-        from pybpmn_parser.bpmn.foundation.extension_elements import ExtensionElements
-
-        if obj is None:
-            return None
-
-        attributes = {
-            "id": obj.get("id"),
-            "documentation": [Documentation.parse(elem) for elem in obj.findall("./bpmn:documentation", NAMESPACES)],
-            "extension_elements": [
-                ExtensionElements.parse(extension_element)
-                for extension_element in obj.findall("./bpmn:extensionElements", NAMESPACES)
-            ],
-        }
-
-        # extension_parsers = registry.get_parser_for_tag(obj.tag, obj.prefix)
-        # print(f"{obj.tag}, {obj.prefix} Extension parsers: {extension_parsers}")
-
-        return cls(**attributes)
 
 
 @register_element

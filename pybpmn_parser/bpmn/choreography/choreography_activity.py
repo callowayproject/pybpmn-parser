@@ -2,16 +2,14 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import TYPE_CHECKING
 
 from pybpmn_parser.bpmn.common.flow_node import FlowNode
-from pybpmn_parser.bpmn.types import NAMESPACES, ChoreographyLoopType
+from pybpmn_parser.bpmn.types import ChoreographyLoopType
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.common.correlation_key import CorrelationKey
 
 
@@ -57,26 +55,3 @@ class ChoreographyActivity(FlowNode):  # Is Abstract
     class Meta:
         name = "choreographyActivity"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[ChoreographyActivity]:
-        """Create an instance of this class from an XML element."""
-        from pybpmn_parser.bpmn.common.correlation_key import CorrelationKey
-
-        if obj is None:
-            return None
-
-        baseclass = FlowNode.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "participant_refs": [elem.text for elem in obj.findall("./bpmn:participantRef", NAMESPACES)],
-                "correlation_keys": [
-                    CorrelationKey.parse(elem) for elem in obj.findall("./bpmn:correlationKey", NAMESPACES)
-                ],
-                "initiating_participant_ref": obj.get("initiatingParticipantRef").text,
-                "loop_type": ChoreographyLoopType(obj.get("loopType", ChoreographyLoopType.NONE)),
-            }
-        )
-
-        return cls(**attribs)

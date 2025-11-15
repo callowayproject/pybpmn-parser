@@ -2,16 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import TYPE_CHECKING
 
 from pybpmn_parser.bpmn.conversation.conversation_node import ConversationNode
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.conversation.call_conversation import CallConversation
     from pybpmn_parser.bpmn.conversation.conversation import Conversation
 
@@ -57,31 +54,3 @@ class SubConversation(ConversationNode):
     class Meta:
         name = "subConversation"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[SubConversation]:
-        """Parse an XML element into a SubConversation object."""
-        from pybpmn_parser.bpmn.conversation.call_conversation import CallConversation
-        from pybpmn_parser.bpmn.conversation.conversation import Conversation
-
-        if obj is None:
-            return None
-
-        baseclass = ConversationNode.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "sub_conversations": [
-                    SubConversation.parse(elem) for elem in obj.findall("./bpmn:subConversation", NAMESPACES)
-                ],
-                "conversations": [Conversation.parse(elem) for elem in obj.findall("./bpmn:conversation", NAMESPACES)],
-                "call_conversations": [
-                    CallConversation.parse(elem) for elem in obj.findall("./bpmn:callConversation", NAMESPACES)
-                ],
-                "conversation_nodes": [
-                    ConversationNode.parse(elem) for elem in obj.findall("./bpmn:conversationNode", NAMESPACES)
-                ],
-            }
-        )
-
-        return cls(**attribs)

@@ -2,17 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
-from pybpmn_parser.bpmn.types import NAMESPACES
-from pybpmn_parser.core import strtobool
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.data.data_state import DataState
 
 
@@ -66,24 +62,3 @@ class DataInput(BaseElement):
     class Meta:
         name = "dataInput"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[DataInput]:
-        """Parse the given XML element."""
-        from pybpmn_parser.bpmn.data.data_state import DataState
-
-        if obj is None:
-            return None
-
-        baseclass = BaseElement.parse(obj)
-        attributes = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attributes.update(
-            {
-                "name": obj.get("name"),
-                "item_subject_ref": obj.get("itemSubjectRef"),
-                "is_collection": strtobool(obj.get("isCollection")),
-                "data_state": DataState.parse(obj.find("./bpmn:dataState", NAMESPACES)),
-            }
-        )
-
-        return cls(**attributes)

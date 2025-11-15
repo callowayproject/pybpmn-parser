@@ -2,15 +2,11 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
-from pybpmn_parser.core import strtobool
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    from lxml import etree as ET
 
 
 @register_element
@@ -43,21 +39,3 @@ class ResourceParameter(BaseElement):
     class Meta:
         name = "resourceParameter"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[ResourceParameter]:
-        """Parse an XML element into a ResourceParameter object."""
-        if obj is None:
-            return None
-
-        baseclass = BaseElement.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        is_required = obj.get("isRequired")
-        attribs.update(
-            {
-                "name": obj.get("name"),
-                "type_value": obj.get("type"),
-                "is_required": strtobool(is_required) if is_required else None,
-            }
-        )
-        return cls(**attribs)

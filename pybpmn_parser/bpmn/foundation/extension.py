@@ -5,13 +5,9 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
-from pybpmn_parser.bpmn.types import NAMESPACES
-from pybpmn_parser.core import strtobool
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.foundation.documentation import Documentation
 
 
@@ -54,17 +50,3 @@ class Extension:
     )
     """This flag defines if the semantics defined by the extension definition and its attribute definition MUST
     be understood by the BPMN adopter in order to process the BPMN model correctly. Defaults to False."""
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[Extension]:
-        """Create an instance of this class from an XML element."""
-        from pybpmn_parser.bpmn.foundation.documentation import Documentation
-
-        if obj is None:
-            return None
-
-        return cls(
-            documentation=[Documentation.parse(elem) for elem in obj.findall("./bpmn:documentation", NAMESPACES)],
-            definition=obj.get("definition"),
-            must_understand=strtobool(obj.get("mustUnderstand", "false")),
-        )

@@ -2,14 +2,11 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import Optional
 
 from pybpmn_parser.bpmn.process.global_task import GlobalTask
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    from lxml import etree as ET
 
 
 @register_element
@@ -35,18 +32,3 @@ class GlobalScriptTask(GlobalTask):
     class Meta:
         name = "globalScriptTask"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[GlobalScriptTask]:
-        """Create an instance of this class from an XML element."""
-        if obj is None:
-            return None
-        baseclass = GlobalTask.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "script": obj.findtext("./bpmn:script"),
-                "script_language": obj.get("scriptLanguage"),
-            }
-        )
-        return cls(**attribs)

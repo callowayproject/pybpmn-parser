@@ -2,16 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.common.expression import FormalExpression
     from pybpmn_parser.bpmn.data.assignment import Assignment
 
@@ -60,29 +57,6 @@ class DataAssociation(BaseElement):
     class Meta:
         name = "dataAssociation"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[DataAssociation]:
-        """Parse an XML element into a DataAssociation object."""
-        from pybpmn_parser.bpmn.common.expression import FormalExpression
-        from pybpmn_parser.bpmn.data.assignment import Assignment
-
-        if obj is None:
-            return None
-
-        baseclass = BaseElement.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-
-        attribs.update(
-            {
-                "source_ref": [elem.text for elem in obj.findall("./bpmn:sourceRef", NAMESPACES)],
-                "target_ref": obj.find("./bpmn:targetRef", NAMESPACES).text,
-                "transformation": FormalExpression.parse(obj.find("./bpmn:transformation", NAMESPACES)),
-                "assignments": [Assignment.parse(elem) for elem in obj.findall("./bpmn:assignment", NAMESPACES)],
-            }
-        )
-
-        return cls(**attribs)
 
 
 @dataclass(kw_only=True)

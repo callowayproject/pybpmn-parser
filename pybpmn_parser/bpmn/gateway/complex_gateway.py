@@ -2,16 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.gateway import Gateway
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.common.expression import Expression
 
 
@@ -42,22 +39,3 @@ class ComplexGateway(Gateway):
         },
     )
     """The Sequence Flow that receives a token when all other Sequence Flows' conditions evaluate to false."""
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[ComplexGateway]:
-        """Parse the given XML element."""
-        from pybpmn_parser.bpmn.common.expression import Expression
-
-        if obj is None:
-            return None
-
-        baseclass = Gateway.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "activation_condition": Expression.parse(obj.find("./bpmn:activationCondition", NAMESPACES)),
-                "default": obj.get("default"),
-            }
-        )
-
-        return cls(**attribs)

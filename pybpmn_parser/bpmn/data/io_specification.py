@@ -2,16 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import TYPE_CHECKING
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
-from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.data.data_input import DataInput
     from pybpmn_parser.bpmn.data.data_output import DataOutput
     from pybpmn_parser.bpmn.data.input_set import InputSet
@@ -80,27 +77,3 @@ class IoSpecification(BaseElement):
     class Meta:
         name = "ioSpecification"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[IoSpecification]:
-        """Parse an XML object into an IoSpecification object."""
-        from pybpmn_parser.bpmn.data.data_input import DataInput
-        from pybpmn_parser.bpmn.data.data_output import DataOutput
-        from pybpmn_parser.bpmn.data.input_set import InputSet
-        from pybpmn_parser.bpmn.data.output_set import OutputSet
-
-        if obj is None:
-            return None
-
-        baseclass = BaseElement.parse(obj)
-        attributes = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attributes.update(
-            {
-                "data_inputs": [DataInput.parse(elem) for elem in obj.findall("./bpmn:dataInput", NAMESPACES)],
-                "data_outputs": [DataOutput.parse(elem) for elem in obj.findall("./bpmn:dataOutput", NAMESPACES)],
-                "input_sets": [InputSet.parse(elem) for elem in obj.findall("./bpmn:inputSet", NAMESPACES)],
-                "output_sets": [OutputSet.parse(elem) for elem in obj.findall("./bpmn:outputSet", NAMESPACES)],
-            }
-        )
-
-        return cls(**attributes)

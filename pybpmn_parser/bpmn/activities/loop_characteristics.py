@@ -2,17 +2,14 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
-from pybpmn_parser.bpmn.types import NAMESPACES, MultiInstanceFlowCondition
-from pybpmn_parser.core import strtobool
+from pybpmn_parser.bpmn.types import MultiInstanceFlowCondition
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.activities.complex_behavior_definition import ComplexBehaviorDefinition
     from pybpmn_parser.bpmn.common.expression import Expression
     from pybpmn_parser.bpmn.data.data_input import DataInput
@@ -126,43 +123,6 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
         name = "multiInstanceLoopCharacteristics"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[MultiInstanceLoopCharacteristics]:
-        """Parse an XML element into a MultiInstanceLoopCharacteristics object."""
-        from pybpmn_parser.bpmn.activities.complex_behavior_definition import ComplexBehaviorDefinition
-        from pybpmn_parser.bpmn.common.expression import Expression
-        from pybpmn_parser.bpmn.data.data_input import DataInput
-        from pybpmn_parser.bpmn.data.data_output import DataOutput
-
-        if obj is None:
-            return None
-
-        baseclass = LoopCharacteristics.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-
-        loop_data_input_ref = obj.find("./bpmn:loopDataInputRef", NAMESPACES)
-        loop_data_output_ref = obj.find("./bpmn:loopDataOutputRef", NAMESPACES)
-        attribs.update(
-            {
-                "loop_cardinality": Expression.parse(obj.find("./bpmn:expression", NAMESPACES)),
-                "loop_data_input_ref": loop_data_input_ref.text if loop_data_input_ref is not None else None,
-                "loop_data_output_ref": loop_data_output_ref.text if loop_data_output_ref is not None else None,
-                "input_data_item": DataInput.parse(obj.find("./bpmn:inputDataItem", NAMESPACES)),
-                "output_data_item": DataOutput.parse(obj.find("./bpmn:outputDataItem", NAMESPACES)),
-                "complex_behavior_definitions": [
-                    ComplexBehaviorDefinition.parse(elem)
-                    for elem in obj.findall("./bpmn:complexBehaviorDefinition", NAMESPACES)
-                ],
-                "completion_condition": Expression.parse(obj.find("./bpmn:completionCondition", NAMESPACES)),
-                "is_sequential": strtobool(obj.get("isSequential", "false")),
-                "behavior": obj.get("behavior", MultiInstanceFlowCondition.ALL),
-                "one_behavior_event_ref": obj.get("oneBehaviorEventRef"),
-                "none_behavior_event_ref": obj.get("noneBehaviorEventRef"),
-            }
-        )
-
-        return cls(**attribs)
-
 
 @register_element
 @dataclass(kw_only=True)
@@ -195,25 +155,3 @@ class StandardLoopCharacteristics(LoopCharacteristics):
     class Meta:
         name = "standardLoopCharacteristics"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[StandardLoopCharacteristics]:
-        """Parse an XML element into a StandardLoopCharacteristics object."""
-        from pybpmn_parser.bpmn.common.expression import Expression
-
-        if obj is None:
-            return None
-
-        baseclass = LoopCharacteristics.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-
-        loop_maximum = obj.get("loopMaximum")
-        attribs.update(
-            {
-                "loop_condition": Expression.parse(obj.find("./bpmn:expression", NAMESPACES)),
-                "test_before": strtobool(obj.get("testBefore", "false")),
-                "loop_maximum": int(loop_maximum) if loop_maximum is not None else None,
-            }
-        )
-
-        return cls(**attribs)

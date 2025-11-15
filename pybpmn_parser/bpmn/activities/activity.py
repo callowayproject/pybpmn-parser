@@ -2,17 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.common.flow_node import FlowNode
-from pybpmn_parser.bpmn.types import NAMESPACES
-from pybpmn_parser.core import strtobool
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.activities.loop_characteristics import (
         LoopCharacteristics,
         MultiInstanceLoopCharacteristics,
@@ -209,57 +205,3 @@ class Activity(FlowNode):  # Is Abstract
     class Meta:
         name = "activity"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[Activity]:
-        """Parse an object into this element."""
-        from pybpmn_parser.bpmn.activities.loop_characteristics import (
-            LoopCharacteristics,
-            MultiInstanceLoopCharacteristics,
-            StandardLoopCharacteristics,
-        )
-        from pybpmn_parser.bpmn.activities.resource_role import ResourceRole
-        from pybpmn_parser.bpmn.data.data_association import DataInputAssociation, DataOutputAssociation
-        from pybpmn_parser.bpmn.data.io_specification import IoSpecification
-        from pybpmn_parser.bpmn.data.property import Property
-        from pybpmn_parser.bpmn.process.performer import HumanPerformer, Performer, PotentialOwner
-
-        if obj is None:
-            return None
-
-        baseclass = FlowNode.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "is_for_compensation": strtobool(obj.get("isForCompensation", False)),
-                "start_quantity": int(obj.get("startQuantity", 1)),
-                "completion_quantity": int(obj.get("completionQuantity", 1)),
-                "default": obj.get("default"),
-                "loop_characteristics": LoopCharacteristics.parse(obj.find("./bpmn:loopCharacteristics", NAMESPACES)),
-                "multi_instance_loop_characteristics": MultiInstanceLoopCharacteristics.parse(
-                    obj.find("./bpmn:multiInstanceLoopCharacteristics", NAMESPACES)
-                ),
-                "standard_loop_characteristics": StandardLoopCharacteristics.parse(
-                    obj.find("./bpmn:standardLoopCharacteristics", NAMESPACES)
-                ),
-                "io_specification": IoSpecification.parse(obj.find("./bpmn:ioSpecification", NAMESPACES)),
-                "resources": [ResourceRole.parse(elem) for elem in obj.findall("./bpmn:resourceRole", NAMESPACES)],
-                "performers": [Performer.parse(elem) for elem in obj.findall("./bpmn:performer", NAMESPACES)],
-                "human_performers": [
-                    HumanPerformer.parse(elem) for elem in obj.findall("./bpmn:humanPerformer", NAMESPACES)
-                ],
-                "potential_owners": [
-                    PotentialOwner.parse(elem) for elem in obj.findall("./bpmn:potentialOwner", NAMESPACES)
-                ],
-                "data_output_associations": [
-                    DataOutputAssociation.parse(elem)
-                    for elem in obj.findall("./bpmn:dataOutputAssociation", NAMESPACES)
-                ],
-                "data_input_associations": [
-                    DataInputAssociation.parse(elem) for elem in obj.findall("./bpmn:dataInputAssociation", NAMESPACES)
-                ],
-                "properties": [Property.parse(elem) for elem in obj.findall("./bpmn:property", NAMESPACES)],
-            }
-        )
-
-        return cls(**attribs)

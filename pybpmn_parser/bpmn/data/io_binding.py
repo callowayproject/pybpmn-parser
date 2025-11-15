@@ -2,14 +2,10 @@
 
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, field
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    from lxml import etree as ET
 
 
 @register_element
@@ -45,20 +41,3 @@ class IoBinding(BaseElement):
     class Meta:
         name = "ioBinding"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[IoBinding]:
-        """Parse an XML object into an IoBinding object."""
-        if obj is None:
-            return None
-
-        attribs = asdict(BaseElement.parse(obj))
-        attribs.update(
-            {
-                "operation_ref": obj.get("operationRef"),
-                "input_data_ref": obj.get("inputDataRef"),
-                "output_data_ref": obj.get("outputDataRef"),
-            }
-        )
-
-        return cls(**attribs)

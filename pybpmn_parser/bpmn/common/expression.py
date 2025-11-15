@@ -2,14 +2,11 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import Optional
 
 from pybpmn_parser.bpmn.foundation.base_element import BaseElement
 from pybpmn_parser.element_registry import register_element
-
-if TYPE_CHECKING:
-    from lxml import etree as ET
 
 
 @register_element
@@ -47,20 +44,3 @@ class FormalExpression(Expression):
     class Meta:
         name = "formalExpression"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[FormalExpression]:
-        """Parse a XML object into a FormalExpression object."""
-        if obj is None:
-            return None
-
-        baseclass = Expression.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "language": obj.get("language"),
-                "evaluates_to_type_ref": obj.get("evaluatesToTypeRef"),
-            }
-        )
-
-        return cls(**attribs)

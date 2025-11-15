@@ -2,17 +2,14 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
+from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Optional
 
 from pybpmn_parser.bpmn.common.callable_element import CallableElement
-from pybpmn_parser.bpmn.types import NAMESPACES, ProcessType
-from pybpmn_parser.core import strtobool
+from pybpmn_parser.bpmn.types import ProcessType
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     # from pybpmn_parser.bpmn.choreography.call_choreography import CallChoreography
     # from pybpmn_parser.bpmn.choreography.choreography_task import ChoreographyTask
     # from pybpmn_parser.bpmn.choreography.sub_choreography import SubChoreography
@@ -499,157 +496,3 @@ class Process(CallableElement):
     class Meta:
         name = "process"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[Process]:
-        """Converts an XML element to a Process object."""
-        from pybpmn_parser.bpmn.activities.business_rule_task import BusinessRuleTask
-        from pybpmn_parser.bpmn.activities.call_activity import CallActivity
-        from pybpmn_parser.bpmn.activities.manual_task import ManualTask
-        from pybpmn_parser.bpmn.activities.receive_task import ReceiveTask
-        from pybpmn_parser.bpmn.activities.resource_role import ResourceRole
-        from pybpmn_parser.bpmn.activities.script_task import ScriptTask
-        from pybpmn_parser.bpmn.activities.send_task import SendTask
-        from pybpmn_parser.bpmn.activities.service_task import ServiceTask
-        from pybpmn_parser.bpmn.activities.sub_process import AdHocSubProcess, SubProcess, Transaction
-        from pybpmn_parser.bpmn.activities.task import Task
-        from pybpmn_parser.bpmn.activities.user_task import UserTask
-        from pybpmn_parser.bpmn.choreography.call_choreography import CallChoreography
-        from pybpmn_parser.bpmn.choreography.choreography_task import ChoreographyTask
-        from pybpmn_parser.bpmn.choreography.sub_choreography import SubChoreography
-        from pybpmn_parser.bpmn.common.artifact import Artifact
-        from pybpmn_parser.bpmn.common.association import Association
-        from pybpmn_parser.bpmn.common.correlation_subscription import CorrelationSubscription
-        from pybpmn_parser.bpmn.common.flow_element import FlowElement
-        from pybpmn_parser.bpmn.common.group import Group
-        from pybpmn_parser.bpmn.common.sequence_flow import SequenceFlow
-        from pybpmn_parser.bpmn.common.text_annotation import TextAnnotation
-        from pybpmn_parser.bpmn.data.data_object import DataObject
-        from pybpmn_parser.bpmn.data.data_object_reference import DataObjectReference
-        from pybpmn_parser.bpmn.data.data_store_reference import DataStoreReference
-        from pybpmn_parser.bpmn.data.property import Property
-        from pybpmn_parser.bpmn.event import Event
-        from pybpmn_parser.bpmn.event.boundary_event import BoundaryEvent
-        from pybpmn_parser.bpmn.event.end_event import EndEvent
-        from pybpmn_parser.bpmn.event.implicit_throw_event import ImplicitThrowEvent
-        from pybpmn_parser.bpmn.event.intermediate_catch_event import IntermediateCatchEvent
-        from pybpmn_parser.bpmn.event.intermediate_throw_event import IntermediateThrowEvent
-        from pybpmn_parser.bpmn.event.start_event import StartEvent
-        from pybpmn_parser.bpmn.gateway.complex_gateway import ComplexGateway
-        from pybpmn_parser.bpmn.gateway.event_based_gateway import EventBasedGateway
-        from pybpmn_parser.bpmn.gateway.exclusive_gateway import ExclusiveGateway
-        from pybpmn_parser.bpmn.gateway.inclusive_gateway import InclusiveGateway
-        from pybpmn_parser.bpmn.gateway.parallel_gateway import ParallelGateway
-        from pybpmn_parser.bpmn.process.auditing import Auditing
-        from pybpmn_parser.bpmn.process.lane import LaneSet
-        from pybpmn_parser.bpmn.process.monitoring import Monitoring
-        from pybpmn_parser.bpmn.process.performer import HumanPerformer, Performer, PotentialOwner
-
-        if obj is None:
-            return None
-
-        baseclass = CallableElement.parse(obj)
-        attribs = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attribs.update(
-            {
-                "definitional_collaboration_ref": obj.get("definitionalCollaborationRef"),
-                "is_executable": strtobool(obj.get("isExecutable", "false")),
-                "is_closed": strtobool(obj.get("isClosed", "false")),
-                "process_type": ProcessType(obj.get("processType", ProcessType.NONE)),
-                "supports": [elem.text for elem in obj.findall("./bpmn:supports", NAMESPACES)],
-                "correlation_subscriptions": [
-                    CorrelationSubscription.parse(elem)
-                    for elem in obj.findall("./bpmn:correlationSubscription", NAMESPACES)
-                ],
-                "resources": [ResourceRole.parse(elem) for elem in obj.findall("./bpmn:resourceRole", NAMESPACES)],
-                "performers": [Performer.parse(elem) for elem in obj.findall("./bpmn:performer", NAMESPACES)],
-                "human_performers": [
-                    HumanPerformer.parse(elem) for elem in obj.findall("./bpmn:humanPerformer", NAMESPACES)
-                ],
-                "potential_owners": [
-                    PotentialOwner.parse(elem) for elem in obj.findall("./bpmn:potentialOwner", NAMESPACES)
-                ],
-                "artifacts": [Artifact.parse(elem) for elem in obj.findall("./bpmn:artifact", NAMESPACES)],
-                "associations": [Association.parse(elem) for elem in obj.findall("./bpmn:association", NAMESPACES)],
-                "groups": [Group.parse(elem) for elem in obj.findall("./bpmn:group", NAMESPACES)],
-                "text_annotations": [
-                    TextAnnotation.parse(elem) for elem in obj.findall("./bpmn:textAnnotation", NAMESPACES)
-                ],
-                "flow_elements": [FlowElement.parse(elem) for elem in obj.findall("./bpmn:flowElement", NAMESPACES)],
-                "ad_hoc_sub_processes": [
-                    AdHocSubProcess.parse(elem) for elem in obj.findall("./bpmn:adHocSubProcess", NAMESPACES)
-                ],
-                "boundary_events": [
-                    BoundaryEvent.parse(elem) for elem in obj.findall("./bpmn:boundaryEvent", NAMESPACES)
-                ],
-                "business_rule_tasks": [
-                    BusinessRuleTask.parse(elem) for elem in obj.findall("./bpmn:businessRuleTask", NAMESPACES)
-                ],
-                "call_activities": [
-                    CallActivity.parse(elem) for elem in obj.findall("./bpmn:callActivity", NAMESPACES)
-                ],
-                "call_choreographies": [
-                    CallChoreography.parse(elem) for elem in obj.findall("./bpmn:callChoreography", NAMESPACES)
-                ],
-                "choreography_tasks": [
-                    ChoreographyTask.parse(elem) for elem in obj.findall("./bpmn:choreographyTask", NAMESPACES)
-                ],
-                "complex_gateways": [
-                    ComplexGateway.parse(elem) for elem in obj.findall("./bpmn:complexGateway", NAMESPACES)
-                ],
-                "data_objects": [DataObject.parse(elem) for elem in obj.findall("./bpmn:dataObject", NAMESPACES)],
-                "data_object_references": [
-                    DataObjectReference.parse(elem) for elem in obj.findall("./bpmn:dataObjectReference", NAMESPACES)
-                ],
-                "data_store_references": [
-                    DataStoreReference.parse(elem) for elem in obj.findall("./bpmn:dataStoreReference", NAMESPACES)
-                ],
-                "end_events": [EndEvent.parse(elem) for elem in obj.findall("./bpmn:endEvent", NAMESPACES)],
-                "events": [Event.parse(elem) for elem in obj.findall("./bpmn:event", NAMESPACES)],
-                "event_based_gateways": [
-                    EventBasedGateway.parse(elem) for elem in obj.findall("./bpmn:eventBasedGateway", NAMESPACES)
-                ],
-                "exclusive_gateways": [
-                    ExclusiveGateway.parse(elem) for elem in obj.findall("./bpmn:exclusiveGateway", NAMESPACES)
-                ],
-                "implicit_throw_events": [
-                    ImplicitThrowEvent.parse(elem) for elem in obj.findall("./bpmn:implicitThrowEvent", NAMESPACES)
-                ],
-                "inclusive_gateways": [
-                    InclusiveGateway.parse(elem) for elem in obj.findall("./bpmn:inclusiveGateway", NAMESPACES)
-                ],
-                "intermediate_catch_events": [
-                    IntermediateCatchEvent.parse(elem)
-                    for elem in obj.findall("./bpmn:intermediateCatchEvent", NAMESPACES)
-                ],
-                "intermediate_throw_events": [
-                    IntermediateThrowEvent.parse(elem)
-                    for elem in obj.findall("./bpmn:intermediateThrowEvent", NAMESPACES)
-                ],
-                "manual_tasks": [ManualTask.parse(elem) for elem in obj.findall("./bpmn:manualTask", NAMESPACES)],
-                "parallel_gateways": [
-                    ParallelGateway.parse(elem) for elem in obj.findall("./bpmn:parallelGateway", NAMESPACES)
-                ],
-                "receive_tasks": [ReceiveTask.parse(elem) for elem in obj.findall("./bpmn:receiveTask", NAMESPACES)],
-                "script_tasks": [ScriptTask.parse(elem) for elem in obj.findall("./bpmn:scriptTask", NAMESPACES)],
-                "send_tasks": [SendTask.parse(elem) for elem in obj.findall("./bpmn:sendTask", NAMESPACES)],
-                "sequence_flows": [
-                    SequenceFlow.parse(elem) for elem in obj.findall("./bpmn:sequenceFlow", NAMESPACES)
-                ],
-                "service_tasks": [ServiceTask.parse(elem) for elem in obj.findall("./bpmn:serviceTask", NAMESPACES)],
-                "start_events": [StartEvent.parse(elem) for elem in obj.findall("./bpmn:startEvent", NAMESPACES)],
-                "sub_choreographies": [
-                    SubChoreography.parse(elem) for elem in obj.findall("./bpmn:subChoreography", NAMESPACES)
-                ],
-                "sub_processes": [SubProcess.parse(elem) for elem in obj.findall("./bpmn:subProcess", NAMESPACES)],
-                "tasks": [Task.parse(elem) for elem in obj.findall("./bpmn:task", NAMESPACES)],
-                "transactions": [Transaction.parse(elem) for elem in obj.findall("./bpmn:transaction", NAMESPACES)],
-                "user_tasks": [UserTask.parse(elem) for elem in obj.findall("./bpmn:userTask", NAMESPACES)],
-                "lane_sets": [LaneSet.parse(elem) for elem in obj.findall("./bpmn:laneSet", NAMESPACES)],
-                "properties": [Property.parse(elem) for elem in obj.findall("./bpmn:property", NAMESPACES)],
-                "monitoring": Monitoring.parse(obj.find("./bpmn:monitoring", NAMESPACES)),
-                "auditing": Auditing.parse(obj.find("./bpmn:auditing", NAMESPACES)),
-            }
-        )
-
-        return cls(**attribs)

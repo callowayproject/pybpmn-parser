@@ -2,16 +2,14 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, fields
-from typing import TYPE_CHECKING, Optional
+from dataclasses import dataclass, field
+from typing import TYPE_CHECKING
 
 from pybpmn_parser.bpmn.activities.task import Task
-from pybpmn_parser.bpmn.types import NAMESPACES, ImplementationValue
+from pybpmn_parser.bpmn.types import ImplementationValue
 from pybpmn_parser.element_registry import register_element
 
 if TYPE_CHECKING:
-    from lxml import etree as ET
-
     from pybpmn_parser.bpmn.activities.rendering import Rendering
 
 
@@ -50,21 +48,3 @@ class UserTask(Task):
     class Meta:
         name = "userTask"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
-
-    @classmethod
-    def parse(cls, obj: Optional[ET.Element]) -> Optional[UserTask]:
-        """Parse an element into a UserTask object."""
-        from pybpmn_parser.bpmn.activities.rendering import Rendering
-
-        if obj is None:
-            return None
-
-        baseclass = Task.parse(obj)
-        attributes = {field.name: getattr(baseclass, field.name) for field in fields(baseclass)}
-        attributes.update(
-            {
-                "renderings": [Rendering.parse(elem) for elem in obj.findall("./bpmn:rendering", NAMESPACES)],
-                "implementation": obj.get("implementation", ImplementationValue.UNSPECIFIED),
-            }
-        )
-        return cls(**attributes)
