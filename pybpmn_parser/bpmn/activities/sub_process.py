@@ -556,7 +556,7 @@ class AdHocSubProcess(TransactionlessSubProcess):
     """An AdHocSubProcess is a special kind of SubProcess."""
 
     class Meta:
-        name = "adhocSubProcess"
+        name = "adHocSubProcess"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     ad_hoc_sub_processes: list[AdHocSubProcess] = field(
