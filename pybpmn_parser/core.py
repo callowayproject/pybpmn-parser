@@ -211,13 +211,13 @@ def dataclass_to_dict(
     Args:
         obj: The object to convert (typically a dataclass instance, but dicts/lists/etc. are accepted).
         skip_empty: If True, fields/items with empty values are omitted from the result.
-        enum_as : How to represent Enum members: "value" (default) or "name".
         empty_predicate: A function that returns True if a value should be considered empty.
             If None, the default considers:
             - None as empty
             - Empty strings/bytes as empty
             - Any object with len(x) == 0 as empty (lists, tuples, sets, dicts, etc.)
             Note: False and 0 are NOT considered empty by default.
+        enum_as: How to represent Enum members: "value" (default) or "name".
 
     Returns:
         A structure of plain dicts/lists/tuples with primitive values (and optionally Enums mapped to name/value).
