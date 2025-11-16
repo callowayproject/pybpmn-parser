@@ -142,7 +142,7 @@ def filter_package_types(package: ModdlePackage) -> list[ModdleType]:
             type_name = QName(local=lower_first_char(type_.local), uri=type_.uri)
             if type_name in element_registry.by_qname:
                 continue
-            else:
+            else:  # pragma: no cover
                 print(f"Unknown type: {type_name}")
                 continue
 

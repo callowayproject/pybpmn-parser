@@ -2,7 +2,7 @@
 
 from dataclasses import is_dataclass
 from pathlib import Path
-from typing import Any, Protocol, runtime_checkable, Optional
+from typing import Any, Protocol, runtime_checkable
 
 import lxml.etree as ET  # NOQA: N812
 from pytest import param

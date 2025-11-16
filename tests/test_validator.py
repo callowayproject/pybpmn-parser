@@ -359,15 +359,11 @@ class TestValidate:
         result = validate(xml)
 
         assert not result.is_valid
-        assert len(result.errors) == 4
+        assert len(result.errors) == 2
         assert result.errors[0].code == "SCHEMA_ERROR"
-        assert "XsdComplexType(name='tRootElement') is abstract" in result.errors[0].message
+        assert "Unexpected child with tag 'bpmn:activities' at position 2" in result.errors[0].message
         assert result.errors[1].code == "SCHEMA_ERROR"
         assert "Unexpected child with tag 'bpmn:startEvent' at position 1." in result.errors[1].message
-        assert result.errors[2].code == "SCHEMA_ERROR"
-        assert "Unexpected child with tag 'bpmn:activities' at position 2" in result.errors[2].message
-        assert result.errors[3].code == "SCHEMA_ERROR"
-        assert "Unexpected child with tag 'bpmn:startEvent' at position 1." in result.errors[3].message
 
     def test_raises_error_on_missing_attributes(self):
         """

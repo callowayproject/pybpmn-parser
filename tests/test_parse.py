@@ -8,8 +8,23 @@ from pybpmn_parser.parse import Parser
 from pybpmn_parser.validator import ValidationError
 
 
-class TestParse:
-    """Unit tests for the parse function in the parse module."""
+class TestParser:
+    """Unit tests for the Parser class in the parse module."""
+
+    def test_instantiate_with_nsmap(self):
+        """The Parser class can be instantiated with a custom namespace map."""
+        ns_map = {"test": "http://example.com"}
+        parser = Parser(ns_map=ns_map)
+        assert parser.ns_map["test"] == ns_map["test"]
+
+    def test_instantiate_with_moddle_extension(self, mocker):
+        """The Parser class can be instantiated with a custom Moddle extension."""
+        moddle_extension = Path("moddle_extension.json")
+        mock_load_moddle_file = mocker.patch("pybpmn_parser.parse.load_moddle_file", return_value=None)
+
+        Parser(moddle_extensions=[moddle_extension])
+
+        assert mock_load_moddle_file.call_count == 1
 
     def test_valid_bpmn_returns_definitions(self):
         """The parse function with a valid BPMN XML string returns a Definitions object."""
