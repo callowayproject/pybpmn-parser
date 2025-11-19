@@ -27,56 +27,33 @@ class StartEvent(CatchEvent):
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
     @property
-    def event_type(self) -> StartEventType:  # noqa: C901
+    def event_type(self) -> StartEventType:
         """Return the event type."""
-        num_msg_defs = len(self.message_event_definition)
-        num_timer_defs = len(self.timer_event_definition)
-        num_cond_defs = len(self.conditional_event_definition)
-        num_sig_defs = len(self.signal_event_definition)
-        num_escal_defs = len(self.escalation_event_definition)
-        num_comp_defs = len(self.compensate_event_definition)
-        num_error_defs = len(self.error_event_definition)
-        num_defs = len(self.event_definition)
-        num_event_refs = len(self.event_definition_ref)
-        total_defs = (
-            num_msg_defs
-            + num_timer_defs
-            + num_cond_defs
-            + num_sig_defs
-            + num_escal_defs
-            + num_comp_defs
-            + num_error_defs
-            + num_defs
-            + num_event_refs
-        )
+        definitions = [
+            (self.message_event_definition, StartEventType.MESSAGE),
+            (self.timer_event_definition, StartEventType.TIMER),
+            (self.conditional_event_definition, StartEventType.CONDITIONAL),
+            (self.signal_event_definition, StartEventType.SIGNAL),
+            (self.escalation_event_definition, StartEventType.ESCALATION),
+            (self.error_event_definition, StartEventType.ERROR),
+            (self.compensate_event_definition, StartEventType.COMPENSATION),
+        ]
+
+        specific_count = 0
+        matched_type = StartEventType.UNKNOWN
+
+        for event_defs, type_enum in definitions:
+            if count := len(event_defs):
+                specific_count += count
+                if matched_type == StartEventType.UNKNOWN:
+                    matched_type = type_enum
+
+        total_defs = specific_count + len(self.event_definition) + len(self.event_definition_ref)
+
         if total_defs > 1:
-            if self.parallel_multiple:
-                return StartEventType.PARALLEL_MULTIPLE
-            else:
-                return StartEventType.MULTIPLE
+            return StartEventType.PARALLEL_MULTIPLE if self.parallel_multiple else StartEventType.MULTIPLE
 
         if total_defs == 0:
             return StartEventType.NONE
 
-        if num_msg_defs:
-            return StartEventType.MESSAGE
-
-        if num_timer_defs:
-            return StartEventType.TIMER
-
-        if num_cond_defs:
-            return StartEventType.CONDITIONAL
-
-        if num_sig_defs:
-            return StartEventType.SIGNAL
-
-        if num_escal_defs:
-            return StartEventType.ESCALATION
-
-        if num_error_defs:
-            return StartEventType.ERROR
-
-        if num_comp_defs:
-            return StartEventType.COMPENSATION
-
-        return StartEventType.UNKNOWN
+        return matched_type

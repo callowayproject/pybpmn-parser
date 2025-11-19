@@ -1,9 +1,5 @@
 """Unit tests for the StartEvent class."""
 
-from pybpmn_parser.bpmn import load_classes
-
-load_classes()
-
 from pybpmn_parser.bpmn.event.start_event import StartEvent
 from pybpmn_parser.bpmn.types import StartEventType
 
