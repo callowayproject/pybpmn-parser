@@ -59,7 +59,7 @@ plugins:
   - git-authors:
       show_email_address: false
       exclude:
-        - reference/api/*
+        - reference/*
   - include-markdown
   - gen-files:
       scripts:
@@ -106,3 +106,17 @@ extra_css:
 
 watch:
   - pybpmn_parser
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick Start: quickstart.md
+  - Tutorials: tutorials/index.md
+  - Examples Gallery: examples/index.md
+  - Plugin Guide: plugins/index.md
+  - Architecture Overview: architecture/index.md
+  - Core Components: architecture/components.md
+  - Reference: reference/index.md
+  - Development Guide: development.md
+  - Explanation: explanation.md
+  - How-Tos: howtos/index.md
