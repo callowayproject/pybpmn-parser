@@ -20,11 +20,6 @@ BPMN_SCHEMA = xmlschema.XMLSchema(
     base_url=str(SCHEMA_DIR.absolute()),  # Set base URL for imports
 )
 
-# Load registered extension schemas
-# self.extension_schema = xmlschema.XMLSchema(
-#     schema_dir / "pythmata.xsd", validation="lax"
-# )
-
 # Define known validation issues to skip
 KNOWN_VALIDATION_PATTERNS = [
     "tFormalExpression",
@@ -121,13 +116,6 @@ def _validate_bpmn_schema(doc: ET.Element) -> List[ValidationError]:
     ]
 
 
-def _validate_extension_schema(doc: ET.Element) -> List[ValidationError]:
-    """Validate an ElementTree Element against the extension schema."""
-    # TODO: Implement validating against public or registered extensions
-    # extension_elements = doc.findall(".//{*}extensionElements")
-    return []
-
-
 def _get_unique_ids(doc: ET.Element) -> List[str]:
     """Validates that all IDs are unique within the document."""
     ids = set()
@@ -221,10 +209,6 @@ def validate(xml: str) -> ValidationResult:
             return result
 
     result.add_errors(_validate_bpmn_schema(doc))
-    if not result.is_valid:
-        return result
-
-    result.add_errors(_validate_extension_schema(doc))
     if not result.is_valid:
         return result
 
