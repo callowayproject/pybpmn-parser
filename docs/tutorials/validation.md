@@ -11,13 +11,14 @@ PyBPMN Parser automatically validates BPMN documents against the BPMN 2.0 schema
 Validation happens automatically when you parse:
 
 ```python
-from pybpmn_parser.parse import parse, parse_file
-from pybpmn_parser.validator import ValidationError
 from pathlib import Path
+from pybpmn_parser.parse import Parser
+from pybpmn_parser.validator import ValidationError
 
 # Validation happens automatically
+parser = Parser()
 try:
-    definitions = parse_file(Path("my_process.bpmn"))
+    definitions = parser.parse_file(Path("my_process.bpmn"))
     print("✓ Document is valid")
 except ValidationError as e:
     print(f"✗ Validation failed: {e}")
@@ -28,7 +29,7 @@ except ValidationError as e:
 ValidationError exceptions provide detailed information about what went wrong:
 
 ```python
-from pybpmn_parser.parse import parse
+from pybpmn_parser.parse import Parser
 from pybpmn_parser.validator import ValidationError
 
 invalid_xml = """<?xml version="1.0"?>
@@ -40,7 +41,7 @@ invalid_xml = """<?xml version="1.0"?>
 </definitions>"""
 
 try:
-    definitions = parse(invalid_xml)
+    definitions = Parser().parse_string(invalid_xml)
 except ValidationError as e:
     print(f"Error: {e}")
     # Error will describe the invalid element
@@ -51,41 +52,42 @@ except ValidationError as e:
 ### Empty XML
 
 ```python
-from pybpmn_parser.parse import parse
-from pybpmn_parser.validator import ValidationError
+from pybpmn_parser.validator import validate
 
-try:
-    definitions = parse("")
-except ValidationError as e:
-    print(e)  # "EMPTY_XML: Value cannot be empty"
+result = validate("")
+if result.errors:
+    # First error will be the empty XML error
+    print(result.errors[0])  # "EMPTY_XML: Value cannot be empty"
 ```
 
 ### Invalid Root Element
 
 ```python
+from pybpmn_parser.validator import validate
+
 invalid_xml = """<?xml version="1.0"?>
 <root>
     <child>Invalid</child>
 </root>"""
 
-try:
-    definitions = parse(invalid_xml)
-except ValidationError as e:
-    print(e)  # Schema error: 'root' is not an element of the schema
+result = validate(invalid_xml)
+for err in result.errors:
+    print(err)  # SCHEMA_ERROR: ... (root)
 ```
 
 ### Invalid BPMN Elements
 
 ```python
+from pybpmn_parser.validator import validate
+
 invalid_xml = """<?xml version="1.0"?>
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
     <invalidTag />
 </definitions>"""
 
-try:
-    definitions = parse(invalid_xml)
-except ValidationError as e:
-    print(e)  # Schema error about unexpected child element
+result = validate(invalid_xml)
+for err in result.errors:
+    print(err)  # SCHEMA_ERROR: unexpected child element (definitions)
 ```
 
 ## Manual Validation
@@ -134,8 +136,11 @@ def validate_file(file_path: Path) -> bool:
     return True
 
 # Validate before parsing
+from pybpmn_parser.parse import Parser
+
 if validate_file(Path("my_process.bpmn")):
-    definitions = parse_file(Path("my_process.bpmn"))
+    parser = Parser()
+    definitions = parser.parse_file(Path("my_process.bpmn"))
 ```
 
 ### Batch Validation
@@ -172,13 +177,14 @@ print(f"Invalid: {len(results['invalid'])}")
 
 ```python
 from pathlib import Path
-from pybpmn_parser.parse import parse_file
+from pybpmn_parser.parse import Parser
 from pybpmn_parser.validator import ValidationError
 
 def safe_parse(file_path: Path):
     """Parse with graceful error handling."""
+    parser = Parser()
     try:
-        return parse_file(file_path), None
+        return parser.parse_file(file_path), None
     except ValidationError as e:
         error_msg = {
             "file": str(file_path),
@@ -208,9 +214,9 @@ While PyBPMN Parser validates against the BPMN schema, you can add custom busine
 
 ```python
 from pathlib import Path
-from pybpmn_parser.parse import parse_file
-from pybpmn_parser.bpmn.events.start_events import StartEvent
-from pybpmn_parser.bpmn.events.end_events import EndEvent
+from pybpmn_parser.parse import Parser
+from pybpmn_parser.bpmn.event.start_event import StartEvent
+from pybpmn_parser.bpmn.event.end_event import EndEvent
 
 def validate_process_structure(process):
     """Custom validation: ensure process has start and end events."""
@@ -235,7 +241,8 @@ def validate_process_structure(process):
     return errors
 
 # Validate structure
-definitions = parse_file(Path("my_process.bpmn"))
+parser = Parser()
+definitions = parser.parse_file(Path("my_process.bpmn"))
 for process in definitions.processes:
     errors = validate_process_structure(process)
     if errors:
@@ -250,13 +257,13 @@ for process in definitions.processes:
 
 ```python
 from pathlib import Path
-from pybpmn_parser.parse import parse_file
+from pybpmn_parser.parse import Parser
 
 def find_disconnected_elements(process):
     """Find elements not connected to any sequence flows."""
     disconnected = []
 
-    # Build set of connected element IDs
+    # Build a set of connected element IDs
     connected = set()
     for flow in process.sequence_flows:
         connected.add(flow.source_ref)
@@ -269,7 +276,8 @@ def find_disconnected_elements(process):
 
     return disconnected
 
-definitions = parse_file(Path("my_process.bpmn"))
+parser = Parser()
+definitions = parser.parse_file(Path("my_process.bpmn"))
 process = definitions.processes[0]
 
 disconnected = find_disconnected_elements(process)

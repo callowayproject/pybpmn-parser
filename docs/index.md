@@ -14,7 +14,7 @@ PyBPMN Parser is a powerful, extensible library that transforms BPMN XML documen
 
 - **Type-Safe Parsing** - Convert BPMN XML into typed Python dataclasses
 - **Schema Validation** - Validate documents against the BPMN 2.0 specification
-- **Vendor Extensions** - Built-in support for Camunda and extensible plugin system
+- **Vendor Extensions** - Built-in support for Moddle-based plugins
 - **Easy Navigation** - Intuitive API for traversing process elements
 - **Full Coverage** - Support for all BPMN 2.0 elements and attributes
 
@@ -22,10 +22,11 @@ PyBPMN Parser is a powerful, extensible library that transforms BPMN XML documen
 
 ```python
 from pathlib import Path
-from pybpmn_parser.parse import parse_file
+from pybpmn_parser.parse import Parser
 
 # Parse a BPMN file
-definitions = parse_file(Path("my_process.bpmn"))
+parser = Parser()
+definitions = parser.parse_file(Path("my_process.bpmn"))
 
 # Access process elements
 for process in definitions.processes:
@@ -58,15 +59,13 @@ See the [Installation Guide](installation.md) for more options.
 
 ### Learning
 - **[Tutorials](tutorials/index.md)** - Step-by-step guides for common tasks
-- **[Examples](examples/index.md)** - Real-world examples using MIWG test suite files
 - **[How-Tos](howtos/index.md)** - Solutions to specific problems
 
 ### Reference
-- **[API Reference](reference/)** - Complete API documentation
+- **[API Reference](reference/index.md)** - Complete API documentation
 - **[Architecture](architecture/index.md)** - System design and internals
 
 ### Extending
-- **[Plugin Development](plugins/index.md)** - Create plugins for vendor extensions
 - **[Development Guide](development.md)** - Contributing to PyBPMN Parser
 
 ## Use Cases
@@ -83,6 +82,4 @@ PyBPMN Parser is ideal for:
 
 - **New to PyBPMN Parser?** Start with the [Quick Start](quickstart.md) tutorial
 - **Ready to dive deeper?** Explore the [Tutorials](tutorials/index.md)
-- **Need examples?** Check out the [Examples Gallery](examples/index.md)
-- **Want to extend?** Read the [Plugin Development Guide](plugins/index.md)
 - **Contributing?** See the [Developer Guide](development.md)

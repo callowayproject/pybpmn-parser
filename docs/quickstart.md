@@ -18,7 +18,7 @@ This guide will get you up and running with PyBPMN Parser in just a few minutes.
 Let's start by parsing a simple BPMN document:
 
 ```python
-from pybpmn_parser.parse import parse
+from pybpmn_parser.parse import Parser
 
 # Define a minimal BPMN document
 bpmn_xml = """<?xml version="1.0" encoding="UTF-8"?>
@@ -34,7 +34,8 @@ bpmn_xml = """<?xml version="1.0" encoding="UTF-8"?>
 </definitions>"""
 
 # Parse the BPMN
-definitions = parse(bpmn_xml)
+parser = Parser()
+definitions = parser.parse_string(bpmn_xml)
 
 # Access the process
 process = definitions.processes[0]
@@ -56,10 +57,11 @@ In practice, you'll usually parse BPMN files from disk:
 
 ```python
 from pathlib import Path
-from pybpmn_parser.parse import parse_file
+from pybpmn_parser.parse import Parser
 
 # Parse a BPMN file
-definitions = parse_file(Path("my_process.bpmn"))
+parser = Parser()
+definitions = parser.parse_file(Path("my_process.bpmn"))
 
 # Iterate through all processes
 for process in definitions.processes:
@@ -78,12 +80,14 @@ for process in definitions.processes:
 PyBPMN Parser represents different BPMN elements as distinct Python classes:
 
 ```python
-from pybpmn_parser.parse import parse_file
-from pybpmn_parser.bpmn.activities.tasks import Task
-from pybpmn_parser.bpmn.events.start_events import StartEvent
-from pybpmn_parser.bpmn.gateways.exclusive_gateways import ExclusiveGateway
+from pathlib import Path
+from pybpmn_parser.parse import Parser
+from pybpmn_parser.bpmn.activities.task import Task
+from pybpmn_parser.bpmn.event.start_event import StartEvent
+from pybpmn_parser.bpmn.gateway.exclusive_gateway import ExclusiveGateway
 
-definitions = parse_file(Path("my_process.bpmn"))
+parser = Parser()
+definitions = parser.parse_file(Path("my_process.bpmn"))
 process = definitions.processes[0]
 
 # Find specific element types
@@ -99,12 +103,27 @@ print(f"Found {len(start_events)} start event(s)")
 PyBPMN Parser automatically validates documents against the BPMN 2.0 schema:
 
 ```python
-from pybpmn_parser.parse import parse
+from pybpmn_parser.parse import Parser
 from pybpmn_parser.validator import ValidationError
 
-# This will raise a ValidationError if the BPMN is invalid
+# Define a minimal BPMN document
+bpmn_xml = """<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             targetNamespace="http://bpmn.io/schema/bpmn">
+    <process id="my_process" name="My First Process">
+        <startEvent id="start" name="Start" />
+        <task id="task1" name="Do Something" />
+        <endEvent id="end" name="End" />
+        <sequenceFlow id="flow1" sourceRef="start" targetRef="task1" />
+        <sequenceFlow id="flow2" sourceRef="task1" targetRef="end" />
+    </process>
+</definitions>"""
+
 try:
-    definitions = parse(bpmn_xml)
+    parser = Parser()
+
+    # This will raise a ValidationError if the BPMN is invalid
+    definitions = parser.parse(bpmn_xml)
     print("✓ BPMN document is valid")
 except ValidationError as e:
     print(f"✗ Validation failed: {e}")
@@ -115,7 +134,11 @@ except ValidationError as e:
 BPMN elements have attributes you can access directly:
 
 ```python
-definitions = parse_file(Path("my_process.bpmn"))
+from pathlib import Path
+from pybpmn_parser.parse import Parser
+
+parser = Parser()
+definitions = parser.parse_file(Path("my_process.bpmn"))
 process = definitions.processes[0]
 
 for element in process.flow_elements:
@@ -136,7 +159,11 @@ for element in process.flow_elements:
 Navigate the process flow by following sequence flows:
 
 ```python
-definitions = parse_file(Path("my_process.bpmn"))
+from pathlib import Path
+from pybpmn_parser.parse import Parser
+
+parser = Parser()
+definitions = parser.parse_file(Path("my_process.bpmn"))
 process = definitions.processes[0]
 
 # Get all sequence flows
@@ -163,12 +190,13 @@ Now that you've learned the basics, explore these topics:
 
 ```python
 from pathlib import Path
-from pybpmn_parser.parse import parse_file
+from pybpmn_parser.parse import Parser
 
+parser = Parser()
 bpmn_dir = Path("bpmn_models/")
 for bpmn_file in bpmn_dir.glob("*.bpmn"):
     try:
-        definitions = parse_file(bpmn_file)
+        definitions = parser.parse_file(bpmn_file)
         print(f"✓ Parsed {bpmn_file.name}")
     except Exception as e:
         print(f"✗ Failed to parse {bpmn_file.name}: {e}")
@@ -177,11 +205,13 @@ for bpmn_file in bpmn_dir.glob("*.bpmn"):
 ### Extracting Process Metrics
 
 ```python
-from pybpmn_parser.parse import parse_file
-from pybpmn_parser.bpmn.activities.tasks import Task
-from pybpmn_parser.bpmn.gateways.exclusive_gateways import ExclusiveGateway
+from pathlib import Path
+from pybpmn_parser.parse import Parser
+from pybpmn_parser.bpmn.activities.task import Task
+from pybpmn_parser.bpmn.gateway.exclusive_gateway import ExclusiveGateway
 
-definitions = parse_file(Path("my_process.bpmn"))
+parser = Parser()
+definitions = parser.parse_file(Path("my_process.bpmn"))
 
 for process in definitions.processes:
     task_count = sum(1 for el in process.flow_elements if isinstance(el, Task))
@@ -205,6 +235,6 @@ for process in definitions.processes:
 
 ### Getting Help
 
-- Check the [API Reference](reference/) for detailed documentation
+- Check the [API Reference](reference/index.md) for detailed documentation
 - Browse [Examples](examples/index.md) for working code
 - Visit the [GitHub repository](https://github.com/callowayproject/pybpmn-parser) to report issues

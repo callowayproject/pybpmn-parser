@@ -6,11 +6,11 @@ date: 2025-09-15T12:32:13.355904+00:00
 
 # Installation
 
-PyBPMN Parser requires Python 3.8 or higher. This guide covers different installation methods.
+PyBPMN Parser requires Python 3.12 or higher. This guide covers different installation methods.
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.12+
 - pip (usually included with Python) or uv
 
 ## Installing from PyPI
@@ -63,8 +63,7 @@ uv pip install -e .
 After installation, verify that PyBPMN Parser is installed correctly:
 
 ```python
-import pybpmn_parser
-from pybpmn_parser.parse import parse
+from pybpmn_parser.parse import Parser
 
 # Test with minimal BPMN XML
 xml = """<?xml version="1.0" encoding="UTF-8"?>
@@ -73,7 +72,8 @@ xml = """<?xml version="1.0" encoding="UTF-8"?>
     <process id="Process_1" />
 </definitions>"""
 
-definitions = parse(xml)
+parser = Parser()
+definitions = parser.parse_string(xml)
 print(f"Successfully parsed! Found {len(definitions.processes)} process(es)")
 ```
 
@@ -102,13 +102,13 @@ pip install pybpmn-parser
 
 ### Python Version Issues
 
-Ensure you're using Python 3.8 or higher:
+Ensure you're using Python 3.12 or higher:
 
 ```bash
 python --version
 ```
 
-If you have multiple Python versions, you may need to use `python3` or `python3.8+` explicitly:
+If you have multiple Python versions, you may need to use `python3` or a specific 3.12+ interpreter explicitly:
 
 ```bash
 python3 -m pip install pybpmn-parser

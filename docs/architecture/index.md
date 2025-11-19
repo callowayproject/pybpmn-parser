@@ -15,7 +15,7 @@ PyBPMN Parser is designed with several key principles:
 
 ```mermaid
 graph TD
-    A[BPMN XML File] --> B[Parser]
+    A[BPMN Element Definitions] --> B[Element Registry]
     B --> C[Element Factory]
     C --> D[BPMN Element Tree]
     D --> E[Validator]
@@ -81,5 +81,5 @@ The plugin system allows:
 ## Next Steps
 
 - Explore [Core Components](components.md) for detailed technical information
-- Review the [API Reference](../reference/) for implementation details
+- Review the [API Reference](../reference/index.md) for implementation details
 - Check out [Plugin Development](../plugins/index.md) to extend the library

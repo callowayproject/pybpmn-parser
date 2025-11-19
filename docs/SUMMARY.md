@@ -16,7 +16,7 @@
     * [Best Practices](plugins/best-practices.md)
 * [Architecture Overview](architecture/index.md)
     * [Core Components](architecture/components.md)
-* [API Reference](reference/index.md)
+* [API Reference](reference/api/)
 * [Development Guide](development.md)
 * [Explanation](explanation.md)
 * [How-Tos](howtos/index.md)

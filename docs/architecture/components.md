@@ -440,4 +440,4 @@ def test_miwg_suite(miwg_file):
 
 - Review [Architecture Overview](index.md) for high-level design
 - Check [Plugin Development](../plugins/index.md) to extend components
-- Explore [API Reference](../reference/) for detailed APIs
+- Explore [API Reference](../reference/index.md) for detailed APIs
