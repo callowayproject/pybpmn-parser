@@ -5,7 +5,6 @@ from typing import Any, Optional
 
 import xmltodict
 
-from pybpmn_parser.bpmn import load_classes
 from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.factory import create_bpmn
 from pybpmn_parser.plugins import load_default_plugins
@@ -17,7 +16,6 @@ class Parser:
     """A parser for BPMN files."""
 
     def __init__(self, moddle_extensions: Optional[list[Path]] = None, ns_map: Optional[dict[str, str]] = None):
-        load_classes()
         load_default_plugins()
         self.ns_map = NAMESPACES.copy()
         if ns_map:
