@@ -1,6 +1,7 @@
 # PyBPMN Parser
 
-A Python library for parsing and validating BPMN 2.0 XML into typed Python objects. It provides a small, focused API for loading BPMN files, schema validation, and an extensible plugin system for vendor-specific extensions.
+A Python library for parsing and validating BPMN 2.0 XML into typed Python objects.
+It provides a small, focused API for loading BPMN files, schema validation, and supports vendor-specific extensions.
 
 Links:
 - Source: https://github.com/callowayproject/pybpmn-parser
@@ -120,67 +121,15 @@ With pip/venv:
 
 Note: pip doesn’t understand pyproject "dependency-groups"; prefer uv for installing dev/test/docs dependencies.
 
-
-## Environment Variables
-
-- No required environment variables are known at this time.
-- TODO: Document any optional env vars (e.g., to customize schema locations or caching) if/when they are introduced.
-
-
 ## Tests
 
 The repository uses pytest and pytest-cov. Configuration is in pyproject.toml ([tool.pytest.ini_options]).
 
 Run the test suite:
+
 ```bash
 uv run pytest
 ```
-
-Selected tests illustrate library usage:
-- tests/test_parse.py — parsing strings and files, common error cases
-- tests/test_validator.py — validation error handling and messages
-- tests/test_parse_moddle_extension.py — creating and registering moddle-based extensions
-- tests/test_core.py — internal utility behavior
-
-HTML coverage is written to ./htmlcov by default (see pyproject addopts).
-
-
-## Project Structure
-
-Top-level layout:
-
-```
-pybpmn_parser/          # Library code
-  parse.py              # parse() and parse_file() entry points
-  validator.py          # BPMN 2.0 XML validation
-  plugins/              # Plugin system for vendor extensions
-    registry.py         # Registry for extension parsers
-    parse_moddle_extension.py
-    moodle_types.py     # Moddle type definitions
-  ...                   # Additional BPMN model packages/modules
-
-docs/                   # MkDocs documentation (Material)
-mkdocs.yml              # MkDocs configuration
-
-tests/                  # Pytest test suite and fixtures
-pyproject.toml          # Build, tooling, and test configuration
-uv.lock                 # Locked dependency graph for uv
-LICENSE                 # BSD 3-Clause License
-CHANGELOG.md            # Release notes
-```
-
-
-## Development
-
-- Use uv for dependency management and running tasks:
-  - `uv sync` to install all groups (dev, test, docs)
-  - `uv run ruff check .` and `uv run ruff format .`
-  - `uv run pytest`
-  - `uv run mkdocs serve`
-- The docs site auto-generates API reference stubs from source via docs/gen_doc_stubs.py (mkdocs-gen-files).
-
-Contributions are welcome. See CONTRIBUTING.md and CODE_OF_CONDUCT.md.
-
 
 ## License
 
