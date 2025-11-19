@@ -173,3 +173,6 @@ def load_classes() -> None:
 def get_loaded_namespace() -> dict[str, Any]:
     """Get a list of all loaded classes in the module."""
     return globals()
+
+
+load_classes()
