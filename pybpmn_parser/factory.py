@@ -70,6 +70,110 @@ def get_property_name(base_name: str, descriptor: ElementDescriptor, nsmap: dict
         return to_snake(attr_name.replace(":", "_"))
 
 
+def _handle_unknown_property(
+    key: str,
+    value: Any,
+    descriptor: ElementDescriptor,
+    parent_uri: str,
+    ns_map: dict[str, str],
+) -> dict[str, Any]:
+    """
+    Handles an unknown property found during element processing.
+
+    This function processes a given key and its corresponding value that do not match
+    directly to any recognized property descriptor. It attempts to resolve and map the key
+    to a known attribute name or property using the descriptor and namespace map. If the
+    attribute descriptor is identified, it creates new elements from the given value and
+    maps them properly. If no descriptor is identified, the key-value pair is added as is
+    to the provided item values.
+
+    Arguments:
+        key: The property key being evaluated.
+        value: The associated value with the property key, which can be a list or a raw value.
+        descriptor: Descriptor providing information about the current element's structure.
+        parent_uri: URI of the parent element in the hierarchy.
+        ns_map: Dictionary providing namespace mapping for resolution of keys.
+
+    Returns:
+        A dictionary containing the updated property values.
+    """
+    property_name = get_property_name(key, descriptor, ns_map)
+    attr_name = get_attribute_name(key, descriptor, ns_map)
+    attr_descriptor = registry.by_qname.get(attr_name)
+    new_values: dict[str, Any] = {}
+
+    if attr_descriptor:
+        if isinstance(value, list):
+            new_values[property_name] = [
+                create_element_from_dict(child_val, attr_descriptor, parent_uri, ns_map) for child_val in value
+            ]
+        else:
+            new_values[property_name] = create_element_from_dict(value, attr_descriptor, parent_uri, ns_map)
+    else:
+        # Unknown to the registry as well: keep raw value
+        new_values[property_name] = value
+
+    return new_values
+
+
+def _handle_known_property(
+    key: str,
+    value: Any,
+    descriptor: ElementDescriptor,
+    parent_uri: str,
+    ns_map: dict[str, str],
+) -> dict[str, Any]:
+    """
+    Handles known properties of an element descriptor and updates item values.
+
+    This function processes an XML element's key-value pair to map them to the
+    corresponding property of an element descriptor. It supports scalar
+    conversion, attributes without child elements, and child elements with
+    possible nested descriptors. The function updates the item's values based on
+    the processed property information.
+
+    Args:
+        key: The key representing the XML element.
+        value: The value associated with the given XML element.
+        descriptor: The descriptor that defines the properties of the XML element.
+        parent_uri: A parent URI to resolve relative paths.
+        ns_map: A dictionary mapping namespace prefixes to their URIs.
+
+    Raises:
+        KeyError: If the property descriptor for the given key cannot be found.
+
+    Returns:
+        A dictionary containing the updated property values.
+    """
+    properties = descriptor.properties
+    property_name = get_property_name(key, descriptor, ns_map)
+    attr_name = get_attribute_name(key, descriptor, ns_map)
+    prop_descriptor = properties[attr_name]
+    new_values: dict[str, Any] = {}
+
+    # Scalar conversion
+    if prop_descriptor.type in SCALAR_CONVERTER:
+        new_values[property_name] = SCALAR_CONVERTER[prop_descriptor.type](value)
+        return new_values
+
+    # Simple attribute (no child elements)
+    if prop_descriptor.is_attr:
+        new_values[property_name] = value
+        return new_values
+
+    # Child element(s)
+    child_qname = get_child_qname(attr_name, descriptor, key, ns_map)
+    child_descriptor = registry.by_qname.get(child_qname)
+    new_values[property_name] = get_child_value(
+        value,
+        child_descriptor,
+        prop_descriptor.is_many,
+        ns_map,
+        parent_uri,
+    )
+    return new_values
+
+
 def create_element_from_dict(
     element_dict: dict, descriptor: ElementDescriptor, parent_uri: str, nsmap: Optional[dict[str, str]] = None
 ) -> Any:
@@ -95,45 +199,19 @@ def create_element_from_dict(
 
     ns_map = extract_nsmap_from_dict(element_dict, nsmap)
 
-    item_values = {}  # The values passed to the element constructor
+    item_values: dict[str, Any] = {}  # The values passed to the element constructor
+    properties = descriptor.properties
 
     for key, value in element_dict.items():
         if attr_is_ignored(key):
             continue
-        property_name = get_property_name(key, descriptor, ns_map)
+
         attr_name = get_attribute_name(key, descriptor, ns_map)
-        is_known_property = attr_name in descriptor.properties
-
-        if not is_known_property:
-            attr_descriptor = registry.by_qname.get(attr_name, None)
-            if attr_descriptor:
-                if isinstance(value, list):
-                    item_values[property_name] = [
-                        create_element_from_dict(child_val, registry.by_qname[attr_name], parent_uri, ns_map)
-                        for child_val in value
-                    ]
-                else:
-                    item_values[property_name] = create_element_from_dict(
-                        value, registry.by_qname[attr_name], parent_uri, ns_map
-                    )
-            else:
-                item_values[property_name] = value
+        if attr_name not in properties:
+            item_values.update(_handle_unknown_property(key, value, descriptor, parent_uri, ns_map))
             continue
 
-        property_type = descriptor.properties[attr_name].type
-        if property_type in SCALAR_CONVERTER:
-            item_values[property_name] = SCALAR_CONVERTER[property_type](value)
-            continue
-
-        if descriptor.properties[attr_name].is_attr:
-            item_values[property_name] = value
-            continue
-
-        child_qname = get_child_qname(attr_name, descriptor, key, ns_map)
-        child_descriptor = registry.by_qname.get(child_qname)
-        is_many = descriptor.properties[attr_name].is_many
-
-        item_values[property_name] = get_child_value(value, child_descriptor, is_many, ns_map, parent_uri)
+        item_values.update(_handle_known_property(key, value, descriptor, parent_uri, ns_map))
 
     return descriptor.type.from_kwargs(**item_values)
 
