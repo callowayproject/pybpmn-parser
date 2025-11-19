@@ -7,12 +7,6 @@ from enum import Enum
 from typing import Any, Callable, Dict, Optional
 
 
-def strtobool(value: str) -> bool:
-    """Convert a string representation of truth to true (1) or false (0)."""
-    value = str(value).lower()
-    return value in ("y", "yes", "on", "1", "true", "t")
-
-
 def get_fields_by_metadata(data_class: Any, key: str, val: Any) -> dict[str, Any]:
     """Get fields from a data class based on metadata."""
     if not is_dataclass(data_class):
@@ -100,12 +94,7 @@ def _convert(
 
     # Iterables (sequence-like) — normalize to list for JSON-friendliness
     if isinstance(value, (list, tuple, set)):
-        seq = [_convert(v, skip_empty=skip_empty, empty_predicate=empty_predicate, enum_as=enum_as) for v in value]
-        # Optionally drop empty items inside sequences
-        if skip_empty:
-            seq = [s for s in seq if not empty_predicate(s)]
-        # Preserve tuple if you prefer; here we choose list for JSON-friendliness
-        return seq
+        return _convert_sequence(value, empty_predicate=empty_predicate, enum_as=enum_as, skip_empty=skip_empty)
 
     # Objects with __dict__ (non-dataclass)
     if hasattr(value, "__dict__") and not isinstance(value, (str, bytes, bytearray)):
@@ -117,6 +106,37 @@ def _convert(
 
     # Primitives
     return value
+
+
+def _convert_sequence(
+    value: list | tuple | set, *, empty_predicate: Callable[[Any], bool] | None, enum_as: str, skip_empty: bool
+) -> list[Any]:
+    """
+    Converts a collection (list, tuple, or set) to a processed list with optional filtering and transformations.
+
+    This function processes sequences by applying a conversion function to each element. It can also exclude
+    elements that are considered "empty" based on a predicate function. The conversion ensures compatibility
+    with JSON, producing a list regardless of the input type.
+
+    Parameters:
+        value: The input collection to be processed. Non-sequence types are not supported.
+        empty_predicate: A callable that determines if an element is "empty."
+            If None, the predicate is not used, and no filtering occurs.
+        enum_as: A string that determines how enumerations are treated during conversion. The exact behavior
+            depends on the implementation of the `_convert` function.
+        skip_empty: A flag indicating whether "empty" elements, as defined by the empty_predicate,
+            should be removed from the resulting list.
+
+    Returns:
+        A new list formed by processing the input collection and optionally filtering out empty elements.
+    """
+    seq = [_convert(v, skip_empty=skip_empty, empty_predicate=empty_predicate, enum_as=enum_as) for v in value]
+
+    # Optionally drop empty items inside sequences
+    if skip_empty:
+        seq = [s for s in seq if not empty_predicate(s)]
+
+    return seq
 
 
 def convert_dict(
