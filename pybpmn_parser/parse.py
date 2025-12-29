@@ -1,15 +1,25 @@
 """Parse a BPMN file."""
 
 from pathlib import Path
-from typing import Any, Optional
+from typing import Optional
 
 import xmltodict
 
+from pybpmn_parser.bpmn.infrastructure.definitions import Definitions
 from pybpmn_parser.bpmn.types import NAMESPACES
+from pybpmn_parser.core import index_ids
 from pybpmn_parser.factory import create_bpmn
 from pybpmn_parser.plugins import load_default_plugins
 from pybpmn_parser.plugins.moddle import convert_moddle_registry, load_moddle_file
 from pybpmn_parser.validator import validate
+
+
+class ParseResult:
+    """Result for parsing a BPMN file."""
+
+    def __init__(self, definitions: Definitions):
+        self.definition = definitions
+        self.elements_by_id = index_ids(definitions)
 
 
 class Parser:
@@ -25,7 +35,7 @@ class Parser:
             load_moddle_file(extension_path)
         convert_moddle_registry()
 
-    def parse_file(self, xml_file: Path) -> Any:
+    def parse_file(self, xml_file: Path) -> ParseResult:
         """
         Parse a BPMN XML file into internal representation.
 
@@ -38,7 +48,7 @@ class Parser:
         xml = xml_file.read_text(encoding="utf-8")
         return self.parse_string(xml)
 
-    def parse_string(self, xml_str: str) -> Any:
+    def parse_string(self, xml_str: str) -> ParseResult:
         """
         Parse a BPMN XML string into internal representation.
 
@@ -56,7 +66,4 @@ class Parser:
 
         # Parse root element
         root = xmltodict.parse(xml_str)
-        result = create_bpmn(root, self.ns_map)
-        if isinstance(result, list) and len(result) == 1:
-            return result[0]
-        return result
+        return ParseResult(create_bpmn(root, self.ns_map))

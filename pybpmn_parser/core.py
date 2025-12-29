@@ -255,3 +255,33 @@ def dataclass_to_dict(
         return {} if isinstance(result, dict) else result
 
     return result
+
+
+def index_ids(obj: Any) -> dict[str, Any]:
+    """
+    Indexes all 'id' fields within a dataclass object or its nested attributes.
+
+    The IDs are organized into a dictionary where the keys are the IDs and the values are the corresponding dataclass
+    instances.
+
+    Args:
+        obj: The input object to process and extract IDs from.
+
+    Returns:
+        A dictionary mapping IDs to their corresponding dataclass instances.
+    """
+    result: dict[str, Any] = {}
+    if not is_dataclass(obj):
+        return result
+
+    # Add IDs from child elements
+    for fld in fields(obj):
+        child_obj = getattr(obj, fld.name)
+        if isinstance(child_obj, list):
+            for item in child_obj:
+                result.update(index_ids(item))
+        elif fld.name == "id":
+            result[child_obj] = obj
+        else:
+            result |= index_ids(child_obj)
+    return result
