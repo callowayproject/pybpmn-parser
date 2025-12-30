@@ -35,6 +35,7 @@ repos:
     rev: v1.5.0
     hooks:
     -   id: detect-secrets
+        args: ["--baseline", ".secrets.baseline"]
         additional_dependencies: ["gibberish-detector"]
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.18.2
