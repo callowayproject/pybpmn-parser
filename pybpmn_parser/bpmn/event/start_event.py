@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from typing import Any
 
 from pybpmn_parser.bpmn.event.catch_event import CatchEvent
 from pybpmn_parser.bpmn.types import StartEventType
@@ -29,7 +30,7 @@ class StartEvent(CatchEvent):
     @property
     def event_type(self) -> StartEventType:
         """Return the event type."""
-        definitions = [
+        definitions: list[tuple[list[Any], StartEventType]] = [
             (self.message_event_definition, StartEventType.MESSAGE),
             (self.timer_event_definition, StartEventType.TIMER),
             (self.conditional_event_definition, StartEventType.CONDITIONAL),
@@ -53,7 +54,4 @@ class StartEvent(CatchEvent):
         if total_defs > 1:
             return StartEventType.PARALLEL_MULTIPLE if self.parallel_multiple else StartEventType.MULTIPLE
 
-        if total_defs == 0:
-            return StartEventType.NONE
-
-        return matched_type
+        return StartEventType.NONE if total_defs == 0 else matched_type

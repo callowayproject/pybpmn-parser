@@ -304,9 +304,3 @@ def validate_naming_conventions(process):
 
     return errors
 ```
-
-## Next Steps
-
-- Explore [Vendor Extensions](extensions.md) for working with extended BPMN
-- See validation examples in the [Examples Gallery](../examples/index.md)
-- Learn about the [API Reference](../reference/index.md) for detailed validation options
