@@ -79,7 +79,7 @@ path = "pybpmn_parser/__init__.py"
 default-groups = ["dev", "test", "docs"]
 
 [tool.uv.sources]
-markdown_customblocks = { path = "/Users/coordt/Projects/markdown-customblocks" }
+markdown_customblocks = { git = "https://github.com/callowayproject/markdown-customblocks" }
 
 [tool.coverage.run]
 branch = true

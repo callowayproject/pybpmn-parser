@@ -12,9 +12,10 @@ from pybpmn_parser.core import (
     _enum_to_primitive,
     convert_dataclass,
     convert_dict,
+    dataclass_to_dict,
     default_empty_predicate,
     get_fields_by_metadata,
-    dataclass_to_dict,
+    index_ids,
 )
 
 
@@ -487,3 +488,85 @@ class TestDataclassToDict:
         assert mock_convert.call_count == 1
         assert mock_convert.call_args[1]["skip_empty"] is True
         assert mock_convert.call_args[1]["empty_predicate"] == custom_predicate
+
+
+@dataclass
+class TestElement:
+    id: str
+    value: Any
+
+
+@dataclass
+class TestContainer:
+    elements: list[TestElement] = field(default_factory=list)
+
+
+class TestIndexIds:
+    """Unit tests for the index_ids function."""
+
+    def test_non_dataclass_returns_empty_dict(self):
+        """Test that an object not being a dataclass returns an empty dictionary."""
+        result = index_ids({"id": "123", "value": "test"})
+        assert result == {}
+
+    def test_missing_id_returns_empty_dict(self):
+        """Test that an empty dataclass returns an empty dictionary."""
+
+        @dataclass
+        class EmptyDataclass:
+            pass
+
+        empty_instance = EmptyDataclass()
+        result = index_ids(empty_instance)
+        assert result == {}
+
+    def test_single_element(self):
+        """Test that a dataclass with a single element maps correctly."""
+        element = TestElement(id="123", value="test")
+        result = index_ids(element)
+        assert result == {"123": element}
+
+    def test_list_of_elements(self):
+        """Test indexing with a list of elements within a container dataclass."""
+        elements = [TestElement(id="1", value="A"), TestElement(id="2", value="B")]
+        container = TestContainer(elements=elements)
+        result = index_ids(container)
+        assert result == {"1": elements[0], "2": elements[1]}
+
+    def test_nested_elements(self):
+        """Test indexing with nested dataclasses."""
+        nested_element = TestElement(id="nested", value="nested_value")
+        parent_element = TestContainer(elements=[nested_element])
+        result = index_ids(parent_element)
+        assert result == {"nested": nested_element}
+
+    def test_element_without_id(self):
+        """Test indexing ignores objects without an ID attribute."""
+
+        @dataclass
+        class ElementWithoutId:
+            value: str
+
+        obj = ElementWithoutId(value="no_id")
+        result = index_ids(obj)
+        assert result == {}
+
+    def test_mixed_container(self):
+        """Test indexing with a mix of elements (with and without IDs)."""
+
+        @dataclass
+        class MixedDataclass:
+            list_with_id: list[TestElement] = field(default_factory=list)
+            list_without_id: list[Any] = field(default_factory=list)
+
+        obj = MixedDataclass(list_with_id=[TestElement(id="abc", value="has_id")], list_without_id=["no_id"])
+        result = index_ids(obj)
+        assert result == {"abc": obj.list_with_id[0]}
+
+    def test_update_behavior(self):
+        """Test that indexing works correctly when called recursively."""
+        nested_1 = TestElement(id="nested1", value="value1")
+        nested_2 = TestElement(id="nested2", value="value2")
+        container = TestContainer(elements=[nested_1, nested_2])
+        result = index_ids(container)
+        assert result == {"nested1": nested_1, "nested2": nested_2}

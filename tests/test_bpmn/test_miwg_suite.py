@@ -6,7 +6,6 @@ from pathlib import Path
 import pytest
 from pytest import param
 
-from pybpmn_parser.core import dataclass_to_dict
 from pybpmn_parser.parse import Parser
 from tests._utils import assert_attributes
 

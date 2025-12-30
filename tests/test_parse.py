@@ -35,9 +35,9 @@ class TestParser:
         """
         parser = Parser()
         result = parser.parse_string(xml_str)
-        assert result.__class__.__name__ == "Definitions"
-        assert len(result.processes) == 1
-        assert result.processes[0].id == "Process_1"
+        assert result.__class__.__name__ == "ParseResult"
+        assert len(result.definition.processes) == 1
+        assert result.definition.processes[0].id == "Process_1"
 
     def test_invalid_bpmn_raises_validation_error(self):
         """Test parse function with an invalid BPMN XML string."""
@@ -84,7 +84,7 @@ class TestParseFile:
         """Parsing a valid BPMN file should return a Definitions object."""
         parser = Parser()
         result = parser.parse_file(fixture_dir / "kitchen-sink.bpmn")
-        assert result.__class__.__name__ == "Definitions"
+        assert result.__class__.__name__ == "ParseResult"
 
     def test_missing_file_raises_file_not_found_error(self, fixture_dir: Path):
         """Parsing a non-existent file should raise a FileNotFoundError."""

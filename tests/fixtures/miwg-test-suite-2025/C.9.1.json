@@ -1,7 +1,1052 @@
 {
-  "bpmndiagrams": [
-    {
+  "definition": {
+    "bpmndiagrams": [
+      {
+        "documentation": null,
+        "id": "BPMNDiagram_1",
+        "label_styles": [],
+        "name": null,
+        "plane": {
+          "bpmn_edges": [
+            {
+              "bpmn_element": "SequenceFlow_6",
+              "id": "BPMNEdge_SequenceFlow_6",
+              "label": {
+                "bounds": {
+                  "height": 6.0,
+                  "width": 90.0,
+                  "x": 591.0,
+                  "y": 139.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 594.0,
+                  "y": 139.0
+                },
+                {
+                  "x": 900.0,
+                  "y": 139.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "SequenceFlow_0i97ejj",
+              "id": "SequenceFlow_0i97ejj_di",
+              "label": {
+                "bounds": {
+                  "height": 0.0,
+                  "width": 90.0,
+                  "x": 488.0,
+                  "y": 224.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 594.0,
+                  "y": 197.0
+                },
+                {
+                  "x": 594.0,
+                  "y": 224.0
+                },
+                {
+                  "x": 663.0,
+                  "y": 224.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "SequenceFlow_1bqpxlf",
+              "id": "SequenceFlow_1bqpxlf_di",
+              "label": {
+                "bounds": {
+                  "height": 0.0,
+                  "width": 90.0,
+                  "x": 484.0,
+                  "y": 235.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 545.0,
+                  "y": 197.0
+                },
+                {
+                  "x": 545.0,
+                  "y": 320.0
+                },
+                {
+                  "x": 663.0,
+                  "y": 320.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "SequenceFlow_2",
+              "id": "BPMNEdge_SequenceFlow_2",
+              "label": {
+                "bounds": {
+                  "height": 6.0,
+                  "width": 90.0,
+                  "x": 681.0,
+                  "y": 320.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 763.0,
+                  "y": 320.0
+                },
+                {
+                  "x": 900.0,
+                  "y": 320.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "SequenceFlow_3",
+              "id": "BPMNEdge_SequenceFlow_3",
+              "label": {
+                "bounds": {
+                  "height": 6.0,
+                  "width": 90.0,
+                  "x": 681.0,
+                  "y": 224.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 763.0,
+                  "y": 224.0
+                },
+                {
+                  "x": 900.0,
+                  "y": 224.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "SequenceFlow_18a0pzl",
+              "id": "SequenceFlow_18a0pzl_di",
+              "label": {
+                "bounds": {
+                  "height": 0.0,
+                  "width": 90.0,
+                  "x": 369.0,
+                  "y": 129.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 423.0,
+                  "y": 139.0
+                },
+                {
+                  "x": 494.0,
+                  "y": 139.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "SequenceFlow_0d7dzn0",
+              "id": "SequenceFlow_0d7dzn0_di",
+              "label": {
+                "bounds": {
+                  "height": 0.0,
+                  "width": 90.0,
+                  "x": 152.0,
+                  "y": 121.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 248.0,
+                  "y": 139.0
+                },
+                {
+                  "x": 323.0,
+                  "y": 139.0
+                }
+              ]
+            }
+          ],
+          "bpmn_element": "Collaboration_0liisio",
+          "bpmn_shapes": [
+            {
+              "bounds": {
+                "height": 301.0,
+                "width": 829.0,
+                "x": 156.0,
+                "y": 76.0
+              },
+              "bpmn_element": "Participant_02",
+              "choreography_activity_shape": null,
+              "id": "Participant_012xlj2_di",
+              "is_expanded": null,
+              "is_horizontal": true,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": null,
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 80.0,
+                "width": 100.0,
+                "x": 323.0,
+                "y": 99.0
+              },
+              "bpmn_element": "SendTask_RequestDocument",
+              "choreography_activity_shape": null,
+              "id": "SendTask_1hvdsj6_di",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": null,
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 36.0,
+                "width": 36.0,
+                "x": 900.0,
+                "y": 206.0
+              },
+              "bpmn_element": "EndEvent_TalkedToCustomer",
+              "choreography_activity_shape": null,
+              "id": "_BPMNShape_EndEvent_30",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 14.0,
+                  "width": 81.0,
+                  "x": 879.0,
+                  "y": 247.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 80.0,
+                "width": 100.0,
+                "x": 663.0,
+                "y": 280.0
+              },
+              "bpmn_element": "SendTask_SendReminderEmail",
+              "choreography_activity_shape": null,
+              "id": "SendTask_0rs6zt3_di",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": null,
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 80.0,
+                "width": 100.0,
+                "x": 663.0,
+                "y": 184.0
+              },
+              "bpmn_element": "UserTask_CallCustomer",
+              "choreography_activity_shape": null,
+              "id": "UserTask_1pu6sug_di",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": null,
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 80.0,
+                "width": 100.0,
+                "x": 494.0,
+                "y": 99.0
+              },
+              "bpmn_element": "ReceiveTask_WaitForDocument",
+              "choreography_activity_shape": null,
+              "id": "ReceiveTask_1707zk0_di",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": null,
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 36.0,
+                "width": 36.0,
+                "x": 900.0,
+                "y": 121.0
+              },
+              "bpmn_element": "EndEvent_GotDocument",
+              "choreography_activity_shape": null,
+              "id": "EndEvent_1u6qjao_di",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 27.0,
+                  "width": 52.0,
+                  "x": 893.0,
+                  "y": 157.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 36.0,
+                "width": 36.0,
+                "x": 212.0,
+                "y": 121.0
+              },
+              "bpmn_element": "StartEvent_DocumentRequested",
+              "choreography_activity_shape": null,
+              "id": "_BPMNShape_StartEvent_2",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 27.0,
+                  "width": 52.0,
+                  "x": 205.0,
+                  "y": 157.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 36.0,
+                "width": 36.0,
+                "x": 900.0,
+                "y": 302.0
+              },
+              "bpmn_element": "EndEvent_ReminderSent",
+              "choreography_activity_shape": null,
+              "id": "_BPMNShape_EndEvent_29",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 14.0,
+                  "width": 53.0,
+                  "x": 892.0,
+                  "y": 338.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 36.0,
+                "width": 36.0,
+                "x": 576.0,
+                "y": 161.0
+              },
+              "bpmn_element": "BoundaryEvent_2",
+              "choreography_activity_shape": null,
+              "id": "_BPMNShape_BoundaryEvent_5",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 14.0,
+                  "width": 36.0,
+                  "x": 605.0,
+                  "y": 196.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 36.0,
+                "width": 36.0,
+                "x": 527.0,
+                "y": 161.0
+              },
+              "bpmn_element": "BoundaryEvent_1",
+              "choreography_activity_shape": null,
+              "id": "_BPMNShape_BoundaryEvent_4",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 14.0,
+                  "width": 24.0,
+                  "x": 515.0,
+                  "y": 196.0
+                },
+                "id": null,
+                "label_style": null
+              },
+              "participant_band_kind": null
+            }
+          ],
+          "diagram_elements": [],
+          "id": "BPMNPlane_1"
+        },
+        "resolution": null
+      }
+    ],
+    "camunda_diagram_relation_id": "af86f867-ab21-41fd-aa8f-3d258886a557",
+    "cancel_event_definitions": [],
+    "categories": [],
+    "collaborations": [
+      {
+        "artifacts": [],
+        "associations": [],
+        "call_conversations": [],
+        "choreography_refs": [],
+        "conversation_associations": [],
+        "conversation_links": [],
+        "conversation_nodes": [],
+        "conversations": [],
+        "correlation_keys": [],
+        "documentation": [],
+        "extension_elements": null,
+        "groups": [],
+        "id": "Collaboration_0liisio",
+        "is_closed": false,
+        "message_flow_associations": [],
+        "message_flows": [],
+        "name": null,
+        "participant_associations": [],
+        "participants": [
+          {
+            "documentation": [],
+            "end_point_refs": [],
+            "extension_elements": null,
+            "id": "Participant_02",
+            "interface_refs": [],
+            "name": "Document Request",
+            "participant_multiplicity": null,
+            "process_ref": "requestDocument_en"
+          }
+        ],
+        "sub_conversations": [],
+        "text_annotations": []
+      }
+    ],
+    "compensate_event_definitions": [],
+    "conditional_event_definitions": [],
+    "correlation_properties": [],
+    "data_stores": [],
+    "end_points": [],
+    "error_event_definitions": [],
+    "errors": [],
+    "escalation_event_definitions": [],
+    "escalations": [],
+    "event_definitions": [],
+    "exporter": "Camunda Web Modeler",
+    "exporter_version": "3cd8340",
+    "expression_language": "http://www.w3.org/1999/XPath",
+    "extensions": [],
+    "global_business_rule_tasks": [],
+    "global_conversations": [],
+    "global_manual_tasks": [],
+    "global_script_tasks": [],
+    "global_tasks": [],
+    "global_user_tasks": [],
+    "id": "Definitions_1",
+    "imports": [],
+    "interfaces": [],
+    "item_definitions": [],
+    "link_event_definitions": [],
+    "message_event_definitions": [],
+    "messages": [
+      {
+        "documentation": [],
+        "extension_elements": {
+          "zeebe_subscription": {
+            "correlation_key": "= documentReferenceId"
+          }
+        },
+        "id": "Message_1",
+        "item_ref": null,
+        "name": "MESSAGE_documentReceived"
+      }
+    ],
+    "modeler_execution_platform": "Camunda Cloud",
+    "modeler_execution_platform_version": "8.1.0",
+    "name": null,
+    "partner_entities": [],
+    "partner_roles": [],
+    "processes": [
+      {
+        "ad_hoc_sub_processes": [],
+        "artifacts": [],
+        "associations": [],
+        "auditing": null,
+        "boundary_events": [
+          {
+            "attached_to_ref": "ReceiveTask_WaitForDocument",
+            "auditing": null,
+            "cancel_activity": false,
+            "cancel_event_definition": [],
+            "category_value_refs": [],
+            "compensate_event_definition": [],
+            "conditional_event_definition": [],
+            "data_output": [],
+            "data_output_association": [],
+            "documentation": [],
+            "error_event_definition": [],
+            "escalation_event_definition": [],
+            "event_definition": [],
+            "event_definition_ref": [],
+            "extension_elements": null,
+            "id": "BoundaryEvent_1",
+            "incoming": [],
+            "link_event_definition": [],
+            "message_event_definition": [],
+            "monitoring": null,
+            "name": "daily",
+            "outgoing": "SequenceFlow_1bqpxlf",
+            "output_set": null,
+            "parallel_multiple": false,
+            "properties": [],
+            "signal_event_definition": [],
+            "terminate_event_definition": [],
+            "timer_event_definition": [
+              {
+                "documentation": [],
+                "extension_elements": null,
+                "id": "_TimerEventDefinition_2",
+                "time_cycle": {
+                  "documentation": [],
+                  "extension_elements": null,
+                  "id": null,
+                  "value": "R6/P1D",
+                  "xsi_type": "bpmn:tFormalExpression"
+                },
+                "time_date": null,
+                "time_duration": null
+              }
+            ]
+          },
+          {
+            "attached_to_ref": "ReceiveTask_WaitForDocument",
+            "auditing": null,
+            "cancel_activity": true,
+            "cancel_event_definition": [],
+            "category_value_refs": [],
+            "compensate_event_definition": [],
+            "conditional_event_definition": [],
+            "data_output": [],
+            "data_output_association": [],
+            "documentation": [],
+            "error_event_definition": [],
+            "escalation_event_definition": [],
+            "event_definition": [],
+            "event_definition_ref": [],
+            "extension_elements": null,
+            "id": "BoundaryEvent_2",
+            "incoming": [],
+            "link_event_definition": [],
+            "message_event_definition": [],
+            "monitoring": null,
+            "name": "1 week",
+            "outgoing": "SequenceFlow_0i97ejj",
+            "output_set": null,
+            "parallel_multiple": false,
+            "properties": [],
+            "signal_event_definition": [],
+            "terminate_event_definition": [],
+            "timer_event_definition": [
+              {
+                "documentation": [],
+                "extension_elements": null,
+                "id": "_TimerEventDefinition_3",
+                "time_cycle": null,
+                "time_date": null,
+                "time_duration": {
+                  "documentation": [],
+                  "extension_elements": null,
+                  "id": null,
+                  "value": "P7D",
+                  "xsi_type": "bpmn:tFormalExpression"
+                }
+              }
+            ]
+          }
+        ],
+        "business_rule_tasks": [],
+        "call_activities": [],
+        "camunda_is_startable_in_tasklist": "false",
+        "complex_gateways": [],
+        "correlation_subscriptions": [],
+        "data_object_references": [],
+        "data_objects": [],
+        "data_store_references": [],
+        "definitional_collaboration_ref": null,
+        "documentation": [],
+        "end_events": [
+          {
+            "auditing": null,
+            "camunda_async_after": "true",
+            "cancel_event_definitions": [],
+            "category_value_refs": [],
+            "compensate_event_definitions": [],
+            "conditional_event_definitions": [],
+            "data_input_associations": [],
+            "data_inputs": [],
+            "documentation": [],
+            "error_event_definitions": [],
+            "escalation_event_definitions": [],
+            "event_definition_refs": [],
+            "event_definitions": [],
+            "extension_elements": null,
+            "id": "EndEvent_TalkedToCustomer",
+            "incoming": "SequenceFlow_3",
+            "input_set": null,
+            "link_event_definitions": [],
+            "message_event_definitions": [],
+            "monitoring": null,
+            "name": "Answer received",
+            "outgoing": [],
+            "properties": [],
+            "signal_event_definitions": [],
+            "terminate_event_definitions": [],
+            "timer_event_definitions": []
+          },
+          {
+            "auditing": null,
+            "camunda_async_after": "true",
+            "cancel_event_definitions": [],
+            "category_value_refs": [],
+            "compensate_event_definitions": [],
+            "conditional_event_definitions": [],
+            "data_input_associations": [],
+            "data_inputs": [],
+            "documentation": [],
+            "error_event_definitions": [],
+            "escalation_event_definitions": [],
+            "event_definition_refs": [],
+            "event_definitions": [],
+            "extension_elements": null,
+            "id": "EndEvent_GotDocument",
+            "incoming": "SequenceFlow_6",
+            "input_set": null,
+            "link_event_definitions": [],
+            "message_event_definitions": [],
+            "monitoring": null,
+            "name": "Document received",
+            "outgoing": [],
+            "properties": [],
+            "signal_event_definitions": [],
+            "terminate_event_definitions": [],
+            "timer_event_definitions": []
+          },
+          {
+            "auditing": null,
+            "cancel_event_definitions": [],
+            "category_value_refs": [],
+            "compensate_event_definitions": [],
+            "conditional_event_definitions": [],
+            "data_input_associations": [],
+            "data_inputs": [],
+            "documentation": [],
+            "error_event_definitions": [],
+            "escalation_event_definitions": [],
+            "event_definition_refs": [],
+            "event_definitions": [],
+            "extension_elements": null,
+            "id": "EndEvent_ReminderSent",
+            "incoming": "SequenceFlow_2",
+            "input_set": null,
+            "link_event_definitions": [],
+            "message_event_definitions": [],
+            "monitoring": null,
+            "name": "Email sent",
+            "outgoing": [],
+            "properties": [],
+            "signal_event_definitions": [],
+            "terminate_event_definitions": [],
+            "timer_event_definitions": []
+          }
+        ],
+        "event_based_gateways": [],
+        "events": [],
+        "exclusive_gateways": [],
+        "extension_elements": null,
+        "flow_elements": [],
+        "groups": [],
+        "human_performers": [],
+        "id": "requestDocument_en",
+        "implicit_throw_events": [],
+        "inclusive_gateways": [],
+        "intermediate_catch_events": [],
+        "intermediate_throw_events": [],
+        "io_bindings": [],
+        "io_specification": null,
+        "is_closed": false,
+        "is_executable": true,
+        "lane_sets": [],
+        "manual_tasks": [],
+        "monitoring": null,
+        "name": "Document Request",
+        "parallel_gateways": [],
+        "performers": [],
+        "potential_owners": [],
+        "process_type": "None",
+        "properties": [],
+        "receive_tasks": [
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "completion_quantity": 1,
+            "data_input_associations": [],
+            "data_output_associations": [],
+            "default": null,
+            "documentation": [],
+            "extension_elements": null,
+            "human_performers": [],
+            "id": "ReceiveTask_WaitForDocument",
+            "implementation": "##WebService",
+            "incoming": "SequenceFlow_18a0pzl",
+            "instantiate": false,
+            "io_specification": null,
+            "is_for_compensation": false,
+            "loop_characteristics": null,
+            "message_ref": "Message_1",
+            "monitoring": null,
+            "multi_instance_loop_characteristics": null,
+            "name": "Wait for answer",
+            "operation_ref": null,
+            "outgoing": "SequenceFlow_6",
+            "performers": [],
+            "potential_owners": [],
+            "properties": [],
+            "resources": [],
+            "standard_loop_characteristics": null,
+            "start_quantity": 1
+          }
+        ],
+        "resources": [],
+        "script_tasks": [],
+        "send_tasks": [
+          {
+            "auditing": null,
+            "camunda_async": "true",
+            "camunda_topic": "emailService",
+            "camunda_type": "external",
+            "category_value_refs": [],
+            "completion_quantity": 1,
+            "data_input_associations": [],
+            "data_output_associations": [],
+            "default": null,
+            "documentation": [],
+            "extension_elements": {
+              "zeebe_task_definition": {
+                "retries": null,
+                "type": "email"
+              }
+            },
+            "human_performers": [],
+            "id": "SendTask_RequestDocument",
+            "implementation": "##WebService",
+            "incoming": "SequenceFlow_0d7dzn0",
+            "io_specification": null,
+            "is_for_compensation": false,
+            "loop_characteristics": null,
+            "message_ref": null,
+            "monitoring": null,
+            "multi_instance_loop_characteristics": null,
+            "name": "Request document",
+            "operation_ref": null,
+            "outgoing": "SequenceFlow_18a0pzl",
+            "performers": [],
+            "potential_owners": [],
+            "properties": [],
+            "resources": [],
+            "standard_loop_characteristics": null,
+            "start_quantity": 1
+          },
+          {
+            "auditing": null,
+            "camunda_async_before": "true",
+            "camunda_topic": "emailService",
+            "camunda_type": "external",
+            "category_value_refs": [],
+            "completion_quantity": 1,
+            "data_input_associations": [],
+            "data_output_associations": [],
+            "default": null,
+            "documentation": [],
+            "extension_elements": {
+              "zeebe_task_definition": {
+                "retries": null,
+                "type": "email"
+              }
+            },
+            "human_performers": [],
+            "id": "SendTask_SendReminderEmail",
+            "implementation": "##WebService",
+            "incoming": "SequenceFlow_1bqpxlf",
+            "io_specification": null,
+            "is_for_compensation": false,
+            "loop_characteristics": null,
+            "message_ref": null,
+            "monitoring": null,
+            "multi_instance_loop_characteristics": null,
+            "name": "Send reminder email",
+            "operation_ref": null,
+            "outgoing": "SequenceFlow_2",
+            "performers": [],
+            "potential_owners": [],
+            "properties": [],
+            "resources": [],
+            "standard_loop_characteristics": null,
+            "start_quantity": 1
+          }
+        ],
+        "sequence_flows": [
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "SequenceFlow_6",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": "",
+            "source_ref": "ReceiveTask_WaitForDocument",
+            "target_ref": "EndEvent_GotDocument"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "SequenceFlow_0i97ejj",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": null,
+            "source_ref": "BoundaryEvent_2",
+            "target_ref": "UserTask_CallCustomer"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "SequenceFlow_1bqpxlf",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": null,
+            "source_ref": "BoundaryEvent_1",
+            "target_ref": "SendTask_SendReminderEmail"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "SequenceFlow_2",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": "",
+            "source_ref": "SendTask_SendReminderEmail",
+            "target_ref": "EndEvent_ReminderSent"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "SequenceFlow_3",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": "",
+            "source_ref": "UserTask_CallCustomer",
+            "target_ref": "EndEvent_TalkedToCustomer"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "SequenceFlow_18a0pzl",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": null,
+            "source_ref": "SendTask_RequestDocument",
+            "target_ref": "ReceiveTask_WaitForDocument"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "SequenceFlow_0d7dzn0",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": null,
+            "source_ref": "StartEvent_DocumentRequested",
+            "target_ref": "SendTask_RequestDocument"
+          }
+        ],
+        "service_tasks": [],
+        "start_events": [
+          {
+            "auditing": null,
+            "cancel_event_definition": [],
+            "category_value_refs": [],
+            "compensate_event_definition": [],
+            "conditional_event_definition": [],
+            "data_output": [],
+            "data_output_association": [],
+            "documentation": [],
+            "error_event_definition": [],
+            "escalation_event_definition": [],
+            "event_definition": [],
+            "event_definition_ref": [],
+            "extension_elements": null,
+            "id": "StartEvent_DocumentRequested",
+            "incoming": [],
+            "is_interrupting": true,
+            "link_event_definition": [],
+            "message_event_definition": [],
+            "monitoring": null,
+            "name": "Document requested",
+            "outgoing": "SequenceFlow_0d7dzn0",
+            "output_set": null,
+            "parallel_multiple": false,
+            "properties": [],
+            "signal_event_definition": [],
+            "terminate_event_definition": [],
+            "timer_event_definition": []
+          }
+        ],
+        "sub_processes": [],
+        "supported_interface_refs": [],
+        "supports": [],
+        "tasks": [],
+        "text_annotations": [],
+        "transactions": [],
+        "user_tasks": [
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "completion_quantity": 1,
+            "data_input_associations": [],
+            "data_output_associations": [],
+            "default": null,
+            "documentation": [],
+            "extension_elements": null,
+            "human_performers": [],
+            "id": "UserTask_CallCustomer",
+            "implementation": "##unspecified",
+            "incoming": "SequenceFlow_0i97ejj",
+            "io_specification": null,
+            "is_for_compensation": false,
+            "loop_characteristics": null,
+            "monitoring": null,
+            "multi_instance_loop_characteristics": null,
+            "name": "Call customer",
+            "outgoing": "SequenceFlow_3",
+            "performers": [],
+            "potential_owners": [],
+            "properties": [],
+            "renderings": [],
+            "resources": [],
+            "standard_loop_characteristics": null,
+            "start_quantity": 1
+          }
+        ]
+      }
+    ],
+    "relationships": [],
+    "resources": [],
+    "root_elements": [],
+    "signal_event_definitions": [],
+    "signals": [],
+    "target_namespace": "http://bpmn.io/schema/bpmn/Definitions_1",
+    "terminate_event_definitions": [],
+    "timer_event_definitions": [],
+    "type_language": "http://www.w3.org/2001/XMLSchema",
+    "xsi_schema_location": "http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+  },
+  "elements_by_id": {
+    "BPMNDiagram_1": {
+      "documentation": null,
       "id": "BPMNDiagram_1",
+      "label_styles": [],
+      "name": null,
       "plane": {
         "bpmn_edges": [
           {
@@ -13,8 +1058,13 @@
                 "width": 90.0,
                 "x": 591.0,
                 "y": 139.0
-              }
+              },
+              "id": null,
+              "label_style": null
             },
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 594.0,
@@ -35,8 +1085,13 @@
                 "width": 90.0,
                 "x": 488.0,
                 "y": 224.0
-              }
+              },
+              "id": null,
+              "label_style": null
             },
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 594.0,
@@ -61,8 +1116,13 @@
                 "width": 90.0,
                 "x": 484.0,
                 "y": 235.0
-              }
+              },
+              "id": null,
+              "label_style": null
             },
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 545.0,
@@ -87,8 +1147,13 @@
                 "width": 90.0,
                 "x": 681.0,
                 "y": 320.0
-              }
+              },
+              "id": null,
+              "label_style": null
             },
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 763.0,
@@ -109,8 +1174,13 @@
                 "width": 90.0,
                 "x": 681.0,
                 "y": 224.0
-              }
+              },
+              "id": null,
+              "label_style": null
             },
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 763.0,
@@ -131,8 +1201,13 @@
                 "width": 90.0,
                 "x": 369.0,
                 "y": 129.0
-              }
+              },
+              "id": null,
+              "label_style": null
             },
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 423.0,
@@ -153,8 +1228,13 @@
                 "width": 90.0,
                 "x": 152.0,
                 "y": 121.0
-              }
+              },
+              "id": null,
+              "label_style": null
             },
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 248.0,
@@ -177,8 +1257,14 @@
               "y": 76.0
             },
             "bpmn_element": "Participant_02",
+            "choreography_activity_shape": null,
             "id": "Participant_012xlj2_di",
-            "is_horizontal": true
+            "is_expanded": null,
+            "is_horizontal": true,
+            "is_marker_visible": null,
+            "is_message_visible": null,
+            "label": null,
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -188,7 +1274,14 @@
               "y": 99.0
             },
             "bpmn_element": "SendTask_RequestDocument",
-            "id": "SendTask_1hvdsj6_di"
+            "choreography_activity_shape": null,
+            "id": "SendTask_1hvdsj6_di",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
+            "label": null,
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -198,15 +1291,23 @@
               "y": 206.0
             },
             "bpmn_element": "EndEvent_TalkedToCustomer",
+            "choreography_activity_shape": null,
             "id": "_BPMNShape_EndEvent_30",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 14.0,
                 "width": 81.0,
                 "x": 879.0,
                 "y": 247.0
-              }
-            }
+              },
+              "id": null,
+              "label_style": null
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -216,7 +1317,14 @@
               "y": 280.0
             },
             "bpmn_element": "SendTask_SendReminderEmail",
-            "id": "SendTask_0rs6zt3_di"
+            "choreography_activity_shape": null,
+            "id": "SendTask_0rs6zt3_di",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
+            "label": null,
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -226,7 +1334,14 @@
               "y": 184.0
             },
             "bpmn_element": "UserTask_CallCustomer",
-            "id": "UserTask_1pu6sug_di"
+            "choreography_activity_shape": null,
+            "id": "UserTask_1pu6sug_di",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
+            "label": null,
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -236,7 +1351,14 @@
               "y": 99.0
             },
             "bpmn_element": "ReceiveTask_WaitForDocument",
-            "id": "ReceiveTask_1707zk0_di"
+            "choreography_activity_shape": null,
+            "id": "ReceiveTask_1707zk0_di",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
+            "label": null,
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -246,15 +1368,23 @@
               "y": 121.0
             },
             "bpmn_element": "EndEvent_GotDocument",
+            "choreography_activity_shape": null,
             "id": "EndEvent_1u6qjao_di",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 27.0,
                 "width": 52.0,
                 "x": 893.0,
                 "y": 157.0
-              }
-            }
+              },
+              "id": null,
+              "label_style": null
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -264,15 +1394,23 @@
               "y": 121.0
             },
             "bpmn_element": "StartEvent_DocumentRequested",
+            "choreography_activity_shape": null,
             "id": "_BPMNShape_StartEvent_2",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 27.0,
                 "width": 52.0,
                 "x": 205.0,
                 "y": 157.0
-              }
-            }
+              },
+              "id": null,
+              "label_style": null
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -282,15 +1420,23 @@
               "y": 302.0
             },
             "bpmn_element": "EndEvent_ReminderSent",
+            "choreography_activity_shape": null,
             "id": "_BPMNShape_EndEvent_29",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 14.0,
                 "width": 53.0,
                 "x": 892.0,
                 "y": 338.0
-              }
-            }
+              },
+              "id": null,
+              "label_style": null
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -300,15 +1446,23 @@
               "y": 161.0
             },
             "bpmn_element": "BoundaryEvent_2",
+            "choreography_activity_shape": null,
             "id": "_BPMNShape_BoundaryEvent_5",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 14.0,
                 "width": 36.0,
                 "x": 605.0,
                 "y": 196.0
-              }
-            }
+              },
+              "id": null,
+              "label_style": null
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -318,83 +1472,2555 @@
               "y": 161.0
             },
             "bpmn_element": "BoundaryEvent_1",
+            "choreography_activity_shape": null,
             "id": "_BPMNShape_BoundaryEvent_4",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 14.0,
                 "width": 24.0,
                 "x": 515.0,
                 "y": 196.0
-              }
-            }
+              },
+              "id": null,
+              "label_style": null
+            },
+            "participant_band_kind": null
           }
         ],
+        "diagram_elements": [],
         "id": "BPMNPlane_1"
-      }
-    }
-  ],
-  "camunda_diagram_relation_id": "af86f867-ab21-41fd-aa8f-3d258886a557",
-  "collaborations": [
-    {
-      "id": "Collaboration_0liisio",
-      "is_closed": false,
-      "participants": [
+      },
+      "resolution": null
+    },
+    "BPMNEdge_SequenceFlow_2": {
+      "bpmn_element": "SequenceFlow_2",
+      "id": "BPMNEdge_SequenceFlow_2",
+      "label": {
+        "bounds": {
+          "height": 6.0,
+          "width": 90.0,
+          "x": 681.0,
+          "y": 320.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
         {
-          "id": "Participant_02",
-          "name": "Document Request",
-          "process_ref": "requestDocument_en"
+          "x": 763.0,
+          "y": 320.0
+        },
+        {
+          "x": 900.0,
+          "y": 320.0
         }
       ]
-    }
-  ],
-  "exporter": "Camunda Web Modeler",
-  "exporter_version": "3cd8340",
-  "expression_language": "http://www.w3.org/1999/XPath",
-  "id": "Definitions_1",
-  "messages": [
-    {
+    },
+    "BPMNEdge_SequenceFlow_3": {
+      "bpmn_element": "SequenceFlow_3",
+      "id": "BPMNEdge_SequenceFlow_3",
+      "label": {
+        "bounds": {
+          "height": 6.0,
+          "width": 90.0,
+          "x": 681.0,
+          "y": 224.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 763.0,
+          "y": 224.0
+        },
+        {
+          "x": 900.0,
+          "y": 224.0
+        }
+      ]
+    },
+    "BPMNEdge_SequenceFlow_6": {
+      "bpmn_element": "SequenceFlow_6",
+      "id": "BPMNEdge_SequenceFlow_6",
+      "label": {
+        "bounds": {
+          "height": 6.0,
+          "width": 90.0,
+          "x": 591.0,
+          "y": 139.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 594.0,
+          "y": 139.0
+        },
+        {
+          "x": 900.0,
+          "y": 139.0
+        }
+      ]
+    },
+    "BPMNPlane_1": {
+      "bpmn_edges": [
+        {
+          "bpmn_element": "SequenceFlow_6",
+          "id": "BPMNEdge_SequenceFlow_6",
+          "label": {
+            "bounds": {
+              "height": 6.0,
+              "width": 90.0,
+              "x": 591.0,
+              "y": 139.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "message_visible_kind": null,
+          "source_element": null,
+          "target_element": null,
+          "waypoint": [
+            {
+              "x": 594.0,
+              "y": 139.0
+            },
+            {
+              "x": 900.0,
+              "y": 139.0
+            }
+          ]
+        },
+        {
+          "bpmn_element": "SequenceFlow_0i97ejj",
+          "id": "SequenceFlow_0i97ejj_di",
+          "label": {
+            "bounds": {
+              "height": 0.0,
+              "width": 90.0,
+              "x": 488.0,
+              "y": 224.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "message_visible_kind": null,
+          "source_element": null,
+          "target_element": null,
+          "waypoint": [
+            {
+              "x": 594.0,
+              "y": 197.0
+            },
+            {
+              "x": 594.0,
+              "y": 224.0
+            },
+            {
+              "x": 663.0,
+              "y": 224.0
+            }
+          ]
+        },
+        {
+          "bpmn_element": "SequenceFlow_1bqpxlf",
+          "id": "SequenceFlow_1bqpxlf_di",
+          "label": {
+            "bounds": {
+              "height": 0.0,
+              "width": 90.0,
+              "x": 484.0,
+              "y": 235.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "message_visible_kind": null,
+          "source_element": null,
+          "target_element": null,
+          "waypoint": [
+            {
+              "x": 545.0,
+              "y": 197.0
+            },
+            {
+              "x": 545.0,
+              "y": 320.0
+            },
+            {
+              "x": 663.0,
+              "y": 320.0
+            }
+          ]
+        },
+        {
+          "bpmn_element": "SequenceFlow_2",
+          "id": "BPMNEdge_SequenceFlow_2",
+          "label": {
+            "bounds": {
+              "height": 6.0,
+              "width": 90.0,
+              "x": 681.0,
+              "y": 320.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "message_visible_kind": null,
+          "source_element": null,
+          "target_element": null,
+          "waypoint": [
+            {
+              "x": 763.0,
+              "y": 320.0
+            },
+            {
+              "x": 900.0,
+              "y": 320.0
+            }
+          ]
+        },
+        {
+          "bpmn_element": "SequenceFlow_3",
+          "id": "BPMNEdge_SequenceFlow_3",
+          "label": {
+            "bounds": {
+              "height": 6.0,
+              "width": 90.0,
+              "x": 681.0,
+              "y": 224.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "message_visible_kind": null,
+          "source_element": null,
+          "target_element": null,
+          "waypoint": [
+            {
+              "x": 763.0,
+              "y": 224.0
+            },
+            {
+              "x": 900.0,
+              "y": 224.0
+            }
+          ]
+        },
+        {
+          "bpmn_element": "SequenceFlow_18a0pzl",
+          "id": "SequenceFlow_18a0pzl_di",
+          "label": {
+            "bounds": {
+              "height": 0.0,
+              "width": 90.0,
+              "x": 369.0,
+              "y": 129.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "message_visible_kind": null,
+          "source_element": null,
+          "target_element": null,
+          "waypoint": [
+            {
+              "x": 423.0,
+              "y": 139.0
+            },
+            {
+              "x": 494.0,
+              "y": 139.0
+            }
+          ]
+        },
+        {
+          "bpmn_element": "SequenceFlow_0d7dzn0",
+          "id": "SequenceFlow_0d7dzn0_di",
+          "label": {
+            "bounds": {
+              "height": 0.0,
+              "width": 90.0,
+              "x": 152.0,
+              "y": 121.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "message_visible_kind": null,
+          "source_element": null,
+          "target_element": null,
+          "waypoint": [
+            {
+              "x": 248.0,
+              "y": 139.0
+            },
+            {
+              "x": 323.0,
+              "y": 139.0
+            }
+          ]
+        }
+      ],
+      "bpmn_element": "Collaboration_0liisio",
+      "bpmn_shapes": [
+        {
+          "bounds": {
+            "height": 301.0,
+            "width": 829.0,
+            "x": 156.0,
+            "y": 76.0
+          },
+          "bpmn_element": "Participant_02",
+          "choreography_activity_shape": null,
+          "id": "Participant_012xlj2_di",
+          "is_expanded": null,
+          "is_horizontal": true,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": null,
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 80.0,
+            "width": 100.0,
+            "x": 323.0,
+            "y": 99.0
+          },
+          "bpmn_element": "SendTask_RequestDocument",
+          "choreography_activity_shape": null,
+          "id": "SendTask_1hvdsj6_di",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": null,
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 36.0,
+            "width": 36.0,
+            "x": 900.0,
+            "y": 206.0
+          },
+          "bpmn_element": "EndEvent_TalkedToCustomer",
+          "choreography_activity_shape": null,
+          "id": "_BPMNShape_EndEvent_30",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": {
+            "bounds": {
+              "height": 14.0,
+              "width": 81.0,
+              "x": 879.0,
+              "y": 247.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 80.0,
+            "width": 100.0,
+            "x": 663.0,
+            "y": 280.0
+          },
+          "bpmn_element": "SendTask_SendReminderEmail",
+          "choreography_activity_shape": null,
+          "id": "SendTask_0rs6zt3_di",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": null,
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 80.0,
+            "width": 100.0,
+            "x": 663.0,
+            "y": 184.0
+          },
+          "bpmn_element": "UserTask_CallCustomer",
+          "choreography_activity_shape": null,
+          "id": "UserTask_1pu6sug_di",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": null,
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 80.0,
+            "width": 100.0,
+            "x": 494.0,
+            "y": 99.0
+          },
+          "bpmn_element": "ReceiveTask_WaitForDocument",
+          "choreography_activity_shape": null,
+          "id": "ReceiveTask_1707zk0_di",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": null,
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 36.0,
+            "width": 36.0,
+            "x": 900.0,
+            "y": 121.0
+          },
+          "bpmn_element": "EndEvent_GotDocument",
+          "choreography_activity_shape": null,
+          "id": "EndEvent_1u6qjao_di",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": {
+            "bounds": {
+              "height": 27.0,
+              "width": 52.0,
+              "x": 893.0,
+              "y": 157.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 36.0,
+            "width": 36.0,
+            "x": 212.0,
+            "y": 121.0
+          },
+          "bpmn_element": "StartEvent_DocumentRequested",
+          "choreography_activity_shape": null,
+          "id": "_BPMNShape_StartEvent_2",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": {
+            "bounds": {
+              "height": 27.0,
+              "width": 52.0,
+              "x": 205.0,
+              "y": 157.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 36.0,
+            "width": 36.0,
+            "x": 900.0,
+            "y": 302.0
+          },
+          "bpmn_element": "EndEvent_ReminderSent",
+          "choreography_activity_shape": null,
+          "id": "_BPMNShape_EndEvent_29",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": {
+            "bounds": {
+              "height": 14.0,
+              "width": 53.0,
+              "x": 892.0,
+              "y": 338.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 36.0,
+            "width": 36.0,
+            "x": 576.0,
+            "y": 161.0
+          },
+          "bpmn_element": "BoundaryEvent_2",
+          "choreography_activity_shape": null,
+          "id": "_BPMNShape_BoundaryEvent_5",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": {
+            "bounds": {
+              "height": 14.0,
+              "width": 36.0,
+              "x": 605.0,
+              "y": 196.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "participant_band_kind": null
+        },
+        {
+          "bounds": {
+            "height": 36.0,
+            "width": 36.0,
+            "x": 527.0,
+            "y": 161.0
+          },
+          "bpmn_element": "BoundaryEvent_1",
+          "choreography_activity_shape": null,
+          "id": "_BPMNShape_BoundaryEvent_4",
+          "is_expanded": null,
+          "is_horizontal": null,
+          "is_marker_visible": null,
+          "is_message_visible": null,
+          "label": {
+            "bounds": {
+              "height": 14.0,
+              "width": 24.0,
+              "x": 515.0,
+              "y": 196.0
+            },
+            "id": null,
+            "label_style": null
+          },
+          "participant_band_kind": null
+        }
+      ],
+      "diagram_elements": [],
+      "id": "BPMNPlane_1"
+    },
+    "BoundaryEvent_1": {
+      "attached_to_ref": "ReceiveTask_WaitForDocument",
+      "auditing": null,
+      "cancel_activity": false,
+      "cancel_event_definition": [],
+      "category_value_refs": [],
+      "compensate_event_definition": [],
+      "conditional_event_definition": [],
+      "data_output": [],
+      "data_output_association": [],
+      "documentation": [],
+      "error_event_definition": [],
+      "escalation_event_definition": [],
+      "event_definition": [],
+      "event_definition_ref": [],
+      "extension_elements": null,
+      "id": "BoundaryEvent_1",
+      "incoming": [],
+      "link_event_definition": [],
+      "message_event_definition": [],
+      "monitoring": null,
+      "name": "daily",
+      "outgoing": "SequenceFlow_1bqpxlf",
+      "output_set": null,
+      "parallel_multiple": false,
+      "properties": [],
+      "signal_event_definition": [],
+      "terminate_event_definition": [],
+      "timer_event_definition": [
+        {
+          "documentation": [],
+          "extension_elements": null,
+          "id": "_TimerEventDefinition_2",
+          "time_cycle": {
+            "documentation": [],
+            "extension_elements": null,
+            "id": null,
+            "value": "R6/P1D",
+            "xsi_type": "bpmn:tFormalExpression"
+          },
+          "time_date": null,
+          "time_duration": null
+        }
+      ]
+    },
+    "BoundaryEvent_2": {
+      "attached_to_ref": "ReceiveTask_WaitForDocument",
+      "auditing": null,
+      "cancel_activity": true,
+      "cancel_event_definition": [],
+      "category_value_refs": [],
+      "compensate_event_definition": [],
+      "conditional_event_definition": [],
+      "data_output": [],
+      "data_output_association": [],
+      "documentation": [],
+      "error_event_definition": [],
+      "escalation_event_definition": [],
+      "event_definition": [],
+      "event_definition_ref": [],
+      "extension_elements": null,
+      "id": "BoundaryEvent_2",
+      "incoming": [],
+      "link_event_definition": [],
+      "message_event_definition": [],
+      "monitoring": null,
+      "name": "1 week",
+      "outgoing": "SequenceFlow_0i97ejj",
+      "output_set": null,
+      "parallel_multiple": false,
+      "properties": [],
+      "signal_event_definition": [],
+      "terminate_event_definition": [],
+      "timer_event_definition": [
+        {
+          "documentation": [],
+          "extension_elements": null,
+          "id": "_TimerEventDefinition_3",
+          "time_cycle": null,
+          "time_date": null,
+          "time_duration": {
+            "documentation": [],
+            "extension_elements": null,
+            "id": null,
+            "value": "P7D",
+            "xsi_type": "bpmn:tFormalExpression"
+          }
+        }
+      ]
+    },
+    "Collaboration_0liisio": {
+      "artifacts": [],
+      "associations": [],
+      "call_conversations": [],
+      "choreography_refs": [],
+      "conversation_associations": [],
+      "conversation_links": [],
+      "conversation_nodes": [],
+      "conversations": [],
+      "correlation_keys": [],
+      "documentation": [],
+      "extension_elements": null,
+      "groups": [],
+      "id": "Collaboration_0liisio",
+      "is_closed": false,
+      "message_flow_associations": [],
+      "message_flows": [],
+      "name": null,
+      "participant_associations": [],
+      "participants": [
+        {
+          "documentation": [],
+          "end_point_refs": [],
+          "extension_elements": null,
+          "id": "Participant_02",
+          "interface_refs": [],
+          "name": "Document Request",
+          "participant_multiplicity": null,
+          "process_ref": "requestDocument_en"
+        }
+      ],
+      "sub_conversations": [],
+      "text_annotations": []
+    },
+    "Definitions_1": {
+      "bpmndiagrams": [
+        {
+          "documentation": null,
+          "id": "BPMNDiagram_1",
+          "label_styles": [],
+          "name": null,
+          "plane": {
+            "bpmn_edges": [
+              {
+                "bpmn_element": "SequenceFlow_6",
+                "id": "BPMNEdge_SequenceFlow_6",
+                "label": {
+                  "bounds": {
+                    "height": 6.0,
+                    "width": 90.0,
+                    "x": 591.0,
+                    "y": 139.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 594.0,
+                    "y": 139.0
+                  },
+                  {
+                    "x": 900.0,
+                    "y": 139.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "SequenceFlow_0i97ejj",
+                "id": "SequenceFlow_0i97ejj_di",
+                "label": {
+                  "bounds": {
+                    "height": 0.0,
+                    "width": 90.0,
+                    "x": 488.0,
+                    "y": 224.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 594.0,
+                    "y": 197.0
+                  },
+                  {
+                    "x": 594.0,
+                    "y": 224.0
+                  },
+                  {
+                    "x": 663.0,
+                    "y": 224.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "SequenceFlow_1bqpxlf",
+                "id": "SequenceFlow_1bqpxlf_di",
+                "label": {
+                  "bounds": {
+                    "height": 0.0,
+                    "width": 90.0,
+                    "x": 484.0,
+                    "y": 235.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 545.0,
+                    "y": 197.0
+                  },
+                  {
+                    "x": 545.0,
+                    "y": 320.0
+                  },
+                  {
+                    "x": 663.0,
+                    "y": 320.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "SequenceFlow_2",
+                "id": "BPMNEdge_SequenceFlow_2",
+                "label": {
+                  "bounds": {
+                    "height": 6.0,
+                    "width": 90.0,
+                    "x": 681.0,
+                    "y": 320.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 763.0,
+                    "y": 320.0
+                  },
+                  {
+                    "x": 900.0,
+                    "y": 320.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "SequenceFlow_3",
+                "id": "BPMNEdge_SequenceFlow_3",
+                "label": {
+                  "bounds": {
+                    "height": 6.0,
+                    "width": 90.0,
+                    "x": 681.0,
+                    "y": 224.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 763.0,
+                    "y": 224.0
+                  },
+                  {
+                    "x": 900.0,
+                    "y": 224.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "SequenceFlow_18a0pzl",
+                "id": "SequenceFlow_18a0pzl_di",
+                "label": {
+                  "bounds": {
+                    "height": 0.0,
+                    "width": 90.0,
+                    "x": 369.0,
+                    "y": 129.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 423.0,
+                    "y": 139.0
+                  },
+                  {
+                    "x": 494.0,
+                    "y": 139.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "SequenceFlow_0d7dzn0",
+                "id": "SequenceFlow_0d7dzn0_di",
+                "label": {
+                  "bounds": {
+                    "height": 0.0,
+                    "width": 90.0,
+                    "x": 152.0,
+                    "y": 121.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 248.0,
+                    "y": 139.0
+                  },
+                  {
+                    "x": 323.0,
+                    "y": 139.0
+                  }
+                ]
+              }
+            ],
+            "bpmn_element": "Collaboration_0liisio",
+            "bpmn_shapes": [
+              {
+                "bounds": {
+                  "height": 301.0,
+                  "width": 829.0,
+                  "x": 156.0,
+                  "y": 76.0
+                },
+                "bpmn_element": "Participant_02",
+                "choreography_activity_shape": null,
+                "id": "Participant_012xlj2_di",
+                "is_expanded": null,
+                "is_horizontal": true,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": null,
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 80.0,
+                  "width": 100.0,
+                  "x": 323.0,
+                  "y": 99.0
+                },
+                "bpmn_element": "SendTask_RequestDocument",
+                "choreography_activity_shape": null,
+                "id": "SendTask_1hvdsj6_di",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": null,
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 36.0,
+                  "width": 36.0,
+                  "x": 900.0,
+                  "y": 206.0
+                },
+                "bpmn_element": "EndEvent_TalkedToCustomer",
+                "choreography_activity_shape": null,
+                "id": "_BPMNShape_EndEvent_30",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 14.0,
+                    "width": 81.0,
+                    "x": 879.0,
+                    "y": 247.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 80.0,
+                  "width": 100.0,
+                  "x": 663.0,
+                  "y": 280.0
+                },
+                "bpmn_element": "SendTask_SendReminderEmail",
+                "choreography_activity_shape": null,
+                "id": "SendTask_0rs6zt3_di",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": null,
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 80.0,
+                  "width": 100.0,
+                  "x": 663.0,
+                  "y": 184.0
+                },
+                "bpmn_element": "UserTask_CallCustomer",
+                "choreography_activity_shape": null,
+                "id": "UserTask_1pu6sug_di",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": null,
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 80.0,
+                  "width": 100.0,
+                  "x": 494.0,
+                  "y": 99.0
+                },
+                "bpmn_element": "ReceiveTask_WaitForDocument",
+                "choreography_activity_shape": null,
+                "id": "ReceiveTask_1707zk0_di",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": null,
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 36.0,
+                  "width": 36.0,
+                  "x": 900.0,
+                  "y": 121.0
+                },
+                "bpmn_element": "EndEvent_GotDocument",
+                "choreography_activity_shape": null,
+                "id": "EndEvent_1u6qjao_di",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 27.0,
+                    "width": 52.0,
+                    "x": 893.0,
+                    "y": 157.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 36.0,
+                  "width": 36.0,
+                  "x": 212.0,
+                  "y": 121.0
+                },
+                "bpmn_element": "StartEvent_DocumentRequested",
+                "choreography_activity_shape": null,
+                "id": "_BPMNShape_StartEvent_2",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 27.0,
+                    "width": 52.0,
+                    "x": 205.0,
+                    "y": 157.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 36.0,
+                  "width": 36.0,
+                  "x": 900.0,
+                  "y": 302.0
+                },
+                "bpmn_element": "EndEvent_ReminderSent",
+                "choreography_activity_shape": null,
+                "id": "_BPMNShape_EndEvent_29",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 14.0,
+                    "width": 53.0,
+                    "x": 892.0,
+                    "y": 338.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 36.0,
+                  "width": 36.0,
+                  "x": 576.0,
+                  "y": 161.0
+                },
+                "bpmn_element": "BoundaryEvent_2",
+                "choreography_activity_shape": null,
+                "id": "_BPMNShape_BoundaryEvent_5",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 14.0,
+                    "width": 36.0,
+                    "x": 605.0,
+                    "y": 196.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 36.0,
+                  "width": 36.0,
+                  "x": 527.0,
+                  "y": 161.0
+                },
+                "bpmn_element": "BoundaryEvent_1",
+                "choreography_activity_shape": null,
+                "id": "_BPMNShape_BoundaryEvent_4",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 14.0,
+                    "width": 24.0,
+                    "x": 515.0,
+                    "y": 196.0
+                  },
+                  "id": null,
+                  "label_style": null
+                },
+                "participant_band_kind": null
+              }
+            ],
+            "diagram_elements": [],
+            "id": "BPMNPlane_1"
+          },
+          "resolution": null
+        }
+      ],
+      "camunda_diagram_relation_id": "af86f867-ab21-41fd-aa8f-3d258886a557",
+      "cancel_event_definitions": [],
+      "categories": [],
+      "collaborations": [
+        {
+          "artifacts": [],
+          "associations": [],
+          "call_conversations": [],
+          "choreography_refs": [],
+          "conversation_associations": [],
+          "conversation_links": [],
+          "conversation_nodes": [],
+          "conversations": [],
+          "correlation_keys": [],
+          "documentation": [],
+          "extension_elements": null,
+          "groups": [],
+          "id": "Collaboration_0liisio",
+          "is_closed": false,
+          "message_flow_associations": [],
+          "message_flows": [],
+          "name": null,
+          "participant_associations": [],
+          "participants": [
+            {
+              "documentation": [],
+              "end_point_refs": [],
+              "extension_elements": null,
+              "id": "Participant_02",
+              "interface_refs": [],
+              "name": "Document Request",
+              "participant_multiplicity": null,
+              "process_ref": "requestDocument_en"
+            }
+          ],
+          "sub_conversations": [],
+          "text_annotations": []
+        }
+      ],
+      "compensate_event_definitions": [],
+      "conditional_event_definitions": [],
+      "correlation_properties": [],
+      "data_stores": [],
+      "end_points": [],
+      "error_event_definitions": [],
+      "errors": [],
+      "escalation_event_definitions": [],
+      "escalations": [],
+      "event_definitions": [],
+      "exporter": "Camunda Web Modeler",
+      "exporter_version": "3cd8340",
+      "expression_language": "http://www.w3.org/1999/XPath",
+      "extensions": [],
+      "global_business_rule_tasks": [],
+      "global_conversations": [],
+      "global_manual_tasks": [],
+      "global_script_tasks": [],
+      "global_tasks": [],
+      "global_user_tasks": [],
+      "id": "Definitions_1",
+      "imports": [],
+      "interfaces": [],
+      "item_definitions": [],
+      "link_event_definitions": [],
+      "message_event_definitions": [],
+      "messages": [
+        {
+          "documentation": [],
+          "extension_elements": {
+            "zeebe_subscription": {
+              "correlation_key": "= documentReferenceId"
+            }
+          },
+          "id": "Message_1",
+          "item_ref": null,
+          "name": "MESSAGE_documentReceived"
+        }
+      ],
+      "modeler_execution_platform": "Camunda Cloud",
+      "modeler_execution_platform_version": "8.1.0",
+      "name": null,
+      "partner_entities": [],
+      "partner_roles": [],
+      "processes": [
+        {
+          "ad_hoc_sub_processes": [],
+          "artifacts": [],
+          "associations": [],
+          "auditing": null,
+          "boundary_events": [
+            {
+              "attached_to_ref": "ReceiveTask_WaitForDocument",
+              "auditing": null,
+              "cancel_activity": false,
+              "cancel_event_definition": [],
+              "category_value_refs": [],
+              "compensate_event_definition": [],
+              "conditional_event_definition": [],
+              "data_output": [],
+              "data_output_association": [],
+              "documentation": [],
+              "error_event_definition": [],
+              "escalation_event_definition": [],
+              "event_definition": [],
+              "event_definition_ref": [],
+              "extension_elements": null,
+              "id": "BoundaryEvent_1",
+              "incoming": [],
+              "link_event_definition": [],
+              "message_event_definition": [],
+              "monitoring": null,
+              "name": "daily",
+              "outgoing": "SequenceFlow_1bqpxlf",
+              "output_set": null,
+              "parallel_multiple": false,
+              "properties": [],
+              "signal_event_definition": [],
+              "terminate_event_definition": [],
+              "timer_event_definition": [
+                {
+                  "documentation": [],
+                  "extension_elements": null,
+                  "id": "_TimerEventDefinition_2",
+                  "time_cycle": {
+                    "documentation": [],
+                    "extension_elements": null,
+                    "id": null,
+                    "value": "R6/P1D",
+                    "xsi_type": "bpmn:tFormalExpression"
+                  },
+                  "time_date": null,
+                  "time_duration": null
+                }
+              ]
+            },
+            {
+              "attached_to_ref": "ReceiveTask_WaitForDocument",
+              "auditing": null,
+              "cancel_activity": true,
+              "cancel_event_definition": [],
+              "category_value_refs": [],
+              "compensate_event_definition": [],
+              "conditional_event_definition": [],
+              "data_output": [],
+              "data_output_association": [],
+              "documentation": [],
+              "error_event_definition": [],
+              "escalation_event_definition": [],
+              "event_definition": [],
+              "event_definition_ref": [],
+              "extension_elements": null,
+              "id": "BoundaryEvent_2",
+              "incoming": [],
+              "link_event_definition": [],
+              "message_event_definition": [],
+              "monitoring": null,
+              "name": "1 week",
+              "outgoing": "SequenceFlow_0i97ejj",
+              "output_set": null,
+              "parallel_multiple": false,
+              "properties": [],
+              "signal_event_definition": [],
+              "terminate_event_definition": [],
+              "timer_event_definition": [
+                {
+                  "documentation": [],
+                  "extension_elements": null,
+                  "id": "_TimerEventDefinition_3",
+                  "time_cycle": null,
+                  "time_date": null,
+                  "time_duration": {
+                    "documentation": [],
+                    "extension_elements": null,
+                    "id": null,
+                    "value": "P7D",
+                    "xsi_type": "bpmn:tFormalExpression"
+                  }
+                }
+              ]
+            }
+          ],
+          "business_rule_tasks": [],
+          "call_activities": [],
+          "camunda_is_startable_in_tasklist": "false",
+          "complex_gateways": [],
+          "correlation_subscriptions": [],
+          "data_object_references": [],
+          "data_objects": [],
+          "data_store_references": [],
+          "definitional_collaboration_ref": null,
+          "documentation": [],
+          "end_events": [
+            {
+              "auditing": null,
+              "camunda_async_after": "true",
+              "cancel_event_definitions": [],
+              "category_value_refs": [],
+              "compensate_event_definitions": [],
+              "conditional_event_definitions": [],
+              "data_input_associations": [],
+              "data_inputs": [],
+              "documentation": [],
+              "error_event_definitions": [],
+              "escalation_event_definitions": [],
+              "event_definition_refs": [],
+              "event_definitions": [],
+              "extension_elements": null,
+              "id": "EndEvent_TalkedToCustomer",
+              "incoming": "SequenceFlow_3",
+              "input_set": null,
+              "link_event_definitions": [],
+              "message_event_definitions": [],
+              "monitoring": null,
+              "name": "Answer received",
+              "outgoing": [],
+              "properties": [],
+              "signal_event_definitions": [],
+              "terminate_event_definitions": [],
+              "timer_event_definitions": []
+            },
+            {
+              "auditing": null,
+              "camunda_async_after": "true",
+              "cancel_event_definitions": [],
+              "category_value_refs": [],
+              "compensate_event_definitions": [],
+              "conditional_event_definitions": [],
+              "data_input_associations": [],
+              "data_inputs": [],
+              "documentation": [],
+              "error_event_definitions": [],
+              "escalation_event_definitions": [],
+              "event_definition_refs": [],
+              "event_definitions": [],
+              "extension_elements": null,
+              "id": "EndEvent_GotDocument",
+              "incoming": "SequenceFlow_6",
+              "input_set": null,
+              "link_event_definitions": [],
+              "message_event_definitions": [],
+              "monitoring": null,
+              "name": "Document received",
+              "outgoing": [],
+              "properties": [],
+              "signal_event_definitions": [],
+              "terminate_event_definitions": [],
+              "timer_event_definitions": []
+            },
+            {
+              "auditing": null,
+              "cancel_event_definitions": [],
+              "category_value_refs": [],
+              "compensate_event_definitions": [],
+              "conditional_event_definitions": [],
+              "data_input_associations": [],
+              "data_inputs": [],
+              "documentation": [],
+              "error_event_definitions": [],
+              "escalation_event_definitions": [],
+              "event_definition_refs": [],
+              "event_definitions": [],
+              "extension_elements": null,
+              "id": "EndEvent_ReminderSent",
+              "incoming": "SequenceFlow_2",
+              "input_set": null,
+              "link_event_definitions": [],
+              "message_event_definitions": [],
+              "monitoring": null,
+              "name": "Email sent",
+              "outgoing": [],
+              "properties": [],
+              "signal_event_definitions": [],
+              "terminate_event_definitions": [],
+              "timer_event_definitions": []
+            }
+          ],
+          "event_based_gateways": [],
+          "events": [],
+          "exclusive_gateways": [],
+          "extension_elements": null,
+          "flow_elements": [],
+          "groups": [],
+          "human_performers": [],
+          "id": "requestDocument_en",
+          "implicit_throw_events": [],
+          "inclusive_gateways": [],
+          "intermediate_catch_events": [],
+          "intermediate_throw_events": [],
+          "io_bindings": [],
+          "io_specification": null,
+          "is_closed": false,
+          "is_executable": true,
+          "lane_sets": [],
+          "manual_tasks": [],
+          "monitoring": null,
+          "name": "Document Request",
+          "parallel_gateways": [],
+          "performers": [],
+          "potential_owners": [],
+          "process_type": "None",
+          "properties": [],
+          "receive_tasks": [
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "completion_quantity": 1,
+              "data_input_associations": [],
+              "data_output_associations": [],
+              "default": null,
+              "documentation": [],
+              "extension_elements": null,
+              "human_performers": [],
+              "id": "ReceiveTask_WaitForDocument",
+              "implementation": "##WebService",
+              "incoming": "SequenceFlow_18a0pzl",
+              "instantiate": false,
+              "io_specification": null,
+              "is_for_compensation": false,
+              "loop_characteristics": null,
+              "message_ref": "Message_1",
+              "monitoring": null,
+              "multi_instance_loop_characteristics": null,
+              "name": "Wait for answer",
+              "operation_ref": null,
+              "outgoing": "SequenceFlow_6",
+              "performers": [],
+              "potential_owners": [],
+              "properties": [],
+              "resources": [],
+              "standard_loop_characteristics": null,
+              "start_quantity": 1
+            }
+          ],
+          "resources": [],
+          "script_tasks": [],
+          "send_tasks": [
+            {
+              "auditing": null,
+              "camunda_async": "true",
+              "camunda_topic": "emailService",
+              "camunda_type": "external",
+              "category_value_refs": [],
+              "completion_quantity": 1,
+              "data_input_associations": [],
+              "data_output_associations": [],
+              "default": null,
+              "documentation": [],
+              "extension_elements": {
+                "zeebe_task_definition": {
+                  "retries": null,
+                  "type": "email"
+                }
+              },
+              "human_performers": [],
+              "id": "SendTask_RequestDocument",
+              "implementation": "##WebService",
+              "incoming": "SequenceFlow_0d7dzn0",
+              "io_specification": null,
+              "is_for_compensation": false,
+              "loop_characteristics": null,
+              "message_ref": null,
+              "monitoring": null,
+              "multi_instance_loop_characteristics": null,
+              "name": "Request document",
+              "operation_ref": null,
+              "outgoing": "SequenceFlow_18a0pzl",
+              "performers": [],
+              "potential_owners": [],
+              "properties": [],
+              "resources": [],
+              "standard_loop_characteristics": null,
+              "start_quantity": 1
+            },
+            {
+              "auditing": null,
+              "camunda_async_before": "true",
+              "camunda_topic": "emailService",
+              "camunda_type": "external",
+              "category_value_refs": [],
+              "completion_quantity": 1,
+              "data_input_associations": [],
+              "data_output_associations": [],
+              "default": null,
+              "documentation": [],
+              "extension_elements": {
+                "zeebe_task_definition": {
+                  "retries": null,
+                  "type": "email"
+                }
+              },
+              "human_performers": [],
+              "id": "SendTask_SendReminderEmail",
+              "implementation": "##WebService",
+              "incoming": "SequenceFlow_1bqpxlf",
+              "io_specification": null,
+              "is_for_compensation": false,
+              "loop_characteristics": null,
+              "message_ref": null,
+              "monitoring": null,
+              "multi_instance_loop_characteristics": null,
+              "name": "Send reminder email",
+              "operation_ref": null,
+              "outgoing": "SequenceFlow_2",
+              "performers": [],
+              "potential_owners": [],
+              "properties": [],
+              "resources": [],
+              "standard_loop_characteristics": null,
+              "start_quantity": 1
+            }
+          ],
+          "sequence_flows": [
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "SequenceFlow_6",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": "",
+              "source_ref": "ReceiveTask_WaitForDocument",
+              "target_ref": "EndEvent_GotDocument"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "SequenceFlow_0i97ejj",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": null,
+              "source_ref": "BoundaryEvent_2",
+              "target_ref": "UserTask_CallCustomer"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "SequenceFlow_1bqpxlf",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": null,
+              "source_ref": "BoundaryEvent_1",
+              "target_ref": "SendTask_SendReminderEmail"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "SequenceFlow_2",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": "",
+              "source_ref": "SendTask_SendReminderEmail",
+              "target_ref": "EndEvent_ReminderSent"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "SequenceFlow_3",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": "",
+              "source_ref": "UserTask_CallCustomer",
+              "target_ref": "EndEvent_TalkedToCustomer"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "SequenceFlow_18a0pzl",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": null,
+              "source_ref": "SendTask_RequestDocument",
+              "target_ref": "ReceiveTask_WaitForDocument"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "SequenceFlow_0d7dzn0",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": null,
+              "source_ref": "StartEvent_DocumentRequested",
+              "target_ref": "SendTask_RequestDocument"
+            }
+          ],
+          "service_tasks": [],
+          "start_events": [
+            {
+              "auditing": null,
+              "cancel_event_definition": [],
+              "category_value_refs": [],
+              "compensate_event_definition": [],
+              "conditional_event_definition": [],
+              "data_output": [],
+              "data_output_association": [],
+              "documentation": [],
+              "error_event_definition": [],
+              "escalation_event_definition": [],
+              "event_definition": [],
+              "event_definition_ref": [],
+              "extension_elements": null,
+              "id": "StartEvent_DocumentRequested",
+              "incoming": [],
+              "is_interrupting": true,
+              "link_event_definition": [],
+              "message_event_definition": [],
+              "monitoring": null,
+              "name": "Document requested",
+              "outgoing": "SequenceFlow_0d7dzn0",
+              "output_set": null,
+              "parallel_multiple": false,
+              "properties": [],
+              "signal_event_definition": [],
+              "terminate_event_definition": [],
+              "timer_event_definition": []
+            }
+          ],
+          "sub_processes": [],
+          "supported_interface_refs": [],
+          "supports": [],
+          "tasks": [],
+          "text_annotations": [],
+          "transactions": [],
+          "user_tasks": [
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "completion_quantity": 1,
+              "data_input_associations": [],
+              "data_output_associations": [],
+              "default": null,
+              "documentation": [],
+              "extension_elements": null,
+              "human_performers": [],
+              "id": "UserTask_CallCustomer",
+              "implementation": "##unspecified",
+              "incoming": "SequenceFlow_0i97ejj",
+              "io_specification": null,
+              "is_for_compensation": false,
+              "loop_characteristics": null,
+              "monitoring": null,
+              "multi_instance_loop_characteristics": null,
+              "name": "Call customer",
+              "outgoing": "SequenceFlow_3",
+              "performers": [],
+              "potential_owners": [],
+              "properties": [],
+              "renderings": [],
+              "resources": [],
+              "standard_loop_characteristics": null,
+              "start_quantity": 1
+            }
+          ]
+        }
+      ],
+      "relationships": [],
+      "resources": [],
+      "root_elements": [],
+      "signal_event_definitions": [],
+      "signals": [],
+      "target_namespace": "http://bpmn.io/schema/bpmn/Definitions_1",
+      "terminate_event_definitions": [],
+      "timer_event_definitions": [],
+      "type_language": "http://www.w3.org/2001/XMLSchema",
+      "xsi_schema_location": "http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+    },
+    "EndEvent_1u6qjao_di": {
+      "bounds": {
+        "height": 36.0,
+        "width": 36.0,
+        "x": 900.0,
+        "y": 121.0
+      },
+      "bpmn_element": "EndEvent_GotDocument",
+      "choreography_activity_shape": null,
+      "id": "EndEvent_1u6qjao_di",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 27.0,
+          "width": 52.0,
+          "x": 893.0,
+          "y": 157.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "participant_band_kind": null
+    },
+    "EndEvent_GotDocument": {
+      "auditing": null,
+      "camunda_async_after": "true",
+      "cancel_event_definitions": [],
+      "category_value_refs": [],
+      "compensate_event_definitions": [],
+      "conditional_event_definitions": [],
+      "data_input_associations": [],
+      "data_inputs": [],
+      "documentation": [],
+      "error_event_definitions": [],
+      "escalation_event_definitions": [],
+      "event_definition_refs": [],
+      "event_definitions": [],
+      "extension_elements": null,
+      "id": "EndEvent_GotDocument",
+      "incoming": "SequenceFlow_6",
+      "input_set": null,
+      "link_event_definitions": [],
+      "message_event_definitions": [],
+      "monitoring": null,
+      "name": "Document received",
+      "outgoing": [],
+      "properties": [],
+      "signal_event_definitions": [],
+      "terminate_event_definitions": [],
+      "timer_event_definitions": []
+    },
+    "EndEvent_ReminderSent": {
+      "auditing": null,
+      "cancel_event_definitions": [],
+      "category_value_refs": [],
+      "compensate_event_definitions": [],
+      "conditional_event_definitions": [],
+      "data_input_associations": [],
+      "data_inputs": [],
+      "documentation": [],
+      "error_event_definitions": [],
+      "escalation_event_definitions": [],
+      "event_definition_refs": [],
+      "event_definitions": [],
+      "extension_elements": null,
+      "id": "EndEvent_ReminderSent",
+      "incoming": "SequenceFlow_2",
+      "input_set": null,
+      "link_event_definitions": [],
+      "message_event_definitions": [],
+      "monitoring": null,
+      "name": "Email sent",
+      "outgoing": [],
+      "properties": [],
+      "signal_event_definitions": [],
+      "terminate_event_definitions": [],
+      "timer_event_definitions": []
+    },
+    "EndEvent_TalkedToCustomer": {
+      "auditing": null,
+      "camunda_async_after": "true",
+      "cancel_event_definitions": [],
+      "category_value_refs": [],
+      "compensate_event_definitions": [],
+      "conditional_event_definitions": [],
+      "data_input_associations": [],
+      "data_inputs": [],
+      "documentation": [],
+      "error_event_definitions": [],
+      "escalation_event_definitions": [],
+      "event_definition_refs": [],
+      "event_definitions": [],
+      "extension_elements": null,
+      "id": "EndEvent_TalkedToCustomer",
+      "incoming": "SequenceFlow_3",
+      "input_set": null,
+      "link_event_definitions": [],
+      "message_event_definitions": [],
+      "monitoring": null,
+      "name": "Answer received",
+      "outgoing": [],
+      "properties": [],
+      "signal_event_definitions": [],
+      "terminate_event_definitions": [],
+      "timer_event_definitions": []
+    },
+    "Message_1": {
+      "documentation": [],
       "extension_elements": {
         "zeebe_subscription": {
           "correlation_key": "= documentReferenceId"
         }
       },
       "id": "Message_1",
+      "item_ref": null,
       "name": "MESSAGE_documentReceived"
-    }
-  ],
-  "modeler_execution_platform": "Camunda Cloud",
-  "modeler_execution_platform_version": "8.1.0",
-  "processes": [
-    {
+    },
+    "Participant_012xlj2_di": {
+      "bounds": {
+        "height": 301.0,
+        "width": 829.0,
+        "x": 156.0,
+        "y": 76.0
+      },
+      "bpmn_element": "Participant_02",
+      "choreography_activity_shape": null,
+      "id": "Participant_012xlj2_di",
+      "is_expanded": null,
+      "is_horizontal": true,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": null,
+      "participant_band_kind": null
+    },
+    "Participant_02": {
+      "documentation": [],
+      "end_point_refs": [],
+      "extension_elements": null,
+      "id": "Participant_02",
+      "interface_refs": [],
+      "name": "Document Request",
+      "participant_multiplicity": null,
+      "process_ref": "requestDocument_en"
+    },
+    "ReceiveTask_1707zk0_di": {
+      "bounds": {
+        "height": 80.0,
+        "width": 100.0,
+        "x": 494.0,
+        "y": 99.0
+      },
+      "bpmn_element": "ReceiveTask_WaitForDocument",
+      "choreography_activity_shape": null,
+      "id": "ReceiveTask_1707zk0_di",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": null,
+      "participant_band_kind": null
+    },
+    "ReceiveTask_WaitForDocument": {
+      "auditing": null,
+      "category_value_refs": [],
+      "completion_quantity": 1,
+      "data_input_associations": [],
+      "data_output_associations": [],
+      "default": null,
+      "documentation": [],
+      "extension_elements": null,
+      "human_performers": [],
+      "id": "ReceiveTask_WaitForDocument",
+      "implementation": "##WebService",
+      "incoming": "SequenceFlow_18a0pzl",
+      "instantiate": false,
+      "io_specification": null,
+      "is_for_compensation": false,
+      "loop_characteristics": null,
+      "message_ref": "Message_1",
+      "monitoring": null,
+      "multi_instance_loop_characteristics": null,
+      "name": "Wait for answer",
+      "operation_ref": null,
+      "outgoing": "SequenceFlow_6",
+      "performers": [],
+      "potential_owners": [],
+      "properties": [],
+      "resources": [],
+      "standard_loop_characteristics": null,
+      "start_quantity": 1
+    },
+    "SendTask_0rs6zt3_di": {
+      "bounds": {
+        "height": 80.0,
+        "width": 100.0,
+        "x": 663.0,
+        "y": 280.0
+      },
+      "bpmn_element": "SendTask_SendReminderEmail",
+      "choreography_activity_shape": null,
+      "id": "SendTask_0rs6zt3_di",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": null,
+      "participant_band_kind": null
+    },
+    "SendTask_1hvdsj6_di": {
+      "bounds": {
+        "height": 80.0,
+        "width": 100.0,
+        "x": 323.0,
+        "y": 99.0
+      },
+      "bpmn_element": "SendTask_RequestDocument",
+      "choreography_activity_shape": null,
+      "id": "SendTask_1hvdsj6_di",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": null,
+      "participant_band_kind": null
+    },
+    "SendTask_RequestDocument": {
+      "auditing": null,
+      "camunda_async": "true",
+      "camunda_topic": "emailService",
+      "camunda_type": "external",
+      "category_value_refs": [],
+      "completion_quantity": 1,
+      "data_input_associations": [],
+      "data_output_associations": [],
+      "default": null,
+      "documentation": [],
+      "extension_elements": {
+        "zeebe_task_definition": {
+          "retries": null,
+          "type": "email"
+        }
+      },
+      "human_performers": [],
+      "id": "SendTask_RequestDocument",
+      "implementation": "##WebService",
+      "incoming": "SequenceFlow_0d7dzn0",
+      "io_specification": null,
+      "is_for_compensation": false,
+      "loop_characteristics": null,
+      "message_ref": null,
+      "monitoring": null,
+      "multi_instance_loop_characteristics": null,
+      "name": "Request document",
+      "operation_ref": null,
+      "outgoing": "SequenceFlow_18a0pzl",
+      "performers": [],
+      "potential_owners": [],
+      "properties": [],
+      "resources": [],
+      "standard_loop_characteristics": null,
+      "start_quantity": 1
+    },
+    "SendTask_SendReminderEmail": {
+      "auditing": null,
+      "camunda_async_before": "true",
+      "camunda_topic": "emailService",
+      "camunda_type": "external",
+      "category_value_refs": [],
+      "completion_quantity": 1,
+      "data_input_associations": [],
+      "data_output_associations": [],
+      "default": null,
+      "documentation": [],
+      "extension_elements": {
+        "zeebe_task_definition": {
+          "retries": null,
+          "type": "email"
+        }
+      },
+      "human_performers": [],
+      "id": "SendTask_SendReminderEmail",
+      "implementation": "##WebService",
+      "incoming": "SequenceFlow_1bqpxlf",
+      "io_specification": null,
+      "is_for_compensation": false,
+      "loop_characteristics": null,
+      "message_ref": null,
+      "monitoring": null,
+      "multi_instance_loop_characteristics": null,
+      "name": "Send reminder email",
+      "operation_ref": null,
+      "outgoing": "SequenceFlow_2",
+      "performers": [],
+      "potential_owners": [],
+      "properties": [],
+      "resources": [],
+      "standard_loop_characteristics": null,
+      "start_quantity": 1
+    },
+    "SequenceFlow_0d7dzn0": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "SequenceFlow_0d7dzn0",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": null,
+      "source_ref": "StartEvent_DocumentRequested",
+      "target_ref": "SendTask_RequestDocument"
+    },
+    "SequenceFlow_0d7dzn0_di": {
+      "bpmn_element": "SequenceFlow_0d7dzn0",
+      "id": "SequenceFlow_0d7dzn0_di",
+      "label": {
+        "bounds": {
+          "height": 0.0,
+          "width": 90.0,
+          "x": 152.0,
+          "y": 121.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 248.0,
+          "y": 139.0
+        },
+        {
+          "x": 323.0,
+          "y": 139.0
+        }
+      ]
+    },
+    "SequenceFlow_0i97ejj": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "SequenceFlow_0i97ejj",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": null,
+      "source_ref": "BoundaryEvent_2",
+      "target_ref": "UserTask_CallCustomer"
+    },
+    "SequenceFlow_0i97ejj_di": {
+      "bpmn_element": "SequenceFlow_0i97ejj",
+      "id": "SequenceFlow_0i97ejj_di",
+      "label": {
+        "bounds": {
+          "height": 0.0,
+          "width": 90.0,
+          "x": 488.0,
+          "y": 224.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 594.0,
+          "y": 197.0
+        },
+        {
+          "x": 594.0,
+          "y": 224.0
+        },
+        {
+          "x": 663.0,
+          "y": 224.0
+        }
+      ]
+    },
+    "SequenceFlow_18a0pzl": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "SequenceFlow_18a0pzl",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": null,
+      "source_ref": "SendTask_RequestDocument",
+      "target_ref": "ReceiveTask_WaitForDocument"
+    },
+    "SequenceFlow_18a0pzl_di": {
+      "bpmn_element": "SequenceFlow_18a0pzl",
+      "id": "SequenceFlow_18a0pzl_di",
+      "label": {
+        "bounds": {
+          "height": 0.0,
+          "width": 90.0,
+          "x": 369.0,
+          "y": 129.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 423.0,
+          "y": 139.0
+        },
+        {
+          "x": 494.0,
+          "y": 139.0
+        }
+      ]
+    },
+    "SequenceFlow_1bqpxlf": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "SequenceFlow_1bqpxlf",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": null,
+      "source_ref": "BoundaryEvent_1",
+      "target_ref": "SendTask_SendReminderEmail"
+    },
+    "SequenceFlow_1bqpxlf_di": {
+      "bpmn_element": "SequenceFlow_1bqpxlf",
+      "id": "SequenceFlow_1bqpxlf_di",
+      "label": {
+        "bounds": {
+          "height": 0.0,
+          "width": 90.0,
+          "x": 484.0,
+          "y": 235.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 545.0,
+          "y": 197.0
+        },
+        {
+          "x": 545.0,
+          "y": 320.0
+        },
+        {
+          "x": 663.0,
+          "y": 320.0
+        }
+      ]
+    },
+    "SequenceFlow_2": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "SequenceFlow_2",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": "",
+      "source_ref": "SendTask_SendReminderEmail",
+      "target_ref": "EndEvent_ReminderSent"
+    },
+    "SequenceFlow_3": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "SequenceFlow_3",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": "",
+      "source_ref": "UserTask_CallCustomer",
+      "target_ref": "EndEvent_TalkedToCustomer"
+    },
+    "SequenceFlow_6": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "SequenceFlow_6",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": "",
+      "source_ref": "ReceiveTask_WaitForDocument",
+      "target_ref": "EndEvent_GotDocument"
+    },
+    "StartEvent_DocumentRequested": {
+      "auditing": null,
+      "cancel_event_definition": [],
+      "category_value_refs": [],
+      "compensate_event_definition": [],
+      "conditional_event_definition": [],
+      "data_output": [],
+      "data_output_association": [],
+      "documentation": [],
+      "error_event_definition": [],
+      "escalation_event_definition": [],
+      "event_definition": [],
+      "event_definition_ref": [],
+      "extension_elements": null,
+      "id": "StartEvent_DocumentRequested",
+      "incoming": [],
+      "is_interrupting": true,
+      "link_event_definition": [],
+      "message_event_definition": [],
+      "monitoring": null,
+      "name": "Document requested",
+      "outgoing": "SequenceFlow_0d7dzn0",
+      "output_set": null,
+      "parallel_multiple": false,
+      "properties": [],
+      "signal_event_definition": [],
+      "terminate_event_definition": [],
+      "timer_event_definition": []
+    },
+    "UserTask_1pu6sug_di": {
+      "bounds": {
+        "height": 80.0,
+        "width": 100.0,
+        "x": 663.0,
+        "y": 184.0
+      },
+      "bpmn_element": "UserTask_CallCustomer",
+      "choreography_activity_shape": null,
+      "id": "UserTask_1pu6sug_di",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": null,
+      "participant_band_kind": null
+    },
+    "UserTask_CallCustomer": {
+      "auditing": null,
+      "category_value_refs": [],
+      "completion_quantity": 1,
+      "data_input_associations": [],
+      "data_output_associations": [],
+      "default": null,
+      "documentation": [],
+      "extension_elements": null,
+      "human_performers": [],
+      "id": "UserTask_CallCustomer",
+      "implementation": "##unspecified",
+      "incoming": "SequenceFlow_0i97ejj",
+      "io_specification": null,
+      "is_for_compensation": false,
+      "loop_characteristics": null,
+      "monitoring": null,
+      "multi_instance_loop_characteristics": null,
+      "name": "Call customer",
+      "outgoing": "SequenceFlow_3",
+      "performers": [],
+      "potential_owners": [],
+      "properties": [],
+      "renderings": [],
+      "resources": [],
+      "standard_loop_characteristics": null,
+      "start_quantity": 1
+    },
+    "_BPMNShape_BoundaryEvent_4": {
+      "bounds": {
+        "height": 36.0,
+        "width": 36.0,
+        "x": 527.0,
+        "y": 161.0
+      },
+      "bpmn_element": "BoundaryEvent_1",
+      "choreography_activity_shape": null,
+      "id": "_BPMNShape_BoundaryEvent_4",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 14.0,
+          "width": 24.0,
+          "x": 515.0,
+          "y": 196.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "participant_band_kind": null
+    },
+    "_BPMNShape_BoundaryEvent_5": {
+      "bounds": {
+        "height": 36.0,
+        "width": 36.0,
+        "x": 576.0,
+        "y": 161.0
+      },
+      "bpmn_element": "BoundaryEvent_2",
+      "choreography_activity_shape": null,
+      "id": "_BPMNShape_BoundaryEvent_5",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 14.0,
+          "width": 36.0,
+          "x": 605.0,
+          "y": 196.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "participant_band_kind": null
+    },
+    "_BPMNShape_EndEvent_29": {
+      "bounds": {
+        "height": 36.0,
+        "width": 36.0,
+        "x": 900.0,
+        "y": 302.0
+      },
+      "bpmn_element": "EndEvent_ReminderSent",
+      "choreography_activity_shape": null,
+      "id": "_BPMNShape_EndEvent_29",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 14.0,
+          "width": 53.0,
+          "x": 892.0,
+          "y": 338.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "participant_band_kind": null
+    },
+    "_BPMNShape_EndEvent_30": {
+      "bounds": {
+        "height": 36.0,
+        "width": 36.0,
+        "x": 900.0,
+        "y": 206.0
+      },
+      "bpmn_element": "EndEvent_TalkedToCustomer",
+      "choreography_activity_shape": null,
+      "id": "_BPMNShape_EndEvent_30",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 14.0,
+          "width": 81.0,
+          "x": 879.0,
+          "y": 247.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "participant_band_kind": null
+    },
+    "_BPMNShape_StartEvent_2": {
+      "bounds": {
+        "height": 36.0,
+        "width": 36.0,
+        "x": 212.0,
+        "y": 121.0
+      },
+      "bpmn_element": "StartEvent_DocumentRequested",
+      "choreography_activity_shape": null,
+      "id": "_BPMNShape_StartEvent_2",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 27.0,
+          "width": 52.0,
+          "x": 205.0,
+          "y": 157.0
+        },
+        "id": null,
+        "label_style": null
+      },
+      "participant_band_kind": null
+    },
+    "_TimerEventDefinition_2": {
+      "documentation": [],
+      "extension_elements": null,
+      "id": "_TimerEventDefinition_2",
+      "time_cycle": {
+        "documentation": [],
+        "extension_elements": null,
+        "id": null,
+        "value": "R6/P1D",
+        "xsi_type": "bpmn:tFormalExpression"
+      },
+      "time_date": null,
+      "time_duration": null
+    },
+    "_TimerEventDefinition_3": {
+      "documentation": [],
+      "extension_elements": null,
+      "id": "_TimerEventDefinition_3",
+      "time_cycle": null,
+      "time_date": null,
+      "time_duration": {
+        "documentation": [],
+        "extension_elements": null,
+        "id": null,
+        "value": "P7D",
+        "xsi_type": "bpmn:tFormalExpression"
+      }
+    },
+    "requestDocument_en": {
+      "ad_hoc_sub_processes": [],
+      "artifacts": [],
+      "associations": [],
+      "auditing": null,
       "boundary_events": [
         {
           "attached_to_ref": "ReceiveTask_WaitForDocument",
+          "auditing": null,
           "cancel_activity": false,
+          "cancel_event_definition": [],
+          "category_value_refs": [],
+          "compensate_event_definition": [],
+          "conditional_event_definition": [],
+          "data_output": [],
+          "data_output_association": [],
+          "documentation": [],
+          "error_event_definition": [],
+          "escalation_event_definition": [],
+          "event_definition": [],
+          "event_definition_ref": [],
+          "extension_elements": null,
           "id": "BoundaryEvent_1",
+          "incoming": [],
+          "link_event_definition": [],
+          "message_event_definition": [],
+          "monitoring": null,
           "name": "daily",
           "outgoing": "SequenceFlow_1bqpxlf",
+          "output_set": null,
           "parallel_multiple": false,
+          "properties": [],
+          "signal_event_definition": [],
+          "terminate_event_definition": [],
           "timer_event_definition": [
             {
+              "documentation": [],
+              "extension_elements": null,
               "id": "_TimerEventDefinition_2",
               "time_cycle": {
+                "documentation": [],
+                "extension_elements": null,
+                "id": null,
                 "value": "R6/P1D",
                 "xsi_type": "bpmn:tFormalExpression"
-              }
+              },
+              "time_date": null,
+              "time_duration": null
             }
           ]
         },
         {
           "attached_to_ref": "ReceiveTask_WaitForDocument",
+          "auditing": null,
           "cancel_activity": true,
+          "cancel_event_definition": [],
+          "category_value_refs": [],
+          "compensate_event_definition": [],
+          "conditional_event_definition": [],
+          "data_output": [],
+          "data_output_association": [],
+          "documentation": [],
+          "error_event_definition": [],
+          "escalation_event_definition": [],
+          "event_definition": [],
+          "event_definition_ref": [],
+          "extension_elements": null,
           "id": "BoundaryEvent_2",
+          "incoming": [],
+          "link_event_definition": [],
+          "message_event_definition": [],
+          "monitoring": null,
           "name": "1 week",
           "outgoing": "SequenceFlow_0i97ejj",
+          "output_set": null,
           "parallel_multiple": false,
+          "properties": [],
+          "signal_event_definition": [],
+          "terminate_event_definition": [],
           "timer_event_definition": [
             {
+              "documentation": [],
+              "extension_elements": null,
               "id": "_TimerEventDefinition_3",
+              "time_cycle": null,
+              "time_date": null,
               "time_duration": {
+                "documentation": [],
+                "extension_elements": null,
+                "id": null,
                 "value": "P7D",
                 "xsi_type": "bpmn:tFormalExpression"
               }
@@ -402,144 +4028,397 @@
           ]
         }
       ],
+      "business_rule_tasks": [],
+      "call_activities": [],
       "camunda_is_startable_in_tasklist": "false",
+      "complex_gateways": [],
+      "correlation_subscriptions": [],
+      "data_object_references": [],
+      "data_objects": [],
+      "data_store_references": [],
+      "definitional_collaboration_ref": null,
+      "documentation": [],
       "end_events": [
         {
+          "auditing": null,
           "camunda_async_after": "true",
+          "cancel_event_definitions": [],
+          "category_value_refs": [],
+          "compensate_event_definitions": [],
+          "conditional_event_definitions": [],
+          "data_input_associations": [],
+          "data_inputs": [],
+          "documentation": [],
+          "error_event_definitions": [],
+          "escalation_event_definitions": [],
+          "event_definition_refs": [],
+          "event_definitions": [],
+          "extension_elements": null,
           "id": "EndEvent_TalkedToCustomer",
           "incoming": "SequenceFlow_3",
-          "name": "Answer received"
+          "input_set": null,
+          "link_event_definitions": [],
+          "message_event_definitions": [],
+          "monitoring": null,
+          "name": "Answer received",
+          "outgoing": [],
+          "properties": [],
+          "signal_event_definitions": [],
+          "terminate_event_definitions": [],
+          "timer_event_definitions": []
         },
         {
+          "auditing": null,
           "camunda_async_after": "true",
+          "cancel_event_definitions": [],
+          "category_value_refs": [],
+          "compensate_event_definitions": [],
+          "conditional_event_definitions": [],
+          "data_input_associations": [],
+          "data_inputs": [],
+          "documentation": [],
+          "error_event_definitions": [],
+          "escalation_event_definitions": [],
+          "event_definition_refs": [],
+          "event_definitions": [],
+          "extension_elements": null,
           "id": "EndEvent_GotDocument",
           "incoming": "SequenceFlow_6",
-          "name": "Document received"
+          "input_set": null,
+          "link_event_definitions": [],
+          "message_event_definitions": [],
+          "monitoring": null,
+          "name": "Document received",
+          "outgoing": [],
+          "properties": [],
+          "signal_event_definitions": [],
+          "terminate_event_definitions": [],
+          "timer_event_definitions": []
         },
         {
+          "auditing": null,
+          "cancel_event_definitions": [],
+          "category_value_refs": [],
+          "compensate_event_definitions": [],
+          "conditional_event_definitions": [],
+          "data_input_associations": [],
+          "data_inputs": [],
+          "documentation": [],
+          "error_event_definitions": [],
+          "escalation_event_definitions": [],
+          "event_definition_refs": [],
+          "event_definitions": [],
+          "extension_elements": null,
           "id": "EndEvent_ReminderSent",
           "incoming": "SequenceFlow_2",
-          "name": "Email sent"
+          "input_set": null,
+          "link_event_definitions": [],
+          "message_event_definitions": [],
+          "monitoring": null,
+          "name": "Email sent",
+          "outgoing": [],
+          "properties": [],
+          "signal_event_definitions": [],
+          "terminate_event_definitions": [],
+          "timer_event_definitions": []
         }
       ],
+      "event_based_gateways": [],
+      "events": [],
+      "exclusive_gateways": [],
+      "extension_elements": null,
+      "flow_elements": [],
+      "groups": [],
+      "human_performers": [],
       "id": "requestDocument_en",
+      "implicit_throw_events": [],
+      "inclusive_gateways": [],
+      "intermediate_catch_events": [],
+      "intermediate_throw_events": [],
+      "io_bindings": [],
+      "io_specification": null,
       "is_closed": false,
       "is_executable": true,
+      "lane_sets": [],
+      "manual_tasks": [],
+      "monitoring": null,
       "name": "Document Request",
+      "parallel_gateways": [],
+      "performers": [],
+      "potential_owners": [],
       "process_type": "None",
+      "properties": [],
       "receive_tasks": [
         {
+          "auditing": null,
+          "category_value_refs": [],
           "completion_quantity": 1,
+          "data_input_associations": [],
+          "data_output_associations": [],
+          "default": null,
+          "documentation": [],
+          "extension_elements": null,
+          "human_performers": [],
           "id": "ReceiveTask_WaitForDocument",
           "implementation": "##WebService",
           "incoming": "SequenceFlow_18a0pzl",
           "instantiate": false,
+          "io_specification": null,
           "is_for_compensation": false,
+          "loop_characteristics": null,
           "message_ref": "Message_1",
+          "monitoring": null,
+          "multi_instance_loop_characteristics": null,
           "name": "Wait for answer",
+          "operation_ref": null,
           "outgoing": "SequenceFlow_6",
+          "performers": [],
+          "potential_owners": [],
+          "properties": [],
+          "resources": [],
+          "standard_loop_characteristics": null,
           "start_quantity": 1
         }
       ],
+      "resources": [],
+      "script_tasks": [],
       "send_tasks": [
         {
+          "auditing": null,
           "camunda_async": "true",
           "camunda_topic": "emailService",
           "camunda_type": "external",
+          "category_value_refs": [],
           "completion_quantity": 1,
+          "data_input_associations": [],
+          "data_output_associations": [],
+          "default": null,
+          "documentation": [],
           "extension_elements": {
             "zeebe_task_definition": {
+              "retries": null,
               "type": "email"
             }
           },
+          "human_performers": [],
           "id": "SendTask_RequestDocument",
           "implementation": "##WebService",
           "incoming": "SequenceFlow_0d7dzn0",
+          "io_specification": null,
           "is_for_compensation": false,
+          "loop_characteristics": null,
+          "message_ref": null,
+          "monitoring": null,
+          "multi_instance_loop_characteristics": null,
           "name": "Request document",
+          "operation_ref": null,
           "outgoing": "SequenceFlow_18a0pzl",
+          "performers": [],
+          "potential_owners": [],
+          "properties": [],
+          "resources": [],
+          "standard_loop_characteristics": null,
           "start_quantity": 1
         },
         {
+          "auditing": null,
           "camunda_async_before": "true",
           "camunda_topic": "emailService",
           "camunda_type": "external",
+          "category_value_refs": [],
           "completion_quantity": 1,
+          "data_input_associations": [],
+          "data_output_associations": [],
+          "default": null,
+          "documentation": [],
           "extension_elements": {
             "zeebe_task_definition": {
+              "retries": null,
               "type": "email"
             }
           },
+          "human_performers": [],
           "id": "SendTask_SendReminderEmail",
           "implementation": "##WebService",
           "incoming": "SequenceFlow_1bqpxlf",
+          "io_specification": null,
           "is_for_compensation": false,
+          "loop_characteristics": null,
+          "message_ref": null,
+          "monitoring": null,
+          "multi_instance_loop_characteristics": null,
           "name": "Send reminder email",
+          "operation_ref": null,
           "outgoing": "SequenceFlow_2",
+          "performers": [],
+          "potential_owners": [],
+          "properties": [],
+          "resources": [],
+          "standard_loop_characteristics": null,
           "start_quantity": 1
         }
       ],
       "sequence_flows": [
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "SequenceFlow_6",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": "",
           "source_ref": "ReceiveTask_WaitForDocument",
           "target_ref": "EndEvent_GotDocument"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "SequenceFlow_0i97ejj",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": null,
           "source_ref": "BoundaryEvent_2",
           "target_ref": "UserTask_CallCustomer"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "SequenceFlow_1bqpxlf",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": null,
           "source_ref": "BoundaryEvent_1",
           "target_ref": "SendTask_SendReminderEmail"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "SequenceFlow_2",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": "",
           "source_ref": "SendTask_SendReminderEmail",
           "target_ref": "EndEvent_ReminderSent"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "SequenceFlow_3",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": "",
           "source_ref": "UserTask_CallCustomer",
           "target_ref": "EndEvent_TalkedToCustomer"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "SequenceFlow_18a0pzl",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": null,
           "source_ref": "SendTask_RequestDocument",
           "target_ref": "ReceiveTask_WaitForDocument"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "SequenceFlow_0d7dzn0",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": null,
           "source_ref": "StartEvent_DocumentRequested",
           "target_ref": "SendTask_RequestDocument"
         }
       ],
+      "service_tasks": [],
       "start_events": [
         {
+          "auditing": null,
+          "cancel_event_definition": [],
+          "category_value_refs": [],
+          "compensate_event_definition": [],
+          "conditional_event_definition": [],
+          "data_output": [],
+          "data_output_association": [],
+          "documentation": [],
+          "error_event_definition": [],
+          "escalation_event_definition": [],
+          "event_definition": [],
+          "event_definition_ref": [],
+          "extension_elements": null,
           "id": "StartEvent_DocumentRequested",
+          "incoming": [],
           "is_interrupting": true,
+          "link_event_definition": [],
+          "message_event_definition": [],
+          "monitoring": null,
           "name": "Document requested",
           "outgoing": "SequenceFlow_0d7dzn0",
-          "parallel_multiple": false
+          "output_set": null,
+          "parallel_multiple": false,
+          "properties": [],
+          "signal_event_definition": [],
+          "terminate_event_definition": [],
+          "timer_event_definition": []
         }
       ],
+      "sub_processes": [],
+      "supported_interface_refs": [],
+      "supports": [],
+      "tasks": [],
+      "text_annotations": [],
+      "transactions": [],
       "user_tasks": [
         {
+          "auditing": null,
+          "category_value_refs": [],
           "completion_quantity": 1,
+          "data_input_associations": [],
+          "data_output_associations": [],
+          "default": null,
+          "documentation": [],
+          "extension_elements": null,
+          "human_performers": [],
           "id": "UserTask_CallCustomer",
           "implementation": "##unspecified",
           "incoming": "SequenceFlow_0i97ejj",
+          "io_specification": null,
           "is_for_compensation": false,
+          "loop_characteristics": null,
+          "monitoring": null,
+          "multi_instance_loop_characteristics": null,
           "name": "Call customer",
           "outgoing": "SequenceFlow_3",
+          "performers": [],
+          "potential_owners": [],
+          "properties": [],
+          "renderings": [],
+          "resources": [],
+          "standard_loop_characteristics": null,
           "start_quantity": 1
         }
       ]
     }
-  ],
-  "target_namespace": "http://bpmn.io/schema/bpmn/Definitions_1",
-  "type_language": "http://www.w3.org/2001/XMLSchema",
-  "xsi_schema_location": "http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+  }
 }

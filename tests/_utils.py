@@ -79,7 +79,6 @@ def assert_attributes(obj: Any, attributes: dict[str, Any], parent_path: str = "
     if isinstance(obj, dict):
         assert_equal(obj, attributes, parent_path)
         return
-    print(f"{parent_path}")
 
     for key, val in attributes.items():
         obj_val = getattr(obj, key, None)
@@ -124,7 +123,8 @@ def assert_equal(actual: Any, expected: Any, path: str = "$") -> None:
     - Dataclasses: compared field-by-field; supports comparing to dicts
       representing fields.
     """
-    from dataclasses import fields, is_dataclass as _is_dataclass
+    from dataclasses import fields
+    from dataclasses import is_dataclass as _is_dataclass
 
     # Helper to render a path child
     def child(p: str, key: Any) -> str:
@@ -136,42 +136,48 @@ def assert_equal(actual: Any, expected: Any, path: str = "$") -> None:
         return f"{p}.{key}"
 
     # Dataclass normalization: compare as mapping of fields
-    if _is_dataclass(actual) and _is_dataclass(expected):
-        actual = {f.name: getattr(actual, f.name) for f in fields(actual)}
-        expected = {f.name: getattr(expected, f.name) for f in fields(expected)}
-    elif _is_dataclass(actual) and isinstance(expected, dict):
-        actual = {f.name: getattr(actual, f.name) for f in fields(actual)}
-    elif _is_dataclass(expected) and isinstance(actual, dict):
-        expected = {f.name: getattr(expected, f.name) for f in fields(expected)}
+    if _is_dataclass(actual):
+        normalized_actual = {f.name: getattr(actual, f.name) for f in fields(actual)}
+        normalized_actual.update(getattr(actual, "__extra_kwargs__", {}))
+    else:
+        normalized_actual = actual
+
+    if _is_dataclass(expected):
+        normalized_expected = {f.name: getattr(expected, f.name) for f in fields(expected)}
+        normalized_expected.update(getattr(expected, "__extra_kwargs__", {}))
+    else:
+        normalized_expected = expected
 
     # Dicts
-    if isinstance(actual, dict) and isinstance(expected, dict):
-        act_keys = set(actual.keys())
-        exp_keys = set(expected.keys())
+    if isinstance(normalized_actual, dict) and isinstance(normalized_expected, dict):
+        act_keys = set(normalized_actual.keys())
+        exp_keys = set(normalized_expected.keys())
         assert act_keys == exp_keys, (
             f"Key mismatch at {path}:\n"
             f"  in actual, not in expected: {sorted(act_keys - exp_keys)}\n"
             f"  in expected, not in actual: {sorted(exp_keys - act_keys)}"
         )
-        for k in expected:
-            assert_equal(actual[k], expected[k], child(path, k))
+        for k, v in normalized_expected.items():
+            assert_equal(normalized_actual[k], v, child(path, k))
         return
 
     # Lists / Tuples (sequence, order-sensitive)
-    if isinstance(actual, (list, tuple)) and isinstance(expected, (list, tuple)):
-        assert len(actual) == len(expected), f"Length mismatch at {path}: {len(actual)} != {len(expected)}"
+    if isinstance(normalized_actual, (list, tuple)) and isinstance(normalized_expected, (list, tuple)):
+        assert len(normalized_actual) == len(normalized_expected), (
+            f"Length mismatch at {path}: {len(normalized_actual)} != {len(normalized_expected)}"
+        )
         for i, (a_i, e_i) in enumerate(zip(actual, expected)):
             assert_equal(a_i, e_i, child(path, i))
         return
 
     # Sets
-    if isinstance(actual, (set, frozenset)) and isinstance(expected, (set, frozenset)):
-        assert actual == expected, (
+    if isinstance(normalized_actual, (set, frozenset)) and isinstance(normalized_expected, (set, frozenset)):
+        assert normalized_actual == normalized_expected, (
             f"Set mismatch at {path}:\n"
-            f"  only-in-actual: {sorted(actual - expected)}\n"
-            f"  only-in-expected: {sorted(expected - actual)}"
+            f"  only-in-actual: {sorted(normalized_actual - normalized_expected)}\n"
+            f"  only-in-expected: {sorted(normalized_expected - normalized_actual)}"
         )
         return
 
     # Fallback: direct equality
-    assert actual == expected, f"Value mismatch at {path}: {actual!r} != {expected!r}"
+    assert normalized_actual == expected, f"Value mismatch at {path}: {normalized_actual!r} != {expected!r}"

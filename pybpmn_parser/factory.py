@@ -5,6 +5,7 @@ from typing import Any, Callable, Optional
 
 from pydantic.alias_generators import to_snake
 
+from pybpmn_parser.bpmn.infrastructure.definitions import Definitions
 from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.core import QName
 from pybpmn_parser.element_registry import ElementDescriptor, registry
@@ -208,10 +209,10 @@ def create_element_from_dict(
 
         attr_name = get_attribute_name(key, descriptor, ns_map)
         if attr_name not in properties:
-            item_values.update(_handle_unknown_property(key, value, descriptor, parent_uri, ns_map))
+            item_values |= _handle_unknown_property(key, value, descriptor, parent_uri, ns_map)
             continue
 
-        item_values.update(_handle_known_property(key, value, descriptor, parent_uri, ns_map))
+        item_values |= _handle_known_property(key, value, descriptor, parent_uri, ns_map)
 
     return descriptor.type.from_kwargs(**item_values)
 
@@ -239,15 +240,13 @@ def get_child_value(
         based on the descriptor and the provided input.
     """
     if child_descriptor is None:
-        child_value = value
+        return value
     elif is_many or isinstance(value, list):
         if not isinstance(value, list):
             value = [value]
-        child_value = [create_element_from_dict(item, child_descriptor, parent_uri, ns_map) for item in value]
+        return [create_element_from_dict(item, child_descriptor, parent_uri, ns_map) for item in value]
     else:
-        child_element = create_element_from_dict(value, child_descriptor, parent_uri, ns_map)
-        child_value = child_element
-    return child_value
+        return create_element_from_dict(value, child_descriptor, parent_uri, ns_map)
 
 
 def get_child_qname(attr_name: QName, descriptor: ElementDescriptor, key: str, ns_map: dict[str, str]) -> QName | None:
@@ -267,11 +266,7 @@ def get_child_qname(attr_name: QName, descriptor: ElementDescriptor, key: str, n
     Returns:
         The computed QName of the child element. Returns None if the QName cannot be resolved.
     """
-    if descriptor.properties[attr_name].type_qname:
-        child_qname = descriptor.properties[attr_name].type_qname
-    else:
-        child_qname = QName.from_str(key, ns_map)
-    return child_qname
+    return descriptor.properties[attr_name].type_qname or QName.from_str(key, ns_map)
 
 
 def extract_nsmap_from_dict(element_dict: dict, nsmap: dict[str, str] | None) -> dict[str, str]:
@@ -287,7 +282,7 @@ def extract_nsmap_from_dict(element_dict: dict, nsmap: dict[str, str] | None) ->
     return ns_map
 
 
-def create_bpmn(root_xml_dict: dict, initial_nsmap: Optional[dict[str, str]] = None) -> Any:
+def create_bpmn(root_xml_dict: dict, initial_nsmap: Optional[dict[str, str]] = None) -> Definitions:
     """
     Create a BPMN element from a root XML dictionary.
 
@@ -312,4 +307,8 @@ def create_bpmn(root_xml_dict: dict, initial_nsmap: Optional[dict[str, str]] = N
         descriptor = registry.by_qname[qname]
         output.append(create_element_from_dict(value, descriptor, qname.uri, nsmap))
 
-    return output
+    if not output:
+        raise ValueError("No BPMN definitions found.")
+    if len(output) > 1:
+        raise ValueError("Expected exactly one BPMN definition, but found multiple.")
+    return output[0]
