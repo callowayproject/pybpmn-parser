@@ -175,15 +175,6 @@ for flow in process.sequence_flows:
         print(f"  Name: {flow.name}")
 ```
 
-## What's Next?
-
-Now that you've learned the basics, explore these topics:
-
-- **[Parsing Tutorial](tutorials/parsing.md)** - Deep dive into parsing options
-- **[Working with Elements](tutorials/elements.md)** - Navigate complex process structures
-- **[Validation](tutorials/validation.md)** - Custom validation rules
-- **[Examples](examples/index.md)** - Real-world examples with MIWG test files
-
 ## Common Patterns
 
 ### Loading Multiple Files
@@ -232,9 +223,3 @@ for process in definitions.processes:
 **FileNotFoundError**: Check that the file path is correct and the file exists.
 
 **AttributeError accessing element property**: Not all BPMN elements have all properties. Use `hasattr()` or `getattr()` with defaults.
-
-### Getting Help
-
-- Check the [API Reference](reference/index.md) for detailed documentation
-- Browse [Examples](examples/index.md) for working code
-- Visit the [GitHub repository](https://github.com/callowayproject/pybpmn-parser) to report issues

@@ -77,9 +77,3 @@ The plugin system allows:
 - Easy addition of new vendor support
 - Community contributions without core changes
 - Optional loading of extensions
-
-## Next Steps
-
-- Explore [Core Components](components.md) for detailed technical information
-- Review the [API Reference](../reference/index.md) for implementation details
-- Check out [Plugin Development](../plugins/index.md) to extend the library
