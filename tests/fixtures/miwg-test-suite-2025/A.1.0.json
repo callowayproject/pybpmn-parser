@@ -1,6 +1,760 @@
 {
-  "bpmndiagrams": [
-    {
+  "definition": {
+    "bpmndiagrams": [
+      {
+        "documentation": "",
+        "id": "Trisotech_Visio-_6",
+        "label_styles": [
+          {
+            "font": {
+              "is_bold": false,
+              "is_italic": false,
+              "is_strike_through": false,
+              "is_underline": false,
+              "name": "Arial",
+              "size": 11.0
+            },
+            "id": "LS1373649849858"
+          }
+        ],
+        "name": "A.1.0",
+        "plane": {
+          "bpmn_edges": [
+            {
+              "bpmn_element": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+              "id": "E1373649849864__d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+              "label": null,
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 342.0,
+                  "y": 351.0
+                },
+                {
+                  "x": 390.0,
+                  "y": 351.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+              "id": "E1373649849865__e16564d7-0c4c-413e-95f6-f668a3f851fb",
+              "label": null,
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 216.0,
+                  "y": 351.0
+                },
+                {
+                  "x": 234.0,
+                  "y": 351.0
+                },
+                {
+                  "x": 258.0,
+                  "y": 351.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+              "id": "E1373649849866__2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+              "label": null,
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 474.0,
+                  "y": 351.0
+                },
+                {
+                  "x": 522.0,
+                  "y": 351.0
+                }
+              ]
+            },
+            {
+              "bpmn_element": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+              "id": "E1373649849867__8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+              "label": null,
+              "message_visible_kind": null,
+              "source_element": null,
+              "target_element": null,
+              "waypoint": [
+                {
+                  "x": 606.0,
+                  "y": 351.0
+                },
+                {
+                  "x": 624.0,
+                  "y": 351.0
+                },
+                {
+                  "x": 648.0,
+                  "y": 351.0
+                }
+              ]
+            }
+          ],
+          "bpmn_element": "WFP-6-",
+          "bpmn_shapes": [
+            {
+              "bounds": {
+                "height": 30.0,
+                "width": 30.0,
+                "x": 186.0,
+                "y": 336.0
+              },
+              "bpmn_element": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+              "choreography_activity_shape": null,
+              "id": "S1373649849857__93c466ab-b271-4376-a427-f4c353d55ce8",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 12.804751171875008,
+                  "width": 94.93333333333335,
+                  "x": 153.67766754457273,
+                  "y": 371.3333333333333
+                },
+                "id": null,
+                "label_style": "LS1373649849858"
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 68.0,
+                "width": 83.0,
+                "x": 258.0,
+                "y": 317.0
+              },
+              "bpmn_element": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+              "choreography_activity_shape": null,
+              "id": "S1373649849859__ec59e164-68b4-4f94-98de-ffb1c58a84af",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 12.804751171875008,
+                  "width": 72.48293963254594,
+                  "x": 263.3333333333333,
+                  "y": 344.5818763825664
+                },
+                "id": null,
+                "label_style": "LS1373649849858"
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 68.0,
+                "width": 83.0,
+                "x": 390.0,
+                "y": 317.0
+              },
+              "bpmn_element": "_820c21c0-45f3-473b-813f-06381cc637cd",
+              "choreography_activity_shape": null,
+              "id": "S1373649849860__820c21c0-45f3-473b-813f-06381cc637cd",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 12.804751171875008,
+                  "width": 72.48293963254594,
+                  "x": 395.3333333333333,
+                  "y": 344.5818763825664
+                },
+                "id": null,
+                "label_style": "LS1373649849858"
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 68.0,
+                "width": 83.0,
+                "x": 522.0,
+                "y": 317.0
+              },
+              "bpmn_element": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+              "choreography_activity_shape": null,
+              "id": "S1373649849861__e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 12.804751171875008,
+                  "width": 72.48293963254594,
+                  "x": 527.3333333333334,
+                  "y": 344.5818763825664
+                },
+                "id": null,
+                "label_style": "LS1373649849858"
+              },
+              "participant_band_kind": null
+            },
+            {
+              "bounds": {
+                "height": 32.0,
+                "width": 32.0,
+                "x": 648.0,
+                "y": 335.0
+              },
+              "bpmn_element": "_a47df184-085b-49f7-bb82-031c84625821",
+              "choreography_activity_shape": null,
+              "id": "S1373649849862__a47df184-085b-49f7-bb82-031c84625821",
+              "is_expanded": null,
+              "is_horizontal": null,
+              "is_marker_visible": null,
+              "is_message_visible": null,
+              "label": {
+                "bounds": {
+                  "height": 12.804751171875008,
+                  "width": 94.93333333333335,
+                  "x": 616.5963254593177,
+                  "y": 372.3333333333333
+                },
+                "id": null,
+                "label_style": "LS1373649849858"
+              },
+              "participant_band_kind": null
+            }
+          ],
+          "diagram_elements": [],
+          "id": null
+        },
+        "resolution": 96.00000267028808
+      }
+    ],
+    "cancel_event_definitions": [],
+    "categories": [],
+    "collaborations": [],
+    "compensate_event_definitions": [],
+    "conditional_event_definitions": [],
+    "correlation_properties": [],
+    "data_stores": [],
+    "end_points": [],
+    "error_event_definitions": [],
+    "errors": [],
+    "escalation_event_definitions": [],
+    "escalations": [],
+    "event_definitions": [],
+    "exporter": null,
+    "exporter_version": null,
+    "expression_language": "http://www.w3.org/1999/XPath",
+    "extensions": [],
+    "global_business_rule_tasks": [],
+    "global_conversations": [],
+    "global_manual_tasks": [],
+    "global_script_tasks": [],
+    "global_tasks": [],
+    "global_user_tasks": [],
+    "id": "_1373649849716",
+    "imports": [],
+    "interfaces": [],
+    "item_definitions": [],
+    "link_event_definitions": [],
+    "message_event_definitions": [],
+    "messages": [],
+    "name": "A.1.0",
+    "partner_entities": [],
+    "partner_roles": [],
+    "processes": [
+      {
+        "ad_hoc_sub_processes": [],
+        "artifacts": [],
+        "associations": [],
+        "auditing": null,
+        "boundary_events": [],
+        "business_rule_tasks": [],
+        "call_activities": [],
+        "complex_gateways": [],
+        "correlation_subscriptions": [],
+        "data_object_references": [],
+        "data_objects": [],
+        "data_store_references": [],
+        "definitional_collaboration_ref": null,
+        "documentation": [],
+        "end_events": [
+          {
+            "auditing": null,
+            "cancel_event_definitions": [],
+            "category_value_refs": [],
+            "compensate_event_definitions": [],
+            "conditional_event_definitions": [],
+            "data_input_associations": [],
+            "data_inputs": [],
+            "documentation": [],
+            "error_event_definitions": [],
+            "escalation_event_definitions": [],
+            "event_definition_refs": [],
+            "event_definitions": [],
+            "extension_elements": null,
+            "id": "_a47df184-085b-49f7-bb82-031c84625821",
+            "incoming": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+            "input_set": null,
+            "link_event_definitions": [],
+            "message_event_definitions": [],
+            "monitoring": null,
+            "name": "End Event",
+            "outgoing": [],
+            "properties": [],
+            "signal_event_definitions": [],
+            "terminate_event_definitions": [],
+            "timer_event_definitions": []
+          }
+        ],
+        "event_based_gateways": [],
+        "events": [],
+        "exclusive_gateways": [],
+        "extension_elements": null,
+        "flow_elements": [],
+        "groups": [],
+        "human_performers": [],
+        "id": "WFP-6-",
+        "implicit_throw_events": [],
+        "inclusive_gateways": [],
+        "intermediate_catch_events": [],
+        "intermediate_throw_events": [],
+        "io_bindings": [],
+        "io_specification": null,
+        "is_closed": false,
+        "is_executable": false,
+        "lane_sets": [],
+        "manual_tasks": [],
+        "monitoring": null,
+        "name": null,
+        "parallel_gateways": [],
+        "performers": [],
+        "potential_owners": [],
+        "process_type": "None",
+        "properties": [],
+        "receive_tasks": [],
+        "resources": [],
+        "script_tasks": [],
+        "send_tasks": [],
+        "sequence_flows": [
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": "",
+            "source_ref": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+            "target_ref": "_ec59e164-68b4-4f94-98de-ffb1c58a84af"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": "",
+            "source_ref": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+            "target_ref": "_820c21c0-45f3-473b-813f-06381cc637cd"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": "",
+            "source_ref": "_820c21c0-45f3-473b-813f-06381cc637cd",
+            "target_ref": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c"
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "condition_expression": null,
+            "documentation": [],
+            "extension_elements": null,
+            "id": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+            "is_immediate": null,
+            "monitoring": null,
+            "name": "",
+            "source_ref": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+            "target_ref": "_a47df184-085b-49f7-bb82-031c84625821"
+          }
+        ],
+        "service_tasks": [],
+        "start_events": [
+          {
+            "auditing": null,
+            "cancel_event_definition": [],
+            "category_value_refs": [],
+            "compensate_event_definition": [],
+            "conditional_event_definition": [],
+            "data_output": [],
+            "data_output_association": [],
+            "documentation": [],
+            "error_event_definition": [],
+            "escalation_event_definition": [],
+            "event_definition": [],
+            "event_definition_ref": [],
+            "extension_elements": null,
+            "id": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+            "incoming": [],
+            "is_interrupting": true,
+            "link_event_definition": [],
+            "message_event_definition": [],
+            "monitoring": null,
+            "name": "Start Event",
+            "outgoing": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+            "output_set": null,
+            "parallel_multiple": false,
+            "properties": [],
+            "signal_event_definition": [],
+            "terminate_event_definition": [],
+            "timer_event_definition": []
+          }
+        ],
+        "sub_processes": [],
+        "supported_interface_refs": [],
+        "supports": [],
+        "tasks": [
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "completion_quantity": 1,
+            "data_input_associations": [],
+            "data_output_associations": [],
+            "default": null,
+            "documentation": [],
+            "extension_elements": null,
+            "human_performers": [],
+            "id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+            "incoming": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+            "io_specification": null,
+            "is_for_compensation": false,
+            "loop_characteristics": null,
+            "monitoring": null,
+            "multi_instance_loop_characteristics": null,
+            "name": "Task 1",
+            "outgoing": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+            "performers": [],
+            "potential_owners": [],
+            "properties": [],
+            "resources": [],
+            "standard_loop_characteristics": null,
+            "start_quantity": 1
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "completion_quantity": 1,
+            "data_input_associations": [],
+            "data_output_associations": [],
+            "default": null,
+            "documentation": [],
+            "extension_elements": null,
+            "human_performers": [],
+            "id": "_820c21c0-45f3-473b-813f-06381cc637cd",
+            "incoming": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+            "io_specification": null,
+            "is_for_compensation": false,
+            "loop_characteristics": null,
+            "monitoring": null,
+            "multi_instance_loop_characteristics": null,
+            "name": "Task 2",
+            "outgoing": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+            "performers": [],
+            "potential_owners": [],
+            "properties": [],
+            "resources": [],
+            "standard_loop_characteristics": null,
+            "start_quantity": 1
+          },
+          {
+            "auditing": null,
+            "category_value_refs": [],
+            "completion_quantity": 1,
+            "data_input_associations": [],
+            "data_output_associations": [],
+            "default": null,
+            "documentation": [],
+            "extension_elements": null,
+            "human_performers": [],
+            "id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+            "incoming": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+            "io_specification": null,
+            "is_for_compensation": false,
+            "loop_characteristics": null,
+            "monitoring": null,
+            "multi_instance_loop_characteristics": null,
+            "name": "Task 3",
+            "outgoing": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+            "performers": [],
+            "potential_owners": [],
+            "properties": [],
+            "resources": [],
+            "standard_loop_characteristics": null,
+            "start_quantity": 1
+          }
+        ],
+        "text_annotations": [],
+        "transactions": [],
+        "user_tasks": []
+      }
+    ],
+    "relationships": [],
+    "resources": [],
+    "root_elements": [],
+    "signal_event_definitions": [],
+    "signals": [],
+    "target_namespace": "http://www.trisotech.com/definitions/_1373649849716",
+    "terminate_event_definitions": [],
+    "timer_event_definitions": [],
+    "type_language": "http://www.w3.org/2001/XMLSchema"
+  },
+  "elements_by_id": {
+    "E1373649849864__d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599": {
+      "bpmn_element": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "id": "E1373649849864__d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "label": null,
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 342.0,
+          "y": 351.0
+        },
+        {
+          "x": 390.0,
+          "y": 351.0
+        }
+      ]
+    },
+    "E1373649849865__e16564d7-0c4c-413e-95f6-f668a3f851fb": {
+      "bpmn_element": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "id": "E1373649849865__e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "label": null,
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 216.0,
+          "y": 351.0
+        },
+        {
+          "x": 234.0,
+          "y": 351.0
+        },
+        {
+          "x": 258.0,
+          "y": 351.0
+        }
+      ]
+    },
+    "E1373649849866__2aa47410-1b0e-4f8b-ad54-d6f798080cb4": {
+      "bpmn_element": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "id": "E1373649849866__2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "label": null,
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 474.0,
+          "y": 351.0
+        },
+        {
+          "x": 522.0,
+          "y": 351.0
+        }
+      ]
+    },
+    "E1373649849867__8e8fe679-eb3b-4c43-a4d6-891e7087ff80": {
+      "bpmn_element": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "id": "E1373649849867__8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "label": null,
+      "message_visible_kind": null,
+      "source_element": null,
+      "target_element": null,
+      "waypoint": [
+        {
+          "x": 606.0,
+          "y": 351.0
+        },
+        {
+          "x": 624.0,
+          "y": 351.0
+        },
+        {
+          "x": 648.0,
+          "y": 351.0
+        }
+      ]
+    },
+    "LS1373649849858": {
+      "font": {
+        "is_bold": false,
+        "is_italic": false,
+        "is_strike_through": false,
+        "is_underline": false,
+        "name": "Arial",
+        "size": 11.0
+      },
+      "id": "LS1373649849858"
+    },
+    "S1373649849857__93c466ab-b271-4376-a427-f4c353d55ce8": {
+      "bounds": {
+        "height": 30.0,
+        "width": 30.0,
+        "x": 186.0,
+        "y": 336.0
+      },
+      "bpmn_element": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+      "choreography_activity_shape": null,
+      "id": "S1373649849857__93c466ab-b271-4376-a427-f4c353d55ce8",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 12.804751171875008,
+          "width": 94.93333333333335,
+          "x": 153.67766754457273,
+          "y": 371.3333333333333
+        },
+        "id": null,
+        "label_style": "LS1373649849858"
+      },
+      "participant_band_kind": null
+    },
+    "S1373649849859__ec59e164-68b4-4f94-98de-ffb1c58a84af": {
+      "bounds": {
+        "height": 68.0,
+        "width": 83.0,
+        "x": 258.0,
+        "y": 317.0
+      },
+      "bpmn_element": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+      "choreography_activity_shape": null,
+      "id": "S1373649849859__ec59e164-68b4-4f94-98de-ffb1c58a84af",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 12.804751171875008,
+          "width": 72.48293963254594,
+          "x": 263.3333333333333,
+          "y": 344.5818763825664
+        },
+        "id": null,
+        "label_style": "LS1373649849858"
+      },
+      "participant_band_kind": null
+    },
+    "S1373649849860__820c21c0-45f3-473b-813f-06381cc637cd": {
+      "bounds": {
+        "height": 68.0,
+        "width": 83.0,
+        "x": 390.0,
+        "y": 317.0
+      },
+      "bpmn_element": "_820c21c0-45f3-473b-813f-06381cc637cd",
+      "choreography_activity_shape": null,
+      "id": "S1373649849860__820c21c0-45f3-473b-813f-06381cc637cd",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 12.804751171875008,
+          "width": 72.48293963254594,
+          "x": 395.3333333333333,
+          "y": 344.5818763825664
+        },
+        "id": null,
+        "label_style": "LS1373649849858"
+      },
+      "participant_band_kind": null
+    },
+    "S1373649849861__e70a6fcb-913c-4a7b-a65d-e83adc73d69c": {
+      "bounds": {
+        "height": 68.0,
+        "width": 83.0,
+        "x": 522.0,
+        "y": 317.0
+      },
+      "bpmn_element": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+      "choreography_activity_shape": null,
+      "id": "S1373649849861__e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 12.804751171875008,
+          "width": 72.48293963254594,
+          "x": 527.3333333333334,
+          "y": 344.5818763825664
+        },
+        "id": null,
+        "label_style": "LS1373649849858"
+      },
+      "participant_band_kind": null
+    },
+    "S1373649849862__a47df184-085b-49f7-bb82-031c84625821": {
+      "bounds": {
+        "height": 32.0,
+        "width": 32.0,
+        "x": 648.0,
+        "y": 335.0
+      },
+      "bpmn_element": "_a47df184-085b-49f7-bb82-031c84625821",
+      "choreography_activity_shape": null,
+      "id": "S1373649849862__a47df184-085b-49f7-bb82-031c84625821",
+      "is_expanded": null,
+      "is_horizontal": null,
+      "is_marker_visible": null,
+      "is_message_visible": null,
+      "label": {
+        "bounds": {
+          "height": 12.804751171875008,
+          "width": 94.93333333333335,
+          "x": 616.5963254593177,
+          "y": 372.3333333333333
+        },
+        "id": null,
+        "label_style": "LS1373649849858"
+      },
+      "participant_band_kind": null
+    },
+    "Trisotech_Visio-_6": {
+      "documentation": "",
       "id": "Trisotech_Visio-_6",
       "label_styles": [
         {
@@ -21,6 +775,10 @@
           {
             "bpmn_element": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
             "id": "E1373649849864__d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+            "label": null,
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 342.0,
@@ -35,6 +793,10 @@
           {
             "bpmn_element": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
             "id": "E1373649849865__e16564d7-0c4c-413e-95f6-f668a3f851fb",
+            "label": null,
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 216.0,
@@ -53,6 +815,10 @@
           {
             "bpmn_element": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
             "id": "E1373649849866__2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+            "label": null,
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 474.0,
@@ -67,6 +833,10 @@
           {
             "bpmn_element": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
             "id": "E1373649849867__8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+            "label": null,
+            "message_visible_kind": null,
+            "source_element": null,
+            "target_element": null,
             "waypoint": [
               {
                 "x": 606.0,
@@ -93,7 +863,12 @@
               "y": 336.0
             },
             "bpmn_element": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+            "choreography_activity_shape": null,
             "id": "S1373649849857__93c466ab-b271-4376-a427-f4c353d55ce8",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 12.804751171875008,
@@ -101,8 +876,10 @@
                 "x": 153.67766754457273,
                 "y": 371.3333333333333
               },
+              "id": null,
               "label_style": "LS1373649849858"
-            }
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -112,7 +889,12 @@
               "y": 317.0
             },
             "bpmn_element": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+            "choreography_activity_shape": null,
             "id": "S1373649849859__ec59e164-68b4-4f94-98de-ffb1c58a84af",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 12.804751171875008,
@@ -120,8 +902,10 @@
                 "x": 263.3333333333333,
                 "y": 344.5818763825664
               },
+              "id": null,
               "label_style": "LS1373649849858"
-            }
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -131,7 +915,12 @@
               "y": 317.0
             },
             "bpmn_element": "_820c21c0-45f3-473b-813f-06381cc637cd",
+            "choreography_activity_shape": null,
             "id": "S1373649849860__820c21c0-45f3-473b-813f-06381cc637cd",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 12.804751171875008,
@@ -139,8 +928,10 @@
                 "x": 395.3333333333333,
                 "y": 344.5818763825664
               },
+              "id": null,
               "label_style": "LS1373649849858"
-            }
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -150,7 +941,12 @@
               "y": 317.0
             },
             "bpmn_element": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+            "choreography_activity_shape": null,
             "id": "S1373649849861__e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 12.804751171875008,
@@ -158,8 +954,10 @@
                 "x": 527.3333333333334,
                 "y": 344.5818763825664
               },
+              "id": null,
               "label_style": "LS1373649849858"
-            }
+            },
+            "participant_band_kind": null
           },
           {
             "bounds": {
@@ -169,7 +967,12 @@
               "y": 335.0
             },
             "bpmn_element": "_a47df184-085b-49f7-bb82-031c84625821",
+            "choreography_activity_shape": null,
             "id": "S1373649849862__a47df184-085b-49f7-bb82-031c84625821",
+            "is_expanded": null,
+            "is_horizontal": null,
+            "is_marker_visible": null,
+            "is_message_visible": null,
             "label": {
               "bounds": {
                 "height": 12.804751171875008,
@@ -177,92 +980,980 @@
                 "x": 616.5963254593177,
                 "y": 372.3333333333333
               },
+              "id": null,
               "label_style": "LS1373649849858"
-            }
+            },
+            "participant_band_kind": null
           }
-        ]
+        ],
+        "diagram_elements": [],
+        "id": null
       },
       "resolution": 96.00000267028808
-    }
-  ],
-  "expression_language": "http://www.w3.org/1999/XPath",
-  "id": "_1373649849716",
-  "name": "A.1.0",
-  "processes": [
-    {
+    },
+    "WFP-6-": {
+      "ad_hoc_sub_processes": [],
+      "artifacts": [],
+      "associations": [],
+      "auditing": null,
+      "boundary_events": [],
+      "business_rule_tasks": [],
+      "call_activities": [],
+      "complex_gateways": [],
+      "correlation_subscriptions": [],
+      "data_object_references": [],
+      "data_objects": [],
+      "data_store_references": [],
+      "definitional_collaboration_ref": null,
+      "documentation": [],
       "end_events": [
         {
+          "auditing": null,
+          "cancel_event_definitions": [],
+          "category_value_refs": [],
+          "compensate_event_definitions": [],
+          "conditional_event_definitions": [],
+          "data_input_associations": [],
+          "data_inputs": [],
+          "documentation": [],
+          "error_event_definitions": [],
+          "escalation_event_definitions": [],
+          "event_definition_refs": [],
+          "event_definitions": [],
+          "extension_elements": null,
           "id": "_a47df184-085b-49f7-bb82-031c84625821",
           "incoming": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
-          "name": "End Event"
+          "input_set": null,
+          "link_event_definitions": [],
+          "message_event_definitions": [],
+          "monitoring": null,
+          "name": "End Event",
+          "outgoing": [],
+          "properties": [],
+          "signal_event_definitions": [],
+          "terminate_event_definitions": [],
+          "timer_event_definitions": []
         }
       ],
+      "event_based_gateways": [],
+      "events": [],
+      "exclusive_gateways": [],
+      "extension_elements": null,
+      "flow_elements": [],
+      "groups": [],
+      "human_performers": [],
       "id": "WFP-6-",
+      "implicit_throw_events": [],
+      "inclusive_gateways": [],
+      "intermediate_catch_events": [],
+      "intermediate_throw_events": [],
+      "io_bindings": [],
+      "io_specification": null,
       "is_closed": false,
       "is_executable": false,
+      "lane_sets": [],
+      "manual_tasks": [],
+      "monitoring": null,
+      "name": null,
+      "parallel_gateways": [],
+      "performers": [],
+      "potential_owners": [],
       "process_type": "None",
+      "properties": [],
+      "receive_tasks": [],
+      "resources": [],
+      "script_tasks": [],
+      "send_tasks": [],
       "sequence_flows": [
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": "",
           "source_ref": "_93c466ab-b271-4376-a427-f4c353d55ce8",
           "target_ref": "_ec59e164-68b4-4f94-98de-ffb1c58a84af"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": "",
           "source_ref": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
           "target_ref": "_820c21c0-45f3-473b-813f-06381cc637cd"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": "",
           "source_ref": "_820c21c0-45f3-473b-813f-06381cc637cd",
           "target_ref": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c"
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
+          "condition_expression": null,
+          "documentation": [],
+          "extension_elements": null,
           "id": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+          "is_immediate": null,
+          "monitoring": null,
+          "name": "",
           "source_ref": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
           "target_ref": "_a47df184-085b-49f7-bb82-031c84625821"
         }
       ],
+      "service_tasks": [],
       "start_events": [
         {
+          "auditing": null,
+          "cancel_event_definition": [],
+          "category_value_refs": [],
+          "compensate_event_definition": [],
+          "conditional_event_definition": [],
+          "data_output": [],
+          "data_output_association": [],
+          "documentation": [],
+          "error_event_definition": [],
+          "escalation_event_definition": [],
+          "event_definition": [],
+          "event_definition_ref": [],
+          "extension_elements": null,
           "id": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+          "incoming": [],
           "is_interrupting": true,
+          "link_event_definition": [],
+          "message_event_definition": [],
+          "monitoring": null,
           "name": "Start Event",
           "outgoing": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
-          "parallel_multiple": false
+          "output_set": null,
+          "parallel_multiple": false,
+          "properties": [],
+          "signal_event_definition": [],
+          "terminate_event_definition": [],
+          "timer_event_definition": []
         }
       ],
+      "sub_processes": [],
+      "supported_interface_refs": [],
+      "supports": [],
       "tasks": [
         {
+          "auditing": null,
+          "category_value_refs": [],
           "completion_quantity": 1,
+          "data_input_associations": [],
+          "data_output_associations": [],
+          "default": null,
+          "documentation": [],
+          "extension_elements": null,
+          "human_performers": [],
           "id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
           "incoming": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+          "io_specification": null,
           "is_for_compensation": false,
+          "loop_characteristics": null,
+          "monitoring": null,
+          "multi_instance_loop_characteristics": null,
           "name": "Task 1",
           "outgoing": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+          "performers": [],
+          "potential_owners": [],
+          "properties": [],
+          "resources": [],
+          "standard_loop_characteristics": null,
           "start_quantity": 1
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
           "completion_quantity": 1,
+          "data_input_associations": [],
+          "data_output_associations": [],
+          "default": null,
+          "documentation": [],
+          "extension_elements": null,
+          "human_performers": [],
           "id": "_820c21c0-45f3-473b-813f-06381cc637cd",
           "incoming": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+          "io_specification": null,
           "is_for_compensation": false,
+          "loop_characteristics": null,
+          "monitoring": null,
+          "multi_instance_loop_characteristics": null,
           "name": "Task 2",
           "outgoing": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+          "performers": [],
+          "potential_owners": [],
+          "properties": [],
+          "resources": [],
+          "standard_loop_characteristics": null,
           "start_quantity": 1
         },
         {
+          "auditing": null,
+          "category_value_refs": [],
           "completion_quantity": 1,
+          "data_input_associations": [],
+          "data_output_associations": [],
+          "default": null,
+          "documentation": [],
+          "extension_elements": null,
+          "human_performers": [],
           "id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
           "incoming": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+          "io_specification": null,
           "is_for_compensation": false,
+          "loop_characteristics": null,
+          "monitoring": null,
+          "multi_instance_loop_characteristics": null,
           "name": "Task 3",
           "outgoing": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+          "performers": [],
+          "potential_owners": [],
+          "properties": [],
+          "resources": [],
+          "standard_loop_characteristics": null,
           "start_quantity": 1
         }
-      ]
+      ],
+      "text_annotations": [],
+      "transactions": [],
+      "user_tasks": []
+    },
+    "_1373649849716": {
+      "bpmndiagrams": [
+        {
+          "documentation": "",
+          "id": "Trisotech_Visio-_6",
+          "label_styles": [
+            {
+              "font": {
+                "is_bold": false,
+                "is_italic": false,
+                "is_strike_through": false,
+                "is_underline": false,
+                "name": "Arial",
+                "size": 11.0
+              },
+              "id": "LS1373649849858"
+            }
+          ],
+          "name": "A.1.0",
+          "plane": {
+            "bpmn_edges": [
+              {
+                "bpmn_element": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+                "id": "E1373649849864__d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+                "label": null,
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 342.0,
+                    "y": 351.0
+                  },
+                  {
+                    "x": 390.0,
+                    "y": 351.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+                "id": "E1373649849865__e16564d7-0c4c-413e-95f6-f668a3f851fb",
+                "label": null,
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 216.0,
+                    "y": 351.0
+                  },
+                  {
+                    "x": 234.0,
+                    "y": 351.0
+                  },
+                  {
+                    "x": 258.0,
+                    "y": 351.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+                "id": "E1373649849866__2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+                "label": null,
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 474.0,
+                    "y": 351.0
+                  },
+                  {
+                    "x": 522.0,
+                    "y": 351.0
+                  }
+                ]
+              },
+              {
+                "bpmn_element": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+                "id": "E1373649849867__8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+                "label": null,
+                "message_visible_kind": null,
+                "source_element": null,
+                "target_element": null,
+                "waypoint": [
+                  {
+                    "x": 606.0,
+                    "y": 351.0
+                  },
+                  {
+                    "x": 624.0,
+                    "y": 351.0
+                  },
+                  {
+                    "x": 648.0,
+                    "y": 351.0
+                  }
+                ]
+              }
+            ],
+            "bpmn_element": "WFP-6-",
+            "bpmn_shapes": [
+              {
+                "bounds": {
+                  "height": 30.0,
+                  "width": 30.0,
+                  "x": 186.0,
+                  "y": 336.0
+                },
+                "bpmn_element": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+                "choreography_activity_shape": null,
+                "id": "S1373649849857__93c466ab-b271-4376-a427-f4c353d55ce8",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 12.804751171875008,
+                    "width": 94.93333333333335,
+                    "x": 153.67766754457273,
+                    "y": 371.3333333333333
+                  },
+                  "id": null,
+                  "label_style": "LS1373649849858"
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 68.0,
+                  "width": 83.0,
+                  "x": 258.0,
+                  "y": 317.0
+                },
+                "bpmn_element": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+                "choreography_activity_shape": null,
+                "id": "S1373649849859__ec59e164-68b4-4f94-98de-ffb1c58a84af",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 12.804751171875008,
+                    "width": 72.48293963254594,
+                    "x": 263.3333333333333,
+                    "y": 344.5818763825664
+                  },
+                  "id": null,
+                  "label_style": "LS1373649849858"
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 68.0,
+                  "width": 83.0,
+                  "x": 390.0,
+                  "y": 317.0
+                },
+                "bpmn_element": "_820c21c0-45f3-473b-813f-06381cc637cd",
+                "choreography_activity_shape": null,
+                "id": "S1373649849860__820c21c0-45f3-473b-813f-06381cc637cd",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 12.804751171875008,
+                    "width": 72.48293963254594,
+                    "x": 395.3333333333333,
+                    "y": 344.5818763825664
+                  },
+                  "id": null,
+                  "label_style": "LS1373649849858"
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 68.0,
+                  "width": 83.0,
+                  "x": 522.0,
+                  "y": 317.0
+                },
+                "bpmn_element": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+                "choreography_activity_shape": null,
+                "id": "S1373649849861__e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 12.804751171875008,
+                    "width": 72.48293963254594,
+                    "x": 527.3333333333334,
+                    "y": 344.5818763825664
+                  },
+                  "id": null,
+                  "label_style": "LS1373649849858"
+                },
+                "participant_band_kind": null
+              },
+              {
+                "bounds": {
+                  "height": 32.0,
+                  "width": 32.0,
+                  "x": 648.0,
+                  "y": 335.0
+                },
+                "bpmn_element": "_a47df184-085b-49f7-bb82-031c84625821",
+                "choreography_activity_shape": null,
+                "id": "S1373649849862__a47df184-085b-49f7-bb82-031c84625821",
+                "is_expanded": null,
+                "is_horizontal": null,
+                "is_marker_visible": null,
+                "is_message_visible": null,
+                "label": {
+                  "bounds": {
+                    "height": 12.804751171875008,
+                    "width": 94.93333333333335,
+                    "x": 616.5963254593177,
+                    "y": 372.3333333333333
+                  },
+                  "id": null,
+                  "label_style": "LS1373649849858"
+                },
+                "participant_band_kind": null
+              }
+            ],
+            "diagram_elements": [],
+            "id": null
+          },
+          "resolution": 96.00000267028808
+        }
+      ],
+      "cancel_event_definitions": [],
+      "categories": [],
+      "collaborations": [],
+      "compensate_event_definitions": [],
+      "conditional_event_definitions": [],
+      "correlation_properties": [],
+      "data_stores": [],
+      "end_points": [],
+      "error_event_definitions": [],
+      "errors": [],
+      "escalation_event_definitions": [],
+      "escalations": [],
+      "event_definitions": [],
+      "exporter": null,
+      "exporter_version": null,
+      "expression_language": "http://www.w3.org/1999/XPath",
+      "extensions": [],
+      "global_business_rule_tasks": [],
+      "global_conversations": [],
+      "global_manual_tasks": [],
+      "global_script_tasks": [],
+      "global_tasks": [],
+      "global_user_tasks": [],
+      "id": "_1373649849716",
+      "imports": [],
+      "interfaces": [],
+      "item_definitions": [],
+      "link_event_definitions": [],
+      "message_event_definitions": [],
+      "messages": [],
+      "name": "A.1.0",
+      "partner_entities": [],
+      "partner_roles": [],
+      "processes": [
+        {
+          "ad_hoc_sub_processes": [],
+          "artifacts": [],
+          "associations": [],
+          "auditing": null,
+          "boundary_events": [],
+          "business_rule_tasks": [],
+          "call_activities": [],
+          "complex_gateways": [],
+          "correlation_subscriptions": [],
+          "data_object_references": [],
+          "data_objects": [],
+          "data_store_references": [],
+          "definitional_collaboration_ref": null,
+          "documentation": [],
+          "end_events": [
+            {
+              "auditing": null,
+              "cancel_event_definitions": [],
+              "category_value_refs": [],
+              "compensate_event_definitions": [],
+              "conditional_event_definitions": [],
+              "data_input_associations": [],
+              "data_inputs": [],
+              "documentation": [],
+              "error_event_definitions": [],
+              "escalation_event_definitions": [],
+              "event_definition_refs": [],
+              "event_definitions": [],
+              "extension_elements": null,
+              "id": "_a47df184-085b-49f7-bb82-031c84625821",
+              "incoming": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+              "input_set": null,
+              "link_event_definitions": [],
+              "message_event_definitions": [],
+              "monitoring": null,
+              "name": "End Event",
+              "outgoing": [],
+              "properties": [],
+              "signal_event_definitions": [],
+              "terminate_event_definitions": [],
+              "timer_event_definitions": []
+            }
+          ],
+          "event_based_gateways": [],
+          "events": [],
+          "exclusive_gateways": [],
+          "extension_elements": null,
+          "flow_elements": [],
+          "groups": [],
+          "human_performers": [],
+          "id": "WFP-6-",
+          "implicit_throw_events": [],
+          "inclusive_gateways": [],
+          "intermediate_catch_events": [],
+          "intermediate_throw_events": [],
+          "io_bindings": [],
+          "io_specification": null,
+          "is_closed": false,
+          "is_executable": false,
+          "lane_sets": [],
+          "manual_tasks": [],
+          "monitoring": null,
+          "name": null,
+          "parallel_gateways": [],
+          "performers": [],
+          "potential_owners": [],
+          "process_type": "None",
+          "properties": [],
+          "receive_tasks": [],
+          "resources": [],
+          "script_tasks": [],
+          "send_tasks": [],
+          "sequence_flows": [
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": "",
+              "source_ref": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+              "target_ref": "_ec59e164-68b4-4f94-98de-ffb1c58a84af"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": "",
+              "source_ref": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+              "target_ref": "_820c21c0-45f3-473b-813f-06381cc637cd"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": "",
+              "source_ref": "_820c21c0-45f3-473b-813f-06381cc637cd",
+              "target_ref": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c"
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "condition_expression": null,
+              "documentation": [],
+              "extension_elements": null,
+              "id": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+              "is_immediate": null,
+              "monitoring": null,
+              "name": "",
+              "source_ref": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+              "target_ref": "_a47df184-085b-49f7-bb82-031c84625821"
+            }
+          ],
+          "service_tasks": [],
+          "start_events": [
+            {
+              "auditing": null,
+              "cancel_event_definition": [],
+              "category_value_refs": [],
+              "compensate_event_definition": [],
+              "conditional_event_definition": [],
+              "data_output": [],
+              "data_output_association": [],
+              "documentation": [],
+              "error_event_definition": [],
+              "escalation_event_definition": [],
+              "event_definition": [],
+              "event_definition_ref": [],
+              "extension_elements": null,
+              "id": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+              "incoming": [],
+              "is_interrupting": true,
+              "link_event_definition": [],
+              "message_event_definition": [],
+              "monitoring": null,
+              "name": "Start Event",
+              "outgoing": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+              "output_set": null,
+              "parallel_multiple": false,
+              "properties": [],
+              "signal_event_definition": [],
+              "terminate_event_definition": [],
+              "timer_event_definition": []
+            }
+          ],
+          "sub_processes": [],
+          "supported_interface_refs": [],
+          "supports": [],
+          "tasks": [
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "completion_quantity": 1,
+              "data_input_associations": [],
+              "data_output_associations": [],
+              "default": null,
+              "documentation": [],
+              "extension_elements": null,
+              "human_performers": [],
+              "id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+              "incoming": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+              "io_specification": null,
+              "is_for_compensation": false,
+              "loop_characteristics": null,
+              "monitoring": null,
+              "multi_instance_loop_characteristics": null,
+              "name": "Task 1",
+              "outgoing": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+              "performers": [],
+              "potential_owners": [],
+              "properties": [],
+              "resources": [],
+              "standard_loop_characteristics": null,
+              "start_quantity": 1
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "completion_quantity": 1,
+              "data_input_associations": [],
+              "data_output_associations": [],
+              "default": null,
+              "documentation": [],
+              "extension_elements": null,
+              "human_performers": [],
+              "id": "_820c21c0-45f3-473b-813f-06381cc637cd",
+              "incoming": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+              "io_specification": null,
+              "is_for_compensation": false,
+              "loop_characteristics": null,
+              "monitoring": null,
+              "multi_instance_loop_characteristics": null,
+              "name": "Task 2",
+              "outgoing": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+              "performers": [],
+              "potential_owners": [],
+              "properties": [],
+              "resources": [],
+              "standard_loop_characteristics": null,
+              "start_quantity": 1
+            },
+            {
+              "auditing": null,
+              "category_value_refs": [],
+              "completion_quantity": 1,
+              "data_input_associations": [],
+              "data_output_associations": [],
+              "default": null,
+              "documentation": [],
+              "extension_elements": null,
+              "human_performers": [],
+              "id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+              "incoming": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+              "io_specification": null,
+              "is_for_compensation": false,
+              "loop_characteristics": null,
+              "monitoring": null,
+              "multi_instance_loop_characteristics": null,
+              "name": "Task 3",
+              "outgoing": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+              "performers": [],
+              "potential_owners": [],
+              "properties": [],
+              "resources": [],
+              "standard_loop_characteristics": null,
+              "start_quantity": 1
+            }
+          ],
+          "text_annotations": [],
+          "transactions": [],
+          "user_tasks": []
+        }
+      ],
+      "relationships": [],
+      "resources": [],
+      "root_elements": [],
+      "signal_event_definitions": [],
+      "signals": [],
+      "target_namespace": "http://www.trisotech.com/definitions/_1373649849716",
+      "terminate_event_definitions": [],
+      "timer_event_definitions": [],
+      "type_language": "http://www.w3.org/2001/XMLSchema"
+    },
+    "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": "",
+      "source_ref": "_820c21c0-45f3-473b-813f-06381cc637cd",
+      "target_ref": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c"
+    },
+    "_820c21c0-45f3-473b-813f-06381cc637cd": {
+      "auditing": null,
+      "category_value_refs": [],
+      "completion_quantity": 1,
+      "data_input_associations": [],
+      "data_output_associations": [],
+      "default": null,
+      "documentation": [],
+      "extension_elements": null,
+      "human_performers": [],
+      "id": "_820c21c0-45f3-473b-813f-06381cc637cd",
+      "incoming": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "io_specification": null,
+      "is_for_compensation": false,
+      "loop_characteristics": null,
+      "monitoring": null,
+      "multi_instance_loop_characteristics": null,
+      "name": "Task 2",
+      "outgoing": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "performers": [],
+      "potential_owners": [],
+      "properties": [],
+      "resources": [],
+      "standard_loop_characteristics": null,
+      "start_quantity": 1
+    },
+    "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": "",
+      "source_ref": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+      "target_ref": "_a47df184-085b-49f7-bb82-031c84625821"
+    },
+    "_93c466ab-b271-4376-a427-f4c353d55ce8": {
+      "auditing": null,
+      "cancel_event_definition": [],
+      "category_value_refs": [],
+      "compensate_event_definition": [],
+      "conditional_event_definition": [],
+      "data_output": [],
+      "data_output_association": [],
+      "documentation": [],
+      "error_event_definition": [],
+      "escalation_event_definition": [],
+      "event_definition": [],
+      "event_definition_ref": [],
+      "extension_elements": null,
+      "id": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+      "incoming": [],
+      "is_interrupting": true,
+      "link_event_definition": [],
+      "message_event_definition": [],
+      "monitoring": null,
+      "name": "Start Event",
+      "outgoing": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "output_set": null,
+      "parallel_multiple": false,
+      "properties": [],
+      "signal_event_definition": [],
+      "terminate_event_definition": [],
+      "timer_event_definition": []
+    },
+    "_a47df184-085b-49f7-bb82-031c84625821": {
+      "auditing": null,
+      "cancel_event_definitions": [],
+      "category_value_refs": [],
+      "compensate_event_definitions": [],
+      "conditional_event_definitions": [],
+      "data_input_associations": [],
+      "data_inputs": [],
+      "documentation": [],
+      "error_event_definitions": [],
+      "escalation_event_definitions": [],
+      "event_definition_refs": [],
+      "event_definitions": [],
+      "extension_elements": null,
+      "id": "_a47df184-085b-49f7-bb82-031c84625821",
+      "incoming": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "input_set": null,
+      "link_event_definitions": [],
+      "message_event_definitions": [],
+      "monitoring": null,
+      "name": "End Event",
+      "outgoing": [],
+      "properties": [],
+      "signal_event_definitions": [],
+      "terminate_event_definitions": [],
+      "timer_event_definitions": []
+    },
+    "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": "",
+      "source_ref": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+      "target_ref": "_820c21c0-45f3-473b-813f-06381cc637cd"
+    },
+    "_e16564d7-0c4c-413e-95f6-f668a3f851fb": {
+      "auditing": null,
+      "category_value_refs": [],
+      "condition_expression": null,
+      "documentation": [],
+      "extension_elements": null,
+      "id": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "is_immediate": null,
+      "monitoring": null,
+      "name": "",
+      "source_ref": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+      "target_ref": "_ec59e164-68b4-4f94-98de-ffb1c58a84af"
+    },
+    "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c": {
+      "auditing": null,
+      "category_value_refs": [],
+      "completion_quantity": 1,
+      "data_input_associations": [],
+      "data_output_associations": [],
+      "default": null,
+      "documentation": [],
+      "extension_elements": null,
+      "human_performers": [],
+      "id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+      "incoming": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "io_specification": null,
+      "is_for_compensation": false,
+      "loop_characteristics": null,
+      "monitoring": null,
+      "multi_instance_loop_characteristics": null,
+      "name": "Task 3",
+      "outgoing": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "performers": [],
+      "potential_owners": [],
+      "properties": [],
+      "resources": [],
+      "standard_loop_characteristics": null,
+      "start_quantity": 1
+    },
+    "_ec59e164-68b4-4f94-98de-ffb1c58a84af": {
+      "auditing": null,
+      "category_value_refs": [],
+      "completion_quantity": 1,
+      "data_input_associations": [],
+      "data_output_associations": [],
+      "default": null,
+      "documentation": [],
+      "extension_elements": null,
+      "human_performers": [],
+      "id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+      "incoming": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "io_specification": null,
+      "is_for_compensation": false,
+      "loop_characteristics": null,
+      "monitoring": null,
+      "multi_instance_loop_characteristics": null,
+      "name": "Task 1",
+      "outgoing": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "performers": [],
+      "potential_owners": [],
+      "properties": [],
+      "resources": [],
+      "standard_loop_characteristics": null,
+      "start_quantity": 1
     }
-  ],
-  "target_namespace": "http://www.trisotech.com/definitions/_1373649849716",
-  "type_language": "http://www.w3.org/2001/XMLSchema"
+  }
 }

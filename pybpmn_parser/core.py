@@ -280,8 +280,10 @@ def index_ids(obj: Any) -> dict[str, Any]:
         if isinstance(child_obj, list):
             for item in child_obj:
                 result.update(index_ids(item))
-        elif fld.name == "id":
+        elif fld.name == "id" and getattr(obj, fld.name) is None:
+            continue
+        elif fld.name == "id" and getattr(obj, fld.name):
             result[child_obj] = obj
-        else:
+        elif child_obj:
             result |= index_ids(child_obj)
     return result
