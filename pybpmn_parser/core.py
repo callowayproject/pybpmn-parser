@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import contextlib
 from dataclasses import dataclass, fields, is_dataclass
 from enum import Enum
 from typing import Any, Callable, Dict, Optional
@@ -24,9 +25,7 @@ class QName:
     uri: Optional[str] = None
 
     def __str__(self) -> str:
-        if self.uri:
-            return f"{{{self.uri}}}{self.local}"
-        return self.local
+        return f"{{{self.uri}}}{self.local}" if self.uri else self.local
 
     @classmethod
     def from_str(
@@ -46,11 +45,10 @@ class QName:
 
         if ":" in qname:
             prefix, local = qname.split(":")
-            uri = nsmap.get(prefix, default_uri)
-            if not uri:
+            if uri := nsmap.get(prefix, default_uri):
+                return cls(local, uri)
+            else:
                 raise ValueError(f"Prefix {prefix} is not defined in the namespace map.")
-            return cls(local, uri)
-
         return cls(qname, default_uri)
 
 
@@ -98,11 +96,8 @@ def _convert(
 
     # Objects with __dict__ (non-dataclass)
     if hasattr(value, "__dict__") and not isinstance(value, (str, bytes, bytearray)):
-        try:
+        with contextlib.suppress(TypeError):
             return _convert(vars(value), skip_empty=skip_empty, empty_predicate=empty_predicate, enum_as=enum_as)
-        except TypeError:
-            # vars may fail (e.g., for some extension types); fall through to return as-is
-            pass
 
     # Primitives
     return value
