@@ -14,7 +14,7 @@ from pybpmn_parser.element_registry import register_element
 class GlobalBusinessRuleTask(GlobalTask):
     """A type of Global Task that represents a Business Rule Task."""
 
-    implementation: str | ImplementationValue = field(
+    implementation: ImplementationValue = field(
         default=ImplementationValue.UNSPECIFIED,
         metadata={
             "type": "Attribute",

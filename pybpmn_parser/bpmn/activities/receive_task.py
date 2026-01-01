@@ -15,7 +15,7 @@ from pybpmn_parser.element_registry import register_element
 class ReceiveTask(Task):
     """A ReceiveTask is a simple Task designed to wait for a Message to arrive from an external Participant."""
 
-    implementation: str | ImplementationValue = field(
+    implementation: ImplementationValue = field(
         default=ImplementationValue.WEB_SERVICE,
         metadata={
             "type": "Attribute",

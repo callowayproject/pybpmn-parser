@@ -33,7 +33,7 @@ class UserTask(Task):
     )
     """A hook that enables BPMN adopters to specify task rendering attributes using the BPMN Extension mechanism."""
 
-    implementation: str | ImplementationValue = field(
+    implementation: ImplementationValue = field(
         default=ImplementationValue.UNSPECIFIED,
         metadata={
             "type": "Attribute",

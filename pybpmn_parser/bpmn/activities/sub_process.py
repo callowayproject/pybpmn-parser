@@ -343,7 +343,7 @@ class Transaction(TransactionlessSubProcess):
         name = "transaction"
         namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL"
 
-    method: str | TransactionMethodValue = field(
+    method: TransactionMethodValue = field(
         default=TransactionMethodValue.COMPENSATE,
         metadata={
             "type": "Attribute",

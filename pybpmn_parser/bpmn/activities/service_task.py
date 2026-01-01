@@ -17,7 +17,7 @@ class ServiceTask(Task):
     A Service Task is a Task that uses some sort of service, which could be a Web service or an automated application.
     """
 
-    implementation: str | ImplementationValue = field(
+    implementation: ImplementationValue = field(
         default=ImplementationValue.WEB_SERVICE,
         metadata={
             "type": "Attribute",

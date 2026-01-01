@@ -15,7 +15,7 @@ from pybpmn_parser.element_registry import register_element
 class SendTask(Task):
     """A Send Task is a simple Task that is designed to send a Message to an external Participant."""
 
-    implementation: str | ImplementationValue = field(
+    implementation: ImplementationValue = field(
         default=ImplementationValue.WEB_SERVICE,
         metadata={
             "type": "Attribute",

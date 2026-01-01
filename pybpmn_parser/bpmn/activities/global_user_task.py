@@ -25,7 +25,7 @@ class GlobalUserTask(GlobalTask):
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
         },
     )
-    implementation: str | ImplementationValue = field(
+    implementation: ImplementationValue = field(
         default=ImplementationValue.UNSPECIFIED,
         metadata={
             "type": "Attribute",

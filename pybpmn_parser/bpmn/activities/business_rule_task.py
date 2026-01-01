@@ -19,7 +19,7 @@ class BusinessRuleTask(Task):
     the output of calculations that the Business Rules Engine might provide.
     """
 
-    implementation: str | ImplementationValue = field(
+    implementation: ImplementationValue = field(
         default=ImplementationValue.UNSPECIFIED,
         metadata={
             "type": "Attribute",
