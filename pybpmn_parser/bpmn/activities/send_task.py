@@ -26,6 +26,7 @@ class SendTask(Task):
         metadata={
             "name": "messageRef",
             "type": "Attribute",
+            "is_reference": True,
         },
     )
     operation_ref: Optional[str] = field(
@@ -33,6 +34,7 @@ class SendTask(Task):
         metadata={
             "name": "operationRef",
             "type": "Attribute",
+            "is_reference": True,
         },
     )
 
