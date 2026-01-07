@@ -1,5 +1,6 @@
 """Parse a BPMN file."""
 
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
@@ -7,8 +8,7 @@ import xmltodict
 
 from pybpmn_parser.bpmn.infrastructure.definitions import Definitions
 from pybpmn_parser.bpmn.types import NAMESPACES
-from pybpmn_parser.core import index_ids
-from pybpmn_parser.factory import create_bpmn
+from pybpmn_parser.element_registry import ElementDescriptor
 from pybpmn_parser.plugins import load_default_plugins
 from pybpmn_parser.plugins.moddle import convert_moddle_registry, load_moddle_file
 from pybpmn_parser.validator import validate
@@ -17,9 +17,44 @@ from pybpmn_parser.validator import validate
 class ParseResult:
     """Result for parsing a BPMN file."""
 
-    def __init__(self, definitions: Definitions):
+    def __init__(self, definitions: Definitions, context: "ParseContext") -> None:
         self.definition = definitions
-        self.elements_by_id = index_ids(definitions)
+        self.elements_by_id: dict[str, ElementDescriptor] = context.elements_by_id
+        self.references: list[Reference] = context.references
+
+
+@dataclass
+class Reference:
+    """A reference to an element that has not been fully processed yet."""
+
+    element_id: str
+    """The ID of the element that containing the reference."""
+
+    property: str
+    """The property on the element that contains the reference."""
+
+    reference_id: str
+    """The id of the reference."""
+
+
+class ParseContext:
+    """Context for parsing BPMN elements from XML dictionaries."""
+
+    def __init__(self):
+        self.elements_by_id: dict[str, ElementDescriptor] = {}
+        """A mapping from element ID to element descriptor."""
+
+        self.references: list[Reference] = []
+        """A list of unresolved references."""
+
+    def add_reference(self, reference: Reference) -> None:
+        """Add an unresolved reference."""
+        self.references.append(reference)
+
+    def add_element(self, element: ElementDescriptor) -> None:
+        """Add a processed element."""
+        if (id_value := getattr(element, "id", None)) or (id_value := getattr(element, "@id", None)):
+            self.elements_by_id[id_value] = element
 
 
 class Parser:
@@ -58,6 +93,8 @@ class Parser:
         Returns:
             Dictionary containing parsed nodes and flows
         """
+        from pybpmn_parser.factory import create_bpmn
+
         # Validate XML first
         validation_result = validate(xml_str)
         for error in validation_result.errors:
@@ -66,4 +103,6 @@ class Parser:
 
         # Parse root element
         root = xmltodict.parse(xml_str)
-        return ParseResult(create_bpmn(root, self.ns_map))
+        context = ParseContext()
+        definition_element = create_bpmn(root, context, self.ns_map)
+        return ParseResult(definition_element, context)

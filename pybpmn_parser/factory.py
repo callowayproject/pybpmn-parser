@@ -9,6 +9,7 @@ from pybpmn_parser.bpmn.infrastructure.definitions import Definitions
 from pybpmn_parser.bpmn.types import NAMESPACES
 from pybpmn_parser.core import QName
 from pybpmn_parser.element_registry import ElementDescriptor, registry
+from pybpmn_parser.parse import ParseContext, Reference
 
 IGNORE_ATTRIBUTES = re.compile(r"@xmlns:.+")
 
@@ -76,6 +77,7 @@ def _handle_unknown_property(
     value: Any,
     descriptor: ElementDescriptor,
     parent_uri: str,
+    context: ParseContext,
     ns_map: dict[str, str],
 ) -> dict[str, Any]:
     """
@@ -93,6 +95,7 @@ def _handle_unknown_property(
         value: The associated value with the property key, which can be a list or a raw value.
         descriptor: Descriptor providing information about the current element's structure.
         parent_uri: URI of the parent element in the hierarchy.
+        context: Context providing information about the current element's structure.
         ns_map: Dictionary providing namespace mapping for resolution of keys.
 
     Returns:
@@ -106,10 +109,11 @@ def _handle_unknown_property(
     if attr_descriptor:
         if isinstance(value, list):
             new_values[property_name] = [
-                create_element_from_dict(child_val, attr_descriptor, parent_uri, ns_map) for child_val in value
+                create_element_from_dict(child_val, attr_descriptor, parent_uri, context, ns_map)
+                for child_val in value
             ]
         else:
-            new_values[property_name] = create_element_from_dict(value, attr_descriptor, parent_uri, ns_map)
+            new_values[property_name] = create_element_from_dict(value, attr_descriptor, parent_uri, context, ns_map)
     else:
         # Unknown to the registry as well: keep raw value
         new_values[property_name] = value
@@ -122,6 +126,7 @@ def _handle_known_property(
     value: Any,
     descriptor: ElementDescriptor,
     parent_uri: str,
+    context: ParseContext,
     ns_map: dict[str, str],
 ) -> dict[str, Any]:
     """
@@ -138,6 +143,7 @@ def _handle_known_property(
         value: The value associated with the given XML element.
         descriptor: The descriptor that defines the properties of the XML element.
         parent_uri: A parent URI to resolve relative paths.
+        context: Context providing information about the current element's structure.
         ns_map: A dictionary mapping namespace prefixes to their URIs.
 
     Raises:
@@ -154,7 +160,12 @@ def _handle_known_property(
 
     # Scalar conversion
     if prop_descriptor.type in SCALAR_CONVERTER:
-        new_values[property_name] = SCALAR_CONVERTER[prop_descriptor.type](value)
+        if prop_descriptor.is_many:
+            if not isinstance(value, list):
+                value = [value]
+            new_values[property_name] = [SCALAR_CONVERTER[prop_descriptor.type](v) for v in value]
+        else:
+            new_values[property_name] = SCALAR_CONVERTER[prop_descriptor.type](value)
         return new_values
 
     # Simple attribute (no child elements)
@@ -171,12 +182,17 @@ def _handle_known_property(
         prop_descriptor.is_many,
         ns_map,
         parent_uri,
+        context,
     )
     return new_values
 
 
-def create_element_from_dict(
-    element_dict: dict, descriptor: ElementDescriptor, parent_uri: str, nsmap: Optional[dict[str, str]] = None
+def create_element_from_dict(  # noqa: C901
+    element_dict: dict,
+    descriptor: ElementDescriptor,
+    parent_uri: str,
+    context: ParseContext,
+    nsmap: Optional[dict[str, str]] = None,
 ) -> Any:
     """Create a BPMN element from a dictionary representation.
 
@@ -184,6 +200,7 @@ def create_element_from_dict(
         element_dict: A dictionary representing a BPMN element.
         descriptor: A descriptor for the BPMN element.
         parent_uri: The URI of the parent BPMN element.
+        context: The parsing context for the element.
         nsmap: An optional namespace map for resolving prefixed element names.
 
     Returns:
@@ -209,16 +226,29 @@ def create_element_from_dict(
 
         attr_name = get_attribute_name(key, descriptor, ns_map)
         if attr_name not in properties:
-            item_values |= _handle_unknown_property(key, value, descriptor, parent_uri, ns_map)
+            item_values |= _handle_unknown_property(key, value, descriptor, parent_uri, context, ns_map)
             continue
 
-        item_values |= _handle_known_property(key, value, descriptor, parent_uri, ns_map)
-
-    return descriptor.type.from_kwargs(**item_values)
+        item_values |= _handle_known_property(key, value, descriptor, parent_uri, context, ns_map)
+    element = descriptor.type.from_kwargs(**item_values)
+    for prop in properties.values():
+        if prop.is_reference and (prop_value := getattr(element, prop.property_name)):
+            if isinstance(prop_value, list):
+                for ref_id in prop_value:
+                    context.add_reference(Reference(element.id, prop.property_name, ref_id))
+            else:
+                context.add_reference(Reference(element.id, prop.property_name, prop_value))
+    context.add_element(element)
+    return element
 
 
 def get_child_value(
-    value: Any, child_descriptor: Any | None, is_many: bool, ns_map: dict[str, str], parent_uri: str
+    value: Any,
+    child_descriptor: Any | None,
+    is_many: bool,
+    ns_map: dict[str, str],
+    parent_uri: str,
+    context: ParseContext,
 ) -> Any:
     """
     Processes a value and its descriptor to generate the corresponding child element or list of child elements.
@@ -234,19 +264,20 @@ def get_child_value(
         is_many: Indicates whether the descriptor expects multiple child elements.
         ns_map: A dictionary mapping namespace prefixes to their corresponding URIs.
         parent_uri: The parent namespace URI for the resulting child elements.
+        context: The parsing context for the element.
 
     Returns:
         A processed value representing either a single child element or a list of child elements
         based on the descriptor and the provided input.
     """
-    if child_descriptor is None:
+    if child_descriptor is None or value is None:
         return value
     elif is_many or isinstance(value, list):
         if not isinstance(value, list):
             value = [value]
-        return [create_element_from_dict(item, child_descriptor, parent_uri, ns_map) for item in value]
+        return [create_element_from_dict(item, child_descriptor, parent_uri, context, ns_map) for item in value]
     else:
-        return create_element_from_dict(value, child_descriptor, parent_uri, ns_map)
+        return create_element_from_dict(value, child_descriptor, parent_uri, context, ns_map)
 
 
 def get_child_qname(attr_name: QName, descriptor: ElementDescriptor, key: str, ns_map: dict[str, str]) -> QName | None:
@@ -282,7 +313,9 @@ def extract_nsmap_from_dict(element_dict: dict, nsmap: dict[str, str] | None) ->
     return ns_map
 
 
-def create_bpmn(root_xml_dict: dict, initial_nsmap: Optional[dict[str, str]] = None) -> Definitions:
+def create_bpmn(
+    root_xml_dict: dict, context: ParseContext, initial_nsmap: Optional[dict[str, str]] = None
+) -> Definitions:
     """
     Create a BPMN element from a root XML dictionary.
 
@@ -290,6 +323,7 @@ def create_bpmn(root_xml_dict: dict, initial_nsmap: Optional[dict[str, str]] = N
 
     Args:
         root_xml_dict: A root XML dictionary.
+        context: A ParseContext instance.
         initial_nsmap: An optional namespace map for resolving prefixed element names.
 
     Returns:
@@ -305,7 +339,7 @@ def create_bpmn(root_xml_dict: dict, initial_nsmap: Optional[dict[str, str]] = N
         default_uri = nsmap.get("default", None)
         qname = QName.from_str(key, nsmap, default_uri=default_uri)
         descriptor = registry.by_qname[qname]
-        output.append(create_element_from_dict(value, descriptor, qname.uri, nsmap))
+        output.append(create_element_from_dict(value, descriptor, qname.uri, context, nsmap))
 
     if not output:
         raise ValueError("No BPMN definitions found.")
