@@ -9,7 +9,6 @@
 ## Core Libraries
 - **XML Parsing:** lxml 6.0+ (high-performance XML processing)
 - **Data Modeling:** Pydantic 2.11+ (data validation using Python type annotations)
-- **XML Binding:** pydantic-xml 2.17+ (XML serialization/deserialization for Pydantic)
 - **Functional Programming:** returns 0.23+ (type-safe error handling)
 - **Schema Validation:** xmlschema 4.1+ (XML Schema validator)
 - **XML to Dict:** xmltodict 0.14+ (XML to Python dict conversion)
@@ -63,14 +62,6 @@
 - **Black Configuration:** Line length 119
 - **Coverage Configuration:** Branch coverage with 90% minimum
 - **Pre-commit Configuration:** .pre-commit-config.yaml (automated code quality checks)
-
-## Supported BPMN Standards
-- **BPMN 2.0:** Full specification compliance
-- **XML Schema:** XSD validation support
-- **Vendor Extensions:**
-  - Camunda (built-in support)
-  - Custom extensions via plugin system
-  - Moodle types (in development)
 
 ## Performance Considerations
 - **XML Parser:** lxml with C extensions for performance
