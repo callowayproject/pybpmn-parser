@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.1 (2026-01-07)
+
+[Compare the full difference.](https://github.com/callowayproject/pybpmn-parser/compare/0.3.0...0.3.1)
+
+### Fixes
+
+- Fix type hinting and update some documentation. [ad2d616](https://github.com/callowayproject/pybpmn-parser/commit/ad2d616cd7388fced8457a08b552366b3eeb034f)
+
 ## 0.3.0 (2026-01-07)
 
 [Compare the full difference.](https://github.com/callowayproject/pybpmn-parser/compare/0.2.0...0.3.0)
