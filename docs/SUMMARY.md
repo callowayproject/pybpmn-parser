@@ -8,7 +8,7 @@
     * [Using Vendor Extensions](tutorials/extensions.md)
 * [Architecture Overview](architecture/index.md)
     * [Core Components](architecture/components.md)
-* [API Reference](reference/index.md)
+* [API Reference](reference/)
 * [Development Guide](development.md)
 * [Explanation](explanation.md)
 * [How-Tos](howtos/index.md)

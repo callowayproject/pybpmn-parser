@@ -62,7 +62,7 @@ See the [Installation Guide](installation.md) for more options.
 - **[How-Tos](howtos/index.md)** - Solutions to specific problems
 
 ### Reference
-- **[API Reference](reference/index.md)** - Complete API documentation
+- **[API Reference](reference/api/)** - Complete API documentation
 - **[Architecture](architecture/index.md)** - System design and internals
 
 ### Extending
