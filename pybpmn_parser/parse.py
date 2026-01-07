@@ -2,16 +2,18 @@
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
+from typing import TYPE_CHECKING, Any, Optional
 
 import xmltodict
 
 from pybpmn_parser.bpmn.infrastructure.definitions import Definitions
 from pybpmn_parser.bpmn.types import NAMESPACES
-from pybpmn_parser.element_registry import ElementDescriptor
 from pybpmn_parser.plugins import load_default_plugins
 from pybpmn_parser.plugins.moddle import convert_moddle_registry, load_moddle_file
 from pybpmn_parser.validator import validate
+
+if TYPE_CHECKING:
+    from pybpmn_parser.element_registry import ElementDescriptor
 
 
 class ParseResult:
@@ -41,8 +43,8 @@ class ParseContext:
     """Context for parsing BPMN elements from XML dictionaries."""
 
     def __init__(self):
-        self.elements_by_id: dict[str, ElementDescriptor] = {}
-        """A mapping from element ID to element descriptor."""
+        self.elements_by_id: dict[str, Any] = {}
+        """A mapping from element ID to element instance."""
 
         self.references: list[Reference] = []
         """A list of unresolved references."""
@@ -51,7 +53,7 @@ class ParseContext:
         """Add an unresolved reference."""
         self.references.append(reference)
 
-    def add_element(self, element: ElementDescriptor) -> None:
+    def add_element(self, element: Any) -> None:
         """Add a processed element."""
         if (id_value := getattr(element, "id", None)) or (id_value := getattr(element, "@id", None)):
             self.elements_by_id[id_value] = element
