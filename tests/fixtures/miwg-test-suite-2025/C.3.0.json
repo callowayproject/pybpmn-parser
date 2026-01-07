@@ -1099,7 +1099,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "2 hours",
-            "outgoing": "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A",
+            "outgoing": [
+              "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1163,7 +1165,9 @@
             ],
             "monitoring": null,
             "name": null,
-            "outgoing": "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A",
+            "outgoing": [
+              "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1220,7 +1224,9 @@
               }
             },
             "id": "_177bd313-c6c9-4df5-8f82-313beb30d2eb",
-            "incoming": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+            "incoming": [
+              "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1270,7 +1276,9 @@
               }
             },
             "id": "_b3dc1906-d4d3-40c5-aaf6-5a74148ae887",
-            "incoming": "_cf380e47-1401-4e7e-b710-193b626e49eb",
+            "incoming": [
+              "_cf380e47-1401-4e7e-b710-193b626e49eb"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1320,7 +1328,10 @@
               }
             },
             "id": "_dcee5c64-3010-4ee5-b480-bce856e6f29c",
-            "incoming": "['_435d9320-bbf4-48ad-aa56-16cb5483e95b', '_d54c5707-af7a-4b36-a059-46681bbf0004']",
+            "incoming": [
+              "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+              "_d54c5707-af7a-4b36-a059-46681bbf0004"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1367,10 +1378,16 @@
             },
             "gateway_direction": "Diverging",
             "id": "_604be023-654c-44df-a64c-365254a100cd",
-            "incoming": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+            "incoming": [
+              "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+            ],
             "monitoring": null,
             "name": "Service type",
-            "outgoing": "['_b99800c3-c340-460c-a43e-098014a365d0', '_437e5969-1e61-4cb9-aa76-4f8854f32eeb', '_ada039b6-94dd-4a15-a6b1-c7fe662c64ee']"
+            "outgoing": [
+              "_b99800c3-c340-460c-a43e-098014a365d0",
+              "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+              "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+            ]
           },
           {
             "auditing": null,
@@ -1403,10 +1420,15 @@
             },
             "gateway_direction": "Diverging",
             "id": "_2b6bc88e-d3be-4704-87d1-c264bf704589",
-            "incoming": "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee",
+            "incoming": [
+              "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+            ],
             "monitoring": null,
             "name": "Service level",
-            "outgoing": "['_cddf9325-a85b-4347-8c57-8b909fa77ae9', '_be893987-caec-4605-b078-bd96b7cd6c12']"
+            "outgoing": [
+              "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+              "_be893987-caec-4605-b078-bd96b7cd6c12"
+            ]
           },
           {
             "auditing": null,
@@ -1439,10 +1461,15 @@
             },
             "gateway_direction": "Diverging",
             "id": "_936c0bfa-5ebf-4546-8d1a-cce556148788",
-            "incoming": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+            "incoming": [
+              "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+            ],
             "monitoring": null,
             "name": "Successful?",
-            "outgoing": "['_cf380e47-1401-4e7e-b710-193b626e49eb', '_3fb323d5-2c59-487a-af63-804208f6c5cb']"
+            "outgoing": [
+              "_cf380e47-1401-4e7e-b710-193b626e49eb",
+              "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+            ]
           }
         ],
         "extension_elements": {
@@ -2383,7 +2410,9 @@
             ],
             "monitoring": null,
             "name": "Receive customer request",
-            "outgoing": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+            "outgoing": [
+              "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2481,7 +2510,10 @@
             "id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2",
             "implicit_throw_events": [],
             "inclusive_gateways": [],
-            "incoming": "['_437e5969-1e61-4cb9-aa76-4f8854f32eeb', 'Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A']",
+            "incoming": [
+              "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+              "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+            ],
             "intermediate_catch_events": [],
             "intermediate_throw_events": [],
             "io_specification": null,
@@ -2494,7 +2526,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Perform emergency repair",
-            "outgoing": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+            "outgoing": [
+              "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+            ],
             "parallel_gateways": [],
             "performers": [],
             "potential_owners": [],
@@ -2600,14 +2634,18 @@
             "human_performers": [],
             "id": "_c73a5f4a-72f1-4e11-bb40-2f98da75fb9a",
             "implementation": "##WebService",
-            "incoming": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+            "incoming": [
+              "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Analyse customer request",
-            "outgoing": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+            "outgoing": [
+              "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -2698,14 +2736,19 @@
             "human_performers": [],
             "id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d",
             "implementation": "WebService",
-            "incoming": "['_b99800c3-c340-460c-a43e-098014a365d0', '_3fb323d5-2c59-487a-af63-804208f6c5cb']",
+            "incoming": [
+              "_b99800c3-c340-460c-a43e-098014a365d0",
+              "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Replace fridge",
-            "outgoing": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+            "outgoing": [
+              "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2786,14 +2829,18 @@
             "human_performers": [],
             "id": "_d034722f-751d-4f37-a3d7-47993822e979",
             "implementation": "WebService",
-            "incoming": "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+            "incoming": [
+              "_cddf9325-a85b-4347-8c57-8b909fa77ae9"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Perform repair (standard level)",
-            "outgoing": "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+            "outgoing": [
+              "_435d9320-bbf4-48ad-aa56-16cb5483e95b"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2874,14 +2921,19 @@
             "human_performers": [],
             "id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba",
             "implementation": "WebService",
-            "incoming": "['_be893987-caec-4605-b078-bd96b7cd6c12', 'Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A']",
+            "incoming": [
+              "_be893987-caec-4605-b078-bd96b7cd6c12",
+              "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Perform repair (premium level)",
-            "outgoing": "_d54c5707-af7a-4b36-a059-46681bbf0004",
+            "outgoing": [
+              "_d54c5707-af7a-4b36-a059-46681bbf0004"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2955,7 +3007,9 @@
       ],
       "monitoring": null,
       "name": null,
-      "outgoing": "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A",
+      "outgoing": [
+        "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -3001,7 +3055,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "2 hours",
-      "outgoing": "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A",
+      "outgoing": [
+        "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -5536,7 +5592,9 @@
         }
       },
       "id": "_177bd313-c6c9-4df5-8f82-313beb30d2eb",
-      "incoming": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+      "incoming": [
+        "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -5633,10 +5691,15 @@
       },
       "gateway_direction": "Diverging",
       "id": "_2b6bc88e-d3be-4704-87d1-c264bf704589",
-      "incoming": "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee",
+      "incoming": [
+        "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+      ],
       "monitoring": null,
       "name": "Service level",
-      "outgoing": "['_cddf9325-a85b-4347-8c57-8b909fa77ae9', '_be893987-caec-4605-b078-bd96b7cd6c12']"
+      "outgoing": [
+        "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+        "_be893987-caec-4605-b078-bd96b7cd6c12"
+      ]
     },
     "_3fb323d5-2c59-487a-af63-804208f6c5cb": {
       "auditing": null,
@@ -6985,7 +7048,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "2 hours",
-              "outgoing": "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A",
+              "outgoing": [
+                "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -7049,7 +7114,9 @@
               ],
               "monitoring": null,
               "name": null,
-              "outgoing": "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A",
+              "outgoing": [
+                "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -7106,7 +7173,9 @@
                 }
               },
               "id": "_177bd313-c6c9-4df5-8f82-313beb30d2eb",
-              "incoming": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+              "incoming": [
+                "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -7156,7 +7225,9 @@
                 }
               },
               "id": "_b3dc1906-d4d3-40c5-aaf6-5a74148ae887",
-              "incoming": "_cf380e47-1401-4e7e-b710-193b626e49eb",
+              "incoming": [
+                "_cf380e47-1401-4e7e-b710-193b626e49eb"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -7206,7 +7277,10 @@
                 }
               },
               "id": "_dcee5c64-3010-4ee5-b480-bce856e6f29c",
-              "incoming": "['_435d9320-bbf4-48ad-aa56-16cb5483e95b', '_d54c5707-af7a-4b36-a059-46681bbf0004']",
+              "incoming": [
+                "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+                "_d54c5707-af7a-4b36-a059-46681bbf0004"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -7253,10 +7327,16 @@
               },
               "gateway_direction": "Diverging",
               "id": "_604be023-654c-44df-a64c-365254a100cd",
-              "incoming": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+              "incoming": [
+                "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+              ],
               "monitoring": null,
               "name": "Service type",
-              "outgoing": "['_b99800c3-c340-460c-a43e-098014a365d0', '_437e5969-1e61-4cb9-aa76-4f8854f32eeb', '_ada039b6-94dd-4a15-a6b1-c7fe662c64ee']"
+              "outgoing": [
+                "_b99800c3-c340-460c-a43e-098014a365d0",
+                "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+                "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+              ]
             },
             {
               "auditing": null,
@@ -7289,10 +7369,15 @@
               },
               "gateway_direction": "Diverging",
               "id": "_2b6bc88e-d3be-4704-87d1-c264bf704589",
-              "incoming": "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee",
+              "incoming": [
+                "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+              ],
               "monitoring": null,
               "name": "Service level",
-              "outgoing": "['_cddf9325-a85b-4347-8c57-8b909fa77ae9', '_be893987-caec-4605-b078-bd96b7cd6c12']"
+              "outgoing": [
+                "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+                "_be893987-caec-4605-b078-bd96b7cd6c12"
+              ]
             },
             {
               "auditing": null,
@@ -7325,10 +7410,15 @@
               },
               "gateway_direction": "Diverging",
               "id": "_936c0bfa-5ebf-4546-8d1a-cce556148788",
-              "incoming": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+              "incoming": [
+                "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+              ],
               "monitoring": null,
               "name": "Successful?",
-              "outgoing": "['_cf380e47-1401-4e7e-b710-193b626e49eb', '_3fb323d5-2c59-487a-af63-804208f6c5cb']"
+              "outgoing": [
+                "_cf380e47-1401-4e7e-b710-193b626e49eb",
+                "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+              ]
             }
           ],
           "extension_elements": {
@@ -8269,7 +8359,9 @@
               ],
               "monitoring": null,
               "name": "Receive customer request",
-              "outgoing": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+              "outgoing": [
+                "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -8367,7 +8459,10 @@
               "id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2",
               "implicit_throw_events": [],
               "inclusive_gateways": [],
-              "incoming": "['_437e5969-1e61-4cb9-aa76-4f8854f32eeb', 'Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A']",
+              "incoming": [
+                "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+                "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+              ],
               "intermediate_catch_events": [],
               "intermediate_throw_events": [],
               "io_specification": null,
@@ -8380,7 +8475,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Perform emergency repair",
-              "outgoing": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+              "outgoing": [
+                "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+              ],
               "parallel_gateways": [],
               "performers": [],
               "potential_owners": [],
@@ -8486,14 +8583,18 @@
               "human_performers": [],
               "id": "_c73a5f4a-72f1-4e11-bb40-2f98da75fb9a",
               "implementation": "##WebService",
-              "incoming": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+              "incoming": [
+                "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Analyse customer request",
-              "outgoing": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+              "outgoing": [
+                "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -8584,14 +8685,19 @@
               "human_performers": [],
               "id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d",
               "implementation": "WebService",
-              "incoming": "['_b99800c3-c340-460c-a43e-098014a365d0', '_3fb323d5-2c59-487a-af63-804208f6c5cb']",
+              "incoming": [
+                "_b99800c3-c340-460c-a43e-098014a365d0",
+                "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Replace fridge",
-              "outgoing": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+              "outgoing": [
+                "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -8672,14 +8778,18 @@
               "human_performers": [],
               "id": "_d034722f-751d-4f37-a3d7-47993822e979",
               "implementation": "WebService",
-              "incoming": "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+              "incoming": [
+                "_cddf9325-a85b-4347-8c57-8b909fa77ae9"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Perform repair (standard level)",
-              "outgoing": "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+              "outgoing": [
+                "_435d9320-bbf4-48ad-aa56-16cb5483e95b"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -8760,14 +8870,19 @@
               "human_performers": [],
               "id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba",
               "implementation": "WebService",
-              "incoming": "['_be893987-caec-4605-b078-bd96b7cd6c12', 'Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A']",
+              "incoming": [
+                "_be893987-caec-4605-b078-bd96b7cd6c12",
+                "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Perform repair (premium level)",
-              "outgoing": "_d54c5707-af7a-4b36-a059-46681bbf0004",
+              "outgoing": [
+                "_d54c5707-af7a-4b36-a059-46681bbf0004"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -8887,10 +9002,16 @@
       },
       "gateway_direction": "Diverging",
       "id": "_604be023-654c-44df-a64c-365254a100cd",
-      "incoming": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+      "incoming": [
+        "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+      ],
       "monitoring": null,
       "name": "Service type",
-      "outgoing": "['_b99800c3-c340-460c-a43e-098014a365d0', '_437e5969-1e61-4cb9-aa76-4f8854f32eeb', '_ada039b6-94dd-4a15-a6b1-c7fe662c64ee']"
+      "outgoing": [
+        "_b99800c3-c340-460c-a43e-098014a365d0",
+        "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+        "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+      ]
     },
     "_619D999C-1964-4026-A196-FE0113FDADA8": {
       "bpmn_element": "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
@@ -9056,14 +9177,19 @@
       "human_performers": [],
       "id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba",
       "implementation": "WebService",
-      "incoming": "['_be893987-caec-4605-b078-bd96b7cd6c12', 'Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A']",
+      "incoming": [
+        "_be893987-caec-4605-b078-bd96b7cd6c12",
+        "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Perform repair (premium level)",
-      "outgoing": "_d54c5707-af7a-4b36-a059-46681bbf0004",
+      "outgoing": [
+        "_d54c5707-af7a-4b36-a059-46681bbf0004"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -9170,7 +9296,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "2 hours",
-          "outgoing": "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A",
+          "outgoing": [
+            "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -9234,7 +9362,9 @@
           ],
           "monitoring": null,
           "name": null,
-          "outgoing": "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A",
+          "outgoing": [
+            "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -9291,7 +9421,9 @@
             }
           },
           "id": "_177bd313-c6c9-4df5-8f82-313beb30d2eb",
-          "incoming": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+          "incoming": [
+            "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -9341,7 +9473,9 @@
             }
           },
           "id": "_b3dc1906-d4d3-40c5-aaf6-5a74148ae887",
-          "incoming": "_cf380e47-1401-4e7e-b710-193b626e49eb",
+          "incoming": [
+            "_cf380e47-1401-4e7e-b710-193b626e49eb"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -9391,7 +9525,10 @@
             }
           },
           "id": "_dcee5c64-3010-4ee5-b480-bce856e6f29c",
-          "incoming": "['_435d9320-bbf4-48ad-aa56-16cb5483e95b', '_d54c5707-af7a-4b36-a059-46681bbf0004']",
+          "incoming": [
+            "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+            "_d54c5707-af7a-4b36-a059-46681bbf0004"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -9438,10 +9575,16 @@
           },
           "gateway_direction": "Diverging",
           "id": "_604be023-654c-44df-a64c-365254a100cd",
-          "incoming": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+          "incoming": [
+            "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+          ],
           "monitoring": null,
           "name": "Service type",
-          "outgoing": "['_b99800c3-c340-460c-a43e-098014a365d0', '_437e5969-1e61-4cb9-aa76-4f8854f32eeb', '_ada039b6-94dd-4a15-a6b1-c7fe662c64ee']"
+          "outgoing": [
+            "_b99800c3-c340-460c-a43e-098014a365d0",
+            "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+            "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+          ]
         },
         {
           "auditing": null,
@@ -9474,10 +9617,15 @@
           },
           "gateway_direction": "Diverging",
           "id": "_2b6bc88e-d3be-4704-87d1-c264bf704589",
-          "incoming": "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee",
+          "incoming": [
+            "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+          ],
           "monitoring": null,
           "name": "Service level",
-          "outgoing": "['_cddf9325-a85b-4347-8c57-8b909fa77ae9', '_be893987-caec-4605-b078-bd96b7cd6c12']"
+          "outgoing": [
+            "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+            "_be893987-caec-4605-b078-bd96b7cd6c12"
+          ]
         },
         {
           "auditing": null,
@@ -9510,10 +9658,15 @@
           },
           "gateway_direction": "Diverging",
           "id": "_936c0bfa-5ebf-4546-8d1a-cce556148788",
-          "incoming": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+          "incoming": [
+            "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+          ],
           "monitoring": null,
           "name": "Successful?",
-          "outgoing": "['_cf380e47-1401-4e7e-b710-193b626e49eb', '_3fb323d5-2c59-487a-af63-804208f6c5cb']"
+          "outgoing": [
+            "_cf380e47-1401-4e7e-b710-193b626e49eb",
+            "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+          ]
         }
       ],
       "extension_elements": {
@@ -10454,7 +10607,9 @@
           ],
           "monitoring": null,
           "name": "Receive customer request",
-          "outgoing": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+          "outgoing": [
+            "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -10552,7 +10707,10 @@
           "id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2",
           "implicit_throw_events": [],
           "inclusive_gateways": [],
-          "incoming": "['_437e5969-1e61-4cb9-aa76-4f8854f32eeb', 'Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A']",
+          "incoming": [
+            "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+            "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+          ],
           "intermediate_catch_events": [],
           "intermediate_throw_events": [],
           "io_specification": null,
@@ -10565,7 +10723,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Perform emergency repair",
-          "outgoing": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+          "outgoing": [
+            "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+          ],
           "parallel_gateways": [],
           "performers": [],
           "potential_owners": [],
@@ -10671,14 +10831,18 @@
           "human_performers": [],
           "id": "_c73a5f4a-72f1-4e11-bb40-2f98da75fb9a",
           "implementation": "##WebService",
-          "incoming": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+          "incoming": [
+            "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Analyse customer request",
-          "outgoing": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+          "outgoing": [
+            "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -10769,14 +10933,19 @@
           "human_performers": [],
           "id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d",
           "implementation": "WebService",
-          "incoming": "['_b99800c3-c340-460c-a43e-098014a365d0', '_3fb323d5-2c59-487a-af63-804208f6c5cb']",
+          "incoming": [
+            "_b99800c3-c340-460c-a43e-098014a365d0",
+            "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Replace fridge",
-          "outgoing": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+          "outgoing": [
+            "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10857,14 +11026,18 @@
           "human_performers": [],
           "id": "_d034722f-751d-4f37-a3d7-47993822e979",
           "implementation": "WebService",
-          "incoming": "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+          "incoming": [
+            "_cddf9325-a85b-4347-8c57-8b909fa77ae9"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Perform repair (standard level)",
-          "outgoing": "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+          "outgoing": [
+            "_435d9320-bbf4-48ad-aa56-16cb5483e95b"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10945,14 +11118,19 @@
           "human_performers": [],
           "id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba",
           "implementation": "WebService",
-          "incoming": "['_be893987-caec-4605-b078-bd96b7cd6c12', 'Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A']",
+          "incoming": [
+            "_be893987-caec-4605-b078-bd96b7cd6c12",
+            "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Perform repair (premium level)",
-          "outgoing": "_d54c5707-af7a-4b36-a059-46681bbf0004",
+          "outgoing": [
+            "_d54c5707-af7a-4b36-a059-46681bbf0004"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -11027,10 +11205,15 @@
       },
       "gateway_direction": "Diverging",
       "id": "_936c0bfa-5ebf-4546-8d1a-cce556148788",
-      "incoming": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+      "incoming": [
+        "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+      ],
       "monitoring": null,
       "name": "Successful?",
-      "outgoing": "['_cf380e47-1401-4e7e-b710-193b626e49eb', '_3fb323d5-2c59-487a-af63-804208f6c5cb']"
+      "outgoing": [
+        "_cf380e47-1401-4e7e-b710-193b626e49eb",
+        "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+      ]
     },
     "_A456930F-0FE9-45B9-A4C0-EF465F0C9EC4": {
       "bpmn_element": "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
@@ -11495,14 +11678,19 @@
       "human_performers": [],
       "id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d",
       "implementation": "WebService",
-      "incoming": "['_b99800c3-c340-460c-a43e-098014a365d0', '_3fb323d5-2c59-487a-af63-804208f6c5cb']",
+      "incoming": [
+        "_b99800c3-c340-460c-a43e-098014a365d0",
+        "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Replace fridge",
-      "outgoing": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+      "outgoing": [
+        "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -11675,7 +11863,9 @@
         }
       },
       "id": "_b3dc1906-d4d3-40c5-aaf6-5a74148ae887",
-      "incoming": "_cf380e47-1401-4e7e-b710-193b626e49eb",
+      "incoming": [
+        "_cf380e47-1401-4e7e-b710-193b626e49eb"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -11897,14 +12087,18 @@
       "human_performers": [],
       "id": "_c73a5f4a-72f1-4e11-bb40-2f98da75fb9a",
       "implementation": "##WebService",
-      "incoming": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+      "incoming": [
+        "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Analyse customer request",
-      "outgoing": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+      "outgoing": [
+        "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -11981,7 +12175,9 @@
       ],
       "monitoring": null,
       "name": "Receive customer request",
-      "outgoing": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+      "outgoing": [
+        "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -12077,7 +12273,10 @@
       "id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2",
       "implicit_throw_events": [],
       "inclusive_gateways": [],
-      "incoming": "['_437e5969-1e61-4cb9-aa76-4f8854f32eeb', 'Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A']",
+      "incoming": [
+        "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+        "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+      ],
       "intermediate_catch_events": [],
       "intermediate_throw_events": [],
       "io_specification": null,
@@ -12090,7 +12289,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Perform emergency repair",
-      "outgoing": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+      "outgoing": [
+        "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+      ],
       "parallel_gateways": [],
       "performers": [],
       "potential_owners": [],
@@ -12267,14 +12468,18 @@
       "human_performers": [],
       "id": "_d034722f-751d-4f37-a3d7-47993822e979",
       "implementation": "WebService",
-      "incoming": "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+      "incoming": [
+        "_cddf9325-a85b-4347-8c57-8b909fa77ae9"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Perform repair (standard level)",
-      "outgoing": "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+      "outgoing": [
+        "_435d9320-bbf4-48ad-aa56-16cb5483e95b"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -12363,7 +12568,10 @@
         }
       },
       "id": "_dcee5c64-3010-4ee5-b480-bce856e6f29c",
-      "incoming": "['_435d9320-bbf4-48ad-aa56-16cb5483e95b', '_d54c5707-af7a-4b36-a059-46681bbf0004']",
+      "incoming": [
+        "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+        "_d54c5707-af7a-4b36-a059-46681bbf0004"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -12386,5 +12594,327 @@
       },
       "id": "_ea62b61f-473a-454a-a9bc-14475ce28686"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "Bpmn_MessageEventDefinition_vaRFsAO9EeWi8fS3WiOizw",
+      "property": "message_ref",
+      "reference_id": "_6840c92f-f02c-46b3-9565-f5e5b1792ba0"
+    },
+    {
+      "element_id": "_cc9778bd-edd8-4df2-ba15-56c310f90e62",
+      "property": "outgoing",
+      "reference_id": "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+    },
+    {
+      "element_id": "_c73a5f4a-72f1-4e11-bb40-2f98da75fb9a",
+      "property": "incoming",
+      "reference_id": "_a5af06ae-bd69-464d-bbaf-3d7418702d77"
+    },
+    {
+      "element_id": "_c73a5f4a-72f1-4e11-bb40-2f98da75fb9a",
+      "property": "outgoing",
+      "reference_id": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+    },
+    {
+      "element_id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d",
+      "property": "incoming",
+      "reference_id": "_b99800c3-c340-460c-a43e-098014a365d0"
+    },
+    {
+      "element_id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d",
+      "property": "incoming",
+      "reference_id": "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+    },
+    {
+      "element_id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d",
+      "property": "outgoing",
+      "reference_id": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+    },
+    {
+      "element_id": "_d034722f-751d-4f37-a3d7-47993822e979",
+      "property": "incoming",
+      "reference_id": "_cddf9325-a85b-4347-8c57-8b909fa77ae9"
+    },
+    {
+      "element_id": "_d034722f-751d-4f37-a3d7-47993822e979",
+      "property": "outgoing",
+      "reference_id": "_435d9320-bbf4-48ad-aa56-16cb5483e95b"
+    },
+    {
+      "element_id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba",
+      "property": "incoming",
+      "reference_id": "_be893987-caec-4605-b078-bd96b7cd6c12"
+    },
+    {
+      "element_id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba",
+      "property": "incoming",
+      "reference_id": "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+    },
+    {
+      "element_id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba",
+      "property": "outgoing",
+      "reference_id": "_d54c5707-af7a-4b36-a059-46681bbf0004"
+    },
+    {
+      "element_id": "_177bd313-c6c9-4df5-8f82-313beb30d2eb",
+      "property": "incoming",
+      "reference_id": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8"
+    },
+    {
+      "element_id": "_b3dc1906-d4d3-40c5-aaf6-5a74148ae887",
+      "property": "incoming",
+      "reference_id": "_cf380e47-1401-4e7e-b710-193b626e49eb"
+    },
+    {
+      "element_id": "_dcee5c64-3010-4ee5-b480-bce856e6f29c",
+      "property": "incoming",
+      "reference_id": "_435d9320-bbf4-48ad-aa56-16cb5483e95b"
+    },
+    {
+      "element_id": "_dcee5c64-3010-4ee5-b480-bce856e6f29c",
+      "property": "incoming",
+      "reference_id": "_d54c5707-af7a-4b36-a059-46681bbf0004"
+    },
+    {
+      "element_id": "_604be023-654c-44df-a64c-365254a100cd",
+      "property": "incoming",
+      "reference_id": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d"
+    },
+    {
+      "element_id": "_604be023-654c-44df-a64c-365254a100cd",
+      "property": "outgoing",
+      "reference_id": "_b99800c3-c340-460c-a43e-098014a365d0"
+    },
+    {
+      "element_id": "_604be023-654c-44df-a64c-365254a100cd",
+      "property": "outgoing",
+      "reference_id": "_437e5969-1e61-4cb9-aa76-4f8854f32eeb"
+    },
+    {
+      "element_id": "_604be023-654c-44df-a64c-365254a100cd",
+      "property": "outgoing",
+      "reference_id": "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+    },
+    {
+      "element_id": "_2b6bc88e-d3be-4704-87d1-c264bf704589",
+      "property": "incoming",
+      "reference_id": "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee"
+    },
+    {
+      "element_id": "_2b6bc88e-d3be-4704-87d1-c264bf704589",
+      "property": "outgoing",
+      "reference_id": "_cddf9325-a85b-4347-8c57-8b909fa77ae9"
+    },
+    {
+      "element_id": "_2b6bc88e-d3be-4704-87d1-c264bf704589",
+      "property": "outgoing",
+      "reference_id": "_be893987-caec-4605-b078-bd96b7cd6c12"
+    },
+    {
+      "element_id": "_936c0bfa-5ebf-4546-8d1a-cce556148788",
+      "property": "incoming",
+      "reference_id": "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+    },
+    {
+      "element_id": "_936c0bfa-5ebf-4546-8d1a-cce556148788",
+      "property": "outgoing",
+      "reference_id": "_cf380e47-1401-4e7e-b710-193b626e49eb"
+    },
+    {
+      "element_id": "_936c0bfa-5ebf-4546-8d1a-cce556148788",
+      "property": "outgoing",
+      "reference_id": "_3fb323d5-2c59-487a-af63-804208f6c5cb"
+    },
+    {
+      "element_id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2",
+      "property": "incoming",
+      "reference_id": "_437e5969-1e61-4cb9-aa76-4f8854f32eeb"
+    },
+    {
+      "element_id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2",
+      "property": "incoming",
+      "reference_id": "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+    },
+    {
+      "element_id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2",
+      "property": "outgoing",
+      "reference_id": "_b22c01a4-1eef-4f52-9b16-a201a9621619"
+    },
+    {
+      "element_id": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+      "property": "source_ref",
+      "reference_id": "_c73a5f4a-72f1-4e11-bb40-2f98da75fb9a"
+    },
+    {
+      "element_id": "_acb2aca3-8851-48f0-b127-7b3c9db5e18d",
+      "property": "target_ref",
+      "reference_id": "_604be023-654c-44df-a64c-365254a100cd"
+    },
+    {
+      "element_id": "_b99800c3-c340-460c-a43e-098014a365d0",
+      "property": "source_ref",
+      "reference_id": "_604be023-654c-44df-a64c-365254a100cd"
+    },
+    {
+      "element_id": "_b99800c3-c340-460c-a43e-098014a365d0",
+      "property": "target_ref",
+      "reference_id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d"
+    },
+    {
+      "element_id": "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+      "property": "source_ref",
+      "reference_id": "_604be023-654c-44df-a64c-365254a100cd"
+    },
+    {
+      "element_id": "_437e5969-1e61-4cb9-aa76-4f8854f32eeb",
+      "property": "target_ref",
+      "reference_id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2"
+    },
+    {
+      "element_id": "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee",
+      "property": "source_ref",
+      "reference_id": "_604be023-654c-44df-a64c-365254a100cd"
+    },
+    {
+      "element_id": "_ada039b6-94dd-4a15-a6b1-c7fe662c64ee",
+      "property": "target_ref",
+      "reference_id": "_2b6bc88e-d3be-4704-87d1-c264bf704589"
+    },
+    {
+      "element_id": "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+      "property": "source_ref",
+      "reference_id": "_2b6bc88e-d3be-4704-87d1-c264bf704589"
+    },
+    {
+      "element_id": "_cddf9325-a85b-4347-8c57-8b909fa77ae9",
+      "property": "target_ref",
+      "reference_id": "_d034722f-751d-4f37-a3d7-47993822e979"
+    },
+    {
+      "element_id": "_be893987-caec-4605-b078-bd96b7cd6c12",
+      "property": "source_ref",
+      "reference_id": "_2b6bc88e-d3be-4704-87d1-c264bf704589"
+    },
+    {
+      "element_id": "_be893987-caec-4605-b078-bd96b7cd6c12",
+      "property": "target_ref",
+      "reference_id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba"
+    },
+    {
+      "element_id": "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+      "property": "source_ref",
+      "reference_id": "_d034722f-751d-4f37-a3d7-47993822e979"
+    },
+    {
+      "element_id": "_435d9320-bbf4-48ad-aa56-16cb5483e95b",
+      "property": "target_ref",
+      "reference_id": "_dcee5c64-3010-4ee5-b480-bce856e6f29c"
+    },
+    {
+      "element_id": "_d54c5707-af7a-4b36-a059-46681bbf0004",
+      "property": "source_ref",
+      "reference_id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba"
+    },
+    {
+      "element_id": "_d54c5707-af7a-4b36-a059-46681bbf0004",
+      "property": "target_ref",
+      "reference_id": "_dcee5c64-3010-4ee5-b480-bce856e6f29c"
+    },
+    {
+      "element_id": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+      "property": "source_ref",
+      "reference_id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2"
+    },
+    {
+      "element_id": "_b22c01a4-1eef-4f52-9b16-a201a9621619",
+      "property": "target_ref",
+      "reference_id": "_936c0bfa-5ebf-4546-8d1a-cce556148788"
+    },
+    {
+      "element_id": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+      "property": "source_ref",
+      "reference_id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d"
+    },
+    {
+      "element_id": "_c5756bb9-6e6f-42d1-8799-c2d673499eb8",
+      "property": "target_ref",
+      "reference_id": "_177bd313-c6c9-4df5-8f82-313beb30d2eb"
+    },
+    {
+      "element_id": "_cf380e47-1401-4e7e-b710-193b626e49eb",
+      "property": "source_ref",
+      "reference_id": "_936c0bfa-5ebf-4546-8d1a-cce556148788"
+    },
+    {
+      "element_id": "_cf380e47-1401-4e7e-b710-193b626e49eb",
+      "property": "target_ref",
+      "reference_id": "_b3dc1906-d4d3-40c5-aaf6-5a74148ae887"
+    },
+    {
+      "element_id": "_3fb323d5-2c59-487a-af63-804208f6c5cb",
+      "property": "source_ref",
+      "reference_id": "_936c0bfa-5ebf-4546-8d1a-cce556148788"
+    },
+    {
+      "element_id": "_3fb323d5-2c59-487a-af63-804208f6c5cb",
+      "property": "target_ref",
+      "reference_id": "_a92069f7-377b-4dbd-a1fd-1da071aabf6d"
+    },
+    {
+      "element_id": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+      "property": "source_ref",
+      "reference_id": "_cc9778bd-edd8-4df2-ba15-56c310f90e62"
+    },
+    {
+      "element_id": "_a5af06ae-bd69-464d-bbaf-3d7418702d77",
+      "property": "target_ref",
+      "reference_id": "_c73a5f4a-72f1-4e11-bb40-2f98da75fb9a"
+    },
+    {
+      "element_id": "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A",
+      "property": "source_ref",
+      "reference_id": "Bpmn_BoundaryEvent_sS9gABqGEeWDuOtG0oS24A"
+    },
+    {
+      "element_id": "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A",
+      "property": "target_ref",
+      "reference_id": "_cd6f230f-13c3-4027-aa3e-57de601a1ab2"
+    },
+    {
+      "element_id": "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A",
+      "property": "source_ref",
+      "reference_id": "Bpmn_BoundaryEvent_LwKtwhqHEeWDuOtG0oS24A"
+    },
+    {
+      "element_id": "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A",
+      "property": "target_ref",
+      "reference_id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba"
+    },
+    {
+      "element_id": "Bpmn_BoundaryEvent_sS9gABqGEeWDuOtG0oS24A",
+      "property": "outgoing",
+      "reference_id": "Bpmn_SequenceFlow_tcbpgBqGEeWDuOtG0oS24A"
+    },
+    {
+      "element_id": "Bpmn_BoundaryEvent_sS9gABqGEeWDuOtG0oS24A",
+      "property": "attached_to_ref",
+      "reference_id": "_6a34496f-8cf7-42e5-88a9-d1af98cc3cba"
+    },
+    {
+      "element_id": "Bpmn_MessageEventDefinition_zhREUBqHEeWDuOtG0oS24A",
+      "property": "message_ref",
+      "reference_id": "_6840c92f-f02c-46b3-9565-f5e5b1792ba0"
+    },
+    {
+      "element_id": "Bpmn_BoundaryEvent_LwKtwhqHEeWDuOtG0oS24A",
+      "property": "outgoing",
+      "reference_id": "Bpmn_SequenceFlow_-dQQwBqHEeWDuOtG0oS24A"
+    },
+    {
+      "element_id": "Bpmn_BoundaryEvent_LwKtwhqHEeWDuOtG0oS24A",
+      "property": "attached_to_ref",
+      "reference_id": "_d034722f-751d-4f37-a3d7-47993822e979"
+    }
+  ]
 }

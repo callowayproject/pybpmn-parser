@@ -568,7 +568,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "daily",
-            "outgoing": "SequenceFlow_1bqpxlf",
+            "outgoing": [
+              "SequenceFlow_1bqpxlf"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -613,7 +615,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "1 week",
-            "outgoing": "SequenceFlow_0i97ejj",
+            "outgoing": [
+              "SequenceFlow_0i97ejj"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -664,7 +668,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "EndEvent_TalkedToCustomer",
-            "incoming": "SequenceFlow_3",
+            "incoming": [
+              "SequenceFlow_3"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -692,7 +698,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "EndEvent_GotDocument",
-            "incoming": "SequenceFlow_6",
+            "incoming": [
+              "SequenceFlow_6"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -719,7 +727,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "EndEvent_ReminderSent",
-            "incoming": "SequenceFlow_2",
+            "incoming": [
+              "SequenceFlow_2"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -770,7 +780,9 @@
             "human_performers": [],
             "id": "ReceiveTask_WaitForDocument",
             "implementation": "##WebService",
-            "incoming": "SequenceFlow_18a0pzl",
+            "incoming": [
+              "SequenceFlow_18a0pzl"
+            ],
             "instantiate": false,
             "io_specification": null,
             "is_for_compensation": false,
@@ -780,7 +792,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Wait for answer",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_6",
+            "outgoing": [
+              "SequenceFlow_6"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -812,7 +826,9 @@
             "human_performers": [],
             "id": "SendTask_RequestDocument",
             "implementation": "##WebService",
-            "incoming": "SequenceFlow_0d7dzn0",
+            "incoming": [
+              "SequenceFlow_0d7dzn0"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -821,7 +837,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Request document",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_18a0pzl",
+            "outgoing": [
+              "SequenceFlow_18a0pzl"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -849,7 +867,9 @@
             "human_performers": [],
             "id": "SendTask_SendReminderEmail",
             "implementation": "##WebService",
-            "incoming": "SequenceFlow_1bqpxlf",
+            "incoming": [
+              "SequenceFlow_1bqpxlf"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -858,7 +878,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Send reminder email",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_2",
+            "outgoing": [
+              "SequenceFlow_2"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -983,7 +1005,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Document requested",
-            "outgoing": "SequenceFlow_0d7dzn0",
+            "outgoing": [
+              "SequenceFlow_0d7dzn0"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1011,14 +1035,18 @@
             "human_performers": [],
             "id": "UserTask_CallCustomer",
             "implementation": "##unspecified",
-            "incoming": "SequenceFlow_0i97ejj",
+            "incoming": [
+              "SequenceFlow_0i97ejj"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Call customer",
-            "outgoing": "SequenceFlow_3",
+            "outgoing": [
+              "SequenceFlow_3"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2046,7 +2074,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "daily",
-      "outgoing": "SequenceFlow_1bqpxlf",
+      "outgoing": [
+        "SequenceFlow_1bqpxlf"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -2091,7 +2121,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "1 week",
-      "outgoing": "SequenceFlow_0i97ejj",
+      "outgoing": [
+        "SequenceFlow_0i97ejj"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -2717,7 +2749,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "daily",
-              "outgoing": "SequenceFlow_1bqpxlf",
+              "outgoing": [
+                "SequenceFlow_1bqpxlf"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -2762,7 +2796,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "1 week",
-              "outgoing": "SequenceFlow_0i97ejj",
+              "outgoing": [
+                "SequenceFlow_0i97ejj"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -2813,7 +2849,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_TalkedToCustomer",
-              "incoming": "SequenceFlow_3",
+              "incoming": [
+                "SequenceFlow_3"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -2841,7 +2879,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_GotDocument",
-              "incoming": "SequenceFlow_6",
+              "incoming": [
+                "SequenceFlow_6"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -2868,7 +2908,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_ReminderSent",
-              "incoming": "SequenceFlow_2",
+              "incoming": [
+                "SequenceFlow_2"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -2919,7 +2961,9 @@
               "human_performers": [],
               "id": "ReceiveTask_WaitForDocument",
               "implementation": "##WebService",
-              "incoming": "SequenceFlow_18a0pzl",
+              "incoming": [
+                "SequenceFlow_18a0pzl"
+              ],
               "instantiate": false,
               "io_specification": null,
               "is_for_compensation": false,
@@ -2929,7 +2973,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Wait for answer",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_6",
+              "outgoing": [
+                "SequenceFlow_6"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -2961,7 +3007,9 @@
               "human_performers": [],
               "id": "SendTask_RequestDocument",
               "implementation": "##WebService",
-              "incoming": "SequenceFlow_0d7dzn0",
+              "incoming": [
+                "SequenceFlow_0d7dzn0"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -2970,7 +3018,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Request document",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_18a0pzl",
+              "outgoing": [
+                "SequenceFlow_18a0pzl"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -2998,7 +3048,9 @@
               "human_performers": [],
               "id": "SendTask_SendReminderEmail",
               "implementation": "##WebService",
-              "incoming": "SequenceFlow_1bqpxlf",
+              "incoming": [
+                "SequenceFlow_1bqpxlf"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -3007,7 +3059,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Send reminder email",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_2",
+              "outgoing": [
+                "SequenceFlow_2"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3132,7 +3186,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Document requested",
-              "outgoing": "SequenceFlow_0d7dzn0",
+              "outgoing": [
+                "SequenceFlow_0d7dzn0"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -3160,14 +3216,18 @@
               "human_performers": [],
               "id": "UserTask_CallCustomer",
               "implementation": "##unspecified",
-              "incoming": "SequenceFlow_0i97ejj",
+              "incoming": [
+                "SequenceFlow_0i97ejj"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Call customer",
-              "outgoing": "SequenceFlow_3",
+              "outgoing": [
+                "SequenceFlow_3"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3232,7 +3292,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_GotDocument",
-      "incoming": "SequenceFlow_6",
+      "incoming": [
+        "SequenceFlow_6"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -3259,7 +3321,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_ReminderSent",
-      "incoming": "SequenceFlow_2",
+      "incoming": [
+        "SequenceFlow_2"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -3287,7 +3351,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_TalkedToCustomer",
-      "incoming": "SequenceFlow_3",
+      "incoming": [
+        "SequenceFlow_3"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -3366,7 +3432,9 @@
       "human_performers": [],
       "id": "ReceiveTask_WaitForDocument",
       "implementation": "##WebService",
-      "incoming": "SequenceFlow_18a0pzl",
+      "incoming": [
+        "SequenceFlow_18a0pzl"
+      ],
       "instantiate": false,
       "io_specification": null,
       "is_for_compensation": false,
@@ -3376,7 +3444,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Wait for answer",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_6",
+      "outgoing": [
+        "SequenceFlow_6"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3438,7 +3508,9 @@
       "human_performers": [],
       "id": "SendTask_RequestDocument",
       "implementation": "##WebService",
-      "incoming": "SequenceFlow_0d7dzn0",
+      "incoming": [
+        "SequenceFlow_0d7dzn0"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -3447,7 +3519,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Request document",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_18a0pzl",
+      "outgoing": [
+        "SequenceFlow_18a0pzl"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3475,7 +3549,9 @@
       "human_performers": [],
       "id": "SendTask_SendReminderEmail",
       "implementation": "##WebService",
-      "incoming": "SequenceFlow_1bqpxlf",
+      "incoming": [
+        "SequenceFlow_1bqpxlf"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -3484,7 +3560,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Send reminder email",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_2",
+      "outgoing": [
+        "SequenceFlow_2"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3720,7 +3798,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Document requested",
-      "outgoing": "SequenceFlow_0d7dzn0",
+      "outgoing": [
+        "SequenceFlow_0d7dzn0"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -3757,14 +3837,18 @@
       "human_performers": [],
       "id": "UserTask_CallCustomer",
       "implementation": "##unspecified",
-      "incoming": "SequenceFlow_0i97ejj",
+      "incoming": [
+        "SequenceFlow_0i97ejj"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Call customer",
-      "outgoing": "SequenceFlow_3",
+      "outgoing": [
+        "SequenceFlow_3"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3959,7 +4043,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "daily",
-          "outgoing": "SequenceFlow_1bqpxlf",
+          "outgoing": [
+            "SequenceFlow_1bqpxlf"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -4004,7 +4090,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "1 week",
-          "outgoing": "SequenceFlow_0i97ejj",
+          "outgoing": [
+            "SequenceFlow_0i97ejj"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -4055,7 +4143,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_TalkedToCustomer",
-          "incoming": "SequenceFlow_3",
+          "incoming": [
+            "SequenceFlow_3"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -4083,7 +4173,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_GotDocument",
-          "incoming": "SequenceFlow_6",
+          "incoming": [
+            "SequenceFlow_6"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -4110,7 +4202,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_ReminderSent",
-          "incoming": "SequenceFlow_2",
+          "incoming": [
+            "SequenceFlow_2"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -4161,7 +4255,9 @@
           "human_performers": [],
           "id": "ReceiveTask_WaitForDocument",
           "implementation": "##WebService",
-          "incoming": "SequenceFlow_18a0pzl",
+          "incoming": [
+            "SequenceFlow_18a0pzl"
+          ],
           "instantiate": false,
           "io_specification": null,
           "is_for_compensation": false,
@@ -4171,7 +4267,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Wait for answer",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_6",
+          "outgoing": [
+            "SequenceFlow_6"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4203,7 +4301,9 @@
           "human_performers": [],
           "id": "SendTask_RequestDocument",
           "implementation": "##WebService",
-          "incoming": "SequenceFlow_0d7dzn0",
+          "incoming": [
+            "SequenceFlow_0d7dzn0"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -4212,7 +4312,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Request document",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_18a0pzl",
+          "outgoing": [
+            "SequenceFlow_18a0pzl"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4240,7 +4342,9 @@
           "human_performers": [],
           "id": "SendTask_SendReminderEmail",
           "implementation": "##WebService",
-          "incoming": "SequenceFlow_1bqpxlf",
+          "incoming": [
+            "SequenceFlow_1bqpxlf"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -4249,7 +4353,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Send reminder email",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_2",
+          "outgoing": [
+            "SequenceFlow_2"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4374,7 +4480,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Document requested",
-          "outgoing": "SequenceFlow_0d7dzn0",
+          "outgoing": [
+            "SequenceFlow_0d7dzn0"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -4402,14 +4510,18 @@
           "human_performers": [],
           "id": "UserTask_CallCustomer",
           "implementation": "##unspecified",
-          "incoming": "SequenceFlow_0i97ejj",
+          "incoming": [
+            "SequenceFlow_0i97ejj"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Call customer",
-          "outgoing": "SequenceFlow_3",
+          "outgoing": [
+            "SequenceFlow_3"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4420,5 +4532,167 @@
         }
       ]
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "Participant_02",
+      "property": "process_ref",
+      "reference_id": "requestDocument_en"
+    },
+    {
+      "element_id": "SendTask_RequestDocument",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_0d7dzn0"
+    },
+    {
+      "element_id": "SendTask_RequestDocument",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_18a0pzl"
+    },
+    {
+      "element_id": "SendTask_SendReminderEmail",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_1bqpxlf"
+    },
+    {
+      "element_id": "SendTask_SendReminderEmail",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_2"
+    },
+    {
+      "element_id": "EndEvent_TalkedToCustomer",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_3"
+    },
+    {
+      "element_id": "EndEvent_GotDocument",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_6"
+    },
+    {
+      "element_id": "EndEvent_ReminderSent",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_2"
+    },
+    {
+      "element_id": "UserTask_CallCustomer",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_0i97ejj"
+    },
+    {
+      "element_id": "UserTask_CallCustomer",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_3"
+    },
+    {
+      "element_id": "ReceiveTask_WaitForDocument",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_18a0pzl"
+    },
+    {
+      "element_id": "ReceiveTask_WaitForDocument",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_6"
+    },
+    {
+      "element_id": "ReceiveTask_WaitForDocument",
+      "property": "message_ref",
+      "reference_id": "Message_1"
+    },
+    {
+      "element_id": "StartEvent_DocumentRequested",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_0d7dzn0"
+    },
+    {
+      "element_id": "BoundaryEvent_1",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_1bqpxlf"
+    },
+    {
+      "element_id": "BoundaryEvent_1",
+      "property": "attached_to_ref",
+      "reference_id": "ReceiveTask_WaitForDocument"
+    },
+    {
+      "element_id": "BoundaryEvent_2",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_0i97ejj"
+    },
+    {
+      "element_id": "BoundaryEvent_2",
+      "property": "attached_to_ref",
+      "reference_id": "ReceiveTask_WaitForDocument"
+    },
+    {
+      "element_id": "SequenceFlow_6",
+      "property": "source_ref",
+      "reference_id": "ReceiveTask_WaitForDocument"
+    },
+    {
+      "element_id": "SequenceFlow_6",
+      "property": "target_ref",
+      "reference_id": "EndEvent_GotDocument"
+    },
+    {
+      "element_id": "SequenceFlow_0i97ejj",
+      "property": "source_ref",
+      "reference_id": "BoundaryEvent_2"
+    },
+    {
+      "element_id": "SequenceFlow_0i97ejj",
+      "property": "target_ref",
+      "reference_id": "UserTask_CallCustomer"
+    },
+    {
+      "element_id": "SequenceFlow_1bqpxlf",
+      "property": "source_ref",
+      "reference_id": "BoundaryEvent_1"
+    },
+    {
+      "element_id": "SequenceFlow_1bqpxlf",
+      "property": "target_ref",
+      "reference_id": "SendTask_SendReminderEmail"
+    },
+    {
+      "element_id": "SequenceFlow_2",
+      "property": "source_ref",
+      "reference_id": "SendTask_SendReminderEmail"
+    },
+    {
+      "element_id": "SequenceFlow_2",
+      "property": "target_ref",
+      "reference_id": "EndEvent_ReminderSent"
+    },
+    {
+      "element_id": "SequenceFlow_3",
+      "property": "source_ref",
+      "reference_id": "UserTask_CallCustomer"
+    },
+    {
+      "element_id": "SequenceFlow_3",
+      "property": "target_ref",
+      "reference_id": "EndEvent_TalkedToCustomer"
+    },
+    {
+      "element_id": "SequenceFlow_18a0pzl",
+      "property": "source_ref",
+      "reference_id": "SendTask_RequestDocument"
+    },
+    {
+      "element_id": "SequenceFlow_18a0pzl",
+      "property": "target_ref",
+      "reference_id": "ReceiveTask_WaitForDocument"
+    },
+    {
+      "element_id": "SequenceFlow_0d7dzn0",
+      "property": "source_ref",
+      "reference_id": "StartEvent_DocumentRequested"
+    },
+    {
+      "element_id": "SequenceFlow_0d7dzn0",
+      "property": "target_ref",
+      "reference_id": "SendTask_RequestDocument"
+    }
+  ]
 }

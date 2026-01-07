@@ -1008,7 +1008,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_6e79c19f-749d-48c4-8271-d9ca028354fa",
-            "incoming": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+            "incoming": [
+              "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1114,7 +1116,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Start Event 1",
-            "outgoing": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+            "outgoing": [
+              "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1138,14 +1142,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_ab851300-b5de-4ad3-bbec-215553757fc8",
-            "incoming": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+            "incoming": [
+              "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 1",
-            "outgoing": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+            "outgoing": [
+              "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1164,14 +1172,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_80d1f02b-f39c-45c2-b731-43df75d81779",
-            "incoming": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+            "incoming": [
+              "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 2",
-            "outgoing": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+            "outgoing": [
+              "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1215,7 +1227,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_7c434d45-d319-457b-9fd6-853c218bc3f1",
-            "incoming": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+            "incoming": [
+              "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1242,7 +1256,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
-            "incoming": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+            "incoming": [
+              "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1281,7 +1297,13 @@
                 "child_lane_set": null,
                 "documentation": [],
                 "extension_elements": null,
-                "flow_node_refs": "['_1c347d0d-750b-4c09-980d-6877caae409b', '_65d1bebf-e613-4317-acb2-b12b69fc67ff', '_ee35fa2c-dfea-40cf-a469-845b765a7b50', '_7c434d45-d319-457b-9fd6-853c218bc3f1', '_6fed62c8-8241-4a1d-ae67-266fda7dcead']",
+                "flow_node_refs": [
+                  "_1c347d0d-750b-4c09-980d-6877caae409b",
+                  "_65d1bebf-e613-4317-acb2-b12b69fc67ff",
+                  "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+                  "_7c434d45-d319-457b-9fd6-853c218bc3f1",
+                  "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+                ],
                 "id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
                 "name": "Lane 1",
                 "partition_element": null,
@@ -1291,7 +1313,10 @@
                 "child_lane_set": null,
                 "documentation": [],
                 "extension_elements": null,
-                "flow_node_refs": "['_8e6cecb7-b247-4c43-a6b6-532fb6a89753', '_f52b6ad0-4dcc-4053-b696-b924dda01db5']",
+                "flow_node_refs": [
+                  "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
+                  "_f52b6ad0-4dcc-4053-b696-b924dda01db5"
+                ],
                 "id": "_cc1845d0-ec34-44d3-8ba5-4981040d8dfe",
                 "name": "Lane 2",
                 "partition_element": null,
@@ -1416,7 +1441,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Start Event 2",
-            "outgoing": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+            "outgoing": [
+              "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1459,7 +1486,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004",
-                "incoming": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+                "incoming": [
+                  "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -1482,7 +1511,9 @@
             "id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
             "implicit_throw_events": [],
             "inclusive_gateways": [],
-            "incoming": "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+            "incoming": [
+              "_1873ed55-ba18-433f-8d1a-eb84d18da049"
+            ],
             "intermediate_catch_events": [],
             "intermediate_throw_events": [],
             "io_specification": null,
@@ -1493,7 +1524,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Expanded Sub-Process 1",
-            "outgoing": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+            "outgoing": [
+              "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+            ],
             "parallel_gateways": [],
             "performers": [],
             "potential_owners": [],
@@ -1554,7 +1587,9 @@
                 "message_event_definition": [],
                 "monitoring": null,
                 "name": "Start Event 3",
-                "outgoing": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+                "outgoing": [
+                  "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -1577,14 +1612,18 @@
                 "extension_elements": null,
                 "human_performers": [],
                 "id": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
-                "incoming": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+                "incoming": [
+                  "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
                 "monitoring": null,
                 "multi_instance_loop_characteristics": null,
                 "name": "Task 4",
-                "outgoing": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+                "outgoing": [
+                  "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -1631,7 +1670,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "_bb8b7952-0991-4b7c-a851-97327832d7b8",
-                "incoming": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+                "incoming": [
+                  "_237d3b22-6012-49f7-90a3-cd259426caf9"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -1654,7 +1695,9 @@
             "id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
             "implicit_throw_events": [],
             "inclusive_gateways": [],
-            "incoming": "_08d345a0-2bc3-4988-bfb2-7c2576839505",
+            "incoming": [
+              "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+            ],
             "intermediate_catch_events": [],
             "intermediate_throw_events": [],
             "io_specification": null,
@@ -1665,7 +1708,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Expanded Sub-Process 2",
-            "outgoing": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+            "outgoing": [
+              "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+            ],
             "parallel_gateways": [],
             "performers": [],
             "potential_owners": [],
@@ -1726,7 +1771,9 @@
                 "message_event_definition": [],
                 "monitoring": null,
                 "name": "Start Event 4",
-                "outgoing": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+                "outgoing": [
+                  "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -1749,14 +1796,18 @@
                 "extension_elements": null,
                 "human_performers": [],
                 "id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
-                "incoming": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+                "incoming": [
+                  "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
                 "monitoring": null,
                 "multi_instance_loop_characteristics": null,
                 "name": "Task 6",
-                "outgoing": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+                "outgoing": [
+                  "_237d3b22-6012-49f7-90a3-cd259426caf9"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -1785,14 +1836,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_1c347d0d-750b-4c09-980d-6877caae409b",
-            "incoming": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+            "incoming": [
+              "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 5",
-            "outgoing": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+            "outgoing": [
+              "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1811,14 +1866,19 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
-            "incoming": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+            "incoming": [
+              "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 3",
-            "outgoing": "['_1873ed55-ba18-433f-8d1a-eb84d18da049', '_08d345a0-2bc3-4988-bfb2-7c2576839505']",
+            "outgoing": [
+              "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+              "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -3668,7 +3728,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_6e79c19f-749d-48c4-8271-d9ca028354fa",
-          "incoming": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+          "incoming": [
+            "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -3774,7 +3836,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event 1",
-          "outgoing": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+          "outgoing": [
+            "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -3798,14 +3862,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_ab851300-b5de-4ad3-bbec-215553757fc8",
-          "incoming": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+          "incoming": [
+            "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 1",
-          "outgoing": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+          "outgoing": [
+            "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -3824,14 +3892,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_80d1f02b-f39c-45c2-b731-43df75d81779",
-          "incoming": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+          "incoming": [
+            "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 2",
-          "outgoing": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+          "outgoing": [
+            "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -3875,7 +3947,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_7c434d45-d319-457b-9fd6-853c218bc3f1",
-          "incoming": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+          "incoming": [
+            "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -3902,7 +3976,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
-          "incoming": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+          "incoming": [
+            "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -3941,7 +4017,13 @@
               "child_lane_set": null,
               "documentation": [],
               "extension_elements": null,
-              "flow_node_refs": "['_1c347d0d-750b-4c09-980d-6877caae409b', '_65d1bebf-e613-4317-acb2-b12b69fc67ff', '_ee35fa2c-dfea-40cf-a469-845b765a7b50', '_7c434d45-d319-457b-9fd6-853c218bc3f1', '_6fed62c8-8241-4a1d-ae67-266fda7dcead']",
+              "flow_node_refs": [
+                "_1c347d0d-750b-4c09-980d-6877caae409b",
+                "_65d1bebf-e613-4317-acb2-b12b69fc67ff",
+                "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+                "_7c434d45-d319-457b-9fd6-853c218bc3f1",
+                "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+              ],
               "id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
               "name": "Lane 1",
               "partition_element": null,
@@ -3951,7 +4033,10 @@
               "child_lane_set": null,
               "documentation": [],
               "extension_elements": null,
-              "flow_node_refs": "['_8e6cecb7-b247-4c43-a6b6-532fb6a89753', '_f52b6ad0-4dcc-4053-b696-b924dda01db5']",
+              "flow_node_refs": [
+                "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
+                "_f52b6ad0-4dcc-4053-b696-b924dda01db5"
+              ],
               "id": "_cc1845d0-ec34-44d3-8ba5-4981040d8dfe",
               "name": "Lane 2",
               "partition_element": null,
@@ -4076,7 +4161,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event 2",
-          "outgoing": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+          "outgoing": [
+            "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -4119,7 +4206,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004",
-              "incoming": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+              "incoming": [
+                "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -4142,7 +4231,9 @@
           "id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
           "implicit_throw_events": [],
           "inclusive_gateways": [],
-          "incoming": "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+          "incoming": [
+            "_1873ed55-ba18-433f-8d1a-eb84d18da049"
+          ],
           "intermediate_catch_events": [],
           "intermediate_throw_events": [],
           "io_specification": null,
@@ -4153,7 +4244,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Expanded Sub-Process 1",
-          "outgoing": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+          "outgoing": [
+            "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+          ],
           "parallel_gateways": [],
           "performers": [],
           "potential_owners": [],
@@ -4214,7 +4307,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event 3",
-              "outgoing": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+              "outgoing": [
+                "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -4237,14 +4332,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
-              "incoming": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+              "incoming": [
+                "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 4",
-              "outgoing": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+              "outgoing": [
+                "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -4291,7 +4390,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_bb8b7952-0991-4b7c-a851-97327832d7b8",
-              "incoming": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+              "incoming": [
+                "_237d3b22-6012-49f7-90a3-cd259426caf9"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -4314,7 +4415,9 @@
           "id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
           "implicit_throw_events": [],
           "inclusive_gateways": [],
-          "incoming": "_08d345a0-2bc3-4988-bfb2-7c2576839505",
+          "incoming": [
+            "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+          ],
           "intermediate_catch_events": [],
           "intermediate_throw_events": [],
           "io_specification": null,
@@ -4325,7 +4428,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Expanded Sub-Process 2",
-          "outgoing": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+          "outgoing": [
+            "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+          ],
           "parallel_gateways": [],
           "performers": [],
           "potential_owners": [],
@@ -4386,7 +4491,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event 4",
-              "outgoing": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+              "outgoing": [
+                "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -4409,14 +4516,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
-              "incoming": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+              "incoming": [
+                "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 6",
-              "outgoing": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+              "outgoing": [
+                "_237d3b22-6012-49f7-90a3-cd259426caf9"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -4445,14 +4556,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_1c347d0d-750b-4c09-980d-6877caae409b",
-          "incoming": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+          "incoming": [
+            "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 5",
-          "outgoing": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+          "outgoing": [
+            "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4471,14 +4586,19 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
-          "incoming": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+          "incoming": [
+            "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 3",
-          "outgoing": "['_1873ed55-ba18-433f-8d1a-eb84d18da049', '_08d345a0-2bc3-4988-bfb2-7c2576839505']",
+          "outgoing": [
+            "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+            "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4538,14 +4658,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
-      "incoming": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+      "incoming": [
+        "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 4",
-      "outgoing": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+      "outgoing": [
+        "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -5562,7 +5686,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_6e79c19f-749d-48c4-8271-d9ca028354fa",
-              "incoming": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+              "incoming": [
+                "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -5668,7 +5794,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event 1",
-              "outgoing": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+              "outgoing": [
+                "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -5692,14 +5820,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_ab851300-b5de-4ad3-bbec-215553757fc8",
-              "incoming": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+              "incoming": [
+                "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 1",
-              "outgoing": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+              "outgoing": [
+                "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -5718,14 +5850,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_80d1f02b-f39c-45c2-b731-43df75d81779",
-              "incoming": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+              "incoming": [
+                "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 2",
-              "outgoing": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+              "outgoing": [
+                "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -5769,7 +5905,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_7c434d45-d319-457b-9fd6-853c218bc3f1",
-              "incoming": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+              "incoming": [
+                "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -5796,7 +5934,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
-              "incoming": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+              "incoming": [
+                "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -5835,7 +5975,13 @@
                   "child_lane_set": null,
                   "documentation": [],
                   "extension_elements": null,
-                  "flow_node_refs": "['_1c347d0d-750b-4c09-980d-6877caae409b', '_65d1bebf-e613-4317-acb2-b12b69fc67ff', '_ee35fa2c-dfea-40cf-a469-845b765a7b50', '_7c434d45-d319-457b-9fd6-853c218bc3f1', '_6fed62c8-8241-4a1d-ae67-266fda7dcead']",
+                  "flow_node_refs": [
+                    "_1c347d0d-750b-4c09-980d-6877caae409b",
+                    "_65d1bebf-e613-4317-acb2-b12b69fc67ff",
+                    "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+                    "_7c434d45-d319-457b-9fd6-853c218bc3f1",
+                    "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+                  ],
                   "id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
                   "name": "Lane 1",
                   "partition_element": null,
@@ -5845,7 +5991,10 @@
                   "child_lane_set": null,
                   "documentation": [],
                   "extension_elements": null,
-                  "flow_node_refs": "['_8e6cecb7-b247-4c43-a6b6-532fb6a89753', '_f52b6ad0-4dcc-4053-b696-b924dda01db5']",
+                  "flow_node_refs": [
+                    "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
+                    "_f52b6ad0-4dcc-4053-b696-b924dda01db5"
+                  ],
                   "id": "_cc1845d0-ec34-44d3-8ba5-4981040d8dfe",
                   "name": "Lane 2",
                   "partition_element": null,
@@ -5970,7 +6119,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event 2",
-              "outgoing": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+              "outgoing": [
+                "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -6013,7 +6164,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004",
-                  "incoming": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+                  "incoming": [
+                    "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -6036,7 +6189,9 @@
               "id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
               "implicit_throw_events": [],
               "inclusive_gateways": [],
-              "incoming": "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+              "incoming": [
+                "_1873ed55-ba18-433f-8d1a-eb84d18da049"
+              ],
               "intermediate_catch_events": [],
               "intermediate_throw_events": [],
               "io_specification": null,
@@ -6047,7 +6202,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Expanded Sub-Process 1",
-              "outgoing": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+              "outgoing": [
+                "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+              ],
               "parallel_gateways": [],
               "performers": [],
               "potential_owners": [],
@@ -6108,7 +6265,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": "Start Event 3",
-                  "outgoing": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+                  "outgoing": [
+                    "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -6131,14 +6290,18 @@
                   "extension_elements": null,
                   "human_performers": [],
                   "id": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
-                  "incoming": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+                  "incoming": [
+                    "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
                   "monitoring": null,
                   "multi_instance_loop_characteristics": null,
                   "name": "Task 4",
-                  "outgoing": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+                  "outgoing": [
+                    "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -6185,7 +6348,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_bb8b7952-0991-4b7c-a851-97327832d7b8",
-                  "incoming": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+                  "incoming": [
+                    "_237d3b22-6012-49f7-90a3-cd259426caf9"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -6208,7 +6373,9 @@
               "id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
               "implicit_throw_events": [],
               "inclusive_gateways": [],
-              "incoming": "_08d345a0-2bc3-4988-bfb2-7c2576839505",
+              "incoming": [
+                "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+              ],
               "intermediate_catch_events": [],
               "intermediate_throw_events": [],
               "io_specification": null,
@@ -6219,7 +6386,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Expanded Sub-Process 2",
-              "outgoing": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+              "outgoing": [
+                "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+              ],
               "parallel_gateways": [],
               "performers": [],
               "potential_owners": [],
@@ -6280,7 +6449,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": "Start Event 4",
-                  "outgoing": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+                  "outgoing": [
+                    "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -6303,14 +6474,18 @@
                   "extension_elements": null,
                   "human_performers": [],
                   "id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
-                  "incoming": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+                  "incoming": [
+                    "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
                   "monitoring": null,
                   "multi_instance_loop_characteristics": null,
                   "name": "Task 6",
-                  "outgoing": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+                  "outgoing": [
+                    "_237d3b22-6012-49f7-90a3-cd259426caf9"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -6339,14 +6514,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_1c347d0d-750b-4c09-980d-6877caae409b",
-              "incoming": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+              "incoming": [
+                "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 5",
-              "outgoing": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+              "outgoing": [
+                "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -6365,14 +6544,19 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
-              "incoming": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+              "incoming": [
+                "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 3",
-              "outgoing": "['_1873ed55-ba18-433f-8d1a-eb84d18da049', '_08d345a0-2bc3-4988-bfb2-7c2576839505']",
+              "outgoing": [
+                "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+                "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -6407,14 +6591,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
-      "incoming": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+      "incoming": [
+        "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 6",
-      "outgoing": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+      "outgoing": [
+        "_237d3b22-6012-49f7-90a3-cd259426caf9"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6426,7 +6614,13 @@
       "child_lane_set": null,
       "documentation": [],
       "extension_elements": null,
-      "flow_node_refs": "['_1c347d0d-750b-4c09-980d-6877caae409b', '_65d1bebf-e613-4317-acb2-b12b69fc67ff', '_ee35fa2c-dfea-40cf-a469-845b765a7b50', '_7c434d45-d319-457b-9fd6-853c218bc3f1', '_6fed62c8-8241-4a1d-ae67-266fda7dcead']",
+      "flow_node_refs": [
+        "_1c347d0d-750b-4c09-980d-6877caae409b",
+        "_65d1bebf-e613-4317-acb2-b12b69fc67ff",
+        "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+        "_7c434d45-d319-457b-9fd6-853c218bc3f1",
+        "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+      ],
       "id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
       "name": "Lane 1",
       "partition_element": null,
@@ -6456,14 +6650,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_1c347d0d-750b-4c09-980d-6877caae409b",
-      "incoming": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+      "incoming": [
+        "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 5",
-      "outgoing": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+      "outgoing": [
+        "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6505,7 +6703,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event 3",
-      "outgoing": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+      "outgoing": [
+        "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6554,7 +6754,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004",
-      "incoming": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+      "incoming": [
+        "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6600,7 +6802,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event 4",
-      "outgoing": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+      "outgoing": [
+        "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6642,7 +6846,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event 2",
-      "outgoing": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+      "outgoing": [
+        "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6678,7 +6884,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_6e79c19f-749d-48c4-8271-d9ca028354fa",
-      "incoming": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+      "incoming": [
+        "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6701,14 +6909,19 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
-      "incoming": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+      "incoming": [
+        "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 3",
-      "outgoing": "['_1873ed55-ba18-433f-8d1a-eb84d18da049', '_08d345a0-2bc3-4988-bfb2-7c2576839505']",
+      "outgoing": [
+        "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+        "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6731,7 +6944,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_7c434d45-d319-457b-9fd6-853c218bc3f1",
-      "incoming": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+      "incoming": [
+        "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6767,14 +6982,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_80d1f02b-f39c-45c2-b731-43df75d81779",
-      "incoming": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+      "incoming": [
+        "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 2",
-      "outgoing": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+      "outgoing": [
+        "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6797,7 +7016,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
-      "incoming": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+      "incoming": [
+        "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6820,14 +7041,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_ab851300-b5de-4ad3-bbec-215553757fc8",
-      "incoming": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+      "incoming": [
+        "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 1",
-      "outgoing": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+      "outgoing": [
+        "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6859,7 +7084,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_bb8b7952-0991-4b7c-a851-97327832d7b8",
-      "incoming": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+      "incoming": [
+        "_237d3b22-6012-49f7-90a3-cd259426caf9"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6892,7 +7119,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event 1",
-      "outgoing": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+      "outgoing": [
+        "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6913,7 +7142,10 @@
       "child_lane_set": null,
       "documentation": [],
       "extension_elements": null,
-      "flow_node_refs": "['_8e6cecb7-b247-4c43-a6b6-532fb6a89753', '_f52b6ad0-4dcc-4053-b696-b924dda01db5']",
+      "flow_node_refs": [
+        "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
+        "_f52b6ad0-4dcc-4053-b696-b924dda01db5"
+      ],
       "id": "_cc1845d0-ec34-44d3-8ba5-4981040d8dfe",
       "name": "Lane 2",
       "partition_element": null,
@@ -6965,7 +7197,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004",
-          "incoming": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+          "incoming": [
+            "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -6988,7 +7222,9 @@
       "id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
       "implicit_throw_events": [],
       "inclusive_gateways": [],
-      "incoming": "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+      "incoming": [
+        "_1873ed55-ba18-433f-8d1a-eb84d18da049"
+      ],
       "intermediate_catch_events": [],
       "intermediate_throw_events": [],
       "io_specification": null,
@@ -6999,7 +7235,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Expanded Sub-Process 1",
-      "outgoing": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+      "outgoing": [
+        "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+      ],
       "parallel_gateways": [],
       "performers": [],
       "potential_owners": [],
@@ -7060,7 +7298,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event 3",
-          "outgoing": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+          "outgoing": [
+            "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -7083,14 +7323,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
-          "incoming": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+          "incoming": [
+            "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 4",
-          "outgoing": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+          "outgoing": [
+            "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7150,7 +7394,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_bb8b7952-0991-4b7c-a851-97327832d7b8",
-          "incoming": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+          "incoming": [
+            "_237d3b22-6012-49f7-90a3-cd259426caf9"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -7173,7 +7419,9 @@
       "id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
       "implicit_throw_events": [],
       "inclusive_gateways": [],
-      "incoming": "_08d345a0-2bc3-4988-bfb2-7c2576839505",
+      "incoming": [
+        "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+      ],
       "intermediate_catch_events": [],
       "intermediate_throw_events": [],
       "io_specification": null,
@@ -7184,7 +7432,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Expanded Sub-Process 2",
-      "outgoing": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+      "outgoing": [
+        "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+      ],
       "parallel_gateways": [],
       "performers": [],
       "potential_owners": [],
@@ -7245,7 +7495,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event 4",
-          "outgoing": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+          "outgoing": [
+            "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -7268,14 +7520,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
-          "incoming": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+          "incoming": [
+            "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 6",
-          "outgoing": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+          "outgoing": [
+            "_237d3b22-6012-49f7-90a3-cd259426caf9"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7311,7 +7567,13 @@
           "child_lane_set": null,
           "documentation": [],
           "extension_elements": null,
-          "flow_node_refs": "['_1c347d0d-750b-4c09-980d-6877caae409b', '_65d1bebf-e613-4317-acb2-b12b69fc67ff', '_ee35fa2c-dfea-40cf-a469-845b765a7b50', '_7c434d45-d319-457b-9fd6-853c218bc3f1', '_6fed62c8-8241-4a1d-ae67-266fda7dcead']",
+          "flow_node_refs": [
+            "_1c347d0d-750b-4c09-980d-6877caae409b",
+            "_65d1bebf-e613-4317-acb2-b12b69fc67ff",
+            "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+            "_7c434d45-d319-457b-9fd6-853c218bc3f1",
+            "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+          ],
           "id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
           "name": "Lane 1",
           "partition_element": null,
@@ -7321,7 +7583,10 @@
           "child_lane_set": null,
           "documentation": [],
           "extension_elements": null,
-          "flow_node_refs": "['_8e6cecb7-b247-4c43-a6b6-532fb6a89753', '_f52b6ad0-4dcc-4053-b696-b924dda01db5']",
+          "flow_node_refs": [
+            "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
+            "_f52b6ad0-4dcc-4053-b696-b924dda01db5"
+          ],
           "id": "_cc1845d0-ec34-44d3-8ba5-4981040d8dfe",
           "name": "Lane 2",
           "partition_element": null,
@@ -7330,5 +7595,337 @@
       ],
       "name": null
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "_ab851300-b5de-4ad3-bbec-215553757fc8",
+      "property": "incoming",
+      "reference_id": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+    },
+    {
+      "element_id": "_ab851300-b5de-4ad3-bbec-215553757fc8",
+      "property": "outgoing",
+      "reference_id": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+    },
+    {
+      "element_id": "_80d1f02b-f39c-45c2-b731-43df75d81779",
+      "property": "incoming",
+      "reference_id": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460"
+    },
+    {
+      "element_id": "_80d1f02b-f39c-45c2-b731-43df75d81779",
+      "property": "outgoing",
+      "reference_id": "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+    },
+    {
+      "element_id": "_6e79c19f-749d-48c4-8271-d9ca028354fa",
+      "property": "incoming",
+      "reference_id": "_f35e3b07-7b1f-433d-9595-7fdea8996954"
+    },
+    {
+      "element_id": "_c03f2b1f-32dc-41ef-b325-c9811a814fbe",
+      "property": "outgoing",
+      "reference_id": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5"
+    },
+    {
+      "element_id": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+      "property": "source_ref",
+      "reference_id": "_c03f2b1f-32dc-41ef-b325-c9811a814fbe"
+    },
+    {
+      "element_id": "_44b1d373-57a1-4b8e-ba2e-3204c32519e5",
+      "property": "target_ref",
+      "reference_id": "_ab851300-b5de-4ad3-bbec-215553757fc8"
+    },
+    {
+      "element_id": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+      "property": "source_ref",
+      "reference_id": "_80d1f02b-f39c-45c2-b731-43df75d81779"
+    },
+    {
+      "element_id": "_f35e3b07-7b1f-433d-9595-7fdea8996954",
+      "property": "target_ref",
+      "reference_id": "_6e79c19f-749d-48c4-8271-d9ca028354fa"
+    },
+    {
+      "element_id": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+      "property": "source_ref",
+      "reference_id": "_ab851300-b5de-4ad3-bbec-215553757fc8"
+    },
+    {
+      "element_id": "_6b7f2411-77f7-4152-be39-d8dbeb8bc460",
+      "property": "target_ref",
+      "reference_id": "_80d1f02b-f39c-45c2-b731-43df75d81779"
+    },
+    {
+      "element_id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
+      "property": "flow_node_refs",
+      "reference_id": "_1c347d0d-750b-4c09-980d-6877caae409b"
+    },
+    {
+      "element_id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
+      "property": "flow_node_refs",
+      "reference_id": "_65d1bebf-e613-4317-acb2-b12b69fc67ff"
+    },
+    {
+      "element_id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
+      "property": "flow_node_refs",
+      "reference_id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50"
+    },
+    {
+      "element_id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
+      "property": "flow_node_refs",
+      "reference_id": "_7c434d45-d319-457b-9fd6-853c218bc3f1"
+    },
+    {
+      "element_id": "_17bebb0f-f31e-475a-b1b1-76fcc2da172b",
+      "property": "flow_node_refs",
+      "reference_id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+    },
+    {
+      "element_id": "_cc1845d0-ec34-44d3-8ba5-4981040d8dfe",
+      "property": "flow_node_refs",
+      "reference_id": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753"
+    },
+    {
+      "element_id": "_cc1845d0-ec34-44d3-8ba5-4981040d8dfe",
+      "property": "flow_node_refs",
+      "reference_id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5"
+    },
+    {
+      "element_id": "_1c347d0d-750b-4c09-980d-6877caae409b",
+      "property": "incoming",
+      "reference_id": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+    },
+    {
+      "element_id": "_1c347d0d-750b-4c09-980d-6877caae409b",
+      "property": "outgoing",
+      "reference_id": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+    },
+    {
+      "element_id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
+      "property": "incoming",
+      "reference_id": "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+    },
+    {
+      "element_id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
+      "property": "outgoing",
+      "reference_id": "_1873ed55-ba18-433f-8d1a-eb84d18da049"
+    },
+    {
+      "element_id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead",
+      "property": "outgoing",
+      "reference_id": "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+    },
+    {
+      "element_id": "_65d1bebf-e613-4317-acb2-b12b69fc67ff",
+      "property": "outgoing",
+      "reference_id": "_486d13e4-86ef-49b2-bba9-f03435494f0e"
+    },
+    {
+      "element_id": "_1ffaa550-3225-4c6a-a391-3aaf224723af",
+      "property": "outgoing",
+      "reference_id": "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+    },
+    {
+      "element_id": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
+      "property": "incoming",
+      "reference_id": "_3580d9ba-4f79-48c1-96da-090bd5e5172d"
+    },
+    {
+      "element_id": "_09532ad3-e571-4214-b580-7bebf4bb68b1",
+      "property": "outgoing",
+      "reference_id": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+    },
+    {
+      "element_id": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004",
+      "property": "incoming",
+      "reference_id": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136"
+    },
+    {
+      "element_id": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+      "property": "source_ref",
+      "reference_id": "_1ffaa550-3225-4c6a-a391-3aaf224723af"
+    },
+    {
+      "element_id": "_3580d9ba-4f79-48c1-96da-090bd5e5172d",
+      "property": "target_ref",
+      "reference_id": "_09532ad3-e571-4214-b580-7bebf4bb68b1"
+    },
+    {
+      "element_id": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+      "property": "source_ref",
+      "reference_id": "_09532ad3-e571-4214-b580-7bebf4bb68b1"
+    },
+    {
+      "element_id": "_f5e6dc98-8c79-4e6b-aef9-c3f3bdc09136",
+      "property": "target_ref",
+      "reference_id": "_3e5ac6ed-88d6-4f82-a647-6b253b80b004"
+    },
+    {
+      "element_id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+      "property": "incoming",
+      "reference_id": "_1873ed55-ba18-433f-8d1a-eb84d18da049"
+    },
+    {
+      "element_id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50",
+      "property": "outgoing",
+      "reference_id": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150"
+    },
+    {
+      "element_id": "_47bef337-7915-459d-a9cd-e9c87c98f8fa",
+      "property": "outgoing",
+      "reference_id": "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+    },
+    {
+      "element_id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
+      "property": "incoming",
+      "reference_id": "_807d5f9c-e4e5-49fc-b44a-da9743a94556"
+    },
+    {
+      "element_id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb",
+      "property": "outgoing",
+      "reference_id": "_237d3b22-6012-49f7-90a3-cd259426caf9"
+    },
+    {
+      "element_id": "_bb8b7952-0991-4b7c-a851-97327832d7b8",
+      "property": "incoming",
+      "reference_id": "_237d3b22-6012-49f7-90a3-cd259426caf9"
+    },
+    {
+      "element_id": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+      "property": "source_ref",
+      "reference_id": "_47bef337-7915-459d-a9cd-e9c87c98f8fa"
+    },
+    {
+      "element_id": "_807d5f9c-e4e5-49fc-b44a-da9743a94556",
+      "property": "target_ref",
+      "reference_id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb"
+    },
+    {
+      "element_id": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+      "property": "source_ref",
+      "reference_id": "_15f8f2a4-5e55-4159-b349-403ac4cbdefb"
+    },
+    {
+      "element_id": "_237d3b22-6012-49f7-90a3-cd259426caf9",
+      "property": "target_ref",
+      "reference_id": "_bb8b7952-0991-4b7c-a851-97327832d7b8"
+    },
+    {
+      "element_id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
+      "property": "incoming",
+      "reference_id": "_08d345a0-2bc3-4988-bfb2-7c2576839505"
+    },
+    {
+      "element_id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5",
+      "property": "outgoing",
+      "reference_id": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+    },
+    {
+      "element_id": "_7c434d45-d319-457b-9fd6-853c218bc3f1",
+      "property": "incoming",
+      "reference_id": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6"
+    },
+    {
+      "element_id": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753",
+      "property": "incoming",
+      "reference_id": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b"
+    },
+    {
+      "element_id": "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+      "property": "source_ref",
+      "reference_id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+    },
+    {
+      "element_id": "_1873ed55-ba18-433f-8d1a-eb84d18da049",
+      "property": "target_ref",
+      "reference_id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50"
+    },
+    {
+      "element_id": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+      "property": "source_ref",
+      "reference_id": "_ee35fa2c-dfea-40cf-a469-845b765a7b50"
+    },
+    {
+      "element_id": "_ebbaed22-6fcb-4af7-8b7a-7ebc9cc7f150",
+      "property": "target_ref",
+      "reference_id": "_1c347d0d-750b-4c09-980d-6877caae409b"
+    },
+    {
+      "element_id": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+      "property": "source_ref",
+      "reference_id": "_1c347d0d-750b-4c09-980d-6877caae409b"
+    },
+    {
+      "element_id": "_0020ed6a-6dde-499f-9fda-36c8bde20ec6",
+      "property": "target_ref",
+      "reference_id": "_7c434d45-d319-457b-9fd6-853c218bc3f1"
+    },
+    {
+      "element_id": "_08d345a0-2bc3-4988-bfb2-7c2576839505",
+      "property": "source_ref",
+      "reference_id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+    },
+    {
+      "element_id": "_08d345a0-2bc3-4988-bfb2-7c2576839505",
+      "property": "target_ref",
+      "reference_id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5"
+    },
+    {
+      "element_id": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+      "property": "source_ref",
+      "reference_id": "_f52b6ad0-4dcc-4053-b696-b924dda01db5"
+    },
+    {
+      "element_id": "_1f3792a7-da0f-4621-8c10-a04b67e33f5b",
+      "property": "target_ref",
+      "reference_id": "_8e6cecb7-b247-4c43-a6b6-532fb6a89753"
+    },
+    {
+      "element_id": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+      "property": "source_ref",
+      "reference_id": "_65d1bebf-e613-4317-acb2-b12b69fc67ff"
+    },
+    {
+      "element_id": "_486d13e4-86ef-49b2-bba9-f03435494f0e",
+      "property": "target_ref",
+      "reference_id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+    },
+    {
+      "element_id": "_046bff4f-cea3-4512-a6b1-30517fb29f2c",
+      "property": "process_ref",
+      "reference_id": "WFP-6-1"
+    },
+    {
+      "element_id": "_b467921a-ef7b-44c5-bf78-fd624c400d17",
+      "property": "source_ref",
+      "reference_id": "_ab851300-b5de-4ad3-bbec-215553757fc8"
+    },
+    {
+      "element_id": "_b467921a-ef7b-44c5-bf78-fd624c400d17",
+      "property": "target_ref",
+      "reference_id": "_6fed62c8-8241-4a1d-ae67-266fda7dcead"
+    },
+    {
+      "element_id": "_b467921a-ef7b-44c5-bf78-fd624c400d17",
+      "property": "message_ref",
+      "reference_id": "Message_1373649949207"
+    },
+    {
+      "element_id": "_c311cc87-677e-47a4-bdb1-8744c4ec3147",
+      "property": "source_ref",
+      "reference_id": "_1c347d0d-750b-4c09-980d-6877caae409b"
+    },
+    {
+      "element_id": "_c311cc87-677e-47a4-bdb1-8744c4ec3147",
+      "property": "target_ref",
+      "reference_id": "_80d1f02b-f39c-45c2-b731-43df75d81779"
+    },
+    {
+      "element_id": "_c311cc87-677e-47a4-bdb1-8744c4ec3147",
+      "property": "message_ref",
+      "reference_id": "Message_1373649949208"
+    }
+  ]
 }

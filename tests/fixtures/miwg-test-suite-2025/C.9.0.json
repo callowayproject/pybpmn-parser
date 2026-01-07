@@ -1228,7 +1228,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Fraud detected",
-            "outgoing": "Flow_177paze",
+            "outgoing": [
+              "Flow_177paze"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1274,14 +1276,18 @@
             "human_performers": [],
             "id": "BusinessRuleTask_CheckApplicationAutomatically",
             "implementation": "##unspecified",
-            "incoming": "SequenceFlow_1gd6p37",
+            "incoming": [
+              "SequenceFlow_1gd6p37"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Check application automatically",
-            "outgoing": "SequenceFlow_2",
+            "outgoing": [
+              "SequenceFlow_2"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1310,14 +1316,18 @@
             },
             "human_performers": [],
             "id": "Activity_ManualCheck",
-            "incoming": "SequenceFlow_Yellow",
+            "incoming": [
+              "SequenceFlow_Yellow"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Manual Check",
-            "outgoing": "Flow_0ik8h65",
+            "outgoing": [
+              "Flow_0ik8h65"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1355,7 +1365,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "EndEvent_ApplicationIssued",
-            "incoming": "SequenceFlow_11",
+            "incoming": [
+              "SequenceFlow_11"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1388,7 +1400,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "EndEvent_ApplicationRejected",
-            "incoming": "SequenceFlow_13",
+            "incoming": [
+              "SequenceFlow_13"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1421,7 +1435,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "TerminateEvent_ApplicationCanceledFraud",
-            "incoming": "Flow_0cvhizd",
+            "incoming": [
+              "Flow_0cvhizd"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1451,10 +1467,15 @@
             "extension_elements": null,
             "gateway_direction": "Unspecified",
             "id": "ExclusiveGateway_Decision",
-            "incoming": "Flow_0ik8h65",
+            "incoming": [
+              "Flow_0ik8h65"
+            ],
             "monitoring": null,
             "name": "Decision?",
-            "outgoing": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_ApplicationDeclined']"
+            "outgoing": [
+              "SequenceFlow_ApplicationAccepted",
+              "SequenceFlow_ApplicationDeclined"
+            ]
           },
           {
             "auditing": null,
@@ -1470,10 +1491,16 @@
             "extension_elements": null,
             "gateway_direction": "Unspecified",
             "id": "ExclusiveGateway_Risk",
-            "incoming": "SequenceFlow_2",
+            "incoming": [
+              "SequenceFlow_2"
+            ],
             "monitoring": null,
             "name": "Risk?",
-            "outgoing": "['SequenceFlow_Green', 'SequenceFlow_Red', 'SequenceFlow_Yellow']"
+            "outgoing": [
+              "SequenceFlow_Green",
+              "SequenceFlow_Red",
+              "SequenceFlow_Yellow"
+            ]
           }
         ],
         "extension_elements": {
@@ -1524,7 +1551,9 @@
             "human_performers": [],
             "id": "SendTask_ReportFraud",
             "implementation": "##WebService",
-            "incoming": "Flow_177paze",
+            "incoming": [
+              "Flow_177paze"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -1533,7 +1562,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Report fraud",
             "operation_ref": null,
-            "outgoing": "Flow_0cvhizd",
+            "outgoing": [
+              "Flow_0cvhizd"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1832,7 +1863,9 @@
             "human_performers": [],
             "id": "SendTask_SendPolicy",
             "implementation": "##WebService",
-            "incoming": "SequenceFlow_10",
+            "incoming": [
+              "SequenceFlow_10"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -1840,7 +1873,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Send confirmation",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_11",
+            "outgoing": [
+              "SequenceFlow_11"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1873,7 +1908,10 @@
             "human_performers": [],
             "id": "ServiceTask_DeliverPolicy",
             "implementation": "##WebService",
-            "incoming": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_Green']",
+            "incoming": [
+              "SequenceFlow_ApplicationAccepted",
+              "SequenceFlow_Green"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -1881,7 +1919,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Deliver confirmation",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_10",
+            "outgoing": [
+              "SequenceFlow_10"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1912,7 +1952,10 @@
             "human_performers": [],
             "id": "ServiceTask_RejectPolicy",
             "implementation": "##WebService",
-            "incoming": "['SequenceFlow_ApplicationDeclined', 'SequenceFlow_Red']",
+            "incoming": [
+              "SequenceFlow_ApplicationDeclined",
+              "SequenceFlow_Red"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -1920,7 +1963,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Reject application",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_01vh1zw",
+            "outgoing": [
+              "SequenceFlow_01vh1zw"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1978,7 +2023,9 @@
             "human_performers": [],
             "id": "SendTask_SendRejection",
             "implementation": "##WebService",
-            "incoming": "SequenceFlow_01vh1zw",
+            "incoming": [
+              "SequenceFlow_01vh1zw"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -1986,7 +2033,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Send rejection",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_13",
+            "outgoing": [
+              "SequenceFlow_13"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2019,7 +2068,9 @@
             "human_performers": [],
             "id": "ServiceTask_GetCreditScore",
             "implementation": "##WebService",
-            "incoming": "SequenceFlow_6",
+            "incoming": [
+              "SequenceFlow_6"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -2027,7 +2078,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Get credit score",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_1gd6p37",
+            "outgoing": [
+              "SequenceFlow_1gd6p37"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2066,7 +2119,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Application received",
-            "outgoing": "SequenceFlow_6",
+            "outgoing": [
+              "SequenceFlow_6"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2120,7 +2175,9 @@
                   }
                 },
                 "id": "EndMessageEvent_Timeout",
-                "incoming": "Flow_0dppbeu",
+                "incoming": [
+                  "Flow_0dppbeu"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [
@@ -2236,7 +2293,9 @@
                 "message_event_definition": [],
                 "monitoring": null,
                 "name": "Timeout",
-                "outgoing": "Flow_151qlxc",
+                "outgoing": [
+                  "Flow_151qlxc"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -2270,14 +2329,18 @@
                 "human_performers": [],
                 "id": "UserTask_HandleTimeout",
                 "implementation": "##unspecified",
-                "incoming": "Flow_151qlxc",
+                "incoming": [
+                  "Flow_151qlxc"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
                 "monitoring": null,
                 "multi_instance_loop_characteristics": null,
                 "name": "Handle Timeout",
-                "outgoing": "Flow_0dppbeu",
+                "outgoing": [
+                  "Flow_0dppbeu"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -2332,7 +2395,9 @@
                   }
                 },
                 "id": "EndMessageEvent_InformCustomer",
-                "incoming": "Flow_0qrakss",
+                "incoming": [
+                  "Flow_0qrakss"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [
@@ -2378,7 +2443,9 @@
                   }
                 },
                 "id": "EndMessageEvent_InformOperations",
-                "incoming": "Flow_1jml1az",
+                "incoming": [
+                  "Flow_1jml1az"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [
@@ -2429,10 +2496,15 @@
                 "extension_elements": null,
                 "gateway_direction": "Unspecified",
                 "id": "ParallelGateway_CancelApplication",
-                "incoming": "Flow_19iipc6",
+                "incoming": [
+                  "Flow_19iipc6"
+                ],
                 "monitoring": null,
                 "name": null,
-                "outgoing": "['Flow_0qrakss', 'Flow_1jml1az']"
+                "outgoing": [
+                  "Flow_0qrakss",
+                  "Flow_1jml1az"
+                ]
               }
             ],
             "performers": [],
@@ -2520,7 +2592,9 @@
                 "human_performers": [],
                 "id": "ServiceTask_CancelApplication",
                 "implementation": "##WebService",
-                "incoming": "Flow_12nmks0",
+                "incoming": [
+                  "Flow_12nmks0"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
@@ -2528,7 +2602,9 @@
                 "multi_instance_loop_characteristics": null,
                 "name": "Cancel application",
                 "operation_ref": null,
-                "outgoing": "Flow_19iipc6",
+                "outgoing": [
+                  "Flow_19iipc6"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -2574,7 +2650,9 @@
                 ],
                 "monitoring": null,
                 "name": "Cancelation requested",
-                "outgoing": "Flow_12nmks0",
+                "outgoing": [
+                  "Flow_12nmks0"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -2741,7 +2819,9 @@
             }
           },
           "id": "EndMessageEvent_InformCustomer",
-          "incoming": "Flow_0qrakss",
+          "incoming": [
+            "Flow_0qrakss"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [
@@ -2787,7 +2867,9 @@
             }
           },
           "id": "EndMessageEvent_InformOperations",
-          "incoming": "Flow_1jml1az",
+          "incoming": [
+            "Flow_1jml1az"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [
@@ -2838,10 +2920,15 @@
           "extension_elements": null,
           "gateway_direction": "Unspecified",
           "id": "ParallelGateway_CancelApplication",
-          "incoming": "Flow_19iipc6",
+          "incoming": [
+            "Flow_19iipc6"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "['Flow_0qrakss', 'Flow_1jml1az']"
+          "outgoing": [
+            "Flow_0qrakss",
+            "Flow_1jml1az"
+          ]
         }
       ],
       "performers": [],
@@ -2929,7 +3016,9 @@
           "human_performers": [],
           "id": "ServiceTask_CancelApplication",
           "implementation": "##WebService",
-          "incoming": "Flow_12nmks0",
+          "incoming": [
+            "Flow_12nmks0"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -2937,7 +3026,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Cancel application",
           "operation_ref": null,
-          "outgoing": "Flow_19iipc6",
+          "outgoing": [
+            "Flow_19iipc6"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2983,7 +3074,9 @@
           ],
           "monitoring": null,
           "name": "Cancelation requested",
-          "outgoing": "Flow_12nmks0",
+          "outgoing": [
+            "Flow_12nmks0"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -3044,7 +3137,9 @@
             }
           },
           "id": "EndMessageEvent_Timeout",
-          "incoming": "Flow_0dppbeu",
+          "incoming": [
+            "Flow_0dppbeu"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [
@@ -3160,7 +3255,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Timeout",
-          "outgoing": "Flow_151qlxc",
+          "outgoing": [
+            "Flow_151qlxc"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -3194,14 +3291,18 @@
           "human_performers": [],
           "id": "UserTask_HandleTimeout",
           "implementation": "##unspecified",
-          "incoming": "Flow_151qlxc",
+          "incoming": [
+            "Flow_151qlxc"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Handle Timeout",
-          "outgoing": "Flow_0dppbeu",
+          "outgoing": [
+            "Flow_0dppbeu"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -3248,14 +3349,18 @@
       },
       "human_performers": [],
       "id": "Activity_ManualCheck",
-      "incoming": "SequenceFlow_Yellow",
+      "incoming": [
+        "SequenceFlow_Yellow"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Manual Check",
-      "outgoing": "Flow_0ik8h65",
+      "outgoing": [
+        "Flow_0ik8h65"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -5760,14 +5865,18 @@
       "human_performers": [],
       "id": "BusinessRuleTask_CheckApplicationAutomatically",
       "implementation": "##unspecified",
-      "incoming": "SequenceFlow_1gd6p37",
+      "incoming": [
+        "SequenceFlow_1gd6p37"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Check application automatically",
-      "outgoing": "SequenceFlow_2",
+      "outgoing": [
+        "SequenceFlow_2"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -5830,7 +5939,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_ApplicationIssued",
-      "incoming": "SequenceFlow_11",
+      "incoming": [
+        "SequenceFlow_11"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -5863,7 +5974,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_ApplicationRejected",
-      "incoming": "SequenceFlow_13",
+      "incoming": [
+        "SequenceFlow_13"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -5901,7 +6014,9 @@
         }
       },
       "id": "EndMessageEvent_InformCustomer",
-      "incoming": "Flow_0qrakss",
+      "incoming": [
+        "Flow_0qrakss"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [
@@ -5947,7 +6062,9 @@
         }
       },
       "id": "EndMessageEvent_InformOperations",
-      "incoming": "Flow_1jml1az",
+      "incoming": [
+        "Flow_1jml1az"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [
@@ -5993,7 +6110,9 @@
         }
       },
       "id": "EndMessageEvent_Timeout",
-      "incoming": "Flow_0dppbeu",
+      "incoming": [
+        "Flow_0dppbeu"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [
@@ -6048,7 +6167,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Fraud detected",
-      "outgoing": "Flow_177paze",
+      "outgoing": [
+        "Flow_177paze"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6248,10 +6369,15 @@
       "extension_elements": null,
       "gateway_direction": "Unspecified",
       "id": "ExclusiveGateway_Decision",
-      "incoming": "Flow_0ik8h65",
+      "incoming": [
+        "Flow_0ik8h65"
+      ],
       "monitoring": null,
       "name": "Decision?",
-      "outgoing": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_ApplicationDeclined']"
+      "outgoing": [
+        "SequenceFlow_ApplicationAccepted",
+        "SequenceFlow_ApplicationDeclined"
+      ]
     },
     "ExclusiveGateway_Risk": {
       "auditing": null,
@@ -6267,10 +6393,16 @@
       "extension_elements": null,
       "gateway_direction": "Unspecified",
       "id": "ExclusiveGateway_Risk",
-      "incoming": "SequenceFlow_2",
+      "incoming": [
+        "SequenceFlow_2"
+      ],
       "monitoring": null,
       "name": "Risk?",
-      "outgoing": "['SequenceFlow_Green', 'SequenceFlow_Red', 'SequenceFlow_Yellow']"
+      "outgoing": [
+        "SequenceFlow_Green",
+        "SequenceFlow_Red",
+        "SequenceFlow_Yellow"
+      ]
     },
     "Flow_0cvhizd": {
       "auditing": null,
@@ -6628,10 +6760,15 @@
       "extension_elements": null,
       "gateway_direction": "Unspecified",
       "id": "ParallelGateway_CancelApplication",
-      "incoming": "Flow_19iipc6",
+      "incoming": [
+        "Flow_19iipc6"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "['Flow_0qrakss', 'Flow_1jml1az']"
+      "outgoing": [
+        "Flow_0qrakss",
+        "Flow_1jml1az"
+      ]
     },
     "Participant_00": {
       "documentation": [],
@@ -6677,7 +6814,9 @@
       "human_performers": [],
       "id": "SendTask_ReportFraud",
       "implementation": "##WebService",
-      "incoming": "Flow_177paze",
+      "incoming": [
+        "Flow_177paze"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -6686,7 +6825,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Report fraud",
       "operation_ref": null,
-      "outgoing": "Flow_0cvhizd",
+      "outgoing": [
+        "Flow_0cvhizd"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6744,7 +6885,9 @@
       "human_performers": [],
       "id": "SendTask_SendPolicy",
       "implementation": "##WebService",
-      "incoming": "SequenceFlow_10",
+      "incoming": [
+        "SequenceFlow_10"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -6752,7 +6895,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Send confirmation",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_11",
+      "outgoing": [
+        "SequenceFlow_11"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6812,7 +6957,9 @@
       "human_performers": [],
       "id": "SendTask_SendRejection",
       "implementation": "##WebService",
-      "incoming": "SequenceFlow_01vh1zw",
+      "incoming": [
+        "SequenceFlow_01vh1zw"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -6820,7 +6967,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Send rejection",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_13",
+      "outgoing": [
+        "SequenceFlow_13"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -7130,7 +7279,9 @@
       "human_performers": [],
       "id": "ServiceTask_CancelApplication",
       "implementation": "##WebService",
-      "incoming": "Flow_12nmks0",
+      "incoming": [
+        "Flow_12nmks0"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -7138,7 +7289,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Cancel application",
       "operation_ref": null,
-      "outgoing": "Flow_19iipc6",
+      "outgoing": [
+        "Flow_19iipc6"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -7169,7 +7322,10 @@
       "human_performers": [],
       "id": "ServiceTask_DeliverPolicy",
       "implementation": "##WebService",
-      "incoming": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_Green']",
+      "incoming": [
+        "SequenceFlow_ApplicationAccepted",
+        "SequenceFlow_Green"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -7177,7 +7333,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Deliver confirmation",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_10",
+      "outgoing": [
+        "SequenceFlow_10"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -7208,7 +7366,9 @@
       "human_performers": [],
       "id": "ServiceTask_GetCreditScore",
       "implementation": "##WebService",
-      "incoming": "SequenceFlow_6",
+      "incoming": [
+        "SequenceFlow_6"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -7216,7 +7376,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Get credit score",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_1gd6p37",
+      "outgoing": [
+        "SequenceFlow_1gd6p37"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -7247,7 +7409,10 @@
       "human_performers": [],
       "id": "ServiceTask_RejectPolicy",
       "implementation": "##WebService",
-      "incoming": "['SequenceFlow_ApplicationDeclined', 'SequenceFlow_Red']",
+      "incoming": [
+        "SequenceFlow_ApplicationDeclined",
+        "SequenceFlow_Red"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -7255,7 +7420,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Reject application",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_01vh1zw",
+      "outgoing": [
+        "SequenceFlow_01vh1zw"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -7297,7 +7464,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Timeout",
-      "outgoing": "Flow_151qlxc",
+      "outgoing": [
+        "Flow_151qlxc"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -7334,7 +7503,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Application received",
-      "outgoing": "SequenceFlow_6",
+      "outgoing": [
+        "SequenceFlow_6"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -7377,7 +7548,9 @@
       ],
       "monitoring": null,
       "name": "Cancelation requested",
-      "outgoing": "Flow_12nmks0",
+      "outgoing": [
+        "Flow_12nmks0"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -7411,7 +7584,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "TerminateEvent_ApplicationCanceledFraud",
-      "incoming": "Flow_0cvhizd",
+      "incoming": [
+        "Flow_0cvhizd"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -7447,14 +7622,18 @@
       "human_performers": [],
       "id": "UserTask_HandleTimeout",
       "implementation": "##unspecified",
-      "incoming": "Flow_151qlxc",
+      "incoming": [
+        "Flow_151qlxc"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Handle Timeout",
-      "outgoing": "Flow_0dppbeu",
+      "outgoing": [
+        "Flow_0dppbeu"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -8692,7 +8871,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Fraud detected",
-              "outgoing": "Flow_177paze",
+              "outgoing": [
+                "Flow_177paze"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -8738,14 +8919,18 @@
               "human_performers": [],
               "id": "BusinessRuleTask_CheckApplicationAutomatically",
               "implementation": "##unspecified",
-              "incoming": "SequenceFlow_1gd6p37",
+              "incoming": [
+                "SequenceFlow_1gd6p37"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Check application automatically",
-              "outgoing": "SequenceFlow_2",
+              "outgoing": [
+                "SequenceFlow_2"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -8774,14 +8959,18 @@
               },
               "human_performers": [],
               "id": "Activity_ManualCheck",
-              "incoming": "SequenceFlow_Yellow",
+              "incoming": [
+                "SequenceFlow_Yellow"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Manual Check",
-              "outgoing": "Flow_0ik8h65",
+              "outgoing": [
+                "Flow_0ik8h65"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -8819,7 +9008,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_ApplicationIssued",
-              "incoming": "SequenceFlow_11",
+              "incoming": [
+                "SequenceFlow_11"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -8852,7 +9043,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_ApplicationRejected",
-              "incoming": "SequenceFlow_13",
+              "incoming": [
+                "SequenceFlow_13"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -8885,7 +9078,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "TerminateEvent_ApplicationCanceledFraud",
-              "incoming": "Flow_0cvhizd",
+              "incoming": [
+                "Flow_0cvhizd"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -8915,10 +9110,15 @@
               "extension_elements": null,
               "gateway_direction": "Unspecified",
               "id": "ExclusiveGateway_Decision",
-              "incoming": "Flow_0ik8h65",
+              "incoming": [
+                "Flow_0ik8h65"
+              ],
               "monitoring": null,
               "name": "Decision?",
-              "outgoing": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_ApplicationDeclined']"
+              "outgoing": [
+                "SequenceFlow_ApplicationAccepted",
+                "SequenceFlow_ApplicationDeclined"
+              ]
             },
             {
               "auditing": null,
@@ -8934,10 +9134,16 @@
               "extension_elements": null,
               "gateway_direction": "Unspecified",
               "id": "ExclusiveGateway_Risk",
-              "incoming": "SequenceFlow_2",
+              "incoming": [
+                "SequenceFlow_2"
+              ],
               "monitoring": null,
               "name": "Risk?",
-              "outgoing": "['SequenceFlow_Green', 'SequenceFlow_Red', 'SequenceFlow_Yellow']"
+              "outgoing": [
+                "SequenceFlow_Green",
+                "SequenceFlow_Red",
+                "SequenceFlow_Yellow"
+              ]
             }
           ],
           "extension_elements": {
@@ -8988,7 +9194,9 @@
               "human_performers": [],
               "id": "SendTask_ReportFraud",
               "implementation": "##WebService",
-              "incoming": "Flow_177paze",
+              "incoming": [
+                "Flow_177paze"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -8997,7 +9205,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Report fraud",
               "operation_ref": null,
-              "outgoing": "Flow_0cvhizd",
+              "outgoing": [
+                "Flow_0cvhizd"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -9296,7 +9506,9 @@
               "human_performers": [],
               "id": "SendTask_SendPolicy",
               "implementation": "##WebService",
-              "incoming": "SequenceFlow_10",
+              "incoming": [
+                "SequenceFlow_10"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -9304,7 +9516,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Send confirmation",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_11",
+              "outgoing": [
+                "SequenceFlow_11"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -9337,7 +9551,10 @@
               "human_performers": [],
               "id": "ServiceTask_DeliverPolicy",
               "implementation": "##WebService",
-              "incoming": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_Green']",
+              "incoming": [
+                "SequenceFlow_ApplicationAccepted",
+                "SequenceFlow_Green"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -9345,7 +9562,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Deliver confirmation",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_10",
+              "outgoing": [
+                "SequenceFlow_10"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -9376,7 +9595,10 @@
               "human_performers": [],
               "id": "ServiceTask_RejectPolicy",
               "implementation": "##WebService",
-              "incoming": "['SequenceFlow_ApplicationDeclined', 'SequenceFlow_Red']",
+              "incoming": [
+                "SequenceFlow_ApplicationDeclined",
+                "SequenceFlow_Red"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -9384,7 +9606,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Reject application",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_01vh1zw",
+              "outgoing": [
+                "SequenceFlow_01vh1zw"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -9442,7 +9666,9 @@
               "human_performers": [],
               "id": "SendTask_SendRejection",
               "implementation": "##WebService",
-              "incoming": "SequenceFlow_01vh1zw",
+              "incoming": [
+                "SequenceFlow_01vh1zw"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -9450,7 +9676,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Send rejection",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_13",
+              "outgoing": [
+                "SequenceFlow_13"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -9483,7 +9711,9 @@
               "human_performers": [],
               "id": "ServiceTask_GetCreditScore",
               "implementation": "##WebService",
-              "incoming": "SequenceFlow_6",
+              "incoming": [
+                "SequenceFlow_6"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -9491,7 +9721,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Get credit score",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_1gd6p37",
+              "outgoing": [
+                "SequenceFlow_1gd6p37"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -9530,7 +9762,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Application received",
-              "outgoing": "SequenceFlow_6",
+              "outgoing": [
+                "SequenceFlow_6"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -9584,7 +9818,9 @@
                     }
                   },
                   "id": "EndMessageEvent_Timeout",
-                  "incoming": "Flow_0dppbeu",
+                  "incoming": [
+                    "Flow_0dppbeu"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [
@@ -9700,7 +9936,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": "Timeout",
-                  "outgoing": "Flow_151qlxc",
+                  "outgoing": [
+                    "Flow_151qlxc"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -9734,14 +9972,18 @@
                   "human_performers": [],
                   "id": "UserTask_HandleTimeout",
                   "implementation": "##unspecified",
-                  "incoming": "Flow_151qlxc",
+                  "incoming": [
+                    "Flow_151qlxc"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
                   "monitoring": null,
                   "multi_instance_loop_characteristics": null,
                   "name": "Handle Timeout",
-                  "outgoing": "Flow_0dppbeu",
+                  "outgoing": [
+                    "Flow_0dppbeu"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -9796,7 +10038,9 @@
                     }
                   },
                   "id": "EndMessageEvent_InformCustomer",
-                  "incoming": "Flow_0qrakss",
+                  "incoming": [
+                    "Flow_0qrakss"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [
@@ -9842,7 +10086,9 @@
                     }
                   },
                   "id": "EndMessageEvent_InformOperations",
-                  "incoming": "Flow_1jml1az",
+                  "incoming": [
+                    "Flow_1jml1az"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [
@@ -9893,10 +10139,15 @@
                   "extension_elements": null,
                   "gateway_direction": "Unspecified",
                   "id": "ParallelGateway_CancelApplication",
-                  "incoming": "Flow_19iipc6",
+                  "incoming": [
+                    "Flow_19iipc6"
+                  ],
                   "monitoring": null,
                   "name": null,
-                  "outgoing": "['Flow_0qrakss', 'Flow_1jml1az']"
+                  "outgoing": [
+                    "Flow_0qrakss",
+                    "Flow_1jml1az"
+                  ]
                 }
               ],
               "performers": [],
@@ -9984,7 +10235,9 @@
                   "human_performers": [],
                   "id": "ServiceTask_CancelApplication",
                   "implementation": "##WebService",
-                  "incoming": "Flow_12nmks0",
+                  "incoming": [
+                    "Flow_12nmks0"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
@@ -9992,7 +10245,9 @@
                   "multi_instance_loop_characteristics": null,
                   "name": "Cancel application",
                   "operation_ref": null,
-                  "outgoing": "Flow_19iipc6",
+                  "outgoing": [
+                    "Flow_19iipc6"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -10038,7 +10293,9 @@
                   ],
                   "monitoring": null,
                   "name": "Cancelation requested",
-                  "outgoing": "Flow_12nmks0",
+                  "outgoing": [
+                    "Flow_12nmks0"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -10297,7 +10554,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Fraud detected",
-          "outgoing": "Flow_177paze",
+          "outgoing": [
+            "Flow_177paze"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -10343,14 +10602,18 @@
           "human_performers": [],
           "id": "BusinessRuleTask_CheckApplicationAutomatically",
           "implementation": "##unspecified",
-          "incoming": "SequenceFlow_1gd6p37",
+          "incoming": [
+            "SequenceFlow_1gd6p37"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Check application automatically",
-          "outgoing": "SequenceFlow_2",
+          "outgoing": [
+            "SequenceFlow_2"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10379,14 +10642,18 @@
           },
           "human_performers": [],
           "id": "Activity_ManualCheck",
-          "incoming": "SequenceFlow_Yellow",
+          "incoming": [
+            "SequenceFlow_Yellow"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Manual Check",
-          "outgoing": "Flow_0ik8h65",
+          "outgoing": [
+            "Flow_0ik8h65"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10424,7 +10691,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_ApplicationIssued",
-          "incoming": "SequenceFlow_11",
+          "incoming": [
+            "SequenceFlow_11"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -10457,7 +10726,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_ApplicationRejected",
-          "incoming": "SequenceFlow_13",
+          "incoming": [
+            "SequenceFlow_13"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -10490,7 +10761,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "TerminateEvent_ApplicationCanceledFraud",
-          "incoming": "Flow_0cvhizd",
+          "incoming": [
+            "Flow_0cvhizd"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -10520,10 +10793,15 @@
           "extension_elements": null,
           "gateway_direction": "Unspecified",
           "id": "ExclusiveGateway_Decision",
-          "incoming": "Flow_0ik8h65",
+          "incoming": [
+            "Flow_0ik8h65"
+          ],
           "monitoring": null,
           "name": "Decision?",
-          "outgoing": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_ApplicationDeclined']"
+          "outgoing": [
+            "SequenceFlow_ApplicationAccepted",
+            "SequenceFlow_ApplicationDeclined"
+          ]
         },
         {
           "auditing": null,
@@ -10539,10 +10817,16 @@
           "extension_elements": null,
           "gateway_direction": "Unspecified",
           "id": "ExclusiveGateway_Risk",
-          "incoming": "SequenceFlow_2",
+          "incoming": [
+            "SequenceFlow_2"
+          ],
           "monitoring": null,
           "name": "Risk?",
-          "outgoing": "['SequenceFlow_Green', 'SequenceFlow_Red', 'SequenceFlow_Yellow']"
+          "outgoing": [
+            "SequenceFlow_Green",
+            "SequenceFlow_Red",
+            "SequenceFlow_Yellow"
+          ]
         }
       ],
       "extension_elements": {
@@ -10593,7 +10877,9 @@
           "human_performers": [],
           "id": "SendTask_ReportFraud",
           "implementation": "##WebService",
-          "incoming": "Flow_177paze",
+          "incoming": [
+            "Flow_177paze"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -10602,7 +10888,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Report fraud",
           "operation_ref": null,
-          "outgoing": "Flow_0cvhizd",
+          "outgoing": [
+            "Flow_0cvhizd"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10901,7 +11189,9 @@
           "human_performers": [],
           "id": "SendTask_SendPolicy",
           "implementation": "##WebService",
-          "incoming": "SequenceFlow_10",
+          "incoming": [
+            "SequenceFlow_10"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -10909,7 +11199,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Send confirmation",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_11",
+          "outgoing": [
+            "SequenceFlow_11"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10942,7 +11234,10 @@
           "human_performers": [],
           "id": "ServiceTask_DeliverPolicy",
           "implementation": "##WebService",
-          "incoming": "['SequenceFlow_ApplicationAccepted', 'SequenceFlow_Green']",
+          "incoming": [
+            "SequenceFlow_ApplicationAccepted",
+            "SequenceFlow_Green"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -10950,7 +11245,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Deliver confirmation",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_10",
+          "outgoing": [
+            "SequenceFlow_10"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10981,7 +11278,10 @@
           "human_performers": [],
           "id": "ServiceTask_RejectPolicy",
           "implementation": "##WebService",
-          "incoming": "['SequenceFlow_ApplicationDeclined', 'SequenceFlow_Red']",
+          "incoming": [
+            "SequenceFlow_ApplicationDeclined",
+            "SequenceFlow_Red"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -10989,7 +11289,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Reject application",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_01vh1zw",
+          "outgoing": [
+            "SequenceFlow_01vh1zw"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -11047,7 +11349,9 @@
           "human_performers": [],
           "id": "SendTask_SendRejection",
           "implementation": "##WebService",
-          "incoming": "SequenceFlow_01vh1zw",
+          "incoming": [
+            "SequenceFlow_01vh1zw"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -11055,7 +11359,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Send rejection",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_13",
+          "outgoing": [
+            "SequenceFlow_13"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -11088,7 +11394,9 @@
           "human_performers": [],
           "id": "ServiceTask_GetCreditScore",
           "implementation": "##WebService",
-          "incoming": "SequenceFlow_6",
+          "incoming": [
+            "SequenceFlow_6"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -11096,7 +11404,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Get credit score",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_1gd6p37",
+          "outgoing": [
+            "SequenceFlow_1gd6p37"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -11135,7 +11445,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Application received",
-          "outgoing": "SequenceFlow_6",
+          "outgoing": [
+            "SequenceFlow_6"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -11189,7 +11501,9 @@
                 }
               },
               "id": "EndMessageEvent_Timeout",
-              "incoming": "Flow_0dppbeu",
+              "incoming": [
+                "Flow_0dppbeu"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [
@@ -11305,7 +11619,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Timeout",
-              "outgoing": "Flow_151qlxc",
+              "outgoing": [
+                "Flow_151qlxc"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -11339,14 +11655,18 @@
               "human_performers": [],
               "id": "UserTask_HandleTimeout",
               "implementation": "##unspecified",
-              "incoming": "Flow_151qlxc",
+              "incoming": [
+                "Flow_151qlxc"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Handle Timeout",
-              "outgoing": "Flow_0dppbeu",
+              "outgoing": [
+                "Flow_0dppbeu"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11401,7 +11721,9 @@
                 }
               },
               "id": "EndMessageEvent_InformCustomer",
-              "incoming": "Flow_0qrakss",
+              "incoming": [
+                "Flow_0qrakss"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [
@@ -11447,7 +11769,9 @@
                 }
               },
               "id": "EndMessageEvent_InformOperations",
-              "incoming": "Flow_1jml1az",
+              "incoming": [
+                "Flow_1jml1az"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [
@@ -11498,10 +11822,15 @@
               "extension_elements": null,
               "gateway_direction": "Unspecified",
               "id": "ParallelGateway_CancelApplication",
-              "incoming": "Flow_19iipc6",
+              "incoming": [
+                "Flow_19iipc6"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "['Flow_0qrakss', 'Flow_1jml1az']"
+              "outgoing": [
+                "Flow_0qrakss",
+                "Flow_1jml1az"
+              ]
             }
           ],
           "performers": [],
@@ -11589,7 +11918,9 @@
               "human_performers": [],
               "id": "ServiceTask_CancelApplication",
               "implementation": "##WebService",
-              "incoming": "Flow_12nmks0",
+              "incoming": [
+                "Flow_12nmks0"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -11597,7 +11928,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Cancel application",
               "operation_ref": null,
-              "outgoing": "Flow_19iipc6",
+              "outgoing": [
+                "Flow_19iipc6"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11643,7 +11976,9 @@
               ],
               "monitoring": null,
               "name": "Cancelation requested",
-              "outgoing": "Flow_12nmks0",
+              "outgoing": [
+                "Flow_12nmks0"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -11667,6 +12002,462 @@
       "text_annotations": [],
       "transactions": [],
       "user_tasks": []
+    },
+    "userTaskForm_0khiqpl": {
+      "body": "{\n  \"components\": [\n    {\n      \"text\": \"<img src=\\\"http://localhost:8080/camunda/online/banking/img/core-img/logo.png\\\"><h2>Instructions:</h2><p>Based on internal protocal and the given information below, tick the checkbox for 'Approved' if this application should be approved.</p><p> Otherwise, leave this checkbox blank.</p>\",\n      \"type\": \"text\",\n      \"id\": \"Field_0e9521u\"\n    },\n    {\n      \"key\": \"applicationNumber\",\n      \"label\": \"Application Number\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1djmro0\"\n    },\n    {\n      \"key\": \"applicantName\",\n      \"label\": \"Applicant\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1ex9187\"\n    },\n    {\n      \"key\": \"age\",\n      \"label\": \"Current Age\",\n      \"type\": \"number\",\n      \"id\": \"Field_17vnd80\"\n    },\n    {\n      \"key\": \"employment\",\n      \"label\": \"Employment\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_08mj5fv\"\n    },\n    {\n      \"key\": \"category\",\n      \"label\": \"Category\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1k7e84u\"\n    },\n    {\n      \"key\": \"priceIndication\",\n      \"label\": \"Price indication\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1d6bhc2\"\n    },\n    {\n      \"label\": \"Risks\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_0qvctdt\",\n      \"key\": \"risksText\",\n      \"disabled\": true\n    },\n    {\n      \"key\": \"approved\",\n      \"label\": \"Approved\",\n      \"type\": \"checkbox\",\n      \"id\": \"Field_0hwfap9\"\n    }\n  ],\n  \"schemaVersion\": 4,\n  \"type\": \"default\",\n  \"id\": \"Form_0840o2b\",\n  \"executionPlatform\": \"Camunda Cloud\",\n  \"executionPlatformVersion\": \"1.1\",\n  \"exporter\": {\n    \"name\": \"Camunda Modeler\",\n    \"version\": \"5.0.0\"\n  }\n}",
+      "id": "userTaskForm_0khiqpl"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "Participant_00",
+      "property": "process_ref",
+      "reference_id": "customer_onboarding_en"
+    },
+    {
+      "element_id": "StartEvent_ApplicationReceived",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_6"
+    },
+    {
+      "element_id": "SequenceFlow_1gd6p37",
+      "property": "source_ref",
+      "reference_id": "ServiceTask_GetCreditScore"
+    },
+    {
+      "element_id": "SequenceFlow_1gd6p37",
+      "property": "target_ref",
+      "reference_id": "BusinessRuleTask_CheckApplicationAutomatically"
+    },
+    {
+      "element_id": "SequenceFlow_01vh1zw",
+      "property": "source_ref",
+      "reference_id": "ServiceTask_RejectPolicy"
+    },
+    {
+      "element_id": "SequenceFlow_01vh1zw",
+      "property": "target_ref",
+      "reference_id": "SendTask_SendRejection"
+    },
+    {
+      "element_id": "SequenceFlow_13",
+      "property": "source_ref",
+      "reference_id": "SendTask_SendRejection"
+    },
+    {
+      "element_id": "SequenceFlow_13",
+      "property": "target_ref",
+      "reference_id": "EndEvent_ApplicationRejected"
+    },
+    {
+      "element_id": "SequenceFlow_Red",
+      "property": "source_ref",
+      "reference_id": "ExclusiveGateway_Risk"
+    },
+    {
+      "element_id": "SequenceFlow_Red",
+      "property": "target_ref",
+      "reference_id": "ServiceTask_RejectPolicy"
+    },
+    {
+      "element_id": "SequenceFlow_2",
+      "property": "source_ref",
+      "reference_id": "BusinessRuleTask_CheckApplicationAutomatically"
+    },
+    {
+      "element_id": "SequenceFlow_2",
+      "property": "target_ref",
+      "reference_id": "ExclusiveGateway_Risk"
+    },
+    {
+      "element_id": "SequenceFlow_Green",
+      "property": "source_ref",
+      "reference_id": "ExclusiveGateway_Risk"
+    },
+    {
+      "element_id": "SequenceFlow_Green",
+      "property": "target_ref",
+      "reference_id": "ServiceTask_DeliverPolicy"
+    },
+    {
+      "element_id": "SequenceFlow_10",
+      "property": "source_ref",
+      "reference_id": "ServiceTask_DeliverPolicy"
+    },
+    {
+      "element_id": "SequenceFlow_10",
+      "property": "target_ref",
+      "reference_id": "SendTask_SendPolicy"
+    },
+    {
+      "element_id": "SequenceFlow_11",
+      "property": "source_ref",
+      "reference_id": "SendTask_SendPolicy"
+    },
+    {
+      "element_id": "SequenceFlow_11",
+      "property": "target_ref",
+      "reference_id": "EndEvent_ApplicationIssued"
+    },
+    {
+      "element_id": "SequenceFlow_ApplicationAccepted",
+      "property": "source_ref",
+      "reference_id": "ExclusiveGateway_Decision"
+    },
+    {
+      "element_id": "SequenceFlow_ApplicationAccepted",
+      "property": "target_ref",
+      "reference_id": "ServiceTask_DeliverPolicy"
+    },
+    {
+      "element_id": "SequenceFlow_ApplicationDeclined",
+      "property": "source_ref",
+      "reference_id": "ExclusiveGateway_Decision"
+    },
+    {
+      "element_id": "SequenceFlow_ApplicationDeclined",
+      "property": "target_ref",
+      "reference_id": "ServiceTask_RejectPolicy"
+    },
+    {
+      "element_id": "SequenceFlow_6",
+      "property": "source_ref",
+      "reference_id": "StartEvent_ApplicationReceived"
+    },
+    {
+      "element_id": "SequenceFlow_6",
+      "property": "target_ref",
+      "reference_id": "ServiceTask_GetCreditScore"
+    },
+    {
+      "element_id": "SequenceFlow_Yellow",
+      "property": "source_ref",
+      "reference_id": "ExclusiveGateway_Risk"
+    },
+    {
+      "element_id": "SequenceFlow_Yellow",
+      "property": "target_ref",
+      "reference_id": "Activity_ManualCheck"
+    },
+    {
+      "element_id": "Flow_0ik8h65",
+      "property": "source_ref",
+      "reference_id": "Activity_ManualCheck"
+    },
+    {
+      "element_id": "Flow_0ik8h65",
+      "property": "target_ref",
+      "reference_id": "ExclusiveGateway_Decision"
+    },
+    {
+      "element_id": "Flow_177paze",
+      "property": "source_ref",
+      "reference_id": "ErrorBoundaryEvent_FraudDetected"
+    },
+    {
+      "element_id": "Flow_177paze",
+      "property": "target_ref",
+      "reference_id": "SendTask_ReportFraud"
+    },
+    {
+      "element_id": "Flow_0cvhizd",
+      "property": "source_ref",
+      "reference_id": "SendTask_ReportFraud"
+    },
+    {
+      "element_id": "Flow_0cvhizd",
+      "property": "target_ref",
+      "reference_id": "TerminateEvent_ApplicationCanceledFraud"
+    },
+    {
+      "element_id": "EndMessageEvent_Timeout",
+      "property": "incoming",
+      "reference_id": "Flow_0dppbeu"
+    },
+    {
+      "element_id": "Flow_151qlxc",
+      "property": "source_ref",
+      "reference_id": "StartErrorEvent_Timeout"
+    },
+    {
+      "element_id": "Flow_151qlxc",
+      "property": "target_ref",
+      "reference_id": "UserTask_HandleTimeout"
+    },
+    {
+      "element_id": "Flow_0dppbeu",
+      "property": "source_ref",
+      "reference_id": "UserTask_HandleTimeout"
+    },
+    {
+      "element_id": "Flow_0dppbeu",
+      "property": "target_ref",
+      "reference_id": "EndMessageEvent_Timeout"
+    },
+    {
+      "element_id": "ErrorEventDefinition_0ra1xn3",
+      "property": "error_ref",
+      "reference_id": "Error_1u68flh"
+    },
+    {
+      "element_id": "StartErrorEvent_Timeout",
+      "property": "outgoing",
+      "reference_id": "Flow_151qlxc"
+    },
+    {
+      "element_id": "UserTask_HandleTimeout",
+      "property": "incoming",
+      "reference_id": "Flow_151qlxc"
+    },
+    {
+      "element_id": "UserTask_HandleTimeout",
+      "property": "outgoing",
+      "reference_id": "Flow_0dppbeu"
+    },
+    {
+      "element_id": "MessageEventDefinition_0tj9nv6",
+      "property": "message_ref",
+      "reference_id": "Message_0dm6uaq"
+    },
+    {
+      "element_id": "StartMessageEvent_CancellationRequested",
+      "property": "outgoing",
+      "reference_id": "Flow_12nmks0"
+    },
+    {
+      "element_id": "Flow_12nmks0",
+      "property": "source_ref",
+      "reference_id": "StartMessageEvent_CancellationRequested"
+    },
+    {
+      "element_id": "Flow_12nmks0",
+      "property": "target_ref",
+      "reference_id": "ServiceTask_CancelApplication"
+    },
+    {
+      "element_id": "Flow_19iipc6",
+      "property": "source_ref",
+      "reference_id": "ServiceTask_CancelApplication"
+    },
+    {
+      "element_id": "Flow_19iipc6",
+      "property": "target_ref",
+      "reference_id": "ParallelGateway_CancelApplication"
+    },
+    {
+      "element_id": "Flow_0qrakss",
+      "property": "source_ref",
+      "reference_id": "ParallelGateway_CancelApplication"
+    },
+    {
+      "element_id": "Flow_0qrakss",
+      "property": "target_ref",
+      "reference_id": "EndMessageEvent_InformCustomer"
+    },
+    {
+      "element_id": "Flow_1jml1az",
+      "property": "source_ref",
+      "reference_id": "ParallelGateway_CancelApplication"
+    },
+    {
+      "element_id": "Flow_1jml1az",
+      "property": "target_ref",
+      "reference_id": "EndMessageEvent_InformOperations"
+    },
+    {
+      "element_id": "ServiceTask_CancelApplication",
+      "property": "incoming",
+      "reference_id": "Flow_12nmks0"
+    },
+    {
+      "element_id": "ServiceTask_CancelApplication",
+      "property": "outgoing",
+      "reference_id": "Flow_19iipc6"
+    },
+    {
+      "element_id": "EndMessageEvent_InformCustomer",
+      "property": "incoming",
+      "reference_id": "Flow_0qrakss"
+    },
+    {
+      "element_id": "EndMessageEvent_InformOperations",
+      "property": "incoming",
+      "reference_id": "Flow_1jml1az"
+    },
+    {
+      "element_id": "ParallelGateway_CancelApplication",
+      "property": "incoming",
+      "reference_id": "Flow_19iipc6"
+    },
+    {
+      "element_id": "ParallelGateway_CancelApplication",
+      "property": "outgoing",
+      "reference_id": "Flow_0qrakss"
+    },
+    {
+      "element_id": "ParallelGateway_CancelApplication",
+      "property": "outgoing",
+      "reference_id": "Flow_1jml1az"
+    },
+    {
+      "element_id": "Activity_ManualCheck",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_Yellow"
+    },
+    {
+      "element_id": "Activity_ManualCheck",
+      "property": "outgoing",
+      "reference_id": "Flow_0ik8h65"
+    },
+    {
+      "element_id": "EndEvent_ApplicationIssued",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_11"
+    },
+    {
+      "element_id": "EndEvent_ApplicationRejected",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_13"
+    },
+    {
+      "element_id": "TerminateEvent_ApplicationCanceledFraud",
+      "property": "incoming",
+      "reference_id": "Flow_0cvhizd"
+    },
+    {
+      "element_id": "SendTask_SendPolicy",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_10"
+    },
+    {
+      "element_id": "SendTask_SendPolicy",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_11"
+    },
+    {
+      "element_id": "ServiceTask_DeliverPolicy",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_ApplicationAccepted"
+    },
+    {
+      "element_id": "ServiceTask_DeliverPolicy",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_Green"
+    },
+    {
+      "element_id": "ServiceTask_DeliverPolicy",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_10"
+    },
+    {
+      "element_id": "ServiceTask_RejectPolicy",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_ApplicationDeclined"
+    },
+    {
+      "element_id": "ServiceTask_RejectPolicy",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_Red"
+    },
+    {
+      "element_id": "ServiceTask_RejectPolicy",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_01vh1zw"
+    },
+    {
+      "element_id": "SendTask_SendRejection",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_01vh1zw"
+    },
+    {
+      "element_id": "SendTask_SendRejection",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_13"
+    },
+    {
+      "element_id": "ServiceTask_GetCreditScore",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_6"
+    },
+    {
+      "element_id": "ServiceTask_GetCreditScore",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_1gd6p37"
+    },
+    {
+      "element_id": "ExclusiveGateway_Decision",
+      "property": "incoming",
+      "reference_id": "Flow_0ik8h65"
+    },
+    {
+      "element_id": "ExclusiveGateway_Decision",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_ApplicationAccepted"
+    },
+    {
+      "element_id": "ExclusiveGateway_Decision",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_ApplicationDeclined"
+    },
+    {
+      "element_id": "ExclusiveGateway_Risk",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_2"
+    },
+    {
+      "element_id": "ExclusiveGateway_Risk",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_Green"
+    },
+    {
+      "element_id": "ExclusiveGateway_Risk",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_Red"
+    },
+    {
+      "element_id": "ExclusiveGateway_Risk",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_Yellow"
+    },
+    {
+      "element_id": "ExclusiveGateway_Risk",
+      "property": "default",
+      "reference_id": "SequenceFlow_Green"
+    },
+    {
+      "element_id": "ErrorEventDefinition_1ylbfzv",
+      "property": "error_ref",
+      "reference_id": "Error_01bezxs"
+    },
+    {
+      "element_id": "ErrorBoundaryEvent_FraudDetected",
+      "property": "outgoing",
+      "reference_id": "Flow_177paze"
+    },
+    {
+      "element_id": "ErrorBoundaryEvent_FraudDetected",
+      "property": "attached_to_ref",
+      "reference_id": "Activity_ManualCheck"
+    },
+    {
+      "element_id": "SendTask_ReportFraud",
+      "property": "incoming",
+      "reference_id": "Flow_177paze"
+    },
+    {
+      "element_id": "SendTask_ReportFraud",
+      "property": "outgoing",
+      "reference_id": "Flow_0cvhizd"
+    },
+    {
+      "element_id": "BusinessRuleTask_CheckApplicationAutomatically",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_1gd6p37"
+    },
+    {
+      "element_id": "BusinessRuleTask_CheckApplicationAutomatically",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_2"
+    }
+  ]
 }

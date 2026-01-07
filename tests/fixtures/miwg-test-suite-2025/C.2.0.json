@@ -1866,7 +1866,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
-            "incoming": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+            "incoming": [
+              "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [
@@ -1975,7 +1977,9 @@
             ],
             "monitoring": null,
             "name": "Receive Credit Card Information",
-            "outgoing": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+            "outgoing": [
+              "__f3f918b3-abee-4e59-8131-212d0d86b056"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1999,14 +2003,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
-            "incoming": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+            "incoming": [
+              "__f3f918b3-abee-4e59-8131-212d0d86b056"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Take Payment",
-            "outgoing": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+            "outgoing": [
+              "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2050,7 +2058,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
-            "incoming": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+            "incoming": [
+              "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2164,7 +2174,9 @@
             ],
             "monitoring": null,
             "name": "Pick items",
-            "outgoing": "__474f19b8-f608-4d20-a49e-907485a789c5",
+            "outgoing": [
+              "__474f19b8-f608-4d20-a49e-907485a789c5"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2188,14 +2200,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
-            "incoming": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+            "incoming": [
+              "__36fbe220-08cc-45e8-847b-3f55002979c2"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Deliver Items",
-            "outgoing": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+            "outgoing": [
+              "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2214,14 +2230,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
-            "incoming": "__474f19b8-f608-4d20-a49e-907485a789c5",
+            "incoming": [
+              "__474f19b8-f608-4d20-a49e-907485a789c5"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Load Truck",
-            "outgoing": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+            "outgoing": [
+              "__36fbe220-08cc-45e8-847b-3f55002979c2"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2251,9 +2271,7 @@
             "data_output": [],
             "data_output_association": [],
             "documentation": [],
-            "error_event_definition": [
-              null
-            ],
+            "error_event_definition": null,
             "escalation_event_definition": [],
             "event_definition": [],
             "event_definition_ref": [],
@@ -2264,7 +2282,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": null,
-            "outgoing": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+            "outgoing": [
+              "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2298,7 +2318,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
-            "incoming": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+            "incoming": [
+              "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2325,7 +2347,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
-            "incoming": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+            "incoming": [
+              "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2349,10 +2373,15 @@
             "extension_elements": null,
             "gateway_direction": "Unspecified",
             "id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
-            "incoming": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+            "incoming": [
+              "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+            ],
             "monitoring": null,
             "name": "Done Shopping?",
-            "outgoing": "['__ffc1486a-8a32-490a-8835-d14cc5ab0a97', '__a12a7547-373d-47ec-890d-af5c177203ee']"
+            "outgoing": [
+              "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
+              "__a12a7547-373d-47ec-890d-af5c177203ee"
+            ]
           }
         ],
         "extension_elements": null,
@@ -2510,7 +2539,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": null,
-            "outgoing": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+            "outgoing": [
+              "__6fd770bc-8f12-4927-96cd-e3cc53d862d3"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2547,15 +2578,15 @@
                 "data_input_associations": [],
                 "data_inputs": [],
                 "documentation": [],
-                "error_event_definitions": [
-                  null
-                ],
+                "error_event_definitions": null,
                 "escalation_event_definitions": [],
                 "event_definition_refs": [],
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "_7ea6639e-e773-4236-94bf-78f149188c30",
-                "incoming": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+                "incoming": [
+                  "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -2582,7 +2613,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
-                "incoming": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+                "incoming": [
+                  "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -2606,10 +2639,15 @@
                 "extension_elements": null,
                 "gateway_direction": "Unspecified",
                 "id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-                "incoming": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+                "incoming": [
+                  "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059"
+                ],
                 "monitoring": null,
                 "name": "Retry?",
-                "outgoing": "['_ad0872cc-e2a9-4c44-98c6-c64e0638f37e', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']"
+                "outgoing": [
+                  "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+                  "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+                ]
               },
               {
                 "auditing": null,
@@ -2619,10 +2657,15 @@
                 "extension_elements": null,
                 "gateway_direction": "Unspecified",
                 "id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-                "incoming": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+                "incoming": [
+                  "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+                ],
                 "monitoring": null,
                 "name": "Payment accepted?",
-                "outgoing": "['_bfa5c7b2-f5d2-4487-a307-b2ea662bd059', '_50edb87c-9e46-48b1-a311-ef00e6e431e8']"
+                "outgoing": [
+                  "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+                  "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+                ]
               }
             ],
             "extension_elements": null,
@@ -2632,7 +2675,9 @@
             "id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
             "implicit_throw_events": [],
             "inclusive_gateways": [],
-            "incoming": "__a12a7547-373d-47ec-890d-af5c177203ee",
+            "incoming": [
+              "__a12a7547-373d-47ec-890d-af5c177203ee"
+            ],
             "intermediate_catch_events": [],
             "intermediate_throw_events": [
               {
@@ -2650,7 +2695,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-                "incoming": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+                "incoming": [
+                  "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [
@@ -2664,7 +2711,9 @@
                 ],
                 "monitoring": null,
                 "name": "Send Order",
-                "outgoing": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+                "outgoing": [
+                  "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+                ],
                 "properties": [],
                 "signal_event_definitions": [],
                 "terminate_event_definitions": [],
@@ -2679,7 +2728,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Checkout",
-            "outgoing": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+            "outgoing": [
+              "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+            ],
             "parallel_gateways": [],
             "performers": [],
             "potential_owners": [],
@@ -2805,7 +2856,9 @@
                 "message_event_definition": [],
                 "monitoring": null,
                 "name": null,
-                "outgoing": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+                "outgoing": [
+                  "__00bc466e-cf1f-473c-aa39-c78bba5cef82"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -2828,14 +2881,19 @@
                 "extension_elements": null,
                 "human_performers": [],
                 "id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-                "incoming": "['__00bc466e-cf1f-473c-aa39-c78bba5cef82', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']",
+                "incoming": [
+                  "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+                  "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
                 "monitoring": null,
                 "multi_instance_loop_characteristics": null,
                 "name": "Pay Order",
-                "outgoing": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+                "outgoing": [
+                  "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -2864,14 +2922,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__be386700-06c2-4a29-b861-c516940667fe",
-            "incoming": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+            "incoming": [
+              "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Add Item to Cart",
-            "outgoing": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+            "outgoing": [
+              "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2890,14 +2952,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
-            "incoming": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+            "incoming": [
+              "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Receive items",
-            "outgoing": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+            "outgoing": [
+              "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2916,14 +2982,19 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
-            "incoming": "['__6fd770bc-8f12-4927-96cd-e3cc53d862d3', '__ffc1486a-8a32-490a-8835-d14cc5ab0a97']",
+            "incoming": [
+              "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+              "__ffc1486a-8a32-490a-8835-d14cc5ab0a97"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Browse Products on Amazon",
-            "outgoing": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+            "outgoing": [
+              "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2967,7 +3038,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "__5a9abc77-7371-4213-bede-4056f9cb7808",
-            "incoming": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+            "incoming": [
+              "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -3006,7 +3079,11 @@
                 "child_lane_set": null,
                 "documentation": [],
                 "extension_elements": null,
-                "flow_node_refs": "['__fd16081c-ecf9-4e0f-857f-f3404a7ee784', '__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b', '__200e3ce9-3381-4d13-8c7e-4f8790388070']",
+                "flow_node_refs": [
+                  "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
+                  "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+                  "__200e3ce9-3381-4d13-8c7e-4f8790388070"
+                ],
                 "id": "__15a180db-97af-4058-ac0a-4a31247fb797",
                 "name": "Picker",
                 "partition_element": null,
@@ -3016,7 +3093,11 @@
                 "child_lane_set": null,
                 "documentation": [],
                 "extension_elements": null,
-                "flow_node_refs": "['__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379', '__c1a19847-8b3e-42db-a95d-9f21cffc50a3', '__5a9abc77-7371-4213-bede-4056f9cb7808']",
+                "flow_node_refs": [
+                  "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+                  "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+                  "__5a9abc77-7371-4213-bede-4056f9cb7808"
+                ],
                 "id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
                 "name": "Packager",
                 "partition_element": null,
@@ -3136,7 +3217,9 @@
             ],
             "monitoring": null,
             "name": "Receive Order",
-            "outgoing": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+            "outgoing": [
+              "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -3160,14 +3243,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
-            "incoming": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+            "incoming": [
+              "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Pick items",
-            "outgoing": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+            "outgoing": [
+              "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -3186,14 +3273,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
-            "incoming": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+            "incoming": [
+              "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Place in bin",
-            "outgoing": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+            "outgoing": [
+              "__04700d0b-5231-46f6-ae74-698ba3864a60"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -3212,14 +3303,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
-            "incoming": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+            "incoming": [
+              "__04700d0b-5231-46f6-ae74-698ba3864a60"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Receive and Package\nitems",
-            "outgoing": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+            "outgoing": [
+              "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -3238,14 +3333,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
-            "incoming": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+            "incoming": [
+              "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Send to carrier dock",
-            "outgoing": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+            "outgoing": [
+              "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -6743,7 +6842,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
-          "incoming": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+          "incoming": [
+            "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [
@@ -6852,7 +6953,9 @@
           ],
           "monitoring": null,
           "name": "Receive Credit Card Information",
-          "outgoing": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+          "outgoing": [
+            "__f3f918b3-abee-4e59-8131-212d0d86b056"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -6876,14 +6979,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
-          "incoming": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+          "incoming": [
+            "__f3f918b3-abee-4e59-8131-212d0d86b056"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Take Payment",
-          "outgoing": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+          "outgoing": [
+            "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -6927,7 +7034,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
-          "incoming": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+          "incoming": [
+            "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -7041,7 +7150,9 @@
           ],
           "monitoring": null,
           "name": "Pick items",
-          "outgoing": "__474f19b8-f608-4d20-a49e-907485a789c5",
+          "outgoing": [
+            "__474f19b8-f608-4d20-a49e-907485a789c5"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -7065,14 +7176,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
-          "incoming": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+          "incoming": [
+            "__36fbe220-08cc-45e8-847b-3f55002979c2"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Deliver Items",
-          "outgoing": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+          "outgoing": [
+            "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7091,14 +7206,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
-          "incoming": "__474f19b8-f608-4d20-a49e-907485a789c5",
+          "incoming": [
+            "__474f19b8-f608-4d20-a49e-907485a789c5"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Load Truck",
-          "outgoing": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+          "outgoing": [
+            "__36fbe220-08cc-45e8-847b-3f55002979c2"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7128,9 +7247,7 @@
           "data_output": [],
           "data_output_association": [],
           "documentation": [],
-          "error_event_definition": [
-            null
-          ],
+          "error_event_definition": null,
           "escalation_event_definition": [],
           "event_definition": [],
           "event_definition_ref": [],
@@ -7141,7 +7258,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": null,
-          "outgoing": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+          "outgoing": [
+            "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -7175,7 +7294,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
-          "incoming": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+          "incoming": [
+            "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -7202,7 +7323,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
-          "incoming": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+          "incoming": [
+            "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -7226,10 +7349,15 @@
           "extension_elements": null,
           "gateway_direction": "Unspecified",
           "id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
-          "incoming": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+          "incoming": [
+            "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+          ],
           "monitoring": null,
           "name": "Done Shopping?",
-          "outgoing": "['__ffc1486a-8a32-490a-8835-d14cc5ab0a97', '__a12a7547-373d-47ec-890d-af5c177203ee']"
+          "outgoing": [
+            "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
+            "__a12a7547-373d-47ec-890d-af5c177203ee"
+          ]
         }
       ],
       "extension_elements": null,
@@ -7387,7 +7515,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": null,
-          "outgoing": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+          "outgoing": [
+            "__6fd770bc-8f12-4927-96cd-e3cc53d862d3"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -7424,15 +7554,15 @@
               "data_input_associations": [],
               "data_inputs": [],
               "documentation": [],
-              "error_event_definitions": [
-                null
-              ],
+              "error_event_definitions": null,
               "escalation_event_definitions": [],
               "event_definition_refs": [],
               "event_definitions": [],
               "extension_elements": null,
               "id": "_7ea6639e-e773-4236-94bf-78f149188c30",
-              "incoming": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+              "incoming": [
+                "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -7459,7 +7589,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
-              "incoming": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+              "incoming": [
+                "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -7483,10 +7615,15 @@
               "extension_elements": null,
               "gateway_direction": "Unspecified",
               "id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-              "incoming": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+              "incoming": [
+                "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059"
+              ],
               "monitoring": null,
               "name": "Retry?",
-              "outgoing": "['_ad0872cc-e2a9-4c44-98c6-c64e0638f37e', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']"
+              "outgoing": [
+                "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+                "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+              ]
             },
             {
               "auditing": null,
@@ -7496,10 +7633,15 @@
               "extension_elements": null,
               "gateway_direction": "Unspecified",
               "id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-              "incoming": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+              "incoming": [
+                "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+              ],
               "monitoring": null,
               "name": "Payment accepted?",
-              "outgoing": "['_bfa5c7b2-f5d2-4487-a307-b2ea662bd059', '_50edb87c-9e46-48b1-a311-ef00e6e431e8']"
+              "outgoing": [
+                "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+                "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+              ]
             }
           ],
           "extension_elements": null,
@@ -7509,7 +7651,9 @@
           "id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
           "implicit_throw_events": [],
           "inclusive_gateways": [],
-          "incoming": "__a12a7547-373d-47ec-890d-af5c177203ee",
+          "incoming": [
+            "__a12a7547-373d-47ec-890d-af5c177203ee"
+          ],
           "intermediate_catch_events": [],
           "intermediate_throw_events": [
             {
@@ -7527,7 +7671,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-              "incoming": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+              "incoming": [
+                "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [
@@ -7541,7 +7687,9 @@
               ],
               "monitoring": null,
               "name": "Send Order",
-              "outgoing": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+              "outgoing": [
+                "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+              ],
               "properties": [],
               "signal_event_definitions": [],
               "terminate_event_definitions": [],
@@ -7556,7 +7704,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Checkout",
-          "outgoing": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+          "outgoing": [
+            "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+          ],
           "parallel_gateways": [],
           "performers": [],
           "potential_owners": [],
@@ -7682,7 +7832,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": null,
-              "outgoing": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+              "outgoing": [
+                "__00bc466e-cf1f-473c-aa39-c78bba5cef82"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -7705,14 +7857,19 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-              "incoming": "['__00bc466e-cf1f-473c-aa39-c78bba5cef82', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']",
+              "incoming": [
+                "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+                "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Pay Order",
-              "outgoing": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+              "outgoing": [
+                "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -7741,14 +7898,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__be386700-06c2-4a29-b861-c516940667fe",
-          "incoming": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+          "incoming": [
+            "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Add Item to Cart",
-          "outgoing": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+          "outgoing": [
+            "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7767,14 +7928,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
-          "incoming": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+          "incoming": [
+            "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Receive items",
-          "outgoing": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+          "outgoing": [
+            "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7793,14 +7958,19 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
-          "incoming": "['__6fd770bc-8f12-4927-96cd-e3cc53d862d3', '__ffc1486a-8a32-490a-8835-d14cc5ab0a97']",
+          "incoming": [
+            "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+            "__ffc1486a-8a32-490a-8835-d14cc5ab0a97"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Browse Products on Amazon",
-          "outgoing": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+          "outgoing": [
+            "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7844,7 +8014,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "__5a9abc77-7371-4213-bede-4056f9cb7808",
-          "incoming": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+          "incoming": [
+            "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -7883,7 +8055,11 @@
               "child_lane_set": null,
               "documentation": [],
               "extension_elements": null,
-              "flow_node_refs": "['__fd16081c-ecf9-4e0f-857f-f3404a7ee784', '__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b', '__200e3ce9-3381-4d13-8c7e-4f8790388070']",
+              "flow_node_refs": [
+                "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
+                "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+                "__200e3ce9-3381-4d13-8c7e-4f8790388070"
+              ],
               "id": "__15a180db-97af-4058-ac0a-4a31247fb797",
               "name": "Picker",
               "partition_element": null,
@@ -7893,7 +8069,11 @@
               "child_lane_set": null,
               "documentation": [],
               "extension_elements": null,
-              "flow_node_refs": "['__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379', '__c1a19847-8b3e-42db-a95d-9f21cffc50a3', '__5a9abc77-7371-4213-bede-4056f9cb7808']",
+              "flow_node_refs": [
+                "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+                "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+                "__5a9abc77-7371-4213-bede-4056f9cb7808"
+              ],
               "id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
               "name": "Packager",
               "partition_element": null,
@@ -8013,7 +8193,9 @@
           ],
           "monitoring": null,
           "name": "Receive Order",
-          "outgoing": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+          "outgoing": [
+            "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -8037,14 +8219,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
-          "incoming": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+          "incoming": [
+            "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Pick items",
-          "outgoing": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+          "outgoing": [
+            "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -8063,14 +8249,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
-          "incoming": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+          "incoming": [
+            "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Place in bin",
-          "outgoing": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+          "outgoing": [
+            "__04700d0b-5231-46f6-ae74-698ba3864a60"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -8089,14 +8279,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
-          "incoming": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+          "incoming": [
+            "__04700d0b-5231-46f6-ae74-698ba3864a60"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Receive and Package\nitems",
-          "outgoing": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+          "outgoing": [
+            "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -8115,14 +8309,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
-          "incoming": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+          "incoming": [
+            "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Send to carrier dock",
-          "outgoing": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+          "outgoing": [
+            "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10094,7 +10292,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
-              "incoming": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+              "incoming": [
+                "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [
@@ -10203,7 +10403,9 @@
               ],
               "monitoring": null,
               "name": "Receive Credit Card Information",
-              "outgoing": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+              "outgoing": [
+                "__f3f918b3-abee-4e59-8131-212d0d86b056"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -10227,14 +10429,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
-              "incoming": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+              "incoming": [
+                "__f3f918b3-abee-4e59-8131-212d0d86b056"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Take Payment",
-              "outgoing": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+              "outgoing": [
+                "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -10278,7 +10484,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
-              "incoming": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+              "incoming": [
+                "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -10392,7 +10600,9 @@
               ],
               "monitoring": null,
               "name": "Pick items",
-              "outgoing": "__474f19b8-f608-4d20-a49e-907485a789c5",
+              "outgoing": [
+                "__474f19b8-f608-4d20-a49e-907485a789c5"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -10416,14 +10626,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
-              "incoming": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+              "incoming": [
+                "__36fbe220-08cc-45e8-847b-3f55002979c2"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Deliver Items",
-              "outgoing": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+              "outgoing": [
+                "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -10442,14 +10656,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
-              "incoming": "__474f19b8-f608-4d20-a49e-907485a789c5",
+              "incoming": [
+                "__474f19b8-f608-4d20-a49e-907485a789c5"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Load Truck",
-              "outgoing": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+              "outgoing": [
+                "__36fbe220-08cc-45e8-847b-3f55002979c2"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -10479,9 +10697,7 @@
               "data_output": [],
               "data_output_association": [],
               "documentation": [],
-              "error_event_definition": [
-                null
-              ],
+              "error_event_definition": null,
               "escalation_event_definition": [],
               "event_definition": [],
               "event_definition_ref": [],
@@ -10492,7 +10708,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": null,
-              "outgoing": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+              "outgoing": [
+                "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -10526,7 +10744,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
-              "incoming": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+              "incoming": [
+                "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -10553,7 +10773,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
-              "incoming": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+              "incoming": [
+                "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -10577,10 +10799,15 @@
               "extension_elements": null,
               "gateway_direction": "Unspecified",
               "id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
-              "incoming": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+              "incoming": [
+                "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+              ],
               "monitoring": null,
               "name": "Done Shopping?",
-              "outgoing": "['__ffc1486a-8a32-490a-8835-d14cc5ab0a97', '__a12a7547-373d-47ec-890d-af5c177203ee']"
+              "outgoing": [
+                "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
+                "__a12a7547-373d-47ec-890d-af5c177203ee"
+              ]
             }
           ],
           "extension_elements": null,
@@ -10738,7 +10965,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": null,
-              "outgoing": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+              "outgoing": [
+                "__6fd770bc-8f12-4927-96cd-e3cc53d862d3"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -10775,15 +11004,15 @@
                   "data_input_associations": [],
                   "data_inputs": [],
                   "documentation": [],
-                  "error_event_definitions": [
-                    null
-                  ],
+                  "error_event_definitions": null,
                   "escalation_event_definitions": [],
                   "event_definition_refs": [],
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_7ea6639e-e773-4236-94bf-78f149188c30",
-                  "incoming": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+                  "incoming": [
+                    "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -10810,7 +11039,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
-                  "incoming": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+                  "incoming": [
+                    "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -10834,10 +11065,15 @@
                   "extension_elements": null,
                   "gateway_direction": "Unspecified",
                   "id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-                  "incoming": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+                  "incoming": [
+                    "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059"
+                  ],
                   "monitoring": null,
                   "name": "Retry?",
-                  "outgoing": "['_ad0872cc-e2a9-4c44-98c6-c64e0638f37e', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']"
+                  "outgoing": [
+                    "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+                    "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+                  ]
                 },
                 {
                   "auditing": null,
@@ -10847,10 +11083,15 @@
                   "extension_elements": null,
                   "gateway_direction": "Unspecified",
                   "id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-                  "incoming": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+                  "incoming": [
+                    "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+                  ],
                   "monitoring": null,
                   "name": "Payment accepted?",
-                  "outgoing": "['_bfa5c7b2-f5d2-4487-a307-b2ea662bd059', '_50edb87c-9e46-48b1-a311-ef00e6e431e8']"
+                  "outgoing": [
+                    "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+                    "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+                  ]
                 }
               ],
               "extension_elements": null,
@@ -10860,7 +11101,9 @@
               "id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
               "implicit_throw_events": [],
               "inclusive_gateways": [],
-              "incoming": "__a12a7547-373d-47ec-890d-af5c177203ee",
+              "incoming": [
+                "__a12a7547-373d-47ec-890d-af5c177203ee"
+              ],
               "intermediate_catch_events": [],
               "intermediate_throw_events": [
                 {
@@ -10878,7 +11121,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-                  "incoming": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+                  "incoming": [
+                    "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [
@@ -10892,7 +11137,9 @@
                   ],
                   "monitoring": null,
                   "name": "Send Order",
-                  "outgoing": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+                  "outgoing": [
+                    "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+                  ],
                   "properties": [],
                   "signal_event_definitions": [],
                   "terminate_event_definitions": [],
@@ -10907,7 +11154,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Checkout",
-              "outgoing": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+              "outgoing": [
+                "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+              ],
               "parallel_gateways": [],
               "performers": [],
               "potential_owners": [],
@@ -11033,7 +11282,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": null,
-                  "outgoing": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+                  "outgoing": [
+                    "__00bc466e-cf1f-473c-aa39-c78bba5cef82"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -11056,14 +11307,19 @@
                   "extension_elements": null,
                   "human_performers": [],
                   "id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-                  "incoming": "['__00bc466e-cf1f-473c-aa39-c78bba5cef82', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']",
+                  "incoming": [
+                    "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+                    "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
                   "monitoring": null,
                   "multi_instance_loop_characteristics": null,
                   "name": "Pay Order",
-                  "outgoing": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+                  "outgoing": [
+                    "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -11092,14 +11348,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__be386700-06c2-4a29-b861-c516940667fe",
-              "incoming": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+              "incoming": [
+                "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Add Item to Cart",
-              "outgoing": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+              "outgoing": [
+                "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11118,14 +11378,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
-              "incoming": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+              "incoming": [
+                "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Receive items",
-              "outgoing": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+              "outgoing": [
+                "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11144,14 +11408,19 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
-              "incoming": "['__6fd770bc-8f12-4927-96cd-e3cc53d862d3', '__ffc1486a-8a32-490a-8835-d14cc5ab0a97']",
+              "incoming": [
+                "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+                "__ffc1486a-8a32-490a-8835-d14cc5ab0a97"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Browse Products on Amazon",
-              "outgoing": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+              "outgoing": [
+                "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11195,7 +11464,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "__5a9abc77-7371-4213-bede-4056f9cb7808",
-              "incoming": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+              "incoming": [
+                "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -11234,7 +11505,11 @@
                   "child_lane_set": null,
                   "documentation": [],
                   "extension_elements": null,
-                  "flow_node_refs": "['__fd16081c-ecf9-4e0f-857f-f3404a7ee784', '__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b', '__200e3ce9-3381-4d13-8c7e-4f8790388070']",
+                  "flow_node_refs": [
+                    "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
+                    "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+                    "__200e3ce9-3381-4d13-8c7e-4f8790388070"
+                  ],
                   "id": "__15a180db-97af-4058-ac0a-4a31247fb797",
                   "name": "Picker",
                   "partition_element": null,
@@ -11244,7 +11519,11 @@
                   "child_lane_set": null,
                   "documentation": [],
                   "extension_elements": null,
-                  "flow_node_refs": "['__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379', '__c1a19847-8b3e-42db-a95d-9f21cffc50a3', '__5a9abc77-7371-4213-bede-4056f9cb7808']",
+                  "flow_node_refs": [
+                    "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+                    "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+                    "__5a9abc77-7371-4213-bede-4056f9cb7808"
+                  ],
                   "id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
                   "name": "Packager",
                   "partition_element": null,
@@ -11364,7 +11643,9 @@
               ],
               "monitoring": null,
               "name": "Receive Order",
-              "outgoing": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+              "outgoing": [
+                "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -11388,14 +11669,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
-              "incoming": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+              "incoming": [
+                "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Pick items",
-              "outgoing": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+              "outgoing": [
+                "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11414,14 +11699,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
-              "incoming": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+              "incoming": [
+                "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Place in bin",
-              "outgoing": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+              "outgoing": [
+                "__04700d0b-5231-46f6-ae74-698ba3864a60"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11440,14 +11729,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
-              "incoming": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+              "incoming": [
+                "__04700d0b-5231-46f6-ae74-698ba3864a60"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Receive and Package\nitems",
-              "outgoing": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+              "outgoing": [
+                "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11466,14 +11759,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
-              "incoming": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+              "incoming": [
+                "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Send to carrier dock",
-              "outgoing": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+              "outgoing": [
+                "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11636,10 +11933,15 @@
       "extension_elements": null,
       "gateway_direction": "Unspecified",
       "id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-      "incoming": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+      "incoming": [
+        "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059"
+      ],
       "monitoring": null,
       "name": "Retry?",
-      "outgoing": "['_ad0872cc-e2a9-4c44-98c6-c64e0638f37e', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']"
+      "outgoing": [
+        "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+        "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+      ]
     },
     "_2c370da6-1a92-4fae-9882-fcf3f3092c91": {
       "bounds": {
@@ -11673,14 +11975,19 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-      "incoming": "['__00bc466e-cf1f-473c-aa39-c78bba5cef82', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']",
+      "incoming": [
+        "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+        "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Pay Order",
-      "outgoing": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+      "outgoing": [
+        "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -12372,15 +12679,15 @@
       "data_input_associations": [],
       "data_inputs": [],
       "documentation": [],
-      "error_event_definitions": [
-        null
-      ],
+      "error_event_definitions": null,
       "escalation_event_definitions": [],
       "event_definition_refs": [],
       "event_definitions": [],
       "extension_elements": null,
       "id": "_7ea6639e-e773-4236-94bf-78f149188c30",
-      "incoming": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+      "incoming": [
+        "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -12586,14 +12893,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
-      "incoming": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+      "incoming": [
+        "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Receive items",
-      "outgoing": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+      "outgoing": [
+        "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -12786,7 +13097,9 @@
       ],
       "monitoring": null,
       "name": "Receive Credit Card Information",
-      "outgoing": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+      "outgoing": [
+        "__f3f918b3-abee-4e59-8131-212d0d86b056"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -12807,7 +13120,11 @@
       "child_lane_set": null,
       "documentation": [],
       "extension_elements": null,
-      "flow_node_refs": "['__fd16081c-ecf9-4e0f-857f-f3404a7ee784', '__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b', '__200e3ce9-3381-4d13-8c7e-4f8790388070']",
+      "flow_node_refs": [
+        "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
+        "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+        "__200e3ce9-3381-4d13-8c7e-4f8790388070"
+      ],
       "id": "__15a180db-97af-4058-ac0a-4a31247fb797",
       "name": "Picker",
       "partition_element": null,
@@ -12837,14 +13154,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
-      "incoming": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+      "incoming": [
+        "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Place in bin",
-      "outgoing": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+      "outgoing": [
+        "__04700d0b-5231-46f6-ae74-698ba3864a60"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -12890,7 +13211,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
-      "incoming": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+      "incoming": [
+        "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [
@@ -12957,10 +13280,15 @@
       "extension_elements": null,
       "gateway_direction": "Unspecified",
       "id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
-      "incoming": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+      "incoming": [
+        "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+      ],
       "monitoring": null,
       "name": "Done Shopping?",
-      "outgoing": "['__ffc1486a-8a32-490a-8835-d14cc5ab0a97', '__a12a7547-373d-47ec-890d-af5c177203ee']"
+      "outgoing": [
+        "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
+        "__a12a7547-373d-47ec-890d-af5c177203ee"
+      ]
     },
     "__5a9abc77-7371-4213-bede-4056f9cb7808": {
       "auditing": null,
@@ -12977,7 +13305,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "__5a9abc77-7371-4213-bede-4056f9cb7808",
-      "incoming": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+      "incoming": [
+        "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -13038,15 +13368,15 @@
           "data_input_associations": [],
           "data_inputs": [],
           "documentation": [],
-          "error_event_definitions": [
-            null
-          ],
+          "error_event_definitions": null,
           "escalation_event_definitions": [],
           "event_definition_refs": [],
           "event_definitions": [],
           "extension_elements": null,
           "id": "_7ea6639e-e773-4236-94bf-78f149188c30",
-          "incoming": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+          "incoming": [
+            "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -13073,7 +13403,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
-          "incoming": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+          "incoming": [
+            "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -13097,10 +13429,15 @@
           "extension_elements": null,
           "gateway_direction": "Unspecified",
           "id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
-          "incoming": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+          "incoming": [
+            "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059"
+          ],
           "monitoring": null,
           "name": "Retry?",
-          "outgoing": "['_ad0872cc-e2a9-4c44-98c6-c64e0638f37e', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']"
+          "outgoing": [
+            "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+            "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+          ]
         },
         {
           "auditing": null,
@@ -13110,10 +13447,15 @@
           "extension_elements": null,
           "gateway_direction": "Unspecified",
           "id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-          "incoming": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+          "incoming": [
+            "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+          ],
           "monitoring": null,
           "name": "Payment accepted?",
-          "outgoing": "['_bfa5c7b2-f5d2-4487-a307-b2ea662bd059', '_50edb87c-9e46-48b1-a311-ef00e6e431e8']"
+          "outgoing": [
+            "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+            "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+          ]
         }
       ],
       "extension_elements": null,
@@ -13123,7 +13465,9 @@
       "id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
       "implicit_throw_events": [],
       "inclusive_gateways": [],
-      "incoming": "__a12a7547-373d-47ec-890d-af5c177203ee",
+      "incoming": [
+        "__a12a7547-373d-47ec-890d-af5c177203ee"
+      ],
       "intermediate_catch_events": [],
       "intermediate_throw_events": [
         {
@@ -13141,7 +13485,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-          "incoming": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+          "incoming": [
+            "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [
@@ -13155,7 +13501,9 @@
           ],
           "monitoring": null,
           "name": "Send Order",
-          "outgoing": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+          "outgoing": [
+            "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+          ],
           "properties": [],
           "signal_event_definitions": [],
           "terminate_event_definitions": [],
@@ -13170,7 +13518,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Checkout",
-      "outgoing": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+      "outgoing": [
+        "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+      ],
       "parallel_gateways": [],
       "performers": [],
       "potential_owners": [],
@@ -13296,7 +13646,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": null,
-          "outgoing": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+          "outgoing": [
+            "__00bc466e-cf1f-473c-aa39-c78bba5cef82"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -13319,14 +13671,19 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
-          "incoming": "['__00bc466e-cf1f-473c-aa39-c78bba5cef82', '_63cf98c9-d0b1-4595-a4f2-9589439b311c']",
+          "incoming": [
+            "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+            "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Pay Order",
-          "outgoing": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+          "outgoing": [
+            "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -13355,7 +13712,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
-      "incoming": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+      "incoming": [
+        "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -13394,7 +13753,11 @@
       "child_lane_set": null,
       "documentation": [],
       "extension_elements": null,
-      "flow_node_refs": "['__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379', '__c1a19847-8b3e-42db-a95d-9f21cffc50a3', '__5a9abc77-7371-4213-bede-4056f9cb7808']",
+      "flow_node_refs": [
+        "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+        "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+        "__5a9abc77-7371-4213-bede-4056f9cb7808"
+      ],
       "id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
       "name": "Packager",
       "partition_element": null,
@@ -13446,7 +13809,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
-      "incoming": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+      "incoming": [
+        "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -13505,7 +13870,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": null,
-      "outgoing": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+      "outgoing": [
+        "__00bc466e-cf1f-473c-aa39-c78bba5cef82"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -13534,14 +13901,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
-      "incoming": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+      "incoming": [
+        "__f3f918b3-abee-4e59-8131-212d0d86b056"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Take Payment",
-      "outgoing": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+      "outgoing": [
+        "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13560,14 +13931,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
-      "incoming": "__474f19b8-f608-4d20-a49e-907485a789c5",
+      "incoming": [
+        "__474f19b8-f608-4d20-a49e-907485a789c5"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Load Truck",
-      "outgoing": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+      "outgoing": [
+        "__36fbe220-08cc-45e8-847b-3f55002979c2"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13586,14 +13961,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
-      "incoming": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+      "incoming": [
+        "__04700d0b-5231-46f6-ae74-698ba3864a60"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Receive and Package\nitems",
-      "outgoing": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+      "outgoing": [
+        "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13635,14 +14014,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__be386700-06c2-4a29-b861-c516940667fe",
-      "incoming": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+      "incoming": [
+        "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Add Item to Cart",
-      "outgoing": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+      "outgoing": [
+        "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13674,14 +14057,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
-      "incoming": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+      "incoming": [
+        "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Send to carrier dock",
-      "outgoing": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+      "outgoing": [
+        "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13713,9 +14100,7 @@
       "data_output": [],
       "data_output_association": [],
       "documentation": [],
-      "error_event_definition": [
-        null
-      ],
+      "error_event_definition": null,
       "escalation_event_definition": [],
       "event_definition": [],
       "event_definition_ref": [],
@@ -13726,7 +14111,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": null,
-      "outgoing": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+      "outgoing": [
+        "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -13762,7 +14149,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
-      "incoming": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+      "incoming": [
+        "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -13803,7 +14192,9 @@
       ],
       "monitoring": null,
       "name": "Pick items",
-      "outgoing": "__474f19b8-f608-4d20-a49e-907485a789c5",
+      "outgoing": [
+        "__474f19b8-f608-4d20-a49e-907485a789c5"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -13848,14 +14239,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
-      "incoming": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+      "incoming": [
+        "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Pick items",
-      "outgoing": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+      "outgoing": [
+        "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13884,7 +14279,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": null,
-      "outgoing": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+      "outgoing": [
+        "__6fd770bc-8f12-4927-96cd-e3cc53d862d3"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -13903,14 +14300,19 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
-      "incoming": "['__6fd770bc-8f12-4927-96cd-e3cc53d862d3', '__ffc1486a-8a32-490a-8835-d14cc5ab0a97']",
+      "incoming": [
+        "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+        "__ffc1486a-8a32-490a-8835-d14cc5ab0a97"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Browse Products on Amazon",
-      "outgoing": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+      "outgoing": [
+        "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13929,14 +14331,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
-      "incoming": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+      "incoming": [
+        "__36fbe220-08cc-45e8-847b-3f55002979c2"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Deliver Items",
-      "outgoing": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+      "outgoing": [
+        "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13973,7 +14379,9 @@
       ],
       "monitoring": null,
       "name": "Receive Order",
-      "outgoing": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+      "outgoing": [
+        "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -14145,10 +14553,15 @@
       "extension_elements": null,
       "gateway_direction": "Unspecified",
       "id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
-      "incoming": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+      "incoming": [
+        "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+      ],
       "monitoring": null,
       "name": "Payment accepted?",
-      "outgoing": "['_bfa5c7b2-f5d2-4487-a307-b2ea662bd059', '_50edb87c-9e46-48b1-a311-ef00e6e431e8']"
+      "outgoing": [
+        "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+        "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+      ]
     },
     "_bd7f52ee-93f6-4736-a13f-d1acdb1630d4": {
       "bpmn_element": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
@@ -14376,7 +14789,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
-      "incoming": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+      "incoming": [
+        "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -14481,7 +14896,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
-      "incoming": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+      "incoming": [
+        "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [
@@ -14495,7 +14912,9 @@
       ],
       "monitoring": null,
       "name": "Send Order",
-      "outgoing": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+      "outgoing": [
+        "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+      ],
       "properties": [],
       "signal_event_definitions": [],
       "terminate_event_definitions": [],
@@ -14549,5 +14968,662 @@
         }
       ]
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "__bb6766c5-51e3-4f04-aedc-6c9e4afe0582",
+      "property": "process_ref",
+      "reference_id": "WFP-Page_1-2"
+    },
+    {
+      "element_id": "__3cf88d6c-e5e4-489e-bc73-e2a18be946bf",
+      "property": "process_ref",
+      "reference_id": "WFP-Page_1-1"
+    },
+    {
+      "element_id": "__6f70606b-6781-4f26-b207-5bfff80115d8",
+      "property": "process_ref",
+      "reference_id": "WFP-Page_1-3"
+    },
+    {
+      "element_id": "__a42178ea-f777-4c5b-a0a1-c4014aee6431",
+      "property": "process_ref",
+      "reference_id": "WFP-Page_1-4"
+    },
+    {
+      "element_id": "__13e0b8fd-91fe-4bbc-87ae-5ad657f6ef99",
+      "property": "source_ref",
+      "reference_id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51"
+    },
+    {
+      "element_id": "__13e0b8fd-91fe-4bbc-87ae-5ad657f6ef99",
+      "property": "target_ref",
+      "reference_id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79"
+    },
+    {
+      "element_id": "__13e0b8fd-91fe-4bbc-87ae-5ad657f6ef99",
+      "property": "message_ref",
+      "reference_id": "Message_1404332496322"
+    },
+    {
+      "element_id": "__5cdd91dd-32f6-4102-b475-bd6c7992f509",
+      "property": "source_ref",
+      "reference_id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3"
+    },
+    {
+      "element_id": "__5cdd91dd-32f6-4102-b475-bd6c7992f509",
+      "property": "target_ref",
+      "reference_id": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40"
+    },
+    {
+      "element_id": "__5cdd91dd-32f6-4102-b475-bd6c7992f509",
+      "property": "message_ref",
+      "reference_id": "Message_1404332496323"
+    },
+    {
+      "element_id": "__789952b8-abba-4f3f-81cd-24cbb4d0d615",
+      "property": "source_ref",
+      "reference_id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e"
+    },
+    {
+      "element_id": "__789952b8-abba-4f3f-81cd-24cbb4d0d615",
+      "property": "target_ref",
+      "reference_id": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784"
+    },
+    {
+      "element_id": "__789952b8-abba-4f3f-81cd-24cbb4d0d615",
+      "property": "message_ref",
+      "reference_id": "Message_1404332496321"
+    },
+    {
+      "element_id": "__86b33cf0-1b17-437f-a7cf-510e0766561f",
+      "property": "source_ref",
+      "reference_id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209"
+    },
+    {
+      "element_id": "__86b33cf0-1b17-437f-a7cf-510e0766561f",
+      "property": "target_ref",
+      "reference_id": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436"
+    },
+    {
+      "element_id": "__86b33cf0-1b17-437f-a7cf-510e0766561f",
+      "property": "message_ref",
+      "reference_id": "Message_1404332496319"
+    },
+    {
+      "element_id": "__0c171c64-b342-4f84-8020-a63b6a5b296d",
+      "property": "source_ref",
+      "reference_id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4"
+    },
+    {
+      "element_id": "__0c171c64-b342-4f84-8020-a63b6a5b296d",
+      "property": "target_ref",
+      "reference_id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209"
+    },
+    {
+      "element_id": "__0c171c64-b342-4f84-8020-a63b6a5b296d",
+      "property": "message_ref",
+      "reference_id": "Message_1404332496320"
+    },
+    {
+      "element_id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
+      "property": "incoming",
+      "reference_id": "__f3f918b3-abee-4e59-8131-212d0d86b056"
+    },
+    {
+      "element_id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d",
+      "property": "outgoing",
+      "reference_id": "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+    },
+    {
+      "element_id": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+      "property": "source_ref",
+      "reference_id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d"
+    },
+    {
+      "element_id": "__47cf5284-b9ff-4136-93fd-f0f32b87810f",
+      "property": "target_ref",
+      "reference_id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4"
+    },
+    {
+      "element_id": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+      "property": "source_ref",
+      "reference_id": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436"
+    },
+    {
+      "element_id": "__f3f918b3-abee-4e59-8131-212d0d86b056",
+      "property": "target_ref",
+      "reference_id": "__a7183fc9-402a-418c-bf2a-3b1927d3798d"
+    },
+    {
+      "element_id": null,
+      "property": "message_ref",
+      "reference_id": "Message_1404332496319"
+    },
+    {
+      "element_id": "__0ef615c7-5456-45c8-9cfb-f1fe30c44436",
+      "property": "outgoing",
+      "reference_id": "__f3f918b3-abee-4e59-8131-212d0d86b056"
+    },
+    {
+      "element_id": null,
+      "property": "message_ref",
+      "reference_id": "Message_1404332496320"
+    },
+    {
+      "element_id": "__4011aa2d-a7a9-4e1a-9f16-8a662d138bd4",
+      "property": "incoming",
+      "reference_id": "__47cf5284-b9ff-4136-93fd-f0f32b87810f"
+    },
+    {
+      "element_id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
+      "property": "incoming",
+      "reference_id": "__36fbe220-08cc-45e8-847b-3f55002979c2"
+    },
+    {
+      "element_id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51",
+      "property": "outgoing",
+      "reference_id": "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+    },
+    {
+      "element_id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
+      "property": "incoming",
+      "reference_id": "__474f19b8-f608-4d20-a49e-907485a789c5"
+    },
+    {
+      "element_id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867",
+      "property": "outgoing",
+      "reference_id": "__36fbe220-08cc-45e8-847b-3f55002979c2"
+    },
+    {
+      "element_id": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+      "property": "source_ref",
+      "reference_id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51"
+    },
+    {
+      "element_id": "__b355021c-ac23-48bf-9d1a-45c32565ba39",
+      "property": "target_ref",
+      "reference_id": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf"
+    },
+    {
+      "element_id": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+      "property": "source_ref",
+      "reference_id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867"
+    },
+    {
+      "element_id": "__36fbe220-08cc-45e8-847b-3f55002979c2",
+      "property": "target_ref",
+      "reference_id": "__f867d5f7-db1e-4015-9856-c53bc9cb4b51"
+    },
+    {
+      "element_id": "__474f19b8-f608-4d20-a49e-907485a789c5",
+      "property": "source_ref",
+      "reference_id": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40"
+    },
+    {
+      "element_id": "__474f19b8-f608-4d20-a49e-907485a789c5",
+      "property": "target_ref",
+      "reference_id": "__a9de74be-ce4b-4d59-bafd-cf6f61f48867"
+    },
+    {
+      "element_id": "__6c41ae4a-64fd-40f9-a764-059b26ef8ebf",
+      "property": "incoming",
+      "reference_id": "__b355021c-ac23-48bf-9d1a-45c32565ba39"
+    },
+    {
+      "element_id": null,
+      "property": "message_ref",
+      "reference_id": "Message_1404332496323"
+    },
+    {
+      "element_id": "__e6a9dd54-6cb0-4713-8b77-e659f2658e40",
+      "property": "outgoing",
+      "reference_id": "__474f19b8-f608-4d20-a49e-907485a789c5"
+    },
+    {
+      "element_id": "__f5b8cb41-0574-4c29-aaaa-84ecce589f84",
+      "property": "outgoing",
+      "reference_id": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3"
+    },
+    {
+      "element_id": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+      "property": "source_ref",
+      "reference_id": "__f5b8cb41-0574-4c29-aaaa-84ecce589f84"
+    },
+    {
+      "element_id": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3",
+      "property": "target_ref",
+      "reference_id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8"
+    },
+    {
+      "element_id": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+      "property": "source_ref",
+      "reference_id": "__be386700-06c2-4a29-b861-c516940667fe"
+    },
+    {
+      "element_id": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c",
+      "property": "target_ref",
+      "reference_id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00"
+    },
+    {
+      "element_id": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+      "property": "source_ref",
+      "reference_id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8"
+    },
+    {
+      "element_id": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281",
+      "property": "target_ref",
+      "reference_id": "__be386700-06c2-4a29-b861-c516940667fe"
+    },
+    {
+      "element_id": "__a12a7547-373d-47ec-890d-af5c177203ee",
+      "property": "source_ref",
+      "reference_id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00"
+    },
+    {
+      "element_id": "__a12a7547-373d-47ec-890d-af5c177203ee",
+      "property": "target_ref",
+      "reference_id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f"
+    },
+    {
+      "element_id": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+      "property": "source_ref",
+      "reference_id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f"
+    },
+    {
+      "element_id": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2",
+      "property": "target_ref",
+      "reference_id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79"
+    },
+    {
+      "element_id": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+      "property": "source_ref",
+      "reference_id": "__cec149db-adae-4b69-8ea4-b866f2eef248"
+    },
+    {
+      "element_id": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6",
+      "property": "target_ref",
+      "reference_id": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766"
+    },
+    {
+      "element_id": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+      "property": "source_ref",
+      "reference_id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79"
+    },
+    {
+      "element_id": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a",
+      "property": "target_ref",
+      "reference_id": "__e03c9539-b011-46b1-a381-0eee5f0521b8"
+    },
+    {
+      "element_id": "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
+      "property": "source_ref",
+      "reference_id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00"
+    },
+    {
+      "element_id": "__ffc1486a-8a32-490a-8835-d14cc5ab0a97",
+      "property": "target_ref",
+      "reference_id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8"
+    },
+    {
+      "element_id": "__be386700-06c2-4a29-b861-c516940667fe",
+      "property": "incoming",
+      "reference_id": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+    },
+    {
+      "element_id": "__be386700-06c2-4a29-b861-c516940667fe",
+      "property": "outgoing",
+      "reference_id": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+    },
+    {
+      "element_id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
+      "property": "incoming",
+      "reference_id": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+    },
+    {
+      "element_id": "_95a2fb99-bb98-4d26-b5ec-3dae3a32fd79",
+      "property": "outgoing",
+      "reference_id": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+    },
+    {
+      "element_id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
+      "property": "incoming",
+      "reference_id": "__6fd770bc-8f12-4927-96cd-e3cc53d862d3"
+    },
+    {
+      "element_id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
+      "property": "incoming",
+      "reference_id": "__ffc1486a-8a32-490a-8835-d14cc5ab0a97"
+    },
+    {
+      "element_id": "__f61e9ae0-855f-4ce6-9e3a-4b4f5c7dd0b8",
+      "property": "outgoing",
+      "reference_id": "__e8a6634d-4c67-4ec3-b8cf-18bf3987c281"
+    },
+    {
+      "element_id": "__a1c27e25-4aa2-43dc-8a20-b713e8393d7f",
+      "property": "outgoing",
+      "reference_id": "__00bc466e-cf1f-473c-aa39-c78bba5cef82"
+    },
+    {
+      "element_id": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+      "property": "source_ref",
+      "reference_id": "__a1c27e25-4aa2-43dc-8a20-b713e8393d7f"
+    },
+    {
+      "element_id": "__00bc466e-cf1f-473c-aa39-c78bba5cef82",
+      "property": "target_ref",
+      "reference_id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209"
+    },
+    {
+      "element_id": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+      "property": "source_ref",
+      "reference_id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209"
+    },
+    {
+      "element_id": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2",
+      "property": "target_ref",
+      "reference_id": "_bb4a73bd-2291-4494-8677-5560d4842f79"
+    },
+    {
+      "element_id": "_63cf98c9-d0b1-4595-a4f2-9589439b311c",
+      "property": "source_ref",
+      "reference_id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462"
+    },
+    {
+      "element_id": "_63cf98c9-d0b1-4595-a4f2-9589439b311c",
+      "property": "target_ref",
+      "reference_id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209"
+    },
+    {
+      "element_id": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+      "property": "source_ref",
+      "reference_id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462"
+    },
+    {
+      "element_id": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e",
+      "property": "target_ref",
+      "reference_id": "_7ea6639e-e773-4236-94bf-78f149188c30"
+    },
+    {
+      "element_id": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+      "property": "source_ref",
+      "reference_id": "_bb4a73bd-2291-4494-8677-5560d4842f79"
+    },
+    {
+      "element_id": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059",
+      "property": "target_ref",
+      "reference_id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462"
+    },
+    {
+      "element_id": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+      "property": "source_ref",
+      "reference_id": "_bb4a73bd-2291-4494-8677-5560d4842f79"
+    },
+    {
+      "element_id": "_50edb87c-9e46-48b1-a311-ef00e6e431e8",
+      "property": "target_ref",
+      "reference_id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e"
+    },
+    {
+      "element_id": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+      "property": "source_ref",
+      "reference_id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e"
+    },
+    {
+      "element_id": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf",
+      "property": "target_ref",
+      "reference_id": "_df393d97-f22e-4442-95be-918b8fdd4c3c"
+    },
+    {
+      "element_id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
+      "property": "incoming",
+      "reference_id": "__00bc466e-cf1f-473c-aa39-c78bba5cef82"
+    },
+    {
+      "element_id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
+      "property": "incoming",
+      "reference_id": "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+    },
+    {
+      "element_id": "_2f24e6da-b44f-4e30-8d85-fd35fd56e209",
+      "property": "outgoing",
+      "reference_id": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+    },
+    {
+      "element_id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
+      "property": "incoming",
+      "reference_id": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059"
+    },
+    {
+      "element_id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
+      "property": "outgoing",
+      "reference_id": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e"
+    },
+    {
+      "element_id": "_29a5e7c6-e54e-4c61-ba35-59ae446a3462",
+      "property": "outgoing",
+      "reference_id": "_63cf98c9-d0b1-4595-a4f2-9589439b311c"
+    },
+    {
+      "element_id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
+      "property": "incoming",
+      "reference_id": "_520aac43-77a5-40e8-84a4-ec51e17ad9b2"
+    },
+    {
+      "element_id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
+      "property": "outgoing",
+      "reference_id": "_bfa5c7b2-f5d2-4487-a307-b2ea662bd059"
+    },
+    {
+      "element_id": "_bb4a73bd-2291-4494-8677-5560d4842f79",
+      "property": "outgoing",
+      "reference_id": "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+    },
+    {
+      "element_id": "_7ea6639e-e773-4236-94bf-78f149188c30",
+      "property": "incoming",
+      "reference_id": "_ad0872cc-e2a9-4c44-98c6-c64e0638f37e"
+    },
+    {
+      "element_id": "_df393d97-f22e-4442-95be-918b8fdd4c3c",
+      "property": "incoming",
+      "reference_id": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+    },
+    {
+      "element_id": null,
+      "property": "message_ref",
+      "reference_id": "Message_1404332496321"
+    },
+    {
+      "element_id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
+      "property": "incoming",
+      "reference_id": "_50edb87c-9e46-48b1-a311-ef00e6e431e8"
+    },
+    {
+      "element_id": "_f35ee29d-018c-47e2-afeb-eebc2e25925e",
+      "property": "outgoing",
+      "reference_id": "_30c47018-b9e8-4d09-81e2-2b592f75a5cf"
+    },
+    {
+      "element_id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
+      "property": "incoming",
+      "reference_id": "__a12a7547-373d-47ec-890d-af5c177203ee"
+    },
+    {
+      "element_id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f",
+      "property": "outgoing",
+      "reference_id": "__5d3be9f3-3f7a-4778-89e5-1bf4951472c2"
+    },
+    {
+      "element_id": "__cec149db-adae-4b69-8ea4-b866f2eef248",
+      "property": "outgoing",
+      "reference_id": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+    },
+    {
+      "element_id": "__cec149db-adae-4b69-8ea4-b866f2eef248",
+      "property": "attached_to_ref",
+      "reference_id": "__5ffa1675-9ad7-46f8-b19a-85cd5878496f"
+    },
+    {
+      "element_id": "__e03c9539-b011-46b1-a381-0eee5f0521b8",
+      "property": "incoming",
+      "reference_id": "__92bd8ebf-e3b1-4270-96bb-2f6d6978c64a"
+    },
+    {
+      "element_id": "__8f9632f2-9fdb-4e3c-8b10-6a05091de766",
+      "property": "incoming",
+      "reference_id": "__dc6ef6c1-9c24-48ae-800f-2f9fb76d7ce6"
+    },
+    {
+      "element_id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
+      "property": "incoming",
+      "reference_id": "__82227f00-3d5e-446e-a2e7-50b907ed7c8c"
+    },
+    {
+      "element_id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
+      "property": "outgoing",
+      "reference_id": "__ffc1486a-8a32-490a-8835-d14cc5ab0a97"
+    },
+    {
+      "element_id": "__509f09eb-5518-4995-b98b-db3cf3f8ea00",
+      "property": "outgoing",
+      "reference_id": "__a12a7547-373d-47ec-890d-af5c177203ee"
+    },
+    {
+      "element_id": "__15a180db-97af-4058-ac0a-4a31247fb797",
+      "property": "flow_node_refs",
+      "reference_id": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784"
+    },
+    {
+      "element_id": "__15a180db-97af-4058-ac0a-4a31247fb797",
+      "property": "flow_node_refs",
+      "reference_id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b"
+    },
+    {
+      "element_id": "__15a180db-97af-4058-ac0a-4a31247fb797",
+      "property": "flow_node_refs",
+      "reference_id": "__200e3ce9-3381-4d13-8c7e-4f8790388070"
+    },
+    {
+      "element_id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
+      "property": "flow_node_refs",
+      "reference_id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379"
+    },
+    {
+      "element_id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
+      "property": "flow_node_refs",
+      "reference_id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3"
+    },
+    {
+      "element_id": "__75b31592-10d5-4d4b-993e-0df32d5977ac",
+      "property": "flow_node_refs",
+      "reference_id": "__5a9abc77-7371-4213-bede-4056f9cb7808"
+    },
+    {
+      "element_id": null,
+      "property": "message_ref",
+      "reference_id": "Message_1404332496321"
+    },
+    {
+      "element_id": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784",
+      "property": "outgoing",
+      "reference_id": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+    },
+    {
+      "element_id": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+      "property": "source_ref",
+      "reference_id": "__fd16081c-ecf9-4e0f-857f-f3404a7ee784"
+    },
+    {
+      "element_id": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8",
+      "property": "target_ref",
+      "reference_id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b"
+    },
+    {
+      "element_id": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+      "property": "source_ref",
+      "reference_id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b"
+    },
+    {
+      "element_id": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e",
+      "property": "target_ref",
+      "reference_id": "__200e3ce9-3381-4d13-8c7e-4f8790388070"
+    },
+    {
+      "element_id": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+      "property": "source_ref",
+      "reference_id": "__200e3ce9-3381-4d13-8c7e-4f8790388070"
+    },
+    {
+      "element_id": "__04700d0b-5231-46f6-ae74-698ba3864a60",
+      "property": "target_ref",
+      "reference_id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379"
+    },
+    {
+      "element_id": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+      "property": "source_ref",
+      "reference_id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379"
+    },
+    {
+      "element_id": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53",
+      "property": "target_ref",
+      "reference_id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3"
+    },
+    {
+      "element_id": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+      "property": "source_ref",
+      "reference_id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3"
+    },
+    {
+      "element_id": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b",
+      "property": "target_ref",
+      "reference_id": "__5a9abc77-7371-4213-bede-4056f9cb7808"
+    },
+    {
+      "element_id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+      "property": "incoming",
+      "reference_id": "__4ad47bad-fac8-4269-9a9b-3f68613c7fc8"
+    },
+    {
+      "element_id": "__f4846d41-bca9-4788-9ce2-30ff4b9d6b7b",
+      "property": "outgoing",
+      "reference_id": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+    },
+    {
+      "element_id": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
+      "property": "incoming",
+      "reference_id": "__ce6b77ab-3b91-4ca0-b6c2-48980892e47e"
+    },
+    {
+      "element_id": "__200e3ce9-3381-4d13-8c7e-4f8790388070",
+      "property": "outgoing",
+      "reference_id": "__04700d0b-5231-46f6-ae74-698ba3864a60"
+    },
+    {
+      "element_id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+      "property": "incoming",
+      "reference_id": "__04700d0b-5231-46f6-ae74-698ba3864a60"
+    },
+    {
+      "element_id": "__ac1dc01c-14c2-47cf-9bc9-2b39f5fcd379",
+      "property": "outgoing",
+      "reference_id": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+    },
+    {
+      "element_id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+      "property": "incoming",
+      "reference_id": "__c18acafe-53f8-4e7d-a6df-d12b60b5ae53"
+    },
+    {
+      "element_id": "__c1a19847-8b3e-42db-a95d-9f21cffc50a3",
+      "property": "outgoing",
+      "reference_id": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+    },
+    {
+      "element_id": "__5a9abc77-7371-4213-bede-4056f9cb7808",
+      "property": "incoming",
+      "reference_id": "__18abb53a-b7c0-414e-9428-1d1a14f2e96b"
+    }
+  ]
 }

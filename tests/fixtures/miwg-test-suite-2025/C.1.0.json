@@ -1703,7 +1703,9 @@
               }
             },
             "id": "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
-            "incoming": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+            "incoming": [
+              "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1750,7 +1752,9 @@
               }
             },
             "id": "sid-282524E6-660F-431D-8F19-1C3E9E9DE817",
-            "incoming": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+            "incoming": [
+              "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1792,11 +1796,16 @@
             },
             "gateway_direction": "Diverging",
             "id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
-            "incoming": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+            "incoming": [
+              "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+            ],
             "instantiate": false,
             "monitoring": null,
             "name": null,
-            "outgoing": "['sid-71EF9530-A32A-49BC-A783-9B98A5801362', 'sid-4686AFBC-E33A-4657-95A0-B2E27E704152']"
+            "outgoing": [
+              "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+              "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+            ]
           }
         ],
         "events": [],
@@ -1860,7 +1869,9 @@
               }
             },
             "id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
-            "incoming": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+            "incoming": [
+              "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+            ],
             "link_event_definition": [],
             "message_event_definition": [
               {
@@ -1873,7 +1884,9 @@
             ],
             "monitoring": null,
             "name": "Approver to \nbe assigned",
-            "outgoing": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+            "outgoing": [
+              "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1922,7 +1935,9 @@
               }
             },
             "id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
-            "incoming": "sid-4686AFBC-E33A-4657-95A0-B2E27E704152",
+            "incoming": [
+              "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+            ],
             "link_event_definition": [],
             "message_event_definition": [
               {
@@ -1935,7 +1950,9 @@
             ],
             "monitoring": null,
             "name": "Invoice review\n needed",
-            "outgoing": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+            "outgoing": [
+              "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1984,12 +2001,16 @@
               }
             },
             "id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
-            "incoming": "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+            "incoming": [
+              "sid-71EF9530-A32A-49BC-A783-9B98A5801362"
+            ],
             "link_event_definition": [],
             "message_event_definition": [],
             "monitoring": null,
             "name": "7 days",
-            "outgoing": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+            "outgoing": [
+              "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2042,7 +2063,19 @@
                     }
                   }
                 },
-                "flow_node_refs": "['sid-36EA43D1-0FE6-4197-AC57-7A43785B784B', 'sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF', 'sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44', 'sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D', 'sid-40EC6574-E644-425C-8CE7-EE384F0C3520', 'sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD', 'sid-F0D29912-929D-491C-8D23-73BD80CF980A', 'sid-B548B980-12E3-408E-9AC4-7031B85A8F2D', 'sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D', 'sid-0E349B8B-14A7-4565-988A-38F3A9B624D2', 'sid-282524E6-660F-431D-8F19-1C3E9E9DE817']",
+                "flow_node_refs": [
+                  "sid-36EA43D1-0FE6-4197-AC57-7A43785B784B",
+                  "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
+                  "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
+                  "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
+                  "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
+                  "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
+                  "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
+                  "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
+                  "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
+                  "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
+                  "sid-282524E6-660F-431D-8F19-1C3E9E9DE817"
+                ],
                 "id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
                 "name": null,
                 "partition_element": null,
@@ -2447,7 +2480,9 @@
             ],
             "monitoring": null,
             "name": "Invoice\nreceived",
-            "outgoing": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+            "outgoing": [
+              "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2531,14 +2566,18 @@
             },
             "human_performers": [],
             "id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
-            "incoming": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+            "incoming": [
+              "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Scan Invoice",
-            "outgoing": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+            "outgoing": [
+              "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2617,14 +2656,18 @@
             },
             "human_performers": [],
             "id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
-            "incoming": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+            "incoming": [
+              "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Archive\noriginal",
-            "outgoing": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+            "outgoing": [
+              "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2703,14 +2746,18 @@
             },
             "human_performers": [],
             "id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
-            "incoming": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+            "incoming": [
+              "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Assign approver",
-            "outgoing": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+            "outgoing": [
+              "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2789,14 +2836,18 @@
             },
             "human_performers": [],
             "id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
-            "incoming": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+            "incoming": [
+              "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Review and document result",
-            "outgoing": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+            "outgoing": [
+              "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2860,7 +2911,9 @@
               }
             },
             "id": "invoiceNotProcessed",
-            "incoming": "reviewNotSuccessful",
+            "incoming": [
+              "reviewNotSuccessful"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2907,7 +2960,9 @@
               }
             },
             "id": "invoiceProcessed",
-            "incoming": "SequenceFlow_3",
+            "incoming": [
+              "SequenceFlow_3"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2963,10 +3018,15 @@
             },
             "gateway_direction": "Diverging",
             "id": "invoice_approved",
-            "incoming": "sequenceFlow_180",
+            "incoming": [
+              "sequenceFlow_180"
+            ],
             "monitoring": null,
             "name": "Invoice\napproved?",
-            "outgoing": "['invoiceApproved', 'invoiceNotApproved']"
+            "outgoing": [
+              "invoiceApproved",
+              "invoiceNotApproved"
+            ]
           },
           {
             "auditing": null,
@@ -3008,10 +3068,15 @@
             },
             "gateway_direction": "Diverging",
             "id": "reviewSuccessful_gw",
-            "incoming": "sequenceFlow_183",
+            "incoming": [
+              "sequenceFlow_183"
+            ],
             "monitoring": null,
             "name": "Review\nsuccessful?",
-            "outgoing": "['reviewSuccessful', 'reviewNotSuccessful']"
+            "outgoing": [
+              "reviewSuccessful",
+              "reviewNotSuccessful"
+            ]
           }
         ],
         "extension_elements": {
@@ -3067,7 +3132,10 @@
                     }
                   }
                 },
-                "flow_node_refs": "['approveInvoice', 'invoice_approved']",
+                "flow_node_refs": [
+                  "approveInvoice",
+                  "invoice_approved"
+                ],
                 "id": "Approver",
                 "name": "Approver",
                 "partition_element": null,
@@ -3097,7 +3165,13 @@
                     }
                   }
                 },
-                "flow_node_refs": "['assignApprover', 'reviewInvoice', 'reviewSuccessful_gw', 'invoiceNotProcessed', 'StartEvent_1']",
+                "flow_node_refs": [
+                  "assignApprover",
+                  "reviewInvoice",
+                  "reviewSuccessful_gw",
+                  "invoiceNotProcessed",
+                  "StartEvent_1"
+                ],
                 "id": "teamAssistant",
                 "name": "Team Assistant",
                 "partition_element": null,
@@ -3127,7 +3201,11 @@
                     }
                   }
                 },
-                "flow_node_refs": "['prepareBankTransfer', 'invoiceProcessed', 'archiveInvoice']",
+                "flow_node_refs": [
+                  "prepareBankTransfer",
+                  "invoiceProcessed",
+                  "archiveInvoice"
+                ],
                 "id": "Accountant",
                 "name": "Accountant",
                 "partition_element": null,
@@ -3613,7 +3691,9 @@
             "human_performers": [],
             "id": "archiveInvoice",
             "implementation": "webService",
-            "incoming": "SequenceFlow_2",
+            "incoming": [
+              "SequenceFlow_2"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -3621,7 +3701,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Archive\nInvoice",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_3",
+            "outgoing": [
+              "SequenceFlow_3"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -3681,7 +3763,9 @@
             ],
             "monitoring": null,
             "name": "Invoice\nreceived",
-            "outgoing": "SequenceFlow_1",
+            "outgoing": [
+              "SequenceFlow_1"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -3771,14 +3855,19 @@
             "human_performers": [],
             "id": "approveInvoice",
             "implementation": "webService",
-            "incoming": "['reviewSuccessful', 'sequenceFlow_178']",
+            "incoming": [
+              "reviewSuccessful",
+              "sequenceFlow_178"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Approve Invoice",
-            "outgoing": "sequenceFlow_180",
+            "outgoing": [
+              "sequenceFlow_180"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -3877,14 +3966,18 @@
             "human_performers": [],
             "id": "assignApprover",
             "implementation": "webService",
-            "incoming": "SequenceFlow_1",
+            "incoming": [
+              "SequenceFlow_1"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Assign\nApprover",
-            "outgoing": "sequenceFlow_178",
+            "outgoing": [
+              "sequenceFlow_178"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -3977,14 +4070,18 @@
             "human_performers": [],
             "id": "reviewInvoice",
             "implementation": "webService",
-            "incoming": "invoiceNotApproved",
+            "incoming": [
+              "invoiceNotApproved"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Rechnung kl\u00e4ren",
-            "outgoing": "sequenceFlow_183",
+            "outgoing": [
+              "sequenceFlow_183"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -4077,14 +4174,18 @@
             "human_performers": [],
             "id": "prepareBankTransfer",
             "implementation": "webService",
-            "incoming": "invoiceApproved",
+            "incoming": [
+              "invoiceApproved"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Prepare\r\nBank\r\nTransfer",
-            "outgoing": "SequenceFlow_2",
+            "outgoing": [
+              "SequenceFlow_2"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -4169,7 +4270,11 @@
           }
         }
       },
-      "flow_node_refs": "['prepareBankTransfer', 'invoiceProcessed', 'archiveInvoice']",
+      "flow_node_refs": [
+        "prepareBankTransfer",
+        "invoiceProcessed",
+        "archiveInvoice"
+      ],
       "id": "Accountant",
       "name": "Accountant",
       "partition_element": null,
@@ -4225,7 +4330,10 @@
           }
         }
       },
-      "flow_node_refs": "['approveInvoice', 'invoice_approved']",
+      "flow_node_refs": [
+        "approveInvoice",
+        "invoice_approved"
+      ],
       "id": "Approver",
       "name": "Approver",
       "partition_element": null,
@@ -4867,7 +4975,9 @@
       ],
       "monitoring": null,
       "name": "Invoice\nreceived",
-      "outgoing": "SequenceFlow_1",
+      "outgoing": [
+        "SequenceFlow_1"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -4976,14 +5086,19 @@
       "human_performers": [],
       "id": "approveInvoice",
       "implementation": "webService",
-      "incoming": "['reviewSuccessful', 'sequenceFlow_178']",
+      "incoming": [
+        "reviewSuccessful",
+        "sequenceFlow_178"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Approve Invoice",
-      "outgoing": "sequenceFlow_180",
+      "outgoing": [
+        "sequenceFlow_180"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -5136,7 +5251,9 @@
       "human_performers": [],
       "id": "archiveInvoice",
       "implementation": "webService",
-      "incoming": "SequenceFlow_2",
+      "incoming": [
+        "SequenceFlow_2"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -5144,7 +5261,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Archive\nInvoice",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_3",
+      "outgoing": [
+        "SequenceFlow_3"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -5259,14 +5378,18 @@
       "human_performers": [],
       "id": "assignApprover",
       "implementation": "webService",
-      "incoming": "SequenceFlow_1",
+      "incoming": [
+        "SequenceFlow_1"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Assign\nApprover",
-      "outgoing": "sequenceFlow_178",
+      "outgoing": [
+        "sequenceFlow_178"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -5363,7 +5486,9 @@
             }
           },
           "id": "invoiceNotProcessed",
-          "incoming": "reviewNotSuccessful",
+          "incoming": [
+            "reviewNotSuccessful"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -5410,7 +5535,9 @@
             }
           },
           "id": "invoiceProcessed",
-          "incoming": "SequenceFlow_3",
+          "incoming": [
+            "SequenceFlow_3"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -5466,10 +5593,15 @@
           },
           "gateway_direction": "Diverging",
           "id": "invoice_approved",
-          "incoming": "sequenceFlow_180",
+          "incoming": [
+            "sequenceFlow_180"
+          ],
           "monitoring": null,
           "name": "Invoice\napproved?",
-          "outgoing": "['invoiceApproved', 'invoiceNotApproved']"
+          "outgoing": [
+            "invoiceApproved",
+            "invoiceNotApproved"
+          ]
         },
         {
           "auditing": null,
@@ -5511,10 +5643,15 @@
           },
           "gateway_direction": "Diverging",
           "id": "reviewSuccessful_gw",
-          "incoming": "sequenceFlow_183",
+          "incoming": [
+            "sequenceFlow_183"
+          ],
           "monitoring": null,
           "name": "Review\nsuccessful?",
-          "outgoing": "['reviewSuccessful', 'reviewNotSuccessful']"
+          "outgoing": [
+            "reviewSuccessful",
+            "reviewNotSuccessful"
+          ]
         }
       ],
       "extension_elements": {
@@ -5570,7 +5707,10 @@
                   }
                 }
               },
-              "flow_node_refs": "['approveInvoice', 'invoice_approved']",
+              "flow_node_refs": [
+                "approveInvoice",
+                "invoice_approved"
+              ],
               "id": "Approver",
               "name": "Approver",
               "partition_element": null,
@@ -5600,7 +5740,13 @@
                   }
                 }
               },
-              "flow_node_refs": "['assignApprover', 'reviewInvoice', 'reviewSuccessful_gw', 'invoiceNotProcessed', 'StartEvent_1']",
+              "flow_node_refs": [
+                "assignApprover",
+                "reviewInvoice",
+                "reviewSuccessful_gw",
+                "invoiceNotProcessed",
+                "StartEvent_1"
+              ],
               "id": "teamAssistant",
               "name": "Team Assistant",
               "partition_element": null,
@@ -5630,7 +5776,11 @@
                   }
                 }
               },
-              "flow_node_refs": "['prepareBankTransfer', 'invoiceProcessed', 'archiveInvoice']",
+              "flow_node_refs": [
+                "prepareBankTransfer",
+                "invoiceProcessed",
+                "archiveInvoice"
+              ],
               "id": "Accountant",
               "name": "Accountant",
               "partition_element": null,
@@ -6116,7 +6266,9 @@
           "human_performers": [],
           "id": "archiveInvoice",
           "implementation": "webService",
-          "incoming": "SequenceFlow_2",
+          "incoming": [
+            "SequenceFlow_2"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -6124,7 +6276,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Archive\nInvoice",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_3",
+          "outgoing": [
+            "SequenceFlow_3"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -6184,7 +6338,9 @@
           ],
           "monitoring": null,
           "name": "Invoice\nreceived",
-          "outgoing": "SequenceFlow_1",
+          "outgoing": [
+            "SequenceFlow_1"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -6274,14 +6430,19 @@
           "human_performers": [],
           "id": "approveInvoice",
           "implementation": "webService",
-          "incoming": "['reviewSuccessful', 'sequenceFlow_178']",
+          "incoming": [
+            "reviewSuccessful",
+            "sequenceFlow_178"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Approve Invoice",
-          "outgoing": "sequenceFlow_180",
+          "outgoing": [
+            "sequenceFlow_180"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -6380,14 +6541,18 @@
           "human_performers": [],
           "id": "assignApprover",
           "implementation": "webService",
-          "incoming": "SequenceFlow_1",
+          "incoming": [
+            "SequenceFlow_1"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Assign\nApprover",
-          "outgoing": "sequenceFlow_178",
+          "outgoing": [
+            "sequenceFlow_178"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -6480,14 +6645,18 @@
           "human_performers": [],
           "id": "reviewInvoice",
           "implementation": "webService",
-          "incoming": "invoiceNotApproved",
+          "incoming": [
+            "invoiceNotApproved"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Rechnung kl\u00e4ren",
-          "outgoing": "sequenceFlow_183",
+          "outgoing": [
+            "sequenceFlow_183"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -6580,14 +6749,18 @@
           "human_performers": [],
           "id": "prepareBankTransfer",
           "implementation": "webService",
-          "incoming": "invoiceApproved",
+          "incoming": [
+            "invoiceApproved"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Prepare\r\nBank\r\nTransfer",
-          "outgoing": "SequenceFlow_2",
+          "outgoing": [
+            "SequenceFlow_2"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -6794,7 +6967,9 @@
         }
       },
       "id": "invoiceNotProcessed",
-      "incoming": "reviewNotSuccessful",
+      "incoming": [
+        "reviewNotSuccessful"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6868,7 +7043,9 @@
         }
       },
       "id": "invoiceProcessed",
-      "incoming": "SequenceFlow_3",
+      "incoming": [
+        "SequenceFlow_3"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6947,10 +7124,15 @@
       },
       "gateway_direction": "Diverging",
       "id": "invoice_approved",
-      "incoming": "sequenceFlow_180",
+      "incoming": [
+        "sequenceFlow_180"
+      ],
       "monitoring": null,
       "name": "Invoice\napproved?",
-      "outgoing": "['invoiceApproved', 'invoiceNotApproved']"
+      "outgoing": [
+        "invoiceApproved",
+        "invoiceNotApproved"
+      ]
     },
     "invoice_approved_gui": {
       "bounds": {
@@ -7053,14 +7235,18 @@
       "human_performers": [],
       "id": "prepareBankTransfer",
       "implementation": "webService",
-      "incoming": "invoiceApproved",
+      "incoming": [
+        "invoiceApproved"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Prepare\r\nBank\r\nTransfer",
-      "outgoing": "SequenceFlow_2",
+      "outgoing": [
+        "SequenceFlow_2"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -7180,14 +7366,18 @@
       "human_performers": [],
       "id": "reviewInvoice",
       "implementation": "webService",
-      "incoming": "invoiceNotApproved",
+      "incoming": [
+        "invoiceNotApproved"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Rechnung kl\u00e4ren",
-      "outgoing": "sequenceFlow_183",
+      "outgoing": [
+        "sequenceFlow_183"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -7419,10 +7609,15 @@
       },
       "gateway_direction": "Diverging",
       "id": "reviewSuccessful_gw",
-      "incoming": "sequenceFlow_183",
+      "incoming": [
+        "sequenceFlow_183"
+      ],
       "monitoring": null,
       "name": "Review\nsuccessful?",
-      "outgoing": "['reviewSuccessful', 'reviewNotSuccessful']"
+      "outgoing": [
+        "reviewSuccessful",
+        "reviewNotSuccessful"
+      ]
     },
     "reviewSuccessful_gw_gui": {
       "bounds": {
@@ -7691,14 +7886,18 @@
       },
       "human_performers": [],
       "id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
-      "incoming": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+      "incoming": [
+        "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Scan Invoice",
-      "outgoing": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+      "outgoing": [
+        "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -7833,12 +8032,16 @@
         }
       },
       "id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
-      "incoming": "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+      "incoming": [
+        "sid-71EF9530-A32A-49BC-A783-9B98A5801362"
+      ],
       "link_event_definition": [],
       "message_event_definition": [],
       "monitoring": null,
       "name": "7 days",
-      "outgoing": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+      "outgoing": [
+        "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -7984,7 +8187,9 @@
         }
       },
       "id": "sid-282524E6-660F-431D-8F19-1C3E9E9DE817",
-      "incoming": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+      "incoming": [
+        "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -8130,7 +8335,9 @@
       ],
       "monitoring": null,
       "name": "Invoice\nreceived",
-      "outgoing": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+      "outgoing": [
+        "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -9586,7 +9793,9 @@
         }
       },
       "id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
-      "incoming": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+      "incoming": [
+        "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+      ],
       "link_event_definition": [],
       "message_event_definition": [
         {
@@ -9599,7 +9808,9 @@
       ],
       "monitoring": null,
       "name": "Approver to \nbe assigned",
-      "outgoing": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+      "outgoing": [
+        "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -9781,7 +9992,10 @@
               }
             }
           },
-          "flow_node_refs": "['approveInvoice', 'invoice_approved']",
+          "flow_node_refs": [
+            "approveInvoice",
+            "invoice_approved"
+          ],
           "id": "Approver",
           "name": "Approver",
           "partition_element": null,
@@ -9811,7 +10025,13 @@
               }
             }
           },
-          "flow_node_refs": "['assignApprover', 'reviewInvoice', 'reviewSuccessful_gw', 'invoiceNotProcessed', 'StartEvent_1']",
+          "flow_node_refs": [
+            "assignApprover",
+            "reviewInvoice",
+            "reviewSuccessful_gw",
+            "invoiceNotProcessed",
+            "StartEvent_1"
+          ],
           "id": "teamAssistant",
           "name": "Team Assistant",
           "partition_element": null,
@@ -9841,7 +10061,11 @@
               }
             }
           },
-          "flow_node_refs": "['prepareBankTransfer', 'invoiceProcessed', 'archiveInvoice']",
+          "flow_node_refs": [
+            "prepareBankTransfer",
+            "invoiceProcessed",
+            "archiveInvoice"
+          ],
           "id": "Accountant",
           "name": "Accountant",
           "partition_element": null,
@@ -9954,7 +10178,9 @@
             }
           },
           "id": "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
-          "incoming": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+          "incoming": [
+            "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -10001,7 +10227,9 @@
             }
           },
           "id": "sid-282524E6-660F-431D-8F19-1C3E9E9DE817",
-          "incoming": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+          "incoming": [
+            "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -10043,11 +10271,16 @@
           },
           "gateway_direction": "Diverging",
           "id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
-          "incoming": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+          "incoming": [
+            "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+          ],
           "instantiate": false,
           "monitoring": null,
           "name": null,
-          "outgoing": "['sid-71EF9530-A32A-49BC-A783-9B98A5801362', 'sid-4686AFBC-E33A-4657-95A0-B2E27E704152']"
+          "outgoing": [
+            "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+            "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+          ]
         }
       ],
       "events": [],
@@ -10111,7 +10344,9 @@
             }
           },
           "id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
-          "incoming": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+          "incoming": [
+            "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+          ],
           "link_event_definition": [],
           "message_event_definition": [
             {
@@ -10124,7 +10359,9 @@
           ],
           "monitoring": null,
           "name": "Approver to \nbe assigned",
-          "outgoing": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+          "outgoing": [
+            "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -10173,7 +10410,9 @@
             }
           },
           "id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
-          "incoming": "sid-4686AFBC-E33A-4657-95A0-B2E27E704152",
+          "incoming": [
+            "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+          ],
           "link_event_definition": [],
           "message_event_definition": [
             {
@@ -10186,7 +10425,9 @@
           ],
           "monitoring": null,
           "name": "Invoice review\n needed",
-          "outgoing": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+          "outgoing": [
+            "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -10235,12 +10476,16 @@
             }
           },
           "id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
-          "incoming": "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+          "incoming": [
+            "sid-71EF9530-A32A-49BC-A783-9B98A5801362"
+          ],
           "link_event_definition": [],
           "message_event_definition": [],
           "monitoring": null,
           "name": "7 days",
-          "outgoing": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+          "outgoing": [
+            "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -10293,7 +10538,19 @@
                   }
                 }
               },
-              "flow_node_refs": "['sid-36EA43D1-0FE6-4197-AC57-7A43785B784B', 'sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF', 'sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44', 'sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D', 'sid-40EC6574-E644-425C-8CE7-EE384F0C3520', 'sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD', 'sid-F0D29912-929D-491C-8D23-73BD80CF980A', 'sid-B548B980-12E3-408E-9AC4-7031B85A8F2D', 'sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D', 'sid-0E349B8B-14A7-4565-988A-38F3A9B624D2', 'sid-282524E6-660F-431D-8F19-1C3E9E9DE817']",
+              "flow_node_refs": [
+                "sid-36EA43D1-0FE6-4197-AC57-7A43785B784B",
+                "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
+                "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
+                "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
+                "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
+                "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
+                "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
+                "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
+                "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
+                "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
+                "sid-282524E6-660F-431D-8F19-1C3E9E9DE817"
+              ],
               "id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
               "name": null,
               "partition_element": null,
@@ -10698,7 +10955,9 @@
           ],
           "monitoring": null,
           "name": "Invoice\nreceived",
-          "outgoing": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+          "outgoing": [
+            "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -10782,14 +11041,18 @@
           },
           "human_performers": [],
           "id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
-          "incoming": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+          "incoming": [
+            "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Scan Invoice",
-          "outgoing": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+          "outgoing": [
+            "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10868,14 +11131,18 @@
           },
           "human_performers": [],
           "id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
-          "incoming": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+          "incoming": [
+            "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Archive\noriginal",
-          "outgoing": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+          "outgoing": [
+            "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -10954,14 +11221,18 @@
           },
           "human_performers": [],
           "id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
-          "incoming": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+          "incoming": [
+            "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Assign approver",
-          "outgoing": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+          "outgoing": [
+            "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -11040,14 +11311,18 @@
           },
           "human_performers": [],
           "id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
-          "incoming": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+          "incoming": [
+            "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Review and document result",
-          "outgoing": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+          "outgoing": [
+            "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -11138,14 +11413,18 @@
       },
       "human_performers": [],
       "id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
-      "incoming": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+      "incoming": [
+        "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Assign approver",
-      "outgoing": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+      "outgoing": [
+        "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -11312,14 +11591,18 @@
       },
       "human_performers": [],
       "id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
-      "incoming": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+      "incoming": [
+        "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Review and document result",
-      "outgoing": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+      "outgoing": [
+        "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -11436,7 +11719,19 @@
           }
         }
       },
-      "flow_node_refs": "['sid-36EA43D1-0FE6-4197-AC57-7A43785B784B', 'sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF', 'sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44', 'sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D', 'sid-40EC6574-E644-425C-8CE7-EE384F0C3520', 'sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD', 'sid-F0D29912-929D-491C-8D23-73BD80CF980A', 'sid-B548B980-12E3-408E-9AC4-7031B85A8F2D', 'sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D', 'sid-0E349B8B-14A7-4565-988A-38F3A9B624D2', 'sid-282524E6-660F-431D-8F19-1C3E9E9DE817']",
+      "flow_node_refs": [
+        "sid-36EA43D1-0FE6-4197-AC57-7A43785B784B",
+        "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
+        "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
+        "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
+        "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
+        "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
+        "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
+        "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
+        "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
+        "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
+        "sid-282524E6-660F-431D-8F19-1C3E9E9DE817"
+      ],
       "id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
       "name": null,
       "partition_element": null,
@@ -13142,7 +13437,9 @@
         }
       },
       "id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
-      "incoming": "sid-4686AFBC-E33A-4657-95A0-B2E27E704152",
+      "incoming": [
+        "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+      ],
       "link_event_definition": [],
       "message_event_definition": [
         {
@@ -13155,7 +13452,9 @@
       ],
       "monitoring": null,
       "name": "Invoice review\n needed",
-      "outgoing": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+      "outgoing": [
+        "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -13225,7 +13524,9 @@
         }
       },
       "id": "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
-      "incoming": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+      "incoming": [
+        "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -13379,14 +13680,18 @@
       },
       "human_performers": [],
       "id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
-      "incoming": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+      "incoming": [
+        "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Archive\noriginal",
-      "outgoing": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+      "outgoing": [
+        "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -13502,11 +13807,16 @@
       },
       "gateway_direction": "Diverging",
       "id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
-      "incoming": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+      "incoming": [
+        "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+      ],
       "instantiate": false,
       "monitoring": null,
       "name": null,
-      "outgoing": "['sid-71EF9530-A32A-49BC-A783-9B98A5801362', 'sid-4686AFBC-E33A-4657-95A0-B2E27E704152']"
+      "outgoing": [
+        "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+        "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+      ]
     },
     "sid-F0D29912-929D-491C-8D23-73BD80CF980A_gui": {
       "bounds": {
@@ -15237,7 +15547,9 @@
                 }
               },
               "id": "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
-              "incoming": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+              "incoming": [
+                "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -15284,7 +15596,9 @@
                 }
               },
               "id": "sid-282524E6-660F-431D-8F19-1C3E9E9DE817",
-              "incoming": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+              "incoming": [
+                "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -15326,11 +15640,16 @@
               },
               "gateway_direction": "Diverging",
               "id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
-              "incoming": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+              "incoming": [
+                "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+              ],
               "instantiate": false,
               "monitoring": null,
               "name": null,
-              "outgoing": "['sid-71EF9530-A32A-49BC-A783-9B98A5801362', 'sid-4686AFBC-E33A-4657-95A0-B2E27E704152']"
+              "outgoing": [
+                "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+                "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+              ]
             }
           ],
           "events": [],
@@ -15394,7 +15713,9 @@
                 }
               },
               "id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
-              "incoming": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+              "incoming": [
+                "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+              ],
               "link_event_definition": [],
               "message_event_definition": [
                 {
@@ -15407,7 +15728,9 @@
               ],
               "monitoring": null,
               "name": "Approver to \nbe assigned",
-              "outgoing": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+              "outgoing": [
+                "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -15456,7 +15779,9 @@
                 }
               },
               "id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
-              "incoming": "sid-4686AFBC-E33A-4657-95A0-B2E27E704152",
+              "incoming": [
+                "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+              ],
               "link_event_definition": [],
               "message_event_definition": [
                 {
@@ -15469,7 +15794,9 @@
               ],
               "monitoring": null,
               "name": "Invoice review\n needed",
-              "outgoing": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+              "outgoing": [
+                "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -15518,12 +15845,16 @@
                 }
               },
               "id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
-              "incoming": "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+              "incoming": [
+                "sid-71EF9530-A32A-49BC-A783-9B98A5801362"
+              ],
               "link_event_definition": [],
               "message_event_definition": [],
               "monitoring": null,
               "name": "7 days",
-              "outgoing": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+              "outgoing": [
+                "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -15576,7 +15907,19 @@
                       }
                     }
                   },
-                  "flow_node_refs": "['sid-36EA43D1-0FE6-4197-AC57-7A43785B784B', 'sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF', 'sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44', 'sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D', 'sid-40EC6574-E644-425C-8CE7-EE384F0C3520', 'sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD', 'sid-F0D29912-929D-491C-8D23-73BD80CF980A', 'sid-B548B980-12E3-408E-9AC4-7031B85A8F2D', 'sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D', 'sid-0E349B8B-14A7-4565-988A-38F3A9B624D2', 'sid-282524E6-660F-431D-8F19-1C3E9E9DE817']",
+                  "flow_node_refs": [
+                    "sid-36EA43D1-0FE6-4197-AC57-7A43785B784B",
+                    "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
+                    "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
+                    "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
+                    "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
+                    "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
+                    "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
+                    "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
+                    "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
+                    "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
+                    "sid-282524E6-660F-431D-8F19-1C3E9E9DE817"
+                  ],
                   "id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
                   "name": null,
                   "partition_element": null,
@@ -15981,7 +16324,9 @@
               ],
               "monitoring": null,
               "name": "Invoice\nreceived",
-              "outgoing": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+              "outgoing": [
+                "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -16065,14 +16410,18 @@
               },
               "human_performers": [],
               "id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
-              "incoming": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+              "incoming": [
+                "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Scan Invoice",
-              "outgoing": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+              "outgoing": [
+                "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -16151,14 +16500,18 @@
               },
               "human_performers": [],
               "id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
-              "incoming": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+              "incoming": [
+                "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Archive\noriginal",
-              "outgoing": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+              "outgoing": [
+                "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -16237,14 +16590,18 @@
               },
               "human_performers": [],
               "id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
-              "incoming": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+              "incoming": [
+                "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Assign approver",
-              "outgoing": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+              "outgoing": [
+                "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -16323,14 +16680,18 @@
               },
               "human_performers": [],
               "id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
-              "incoming": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+              "incoming": [
+                "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Review and document result",
-              "outgoing": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+              "outgoing": [
+                "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -16394,7 +16755,9 @@
                 }
               },
               "id": "invoiceNotProcessed",
-              "incoming": "reviewNotSuccessful",
+              "incoming": [
+                "reviewNotSuccessful"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -16441,7 +16804,9 @@
                 }
               },
               "id": "invoiceProcessed",
-              "incoming": "SequenceFlow_3",
+              "incoming": [
+                "SequenceFlow_3"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -16497,10 +16862,15 @@
               },
               "gateway_direction": "Diverging",
               "id": "invoice_approved",
-              "incoming": "sequenceFlow_180",
+              "incoming": [
+                "sequenceFlow_180"
+              ],
               "monitoring": null,
               "name": "Invoice\napproved?",
-              "outgoing": "['invoiceApproved', 'invoiceNotApproved']"
+              "outgoing": [
+                "invoiceApproved",
+                "invoiceNotApproved"
+              ]
             },
             {
               "auditing": null,
@@ -16542,10 +16912,15 @@
               },
               "gateway_direction": "Diverging",
               "id": "reviewSuccessful_gw",
-              "incoming": "sequenceFlow_183",
+              "incoming": [
+                "sequenceFlow_183"
+              ],
               "monitoring": null,
               "name": "Review\nsuccessful?",
-              "outgoing": "['reviewSuccessful', 'reviewNotSuccessful']"
+              "outgoing": [
+                "reviewSuccessful",
+                "reviewNotSuccessful"
+              ]
             }
           ],
           "extension_elements": {
@@ -16601,7 +16976,10 @@
                       }
                     }
                   },
-                  "flow_node_refs": "['approveInvoice', 'invoice_approved']",
+                  "flow_node_refs": [
+                    "approveInvoice",
+                    "invoice_approved"
+                  ],
                   "id": "Approver",
                   "name": "Approver",
                   "partition_element": null,
@@ -16631,7 +17009,13 @@
                       }
                     }
                   },
-                  "flow_node_refs": "['assignApprover', 'reviewInvoice', 'reviewSuccessful_gw', 'invoiceNotProcessed', 'StartEvent_1']",
+                  "flow_node_refs": [
+                    "assignApprover",
+                    "reviewInvoice",
+                    "reviewSuccessful_gw",
+                    "invoiceNotProcessed",
+                    "StartEvent_1"
+                  ],
                   "id": "teamAssistant",
                   "name": "Team Assistant",
                   "partition_element": null,
@@ -16661,7 +17045,11 @@
                       }
                     }
                   },
-                  "flow_node_refs": "['prepareBankTransfer', 'invoiceProcessed', 'archiveInvoice']",
+                  "flow_node_refs": [
+                    "prepareBankTransfer",
+                    "invoiceProcessed",
+                    "archiveInvoice"
+                  ],
                   "id": "Accountant",
                   "name": "Accountant",
                   "partition_element": null,
@@ -17147,7 +17535,9 @@
               "human_performers": [],
               "id": "archiveInvoice",
               "implementation": "webService",
-              "incoming": "SequenceFlow_2",
+              "incoming": [
+                "SequenceFlow_2"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -17155,7 +17545,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Archive\nInvoice",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_3",
+              "outgoing": [
+                "SequenceFlow_3"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -17215,7 +17607,9 @@
               ],
               "monitoring": null,
               "name": "Invoice\nreceived",
-              "outgoing": "SequenceFlow_1",
+              "outgoing": [
+                "SequenceFlow_1"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -17305,14 +17699,19 @@
               "human_performers": [],
               "id": "approveInvoice",
               "implementation": "webService",
-              "incoming": "['reviewSuccessful', 'sequenceFlow_178']",
+              "incoming": [
+                "reviewSuccessful",
+                "sequenceFlow_178"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Approve Invoice",
-              "outgoing": "sequenceFlow_180",
+              "outgoing": [
+                "sequenceFlow_180"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -17411,14 +17810,18 @@
               "human_performers": [],
               "id": "assignApprover",
               "implementation": "webService",
-              "incoming": "SequenceFlow_1",
+              "incoming": [
+                "SequenceFlow_1"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Assign\nApprover",
-              "outgoing": "sequenceFlow_178",
+              "outgoing": [
+                "sequenceFlow_178"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -17511,14 +17914,18 @@
               "human_performers": [],
               "id": "reviewInvoice",
               "implementation": "webService",
-              "incoming": "invoiceNotApproved",
+              "incoming": [
+                "invoiceNotApproved"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Rechnung kl\u00e4ren",
-              "outgoing": "sequenceFlow_183",
+              "outgoing": [
+                "sequenceFlow_183"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -17611,14 +18018,18 @@
               "human_performers": [],
               "id": "prepareBankTransfer",
               "implementation": "webService",
-              "incoming": "invoiceApproved",
+              "incoming": [
+                "invoiceApproved"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Prepare\r\nBank\r\nTransfer",
-              "outgoing": "SequenceFlow_2",
+              "outgoing": [
+                "SequenceFlow_2"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -17707,7 +18118,19 @@
               }
             }
           },
-          "flow_node_refs": "['sid-36EA43D1-0FE6-4197-AC57-7A43785B784B', 'sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF', 'sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44', 'sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D', 'sid-40EC6574-E644-425C-8CE7-EE384F0C3520', 'sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD', 'sid-F0D29912-929D-491C-8D23-73BD80CF980A', 'sid-B548B980-12E3-408E-9AC4-7031B85A8F2D', 'sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D', 'sid-0E349B8B-14A7-4565-988A-38F3A9B624D2', 'sid-282524E6-660F-431D-8F19-1C3E9E9DE817']",
+          "flow_node_refs": [
+            "sid-36EA43D1-0FE6-4197-AC57-7A43785B784B",
+            "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
+            "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
+            "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
+            "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
+            "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
+            "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
+            "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
+            "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
+            "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
+            "sid-282524E6-660F-431D-8F19-1C3E9E9DE817"
+          ],
           "id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
           "name": null,
           "partition_element": null,
@@ -18015,7 +18438,13 @@
           }
         }
       },
-      "flow_node_refs": "['assignApprover', 'reviewInvoice', 'reviewSuccessful_gw', 'invoiceNotProcessed', 'StartEvent_1']",
+      "flow_node_refs": [
+        "assignApprover",
+        "reviewInvoice",
+        "reviewSuccessful_gw",
+        "invoiceNotProcessed",
+        "StartEvent_1"
+      ],
       "id": "teamAssistant",
       "name": "Team Assistant",
       "partition_element": null,
@@ -18047,5 +18476,577 @@
       },
       "participant_band_kind": null
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "sid-46891B57-A9D3-4A8B-AEBF-D4BA5F3961AD",
+      "property": "process_ref",
+      "reference_id": "sid-5FBB6CB3-8A7C-42B5-9024-15BB2684EC57"
+    },
+    {
+      "element_id": "Process_Engine_1",
+      "property": "process_ref",
+      "reference_id": "bpmn-miwg-test-case-c.1.0"
+    },
+    {
+      "element_id": "sid-915AC9A0-CD35-4DF2-93F7-4535397622F8",
+      "property": "source_ref",
+      "reference_id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D"
+    },
+    {
+      "element_id": "sid-915AC9A0-CD35-4DF2-93F7-4535397622F8",
+      "property": "target_ref",
+      "reference_id": "reviewInvoice"
+    },
+    {
+      "element_id": "sid-AB6EB7C8-DF5E-42C2-88D0-FA166583AF15",
+      "property": "source_ref",
+      "reference_id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD"
+    },
+    {
+      "element_id": "sid-AB6EB7C8-DF5E-42C2-88D0-FA166583AF15",
+      "property": "target_ref",
+      "reference_id": "assignApprover"
+    },
+    {
+      "element_id": "sid-7A070DED-8B83-48E1-88A1-5543C481E7BC",
+      "property": "source_ref",
+      "reference_id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF"
+    },
+    {
+      "element_id": "sid-7A070DED-8B83-48E1-88A1-5543C481E7BC",
+      "property": "target_ref",
+      "reference_id": "StartEvent_1"
+    },
+    {
+      "element_id": "sid-90902E27-C1CD-4F90-A8F2-486DA4F42117",
+      "property": "source_ref",
+      "reference_id": "assignApprover"
+    },
+    {
+      "element_id": "sid-90902E27-C1CD-4F90-A8F2-486DA4F42117",
+      "property": "target_ref",
+      "reference_id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520"
+    },
+    {
+      "element_id": "sid-0518A412-1ED3-4CFD-A75C-69FF37EFFC16",
+      "property": "source_ref",
+      "reference_id": "reviewInvoice"
+    },
+    {
+      "element_id": "sid-0518A412-1ED3-4CFD-A75C-69FF37EFFC16",
+      "property": "target_ref",
+      "reference_id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-36EA43D1-0FE6-4197-AC57-7A43785B784B"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2"
+    },
+    {
+      "element_id": "sid-744AEFB3-C93D-46A3-8976-EFA91784A51F",
+      "property": "flow_node_refs",
+      "reference_id": "sid-282524E6-660F-431D-8F19-1C3E9E9DE817"
+    },
+    {
+      "element_id": "sid-36EA43D1-0FE6-4197-AC57-7A43785B784B",
+      "property": "outgoing",
+      "reference_id": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+    },
+    {
+      "element_id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
+      "property": "incoming",
+      "reference_id": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF"
+    },
+    {
+      "element_id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF",
+      "property": "outgoing",
+      "reference_id": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+    },
+    {
+      "element_id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
+      "property": "incoming",
+      "reference_id": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96"
+    },
+    {
+      "element_id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44",
+      "property": "outgoing",
+      "reference_id": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+    },
+    {
+      "element_id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
+      "property": "incoming",
+      "reference_id": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+    },
+    {
+      "element_id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD",
+      "property": "outgoing",
+      "reference_id": "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+    },
+    {
+      "element_id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
+      "property": "incoming",
+      "reference_id": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+    },
+    {
+      "element_id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D",
+      "property": "outgoing",
+      "reference_id": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+    },
+    {
+      "element_id": "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D",
+      "property": "incoming",
+      "reference_id": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+    },
+    {
+      "element_id": "sid-282524E6-660F-431D-8F19-1C3E9E9DE817",
+      "property": "incoming",
+      "reference_id": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1"
+    },
+    {
+      "element_id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
+      "property": "incoming",
+      "reference_id": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178"
+    },
+    {
+      "element_id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520",
+      "property": "outgoing",
+      "reference_id": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4"
+    },
+    {
+      "element_id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
+      "property": "incoming",
+      "reference_id": "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+    },
+    {
+      "element_id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D",
+      "property": "outgoing",
+      "reference_id": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB"
+    },
+    {
+      "element_id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
+      "property": "incoming",
+      "reference_id": "sid-71EF9530-A32A-49BC-A783-9B98A5801362"
+    },
+    {
+      "element_id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2",
+      "property": "outgoing",
+      "reference_id": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183"
+    },
+    {
+      "element_id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
+      "property": "incoming",
+      "reference_id": "sid-26030150-7369-4B7F-8264-B3ABC62BA735"
+    },
+    {
+      "element_id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
+      "property": "outgoing",
+      "reference_id": "sid-71EF9530-A32A-49BC-A783-9B98A5801362"
+    },
+    {
+      "element_id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A",
+      "property": "outgoing",
+      "reference_id": "sid-4686AFBC-E33A-4657-95A0-B2E27E704152"
+    },
+    {
+      "element_id": "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+      "property": "source_ref",
+      "reference_id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A"
+    },
+    {
+      "element_id": "sid-71EF9530-A32A-49BC-A783-9B98A5801362",
+      "property": "target_ref",
+      "reference_id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2"
+    },
+    {
+      "element_id": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+      "property": "source_ref",
+      "reference_id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44"
+    },
+    {
+      "element_id": "sid-C0540F47-C3C0-4FA8-B000-6D87640A6178",
+      "property": "target_ref",
+      "reference_id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520"
+    },
+    {
+      "element_id": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+      "property": "source_ref",
+      "reference_id": "sid-40EC6574-E644-425C-8CE7-EE384F0C3520"
+    },
+    {
+      "element_id": "sid-4AD2006C-9290-42B0-A904-DD8076B791C4",
+      "property": "target_ref",
+      "reference_id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD"
+    },
+    {
+      "element_id": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+      "property": "source_ref",
+      "reference_id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF"
+    },
+    {
+      "element_id": "sid-3E8B2FCF-E408-4A5D-9455-8FDE7BB3EF96",
+      "property": "target_ref",
+      "reference_id": "sid-CFAC8502-0E69-4F08-BE36-8499B8C0FA44"
+    },
+    {
+      "element_id": "sid-4686AFBC-E33A-4657-95A0-B2E27E704152",
+      "property": "source_ref",
+      "reference_id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A"
+    },
+    {
+      "element_id": "sid-4686AFBC-E33A-4657-95A0-B2E27E704152",
+      "property": "target_ref",
+      "reference_id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D"
+    },
+    {
+      "element_id": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+      "property": "source_ref",
+      "reference_id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D"
+    },
+    {
+      "element_id": "sid-6CB8539C-E02A-4496-94E7-17FAECB0D4B1",
+      "property": "target_ref",
+      "reference_id": "sid-282524E6-660F-431D-8F19-1C3E9E9DE817"
+    },
+    {
+      "element_id": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+      "property": "source_ref",
+      "reference_id": "sid-B548B980-12E3-408E-9AC4-7031B85A8F2D"
+    },
+    {
+      "element_id": "sid-D03CC374-8575-4F38-98B4-4DFF014C43CB",
+      "property": "target_ref",
+      "reference_id": "sid-6FC20E19-AF3A-4A77-8588-2D671C98D93D"
+    },
+    {
+      "element_id": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+      "property": "source_ref",
+      "reference_id": "sid-0E349B8B-14A7-4565-988A-38F3A9B624D2"
+    },
+    {
+      "element_id": "sid-3019478F-48D5-4B85-95B1-E192B9BE4183",
+      "property": "target_ref",
+      "reference_id": "sid-BC9AC0B6-1785-4E35-A974-7FEF1A586B9D"
+    },
+    {
+      "element_id": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+      "property": "source_ref",
+      "reference_id": "sid-64AFCE49-96A2-4A51-96CB-9DF689C37DAD"
+    },
+    {
+      "element_id": "sid-26030150-7369-4B7F-8264-B3ABC62BA735",
+      "property": "target_ref",
+      "reference_id": "sid-F0D29912-929D-491C-8D23-73BD80CF980A"
+    },
+    {
+      "element_id": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+      "property": "source_ref",
+      "reference_id": "sid-36EA43D1-0FE6-4197-AC57-7A43785B784B"
+    },
+    {
+      "element_id": "sid-7971C38C-2EF5-41F2-A24E-3FFCA069EDBF",
+      "property": "target_ref",
+      "reference_id": "sid-05039C4F-59F7-4CBD-8C84-D35E27C7B5EF"
+    },
+    {
+      "element_id": "Approver",
+      "property": "flow_node_refs",
+      "reference_id": "approveInvoice"
+    },
+    {
+      "element_id": "Approver",
+      "property": "flow_node_refs",
+      "reference_id": "invoice_approved"
+    },
+    {
+      "element_id": "teamAssistant",
+      "property": "flow_node_refs",
+      "reference_id": "assignApprover"
+    },
+    {
+      "element_id": "teamAssistant",
+      "property": "flow_node_refs",
+      "reference_id": "reviewInvoice"
+    },
+    {
+      "element_id": "teamAssistant",
+      "property": "flow_node_refs",
+      "reference_id": "reviewSuccessful_gw"
+    },
+    {
+      "element_id": "teamAssistant",
+      "property": "flow_node_refs",
+      "reference_id": "invoiceNotProcessed"
+    },
+    {
+      "element_id": "teamAssistant",
+      "property": "flow_node_refs",
+      "reference_id": "StartEvent_1"
+    },
+    {
+      "element_id": "Accountant",
+      "property": "flow_node_refs",
+      "reference_id": "prepareBankTransfer"
+    },
+    {
+      "element_id": "Accountant",
+      "property": "flow_node_refs",
+      "reference_id": "invoiceProcessed"
+    },
+    {
+      "element_id": "Accountant",
+      "property": "flow_node_refs",
+      "reference_id": "archiveInvoice"
+    },
+    {
+      "element_id": "approveInvoice",
+      "property": "incoming",
+      "reference_id": "reviewSuccessful"
+    },
+    {
+      "element_id": "approveInvoice",
+      "property": "incoming",
+      "reference_id": "sequenceFlow_178"
+    },
+    {
+      "element_id": "approveInvoice",
+      "property": "outgoing",
+      "reference_id": "sequenceFlow_180"
+    },
+    {
+      "element_id": "assignApprover",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_1"
+    },
+    {
+      "element_id": "assignApprover",
+      "property": "outgoing",
+      "reference_id": "sequenceFlow_178"
+    },
+    {
+      "element_id": "reviewInvoice",
+      "property": "incoming",
+      "reference_id": "invoiceNotApproved"
+    },
+    {
+      "element_id": "reviewInvoice",
+      "property": "outgoing",
+      "reference_id": "sequenceFlow_183"
+    },
+    {
+      "element_id": "prepareBankTransfer",
+      "property": "incoming",
+      "reference_id": "invoiceApproved"
+    },
+    {
+      "element_id": "prepareBankTransfer",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_2"
+    },
+    {
+      "element_id": "invoice_approved",
+      "property": "incoming",
+      "reference_id": "sequenceFlow_180"
+    },
+    {
+      "element_id": "invoice_approved",
+      "property": "outgoing",
+      "reference_id": "invoiceApproved"
+    },
+    {
+      "element_id": "invoice_approved",
+      "property": "outgoing",
+      "reference_id": "invoiceNotApproved"
+    },
+    {
+      "element_id": "reviewSuccessful_gw",
+      "property": "incoming",
+      "reference_id": "sequenceFlow_183"
+    },
+    {
+      "element_id": "reviewSuccessful_gw",
+      "property": "outgoing",
+      "reference_id": "reviewSuccessful"
+    },
+    {
+      "element_id": "reviewSuccessful_gw",
+      "property": "outgoing",
+      "reference_id": "reviewNotSuccessful"
+    },
+    {
+      "element_id": "invoiceNotProcessed",
+      "property": "incoming",
+      "reference_id": "reviewNotSuccessful"
+    },
+    {
+      "element_id": "invoiceProcessed",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_3"
+    },
+    {
+      "element_id": "sid-14929637-5f1e-4d27-811c-ef5e4ddaa4c7",
+      "property": "message_ref",
+      "reference_id": "sid-328811a0-7f72-468f-92de-6ab19e353312"
+    },
+    {
+      "element_id": "StartEvent_1",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_1"
+    },
+    {
+      "element_id": "archiveInvoice",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_2"
+    },
+    {
+      "element_id": "archiveInvoice",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_3"
+    },
+    {
+      "element_id": "invoiceApproved",
+      "property": "source_ref",
+      "reference_id": "invoice_approved"
+    },
+    {
+      "element_id": "invoiceApproved",
+      "property": "target_ref",
+      "reference_id": "prepareBankTransfer"
+    },
+    {
+      "element_id": "invoiceNotApproved",
+      "property": "source_ref",
+      "reference_id": "invoice_approved"
+    },
+    {
+      "element_id": "invoiceNotApproved",
+      "property": "target_ref",
+      "reference_id": "reviewInvoice"
+    },
+    {
+      "element_id": "reviewSuccessful",
+      "property": "source_ref",
+      "reference_id": "reviewSuccessful_gw"
+    },
+    {
+      "element_id": "reviewSuccessful",
+      "property": "target_ref",
+      "reference_id": "approveInvoice"
+    },
+    {
+      "element_id": "reviewNotSuccessful",
+      "property": "source_ref",
+      "reference_id": "reviewSuccessful_gw"
+    },
+    {
+      "element_id": "reviewNotSuccessful",
+      "property": "target_ref",
+      "reference_id": "invoiceNotProcessed"
+    },
+    {
+      "element_id": "sequenceFlow_180",
+      "property": "source_ref",
+      "reference_id": "approveInvoice"
+    },
+    {
+      "element_id": "sequenceFlow_180",
+      "property": "target_ref",
+      "reference_id": "invoice_approved"
+    },
+    {
+      "element_id": "sequenceFlow_183",
+      "property": "source_ref",
+      "reference_id": "reviewInvoice"
+    },
+    {
+      "element_id": "sequenceFlow_183",
+      "property": "target_ref",
+      "reference_id": "reviewSuccessful_gw"
+    },
+    {
+      "element_id": "sequenceFlow_178",
+      "property": "source_ref",
+      "reference_id": "assignApprover"
+    },
+    {
+      "element_id": "sequenceFlow_178",
+      "property": "target_ref",
+      "reference_id": "approveInvoice"
+    },
+    {
+      "element_id": "SequenceFlow_2",
+      "property": "source_ref",
+      "reference_id": "prepareBankTransfer"
+    },
+    {
+      "element_id": "SequenceFlow_2",
+      "property": "target_ref",
+      "reference_id": "archiveInvoice"
+    },
+    {
+      "element_id": "SequenceFlow_3",
+      "property": "source_ref",
+      "reference_id": "archiveInvoice"
+    },
+    {
+      "element_id": "SequenceFlow_3",
+      "property": "target_ref",
+      "reference_id": "invoiceProcessed"
+    },
+    {
+      "element_id": "SequenceFlow_1",
+      "property": "source_ref",
+      "reference_id": "StartEvent_1"
+    },
+    {
+      "element_id": "SequenceFlow_1",
+      "property": "target_ref",
+      "reference_id": "assignApprover"
+    }
+  ]
 }

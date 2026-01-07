@@ -705,7 +705,10 @@
               }
             },
             "id": "_To9ZsTOCEeSknpIVFCxNIQ",
-            "incoming": "['_To9Z7TOCEeSknpIVFCxNIQ', '_To9Z9jOCEeSknpIVFCxNIQ']",
+            "incoming": [
+              "_To9Z7TOCEeSknpIVFCxNIQ",
+              "_To9Z9jOCEeSknpIVFCxNIQ"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -739,10 +742,16 @@
             },
             "gateway_direction": "Unspecified",
             "id": "_To9ZyjOCEeSknpIVFCxNIQ",
-            "incoming": "_To9Z5zOCEeSknpIVFCxNIQ",
+            "incoming": [
+              "_To9Z5zOCEeSknpIVFCxNIQ"
+            ],
             "monitoring": null,
             "name": "Gateway\r\n(Split Flow)",
-            "outgoing": "['_To9Z6jOCEeSknpIVFCxNIQ', '_To9Z-TOCEeSknpIVFCxNIQ', '_To9Z_DOCEeSknpIVFCxNIQ']"
+            "outgoing": [
+              "_To9Z6jOCEeSknpIVFCxNIQ",
+              "_To9Z-TOCEeSknpIVFCxNIQ",
+              "_To9Z_DOCEeSknpIVFCxNIQ"
+            ]
           },
           {
             "auditing": null,
@@ -762,10 +771,15 @@
             },
             "gateway_direction": "Unspecified",
             "id": "_To9Z2TOCEeSknpIVFCxNIQ",
-            "incoming": "['_To9Z8DOCEeSknpIVFCxNIQ', '_To9Z8zOCEeSknpIVFCxNIQ']",
+            "incoming": [
+              "_To9Z8DOCEeSknpIVFCxNIQ",
+              "_To9Z8zOCEeSknpIVFCxNIQ"
+            ],
             "monitoring": null,
             "name": "Gateway\n(Merge Flows)",
-            "outgoing": "_To9Z9jOCEeSknpIVFCxNIQ"
+            "outgoing": [
+              "_To9Z9jOCEeSknpIVFCxNIQ"
+            ]
           }
         ],
         "extension_elements": {
@@ -1236,7 +1250,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Start Event",
-            "outgoing": "_To9Z5DOCEeSknpIVFCxNIQ",
+            "outgoing": [
+              "_To9Z5DOCEeSknpIVFCxNIQ"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1270,14 +1286,18 @@
             },
             "human_performers": [],
             "id": "_To9ZpzOCEeSknpIVFCxNIQ",
-            "incoming": "_To9Z5DOCEeSknpIVFCxNIQ",
+            "incoming": [
+              "_To9Z5DOCEeSknpIVFCxNIQ"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 1",
-            "outgoing": "_To9Z5zOCEeSknpIVFCxNIQ",
+            "outgoing": [
+              "_To9Z5zOCEeSknpIVFCxNIQ"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1306,14 +1326,19 @@
             },
             "human_performers": [],
             "id": "_To9ZtjOCEeSknpIVFCxNIQ",
-            "incoming": "_To9Z6jOCEeSknpIVFCxNIQ",
+            "incoming": [
+              "_To9Z6jOCEeSknpIVFCxNIQ"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 2",
-            "outgoing": "['_To9Z7TOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw']",
+            "outgoing": [
+              "_To9Z7TOCEeSknpIVFCxNIQ",
+              "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1342,14 +1367,20 @@
             },
             "human_performers": [],
             "id": "_To9ZwDOCEeSknpIVFCxNIQ",
-            "incoming": "['_To9Z-TOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw', 'Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw']",
+            "incoming": [
+              "_To9Z-TOCEeSknpIVFCxNIQ",
+              "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw",
+              "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 3",
-            "outgoing": "_To9Z8DOCEeSknpIVFCxNIQ",
+            "outgoing": [
+              "_To9Z8DOCEeSknpIVFCxNIQ"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1378,14 +1409,19 @@
             },
             "human_performers": [],
             "id": "_To9ZzzOCEeSknpIVFCxNIQ",
-            "incoming": "_To9Z_DOCEeSknpIVFCxNIQ",
+            "incoming": [
+              "_To9Z_DOCEeSknpIVFCxNIQ"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 4",
-            "outgoing": "['_To9Z8zOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw']",
+            "outgoing": [
+              "_To9Z8zOCEeSknpIVFCxNIQ",
+              "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2118,7 +2154,10 @@
                 }
               },
               "id": "_To9ZsTOCEeSknpIVFCxNIQ",
-              "incoming": "['_To9Z7TOCEeSknpIVFCxNIQ', '_To9Z9jOCEeSknpIVFCxNIQ']",
+              "incoming": [
+                "_To9Z7TOCEeSknpIVFCxNIQ",
+                "_To9Z9jOCEeSknpIVFCxNIQ"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -2152,10 +2191,16 @@
               },
               "gateway_direction": "Unspecified",
               "id": "_To9ZyjOCEeSknpIVFCxNIQ",
-              "incoming": "_To9Z5zOCEeSknpIVFCxNIQ",
+              "incoming": [
+                "_To9Z5zOCEeSknpIVFCxNIQ"
+              ],
               "monitoring": null,
               "name": "Gateway\r\n(Split Flow)",
-              "outgoing": "['_To9Z6jOCEeSknpIVFCxNIQ', '_To9Z-TOCEeSknpIVFCxNIQ', '_To9Z_DOCEeSknpIVFCxNIQ']"
+              "outgoing": [
+                "_To9Z6jOCEeSknpIVFCxNIQ",
+                "_To9Z-TOCEeSknpIVFCxNIQ",
+                "_To9Z_DOCEeSknpIVFCxNIQ"
+              ]
             },
             {
               "auditing": null,
@@ -2175,10 +2220,15 @@
               },
               "gateway_direction": "Unspecified",
               "id": "_To9Z2TOCEeSknpIVFCxNIQ",
-              "incoming": "['_To9Z8DOCEeSknpIVFCxNIQ', '_To9Z8zOCEeSknpIVFCxNIQ']",
+              "incoming": [
+                "_To9Z8DOCEeSknpIVFCxNIQ",
+                "_To9Z8zOCEeSknpIVFCxNIQ"
+              ],
               "monitoring": null,
               "name": "Gateway\n(Merge Flows)",
-              "outgoing": "_To9Z9jOCEeSknpIVFCxNIQ"
+              "outgoing": [
+                "_To9Z9jOCEeSknpIVFCxNIQ"
+              ]
             }
           ],
           "extension_elements": {
@@ -2649,7 +2699,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event",
-              "outgoing": "_To9Z5DOCEeSknpIVFCxNIQ",
+              "outgoing": [
+                "_To9Z5DOCEeSknpIVFCxNIQ"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -2683,14 +2735,18 @@
               },
               "human_performers": [],
               "id": "_To9ZpzOCEeSknpIVFCxNIQ",
-              "incoming": "_To9Z5DOCEeSknpIVFCxNIQ",
+              "incoming": [
+                "_To9Z5DOCEeSknpIVFCxNIQ"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 1",
-              "outgoing": "_To9Z5zOCEeSknpIVFCxNIQ",
+              "outgoing": [
+                "_To9Z5zOCEeSknpIVFCxNIQ"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -2719,14 +2775,19 @@
               },
               "human_performers": [],
               "id": "_To9ZtjOCEeSknpIVFCxNIQ",
-              "incoming": "_To9Z6jOCEeSknpIVFCxNIQ",
+              "incoming": [
+                "_To9Z6jOCEeSknpIVFCxNIQ"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 2",
-              "outgoing": "['_To9Z7TOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw']",
+              "outgoing": [
+                "_To9Z7TOCEeSknpIVFCxNIQ",
+                "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -2755,14 +2816,20 @@
               },
               "human_performers": [],
               "id": "_To9ZwDOCEeSknpIVFCxNIQ",
-              "incoming": "['_To9Z-TOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw', 'Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw']",
+              "incoming": [
+                "_To9Z-TOCEeSknpIVFCxNIQ",
+                "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw",
+                "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 3",
-              "outgoing": "_To9Z8DOCEeSknpIVFCxNIQ",
+              "outgoing": [
+                "_To9Z8DOCEeSknpIVFCxNIQ"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -2791,14 +2858,19 @@
               },
               "human_performers": [],
               "id": "_To9ZzzOCEeSknpIVFCxNIQ",
-              "incoming": "_To9Z_DOCEeSknpIVFCxNIQ",
+              "incoming": [
+                "_To9Z_DOCEeSknpIVFCxNIQ"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 4",
-              "outgoing": "['_To9Z8zOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw']",
+              "outgoing": [
+                "_To9Z8zOCEeSknpIVFCxNIQ",
+                "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3977,10 +4049,15 @@
       },
       "gateway_direction": "Unspecified",
       "id": "_To9Z2TOCEeSknpIVFCxNIQ",
-      "incoming": "['_To9Z8DOCEeSknpIVFCxNIQ', '_To9Z8zOCEeSknpIVFCxNIQ']",
+      "incoming": [
+        "_To9Z8DOCEeSknpIVFCxNIQ",
+        "_To9Z8zOCEeSknpIVFCxNIQ"
+      ],
       "monitoring": null,
       "name": "Gateway\n(Merge Flows)",
-      "outgoing": "_To9Z9jOCEeSknpIVFCxNIQ"
+      "outgoing": [
+        "_To9Z9jOCEeSknpIVFCxNIQ"
+      ]
     },
     "_To9Z5DOCEeSknpIVFCxNIQ": {
       "auditing": null,
@@ -4283,7 +4360,10 @@
             }
           },
           "id": "_To9ZsTOCEeSknpIVFCxNIQ",
-          "incoming": "['_To9Z7TOCEeSknpIVFCxNIQ', '_To9Z9jOCEeSknpIVFCxNIQ']",
+          "incoming": [
+            "_To9Z7TOCEeSknpIVFCxNIQ",
+            "_To9Z9jOCEeSknpIVFCxNIQ"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -4317,10 +4397,16 @@
           },
           "gateway_direction": "Unspecified",
           "id": "_To9ZyjOCEeSknpIVFCxNIQ",
-          "incoming": "_To9Z5zOCEeSknpIVFCxNIQ",
+          "incoming": [
+            "_To9Z5zOCEeSknpIVFCxNIQ"
+          ],
           "monitoring": null,
           "name": "Gateway\r\n(Split Flow)",
-          "outgoing": "['_To9Z6jOCEeSknpIVFCxNIQ', '_To9Z-TOCEeSknpIVFCxNIQ', '_To9Z_DOCEeSknpIVFCxNIQ']"
+          "outgoing": [
+            "_To9Z6jOCEeSknpIVFCxNIQ",
+            "_To9Z-TOCEeSknpIVFCxNIQ",
+            "_To9Z_DOCEeSknpIVFCxNIQ"
+          ]
         },
         {
           "auditing": null,
@@ -4340,10 +4426,15 @@
           },
           "gateway_direction": "Unspecified",
           "id": "_To9Z2TOCEeSknpIVFCxNIQ",
-          "incoming": "['_To9Z8DOCEeSknpIVFCxNIQ', '_To9Z8zOCEeSknpIVFCxNIQ']",
+          "incoming": [
+            "_To9Z8DOCEeSknpIVFCxNIQ",
+            "_To9Z8zOCEeSknpIVFCxNIQ"
+          ],
           "monitoring": null,
           "name": "Gateway\n(Merge Flows)",
-          "outgoing": "_To9Z9jOCEeSknpIVFCxNIQ"
+          "outgoing": [
+            "_To9Z9jOCEeSknpIVFCxNIQ"
+          ]
         }
       ],
       "extension_elements": {
@@ -4814,7 +4905,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event",
-          "outgoing": "_To9Z5DOCEeSknpIVFCxNIQ",
+          "outgoing": [
+            "_To9Z5DOCEeSknpIVFCxNIQ"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -4848,14 +4941,18 @@
           },
           "human_performers": [],
           "id": "_To9ZpzOCEeSknpIVFCxNIQ",
-          "incoming": "_To9Z5DOCEeSknpIVFCxNIQ",
+          "incoming": [
+            "_To9Z5DOCEeSknpIVFCxNIQ"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 1",
-          "outgoing": "_To9Z5zOCEeSknpIVFCxNIQ",
+          "outgoing": [
+            "_To9Z5zOCEeSknpIVFCxNIQ"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4884,14 +4981,19 @@
           },
           "human_performers": [],
           "id": "_To9ZtjOCEeSknpIVFCxNIQ",
-          "incoming": "_To9Z6jOCEeSknpIVFCxNIQ",
+          "incoming": [
+            "_To9Z6jOCEeSknpIVFCxNIQ"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 2",
-          "outgoing": "['_To9Z7TOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw']",
+          "outgoing": [
+            "_To9Z7TOCEeSknpIVFCxNIQ",
+            "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4920,14 +5022,20 @@
           },
           "human_performers": [],
           "id": "_To9ZwDOCEeSknpIVFCxNIQ",
-          "incoming": "['_To9Z-TOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw', 'Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw']",
+          "incoming": [
+            "_To9Z-TOCEeSknpIVFCxNIQ",
+            "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw",
+            "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 3",
-          "outgoing": "_To9Z8DOCEeSknpIVFCxNIQ",
+          "outgoing": [
+            "_To9Z8DOCEeSknpIVFCxNIQ"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4956,14 +5064,19 @@
           },
           "human_performers": [],
           "id": "_To9ZzzOCEeSknpIVFCxNIQ",
-          "incoming": "_To9Z_DOCEeSknpIVFCxNIQ",
+          "incoming": [
+            "_To9Z_DOCEeSknpIVFCxNIQ"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 4",
-          "outgoing": "['_To9Z8zOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw']",
+          "outgoing": [
+            "_To9Z8zOCEeSknpIVFCxNIQ",
+            "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -5007,7 +5120,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event",
-      "outgoing": "_To9Z5DOCEeSknpIVFCxNIQ",
+      "outgoing": [
+        "_To9Z5DOCEeSknpIVFCxNIQ"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -5036,14 +5151,18 @@
       },
       "human_performers": [],
       "id": "_To9ZpzOCEeSknpIVFCxNIQ",
-      "incoming": "_To9Z5DOCEeSknpIVFCxNIQ",
+      "incoming": [
+        "_To9Z5DOCEeSknpIVFCxNIQ"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 1",
-      "outgoing": "_To9Z5zOCEeSknpIVFCxNIQ",
+      "outgoing": [
+        "_To9Z5zOCEeSknpIVFCxNIQ"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -5076,7 +5195,10 @@
         }
       },
       "id": "_To9ZsTOCEeSknpIVFCxNIQ",
-      "incoming": "['_To9Z7TOCEeSknpIVFCxNIQ', '_To9Z9jOCEeSknpIVFCxNIQ']",
+      "incoming": [
+        "_To9Z7TOCEeSknpIVFCxNIQ",
+        "_To9Z9jOCEeSknpIVFCxNIQ"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -5109,14 +5231,19 @@
       },
       "human_performers": [],
       "id": "_To9ZtjOCEeSknpIVFCxNIQ",
-      "incoming": "_To9Z6jOCEeSknpIVFCxNIQ",
+      "incoming": [
+        "_To9Z6jOCEeSknpIVFCxNIQ"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 2",
-      "outgoing": "['_To9Z7TOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw']",
+      "outgoing": [
+        "_To9Z7TOCEeSknpIVFCxNIQ",
+        "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -5145,14 +5272,20 @@
       },
       "human_performers": [],
       "id": "_To9ZwDOCEeSknpIVFCxNIQ",
-      "incoming": "['_To9Z-TOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw', 'Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw']",
+      "incoming": [
+        "_To9Z-TOCEeSknpIVFCxNIQ",
+        "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw",
+        "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 3",
-      "outgoing": "_To9Z8DOCEeSknpIVFCxNIQ",
+      "outgoing": [
+        "_To9Z8DOCEeSknpIVFCxNIQ"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -5178,10 +5311,16 @@
       },
       "gateway_direction": "Unspecified",
       "id": "_To9ZyjOCEeSknpIVFCxNIQ",
-      "incoming": "_To9Z5zOCEeSknpIVFCxNIQ",
+      "incoming": [
+        "_To9Z5zOCEeSknpIVFCxNIQ"
+      ],
       "monitoring": null,
       "name": "Gateway\r\n(Split Flow)",
-      "outgoing": "['_To9Z6jOCEeSknpIVFCxNIQ', '_To9Z-TOCEeSknpIVFCxNIQ', '_To9Z_DOCEeSknpIVFCxNIQ']"
+      "outgoing": [
+        "_To9Z6jOCEeSknpIVFCxNIQ",
+        "_To9Z-TOCEeSknpIVFCxNIQ",
+        "_To9Z_DOCEeSknpIVFCxNIQ"
+      ]
     },
     "_To9ZzzOCEeSknpIVFCxNIQ": {
       "auditing": null,
@@ -5204,14 +5343,19 @@
       },
       "human_performers": [],
       "id": "_To9ZzzOCEeSknpIVFCxNIQ",
-      "incoming": "_To9Z_DOCEeSknpIVFCxNIQ",
+      "incoming": [
+        "_To9Z_DOCEeSknpIVFCxNIQ"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 4",
-      "outgoing": "['_To9Z8zOCEeSknpIVFCxNIQ', 'Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw']",
+      "outgoing": [
+        "_To9Z8zOCEeSknpIVFCxNIQ",
+        "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6138,5 +6282,242 @@
       "diagram_elements": [],
       "id": "plane__To9ZoDOCEeSknpIVFCxNIQ"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "_To9ZojOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z5DOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZpzOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z5DOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZpzOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z5zOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZtjOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z6jOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZtjOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z7TOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZtjOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw"
+    },
+    {
+      "element_id": "_To9ZtjOCEeSknpIVFCxNIQ",
+      "property": "default",
+      "reference_id": "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw"
+    },
+    {
+      "element_id": "_To9ZwDOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z-TOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZwDOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw"
+    },
+    {
+      "element_id": "_To9ZwDOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+    },
+    {
+      "element_id": "_To9ZwDOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z8DOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZzzOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z_DOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZzzOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z8zOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZzzOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+    },
+    {
+      "element_id": "_To9ZzzOCEeSknpIVFCxNIQ",
+      "property": "default",
+      "reference_id": "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw"
+    },
+    {
+      "element_id": "_To9ZsTOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z7TOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZsTOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z9jOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZyjOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z5zOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZyjOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z6jOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZyjOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z-TOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZyjOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z_DOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9ZyjOCEeSknpIVFCxNIQ",
+      "property": "default",
+      "reference_id": "_To9Z6jOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z2TOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z8DOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z2TOCEeSknpIVFCxNIQ",
+      "property": "incoming",
+      "reference_id": "_To9Z8zOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z2TOCEeSknpIVFCxNIQ",
+      "property": "outgoing",
+      "reference_id": "_To9Z9jOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z5DOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9ZojOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z5DOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9ZpzOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z5zOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9ZpzOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z5zOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9ZyjOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z6jOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9ZyjOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z6jOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9ZtjOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z7TOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9ZtjOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z7TOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9ZsTOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z8DOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9ZwDOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z8DOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9Z2TOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z8zOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9ZzzOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z8zOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9Z2TOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z9jOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9Z2TOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z9jOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9ZsTOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z-TOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9ZyjOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z-TOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9ZwDOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z_DOCEeSknpIVFCxNIQ",
+      "property": "source_ref",
+      "reference_id": "_To9ZyjOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "_To9Z_DOCEeSknpIVFCxNIQ",
+      "property": "target_ref",
+      "reference_id": "_To9ZzzOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw",
+      "property": "source_ref",
+      "reference_id": "_To9ZtjOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "Bpmn_SequenceFlow_edepQQbbEealeL5I4Yl3Dw",
+      "property": "target_ref",
+      "reference_id": "_To9ZwDOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw",
+      "property": "source_ref",
+      "reference_id": "_To9ZzzOCEeSknpIVFCxNIQ"
+    },
+    {
+      "element_id": "Bpmn_SequenceFlow_f9nmUQbbEealeL5I4Yl3Dw",
+      "property": "target_ref",
+      "reference_id": "_To9ZwDOCEeSknpIVFCxNIQ"
+    }
+  ]
 }

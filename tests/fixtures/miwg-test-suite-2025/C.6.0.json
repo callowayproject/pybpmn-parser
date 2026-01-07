@@ -2299,9 +2299,7 @@
             "data_output": [],
             "data_output_association": [],
             "documentation": [],
-            "error_event_definition": [
-              null
-            ],
+            "error_event_definition": null,
             "escalation_event_definition": [],
             "event_definition": [],
             "event_definition_ref": [],
@@ -2312,7 +2310,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": null,
-            "outgoing": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+            "outgoing": [
+              "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2331,9 +2331,7 @@
             "data_output": [],
             "data_output_association": [],
             "documentation": [],
-            "error_event_definition": [
-              null
-            ],
+            "error_event_definition": null,
             "escalation_event_definition": [],
             "event_definition": [],
             "event_definition_ref": [],
@@ -2344,7 +2342,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": null,
-            "outgoing": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+            "outgoing": [
+              "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2374,7 +2374,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "24 Hours",
-            "outgoing": "_a0c99000-31e1-4de9-baf7-45c2d09ebbff",
+            "outgoing": [
+              "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2417,7 +2419,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_88247168-b457-4663-aad0-753a0236c8df",
-            "incoming": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+            "incoming": [
+              "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2444,7 +2448,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_7eb87eb8-0d7a-445b-b768-90d754a938ed",
-            "incoming": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+            "incoming": [
+              "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2471,7 +2477,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_42e03d0f-6c6b-4493-971f-c6928eb563b0",
-            "incoming": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+            "incoming": [
+              "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2498,7 +2506,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_babdfa54-b55f-463f-9341-424b42db9760",
-            "incoming": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+            "incoming": [
+              "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2525,7 +2535,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_a68b0941-b7e3-4791-8e13-fd9622e4448c",
-            "incoming": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+            "incoming": [
+              "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2547,11 +2559,17 @@
             "extension_elements": null,
             "gateway_direction": "Diverging",
             "id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d",
-            "incoming": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+            "incoming": [
+              "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+            ],
             "instantiate": false,
             "monitoring": null,
             "name": null,
-            "outgoing": "['_16857297-f0fb-4027-87f6-633a76267c84', '_54044d90-3a1e-4a49-99a3-1497045c7235', '_2403da0e-5b49-43fa-ba00-ec6c1f3e4790']"
+            "outgoing": [
+              "_16857297-f0fb-4027-87f6-633a76267c84",
+              "_54044d90-3a1e-4a49-99a3-1497045c7235",
+              "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
+            ]
           }
         ],
         "events": [],
@@ -2579,14 +2597,16 @@
             "event_definition_ref": [],
             "extension_elements": null,
             "id": "_15fef309-6718-4352-9b71-f757bcd8c023",
-            "incoming": "_54044d90-3a1e-4a49-99a3-1497045c7235",
-            "link_event_definition": [],
-            "message_event_definition": [
-              null
+            "incoming": [
+              "_54044d90-3a1e-4a49-99a3-1497045c7235"
             ],
+            "link_event_definition": [],
+            "message_event_definition": null,
             "monitoring": null,
             "name": "Offer Approved",
-            "outgoing": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+            "outgoing": [
+              "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2609,14 +2629,16 @@
             "event_definition_ref": [],
             "extension_elements": null,
             "id": "_e5c69e92-6f98-47c8-bc22-b75d38620f95",
-            "incoming": "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790",
-            "link_event_definition": [],
-            "message_event_definition": [
-              null
+            "incoming": [
+              "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
             ],
+            "link_event_definition": [],
+            "message_event_definition": null,
             "monitoring": null,
             "name": "Cancel Request",
-            "outgoing": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+            "outgoing": [
+              "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2639,12 +2661,16 @@
             "event_definition_ref": [],
             "extension_elements": null,
             "id": "_87baeef0-f32e-4a93-b802-fdd588aaf729",
-            "incoming": "_16857297-f0fb-4027-87f6-633a76267c84",
+            "incoming": [
+              "_16857297-f0fb-4027-87f6-633a76267c84"
+            ],
             "link_event_definition": [],
             "message_event_definition": [],
             "monitoring": null,
             "name": "24 Hours",
-            "outgoing": "_649072fc-31c7-4e04-bc58-d4442a06f076",
+            "outgoing": [
+              "_649072fc-31c7-4e04-bc58-d4442a06f076"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -2667,9 +2693,7 @@
             "auditing": null,
             "cancel_event_definitions": [],
             "category_value_refs": [],
-            "compensate_event_definitions": [
-              null
-            ],
+            "compensate_event_definitions": null,
             "conditional_event_definitions": [],
             "data_input_associations": [],
             "data_inputs": [],
@@ -2680,13 +2704,17 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_6a5cdbbf-2618-496e-b728-955dc215ef9d",
-            "incoming": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+            "incoming": [
+              "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
             "monitoring": null,
             "name": "Booking",
-            "outgoing": "_c72535b8-43f7-4906-9f18-691e03050c24",
+            "outgoing": [
+              "_c72535b8-43f7-4906-9f18-691e03050c24"
+            ],
             "properties": [],
             "signal_event_definitions": [],
             "terminate_event_definitions": [],
@@ -2722,7 +2750,9 @@
           "id": null,
           "input_sets": [
             {
-              "data_input_refs": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+              "data_input_refs": [
+                "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+              ],
               "documentation": [],
               "extension_elements": null,
               "id": "_41b1bf64-dba0-4ab1-a834-0ee931fb4cab",
@@ -2734,7 +2764,9 @@
           ],
           "output_sets": [
             {
-              "data_output_refs": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
+              "data_output_refs": [
+                "_1a713fab-bf18-4975-afe3-d2bd2820023b"
+              ],
               "documentation": [],
               "extension_elements": null,
               "id": "_2d5ecd07-500d-4693-bb58-8682897d59e2",
@@ -2772,7 +2804,9 @@
             "human_performers": [],
             "id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd",
             "implementation": "##WebService",
-            "incoming": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+            "incoming": [
+              "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -2781,7 +2815,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Request\nCredit Card Information",
             "operation_ref": null,
-            "outgoing": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+            "outgoing": [
+              "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2800,7 +2836,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_ef945053-2c76-4796-8d8b-afc6be8bbfec",
-                "source_ref": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+                "source_ref": [
+                  "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+                ],
                 "target_ref": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
                 "transformation": null
               }
@@ -2811,7 +2849,9 @@
             "human_performers": [],
             "id": "_22612d45-65ca-4a74-a6eb-53af7ebcb5ff",
             "implementation": "##WebService",
-            "incoming": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+            "incoming": [
+              "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+            ],
             "io_specification": {
               "data_inputs": [],
               "data_outputs": [
@@ -2828,12 +2868,12 @@
               "documentation": [],
               "extension_elements": null,
               "id": null,
-              "input_sets": [
-                null
-              ],
+              "input_sets": null,
               "output_sets": [
                 {
-                  "data_output_refs": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+                  "data_output_refs": [
+                    "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_f4813b3e-2820-45ec-9506-0f2a4c7bd086",
@@ -2851,7 +2891,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Confirm Booking",
             "operation_ref": null,
-            "outgoing": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+            "outgoing": [
+              "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2871,7 +2913,9 @@
             "human_performers": [],
             "id": "_c8fa5253-dde9-471e-b933-58b00e8f374c",
             "implementation": "##WebService",
-            "incoming": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+            "incoming": [
+              "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -2880,7 +2924,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Notify Failed Booking",
             "operation_ref": null,
-            "outgoing": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+            "outgoing": [
+              "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2898,7 +2944,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_82006a49-2cc8-4814-83e2-28c5a85a4c4a",
-                "source_ref": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+                "source_ref": [
+                  "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+                ],
                 "target_ref": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
                 "transformation": null
               }
@@ -2910,7 +2958,9 @@
             "human_performers": [],
             "id": "_9cc2ac34-f12c-49e0-b37c-144e5a84fd92",
             "implementation": "##WebService",
-            "incoming": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+            "incoming": [
+              "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+            ],
             "io_specification": {
               "data_inputs": [
                 {
@@ -2929,7 +2979,9 @@
               "id": null,
               "input_sets": [
                 {
-                  "data_input_refs": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
+                  "data_input_refs": [
+                    "_9628422b-85a6-4857-8c14-7289b9fd9a8a"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_5a361a87-dcba-4107-a625-026abada856d",
@@ -2939,9 +2991,7 @@
                   "while_executing_input_refs": []
                 }
               ],
-              "output_sets": [
-                null
-              ]
+              "output_sets": null
             },
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -2950,7 +3000,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Make Flights and Hotel Offer",
             "operation_ref": null,
-            "outgoing": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+            "outgoing": [
+              "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2970,7 +3022,10 @@
             "human_performers": [],
             "id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46",
             "implementation": "##WebService",
-            "incoming": "['_649072fc-31c7-4e04-bc58-d4442a06f076', '_a0c99000-31e1-4de9-baf7-45c2d09ebbff']",
+            "incoming": [
+              "_649072fc-31c7-4e04-bc58-d4442a06f076",
+              "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -2979,7 +3034,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Notify Customer\nOffer Expired",
             "operation_ref": null,
-            "outgoing": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+            "outgoing": [
+              "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2999,7 +3056,9 @@
             "human_performers": [],
             "id": "_2d6586cf-81fc-4e2a-83ec-6cfff5b34bb0",
             "implementation": "##WebService",
-            "incoming": "_c72535b8-43f7-4906-9f18-691e03050c24",
+            "incoming": [
+              "_c72535b8-43f7-4906-9f18-691e03050c24"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -3008,7 +3067,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Notify Failed Credit Transaction",
             "operation_ref": null,
-            "outgoing": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+            "outgoing": [
+              "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -3292,7 +3353,9 @@
             "human_performers": [],
             "id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b",
             "implementation": "##WebService",
-            "incoming": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+            "incoming": [
+              "_f81560f5-e1c5-497d-a159-dce350f2283c"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -3300,7 +3363,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Charge Credit Card",
             "operation_ref": null,
-            "outgoing": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+            "outgoing": [
+              "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -3320,7 +3385,9 @@
             "human_performers": [],
             "id": "_8afc49f0-42c2-4da9-8e79-e08dbe349776",
             "implementation": "##WebService",
-            "incoming": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+            "incoming": [
+              "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -3328,7 +3395,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Update Customer Record",
             "operation_ref": null,
-            "outgoing": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+            "outgoing": [
+              "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -3367,7 +3436,9 @@
             ],
             "monitoring": null,
             "name": "Receive Travel Request",
-            "outgoing": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+            "outgoing": [
+              "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -3405,9 +3476,7 @@
                 "cancel_activity": true,
                 "cancel_event_definition": [],
                 "category_value_refs": [],
-                "compensate_event_definition": [
-                  null
-                ],
+                "compensate_event_definition": null,
                 "conditional_event_definition": [],
                 "data_output": [],
                 "data_output_association": [],
@@ -3437,9 +3506,7 @@
                 "cancel_activity": true,
                 "cancel_event_definition": [],
                 "category_value_refs": [],
-                "compensate_event_definition": [
-                  null
-                ],
+                "compensate_event_definition": null,
                 "conditional_event_definition": [],
                 "data_output": [],
                 "data_output_association": [],
@@ -3492,7 +3559,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "_6ff2b954-2017-46dd-941e-4badd9326eac",
-                "incoming": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86",
+                "incoming": [
+                  "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -3515,7 +3584,9 @@
             "id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8",
             "implicit_throw_events": [],
             "inclusive_gateways": [],
-            "incoming": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+            "incoming": [
+              "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+            ],
             "intermediate_catch_events": [],
             "intermediate_throw_events": [],
             "io_specification": null,
@@ -3526,7 +3597,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Make Booking",
-            "outgoing": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+            "outgoing": [
+              "_f81560f5-e1c5-497d-a159-dce350f2283c"
+            ],
             "parallel_gateways": [
               {
                 "auditing": null,
@@ -3535,10 +3608,15 @@
                 "extension_elements": null,
                 "gateway_direction": "Diverging",
                 "id": "_749dd603-40f5-40fb-89b4-0e305b29892c",
-                "incoming": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+                "incoming": [
+                  "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+                ],
                 "monitoring": null,
                 "name": null,
-                "outgoing": "['_018e5307-4c8d-46fd-ba84-7b75409b3124', '_b2d48080-6bb1-4ae9-85c9-916d87536a49']"
+                "outgoing": [
+                  "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+                  "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+                ]
               },
               {
                 "auditing": null,
@@ -3547,10 +3625,15 @@
                 "extension_elements": null,
                 "gateway_direction": "Converging",
                 "id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31",
-                "incoming": "['_b08efa4c-c27c-4654-9901-279a8c456a4f', '_e6011c12-800f-44e6-8ae8-51866664afcf']",
+                "incoming": [
+                  "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+                  "_e6011c12-800f-44e6-8ae8-51866664afcf"
+                ],
                 "monitoring": null,
                 "name": null,
-                "outgoing": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+                "outgoing": [
+                  "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+                ]
               }
             ],
             "performers": [],
@@ -3681,7 +3764,9 @@
                 "human_performers": [],
                 "id": "_b595ec43-0769-4864-8f2e-403c405c8217",
                 "implementation": "##WebService",
-                "incoming": "_b2d48080-6bb1-4ae9-85c9-916d87536a49",
+                "incoming": [
+                  "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
@@ -3689,7 +3774,9 @@
                 "multi_instance_loop_characteristics": null,
                 "name": "Book Hotel",
                 "operation_ref": null,
-                "outgoing": "_e6011c12-800f-44e6-8ae8-51866664afcf",
+                "outgoing": [
+                  "_e6011c12-800f-44e6-8ae8-51866664afcf"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -3709,7 +3796,9 @@
                 "human_performers": [],
                 "id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12",
                 "implementation": "##WebService",
-                "incoming": "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+                "incoming": [
+                  "_018e5307-4c8d-46fd-ba84-7b75409b3124"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
@@ -3717,7 +3806,9 @@
                 "multi_instance_loop_characteristics": null,
                 "name": "Book Flight",
                 "operation_ref": null,
-                "outgoing": "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+                "outgoing": [
+                  "_b08efa4c-c27c-4654-9901-279a8c456a4f"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -3777,7 +3868,9 @@
                 "message_event_definition": [],
                 "monitoring": null,
                 "name": null,
-                "outgoing": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+                "outgoing": [
+                  "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -3821,7 +3914,9 @@
                     "event_definitions": [],
                     "extension_elements": null,
                     "id": "_fc4826b1-1e63-49f6-8670-7cc8104e45ea",
-                    "incoming": "_b3d5a547-87a4-460d-b7c1-53b6506127e9",
+                    "incoming": [
+                      "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                    ],
                     "input_set": null,
                     "link_event_definitions": [],
                     "message_event_definitions": [],
@@ -3851,9 +3946,7 @@
                     "auditing": null,
                     "cancel_event_definitions": [],
                     "category_value_refs": [],
-                    "compensate_event_definitions": [
-                      null
-                    ],
+                    "compensate_event_definitions": null,
                     "conditional_event_definitions": [],
                     "data_input_associations": [],
                     "data_inputs": [],
@@ -3864,13 +3957,17 @@
                     "event_definitions": [],
                     "extension_elements": null,
                     "id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f",
-                    "incoming": "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+                    "incoming": [
+                      "_64d60a4e-90cf-4a9a-afbb-631739b6b704"
+                    ],
                     "input_set": null,
                     "link_event_definitions": [],
                     "message_event_definitions": [],
                     "monitoring": null,
                     "name": "Hotel",
-                    "outgoing": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+                    "outgoing": [
+                      "_8d0dadf1-129e-4ba8-b829-3e7e176bf775"
+                    ],
                     "properties": [],
                     "signal_event_definitions": [],
                     "terminate_event_definitions": [],
@@ -3880,9 +3977,7 @@
                     "auditing": null,
                     "cancel_event_definitions": [],
                     "category_value_refs": [],
-                    "compensate_event_definitions": [
-                      null
-                    ],
+                    "compensate_event_definitions": null,
                     "conditional_event_definitions": [],
                     "data_input_associations": [],
                     "data_inputs": [],
@@ -3893,13 +3988,17 @@
                     "event_definitions": [],
                     "extension_elements": null,
                     "id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4",
-                    "incoming": "_3cd5068b-6df1-4a62-a06a-369d063f6160",
+                    "incoming": [
+                      "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+                    ],
                     "input_set": null,
                     "link_event_definitions": [],
                     "message_event_definitions": [],
                     "monitoring": null,
                     "name": "Flight",
-                    "outgoing": "_b62ef735-9d04-494a-aeb4-95fd4862cc45",
+                    "outgoing": [
+                      "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+                    ],
                     "properties": [],
                     "signal_event_definitions": [],
                     "terminate_event_definitions": [],
@@ -3923,10 +4022,15 @@
                     "extension_elements": null,
                     "gateway_direction": "Converging",
                     "id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
-                    "incoming": "['_8d0dadf1-129e-4ba8-b829-3e7e176bf775', '_b62ef735-9d04-494a-aeb4-95fd4862cc45']",
+                    "incoming": [
+                      "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+                      "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+                    ],
                     "monitoring": null,
                     "name": null,
-                    "outgoing": "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                    "outgoing": [
+                      "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                    ]
                   },
                   {
                     "auditing": null,
@@ -3935,10 +4039,15 @@
                     "extension_elements": null,
                     "gateway_direction": "Diverging",
                     "id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
-                    "incoming": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+                    "incoming": [
+                      "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+                    ],
                     "monitoring": null,
                     "name": null,
-                    "outgoing": "['_64d60a4e-90cf-4a9a-afbb-631739b6b704', '_3cd5068b-6df1-4a62-a06a-369d063f6160']"
+                    "outgoing": [
+                      "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+                      "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+                    ]
                   }
                 ],
                 "performers": [],
@@ -4060,7 +4169,9 @@
                     "message_event_definition": [],
                     "monitoring": null,
                     "name": "Booking",
-                    "outgoing": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+                    "outgoing": [
+                      "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+                    ],
                     "output_set": null,
                     "parallel_multiple": false,
                     "properties": [],
@@ -4176,10 +4287,15 @@
       "extension_elements": null,
       "gateway_direction": "Diverging",
       "id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
-      "incoming": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+      "incoming": [
+        "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "['_64d60a4e-90cf-4a9a-afbb-631739b6b704', '_3cd5068b-6df1-4a62-a06a-369d063f6160']"
+      "outgoing": [
+        "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+        "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+      ]
     },
     "_0a4ca777-1b40-4968-8813-dc23f636707c": {
       "bounds": {
@@ -4433,14 +4549,16 @@
       "event_definition_ref": [],
       "extension_elements": null,
       "id": "_15fef309-6718-4352-9b71-f757bcd8c023",
-      "incoming": "_54044d90-3a1e-4a49-99a3-1497045c7235",
-      "link_event_definition": [],
-      "message_event_definition": [
-        null
+      "incoming": [
+        "_54044d90-3a1e-4a49-99a3-1497045c7235"
       ],
+      "link_event_definition": [],
+      "message_event_definition": null,
       "monitoring": null,
       "name": "Offer Approved",
-      "outgoing": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+      "outgoing": [
+        "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -4507,7 +4625,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_ef945053-2c76-4796-8d8b-afc6be8bbfec",
-          "source_ref": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+          "source_ref": [
+            "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+          ],
           "target_ref": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
           "transformation": null
         }
@@ -4518,7 +4638,9 @@
       "human_performers": [],
       "id": "_22612d45-65ca-4a74-a6eb-53af7ebcb5ff",
       "implementation": "##WebService",
-      "incoming": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+      "incoming": [
+        "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+      ],
       "io_specification": {
         "data_inputs": [],
         "data_outputs": [
@@ -4535,12 +4657,12 @@
         "documentation": [],
         "extension_elements": null,
         "id": null,
-        "input_sets": [
-          null
-        ],
+        "input_sets": null,
         "output_sets": [
           {
-            "data_output_refs": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+            "data_output_refs": [
+              "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_f4813b3e-2820-45ec-9506-0f2a4c7bd086",
@@ -4558,7 +4680,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Confirm Booking",
       "operation_ref": null,
-      "outgoing": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+      "outgoing": [
+        "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -4742,7 +4866,9 @@
       ]
     },
     "_2d5ecd07-500d-4693-bb58-8682897d59e2": {
-      "data_output_refs": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
+      "data_output_refs": [
+        "_1a713fab-bf18-4975-afe3-d2bd2820023b"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_2d5ecd07-500d-4693-bb58-8682897d59e2",
@@ -4763,7 +4889,9 @@
       "human_performers": [],
       "id": "_2d6586cf-81fc-4e2a-83ec-6cfff5b34bb0",
       "implementation": "##WebService",
-      "incoming": "_c72535b8-43f7-4906-9f18-691e03050c24",
+      "incoming": [
+        "_c72535b8-43f7-4906-9f18-691e03050c24"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -4772,7 +4900,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Notify Failed Credit Transaction",
       "operation_ref": null,
-      "outgoing": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+      "outgoing": [
+        "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -4860,7 +4990,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": null,
-      "outgoing": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+      "outgoing": [
+        "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -4890,7 +5022,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "24 Hours",
-      "outgoing": "_a0c99000-31e1-4de9-baf7-45c2d09ebbff",
+      "outgoing": [
+        "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -5034,7 +5168,9 @@
       ]
     },
     "_41b1bf64-dba0-4ab1-a834-0ee931fb4cab": {
-      "data_input_refs": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+      "data_input_refs": [
+        "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_41b1bf64-dba0-4ab1-a834-0ee931fb4cab",
@@ -5083,7 +5219,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_42e03d0f-6c6b-4493-971f-c6928eb563b0",
-      "incoming": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+      "incoming": [
+        "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -5161,7 +5299,9 @@
       ],
       "monitoring": null,
       "name": "Receive Travel Request",
-      "outgoing": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+      "outgoing": [
+        "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -5343,9 +5483,7 @@
       "data_output": [],
       "data_output_association": [],
       "documentation": [],
-      "error_event_definition": [
-        null
-      ],
+      "error_event_definition": null,
       "escalation_event_definition": [],
       "event_definition": [],
       "event_definition_ref": [],
@@ -5356,7 +5494,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": null,
-      "outgoing": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+      "outgoing": [
+        "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -5476,7 +5616,9 @@
       "participant_band_kind": null
     },
     "_5a361a87-dcba-4107-a625-026abada856d": {
-      "data_input_refs": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
+      "data_input_refs": [
+        "_9628422b-85a6-4857-8c14-7289b9fd9a8a"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_5a361a87-dcba-4107-a625-026abada856d",
@@ -5522,7 +5664,9 @@
       "human_performers": [],
       "id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b",
       "implementation": "##WebService",
-      "incoming": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+      "incoming": [
+        "_f81560f5-e1c5-497d-a159-dce350f2283c"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -5530,7 +5674,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Charge Credit Card",
       "operation_ref": null,
-      "outgoing": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+      "outgoing": [
+        "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -5645,9 +5791,7 @@
       "auditing": null,
       "cancel_event_definitions": [],
       "category_value_refs": [],
-      "compensate_event_definitions": [
-        null
-      ],
+      "compensate_event_definitions": null,
       "conditional_event_definitions": [],
       "data_input_associations": [],
       "data_inputs": [],
@@ -5658,13 +5802,17 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_6a5cdbbf-2618-496e-b728-955dc215ef9d",
-      "incoming": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+      "incoming": [
+        "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
       "monitoring": null,
       "name": "Booking",
-      "outgoing": "_c72535b8-43f7-4906-9f18-691e03050c24",
+      "outgoing": [
+        "_c72535b8-43f7-4906-9f18-691e03050c24"
+      ],
       "properties": [],
       "signal_event_definitions": [],
       "terminate_event_definitions": [],
@@ -5677,10 +5825,15 @@
       "extension_elements": null,
       "gateway_direction": "Converging",
       "id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31",
-      "incoming": "['_b08efa4c-c27c-4654-9901-279a8c456a4f', '_e6011c12-800f-44e6-8ae8-51866664afcf']",
+      "incoming": [
+        "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+        "_e6011c12-800f-44e6-8ae8-51866664afcf"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+      "outgoing": [
+        "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+      ]
     },
     "_6db9a77f-189f-4c07-b33b-e0c88f09e0db": {
       "attached_to_ref": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b",
@@ -5693,9 +5846,7 @@
       "data_output": [],
       "data_output_association": [],
       "documentation": [],
-      "error_event_definition": [
-        null
-      ],
+      "error_event_definition": null,
       "escalation_event_definition": [],
       "event_definition": [],
       "event_definition_ref": [],
@@ -5706,7 +5857,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": null,
-      "outgoing": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+      "outgoing": [
+        "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -5785,7 +5938,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_6ff2b954-2017-46dd-941e-4badd9326eac",
-      "incoming": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86",
+      "incoming": [
+        "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -5804,10 +5959,15 @@
       "extension_elements": null,
       "gateway_direction": "Diverging",
       "id": "_749dd603-40f5-40fb-89b4-0e305b29892c",
-      "incoming": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+      "incoming": [
+        "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "['_018e5307-4c8d-46fd-ba84-7b75409b3124', '_b2d48080-6bb1-4ae9-85c9-916d87536a49']"
+      "outgoing": [
+        "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+        "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+      ]
     },
     "_7a58c09a-f53a-43c4-9252-0061cb382522": {
       "bounds": {
@@ -5846,11 +6006,17 @@
       "extension_elements": null,
       "gateway_direction": "Diverging",
       "id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d",
-      "incoming": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+      "incoming": [
+        "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+      ],
       "instantiate": false,
       "monitoring": null,
       "name": null,
-      "outgoing": "['_16857297-f0fb-4027-87f6-633a76267c84', '_54044d90-3a1e-4a49-99a3-1497045c7235', '_2403da0e-5b49-43fa-ba00-ec6c1f3e4790']"
+      "outgoing": [
+        "_16857297-f0fb-4027-87f6-633a76267c84",
+        "_54044d90-3a1e-4a49-99a3-1497045c7235",
+        "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
+      ]
     },
     "_7af0cdbf-9ae1-4551-abb5-4c9fabc4050d": {
       "bpmn_element": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
@@ -5979,7 +6145,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_7eb87eb8-0d7a-445b-b768-90d754a938ed",
-      "incoming": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+      "incoming": [
+        "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6009,7 +6177,9 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_82006a49-2cc8-4814-83e2-28c5a85a4c4a",
-      "source_ref": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+      "source_ref": [
+        "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+      ],
       "target_ref": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
       "transformation": null
     },
@@ -6058,12 +6228,16 @@
       "event_definition_ref": [],
       "extension_elements": null,
       "id": "_87baeef0-f32e-4a93-b802-fdd588aaf729",
-      "incoming": "_16857297-f0fb-4027-87f6-633a76267c84",
+      "incoming": [
+        "_16857297-f0fb-4027-87f6-633a76267c84"
+      ],
       "link_event_definition": [],
       "message_event_definition": [],
       "monitoring": null,
       "name": "24 Hours",
-      "outgoing": "_649072fc-31c7-4e04-bc58-d4442a06f076",
+      "outgoing": [
+        "_649072fc-31c7-4e04-bc58-d4442a06f076"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6095,7 +6269,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_88247168-b457-4663-aad0-753a0236c8df",
-      "incoming": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+      "incoming": [
+        "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6149,9 +6325,7 @@
           "data_output": [],
           "data_output_association": [],
           "documentation": [],
-          "error_event_definition": [
-            null
-          ],
+          "error_event_definition": null,
           "escalation_event_definition": [],
           "event_definition": [],
           "event_definition_ref": [],
@@ -6162,7 +6336,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": null,
-          "outgoing": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+          "outgoing": [
+            "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -6181,9 +6357,7 @@
           "data_output": [],
           "data_output_association": [],
           "documentation": [],
-          "error_event_definition": [
-            null
-          ],
+          "error_event_definition": null,
           "escalation_event_definition": [],
           "event_definition": [],
           "event_definition_ref": [],
@@ -6194,7 +6368,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": null,
-          "outgoing": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+          "outgoing": [
+            "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -6224,7 +6400,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "24 Hours",
-          "outgoing": "_a0c99000-31e1-4de9-baf7-45c2d09ebbff",
+          "outgoing": [
+            "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -6267,7 +6445,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_88247168-b457-4663-aad0-753a0236c8df",
-          "incoming": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+          "incoming": [
+            "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -6294,7 +6474,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_7eb87eb8-0d7a-445b-b768-90d754a938ed",
-          "incoming": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+          "incoming": [
+            "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -6321,7 +6503,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_42e03d0f-6c6b-4493-971f-c6928eb563b0",
-          "incoming": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+          "incoming": [
+            "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -6348,7 +6532,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_babdfa54-b55f-463f-9341-424b42db9760",
-          "incoming": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+          "incoming": [
+            "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -6375,7 +6561,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_a68b0941-b7e3-4791-8e13-fd9622e4448c",
-          "incoming": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+          "incoming": [
+            "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -6397,11 +6585,17 @@
           "extension_elements": null,
           "gateway_direction": "Diverging",
           "id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d",
-          "incoming": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+          "incoming": [
+            "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+          ],
           "instantiate": false,
           "monitoring": null,
           "name": null,
-          "outgoing": "['_16857297-f0fb-4027-87f6-633a76267c84', '_54044d90-3a1e-4a49-99a3-1497045c7235', '_2403da0e-5b49-43fa-ba00-ec6c1f3e4790']"
+          "outgoing": [
+            "_16857297-f0fb-4027-87f6-633a76267c84",
+            "_54044d90-3a1e-4a49-99a3-1497045c7235",
+            "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
+          ]
         }
       ],
       "events": [],
@@ -6429,14 +6623,16 @@
           "event_definition_ref": [],
           "extension_elements": null,
           "id": "_15fef309-6718-4352-9b71-f757bcd8c023",
-          "incoming": "_54044d90-3a1e-4a49-99a3-1497045c7235",
-          "link_event_definition": [],
-          "message_event_definition": [
-            null
+          "incoming": [
+            "_54044d90-3a1e-4a49-99a3-1497045c7235"
           ],
+          "link_event_definition": [],
+          "message_event_definition": null,
           "monitoring": null,
           "name": "Offer Approved",
-          "outgoing": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+          "outgoing": [
+            "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -6459,14 +6655,16 @@
           "event_definition_ref": [],
           "extension_elements": null,
           "id": "_e5c69e92-6f98-47c8-bc22-b75d38620f95",
-          "incoming": "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790",
-          "link_event_definition": [],
-          "message_event_definition": [
-            null
+          "incoming": [
+            "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
           ],
+          "link_event_definition": [],
+          "message_event_definition": null,
           "monitoring": null,
           "name": "Cancel Request",
-          "outgoing": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+          "outgoing": [
+            "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -6489,12 +6687,16 @@
           "event_definition_ref": [],
           "extension_elements": null,
           "id": "_87baeef0-f32e-4a93-b802-fdd588aaf729",
-          "incoming": "_16857297-f0fb-4027-87f6-633a76267c84",
+          "incoming": [
+            "_16857297-f0fb-4027-87f6-633a76267c84"
+          ],
           "link_event_definition": [],
           "message_event_definition": [],
           "monitoring": null,
           "name": "24 Hours",
-          "outgoing": "_649072fc-31c7-4e04-bc58-d4442a06f076",
+          "outgoing": [
+            "_649072fc-31c7-4e04-bc58-d4442a06f076"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -6517,9 +6719,7 @@
           "auditing": null,
           "cancel_event_definitions": [],
           "category_value_refs": [],
-          "compensate_event_definitions": [
-            null
-          ],
+          "compensate_event_definitions": null,
           "conditional_event_definitions": [],
           "data_input_associations": [],
           "data_inputs": [],
@@ -6530,13 +6730,17 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_6a5cdbbf-2618-496e-b728-955dc215ef9d",
-          "incoming": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+          "incoming": [
+            "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
           "monitoring": null,
           "name": "Booking",
-          "outgoing": "_c72535b8-43f7-4906-9f18-691e03050c24",
+          "outgoing": [
+            "_c72535b8-43f7-4906-9f18-691e03050c24"
+          ],
           "properties": [],
           "signal_event_definitions": [],
           "terminate_event_definitions": [],
@@ -6572,7 +6776,9 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+            "data_input_refs": [
+              "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_41b1bf64-dba0-4ab1-a834-0ee931fb4cab",
@@ -6584,7 +6790,9 @@
         ],
         "output_sets": [
           {
-            "data_output_refs": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
+            "data_output_refs": [
+              "_1a713fab-bf18-4975-afe3-d2bd2820023b"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_2d5ecd07-500d-4693-bb58-8682897d59e2",
@@ -6622,7 +6830,9 @@
           "human_performers": [],
           "id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd",
           "implementation": "##WebService",
-          "incoming": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+          "incoming": [
+            "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -6631,7 +6841,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Request\nCredit Card Information",
           "operation_ref": null,
-          "outgoing": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+          "outgoing": [
+            "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -6650,7 +6862,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_ef945053-2c76-4796-8d8b-afc6be8bbfec",
-              "source_ref": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+              "source_ref": [
+                "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+              ],
               "target_ref": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
               "transformation": null
             }
@@ -6661,7 +6875,9 @@
           "human_performers": [],
           "id": "_22612d45-65ca-4a74-a6eb-53af7ebcb5ff",
           "implementation": "##WebService",
-          "incoming": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+          "incoming": [
+            "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+          ],
           "io_specification": {
             "data_inputs": [],
             "data_outputs": [
@@ -6678,12 +6894,12 @@
             "documentation": [],
             "extension_elements": null,
             "id": null,
-            "input_sets": [
-              null
-            ],
+            "input_sets": null,
             "output_sets": [
               {
-                "data_output_refs": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+                "data_output_refs": [
+                  "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_f4813b3e-2820-45ec-9506-0f2a4c7bd086",
@@ -6701,7 +6917,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Confirm Booking",
           "operation_ref": null,
-          "outgoing": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+          "outgoing": [
+            "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -6721,7 +6939,9 @@
           "human_performers": [],
           "id": "_c8fa5253-dde9-471e-b933-58b00e8f374c",
           "implementation": "##WebService",
-          "incoming": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+          "incoming": [
+            "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -6730,7 +6950,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Notify Failed Booking",
           "operation_ref": null,
-          "outgoing": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+          "outgoing": [
+            "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -6748,7 +6970,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_82006a49-2cc8-4814-83e2-28c5a85a4c4a",
-              "source_ref": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+              "source_ref": [
+                "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+              ],
               "target_ref": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
               "transformation": null
             }
@@ -6760,7 +6984,9 @@
           "human_performers": [],
           "id": "_9cc2ac34-f12c-49e0-b37c-144e5a84fd92",
           "implementation": "##WebService",
-          "incoming": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+          "incoming": [
+            "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+          ],
           "io_specification": {
             "data_inputs": [
               {
@@ -6779,7 +7005,9 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
+                "data_input_refs": [
+                  "_9628422b-85a6-4857-8c14-7289b9fd9a8a"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_5a361a87-dcba-4107-a625-026abada856d",
@@ -6789,9 +7017,7 @@
                 "while_executing_input_refs": []
               }
             ],
-            "output_sets": [
-              null
-            ]
+            "output_sets": null
           },
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -6800,7 +7026,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Make Flights and Hotel Offer",
           "operation_ref": null,
-          "outgoing": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+          "outgoing": [
+            "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -6820,7 +7048,10 @@
           "human_performers": [],
           "id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46",
           "implementation": "##WebService",
-          "incoming": "['_649072fc-31c7-4e04-bc58-d4442a06f076', '_a0c99000-31e1-4de9-baf7-45c2d09ebbff']",
+          "incoming": [
+            "_649072fc-31c7-4e04-bc58-d4442a06f076",
+            "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -6829,7 +7060,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Notify Customer\nOffer Expired",
           "operation_ref": null,
-          "outgoing": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+          "outgoing": [
+            "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -6849,7 +7082,9 @@
           "human_performers": [],
           "id": "_2d6586cf-81fc-4e2a-83ec-6cfff5b34bb0",
           "implementation": "##WebService",
-          "incoming": "_c72535b8-43f7-4906-9f18-691e03050c24",
+          "incoming": [
+            "_c72535b8-43f7-4906-9f18-691e03050c24"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -6858,7 +7093,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Notify Failed Credit Transaction",
           "operation_ref": null,
-          "outgoing": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+          "outgoing": [
+            "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7142,7 +7379,9 @@
           "human_performers": [],
           "id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b",
           "implementation": "##WebService",
-          "incoming": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+          "incoming": [
+            "_f81560f5-e1c5-497d-a159-dce350f2283c"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -7150,7 +7389,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Charge Credit Card",
           "operation_ref": null,
-          "outgoing": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+          "outgoing": [
+            "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7170,7 +7411,9 @@
           "human_performers": [],
           "id": "_8afc49f0-42c2-4da9-8e79-e08dbe349776",
           "implementation": "##WebService",
-          "incoming": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+          "incoming": [
+            "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -7178,7 +7421,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Update Customer Record",
           "operation_ref": null,
-          "outgoing": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+          "outgoing": [
+            "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -7217,7 +7462,9 @@
           ],
           "monitoring": null,
           "name": "Receive Travel Request",
-          "outgoing": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+          "outgoing": [
+            "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -7255,9 +7502,7 @@
               "cancel_activity": true,
               "cancel_event_definition": [],
               "category_value_refs": [],
-              "compensate_event_definition": [
-                null
-              ],
+              "compensate_event_definition": null,
               "conditional_event_definition": [],
               "data_output": [],
               "data_output_association": [],
@@ -7287,9 +7532,7 @@
               "cancel_activity": true,
               "cancel_event_definition": [],
               "category_value_refs": [],
-              "compensate_event_definition": [
-                null
-              ],
+              "compensate_event_definition": null,
               "conditional_event_definition": [],
               "data_output": [],
               "data_output_association": [],
@@ -7342,7 +7585,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_6ff2b954-2017-46dd-941e-4badd9326eac",
-              "incoming": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86",
+              "incoming": [
+                "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -7365,7 +7610,9 @@
           "id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8",
           "implicit_throw_events": [],
           "inclusive_gateways": [],
-          "incoming": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+          "incoming": [
+            "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+          ],
           "intermediate_catch_events": [],
           "intermediate_throw_events": [],
           "io_specification": null,
@@ -7376,7 +7623,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Make Booking",
-          "outgoing": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+          "outgoing": [
+            "_f81560f5-e1c5-497d-a159-dce350f2283c"
+          ],
           "parallel_gateways": [
             {
               "auditing": null,
@@ -7385,10 +7634,15 @@
               "extension_elements": null,
               "gateway_direction": "Diverging",
               "id": "_749dd603-40f5-40fb-89b4-0e305b29892c",
-              "incoming": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+              "incoming": [
+                "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "['_018e5307-4c8d-46fd-ba84-7b75409b3124', '_b2d48080-6bb1-4ae9-85c9-916d87536a49']"
+              "outgoing": [
+                "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+                "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+              ]
             },
             {
               "auditing": null,
@@ -7397,10 +7651,15 @@
               "extension_elements": null,
               "gateway_direction": "Converging",
               "id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31",
-              "incoming": "['_b08efa4c-c27c-4654-9901-279a8c456a4f', '_e6011c12-800f-44e6-8ae8-51866664afcf']",
+              "incoming": [
+                "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+                "_e6011c12-800f-44e6-8ae8-51866664afcf"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+              "outgoing": [
+                "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+              ]
             }
           ],
           "performers": [],
@@ -7531,7 +7790,9 @@
               "human_performers": [],
               "id": "_b595ec43-0769-4864-8f2e-403c405c8217",
               "implementation": "##WebService",
-              "incoming": "_b2d48080-6bb1-4ae9-85c9-916d87536a49",
+              "incoming": [
+                "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -7539,7 +7800,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Book Hotel",
               "operation_ref": null,
-              "outgoing": "_e6011c12-800f-44e6-8ae8-51866664afcf",
+              "outgoing": [
+                "_e6011c12-800f-44e6-8ae8-51866664afcf"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -7559,7 +7822,9 @@
               "human_performers": [],
               "id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12",
               "implementation": "##WebService",
-              "incoming": "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+              "incoming": [
+                "_018e5307-4c8d-46fd-ba84-7b75409b3124"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -7567,7 +7832,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Book Flight",
               "operation_ref": null,
-              "outgoing": "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+              "outgoing": [
+                "_b08efa4c-c27c-4654-9901-279a8c456a4f"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -7627,7 +7894,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": null,
-              "outgoing": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+              "outgoing": [
+                "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -7671,7 +7940,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_fc4826b1-1e63-49f6-8670-7cc8104e45ea",
-                  "incoming": "_b3d5a547-87a4-460d-b7c1-53b6506127e9",
+                  "incoming": [
+                    "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -7701,9 +7972,7 @@
                   "auditing": null,
                   "cancel_event_definitions": [],
                   "category_value_refs": [],
-                  "compensate_event_definitions": [
-                    null
-                  ],
+                  "compensate_event_definitions": null,
                   "conditional_event_definitions": [],
                   "data_input_associations": [],
                   "data_inputs": [],
@@ -7714,13 +7983,17 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f",
-                  "incoming": "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+                  "incoming": [
+                    "_64d60a4e-90cf-4a9a-afbb-631739b6b704"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
                   "monitoring": null,
                   "name": "Hotel",
-                  "outgoing": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+                  "outgoing": [
+                    "_8d0dadf1-129e-4ba8-b829-3e7e176bf775"
+                  ],
                   "properties": [],
                   "signal_event_definitions": [],
                   "terminate_event_definitions": [],
@@ -7730,9 +8003,7 @@
                   "auditing": null,
                   "cancel_event_definitions": [],
                   "category_value_refs": [],
-                  "compensate_event_definitions": [
-                    null
-                  ],
+                  "compensate_event_definitions": null,
                   "conditional_event_definitions": [],
                   "data_input_associations": [],
                   "data_inputs": [],
@@ -7743,13 +8014,17 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4",
-                  "incoming": "_3cd5068b-6df1-4a62-a06a-369d063f6160",
+                  "incoming": [
+                    "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
                   "monitoring": null,
                   "name": "Flight",
-                  "outgoing": "_b62ef735-9d04-494a-aeb4-95fd4862cc45",
+                  "outgoing": [
+                    "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+                  ],
                   "properties": [],
                   "signal_event_definitions": [],
                   "terminate_event_definitions": [],
@@ -7773,10 +8048,15 @@
                   "extension_elements": null,
                   "gateway_direction": "Converging",
                   "id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
-                  "incoming": "['_8d0dadf1-129e-4ba8-b829-3e7e176bf775', '_b62ef735-9d04-494a-aeb4-95fd4862cc45']",
+                  "incoming": [
+                    "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+                    "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+                  ],
                   "monitoring": null,
                   "name": null,
-                  "outgoing": "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                  "outgoing": [
+                    "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                  ]
                 },
                 {
                   "auditing": null,
@@ -7785,10 +8065,15 @@
                   "extension_elements": null,
                   "gateway_direction": "Diverging",
                   "id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
-                  "incoming": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+                  "incoming": [
+                    "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+                  ],
                   "monitoring": null,
                   "name": null,
-                  "outgoing": "['_64d60a4e-90cf-4a9a-afbb-631739b6b704', '_3cd5068b-6df1-4a62-a06a-369d063f6160']"
+                  "outgoing": [
+                    "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+                    "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+                  ]
                 }
               ],
               "performers": [],
@@ -7910,7 +8195,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": "Booking",
-                  "outgoing": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+                  "outgoing": [
+                    "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -8030,7 +8317,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Booking",
-      "outgoing": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+      "outgoing": [
+        "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -8050,7 +8339,9 @@
       "human_performers": [],
       "id": "_8afc49f0-42c2-4da9-8e79-e08dbe349776",
       "implementation": "##WebService",
-      "incoming": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+      "incoming": [
+        "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -8058,7 +8349,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Update Customer Record",
       "operation_ref": null,
-      "outgoing": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+      "outgoing": [
+        "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -8314,9 +8607,7 @@
       "auditing": null,
       "cancel_event_definitions": [],
       "category_value_refs": [],
-      "compensate_event_definitions": [
-        null
-      ],
+      "compensate_event_definitions": null,
       "conditional_event_definitions": [],
       "data_input_associations": [],
       "data_inputs": [],
@@ -8327,13 +8618,17 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f",
-      "incoming": "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+      "incoming": [
+        "_64d60a4e-90cf-4a9a-afbb-631739b6b704"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
       "monitoring": null,
       "name": "Hotel",
-      "outgoing": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+      "outgoing": [
+        "_8d0dadf1-129e-4ba8-b829-3e7e176bf775"
+      ],
       "properties": [],
       "signal_event_definitions": [],
       "terminate_event_definitions": [],
@@ -8379,7 +8674,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_82006a49-2cc8-4814-83e2-28c5a85a4c4a",
-          "source_ref": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+          "source_ref": [
+            "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+          ],
           "target_ref": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
           "transformation": null
         }
@@ -8391,7 +8688,9 @@
       "human_performers": [],
       "id": "_9cc2ac34-f12c-49e0-b37c-144e5a84fd92",
       "implementation": "##WebService",
-      "incoming": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+      "incoming": [
+        "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+      ],
       "io_specification": {
         "data_inputs": [
           {
@@ -8410,7 +8709,9 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
+            "data_input_refs": [
+              "_9628422b-85a6-4857-8c14-7289b9fd9a8a"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_5a361a87-dcba-4107-a625-026abada856d",
@@ -8420,9 +8721,7 @@
             "while_executing_input_refs": []
           }
         ],
-        "output_sets": [
-          null
-        ]
+        "output_sets": null
       },
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -8431,7 +8730,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Make Flights and Hotel Offer",
       "operation_ref": null,
-      "outgoing": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+      "outgoing": [
+        "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -8510,7 +8811,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_a68b0941-b7e3-4791-8e13-fd9622e4448c",
-      "incoming": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+      "incoming": [
+        "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -10904,9 +11207,7 @@
               "data_output": [],
               "data_output_association": [],
               "documentation": [],
-              "error_event_definition": [
-                null
-              ],
+              "error_event_definition": null,
               "escalation_event_definition": [],
               "event_definition": [],
               "event_definition_ref": [],
@@ -10917,7 +11218,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": null,
-              "outgoing": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+              "outgoing": [
+                "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -10936,9 +11239,7 @@
               "data_output": [],
               "data_output_association": [],
               "documentation": [],
-              "error_event_definition": [
-                null
-              ],
+              "error_event_definition": null,
               "escalation_event_definition": [],
               "event_definition": [],
               "event_definition_ref": [],
@@ -10949,7 +11250,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": null,
-              "outgoing": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+              "outgoing": [
+                "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -10979,7 +11282,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "24 Hours",
-              "outgoing": "_a0c99000-31e1-4de9-baf7-45c2d09ebbff",
+              "outgoing": [
+                "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -11022,7 +11327,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_88247168-b457-4663-aad0-753a0236c8df",
-              "incoming": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+              "incoming": [
+                "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -11049,7 +11356,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_7eb87eb8-0d7a-445b-b768-90d754a938ed",
-              "incoming": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+              "incoming": [
+                "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -11076,7 +11385,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_42e03d0f-6c6b-4493-971f-c6928eb563b0",
-              "incoming": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+              "incoming": [
+                "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -11103,7 +11414,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_babdfa54-b55f-463f-9341-424b42db9760",
-              "incoming": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+              "incoming": [
+                "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -11130,7 +11443,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_a68b0941-b7e3-4791-8e13-fd9622e4448c",
-              "incoming": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+              "incoming": [
+                "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -11152,11 +11467,17 @@
               "extension_elements": null,
               "gateway_direction": "Diverging",
               "id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d",
-              "incoming": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+              "incoming": [
+                "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+              ],
               "instantiate": false,
               "monitoring": null,
               "name": null,
-              "outgoing": "['_16857297-f0fb-4027-87f6-633a76267c84', '_54044d90-3a1e-4a49-99a3-1497045c7235', '_2403da0e-5b49-43fa-ba00-ec6c1f3e4790']"
+              "outgoing": [
+                "_16857297-f0fb-4027-87f6-633a76267c84",
+                "_54044d90-3a1e-4a49-99a3-1497045c7235",
+                "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
+              ]
             }
           ],
           "events": [],
@@ -11184,14 +11505,16 @@
               "event_definition_ref": [],
               "extension_elements": null,
               "id": "_15fef309-6718-4352-9b71-f757bcd8c023",
-              "incoming": "_54044d90-3a1e-4a49-99a3-1497045c7235",
-              "link_event_definition": [],
-              "message_event_definition": [
-                null
+              "incoming": [
+                "_54044d90-3a1e-4a49-99a3-1497045c7235"
               ],
+              "link_event_definition": [],
+              "message_event_definition": null,
               "monitoring": null,
               "name": "Offer Approved",
-              "outgoing": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+              "outgoing": [
+                "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -11214,14 +11537,16 @@
               "event_definition_ref": [],
               "extension_elements": null,
               "id": "_e5c69e92-6f98-47c8-bc22-b75d38620f95",
-              "incoming": "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790",
-              "link_event_definition": [],
-              "message_event_definition": [
-                null
+              "incoming": [
+                "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
               ],
+              "link_event_definition": [],
+              "message_event_definition": null,
               "monitoring": null,
               "name": "Cancel Request",
-              "outgoing": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+              "outgoing": [
+                "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -11244,12 +11569,16 @@
               "event_definition_ref": [],
               "extension_elements": null,
               "id": "_87baeef0-f32e-4a93-b802-fdd588aaf729",
-              "incoming": "_16857297-f0fb-4027-87f6-633a76267c84",
+              "incoming": [
+                "_16857297-f0fb-4027-87f6-633a76267c84"
+              ],
               "link_event_definition": [],
               "message_event_definition": [],
               "monitoring": null,
               "name": "24 Hours",
-              "outgoing": "_649072fc-31c7-4e04-bc58-d4442a06f076",
+              "outgoing": [
+                "_649072fc-31c7-4e04-bc58-d4442a06f076"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -11272,9 +11601,7 @@
               "auditing": null,
               "cancel_event_definitions": [],
               "category_value_refs": [],
-              "compensate_event_definitions": [
-                null
-              ],
+              "compensate_event_definitions": null,
               "conditional_event_definitions": [],
               "data_input_associations": [],
               "data_inputs": [],
@@ -11285,13 +11612,17 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_6a5cdbbf-2618-496e-b728-955dc215ef9d",
-              "incoming": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+              "incoming": [
+                "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
               "monitoring": null,
               "name": "Booking",
-              "outgoing": "_c72535b8-43f7-4906-9f18-691e03050c24",
+              "outgoing": [
+                "_c72535b8-43f7-4906-9f18-691e03050c24"
+              ],
               "properties": [],
               "signal_event_definitions": [],
               "terminate_event_definitions": [],
@@ -11327,7 +11658,9 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+                "data_input_refs": [
+                  "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_41b1bf64-dba0-4ab1-a834-0ee931fb4cab",
@@ -11339,7 +11672,9 @@
             ],
             "output_sets": [
               {
-                "data_output_refs": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
+                "data_output_refs": [
+                  "_1a713fab-bf18-4975-afe3-d2bd2820023b"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_2d5ecd07-500d-4693-bb58-8682897d59e2",
@@ -11377,7 +11712,9 @@
               "human_performers": [],
               "id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd",
               "implementation": "##WebService",
-              "incoming": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+              "incoming": [
+                "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -11386,7 +11723,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Request\nCredit Card Information",
               "operation_ref": null,
-              "outgoing": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+              "outgoing": [
+                "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11405,7 +11744,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_ef945053-2c76-4796-8d8b-afc6be8bbfec",
-                  "source_ref": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+                  "source_ref": [
+                    "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+                  ],
                   "target_ref": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
                   "transformation": null
                 }
@@ -11416,7 +11757,9 @@
               "human_performers": [],
               "id": "_22612d45-65ca-4a74-a6eb-53af7ebcb5ff",
               "implementation": "##WebService",
-              "incoming": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+              "incoming": [
+                "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+              ],
               "io_specification": {
                 "data_inputs": [],
                 "data_outputs": [
@@ -11433,12 +11776,12 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": null,
-                "input_sets": [
-                  null
-                ],
+                "input_sets": null,
                 "output_sets": [
                   {
-                    "data_output_refs": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+                    "data_output_refs": [
+                      "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_f4813b3e-2820-45ec-9506-0f2a4c7bd086",
@@ -11456,7 +11799,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Confirm Booking",
               "operation_ref": null,
-              "outgoing": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+              "outgoing": [
+                "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11476,7 +11821,9 @@
               "human_performers": [],
               "id": "_c8fa5253-dde9-471e-b933-58b00e8f374c",
               "implementation": "##WebService",
-              "incoming": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+              "incoming": [
+                "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -11485,7 +11832,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Notify Failed Booking",
               "operation_ref": null,
-              "outgoing": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+              "outgoing": [
+                "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11503,7 +11852,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_82006a49-2cc8-4814-83e2-28c5a85a4c4a",
-                  "source_ref": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc",
+                  "source_ref": [
+                    "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+                  ],
                   "target_ref": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
                   "transformation": null
                 }
@@ -11515,7 +11866,9 @@
               "human_performers": [],
               "id": "_9cc2ac34-f12c-49e0-b37c-144e5a84fd92",
               "implementation": "##WebService",
-              "incoming": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+              "incoming": [
+                "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+              ],
               "io_specification": {
                 "data_inputs": [
                   {
@@ -11534,7 +11887,9 @@
                 "id": null,
                 "input_sets": [
                   {
-                    "data_input_refs": "_9628422b-85a6-4857-8c14-7289b9fd9a8a",
+                    "data_input_refs": [
+                      "_9628422b-85a6-4857-8c14-7289b9fd9a8a"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_5a361a87-dcba-4107-a625-026abada856d",
@@ -11544,9 +11899,7 @@
                     "while_executing_input_refs": []
                   }
                 ],
-                "output_sets": [
-                  null
-                ]
+                "output_sets": null
               },
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -11555,7 +11908,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Make Flights and Hotel Offer",
               "operation_ref": null,
-              "outgoing": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+              "outgoing": [
+                "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11575,7 +11930,10 @@
               "human_performers": [],
               "id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46",
               "implementation": "##WebService",
-              "incoming": "['_649072fc-31c7-4e04-bc58-d4442a06f076', '_a0c99000-31e1-4de9-baf7-45c2d09ebbff']",
+              "incoming": [
+                "_649072fc-31c7-4e04-bc58-d4442a06f076",
+                "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -11584,7 +11942,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Notify Customer\nOffer Expired",
               "operation_ref": null,
-              "outgoing": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+              "outgoing": [
+                "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11604,7 +11964,9 @@
               "human_performers": [],
               "id": "_2d6586cf-81fc-4e2a-83ec-6cfff5b34bb0",
               "implementation": "##WebService",
-              "incoming": "_c72535b8-43f7-4906-9f18-691e03050c24",
+              "incoming": [
+                "_c72535b8-43f7-4906-9f18-691e03050c24"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -11613,7 +11975,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Notify Failed Credit Transaction",
               "operation_ref": null,
-              "outgoing": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+              "outgoing": [
+                "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11897,7 +12261,9 @@
               "human_performers": [],
               "id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b",
               "implementation": "##WebService",
-              "incoming": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+              "incoming": [
+                "_f81560f5-e1c5-497d-a159-dce350f2283c"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -11905,7 +12271,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Charge Credit Card",
               "operation_ref": null,
-              "outgoing": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+              "outgoing": [
+                "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11925,7 +12293,9 @@
               "human_performers": [],
               "id": "_8afc49f0-42c2-4da9-8e79-e08dbe349776",
               "implementation": "##WebService",
-              "incoming": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+              "incoming": [
+                "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -11933,7 +12303,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Update Customer Record",
               "operation_ref": null,
-              "outgoing": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+              "outgoing": [
+                "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -11972,7 +12344,9 @@
               ],
               "monitoring": null,
               "name": "Receive Travel Request",
-              "outgoing": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+              "outgoing": [
+                "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -12010,9 +12384,7 @@
                   "cancel_activity": true,
                   "cancel_event_definition": [],
                   "category_value_refs": [],
-                  "compensate_event_definition": [
-                    null
-                  ],
+                  "compensate_event_definition": null,
                   "conditional_event_definition": [],
                   "data_output": [],
                   "data_output_association": [],
@@ -12042,9 +12414,7 @@
                   "cancel_activity": true,
                   "cancel_event_definition": [],
                   "category_value_refs": [],
-                  "compensate_event_definition": [
-                    null
-                  ],
+                  "compensate_event_definition": null,
                   "conditional_event_definition": [],
                   "data_output": [],
                   "data_output_association": [],
@@ -12097,7 +12467,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "_6ff2b954-2017-46dd-941e-4badd9326eac",
-                  "incoming": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86",
+                  "incoming": [
+                    "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -12120,7 +12492,9 @@
               "id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8",
               "implicit_throw_events": [],
               "inclusive_gateways": [],
-              "incoming": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+              "incoming": [
+                "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+              ],
               "intermediate_catch_events": [],
               "intermediate_throw_events": [],
               "io_specification": null,
@@ -12131,7 +12505,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Make Booking",
-              "outgoing": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+              "outgoing": [
+                "_f81560f5-e1c5-497d-a159-dce350f2283c"
+              ],
               "parallel_gateways": [
                 {
                   "auditing": null,
@@ -12140,10 +12516,15 @@
                   "extension_elements": null,
                   "gateway_direction": "Diverging",
                   "id": "_749dd603-40f5-40fb-89b4-0e305b29892c",
-                  "incoming": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+                  "incoming": [
+                    "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+                  ],
                   "monitoring": null,
                   "name": null,
-                  "outgoing": "['_018e5307-4c8d-46fd-ba84-7b75409b3124', '_b2d48080-6bb1-4ae9-85c9-916d87536a49']"
+                  "outgoing": [
+                    "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+                    "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+                  ]
                 },
                 {
                   "auditing": null,
@@ -12152,10 +12533,15 @@
                   "extension_elements": null,
                   "gateway_direction": "Converging",
                   "id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31",
-                  "incoming": "['_b08efa4c-c27c-4654-9901-279a8c456a4f', '_e6011c12-800f-44e6-8ae8-51866664afcf']",
+                  "incoming": [
+                    "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+                    "_e6011c12-800f-44e6-8ae8-51866664afcf"
+                  ],
                   "monitoring": null,
                   "name": null,
-                  "outgoing": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+                  "outgoing": [
+                    "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+                  ]
                 }
               ],
               "performers": [],
@@ -12286,7 +12672,9 @@
                   "human_performers": [],
                   "id": "_b595ec43-0769-4864-8f2e-403c405c8217",
                   "implementation": "##WebService",
-                  "incoming": "_b2d48080-6bb1-4ae9-85c9-916d87536a49",
+                  "incoming": [
+                    "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
@@ -12294,7 +12682,9 @@
                   "multi_instance_loop_characteristics": null,
                   "name": "Book Hotel",
                   "operation_ref": null,
-                  "outgoing": "_e6011c12-800f-44e6-8ae8-51866664afcf",
+                  "outgoing": [
+                    "_e6011c12-800f-44e6-8ae8-51866664afcf"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -12314,7 +12704,9 @@
                   "human_performers": [],
                   "id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12",
                   "implementation": "##WebService",
-                  "incoming": "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+                  "incoming": [
+                    "_018e5307-4c8d-46fd-ba84-7b75409b3124"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
@@ -12322,7 +12714,9 @@
                   "multi_instance_loop_characteristics": null,
                   "name": "Book Flight",
                   "operation_ref": null,
-                  "outgoing": "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+                  "outgoing": [
+                    "_b08efa4c-c27c-4654-9901-279a8c456a4f"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -12382,7 +12776,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": null,
-                  "outgoing": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+                  "outgoing": [
+                    "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -12426,7 +12822,9 @@
                       "event_definitions": [],
                       "extension_elements": null,
                       "id": "_fc4826b1-1e63-49f6-8670-7cc8104e45ea",
-                      "incoming": "_b3d5a547-87a4-460d-b7c1-53b6506127e9",
+                      "incoming": [
+                        "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                      ],
                       "input_set": null,
                       "link_event_definitions": [],
                       "message_event_definitions": [],
@@ -12456,9 +12854,7 @@
                       "auditing": null,
                       "cancel_event_definitions": [],
                       "category_value_refs": [],
-                      "compensate_event_definitions": [
-                        null
-                      ],
+                      "compensate_event_definitions": null,
                       "conditional_event_definitions": [],
                       "data_input_associations": [],
                       "data_inputs": [],
@@ -12469,13 +12865,17 @@
                       "event_definitions": [],
                       "extension_elements": null,
                       "id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f",
-                      "incoming": "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+                      "incoming": [
+                        "_64d60a4e-90cf-4a9a-afbb-631739b6b704"
+                      ],
                       "input_set": null,
                       "link_event_definitions": [],
                       "message_event_definitions": [],
                       "monitoring": null,
                       "name": "Hotel",
-                      "outgoing": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+                      "outgoing": [
+                        "_8d0dadf1-129e-4ba8-b829-3e7e176bf775"
+                      ],
                       "properties": [],
                       "signal_event_definitions": [],
                       "terminate_event_definitions": [],
@@ -12485,9 +12885,7 @@
                       "auditing": null,
                       "cancel_event_definitions": [],
                       "category_value_refs": [],
-                      "compensate_event_definitions": [
-                        null
-                      ],
+                      "compensate_event_definitions": null,
                       "conditional_event_definitions": [],
                       "data_input_associations": [],
                       "data_inputs": [],
@@ -12498,13 +12896,17 @@
                       "event_definitions": [],
                       "extension_elements": null,
                       "id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4",
-                      "incoming": "_3cd5068b-6df1-4a62-a06a-369d063f6160",
+                      "incoming": [
+                        "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+                      ],
                       "input_set": null,
                       "link_event_definitions": [],
                       "message_event_definitions": [],
                       "monitoring": null,
                       "name": "Flight",
-                      "outgoing": "_b62ef735-9d04-494a-aeb4-95fd4862cc45",
+                      "outgoing": [
+                        "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+                      ],
                       "properties": [],
                       "signal_event_definitions": [],
                       "terminate_event_definitions": [],
@@ -12528,10 +12930,15 @@
                       "extension_elements": null,
                       "gateway_direction": "Converging",
                       "id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
-                      "incoming": "['_8d0dadf1-129e-4ba8-b829-3e7e176bf775', '_b62ef735-9d04-494a-aeb4-95fd4862cc45']",
+                      "incoming": [
+                        "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+                        "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+                      ],
                       "monitoring": null,
                       "name": null,
-                      "outgoing": "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                      "outgoing": [
+                        "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+                      ]
                     },
                     {
                       "auditing": null,
@@ -12540,10 +12947,15 @@
                       "extension_elements": null,
                       "gateway_direction": "Diverging",
                       "id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
-                      "incoming": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+                      "incoming": [
+                        "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+                      ],
                       "monitoring": null,
                       "name": null,
-                      "outgoing": "['_64d60a4e-90cf-4a9a-afbb-631739b6b704', '_3cd5068b-6df1-4a62-a06a-369d063f6160']"
+                      "outgoing": [
+                        "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+                        "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+                      ]
                     }
                   ],
                   "performers": [],
@@ -12665,7 +13077,9 @@
                       "message_event_definition": [],
                       "monitoring": null,
                       "name": "Booking",
-                      "outgoing": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+                      "outgoing": [
+                        "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+                      ],
                       "output_set": null,
                       "parallel_multiple": false,
                       "properties": [],
@@ -12729,9 +13143,7 @@
       "cancel_activity": true,
       "cancel_event_definition": [],
       "category_value_refs": [],
-      "compensate_event_definition": [
-        null
-      ],
+      "compensate_event_definition": null,
       "conditional_event_definition": [],
       "data_output": [],
       "data_output_association": [],
@@ -12793,7 +13205,9 @@
       "human_performers": [],
       "id": "_b595ec43-0769-4864-8f2e-403c405c8217",
       "implementation": "##WebService",
-      "incoming": "_b2d48080-6bb1-4ae9-85c9-916d87536a49",
+      "incoming": [
+        "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -12801,7 +13215,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Book Hotel",
       "operation_ref": null,
-      "outgoing": "_e6011c12-800f-44e6-8ae8-51866664afcf",
+      "outgoing": [
+        "_e6011c12-800f-44e6-8ae8-51866664afcf"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -12880,7 +13296,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_babdfa54-b55f-463f-9341-424b42db9760",
-      "incoming": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+      "incoming": [
+        "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -13018,9 +13436,7 @@
           "cancel_activity": true,
           "cancel_event_definition": [],
           "category_value_refs": [],
-          "compensate_event_definition": [
-            null
-          ],
+          "compensate_event_definition": null,
           "conditional_event_definition": [],
           "data_output": [],
           "data_output_association": [],
@@ -13050,9 +13466,7 @@
           "cancel_activity": true,
           "cancel_event_definition": [],
           "category_value_refs": [],
-          "compensate_event_definition": [
-            null
-          ],
+          "compensate_event_definition": null,
           "conditional_event_definition": [],
           "data_output": [],
           "data_output_association": [],
@@ -13105,7 +13519,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_6ff2b954-2017-46dd-941e-4badd9326eac",
-          "incoming": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86",
+          "incoming": [
+            "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -13128,7 +13544,9 @@
       "id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8",
       "implicit_throw_events": [],
       "inclusive_gateways": [],
-      "incoming": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+      "incoming": [
+        "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+      ],
       "intermediate_catch_events": [],
       "intermediate_throw_events": [],
       "io_specification": null,
@@ -13139,7 +13557,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Make Booking",
-      "outgoing": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+      "outgoing": [
+        "_f81560f5-e1c5-497d-a159-dce350f2283c"
+      ],
       "parallel_gateways": [
         {
           "auditing": null,
@@ -13148,10 +13568,15 @@
           "extension_elements": null,
           "gateway_direction": "Diverging",
           "id": "_749dd603-40f5-40fb-89b4-0e305b29892c",
-          "incoming": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+          "incoming": [
+            "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "['_018e5307-4c8d-46fd-ba84-7b75409b3124', '_b2d48080-6bb1-4ae9-85c9-916d87536a49']"
+          "outgoing": [
+            "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+            "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+          ]
         },
         {
           "auditing": null,
@@ -13160,10 +13585,15 @@
           "extension_elements": null,
           "gateway_direction": "Converging",
           "id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31",
-          "incoming": "['_b08efa4c-c27c-4654-9901-279a8c456a4f', '_e6011c12-800f-44e6-8ae8-51866664afcf']",
+          "incoming": [
+            "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+            "_e6011c12-800f-44e6-8ae8-51866664afcf"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+          "outgoing": [
+            "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+          ]
         }
       ],
       "performers": [],
@@ -13294,7 +13724,9 @@
           "human_performers": [],
           "id": "_b595ec43-0769-4864-8f2e-403c405c8217",
           "implementation": "##WebService",
-          "incoming": "_b2d48080-6bb1-4ae9-85c9-916d87536a49",
+          "incoming": [
+            "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -13302,7 +13734,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Book Hotel",
           "operation_ref": null,
-          "outgoing": "_e6011c12-800f-44e6-8ae8-51866664afcf",
+          "outgoing": [
+            "_e6011c12-800f-44e6-8ae8-51866664afcf"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -13322,7 +13756,9 @@
           "human_performers": [],
           "id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12",
           "implementation": "##WebService",
-          "incoming": "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+          "incoming": [
+            "_018e5307-4c8d-46fd-ba84-7b75409b3124"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -13330,7 +13766,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Book Flight",
           "operation_ref": null,
-          "outgoing": "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+          "outgoing": [
+            "_b08efa4c-c27c-4654-9901-279a8c456a4f"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -13390,7 +13828,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": null,
-          "outgoing": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+          "outgoing": [
+            "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -13434,7 +13874,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_fc4826b1-1e63-49f6-8670-7cc8104e45ea",
-              "incoming": "_b3d5a547-87a4-460d-b7c1-53b6506127e9",
+              "incoming": [
+                "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -13464,9 +13906,7 @@
               "auditing": null,
               "cancel_event_definitions": [],
               "category_value_refs": [],
-              "compensate_event_definitions": [
-                null
-              ],
+              "compensate_event_definitions": null,
               "conditional_event_definitions": [],
               "data_input_associations": [],
               "data_inputs": [],
@@ -13477,13 +13917,17 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f",
-              "incoming": "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+              "incoming": [
+                "_64d60a4e-90cf-4a9a-afbb-631739b6b704"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
               "monitoring": null,
               "name": "Hotel",
-              "outgoing": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+              "outgoing": [
+                "_8d0dadf1-129e-4ba8-b829-3e7e176bf775"
+              ],
               "properties": [],
               "signal_event_definitions": [],
               "terminate_event_definitions": [],
@@ -13493,9 +13937,7 @@
               "auditing": null,
               "cancel_event_definitions": [],
               "category_value_refs": [],
-              "compensate_event_definitions": [
-                null
-              ],
+              "compensate_event_definitions": null,
               "conditional_event_definitions": [],
               "data_input_associations": [],
               "data_inputs": [],
@@ -13506,13 +13948,17 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4",
-              "incoming": "_3cd5068b-6df1-4a62-a06a-369d063f6160",
+              "incoming": [
+                "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
               "monitoring": null,
               "name": "Flight",
-              "outgoing": "_b62ef735-9d04-494a-aeb4-95fd4862cc45",
+              "outgoing": [
+                "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+              ],
               "properties": [],
               "signal_event_definitions": [],
               "terminate_event_definitions": [],
@@ -13536,10 +13982,15 @@
               "extension_elements": null,
               "gateway_direction": "Converging",
               "id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
-              "incoming": "['_8d0dadf1-129e-4ba8-b829-3e7e176bf775', '_b62ef735-9d04-494a-aeb4-95fd4862cc45']",
+              "incoming": [
+                "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+                "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+              "outgoing": [
+                "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+              ]
             },
             {
               "auditing": null,
@@ -13548,10 +13999,15 @@
               "extension_elements": null,
               "gateway_direction": "Diverging",
               "id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
-              "incoming": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+              "incoming": [
+                "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "['_64d60a4e-90cf-4a9a-afbb-631739b6b704', '_3cd5068b-6df1-4a62-a06a-369d063f6160']"
+              "outgoing": [
+                "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+                "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+              ]
             }
           ],
           "performers": [],
@@ -13673,7 +14129,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Booking",
-              "outgoing": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+              "outgoing": [
+                "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -13734,10 +14192,15 @@
       "extension_elements": null,
       "gateway_direction": "Converging",
       "id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
-      "incoming": "['_8d0dadf1-129e-4ba8-b829-3e7e176bf775', '_b62ef735-9d04-494a-aeb4-95fd4862cc45']",
+      "incoming": [
+        "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+        "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+      "outgoing": [
+        "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+      ]
     },
     "_c5083d17-61d7-42a8-9716-b2cc7778daae": {
       "bounds": {
@@ -13904,7 +14367,9 @@
       "human_performers": [],
       "id": "_c8fa5253-dde9-471e-b933-58b00e8f374c",
       "implementation": "##WebService",
-      "incoming": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+      "incoming": [
+        "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -13913,7 +14378,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Notify Failed Booking",
       "operation_ref": null,
-      "outgoing": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+      "outgoing": [
+        "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -14058,7 +14525,10 @@
       "human_performers": [],
       "id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46",
       "implementation": "##WebService",
-      "incoming": "['_649072fc-31c7-4e04-bc58-d4442a06f076', '_a0c99000-31e1-4de9-baf7-45c2d09ebbff']",
+      "incoming": [
+        "_649072fc-31c7-4e04-bc58-d4442a06f076",
+        "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -14067,7 +14537,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Notify Customer\nOffer Expired",
       "operation_ref": null,
-      "outgoing": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+      "outgoing": [
+        "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -14130,9 +14602,7 @@
       "auditing": null,
       "cancel_event_definitions": [],
       "category_value_refs": [],
-      "compensate_event_definitions": [
-        null
-      ],
+      "compensate_event_definitions": null,
       "conditional_event_definitions": [],
       "data_input_associations": [],
       "data_inputs": [],
@@ -14143,13 +14613,17 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4",
-      "incoming": "_3cd5068b-6df1-4a62-a06a-369d063f6160",
+      "incoming": [
+        "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
       "monitoring": null,
       "name": "Flight",
-      "outgoing": "_b62ef735-9d04-494a-aeb4-95fd4862cc45",
+      "outgoing": [
+        "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+      ],
       "properties": [],
       "signal_event_definitions": [],
       "terminate_event_definitions": [],
@@ -14170,14 +14644,16 @@
       "event_definition_ref": [],
       "extension_elements": null,
       "id": "_e5c69e92-6f98-47c8-bc22-b75d38620f95",
-      "incoming": "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790",
-      "link_event_definition": [],
-      "message_event_definition": [
-        null
+      "incoming": [
+        "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
       ],
+      "link_event_definition": [],
+      "message_event_definition": null,
       "monitoring": null,
       "name": "Cancel Request",
-      "outgoing": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+      "outgoing": [
+        "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -14219,7 +14695,9 @@
       "human_performers": [],
       "id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd",
       "implementation": "##WebService",
-      "incoming": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+      "incoming": [
+        "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -14228,7 +14706,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Request\nCredit Card Information",
       "operation_ref": null,
-      "outgoing": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+      "outgoing": [
+        "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -14269,7 +14749,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_fc4826b1-1e63-49f6-8670-7cc8104e45ea",
-          "incoming": "_b3d5a547-87a4-460d-b7c1-53b6506127e9",
+          "incoming": [
+            "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -14299,9 +14781,7 @@
           "auditing": null,
           "cancel_event_definitions": [],
           "category_value_refs": [],
-          "compensate_event_definitions": [
-            null
-          ],
+          "compensate_event_definitions": null,
           "conditional_event_definitions": [],
           "data_input_associations": [],
           "data_inputs": [],
@@ -14312,13 +14792,17 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f",
-          "incoming": "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+          "incoming": [
+            "_64d60a4e-90cf-4a9a-afbb-631739b6b704"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
           "monitoring": null,
           "name": "Hotel",
-          "outgoing": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+          "outgoing": [
+            "_8d0dadf1-129e-4ba8-b829-3e7e176bf775"
+          ],
           "properties": [],
           "signal_event_definitions": [],
           "terminate_event_definitions": [],
@@ -14328,9 +14812,7 @@
           "auditing": null,
           "cancel_event_definitions": [],
           "category_value_refs": [],
-          "compensate_event_definitions": [
-            null
-          ],
+          "compensate_event_definitions": null,
           "conditional_event_definitions": [],
           "data_input_associations": [],
           "data_inputs": [],
@@ -14341,13 +14823,17 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4",
-          "incoming": "_3cd5068b-6df1-4a62-a06a-369d063f6160",
+          "incoming": [
+            "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
           "monitoring": null,
           "name": "Flight",
-          "outgoing": "_b62ef735-9d04-494a-aeb4-95fd4862cc45",
+          "outgoing": [
+            "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+          ],
           "properties": [],
           "signal_event_definitions": [],
           "terminate_event_definitions": [],
@@ -14371,10 +14857,15 @@
           "extension_elements": null,
           "gateway_direction": "Converging",
           "id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
-          "incoming": "['_8d0dadf1-129e-4ba8-b829-3e7e176bf775', '_b62ef735-9d04-494a-aeb4-95fd4862cc45']",
+          "incoming": [
+            "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+            "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+          "outgoing": [
+            "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+          ]
         },
         {
           "auditing": null,
@@ -14383,10 +14874,15 @@
           "extension_elements": null,
           "gateway_direction": "Diverging",
           "id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
-          "incoming": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+          "incoming": [
+            "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "['_64d60a4e-90cf-4a9a-afbb-631739b6b704', '_3cd5068b-6df1-4a62-a06a-369d063f6160']"
+          "outgoing": [
+            "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+            "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+          ]
         }
       ],
       "performers": [],
@@ -14508,7 +15004,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Booking",
-          "outgoing": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+          "outgoing": [
+            "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -14537,7 +15035,9 @@
       "human_performers": [],
       "id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12",
       "implementation": "##WebService",
-      "incoming": "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+      "incoming": [
+        "_018e5307-4c8d-46fd-ba84-7b75409b3124"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -14545,7 +15045,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Book Flight",
       "operation_ref": null,
-      "outgoing": "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+      "outgoing": [
+        "_b08efa4c-c27c-4654-9901-279a8c456a4f"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -14640,7 +15142,9 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_ef945053-2c76-4796-8d8b-afc6be8bbfec",
-      "source_ref": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+      "source_ref": [
+        "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+      ],
       "target_ref": "_1a713fab-bf18-4975-afe3-d2bd2820023b",
       "transformation": null
     },
@@ -19180,7 +19684,9 @@
       "participant_band_kind": null
     },
     "_f4813b3e-2820-45ec-9506-0f2a4c7bd086": {
-      "data_output_refs": "_29b8c649-e2a0-4dd3-804b-567e8cc71718",
+      "data_output_refs": [
+        "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_f4813b3e-2820-45ec-9506-0f2a4c7bd086",
@@ -19303,7 +19809,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_fc4826b1-1e63-49f6-8670-7cc8104e45ea",
-      "incoming": "_b3d5a547-87a4-460d-b7c1-53b6506127e9",
+      "incoming": [
+        "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -19350,9 +19858,7 @@
       "cancel_activity": true,
       "cancel_event_definition": [],
       "category_value_refs": [],
-      "compensate_event_definition": [
-        null
-      ],
+      "compensate_event_definition": null,
       "conditional_event_definition": [],
       "data_output": [],
       "data_output_association": [],
@@ -19376,5 +19882,732 @@
       "terminate_event_definition": [],
       "timer_event_definition": []
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "_41b1bf64-dba0-4ab1-a834-0ee931fb4cab",
+      "property": "data_input_refs",
+      "reference_id": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+    },
+    {
+      "element_id": "_2d5ecd07-500d-4693-bb58-8682897d59e2",
+      "property": "data_output_refs",
+      "reference_id": "_1a713fab-bf18-4975-afe3-d2bd2820023b"
+    },
+    {
+      "element_id": "_15fef309-6718-4352-9b71-f757bcd8c023",
+      "property": "incoming",
+      "reference_id": "_54044d90-3a1e-4a49-99a3-1497045c7235"
+    },
+    {
+      "element_id": "_15fef309-6718-4352-9b71-f757bcd8c023",
+      "property": "outgoing",
+      "reference_id": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+    },
+    {
+      "element_id": "_e5c69e92-6f98-47c8-bc22-b75d38620f95",
+      "property": "incoming",
+      "reference_id": "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
+    },
+    {
+      "element_id": "_e5c69e92-6f98-47c8-bc22-b75d38620f95",
+      "property": "outgoing",
+      "reference_id": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+    },
+    {
+      "element_id": "_87baeef0-f32e-4a93-b802-fdd588aaf729",
+      "property": "incoming",
+      "reference_id": "_16857297-f0fb-4027-87f6-633a76267c84"
+    },
+    {
+      "element_id": "_87baeef0-f32e-4a93-b802-fdd588aaf729",
+      "property": "outgoing",
+      "reference_id": "_649072fc-31c7-4e04-bc58-d4442a06f076"
+    },
+    {
+      "element_id": "_6a5cdbbf-2618-496e-b728-955dc215ef9d",
+      "property": "incoming",
+      "reference_id": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+    },
+    {
+      "element_id": "_6a5cdbbf-2618-496e-b728-955dc215ef9d",
+      "property": "outgoing",
+      "reference_id": "_c72535b8-43f7-4906-9f18-691e03050c24"
+    },
+    {
+      "element_id": "_88247168-b457-4663-aad0-753a0236c8df",
+      "property": "incoming",
+      "reference_id": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+    },
+    {
+      "element_id": "_7eb87eb8-0d7a-445b-b768-90d754a938ed",
+      "property": "incoming",
+      "reference_id": "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+    },
+    {
+      "element_id": "_42e03d0f-6c6b-4493-971f-c6928eb563b0",
+      "property": "incoming",
+      "reference_id": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+    },
+    {
+      "element_id": "_babdfa54-b55f-463f-9341-424b42db9760",
+      "property": "incoming",
+      "reference_id": "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+    },
+    {
+      "element_id": "_a68b0941-b7e3-4791-8e13-fd9622e4448c",
+      "property": "incoming",
+      "reference_id": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+    },
+    {
+      "element_id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd",
+      "property": "incoming",
+      "reference_id": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73"
+    },
+    {
+      "element_id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd",
+      "property": "outgoing",
+      "reference_id": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+    },
+    {
+      "element_id": "_f4813b3e-2820-45ec-9506-0f2a4c7bd086",
+      "property": "data_output_refs",
+      "reference_id": "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+    },
+    {
+      "element_id": "_ef945053-2c76-4796-8d8b-afc6be8bbfec",
+      "property": "source_ref",
+      "reference_id": "_29b8c649-e2a0-4dd3-804b-567e8cc71718"
+    },
+    {
+      "element_id": "_ef945053-2c76-4796-8d8b-afc6be8bbfec",
+      "property": "target_ref",
+      "reference_id": "_1a713fab-bf18-4975-afe3-d2bd2820023b"
+    },
+    {
+      "element_id": "_22612d45-65ca-4a74-a6eb-53af7ebcb5ff",
+      "property": "incoming",
+      "reference_id": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+    },
+    {
+      "element_id": "_22612d45-65ca-4a74-a6eb-53af7ebcb5ff",
+      "property": "outgoing",
+      "reference_id": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1"
+    },
+    {
+      "element_id": "_c8fa5253-dde9-471e-b933-58b00e8f374c",
+      "property": "incoming",
+      "reference_id": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+    },
+    {
+      "element_id": "_c8fa5253-dde9-471e-b933-58b00e8f374c",
+      "property": "outgoing",
+      "reference_id": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac"
+    },
+    {
+      "element_id": "_5a361a87-dcba-4107-a625-026abada856d",
+      "property": "data_input_refs",
+      "reference_id": "_9628422b-85a6-4857-8c14-7289b9fd9a8a"
+    },
+    {
+      "element_id": "_82006a49-2cc8-4814-83e2-28c5a85a4c4a",
+      "property": "source_ref",
+      "reference_id": "_e8347f3a-e1a1-41d1-b2e1-4089c02028bc"
+    },
+    {
+      "element_id": "_82006a49-2cc8-4814-83e2-28c5a85a4c4a",
+      "property": "target_ref",
+      "reference_id": "_9628422b-85a6-4857-8c14-7289b9fd9a8a"
+    },
+    {
+      "element_id": "_9cc2ac34-f12c-49e0-b37c-144e5a84fd92",
+      "property": "incoming",
+      "reference_id": "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+    },
+    {
+      "element_id": "_9cc2ac34-f12c-49e0-b37c-144e5a84fd92",
+      "property": "outgoing",
+      "reference_id": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+    },
+    {
+      "element_id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46",
+      "property": "incoming",
+      "reference_id": "_649072fc-31c7-4e04-bc58-d4442a06f076"
+    },
+    {
+      "element_id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46",
+      "property": "incoming",
+      "reference_id": "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+    },
+    {
+      "element_id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46",
+      "property": "outgoing",
+      "reference_id": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff"
+    },
+    {
+      "element_id": "_2d6586cf-81fc-4e2a-83ec-6cfff5b34bb0",
+      "property": "incoming",
+      "reference_id": "_c72535b8-43f7-4906-9f18-691e03050c24"
+    },
+    {
+      "element_id": "_2d6586cf-81fc-4e2a-83ec-6cfff5b34bb0",
+      "property": "outgoing",
+      "reference_id": "_94e0bd86-6659-4669-baee-ce671c7f33d6"
+    },
+    {
+      "element_id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d",
+      "property": "incoming",
+      "reference_id": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c"
+    },
+    {
+      "element_id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d",
+      "property": "outgoing",
+      "reference_id": "_16857297-f0fb-4027-87f6-633a76267c84"
+    },
+    {
+      "element_id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d",
+      "property": "outgoing",
+      "reference_id": "_54044d90-3a1e-4a49-99a3-1497045c7235"
+    },
+    {
+      "element_id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d",
+      "property": "outgoing",
+      "reference_id": "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790"
+    },
+    {
+      "element_id": "_44e3f1fa-42cd-40b7-9980-a51ac49d5fa3",
+      "property": "outgoing",
+      "reference_id": "_9ec5ad1d-0662-42a4-9118-bca0bf744422"
+    },
+    {
+      "element_id": "_6ff2b954-2017-46dd-941e-4badd9326eac",
+      "property": "incoming",
+      "reference_id": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+    },
+    {
+      "element_id": "_31a01c78-9a86-4b53-a485-e8a973ba6383",
+      "property": "outgoing",
+      "reference_id": "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+    },
+    {
+      "element_id": "_fc4826b1-1e63-49f6-8670-7cc8104e45ea",
+      "property": "incoming",
+      "reference_id": "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+    },
+    {
+      "element_id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f",
+      "property": "incoming",
+      "reference_id": "_64d60a4e-90cf-4a9a-afbb-631739b6b704"
+    },
+    {
+      "element_id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f",
+      "property": "outgoing",
+      "reference_id": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775"
+    },
+    {
+      "element_id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4",
+      "property": "incoming",
+      "reference_id": "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+    },
+    {
+      "element_id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4",
+      "property": "outgoing",
+      "reference_id": "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+    },
+    {
+      "element_id": "_8af17ed4-6e13-463b-8333-d397b3002c65",
+      "property": "outgoing",
+      "reference_id": "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+    },
+    {
+      "element_id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
+      "property": "incoming",
+      "reference_id": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775"
+    },
+    {
+      "element_id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
+      "property": "incoming",
+      "reference_id": "_b62ef735-9d04-494a-aeb4-95fd4862cc45"
+    },
+    {
+      "element_id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68",
+      "property": "outgoing",
+      "reference_id": "_b3d5a547-87a4-460d-b7c1-53b6506127e9"
+    },
+    {
+      "element_id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
+      "property": "incoming",
+      "reference_id": "_e0c52135-c57f-4ee6-b488-22bbab06dccc"
+    },
+    {
+      "element_id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
+      "property": "outgoing",
+      "reference_id": "_64d60a4e-90cf-4a9a-afbb-631739b6b704"
+    },
+    {
+      "element_id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c",
+      "property": "outgoing",
+      "reference_id": "_3cd5068b-6df1-4a62-a06a-369d063f6160"
+    },
+    {
+      "element_id": "_b3d5a547-87a4-460d-b7c1-53b6506127e9",
+      "property": "source_ref",
+      "reference_id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68"
+    },
+    {
+      "element_id": "_b3d5a547-87a4-460d-b7c1-53b6506127e9",
+      "property": "target_ref",
+      "reference_id": "_fc4826b1-1e63-49f6-8670-7cc8104e45ea"
+    },
+    {
+      "element_id": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+      "property": "source_ref",
+      "reference_id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f"
+    },
+    {
+      "element_id": "_8d0dadf1-129e-4ba8-b829-3e7e176bf775",
+      "property": "target_ref",
+      "reference_id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68"
+    },
+    {
+      "element_id": "_b62ef735-9d04-494a-aeb4-95fd4862cc45",
+      "property": "source_ref",
+      "reference_id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4"
+    },
+    {
+      "element_id": "_b62ef735-9d04-494a-aeb4-95fd4862cc45",
+      "property": "target_ref",
+      "reference_id": "_c4ddacd9-6e12-49e3-b058-e71c0af08c68"
+    },
+    {
+      "element_id": "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+      "property": "source_ref",
+      "reference_id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c"
+    },
+    {
+      "element_id": "_64d60a4e-90cf-4a9a-afbb-631739b6b704",
+      "property": "target_ref",
+      "reference_id": "_99bf4db9-3616-4ed1-a0f8-b8175c3fd46f"
+    },
+    {
+      "element_id": "_3cd5068b-6df1-4a62-a06a-369d063f6160",
+      "property": "source_ref",
+      "reference_id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c"
+    },
+    {
+      "element_id": "_3cd5068b-6df1-4a62-a06a-369d063f6160",
+      "property": "target_ref",
+      "reference_id": "_e4b9fa74-efd8-409f-a2e4-ad917df767b4"
+    },
+    {
+      "element_id": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+      "property": "source_ref",
+      "reference_id": "_8af17ed4-6e13-463b-8333-d397b3002c65"
+    },
+    {
+      "element_id": "_e0c52135-c57f-4ee6-b488-22bbab06dccc",
+      "property": "target_ref",
+      "reference_id": "_08cd4ce0-bf7c-4a05-bacf-546daa51ce9c"
+    },
+    {
+      "element_id": "_749dd603-40f5-40fb-89b4-0e305b29892c",
+      "property": "incoming",
+      "reference_id": "_d51b76e8-b096-4376-ba01-7ca63ae51f70"
+    },
+    {
+      "element_id": "_749dd603-40f5-40fb-89b4-0e305b29892c",
+      "property": "outgoing",
+      "reference_id": "_018e5307-4c8d-46fd-ba84-7b75409b3124"
+    },
+    {
+      "element_id": "_749dd603-40f5-40fb-89b4-0e305b29892c",
+      "property": "outgoing",
+      "reference_id": "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+    },
+    {
+      "element_id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31",
+      "property": "incoming",
+      "reference_id": "_b08efa4c-c27c-4654-9901-279a8c456a4f"
+    },
+    {
+      "element_id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31",
+      "property": "incoming",
+      "reference_id": "_e6011c12-800f-44e6-8ae8-51866664afcf"
+    },
+    {
+      "element_id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31",
+      "property": "outgoing",
+      "reference_id": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86"
+    },
+    {
+      "element_id": "_b595ec43-0769-4864-8f2e-403c405c8217",
+      "property": "incoming",
+      "reference_id": "_b2d48080-6bb1-4ae9-85c9-916d87536a49"
+    },
+    {
+      "element_id": "_b595ec43-0769-4864-8f2e-403c405c8217",
+      "property": "outgoing",
+      "reference_id": "_e6011c12-800f-44e6-8ae8-51866664afcf"
+    },
+    {
+      "element_id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12",
+      "property": "incoming",
+      "reference_id": "_018e5307-4c8d-46fd-ba84-7b75409b3124"
+    },
+    {
+      "element_id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12",
+      "property": "outgoing",
+      "reference_id": "_b08efa4c-c27c-4654-9901-279a8c456a4f"
+    },
+    {
+      "element_id": "_b25ecc7c-4eff-4a70-96f2-6b2f94cf19b1",
+      "property": "attached_to_ref",
+      "reference_id": "_b595ec43-0769-4864-8f2e-403c405c8217"
+    },
+    {
+      "element_id": "_fe3f9094-097b-416d-adeb-4b7e7e753f3c",
+      "property": "attached_to_ref",
+      "reference_id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12"
+    },
+    {
+      "element_id": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+      "property": "source_ref",
+      "reference_id": "_31a01c78-9a86-4b53-a485-e8a973ba6383"
+    },
+    {
+      "element_id": "_d51b76e8-b096-4376-ba01-7ca63ae51f70",
+      "property": "target_ref",
+      "reference_id": "_749dd603-40f5-40fb-89b4-0e305b29892c"
+    },
+    {
+      "element_id": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86",
+      "property": "source_ref",
+      "reference_id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31"
+    },
+    {
+      "element_id": "_eba304c2-42e8-4d65-a9dc-e2483fd8ad86",
+      "property": "target_ref",
+      "reference_id": "_6ff2b954-2017-46dd-941e-4badd9326eac"
+    },
+    {
+      "element_id": "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+      "property": "source_ref",
+      "reference_id": "_749dd603-40f5-40fb-89b4-0e305b29892c"
+    },
+    {
+      "element_id": "_018e5307-4c8d-46fd-ba84-7b75409b3124",
+      "property": "target_ref",
+      "reference_id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12"
+    },
+    {
+      "element_id": "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+      "property": "source_ref",
+      "reference_id": "_ea5cc55d-bfce-49c6-8a1a-a8a41a85da12"
+    },
+    {
+      "element_id": "_b08efa4c-c27c-4654-9901-279a8c456a4f",
+      "property": "target_ref",
+      "reference_id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31"
+    },
+    {
+      "element_id": "_e6011c12-800f-44e6-8ae8-51866664afcf",
+      "property": "source_ref",
+      "reference_id": "_b595ec43-0769-4864-8f2e-403c405c8217"
+    },
+    {
+      "element_id": "_e6011c12-800f-44e6-8ae8-51866664afcf",
+      "property": "target_ref",
+      "reference_id": "_6a68d4b4-7549-42ce-b903-9da8b2024d31"
+    },
+    {
+      "element_id": "_b2d48080-6bb1-4ae9-85c9-916d87536a49",
+      "property": "source_ref",
+      "reference_id": "_749dd603-40f5-40fb-89b4-0e305b29892c"
+    },
+    {
+      "element_id": "_b2d48080-6bb1-4ae9-85c9-916d87536a49",
+      "property": "target_ref",
+      "reference_id": "_b595ec43-0769-4864-8f2e-403c405c8217"
+    },
+    {
+      "element_id": "_651344ad-d784-4ef2-9655-4bc6393ac323",
+      "property": "source_ref",
+      "reference_id": "_b25ecc7c-4eff-4a70-96f2-6b2f94cf19b1"
+    },
+    {
+      "element_id": "_651344ad-d784-4ef2-9655-4bc6393ac323",
+      "property": "target_ref",
+      "reference_id": "_3a2f133c-3ae1-4e21-94b5-6e8cf51acd74"
+    },
+    {
+      "element_id": "_98b2bd26-e113-4d19-b6a8-bcda781a823b",
+      "property": "source_ref",
+      "reference_id": "_fe3f9094-097b-416d-adeb-4b7e7e753f3c"
+    },
+    {
+      "element_id": "_98b2bd26-e113-4d19-b6a8-bcda781a823b",
+      "property": "target_ref",
+      "reference_id": "_0198160d-b56c-4919-9920-db5f32d16b3f"
+    },
+    {
+      "element_id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8",
+      "property": "incoming",
+      "reference_id": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7"
+    },
+    {
+      "element_id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8",
+      "property": "outgoing",
+      "reference_id": "_f81560f5-e1c5-497d-a159-dce350f2283c"
+    },
+    {
+      "element_id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b",
+      "property": "incoming",
+      "reference_id": "_f81560f5-e1c5-497d-a159-dce350f2283c"
+    },
+    {
+      "element_id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b",
+      "property": "outgoing",
+      "reference_id": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763"
+    },
+    {
+      "element_id": "_8afc49f0-42c2-4da9-8e79-e08dbe349776",
+      "property": "incoming",
+      "reference_id": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed"
+    },
+    {
+      "element_id": "_8afc49f0-42c2-4da9-8e79-e08dbe349776",
+      "property": "outgoing",
+      "reference_id": "_e396fc69-5792-41e3-8a92-ee6b83cd0909"
+    },
+    {
+      "element_id": "_6db9a77f-189f-4c07-b33b-e0c88f09e0db",
+      "property": "outgoing",
+      "reference_id": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6"
+    },
+    {
+      "element_id": "_6db9a77f-189f-4c07-b33b-e0c88f09e0db",
+      "property": "attached_to_ref",
+      "reference_id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b"
+    },
+    {
+      "element_id": "_54d6e34f-4613-48d4-9143-b90927448adb",
+      "property": "outgoing",
+      "reference_id": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007"
+    },
+    {
+      "element_id": "_54d6e34f-4613-48d4-9143-b90927448adb",
+      "property": "attached_to_ref",
+      "reference_id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8"
+    },
+    {
+      "element_id": "_32c4138c-74ae-484a-a7e5-0609370d7080",
+      "property": "outgoing",
+      "reference_id": "_a0c99000-31e1-4de9-baf7-45c2d09ebbff"
+    },
+    {
+      "element_id": "_32c4138c-74ae-484a-a7e5-0609370d7080",
+      "property": "attached_to_ref",
+      "reference_id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd"
+    },
+    {
+      "element_id": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+      "property": "source_ref",
+      "reference_id": "_15fef309-6718-4352-9b71-f757bcd8c023"
+    },
+    {
+      "element_id": "_c7c2f8e1-a93f-44d6-9a94-cb92d7466d73",
+      "property": "target_ref",
+      "reference_id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd"
+    },
+    {
+      "element_id": "_16857297-f0fb-4027-87f6-633a76267c84",
+      "property": "source_ref",
+      "reference_id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d"
+    },
+    {
+      "element_id": "_16857297-f0fb-4027-87f6-633a76267c84",
+      "property": "target_ref",
+      "reference_id": "_87baeef0-f32e-4a93-b802-fdd588aaf729"
+    },
+    {
+      "element_id": "_54044d90-3a1e-4a49-99a3-1497045c7235",
+      "property": "source_ref",
+      "reference_id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d"
+    },
+    {
+      "element_id": "_54044d90-3a1e-4a49-99a3-1497045c7235",
+      "property": "target_ref",
+      "reference_id": "_15fef309-6718-4352-9b71-f757bcd8c023"
+    },
+    {
+      "element_id": "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790",
+      "property": "source_ref",
+      "reference_id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d"
+    },
+    {
+      "element_id": "_2403da0e-5b49-43fa-ba00-ec6c1f3e4790",
+      "property": "target_ref",
+      "reference_id": "_e5c69e92-6f98-47c8-bc22-b75d38620f95"
+    },
+    {
+      "element_id": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+      "property": "source_ref",
+      "reference_id": "_6db9a77f-189f-4c07-b33b-e0c88f09e0db"
+    },
+    {
+      "element_id": "_b792d502-a08e-4a3d-bdc1-1fc33a2022f6",
+      "property": "target_ref",
+      "reference_id": "_6a5cdbbf-2618-496e-b728-955dc215ef9d"
+    },
+    {
+      "element_id": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+      "property": "source_ref",
+      "reference_id": "_22612d45-65ca-4a74-a6eb-53af7ebcb5ff"
+    },
+    {
+      "element_id": "_c69565cd-3a08-4532-b466-8f9a9ebdc1e1",
+      "property": "target_ref",
+      "reference_id": "_42e03d0f-6c6b-4493-971f-c6928eb563b0"
+    },
+    {
+      "element_id": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+      "property": "source_ref",
+      "reference_id": "_54d6e34f-4613-48d4-9143-b90927448adb"
+    },
+    {
+      "element_id": "_8eac4fb5-c746-42e4-ab0b-80cdfaf76007",
+      "property": "target_ref",
+      "reference_id": "_c8fa5253-dde9-471e-b933-58b00e8f374c"
+    },
+    {
+      "element_id": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+      "property": "source_ref",
+      "reference_id": "_c8fa5253-dde9-471e-b933-58b00e8f374c"
+    },
+    {
+      "element_id": "_ec8c7430-02e1-4298-9b00-33c4d56d0fac",
+      "property": "target_ref",
+      "reference_id": "_a68b0941-b7e3-4791-8e13-fd9622e4448c"
+    },
+    {
+      "element_id": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+      "property": "source_ref",
+      "reference_id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b"
+    },
+    {
+      "element_id": "_65293cb4-b859-4ff7-bcd3-ba4e38cf8763",
+      "property": "target_ref",
+      "reference_id": "_22612d45-65ca-4a74-a6eb-53af7ebcb5ff"
+    },
+    {
+      "element_id": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+      "property": "source_ref",
+      "reference_id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8"
+    },
+    {
+      "element_id": "_f81560f5-e1c5-497d-a159-dce350f2283c",
+      "property": "target_ref",
+      "reference_id": "_614d6469-2bb8-4ad6-a20a-db5db6321c6b"
+    },
+    {
+      "element_id": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+      "property": "source_ref",
+      "reference_id": "_44e3f1fa-42cd-40b7-9980-a51ac49d5fa3"
+    },
+    {
+      "element_id": "_9ec5ad1d-0662-42a4-9118-bca0bf744422",
+      "property": "target_ref",
+      "reference_id": "_9cc2ac34-f12c-49e0-b37c-144e5a84fd92"
+    },
+    {
+      "element_id": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+      "property": "source_ref",
+      "reference_id": "_9cc2ac34-f12c-49e0-b37c-144e5a84fd92"
+    },
+    {
+      "element_id": "_bcb8805c-5e93-41ec-991b-575d26ed3a9c",
+      "property": "target_ref",
+      "reference_id": "_7ab6dbdf-f55b-4be6-bb41-d99793135c1d"
+    },
+    {
+      "element_id": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+      "property": "source_ref",
+      "reference_id": "_e5c69e92-6f98-47c8-bc22-b75d38620f95"
+    },
+    {
+      "element_id": "_f072c57e-dcc6-4a16-8f28-13a2cd6e43ed",
+      "property": "target_ref",
+      "reference_id": "_8afc49f0-42c2-4da9-8e79-e08dbe349776"
+    },
+    {
+      "element_id": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+      "property": "source_ref",
+      "reference_id": "_8afc49f0-42c2-4da9-8e79-e08dbe349776"
+    },
+    {
+      "element_id": "_e396fc69-5792-41e3-8a92-ee6b83cd0909",
+      "property": "target_ref",
+      "reference_id": "_7eb87eb8-0d7a-445b-b768-90d754a938ed"
+    },
+    {
+      "element_id": "_649072fc-31c7-4e04-bc58-d4442a06f076",
+      "property": "source_ref",
+      "reference_id": "_87baeef0-f32e-4a93-b802-fdd588aaf729"
+    },
+    {
+      "element_id": "_649072fc-31c7-4e04-bc58-d4442a06f076",
+      "property": "target_ref",
+      "reference_id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46"
+    },
+    {
+      "element_id": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+      "property": "source_ref",
+      "reference_id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46"
+    },
+    {
+      "element_id": "_51e34f49-b9eb-4f10-ac0a-7af81e1370ff",
+      "property": "target_ref",
+      "reference_id": "_88247168-b457-4663-aad0-753a0236c8df"
+    },
+    {
+      "element_id": "_a0c99000-31e1-4de9-baf7-45c2d09ebbff",
+      "property": "source_ref",
+      "reference_id": "_32c4138c-74ae-484a-a7e5-0609370d7080"
+    },
+    {
+      "element_id": "_a0c99000-31e1-4de9-baf7-45c2d09ebbff",
+      "property": "target_ref",
+      "reference_id": "_de7e721e-a073-4857-b8c3-c6ae886dbb46"
+    },
+    {
+      "element_id": "_c72535b8-43f7-4906-9f18-691e03050c24",
+      "property": "source_ref",
+      "reference_id": "_6a5cdbbf-2618-496e-b728-955dc215ef9d"
+    },
+    {
+      "element_id": "_c72535b8-43f7-4906-9f18-691e03050c24",
+      "property": "target_ref",
+      "reference_id": "_2d6586cf-81fc-4e2a-83ec-6cfff5b34bb0"
+    },
+    {
+      "element_id": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+      "property": "source_ref",
+      "reference_id": "_2d6586cf-81fc-4e2a-83ec-6cfff5b34bb0"
+    },
+    {
+      "element_id": "_94e0bd86-6659-4669-baee-ce671c7f33d6",
+      "property": "target_ref",
+      "reference_id": "_babdfa54-b55f-463f-9341-424b42db9760"
+    },
+    {
+      "element_id": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+      "property": "source_ref",
+      "reference_id": "_e839800f-ad4f-4bcc-aaf2-d38fe4a32bcd"
+    },
+    {
+      "element_id": "_7efd61ea-979e-44f4-91c8-e212ae6b22c7",
+      "property": "target_ref",
+      "reference_id": "_c38139c7-a2d1-47c7-b75a-19e14c7212c8"
+    }
+  ]
 }
