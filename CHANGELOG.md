@@ -1,5 +1,72 @@
 # Changelog
 
+## 0.3.0 (2026-01-07)
+
+[Compare the full difference.](https://github.com/callowayproject/pybpmn-parser/compare/0.2.0...0.3.0)
+
+### New
+
+- Add `.secrets.baseline` to track detected secrets and enhance security. [8146b7a](https://github.com/callowayproject/pybpmn-parser/commit/8146b7ad8fc4fa8b0050e2f25498644a47df805a)
+
+### Other
+
+- Bump the github-actions group with 2 updates. [da4efe4](https://github.com/callowayproject/pybpmn-parser/commit/da4efe44ba52f457c6f4af6aef12bb8864c391c2)
+
+  Bumps the github-actions group with 2 updates: [actions/checkout](https://github.com/actions/checkout) and [actions/download-artifact](https://github.com/actions/download-artifact).
+
+  Updates `actions/checkout` from 5 to 6
+
+  - [Release notes](https://github.com/actions/checkout/releases)
+  - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+  - [Commits](https://github.com/actions/checkout/compare/v5...v6)
+
+  Updates `actions/download-artifact` from 6 to 7
+
+  - [Release notes](https://github.com/actions/download-artifact/releases)
+  - [Commits](https://github.com/actions/download-artifact/compare/v6...v7)
+
+  ______________________________________________________________________
+
+  **updated-dependencies:** - dependency-name: actions/checkout
+  dependency-version: '6'
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+  dependency-group: github-actions
+
+  **signed-off-by:** dependabot[bot] <support@github.com>
+
+- Comment out unused `detect-secrets` hook in pre-commit configuration. [0f22e2a](https://github.com/callowayproject/pybpmn-parser/commit/0f22e2a60523bca0bdfc7d266f1113a1518dbfd2)
+
+### Updates
+
+- Refactor: Remove redundant `reference/index.md`, update navigation links, and add `GH_TOKEN` to `bump-version` workflow env. [e8b9c7a](https://github.com/callowayproject/pybpmn-parser/commit/e8b9c7aa72fc87557760a21aeb1928cc9bd4d72d)
+
+- Refactor: Introduce `ParseContext` for managing elements and references during BPMN parsing, update context handling across factory and core modules, and add `pytest-sugar` dependency. [eb92bc0](https://github.com/callowayproject/pybpmn-parser/commit/eb92bc0a7e57f69a0213dfbc12e30004fad36226)
+
+- Refactor: Convert BPMN node connection fields to consistently use arrays instead of strings. [93cdf5d](https://github.com/callowayproject/pybpmn-parser/commit/93cdf5d2d9630e098765e3843b2f13ee2f663218)
+
+- Refactor: Replace deprecated `read_text` with `files.joinpath(...).read_text()`. [ad3be1b](https://github.com/callowayproject/pybpmn-parser/commit/ad3be1bc3f7d57116d8f07c4cc23817ae4714400)
+
+- Refactor: Add `is_reference` metadata attribute to various BPMN model fields across activity and common classes. [0c3a219](https://github.com/callowayproject/pybpmn-parser/commit/0c3a219606b919bbba35d02ad1bdbd54c1acee47)
+
+- Refactor: Simplify string formatting and exception handling in `core.py`. [14ccca6](https://github.com/callowayproject/pybpmn-parser/commit/14ccca617b43d04afad6249378ac747337181fe0)
+
+- Refactor: Remove union types from `implementation` and `method` fields across activity classes. [a5b47e8](https://github.com/callowayproject/pybpmn-parser/commit/a5b47e8ff35ed4a64ae522e2e15f76d43cb550bb)
+
+- Remove unused `--baseline` argument from detect-secrets hook in pre-commit config. [27270c7](https://github.com/callowayproject/pybpmn-parser/commit/27270c795b91a13cceb582f0b530fc7507bd6599)
+
+- Update `.secrets.baseline` to include new filter path and refresh metadata timestamp. [86cdd19](https://github.com/callowayproject/pybpmn-parser/commit/86cdd19d52844b616a5bf6306bc54fbc38816164)
+
+- Update changelog for unreleased changes, including fixes, new features, updates, and code refactoring. [120f273](https://github.com/callowayproject/pybpmn-parser/commit/120f2735c2b9162cf076a13636842520aa8e3877)
+
+- Remove "Next Steps" sections and outdated example references to streamline documentation. [698041f](https://github.com/callowayproject/pybpmn-parser/commit/698041fe1497183ac1d00e33307d7cfe4e180a60)
+
+- Update `miwg-test-suite-2025` fixtures to include expanded BPMNDiagram details. [ad0482d](https://github.com/callowayproject/pybpmn-parser/commit/ad0482d11c221c7a96da513d7547db5ed6663e58)
+
+- Update dependency versions in `uv.lock` to ensure compatibility with the latest releases. [4c931f7](https://github.com/callowayproject/pybpmn-parser/commit/4c931f7f85f6ed780cbc9dbf1389e595e6937112)
+
+- Refactor factory and core modules for improved clarity and efficiency; introduce `index_ids` utility and encapsulate parsing output in `ParseResult`. [a908f0c](https://github.com/callowayproject/pybpmn-parser/commit/a908f0ca57762e159ba68bf1e74757905d926abc)
+
 ## 0.2.0 (2025-12-30)
 
 [Compare the full difference.](https://github.com/callowayproject/pybpmn-parser/compare/0.1.0...0.2.0)
