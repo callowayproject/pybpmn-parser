@@ -1254,7 +1254,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_d65b0a3d-8c42-4be7-9ac1-7324aa3d31f8",
-                "source_ref": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+                "source_ref": [
+                  "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+                ],
                 "target_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
                 "transformation": null
               }
@@ -1271,7 +1273,9 @@
             "human_performers": [],
             "id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
             "implementation": "##unspecified",
-            "incoming": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+            "incoming": [
+              "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+            ],
             "io_specification": {
               "data_inputs": [],
               "data_outputs": [
@@ -1289,12 +1293,12 @@
               "documentation": [],
               "extension_elements": null,
               "id": null,
-              "input_sets": [
-                null
-              ],
+              "input_sets": null,
               "output_sets": [
                 {
-                  "data_output_refs": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+                  "data_output_refs": [
+                    "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_a389083a-36ae-4975-b210-9464fe82c22e",
@@ -1310,7 +1314,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Select \nother platforms",
-            "outgoing": "_64ac4473-a38f-4043-973a-69c497adc88a",
+            "outgoing": [
+              "_64ac4473-a38f-4043-973a-69c497adc88a"
+            ],
             "performers": [
               {
                 "documentation": [],
@@ -1427,7 +1433,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
-            "incoming": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+            "incoming": [
+              "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1451,10 +1459,15 @@
             "extension_elements": null,
             "gateway_direction": "Diverging",
             "id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
-            "incoming": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+            "incoming": [
+              "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+            ],
             "monitoring": null,
             "name": "Advertisement approved?",
-            "outgoing": "['_d74707c7-6af3-4db7-9403-924bfdf6a7d8', '_1d201a22-d500-4412-a32a-2c7e24ad4d6b']"
+            "outgoing": [
+              "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+              "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+            ]
           }
         ],
         "extension_elements": null,
@@ -1500,7 +1513,9 @@
           "id": null,
           "input_sets": [
             {
-              "data_input_refs": "_d08869ef-4951-4592-bb73-363cee03cb90",
+              "data_input_refs": [
+                "_d08869ef-4951-4592-bb73-363cee03cb90"
+              ],
               "documentation": [],
               "extension_elements": null,
               "id": "_e717d617-bac8-4278-ac70-3a9767e3b27f",
@@ -1512,7 +1527,9 @@
           ],
           "output_sets": [
             {
-              "data_output_refs": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
+              "data_output_refs": [
+                "_b6464e75-dd3d-45d9-84cd-861c42a3bedf"
+              ],
               "documentation": [],
               "extension_elements": null,
               "id": "_a8015818-8340-4ba0-a3c9-84ee85a353eb",
@@ -1535,7 +1552,12 @@
                 "child_lane_set": null,
                 "documentation": [],
                 "extension_elements": null,
-                "flow_node_refs": "['_5ba97787-8a90-4002-8277-b0895e45cf1f', '_392c86ba-38b5-4dc9-b98d-f97ad4c2add5', '_15b00027-5049-4081-8952-fd398e8b722a', '_26c40c03-5d1f-46c5-81f1-ddd485868125']",
+                "flow_node_refs": [
+                  "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+                  "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+                  "_15b00027-5049-4081-8952-fd398e8b722a",
+                  "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+                ],
                 "id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
                 "name": "Hiring manager",
                 "partition_element": null,
@@ -1545,7 +1567,15 @@
                 "child_lane_set": null,
                 "documentation": [],
                 "extension_elements": null,
-                "flow_node_refs": "['_d3435084-f2c7-43cc-abcc-c679bc4232ac', '_b13d6fa3-fc78-40c7-ae77-609be07493e9', '_64eabfe9-6947-43eb-ac45-8d331745f86c', '_eae674ce-4d6e-48ac-819c-c79e0868e40d', '_0783f019-f40c-43d6-ab40-0f1c81f8d9e7', '_c456dbcc-bbe3-4c75-b57d-9427525c0a94', '_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535']",
+                "flow_node_refs": [
+                  "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+                  "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+                  "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+                  "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+                  "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+                  "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+                  "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535"
+                ],
                 "id": "_dd32321b-8e95-4801-8eed-5451399b4378",
                 "name": "Recruitment",
                 "partition_element": null,
@@ -1566,10 +1596,15 @@
             "extension_elements": null,
             "gateway_direction": "Diverging",
             "id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
-            "incoming": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+            "incoming": [
+              "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+            ],
             "monitoring": null,
             "name": null,
-            "outgoing": "['_f476667f-44f5-4fec-9414-bf70d987853f', '_f3187dce-c37e-4d5b-b49c-ed28965abb73']"
+            "outgoing": [
+              "_f476667f-44f5-4fec-9414-bf70d987853f",
+              "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+            ]
           },
           {
             "auditing": null,
@@ -1578,10 +1613,15 @@
             "extension_elements": null,
             "gateway_direction": "Converging",
             "id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
-            "incoming": "['_720cb9a3-20df-4da1-a923-5336b269c104', '_847352f2-ac0c-44be-9e24-f4c7f76bfe7e']",
+            "incoming": [
+              "_720cb9a3-20df-4da1-a923-5336b269c104",
+              "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+            ],
             "monitoring": null,
             "name": null,
-            "outgoing": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+            "outgoing": [
+              "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+            ]
           }
         ],
         "performers": [],
@@ -1779,7 +1819,9 @@
             "human_performers": [],
             "id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
             "implementation": "##WebService",
-            "incoming": "_f476667f-44f5-4fec-9414-bf70d987853f",
+            "incoming": [
+              "_f476667f-44f5-4fec-9414-bf70d987853f"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -1787,7 +1829,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Publish on \nhomepage",
             "operation_ref": null,
-            "outgoing": "_720cb9a3-20df-4da1-a923-5336b269c104",
+            "outgoing": [
+              "_720cb9a3-20df-4da1-a923-5336b269c104"
+            ],
             "performers": [
               {
                 "documentation": [],
@@ -1815,7 +1859,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_505fa8cf-5697-4e35-bc4e-63df8e99093e",
-                "source_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+                "source_ref": [
+                  "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba"
+                ],
                 "target_ref": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
                 "transformation": null
               }
@@ -1827,7 +1873,9 @@
             "human_performers": [],
             "id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
             "implementation": "##WebService",
-            "incoming": "_64ac4473-a38f-4043-973a-69c497adc88a",
+            "incoming": [
+              "_64ac4473-a38f-4043-973a-69c497adc88a"
+            ],
             "io_specification": {
               "data_inputs": [
                 {
@@ -1846,7 +1894,9 @@
               "id": null,
               "input_sets": [
                 {
-                  "data_input_refs": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
+                  "data_input_refs": [
+                    "_d130e681-7e04-48d6-be39-2b7cfe24b9d4"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_f49af959-916f-43bc-9f37-00ef9c44e967",
@@ -1856,9 +1906,7 @@
                   "while_executing_input_refs": []
                 }
               ],
-              "output_sets": [
-                null
-              ]
+              "output_sets": null
             },
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -1881,7 +1929,9 @@
             },
             "name": "Publish on \nother platforms",
             "operation_ref": null,
-            "outgoing": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+            "outgoing": [
+              "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1912,7 +1962,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Job \nvacancy",
-            "outgoing": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+            "outgoing": [
+              "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1940,7 +1992,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
-                "source_ref": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+                "source_ref": [
+                  "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+                ],
                 "target_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
                 "transformation": null
               }
@@ -1957,7 +2011,9 @@
             "human_performers": [],
             "id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
             "implementation": "##unspecified",
-            "incoming": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+            "incoming": [
+              "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+            ],
             "io_specification": {
               "data_inputs": [],
               "data_outputs": [
@@ -1975,12 +2031,12 @@
               "documentation": [],
               "extension_elements": null,
               "id": null,
-              "input_sets": [
-                null
-              ],
+              "input_sets": null,
               "output_sets": [
                 {
-                  "data_output_refs": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+                  "data_output_refs": [
+                    "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_0d01e81d-03c2-4002-ae80-53df972febb6",
@@ -1996,7 +2052,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Write \ndescription",
-            "outgoing": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+            "outgoing": [
+              "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3"
+            ],
             "performers": [
               {
                 "documentation": [],
@@ -2025,7 +2083,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
-                "source_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+                "source_ref": [
+                  "_bac0224d-62f1-46aa-bb4c-5371c3983ffb"
+                ],
                 "target_ref": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
                 "transformation": null
               }
@@ -2036,7 +2096,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
-                "source_ref": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+                "source_ref": [
+                  "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+                ],
                 "target_ref": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
                 "transformation": null
               }
@@ -2061,7 +2123,9 @@
             "human_performers": [],
             "id": "_15b00027-5049-4081-8952-fd398e8b722a",
             "implementation": "##unspecified",
-            "incoming": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+            "incoming": [
+              "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+            ],
             "io_specification": {
               "data_inputs": [
                 {
@@ -2091,7 +2155,9 @@
               "id": null,
               "input_sets": [
                 {
-                  "data_input_refs": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
+                  "data_input_refs": [
+                    "_b02b2e9f-17f7-4663-b12c-255ee4351d42"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_0cddfa48-58e5-47f8-92f0-a5153ae17d78",
@@ -2103,7 +2169,9 @@
               ],
               "output_sets": [
                 {
-                  "data_output_refs": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+                  "data_output_refs": [
+                    "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_9492b1d3-f6ff-4c9c-8707-07e2d7b07c89",
@@ -2119,7 +2187,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Approve advertisement",
-            "outgoing": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+            "outgoing": [
+              "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+            ],
             "performers": [
               {
                 "documentation": [],
@@ -2148,7 +2218,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_5c3fc96e-20d0-4879-8471-d41224632e24",
-                "source_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+                "source_ref": [
+                  "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd"
+                ],
                 "target_ref": "_c083f111-3c38-4250-9594-3f25b4620db3",
                 "transformation": null
               }
@@ -2159,7 +2231,9 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
-                "source_ref": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+                "source_ref": [
+                  "_50a31269-be15-435b-81e0-0a91b57ba10d"
+                ],
                 "target_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
                 "transformation": null
               }
@@ -2184,7 +2258,10 @@
             "human_performers": [],
             "id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
             "implementation": "##unspecified",
-            "incoming": "['_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3', '_d74707c7-6af3-4db7-9403-924bfdf6a7d8']",
+            "incoming": [
+              "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+              "_d74707c7-6af3-4db7-9403-924bfdf6a7d8"
+            ],
             "io_specification": {
               "data_inputs": [
                 {
@@ -2214,7 +2291,9 @@
               "id": null,
               "input_sets": [
                 {
-                  "data_input_refs": "_c083f111-3c38-4250-9594-3f25b4620db3",
+                  "data_input_refs": [
+                    "_c083f111-3c38-4250-9594-3f25b4620db3"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_9c3de1df-92ef-4b69-9585-311d8d45952f",
@@ -2226,7 +2305,9 @@
               ],
               "output_sets": [
                 {
-                  "data_output_refs": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+                  "data_output_refs": [
+                    "_50a31269-be15-435b-81e0-0a91b57ba10d"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_a4d61918-d67b-4038-b488-95c244824918",
@@ -2242,7 +2323,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Complete advertisement",
-            "outgoing": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+            "outgoing": [
+              "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+            ],
             "performers": [
               {
                 "documentation": [],
@@ -2296,8 +2379,12 @@
           }
         },
         "id": null,
-        "source": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-        "target": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+        "source": [
+          "_7e80c232-2bf0-46e0-b77e-29ec586a23a6"
+        ],
+        "target": [
+          "_7e80c232-2bf0-46e0-b77e-29ec586a23a6"
+        ],
         "type_value": "trisoExtension"
       }
     ],
@@ -2410,13 +2497,20 @@
       "extension_elements": null,
       "gateway_direction": "Converging",
       "id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
-      "incoming": "['_720cb9a3-20df-4da1-a923-5336b269c104', '_847352f2-ac0c-44be-9e24-f4c7f76bfe7e']",
+      "incoming": [
+        "_720cb9a3-20df-4da1-a923-5336b269c104",
+        "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+      "outgoing": [
+        "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+      ]
     },
     "_0cddfa48-58e5-47f8-92f0-a5153ae17d78": {
-      "data_input_refs": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
+      "data_input_refs": [
+        "_b02b2e9f-17f7-4663-b12c-255ee4351d42"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_0cddfa48-58e5-47f8-92f0-a5153ae17d78",
@@ -2426,7 +2520,9 @@
       "while_executing_input_refs": []
     },
     "_0d01e81d-03c2-4002-ae80-53df972febb6": {
-      "data_output_refs": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+      "data_output_refs": [
+        "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_0d01e81d-03c2-4002-ae80-53df972febb6",
@@ -2475,7 +2571,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
-          "source_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+          "source_ref": [
+            "_bac0224d-62f1-46aa-bb4c-5371c3983ffb"
+          ],
           "target_ref": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
           "transformation": null
         }
@@ -2486,7 +2584,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
-          "source_ref": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+          "source_ref": [
+            "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+          ],
           "target_ref": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
           "transformation": null
         }
@@ -2511,7 +2611,9 @@
       "human_performers": [],
       "id": "_15b00027-5049-4081-8952-fd398e8b722a",
       "implementation": "##unspecified",
-      "incoming": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+      "incoming": [
+        "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+      ],
       "io_specification": {
         "data_inputs": [
           {
@@ -2541,7 +2643,9 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
+            "data_input_refs": [
+              "_b02b2e9f-17f7-4663-b12c-255ee4351d42"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_0cddfa48-58e5-47f8-92f0-a5153ae17d78",
@@ -2553,7 +2657,9 @@
         ],
         "output_sets": [
           {
-            "data_output_refs": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+            "data_output_refs": [
+              "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_9492b1d3-f6ff-4c9c-8707-07e2d7b07c89",
@@ -2569,7 +2675,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Approve advertisement",
-      "outgoing": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+      "outgoing": [
+        "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+      ],
       "performers": [
         {
           "documentation": [],
@@ -2665,10 +2773,15 @@
       "extension_elements": null,
       "gateway_direction": "Diverging",
       "id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
-      "incoming": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+      "incoming": [
+        "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+      ],
       "monitoring": null,
       "name": "Advertisement approved?",
-      "outgoing": "['_d74707c7-6af3-4db7-9403-924bfdf6a7d8', '_1d201a22-d500-4412-a32a-2c7e24ad4d6b']"
+      "outgoing": [
+        "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+        "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+      ]
     },
     "_292acb9f-6f5b-402b-adc0-0bd34c2d558d": {
       "bounds": {
@@ -2760,7 +2873,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
-          "source_ref": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+          "source_ref": [
+            "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+          ],
           "target_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
           "transformation": null
         }
@@ -2777,7 +2892,9 @@
       "human_performers": [],
       "id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
       "implementation": "##unspecified",
-      "incoming": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+      "incoming": [
+        "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+      ],
       "io_specification": {
         "data_inputs": [],
         "data_outputs": [
@@ -2795,12 +2912,12 @@
         "documentation": [],
         "extension_elements": null,
         "id": null,
-        "input_sets": [
-          null
-        ],
+        "input_sets": null,
         "output_sets": [
           {
-            "data_output_refs": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+            "data_output_refs": [
+              "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_0d01e81d-03c2-4002-ae80-53df972febb6",
@@ -2816,7 +2933,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Write \ndescription",
-      "outgoing": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+      "outgoing": [
+        "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3"
+      ],
       "performers": [
         {
           "documentation": [],
@@ -2910,7 +3029,9 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
-      "source_ref": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+      "source_ref": [
+        "_50a31269-be15-435b-81e0-0a91b57ba10d"
+      ],
       "target_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
       "transformation": null
     },
@@ -2966,7 +3087,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_d65b0a3d-8c42-4be7-9ac1-7324aa3d31f8",
-              "source_ref": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+              "source_ref": [
+                "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+              ],
               "target_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
               "transformation": null
             }
@@ -2983,7 +3106,9 @@
           "human_performers": [],
           "id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
           "implementation": "##unspecified",
-          "incoming": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+          "incoming": [
+            "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+          ],
           "io_specification": {
             "data_inputs": [],
             "data_outputs": [
@@ -3001,12 +3126,12 @@
             "documentation": [],
             "extension_elements": null,
             "id": null,
-            "input_sets": [
-              null
-            ],
+            "input_sets": null,
             "output_sets": [
               {
-                "data_output_refs": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+                "data_output_refs": [
+                  "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_a389083a-36ae-4975-b210-9464fe82c22e",
@@ -3022,7 +3147,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Select \nother platforms",
-          "outgoing": "_64ac4473-a38f-4043-973a-69c497adc88a",
+          "outgoing": [
+            "_64ac4473-a38f-4043-973a-69c497adc88a"
+          ],
           "performers": [
             {
               "documentation": [],
@@ -3139,7 +3266,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
-          "incoming": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+          "incoming": [
+            "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -3163,10 +3292,15 @@
           "extension_elements": null,
           "gateway_direction": "Diverging",
           "id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
-          "incoming": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+          "incoming": [
+            "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+          ],
           "monitoring": null,
           "name": "Advertisement approved?",
-          "outgoing": "['_d74707c7-6af3-4db7-9403-924bfdf6a7d8', '_1d201a22-d500-4412-a32a-2c7e24ad4d6b']"
+          "outgoing": [
+            "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+            "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+          ]
         }
       ],
       "extension_elements": null,
@@ -3212,7 +3346,9 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "_d08869ef-4951-4592-bb73-363cee03cb90",
+            "data_input_refs": [
+              "_d08869ef-4951-4592-bb73-363cee03cb90"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_e717d617-bac8-4278-ac70-3a9767e3b27f",
@@ -3224,7 +3360,9 @@
         ],
         "output_sets": [
           {
-            "data_output_refs": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
+            "data_output_refs": [
+              "_b6464e75-dd3d-45d9-84cd-861c42a3bedf"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_a8015818-8340-4ba0-a3c9-84ee85a353eb",
@@ -3247,7 +3385,12 @@
               "child_lane_set": null,
               "documentation": [],
               "extension_elements": null,
-              "flow_node_refs": "['_5ba97787-8a90-4002-8277-b0895e45cf1f', '_392c86ba-38b5-4dc9-b98d-f97ad4c2add5', '_15b00027-5049-4081-8952-fd398e8b722a', '_26c40c03-5d1f-46c5-81f1-ddd485868125']",
+              "flow_node_refs": [
+                "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+                "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+                "_15b00027-5049-4081-8952-fd398e8b722a",
+                "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+              ],
               "id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
               "name": "Hiring manager",
               "partition_element": null,
@@ -3257,7 +3400,15 @@
               "child_lane_set": null,
               "documentation": [],
               "extension_elements": null,
-              "flow_node_refs": "['_d3435084-f2c7-43cc-abcc-c679bc4232ac', '_b13d6fa3-fc78-40c7-ae77-609be07493e9', '_64eabfe9-6947-43eb-ac45-8d331745f86c', '_eae674ce-4d6e-48ac-819c-c79e0868e40d', '_0783f019-f40c-43d6-ab40-0f1c81f8d9e7', '_c456dbcc-bbe3-4c75-b57d-9427525c0a94', '_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535']",
+              "flow_node_refs": [
+                "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+                "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+                "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+                "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+                "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+                "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+                "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535"
+              ],
               "id": "_dd32321b-8e95-4801-8eed-5451399b4378",
               "name": "Recruitment",
               "partition_element": null,
@@ -3278,10 +3429,15 @@
           "extension_elements": null,
           "gateway_direction": "Diverging",
           "id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
-          "incoming": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+          "incoming": [
+            "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "['_f476667f-44f5-4fec-9414-bf70d987853f', '_f3187dce-c37e-4d5b-b49c-ed28965abb73']"
+          "outgoing": [
+            "_f476667f-44f5-4fec-9414-bf70d987853f",
+            "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+          ]
         },
         {
           "auditing": null,
@@ -3290,10 +3446,15 @@
           "extension_elements": null,
           "gateway_direction": "Converging",
           "id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
-          "incoming": "['_720cb9a3-20df-4da1-a923-5336b269c104', '_847352f2-ac0c-44be-9e24-f4c7f76bfe7e']",
+          "incoming": [
+            "_720cb9a3-20df-4da1-a923-5336b269c104",
+            "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+          "outgoing": [
+            "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+          ]
         }
       ],
       "performers": [],
@@ -3491,7 +3652,9 @@
           "human_performers": [],
           "id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
           "implementation": "##WebService",
-          "incoming": "_f476667f-44f5-4fec-9414-bf70d987853f",
+          "incoming": [
+            "_f476667f-44f5-4fec-9414-bf70d987853f"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -3499,7 +3662,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Publish on \nhomepage",
           "operation_ref": null,
-          "outgoing": "_720cb9a3-20df-4da1-a923-5336b269c104",
+          "outgoing": [
+            "_720cb9a3-20df-4da1-a923-5336b269c104"
+          ],
           "performers": [
             {
               "documentation": [],
@@ -3527,7 +3692,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_505fa8cf-5697-4e35-bc4e-63df8e99093e",
-              "source_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+              "source_ref": [
+                "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba"
+              ],
               "target_ref": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
               "transformation": null
             }
@@ -3539,7 +3706,9 @@
           "human_performers": [],
           "id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
           "implementation": "##WebService",
-          "incoming": "_64ac4473-a38f-4043-973a-69c497adc88a",
+          "incoming": [
+            "_64ac4473-a38f-4043-973a-69c497adc88a"
+          ],
           "io_specification": {
             "data_inputs": [
               {
@@ -3558,7 +3727,9 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
+                "data_input_refs": [
+                  "_d130e681-7e04-48d6-be39-2b7cfe24b9d4"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_f49af959-916f-43bc-9f37-00ef9c44e967",
@@ -3568,9 +3739,7 @@
                 "while_executing_input_refs": []
               }
             ],
-            "output_sets": [
-              null
-            ]
+            "output_sets": null
           },
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -3593,7 +3762,9 @@
           },
           "name": "Publish on \nother platforms",
           "operation_ref": null,
-          "outgoing": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+          "outgoing": [
+            "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -3624,7 +3795,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Job \nvacancy",
-          "outgoing": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+          "outgoing": [
+            "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -3652,7 +3825,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
-              "source_ref": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+              "source_ref": [
+                "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+              ],
               "target_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
               "transformation": null
             }
@@ -3669,7 +3844,9 @@
           "human_performers": [],
           "id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
           "implementation": "##unspecified",
-          "incoming": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+          "incoming": [
+            "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+          ],
           "io_specification": {
             "data_inputs": [],
             "data_outputs": [
@@ -3687,12 +3864,12 @@
             "documentation": [],
             "extension_elements": null,
             "id": null,
-            "input_sets": [
-              null
-            ],
+            "input_sets": null,
             "output_sets": [
               {
-                "data_output_refs": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+                "data_output_refs": [
+                  "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_0d01e81d-03c2-4002-ae80-53df972febb6",
@@ -3708,7 +3885,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Write \ndescription",
-          "outgoing": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+          "outgoing": [
+            "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3"
+          ],
           "performers": [
             {
               "documentation": [],
@@ -3737,7 +3916,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
-              "source_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+              "source_ref": [
+                "_bac0224d-62f1-46aa-bb4c-5371c3983ffb"
+              ],
               "target_ref": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
               "transformation": null
             }
@@ -3748,7 +3929,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
-              "source_ref": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+              "source_ref": [
+                "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+              ],
               "target_ref": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
               "transformation": null
             }
@@ -3773,7 +3956,9 @@
           "human_performers": [],
           "id": "_15b00027-5049-4081-8952-fd398e8b722a",
           "implementation": "##unspecified",
-          "incoming": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+          "incoming": [
+            "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+          ],
           "io_specification": {
             "data_inputs": [
               {
@@ -3803,7 +3988,9 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
+                "data_input_refs": [
+                  "_b02b2e9f-17f7-4663-b12c-255ee4351d42"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_0cddfa48-58e5-47f8-92f0-a5153ae17d78",
@@ -3815,7 +4002,9 @@
             ],
             "output_sets": [
               {
-                "data_output_refs": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+                "data_output_refs": [
+                  "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_9492b1d3-f6ff-4c9c-8707-07e2d7b07c89",
@@ -3831,7 +4020,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Approve advertisement",
-          "outgoing": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+          "outgoing": [
+            "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+          ],
           "performers": [
             {
               "documentation": [],
@@ -3860,7 +4051,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_5c3fc96e-20d0-4879-8471-d41224632e24",
-              "source_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+              "source_ref": [
+                "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd"
+              ],
               "target_ref": "_c083f111-3c38-4250-9594-3f25b4620db3",
               "transformation": null
             }
@@ -3871,7 +4064,9 @@
               "documentation": [],
               "extension_elements": null,
               "id": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
-              "source_ref": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+              "source_ref": [
+                "_50a31269-be15-435b-81e0-0a91b57ba10d"
+              ],
               "target_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
               "transformation": null
             }
@@ -3896,7 +4091,10 @@
           "human_performers": [],
           "id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
           "implementation": "##unspecified",
-          "incoming": "['_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3', '_d74707c7-6af3-4db7-9403-924bfdf6a7d8']",
+          "incoming": [
+            "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+            "_d74707c7-6af3-4db7-9403-924bfdf6a7d8"
+          ],
           "io_specification": {
             "data_inputs": [
               {
@@ -3926,7 +4124,9 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "_c083f111-3c38-4250-9594-3f25b4620db3",
+                "data_input_refs": [
+                  "_c083f111-3c38-4250-9594-3f25b4620db3"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_9c3de1df-92ef-4b69-9585-311d8d45952f",
@@ -3938,7 +4138,9 @@
             ],
             "output_sets": [
               {
-                "data_output_refs": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+                "data_output_refs": [
+                  "_50a31269-be15-435b-81e0-0a91b57ba10d"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_a4d61918-d67b-4038-b488-95c244824918",
@@ -3954,7 +4156,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Complete advertisement",
-          "outgoing": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+          "outgoing": [
+            "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+          ],
           "performers": [
             {
               "documentation": [],
@@ -4018,7 +4222,9 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_505fa8cf-5697-4e35-bc4e-63df8e99093e",
-      "source_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+      "source_ref": [
+        "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba"
+      ],
       "target_ref": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
       "transformation": null
     },
@@ -4083,7 +4289,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Job \nvacancy",
-      "outgoing": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+      "outgoing": [
+        "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -4096,7 +4304,9 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_5c3fc96e-20d0-4879-8471-d41224632e24",
-      "source_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+      "source_ref": [
+        "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd"
+      ],
       "target_ref": "_c083f111-3c38-4250-9594-3f25b4620db3",
       "transformation": null
     },
@@ -4141,7 +4351,9 @@
       "human_performers": [],
       "id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
       "implementation": "##WebService",
-      "incoming": "_f476667f-44f5-4fec-9414-bf70d987853f",
+      "incoming": [
+        "_f476667f-44f5-4fec-9414-bf70d987853f"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -4149,7 +4361,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Publish on \nhomepage",
       "operation_ref": null,
-      "outgoing": "_720cb9a3-20df-4da1-a923-5336b269c104",
+      "outgoing": [
+        "_720cb9a3-20df-4da1-a923-5336b269c104"
+      ],
       "performers": [
         {
           "documentation": [],
@@ -5448,7 +5662,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_d65b0a3d-8c42-4be7-9ac1-7324aa3d31f8",
-                  "source_ref": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+                  "source_ref": [
+                    "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+                  ],
                   "target_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
                   "transformation": null
                 }
@@ -5465,7 +5681,9 @@
               "human_performers": [],
               "id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
               "implementation": "##unspecified",
-              "incoming": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+              "incoming": [
+                "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+              ],
               "io_specification": {
                 "data_inputs": [],
                 "data_outputs": [
@@ -5483,12 +5701,12 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": null,
-                "input_sets": [
-                  null
-                ],
+                "input_sets": null,
                 "output_sets": [
                   {
-                    "data_output_refs": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+                    "data_output_refs": [
+                      "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_a389083a-36ae-4975-b210-9464fe82c22e",
@@ -5504,7 +5722,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Select \nother platforms",
-              "outgoing": "_64ac4473-a38f-4043-973a-69c497adc88a",
+              "outgoing": [
+                "_64ac4473-a38f-4043-973a-69c497adc88a"
+              ],
               "performers": [
                 {
                   "documentation": [],
@@ -5621,7 +5841,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
-              "incoming": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+              "incoming": [
+                "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -5645,10 +5867,15 @@
               "extension_elements": null,
               "gateway_direction": "Diverging",
               "id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
-              "incoming": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+              "incoming": [
+                "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+              ],
               "monitoring": null,
               "name": "Advertisement approved?",
-              "outgoing": "['_d74707c7-6af3-4db7-9403-924bfdf6a7d8', '_1d201a22-d500-4412-a32a-2c7e24ad4d6b']"
+              "outgoing": [
+                "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+                "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+              ]
             }
           ],
           "extension_elements": null,
@@ -5694,7 +5921,9 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "_d08869ef-4951-4592-bb73-363cee03cb90",
+                "data_input_refs": [
+                  "_d08869ef-4951-4592-bb73-363cee03cb90"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_e717d617-bac8-4278-ac70-3a9767e3b27f",
@@ -5706,7 +5935,9 @@
             ],
             "output_sets": [
               {
-                "data_output_refs": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
+                "data_output_refs": [
+                  "_b6464e75-dd3d-45d9-84cd-861c42a3bedf"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_a8015818-8340-4ba0-a3c9-84ee85a353eb",
@@ -5729,7 +5960,12 @@
                   "child_lane_set": null,
                   "documentation": [],
                   "extension_elements": null,
-                  "flow_node_refs": "['_5ba97787-8a90-4002-8277-b0895e45cf1f', '_392c86ba-38b5-4dc9-b98d-f97ad4c2add5', '_15b00027-5049-4081-8952-fd398e8b722a', '_26c40c03-5d1f-46c5-81f1-ddd485868125']",
+                  "flow_node_refs": [
+                    "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+                    "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+                    "_15b00027-5049-4081-8952-fd398e8b722a",
+                    "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+                  ],
                   "id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
                   "name": "Hiring manager",
                   "partition_element": null,
@@ -5739,7 +5975,15 @@
                   "child_lane_set": null,
                   "documentation": [],
                   "extension_elements": null,
-                  "flow_node_refs": "['_d3435084-f2c7-43cc-abcc-c679bc4232ac', '_b13d6fa3-fc78-40c7-ae77-609be07493e9', '_64eabfe9-6947-43eb-ac45-8d331745f86c', '_eae674ce-4d6e-48ac-819c-c79e0868e40d', '_0783f019-f40c-43d6-ab40-0f1c81f8d9e7', '_c456dbcc-bbe3-4c75-b57d-9427525c0a94', '_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535']",
+                  "flow_node_refs": [
+                    "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+                    "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+                    "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+                    "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+                    "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+                    "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+                    "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535"
+                  ],
                   "id": "_dd32321b-8e95-4801-8eed-5451399b4378",
                   "name": "Recruitment",
                   "partition_element": null,
@@ -5760,10 +6004,15 @@
               "extension_elements": null,
               "gateway_direction": "Diverging",
               "id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
-              "incoming": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+              "incoming": [
+                "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "['_f476667f-44f5-4fec-9414-bf70d987853f', '_f3187dce-c37e-4d5b-b49c-ed28965abb73']"
+              "outgoing": [
+                "_f476667f-44f5-4fec-9414-bf70d987853f",
+                "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+              ]
             },
             {
               "auditing": null,
@@ -5772,10 +6021,15 @@
               "extension_elements": null,
               "gateway_direction": "Converging",
               "id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
-              "incoming": "['_720cb9a3-20df-4da1-a923-5336b269c104', '_847352f2-ac0c-44be-9e24-f4c7f76bfe7e']",
+              "incoming": [
+                "_720cb9a3-20df-4da1-a923-5336b269c104",
+                "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+              "outgoing": [
+                "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+              ]
             }
           ],
           "performers": [],
@@ -5973,7 +6227,9 @@
               "human_performers": [],
               "id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
               "implementation": "##WebService",
-              "incoming": "_f476667f-44f5-4fec-9414-bf70d987853f",
+              "incoming": [
+                "_f476667f-44f5-4fec-9414-bf70d987853f"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -5981,7 +6237,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Publish on \nhomepage",
               "operation_ref": null,
-              "outgoing": "_720cb9a3-20df-4da1-a923-5336b269c104",
+              "outgoing": [
+                "_720cb9a3-20df-4da1-a923-5336b269c104"
+              ],
               "performers": [
                 {
                   "documentation": [],
@@ -6009,7 +6267,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_505fa8cf-5697-4e35-bc4e-63df8e99093e",
-                  "source_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+                  "source_ref": [
+                    "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba"
+                  ],
                   "target_ref": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
                   "transformation": null
                 }
@@ -6021,7 +6281,9 @@
               "human_performers": [],
               "id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
               "implementation": "##WebService",
-              "incoming": "_64ac4473-a38f-4043-973a-69c497adc88a",
+              "incoming": [
+                "_64ac4473-a38f-4043-973a-69c497adc88a"
+              ],
               "io_specification": {
                 "data_inputs": [
                   {
@@ -6040,7 +6302,9 @@
                 "id": null,
                 "input_sets": [
                   {
-                    "data_input_refs": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
+                    "data_input_refs": [
+                      "_d130e681-7e04-48d6-be39-2b7cfe24b9d4"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_f49af959-916f-43bc-9f37-00ef9c44e967",
@@ -6050,9 +6314,7 @@
                     "while_executing_input_refs": []
                   }
                 ],
-                "output_sets": [
-                  null
-                ]
+                "output_sets": null
               },
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -6075,7 +6337,9 @@
               },
               "name": "Publish on \nother platforms",
               "operation_ref": null,
-              "outgoing": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+              "outgoing": [
+                "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -6106,7 +6370,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Job \nvacancy",
-              "outgoing": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+              "outgoing": [
+                "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -6134,7 +6400,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
-                  "source_ref": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+                  "source_ref": [
+                    "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+                  ],
                   "target_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
                   "transformation": null
                 }
@@ -6151,7 +6419,9 @@
               "human_performers": [],
               "id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
               "implementation": "##unspecified",
-              "incoming": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+              "incoming": [
+                "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+              ],
               "io_specification": {
                 "data_inputs": [],
                 "data_outputs": [
@@ -6169,12 +6439,12 @@
                 "documentation": [],
                 "extension_elements": null,
                 "id": null,
-                "input_sets": [
-                  null
-                ],
+                "input_sets": null,
                 "output_sets": [
                   {
-                    "data_output_refs": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+                    "data_output_refs": [
+                      "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_0d01e81d-03c2-4002-ae80-53df972febb6",
@@ -6190,7 +6460,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Write \ndescription",
-              "outgoing": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+              "outgoing": [
+                "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3"
+              ],
               "performers": [
                 {
                   "documentation": [],
@@ -6219,7 +6491,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
-                  "source_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+                  "source_ref": [
+                    "_bac0224d-62f1-46aa-bb4c-5371c3983ffb"
+                  ],
                   "target_ref": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
                   "transformation": null
                 }
@@ -6230,7 +6504,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
-                  "source_ref": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+                  "source_ref": [
+                    "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+                  ],
                   "target_ref": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
                   "transformation": null
                 }
@@ -6255,7 +6531,9 @@
               "human_performers": [],
               "id": "_15b00027-5049-4081-8952-fd398e8b722a",
               "implementation": "##unspecified",
-              "incoming": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+              "incoming": [
+                "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+              ],
               "io_specification": {
                 "data_inputs": [
                   {
@@ -6285,7 +6563,9 @@
                 "id": null,
                 "input_sets": [
                   {
-                    "data_input_refs": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
+                    "data_input_refs": [
+                      "_b02b2e9f-17f7-4663-b12c-255ee4351d42"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_0cddfa48-58e5-47f8-92f0-a5153ae17d78",
@@ -6297,7 +6577,9 @@
                 ],
                 "output_sets": [
                   {
-                    "data_output_refs": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+                    "data_output_refs": [
+                      "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_9492b1d3-f6ff-4c9c-8707-07e2d7b07c89",
@@ -6313,7 +6595,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Approve advertisement",
-              "outgoing": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+              "outgoing": [
+                "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+              ],
               "performers": [
                 {
                   "documentation": [],
@@ -6342,7 +6626,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_5c3fc96e-20d0-4879-8471-d41224632e24",
-                  "source_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+                  "source_ref": [
+                    "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd"
+                  ],
                   "target_ref": "_c083f111-3c38-4250-9594-3f25b4620db3",
                   "transformation": null
                 }
@@ -6353,7 +6639,9 @@
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
-                  "source_ref": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+                  "source_ref": [
+                    "_50a31269-be15-435b-81e0-0a91b57ba10d"
+                  ],
                   "target_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
                   "transformation": null
                 }
@@ -6378,7 +6666,10 @@
               "human_performers": [],
               "id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
               "implementation": "##unspecified",
-              "incoming": "['_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3', '_d74707c7-6af3-4db7-9403-924bfdf6a7d8']",
+              "incoming": [
+                "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+                "_d74707c7-6af3-4db7-9403-924bfdf6a7d8"
+              ],
               "io_specification": {
                 "data_inputs": [
                   {
@@ -6408,7 +6699,9 @@
                 "id": null,
                 "input_sets": [
                   {
-                    "data_input_refs": "_c083f111-3c38-4250-9594-3f25b4620db3",
+                    "data_input_refs": [
+                      "_c083f111-3c38-4250-9594-3f25b4620db3"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_9c3de1df-92ef-4b69-9585-311d8d45952f",
@@ -6420,7 +6713,9 @@
                 ],
                 "output_sets": [
                   {
-                    "data_output_refs": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+                    "data_output_refs": [
+                      "_50a31269-be15-435b-81e0-0a91b57ba10d"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_a4d61918-d67b-4038-b488-95c244824918",
@@ -6436,7 +6731,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Complete advertisement",
-              "outgoing": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+              "outgoing": [
+                "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+              ],
               "performers": [
                 {
                   "documentation": [],
@@ -6490,8 +6787,12 @@
             }
           },
           "id": null,
-          "source": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
-          "target": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6",
+          "source": [
+            "_7e80c232-2bf0-46e0-b77e-29ec586a23a6"
+          ],
+          "target": [
+            "_7e80c232-2bf0-46e0-b77e-29ec586a23a6"
+          ],
           "type_value": "trisoExtension"
         }
       ],
@@ -6758,7 +7059,9 @@
       "participant_band_kind": null
     },
     "_9492b1d3-f6ff-4c9c-8707-07e2d7b07c89": {
-      "data_output_refs": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+      "data_output_refs": [
+        "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_9492b1d3-f6ff-4c9c-8707-07e2d7b07c89",
@@ -9138,7 +9441,9 @@
       "participant_band_kind": null
     },
     "_9c3de1df-92ef-4b69-9585-311d8d45952f": {
-      "data_input_refs": "_c083f111-3c38-4250-9594-3f25b4620db3",
+      "data_input_refs": [
+        "_c083f111-3c38-4250-9594-3f25b4620db3"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_9c3de1df-92ef-4b69-9585-311d8d45952f",
@@ -9152,7 +9457,9 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
-      "source_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+      "source_ref": [
+        "_bac0224d-62f1-46aa-bb4c-5371c3983ffb"
+      ],
       "target_ref": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
       "transformation": null
     },
@@ -9196,7 +9503,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_505fa8cf-5697-4e35-bc4e-63df8e99093e",
-          "source_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+          "source_ref": [
+            "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba"
+          ],
           "target_ref": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
           "transformation": null
         }
@@ -9208,7 +9517,9 @@
       "human_performers": [],
       "id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
       "implementation": "##WebService",
-      "incoming": "_64ac4473-a38f-4043-973a-69c497adc88a",
+      "incoming": [
+        "_64ac4473-a38f-4043-973a-69c497adc88a"
+      ],
       "io_specification": {
         "data_inputs": [
           {
@@ -9227,7 +9538,9 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
+            "data_input_refs": [
+              "_d130e681-7e04-48d6-be39-2b7cfe24b9d4"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_f49af959-916f-43bc-9f37-00ef9c44e967",
@@ -9237,9 +9550,7 @@
             "while_executing_input_refs": []
           }
         ],
-        "output_sets": [
-          null
-        ]
+        "output_sets": null
       },
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -9262,7 +9573,9 @@
       },
       "name": "Publish on \nother platforms",
       "operation_ref": null,
-      "outgoing": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+      "outgoing": [
+        "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -9271,7 +9584,9 @@
       "start_quantity": 1
     },
     "_a389083a-36ae-4975-b210-9464fe82c22e": {
-      "data_output_refs": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+      "data_output_refs": [
+        "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_a389083a-36ae-4975-b210-9464fe82c22e",
@@ -9294,7 +9609,9 @@
       "target_ref": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5"
     },
     "_a4d61918-d67b-4038-b488-95c244824918": {
-      "data_output_refs": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+      "data_output_refs": [
+        "_50a31269-be15-435b-81e0-0a91b57ba10d"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_a4d61918-d67b-4038-b488-95c244824918",
@@ -9368,7 +9685,9 @@
       ]
     },
     "_a8015818-8340-4ba0-a3c9-84ee85a353eb": {
-      "data_output_refs": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
+      "data_output_refs": [
+        "_b6464e75-dd3d-45d9-84cd-861c42a3bedf"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_a8015818-8340-4ba0-a3c9-84ee85a353eb",
@@ -9382,7 +9701,9 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
-      "source_ref": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+      "source_ref": [
+        "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+      ],
       "target_ref": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
       "transformation": null
     },
@@ -9402,10 +9723,15 @@
       "extension_elements": null,
       "gateway_direction": "Diverging",
       "id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
-      "incoming": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+      "incoming": [
+        "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "['_f476667f-44f5-4fec-9414-bf70d987853f', '_f3187dce-c37e-4d5b-b49c-ed28965abb73']"
+      "outgoing": [
+        "_f476667f-44f5-4fec-9414-bf70d987853f",
+        "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+      ]
     },
     "_b5b6808a-be81-426c-98ae-f33f44a2f871": {
       "documentation": [],
@@ -9432,7 +9758,12 @@
       "child_lane_set": null,
       "documentation": [],
       "extension_elements": null,
-      "flow_node_refs": "['_5ba97787-8a90-4002-8277-b0895e45cf1f', '_392c86ba-38b5-4dc9-b98d-f97ad4c2add5', '_15b00027-5049-4081-8952-fd398e8b722a', '_26c40c03-5d1f-46c5-81f1-ddd485868125']",
+      "flow_node_refs": [
+        "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+        "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+        "_15b00027-5049-4081-8952-fd398e8b722a",
+        "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+      ],
       "id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
       "name": "Hiring manager",
       "partition_element": null,
@@ -9600,7 +9931,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
-      "incoming": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+      "incoming": [
+        "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -9734,7 +10067,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_5c3fc96e-20d0-4879-8471-d41224632e24",
-          "source_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+          "source_ref": [
+            "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd"
+          ],
           "target_ref": "_c083f111-3c38-4250-9594-3f25b4620db3",
           "transformation": null
         }
@@ -9745,7 +10080,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
-          "source_ref": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+          "source_ref": [
+            "_50a31269-be15-435b-81e0-0a91b57ba10d"
+          ],
           "target_ref": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
           "transformation": null
         }
@@ -9770,7 +10107,10 @@
       "human_performers": [],
       "id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
       "implementation": "##unspecified",
-      "incoming": "['_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3', '_d74707c7-6af3-4db7-9403-924bfdf6a7d8']",
+      "incoming": [
+        "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+        "_d74707c7-6af3-4db7-9403-924bfdf6a7d8"
+      ],
       "io_specification": {
         "data_inputs": [
           {
@@ -9800,7 +10140,9 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "_c083f111-3c38-4250-9594-3f25b4620db3",
+            "data_input_refs": [
+              "_c083f111-3c38-4250-9594-3f25b4620db3"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_9c3de1df-92ef-4b69-9585-311d8d45952f",
@@ -9812,7 +10154,9 @@
         ],
         "output_sets": [
           {
-            "data_output_refs": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+            "data_output_refs": [
+              "_50a31269-be15-435b-81e0-0a91b57ba10d"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_a4d61918-d67b-4038-b488-95c244824918",
@@ -9828,7 +10172,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Complete advertisement",
-      "outgoing": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+      "outgoing": [
+        "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+      ],
       "performers": [
         {
           "documentation": [],
@@ -9888,7 +10234,9 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_d65b0a3d-8c42-4be7-9ac1-7324aa3d31f8",
-      "source_ref": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+      "source_ref": [
+        "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+      ],
       "target_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
       "transformation": null
     },
@@ -9946,7 +10294,15 @@
       "child_lane_set": null,
       "documentation": [],
       "extension_elements": null,
-      "flow_node_refs": "['_d3435084-f2c7-43cc-abcc-c679bc4232ac', '_b13d6fa3-fc78-40c7-ae77-609be07493e9', '_64eabfe9-6947-43eb-ac45-8d331745f86c', '_eae674ce-4d6e-48ac-819c-c79e0868e40d', '_0783f019-f40c-43d6-ab40-0f1c81f8d9e7', '_c456dbcc-bbe3-4c75-b57d-9427525c0a94', '_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535']",
+      "flow_node_refs": [
+        "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+        "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+        "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+        "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+        "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+        "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+        "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535"
+      ],
       "id": "_dd32321b-8e95-4801-8eed-5451399b4378",
       "name": "Recruitment",
       "partition_element": null,
@@ -9997,12 +10353,16 @@
       "documentation": [],
       "extension_elements": null,
       "id": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
-      "source_ref": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+      "source_ref": [
+        "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+      ],
       "target_ref": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
       "transformation": null
     },
     "_e717d617-bac8-4278-ac70-3a9767e3b27f": {
-      "data_input_refs": "_d08869ef-4951-4592-bb73-363cee03cb90",
+      "data_input_refs": [
+        "_d08869ef-4951-4592-bb73-363cee03cb90"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_e717d617-bac8-4278-ac70-3a9767e3b27f",
@@ -10052,7 +10412,9 @@
           "documentation": [],
           "extension_elements": null,
           "id": "_d65b0a3d-8c42-4be7-9ac1-7324aa3d31f8",
-          "source_ref": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+          "source_ref": [
+            "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+          ],
           "target_ref": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
           "transformation": null
         }
@@ -10069,7 +10431,9 @@
       "human_performers": [],
       "id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
       "implementation": "##unspecified",
-      "incoming": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+      "incoming": [
+        "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+      ],
       "io_specification": {
         "data_inputs": [],
         "data_outputs": [
@@ -10087,12 +10451,12 @@
         "documentation": [],
         "extension_elements": null,
         "id": null,
-        "input_sets": [
-          null
-        ],
+        "input_sets": null,
         "output_sets": [
           {
-            "data_output_refs": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+            "data_output_refs": [
+              "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_a389083a-36ae-4975-b210-9464fe82c22e",
@@ -10108,7 +10472,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Select \nother platforms",
-      "outgoing": "_64ac4473-a38f-4043-973a-69c497adc88a",
+      "outgoing": [
+        "_64ac4473-a38f-4043-973a-69c497adc88a"
+      ],
       "performers": [
         {
           "documentation": [],
@@ -10221,7 +10587,9 @@
       "target_ref": "_64eabfe9-6947-43eb-ac45-8d331745f86c"
     },
     "_f49af959-916f-43bc-9f37-00ef9c44e967": {
-      "data_input_refs": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
+      "data_input_refs": [
+        "_d130e681-7e04-48d6-be39-2b7cfe24b9d4"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_f49af959-916f-43bc-9f37-00ef9c44e967",
@@ -10351,5 +10719,507 @@
       "triso_definition_type": "http://www.trisotech.com/2015/triso/modeling/ItemDefinitionType",
       "triso_name": "triso_string"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "_d3aa8a96-e9df-4336-9b0d-01b17e6587ad",
+      "property": "process_ref",
+      "reference_id": "_4a690dd7-809a-4fa9-ad63-515ac6685375"
+    },
+    {
+      "element_id": "_d08869ef-4951-4592-bb73-363cee03cb90",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_e717d617-bac8-4278-ac70-3a9767e3b27f",
+      "property": "data_input_refs",
+      "reference_id": "_d08869ef-4951-4592-bb73-363cee03cb90"
+    },
+    {
+      "element_id": "_a8015818-8340-4ba0-a3c9-84ee85a353eb",
+      "property": "data_output_refs",
+      "reference_id": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf"
+    },
+    {
+      "element_id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
+      "property": "flow_node_refs",
+      "reference_id": "_5ba97787-8a90-4002-8277-b0895e45cf1f"
+    },
+    {
+      "element_id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
+      "property": "flow_node_refs",
+      "reference_id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5"
+    },
+    {
+      "element_id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
+      "property": "flow_node_refs",
+      "reference_id": "_15b00027-5049-4081-8952-fd398e8b722a"
+    },
+    {
+      "element_id": "_b836aa5e-fb94-4479-af77-64a3a5202451",
+      "property": "flow_node_refs",
+      "reference_id": "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+    },
+    {
+      "element_id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+      "property": "flow_node_refs",
+      "reference_id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac"
+    },
+    {
+      "element_id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+      "property": "flow_node_refs",
+      "reference_id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9"
+    },
+    {
+      "element_id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+      "property": "flow_node_refs",
+      "reference_id": "_64eabfe9-6947-43eb-ac45-8d331745f86c"
+    },
+    {
+      "element_id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+      "property": "flow_node_refs",
+      "reference_id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d"
+    },
+    {
+      "element_id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+      "property": "flow_node_refs",
+      "reference_id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7"
+    },
+    {
+      "element_id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+      "property": "flow_node_refs",
+      "reference_id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94"
+    },
+    {
+      "element_id": "_dd32321b-8e95-4801-8eed-5451399b4378",
+      "property": "flow_node_refs",
+      "reference_id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535"
+    },
+    {
+      "element_id": "_5ba97787-8a90-4002-8277-b0895e45cf1f",
+      "property": "outgoing",
+      "reference_id": "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+    },
+    {
+      "element_id": "_31ca347a-7ad3-4416-9d4a-c080479329c7",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_0d01e81d-03c2-4002-ae80-53df972febb6",
+      "property": "data_output_refs",
+      "reference_id": "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+    },
+    {
+      "element_id": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
+      "property": "source_ref",
+      "reference_id": "_31ca347a-7ad3-4416-9d4a-c080479329c7"
+    },
+    {
+      "element_id": "_e2734375-2aa0-418c-9f0b-8c2ca1022285",
+      "property": "target_ref",
+      "reference_id": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd"
+    },
+    {
+      "element_id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+      "property": "incoming",
+      "reference_id": "_a4c93e8a-2b52-4367-8381-a3f78450a075"
+    },
+    {
+      "element_id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5",
+      "property": "outgoing",
+      "reference_id": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3"
+    },
+    {
+      "element_id": "_b02b2e9f-17f7-4663-b12c-255ee4351d42",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_e115b5bb-0dd7-444f-b5ec-20cffffef082",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_0cddfa48-58e5-47f8-92f0-a5153ae17d78",
+      "property": "data_input_refs",
+      "reference_id": "_b02b2e9f-17f7-4663-b12c-255ee4351d42"
+    },
+    {
+      "element_id": "_9492b1d3-f6ff-4c9c-8707-07e2d7b07c89",
+      "property": "data_output_refs",
+      "reference_id": "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+    },
+    {
+      "element_id": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
+      "property": "source_ref",
+      "reference_id": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb"
+    },
+    {
+      "element_id": "_9ce7bb4a-930c-4132-a09d-61b345cce434",
+      "property": "target_ref",
+      "reference_id": "_b02b2e9f-17f7-4663-b12c-255ee4351d42"
+    },
+    {
+      "element_id": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
+      "property": "source_ref",
+      "reference_id": "_e115b5bb-0dd7-444f-b5ec-20cffffef082"
+    },
+    {
+      "element_id": "_adddc8ea-507e-4894-ac4b-92bca7e0a89f",
+      "property": "target_ref",
+      "reference_id": "_b6464e75-dd3d-45d9-84cd-861c42a3bedf"
+    },
+    {
+      "element_id": "_15b00027-5049-4081-8952-fd398e8b722a",
+      "property": "incoming",
+      "reference_id": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+    },
+    {
+      "element_id": "_15b00027-5049-4081-8952-fd398e8b722a",
+      "property": "outgoing",
+      "reference_id": "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+    },
+    {
+      "element_id": "_c083f111-3c38-4250-9594-3f25b4620db3",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_50a31269-be15-435b-81e0-0a91b57ba10d",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_9c3de1df-92ef-4b69-9585-311d8d45952f",
+      "property": "data_input_refs",
+      "reference_id": "_c083f111-3c38-4250-9594-3f25b4620db3"
+    },
+    {
+      "element_id": "_a4d61918-d67b-4038-b488-95c244824918",
+      "property": "data_output_refs",
+      "reference_id": "_50a31269-be15-435b-81e0-0a91b57ba10d"
+    },
+    {
+      "element_id": "_5c3fc96e-20d0-4879-8471-d41224632e24",
+      "property": "source_ref",
+      "reference_id": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd"
+    },
+    {
+      "element_id": "_5c3fc96e-20d0-4879-8471-d41224632e24",
+      "property": "target_ref",
+      "reference_id": "_c083f111-3c38-4250-9594-3f25b4620db3"
+    },
+    {
+      "element_id": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
+      "property": "source_ref",
+      "reference_id": "_50a31269-be15-435b-81e0-0a91b57ba10d"
+    },
+    {
+      "element_id": "_4164c380-3ee3-4a6a-8e66-5bc201416108",
+      "property": "target_ref",
+      "reference_id": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb"
+    },
+    {
+      "element_id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+      "property": "incoming",
+      "reference_id": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3"
+    },
+    {
+      "element_id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+      "property": "incoming",
+      "reference_id": "_d74707c7-6af3-4db7-9403-924bfdf6a7d8"
+    },
+    {
+      "element_id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac",
+      "property": "outgoing",
+      "reference_id": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b"
+    },
+    {
+      "element_id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+      "property": "incoming",
+      "reference_id": "_7b66938e-e5cb-4026-a863-1e6de6d11a79"
+    },
+    {
+      "element_id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+      "property": "outgoing",
+      "reference_id": "_d74707c7-6af3-4db7-9403-924bfdf6a7d8"
+    },
+    {
+      "element_id": "_26c40c03-5d1f-46c5-81f1-ddd485868125",
+      "property": "outgoing",
+      "reference_id": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+    },
+    {
+      "element_id": "_bd7b6a15-4ef8-46a9-8be9-20a5abb32abd",
+      "property": "data_object_ref",
+      "reference_id": "_8f2796af-2fbe-4f72-80c1-96933c38990f"
+    },
+    {
+      "element_id": "_bac0224d-62f1-46aa-bb4c-5371c3983ffb",
+      "property": "data_object_ref",
+      "reference_id": "_f60fe1d9-58bd-462c-9d62-153e530dc79d"
+    },
+    {
+      "element_id": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba",
+      "property": "data_object_ref",
+      "reference_id": "_ef29e636-bdfe-4eb0-9633-7d0195a8ae3a"
+    },
+    {
+      "element_id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+      "property": "incoming",
+      "reference_id": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b"
+    },
+    {
+      "element_id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+      "property": "outgoing",
+      "reference_id": "_f476667f-44f5-4fec-9414-bf70d987853f"
+    },
+    {
+      "element_id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9",
+      "property": "outgoing",
+      "reference_id": "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+    },
+    {
+      "element_id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+      "property": "incoming",
+      "reference_id": "_720cb9a3-20df-4da1-a923-5336b269c104"
+    },
+    {
+      "element_id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+      "property": "incoming",
+      "reference_id": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+    },
+    {
+      "element_id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7",
+      "property": "outgoing",
+      "reference_id": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+    },
+    {
+      "element_id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+      "property": "incoming",
+      "reference_id": "_f476667f-44f5-4fec-9414-bf70d987853f"
+    },
+    {
+      "element_id": "_64eabfe9-6947-43eb-ac45-8d331745f86c",
+      "property": "outgoing",
+      "reference_id": "_720cb9a3-20df-4da1-a923-5336b269c104"
+    },
+    {
+      "element_id": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_f49af959-916f-43bc-9f37-00ef9c44e967",
+      "property": "data_input_refs",
+      "reference_id": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4"
+    },
+    {
+      "element_id": "_505fa8cf-5697-4e35-bc4e-63df8e99093e",
+      "property": "source_ref",
+      "reference_id": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba"
+    },
+    {
+      "element_id": "_505fa8cf-5697-4e35-bc4e-63df8e99093e",
+      "property": "target_ref",
+      "reference_id": "_d130e681-7e04-48d6-be39-2b7cfe24b9d4"
+    },
+    {
+      "element_id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+      "property": "incoming",
+      "reference_id": "_64ac4473-a38f-4043-973a-69c497adc88a"
+    },
+    {
+      "element_id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535",
+      "property": "outgoing",
+      "reference_id": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e"
+    },
+    {
+      "element_id": "_3daad61f-55b2-4fbd-bc79-dff572a23d69",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_a389083a-36ae-4975-b210-9464fe82c22e",
+      "property": "data_output_refs",
+      "reference_id": "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+    },
+    {
+      "element_id": "_d65b0a3d-8c42-4be7-9ac1-7324aa3d31f8",
+      "property": "source_ref",
+      "reference_id": "_3daad61f-55b2-4fbd-bc79-dff572a23d69"
+    },
+    {
+      "element_id": "_d65b0a3d-8c42-4be7-9ac1-7324aa3d31f8",
+      "property": "target_ref",
+      "reference_id": "_c68abea8-c5b4-4aef-b1a5-1e81caec0cba"
+    },
+    {
+      "element_id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+      "property": "incoming",
+      "reference_id": "_f3187dce-c37e-4d5b-b49c-ed28965abb73"
+    },
+    {
+      "element_id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d",
+      "property": "outgoing",
+      "reference_id": "_64ac4473-a38f-4043-973a-69c497adc88a"
+    },
+    {
+      "element_id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94",
+      "property": "incoming",
+      "reference_id": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb"
+    },
+    {
+      "element_id": "_ef29e636-bdfe-4eb0-9633-7d0195a8ae3a",
+      "property": "item_subject_ref",
+      "reference_id": "_bd0e1992-4669-4a5b-98ea-641930d87150"
+    },
+    {
+      "element_id": "_8f2796af-2fbe-4f72-80c1-96933c38990f",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_f60fe1d9-58bd-462c-9d62-153e530dc79d",
+      "property": "item_subject_ref",
+      "reference_id": "_triso-default-bpmnItemDefinition-string_id"
+    },
+    {
+      "element_id": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+      "property": "source_ref",
+      "reference_id": "_5ba97787-8a90-4002-8277-b0895e45cf1f"
+    },
+    {
+      "element_id": "_a4c93e8a-2b52-4367-8381-a3f78450a075",
+      "property": "target_ref",
+      "reference_id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5"
+    },
+    {
+      "element_id": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+      "property": "source_ref",
+      "reference_id": "_392c86ba-38b5-4dc9-b98d-f97ad4c2add5"
+    },
+    {
+      "element_id": "_8a27a9ee-b8e5-49d8-8b7d-41a59d74b3f3",
+      "property": "target_ref",
+      "reference_id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac"
+    },
+    {
+      "element_id": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+      "property": "source_ref",
+      "reference_id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac"
+    },
+    {
+      "element_id": "_842553bd-02e1-45f7-aed0-c78e9dba9e2b",
+      "property": "target_ref",
+      "reference_id": "_15b00027-5049-4081-8952-fd398e8b722a"
+    },
+    {
+      "element_id": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+      "property": "source_ref",
+      "reference_id": "_15b00027-5049-4081-8952-fd398e8b722a"
+    },
+    {
+      "element_id": "_7b66938e-e5cb-4026-a863-1e6de6d11a79",
+      "property": "target_ref",
+      "reference_id": "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+    },
+    {
+      "element_id": "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+      "property": "source_ref",
+      "reference_id": "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+    },
+    {
+      "element_id": "_d74707c7-6af3-4db7-9403-924bfdf6a7d8",
+      "property": "target_ref",
+      "reference_id": "_d3435084-f2c7-43cc-abcc-c679bc4232ac"
+    },
+    {
+      "element_id": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+      "property": "source_ref",
+      "reference_id": "_26c40c03-5d1f-46c5-81f1-ddd485868125"
+    },
+    {
+      "element_id": "_1d201a22-d500-4412-a32a-2c7e24ad4d6b",
+      "property": "target_ref",
+      "reference_id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9"
+    },
+    {
+      "element_id": "_f476667f-44f5-4fec-9414-bf70d987853f",
+      "property": "source_ref",
+      "reference_id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9"
+    },
+    {
+      "element_id": "_f476667f-44f5-4fec-9414-bf70d987853f",
+      "property": "target_ref",
+      "reference_id": "_64eabfe9-6947-43eb-ac45-8d331745f86c"
+    },
+    {
+      "element_id": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+      "property": "source_ref",
+      "reference_id": "_b13d6fa3-fc78-40c7-ae77-609be07493e9"
+    },
+    {
+      "element_id": "_f3187dce-c37e-4d5b-b49c-ed28965abb73",
+      "property": "target_ref",
+      "reference_id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d"
+    },
+    {
+      "element_id": "_720cb9a3-20df-4da1-a923-5336b269c104",
+      "property": "source_ref",
+      "reference_id": "_64eabfe9-6947-43eb-ac45-8d331745f86c"
+    },
+    {
+      "element_id": "_720cb9a3-20df-4da1-a923-5336b269c104",
+      "property": "target_ref",
+      "reference_id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7"
+    },
+    {
+      "element_id": "_64ac4473-a38f-4043-973a-69c497adc88a",
+      "property": "source_ref",
+      "reference_id": "_eae674ce-4d6e-48ac-819c-c79e0868e40d"
+    },
+    {
+      "element_id": "_64ac4473-a38f-4043-973a-69c497adc88a",
+      "property": "target_ref",
+      "reference_id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535"
+    },
+    {
+      "element_id": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+      "property": "source_ref",
+      "reference_id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7"
+    },
+    {
+      "element_id": "_c43defc5-4470-4bfe-8a8f-4d59ca6abeeb",
+      "property": "target_ref",
+      "reference_id": "_c456dbcc-bbe3-4c75-b57d-9427525c0a94"
+    },
+    {
+      "element_id": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+      "property": "source_ref",
+      "reference_id": "_a36ddf2f-23c1-46c5-86d4-bd2a0eb42535"
+    },
+    {
+      "element_id": "_847352f2-ac0c-44be-9e24-f4c7f76bfe7e",
+      "property": "target_ref",
+      "reference_id": "_0783f019-f40c-43d6-ab40-0f1c81f8d9e7"
+    },
+    {
+      "element_id": null,
+      "property": "source",
+      "reference_id": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6"
+    },
+    {
+      "element_id": null,
+      "property": "target",
+      "reference_id": "_7e80c232-2bf0-46e0-b77e-29ec586a23a6"
+    }
+  ]
 }

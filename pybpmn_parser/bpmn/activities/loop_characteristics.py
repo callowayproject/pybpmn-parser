@@ -49,6 +49,7 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
             "name": "loopDataInputRef",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+            "is_reference": True,
         },
     )
     loop_data_output_ref: Optional[str] = field(
@@ -57,6 +58,7 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
             "name": "loopDataOutputRef",
             "type": "Element",
             "namespace": "http://www.omg.org/spec/BPMN/20100524/MODEL",
+            "is_reference": True,
         },
     )
     input_data_item: Optional[DataInput] = field(
@@ -109,6 +111,7 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
         metadata={
             "name": "oneBehaviorEventRef",
             "type": "Attribute",
+            "is_reference": True,
         },
     )
     none_behavior_event_ref: Optional[str] = field(
@@ -116,6 +119,7 @@ class MultiInstanceLoopCharacteristics(LoopCharacteristics):
         metadata={
             "name": "noneBehaviorEventRef",
             "type": "Attribute",
+            "is_reference": True,
         },
     )
 

@@ -863,7 +863,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Timeout (7 days)",
-            "outgoing": "Flow_03n7pdb",
+            "outgoing": [
+              "Flow_03n7pdb"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -919,7 +921,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "ErrorEndEvent_Timeout",
-            "incoming": "Flow_03n7pdb",
+            "incoming": [
+              "Flow_03n7pdb"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -946,7 +950,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "EndEvent_ManuallyDecided",
-            "incoming": "Flow_0vjv3ik",
+            "incoming": [
+              "Flow_0vjv3ik"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1057,7 +1063,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Decide Manually",
-            "outgoing": "Flow_08vmski",
+            "outgoing": [
+              "Flow_08vmski"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1093,7 +1101,9 @@
                 },
                 "human_performers": [],
                 "id": "CallActivity_RequestDocument",
-                "incoming": "Flow_0irfroh",
+                "incoming": [
+                  "Flow_0irfroh"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
@@ -1122,7 +1132,9 @@
                   "output_data_item": null
                 },
                 "name": "Document Request",
-                "outgoing": "Flow_1wwxns6",
+                "outgoing": [
+                  "Flow_1wwxns6"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -1157,7 +1169,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "EndEvent_DocumentReceived",
-                "incoming": "Flow_1wwxns6",
+                "incoming": [
+                  "Flow_1wwxns6"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -1260,7 +1274,9 @@
                 ],
                 "monitoring": null,
                 "name": "Document requested",
-                "outgoing": "Flow_0irfroh",
+                "outgoing": [
+                  "Flow_0irfroh"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -1310,7 +1326,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "EndEvent_DecisionAccelerated",
-                "incoming": "Flow_1t18skh",
+                "incoming": [
+                  "Flow_1t18skh"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -1370,7 +1388,9 @@
                 "human_performers": [],
                 "id": "SendTask_NotifyCustomerDelay",
                 "implementation": "##WebService",
-                "incoming": "Flow_0kaot38",
+                "incoming": [
+                  "Flow_0kaot38"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
@@ -1379,7 +1399,9 @@
                 "multi_instance_loop_characteristics": null,
                 "name": "Notify customer about delay",
                 "operation_ref": null,
-                "outgoing": "Flow_1octlto",
+                "outgoing": [
+                  "Flow_1octlto"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -1453,7 +1475,9 @@
                 "message_event_definition": [],
                 "monitoring": null,
                 "name": "Accelerated decision",
-                "outgoing": "Flow_0kaot38",
+                "outgoing": [
+                  "Flow_0kaot38"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -1502,14 +1526,18 @@
                 "human_performers": [],
                 "id": "UserTask_AccelerateDecision",
                 "implementation": "##unspecified",
-                "incoming": "Flow_1octlto",
+                "incoming": [
+                  "Flow_1octlto"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
                 "monitoring": null,
                 "multi_instance_loop_characteristics": null,
                 "name": "Accelerate decision making",
-                "outgoing": "Flow_1t18skh",
+                "outgoing": [
+                  "Flow_1t18skh"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -1560,7 +1588,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "ErrorEndEvent_FraudDetected",
-                "incoming": "SequenceFlow_Yes",
+                "incoming": [
+                  "SequenceFlow_Yes"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -1587,7 +1617,9 @@
                 "event_definitions": [],
                 "extension_elements": null,
                 "id": "EndEvent_FraudNoDetected",
-                "incoming": "SequenceFlow_No",
+                "incoming": [
+                  "SequenceFlow_No"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -1611,10 +1643,15 @@
                 "extension_elements": null,
                 "gateway_direction": "Unspecified",
                 "id": "Gateway_FraudDetected",
-                "incoming": "Flow_1istmr0",
+                "incoming": [
+                  "Flow_1istmr0"
+                ],
                 "monitoring": null,
                 "name": "Fraud detected?",
-                "outgoing": "['SequenceFlow_No', 'SequenceFlow_Yes']"
+                "outgoing": [
+                  "SequenceFlow_No",
+                  "SequenceFlow_Yes"
+                ]
               }
             ],
             "extension_elements": null,
@@ -1736,7 +1773,9 @@
                 ],
                 "monitoring": null,
                 "name": "Fraud suspected",
-                "outgoing": "Flow_0nttki4",
+                "outgoing": [
+                  "Flow_0nttki4"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -1770,14 +1809,18 @@
                 "human_performers": [],
                 "id": "UserTask_CheckForFraud",
                 "implementation": "##unspecified",
-                "incoming": "Flow_0nttki4",
+                "incoming": [
+                  "Flow_0nttki4"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
                 "monitoring": null,
                 "multi_instance_loop_characteristics": null,
                 "name": "Check for Fraud",
-                "outgoing": "Flow_1istmr0",
+                "outgoing": [
+                  "Flow_1istmr0"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -1835,14 +1878,18 @@
             "human_performers": [],
             "id": "UserTask_DecideOnApplication",
             "implementation": "##unspecified",
-            "incoming": "Flow_08vmski",
+            "incoming": [
+              "Flow_08vmski"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Decide on application",
-            "outgoing": "Flow_0vjv3ik",
+            "outgoing": [
+              "Flow_0vjv3ik"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1906,7 +1953,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "ErrorEndEvent_FraudDetected",
-          "incoming": "SequenceFlow_Yes",
+          "incoming": [
+            "SequenceFlow_Yes"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -1933,7 +1982,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_FraudNoDetected",
-          "incoming": "SequenceFlow_No",
+          "incoming": [
+            "SequenceFlow_No"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -1957,10 +2008,15 @@
           "extension_elements": null,
           "gateway_direction": "Unspecified",
           "id": "Gateway_FraudDetected",
-          "incoming": "Flow_1istmr0",
+          "incoming": [
+            "Flow_1istmr0"
+          ],
           "monitoring": null,
           "name": "Fraud detected?",
-          "outgoing": "['SequenceFlow_No', 'SequenceFlow_Yes']"
+          "outgoing": [
+            "SequenceFlow_No",
+            "SequenceFlow_Yes"
+          ]
         }
       ],
       "extension_elements": null,
@@ -2082,7 +2138,9 @@
           ],
           "monitoring": null,
           "name": "Fraud suspected",
-          "outgoing": "Flow_0nttki4",
+          "outgoing": [
+            "Flow_0nttki4"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -2116,14 +2174,18 @@
           "human_performers": [],
           "id": "UserTask_CheckForFraud",
           "implementation": "##unspecified",
-          "incoming": "Flow_0nttki4",
+          "incoming": [
+            "Flow_0nttki4"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Check for Fraud",
-          "outgoing": "Flow_1istmr0",
+          "outgoing": [
+            "Flow_1istmr0"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2177,7 +2239,9 @@
           },
           "human_performers": [],
           "id": "CallActivity_RequestDocument",
-          "incoming": "Flow_0irfroh",
+          "incoming": [
+            "Flow_0irfroh"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -2206,7 +2270,9 @@
             "output_data_item": null
           },
           "name": "Document Request",
-          "outgoing": "Flow_1wwxns6",
+          "outgoing": [
+            "Flow_1wwxns6"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2241,7 +2307,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_DocumentReceived",
-          "incoming": "Flow_1wwxns6",
+          "incoming": [
+            "Flow_1wwxns6"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -2344,7 +2412,9 @@
           ],
           "monitoring": null,
           "name": "Document requested",
-          "outgoing": "Flow_0irfroh",
+          "outgoing": [
+            "Flow_0irfroh"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -2411,7 +2481,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_DecisionAccelerated",
-          "incoming": "Flow_1t18skh",
+          "incoming": [
+            "Flow_1t18skh"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -2471,7 +2543,9 @@
           "human_performers": [],
           "id": "SendTask_NotifyCustomerDelay",
           "implementation": "##WebService",
-          "incoming": "Flow_0kaot38",
+          "incoming": [
+            "Flow_0kaot38"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -2480,7 +2554,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Notify customer about delay",
           "operation_ref": null,
-          "outgoing": "Flow_1octlto",
+          "outgoing": [
+            "Flow_1octlto"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2554,7 +2630,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Accelerated decision",
-          "outgoing": "Flow_0kaot38",
+          "outgoing": [
+            "Flow_0kaot38"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -2603,14 +2681,18 @@
           "human_performers": [],
           "id": "UserTask_AccelerateDecision",
           "implementation": "##unspecified",
-          "incoming": "Flow_1octlto",
+          "incoming": [
+            "Flow_1octlto"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Accelerate decision making",
-          "outgoing": "Flow_1t18skh",
+          "outgoing": [
+            "Flow_1t18skh"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4196,7 +4278,9 @@
       },
       "human_performers": [],
       "id": "CallActivity_RequestDocument",
-      "incoming": "Flow_0irfroh",
+      "incoming": [
+        "Flow_0irfroh"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -4225,7 +4309,9 @@
         "output_data_item": null
       },
       "name": "Document Request",
-      "outgoing": "Flow_1wwxns6",
+      "outgoing": [
+        "Flow_1wwxns6"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -4282,7 +4368,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_DecisionAccelerated",
-      "incoming": "Flow_1t18skh",
+      "incoming": [
+        "Flow_1t18skh"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -4309,7 +4397,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_DocumentReceived",
-      "incoming": "Flow_1wwxns6",
+      "incoming": [
+        "Flow_1wwxns6"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -4336,7 +4426,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_FraudNoDetected",
-      "incoming": "SequenceFlow_No",
+      "incoming": [
+        "SequenceFlow_No"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -4363,7 +4455,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "EndEvent_ManuallyDecided",
-      "incoming": "Flow_0vjv3ik",
+      "incoming": [
+        "Flow_0vjv3ik"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -4397,7 +4491,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "ErrorEndEvent_FraudDetected",
-      "incoming": "SequenceFlow_Yes",
+      "incoming": [
+        "SequenceFlow_Yes"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -4431,7 +4527,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "ErrorEndEvent_Timeout",
-      "incoming": "Flow_03n7pdb",
+      "incoming": [
+        "Flow_03n7pdb"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -5080,10 +5178,15 @@
       "extension_elements": null,
       "gateway_direction": "Unspecified",
       "id": "Gateway_FraudDetected",
-      "incoming": "Flow_1istmr0",
+      "incoming": [
+        "Flow_1istmr0"
+      ],
       "monitoring": null,
       "name": "Fraud detected?",
-      "outgoing": "['SequenceFlow_No', 'SequenceFlow_Yes']"
+      "outgoing": [
+        "SequenceFlow_No",
+        "SequenceFlow_Yes"
+      ]
     },
     "ManualCheck": {
       "ad_hoc_sub_processes": [],
@@ -5113,7 +5216,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Timeout (7 days)",
-          "outgoing": "Flow_03n7pdb",
+          "outgoing": [
+            "Flow_03n7pdb"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -5169,7 +5274,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "ErrorEndEvent_Timeout",
-          "incoming": "Flow_03n7pdb",
+          "incoming": [
+            "Flow_03n7pdb"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -5196,7 +5303,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "EndEvent_ManuallyDecided",
-          "incoming": "Flow_0vjv3ik",
+          "incoming": [
+            "Flow_0vjv3ik"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -5307,7 +5416,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Decide Manually",
-          "outgoing": "Flow_08vmski",
+          "outgoing": [
+            "Flow_08vmski"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -5343,7 +5454,9 @@
               },
               "human_performers": [],
               "id": "CallActivity_RequestDocument",
-              "incoming": "Flow_0irfroh",
+              "incoming": [
+                "Flow_0irfroh"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -5372,7 +5485,9 @@
                 "output_data_item": null
               },
               "name": "Document Request",
-              "outgoing": "Flow_1wwxns6",
+              "outgoing": [
+                "Flow_1wwxns6"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -5407,7 +5522,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_DocumentReceived",
-              "incoming": "Flow_1wwxns6",
+              "incoming": [
+                "Flow_1wwxns6"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -5510,7 +5627,9 @@
               ],
               "monitoring": null,
               "name": "Document requested",
-              "outgoing": "Flow_0irfroh",
+              "outgoing": [
+                "Flow_0irfroh"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -5560,7 +5679,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_DecisionAccelerated",
-              "incoming": "Flow_1t18skh",
+              "incoming": [
+                "Flow_1t18skh"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -5620,7 +5741,9 @@
               "human_performers": [],
               "id": "SendTask_NotifyCustomerDelay",
               "implementation": "##WebService",
-              "incoming": "Flow_0kaot38",
+              "incoming": [
+                "Flow_0kaot38"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -5629,7 +5752,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Notify customer about delay",
               "operation_ref": null,
-              "outgoing": "Flow_1octlto",
+              "outgoing": [
+                "Flow_1octlto"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -5703,7 +5828,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Accelerated decision",
-              "outgoing": "Flow_0kaot38",
+              "outgoing": [
+                "Flow_0kaot38"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -5752,14 +5879,18 @@
               "human_performers": [],
               "id": "UserTask_AccelerateDecision",
               "implementation": "##unspecified",
-              "incoming": "Flow_1octlto",
+              "incoming": [
+                "Flow_1octlto"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Accelerate decision making",
-              "outgoing": "Flow_1t18skh",
+              "outgoing": [
+                "Flow_1t18skh"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -5810,7 +5941,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "ErrorEndEvent_FraudDetected",
-              "incoming": "SequenceFlow_Yes",
+              "incoming": [
+                "SequenceFlow_Yes"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -5837,7 +5970,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_FraudNoDetected",
-              "incoming": "SequenceFlow_No",
+              "incoming": [
+                "SequenceFlow_No"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -5861,10 +5996,15 @@
               "extension_elements": null,
               "gateway_direction": "Unspecified",
               "id": "Gateway_FraudDetected",
-              "incoming": "Flow_1istmr0",
+              "incoming": [
+                "Flow_1istmr0"
+              ],
               "monitoring": null,
               "name": "Fraud detected?",
-              "outgoing": "['SequenceFlow_No', 'SequenceFlow_Yes']"
+              "outgoing": [
+                "SequenceFlow_No",
+                "SequenceFlow_Yes"
+              ]
             }
           ],
           "extension_elements": null,
@@ -5986,7 +6126,9 @@
               ],
               "monitoring": null,
               "name": "Fraud suspected",
-              "outgoing": "Flow_0nttki4",
+              "outgoing": [
+                "Flow_0nttki4"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -6020,14 +6162,18 @@
               "human_performers": [],
               "id": "UserTask_CheckForFraud",
               "implementation": "##unspecified",
-              "incoming": "Flow_0nttki4",
+              "incoming": [
+                "Flow_0nttki4"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Check for Fraud",
-              "outgoing": "Flow_1istmr0",
+              "outgoing": [
+                "Flow_1istmr0"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -6085,14 +6231,18 @@
           "human_performers": [],
           "id": "UserTask_DecideOnApplication",
           "implementation": "##unspecified",
-          "incoming": "Flow_08vmski",
+          "incoming": [
+            "Flow_08vmski"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Decide on application",
-          "outgoing": "Flow_0vjv3ik",
+          "outgoing": [
+            "Flow_0vjv3ik"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -6183,7 +6333,9 @@
       "human_performers": [],
       "id": "SendTask_NotifyCustomerDelay",
       "implementation": "##WebService",
-      "incoming": "Flow_0kaot38",
+      "incoming": [
+        "Flow_0kaot38"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -6192,7 +6344,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Notify customer about delay",
       "operation_ref": null,
-      "outgoing": "Flow_1octlto",
+      "outgoing": [
+        "Flow_1octlto"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6253,7 +6407,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Decide Manually",
-      "outgoing": "Flow_08vmski",
+      "outgoing": [
+        "Flow_08vmski"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6290,7 +6446,9 @@
       ],
       "monitoring": null,
       "name": "Document requested",
-      "outgoing": "Flow_0irfroh",
+      "outgoing": [
+        "Flow_0irfroh"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6327,7 +6485,9 @@
       ],
       "monitoring": null,
       "name": "Fraud suspected",
-      "outgoing": "Flow_0nttki4",
+      "outgoing": [
+        "Flow_0nttki4"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6356,7 +6516,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Accelerated decision",
-      "outgoing": "Flow_0kaot38",
+      "outgoing": [
+        "Flow_0kaot38"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6429,7 +6591,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Timeout (7 days)",
-      "outgoing": "Flow_03n7pdb",
+      "outgoing": [
+        "Flow_03n7pdb"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6487,14 +6651,18 @@
       "human_performers": [],
       "id": "UserTask_AccelerateDecision",
       "implementation": "##unspecified",
-      "incoming": "Flow_1octlto",
+      "incoming": [
+        "Flow_1octlto"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Accelerate decision making",
-      "outgoing": "Flow_1t18skh",
+      "outgoing": [
+        "Flow_1t18skh"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6521,14 +6689,18 @@
       "human_performers": [],
       "id": "UserTask_CheckForFraud",
       "implementation": "##unspecified",
-      "incoming": "Flow_0nttki4",
+      "incoming": [
+        "Flow_0nttki4"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Check for Fraud",
-      "outgoing": "Flow_1istmr0",
+      "outgoing": [
+        "Flow_1istmr0"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6577,14 +6749,18 @@
       "human_performers": [],
       "id": "UserTask_DecideOnApplication",
       "implementation": "##unspecified",
-      "incoming": "Flow_08vmski",
+      "incoming": [
+        "Flow_08vmski"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Decide on application",
-      "outgoing": "Flow_0vjv3ik",
+      "outgoing": [
+        "Flow_0vjv3ik"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -7457,7 +7633,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Timeout (7 days)",
-              "outgoing": "Flow_03n7pdb",
+              "outgoing": [
+                "Flow_03n7pdb"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -7513,7 +7691,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "ErrorEndEvent_Timeout",
-              "incoming": "Flow_03n7pdb",
+              "incoming": [
+                "Flow_03n7pdb"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -7540,7 +7720,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "EndEvent_ManuallyDecided",
-              "incoming": "Flow_0vjv3ik",
+              "incoming": [
+                "Flow_0vjv3ik"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -7651,7 +7833,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Decide Manually",
-              "outgoing": "Flow_08vmski",
+              "outgoing": [
+                "Flow_08vmski"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -7687,7 +7871,9 @@
                   },
                   "human_performers": [],
                   "id": "CallActivity_RequestDocument",
-                  "incoming": "Flow_0irfroh",
+                  "incoming": [
+                    "Flow_0irfroh"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
@@ -7716,7 +7902,9 @@
                     "output_data_item": null
                   },
                   "name": "Document Request",
-                  "outgoing": "Flow_1wwxns6",
+                  "outgoing": [
+                    "Flow_1wwxns6"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -7751,7 +7939,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "EndEvent_DocumentReceived",
-                  "incoming": "Flow_1wwxns6",
+                  "incoming": [
+                    "Flow_1wwxns6"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -7854,7 +8044,9 @@
                   ],
                   "monitoring": null,
                   "name": "Document requested",
-                  "outgoing": "Flow_0irfroh",
+                  "outgoing": [
+                    "Flow_0irfroh"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -7904,7 +8096,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "EndEvent_DecisionAccelerated",
-                  "incoming": "Flow_1t18skh",
+                  "incoming": [
+                    "Flow_1t18skh"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -7964,7 +8158,9 @@
                   "human_performers": [],
                   "id": "SendTask_NotifyCustomerDelay",
                   "implementation": "##WebService",
-                  "incoming": "Flow_0kaot38",
+                  "incoming": [
+                    "Flow_0kaot38"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
@@ -7973,7 +8169,9 @@
                   "multi_instance_loop_characteristics": null,
                   "name": "Notify customer about delay",
                   "operation_ref": null,
-                  "outgoing": "Flow_1octlto",
+                  "outgoing": [
+                    "Flow_1octlto"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -8047,7 +8245,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": "Accelerated decision",
-                  "outgoing": "Flow_0kaot38",
+                  "outgoing": [
+                    "Flow_0kaot38"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -8096,14 +8296,18 @@
                   "human_performers": [],
                   "id": "UserTask_AccelerateDecision",
                   "implementation": "##unspecified",
-                  "incoming": "Flow_1octlto",
+                  "incoming": [
+                    "Flow_1octlto"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
                   "monitoring": null,
                   "multi_instance_loop_characteristics": null,
                   "name": "Accelerate decision making",
-                  "outgoing": "Flow_1t18skh",
+                  "outgoing": [
+                    "Flow_1t18skh"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -8154,7 +8358,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "ErrorEndEvent_FraudDetected",
-                  "incoming": "SequenceFlow_Yes",
+                  "incoming": [
+                    "SequenceFlow_Yes"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -8181,7 +8387,9 @@
                   "event_definitions": [],
                   "extension_elements": null,
                   "id": "EndEvent_FraudNoDetected",
-                  "incoming": "SequenceFlow_No",
+                  "incoming": [
+                    "SequenceFlow_No"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -8205,10 +8413,15 @@
                   "extension_elements": null,
                   "gateway_direction": "Unspecified",
                   "id": "Gateway_FraudDetected",
-                  "incoming": "Flow_1istmr0",
+                  "incoming": [
+                    "Flow_1istmr0"
+                  ],
                   "monitoring": null,
                   "name": "Fraud detected?",
-                  "outgoing": "['SequenceFlow_No', 'SequenceFlow_Yes']"
+                  "outgoing": [
+                    "SequenceFlow_No",
+                    "SequenceFlow_Yes"
+                  ]
                 }
               ],
               "extension_elements": null,
@@ -8330,7 +8543,9 @@
                   ],
                   "monitoring": null,
                   "name": "Fraud suspected",
-                  "outgoing": "Flow_0nttki4",
+                  "outgoing": [
+                    "Flow_0nttki4"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -8364,14 +8579,18 @@
                   "human_performers": [],
                   "id": "UserTask_CheckForFraud",
                   "implementation": "##unspecified",
-                  "incoming": "Flow_0nttki4",
+                  "incoming": [
+                    "Flow_0nttki4"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
                   "monitoring": null,
                   "multi_instance_loop_characteristics": null,
                   "name": "Check for Fraud",
-                  "outgoing": "Flow_1istmr0",
+                  "outgoing": [
+                    "Flow_1istmr0"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -8429,14 +8648,18 @@
               "human_performers": [],
               "id": "UserTask_DecideOnApplication",
               "implementation": "##unspecified",
-              "incoming": "Flow_08vmski",
+              "incoming": [
+                "Flow_08vmski"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Decide on application",
-              "outgoing": "Flow_0vjv3ik",
+              "outgoing": [
+                "Flow_0vjv3ik"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -8501,6 +8724,287 @@
       "is_message_visible": null,
       "label": null,
       "participant_band_kind": null
+    },
+    "userTaskForm_2s8lq02": {
+      "body": "{\n  \"components\": [\n    {\n      \"key\": \"applicationNumber\",\n      \"label\": \"Application Number\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1djmro0\"\n    },\n    {\n      \"text\": \"<img src=\\\"http://localhost:8080/camunda/online/banking/img/core-img/logo.png\\\"><h2>Instructions:</h2><p>Based on internal protocal and the given information below, tick the checkbox for 'Approved' if this application should be approved.</p><p> Otherwise, leave this checkbox blank.</p>\",\n      \"type\": \"text\",\n      \"id\": \"Field_0e9521u\"\n    },\n    {\n      \"key\": \"applicantName\",\n      \"label\": \"Applicant\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1ex9187\"\n    },\n    {\n      \"key\": \"age\",\n      \"label\": \"Current Age\",\n      \"type\": \"number\",\n      \"id\": \"Field_17vnd80\"\n    },\n    {\n      \"key\": \"employment\",\n      \"label\": \"Employment\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_08mj5fv\"\n    },\n    {\n      \"key\": \"category\",\n      \"label\": \"Category\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1k7e84u\"\n    },\n    {\n      \"key\": \"priceIndication\",\n      \"label\": \"Price indication\",\n      \"type\": \"textfield\",\n      \"id\": \"Field_1d6bhc2\"\n    },\n    {\n      \"key\": \"approved\",\n      \"label\": \"Approved\",\n      \"type\": \"checkbox\",\n      \"id\": \"Field_0hwfap9\"\n    }\n  ],\n  \"schemaVersion\": 4,\n  \"type\": \"default\",\n  \"id\": \"Form_0840o2b\",\n  \"executionPlatform\": \"Camunda Cloud\",\n  \"executionPlatformVersion\": \"1.1\",\n  \"exporter\": {\n    \"name\": \"Camunda Web Modeler\",\n    \"version\": \"1db7fd4\"\n  }\n}",
+      "id": "userTaskForm_2s8lq02"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "Participant_01",
+      "property": "process_ref",
+      "reference_id": "ManualCheck"
+    },
+    {
+      "element_id": "UserTask_DecideOnApplication",
+      "property": "incoming",
+      "reference_id": "Flow_08vmski"
+    },
+    {
+      "element_id": "UserTask_DecideOnApplication",
+      "property": "outgoing",
+      "reference_id": "Flow_0vjv3ik"
+    },
+    {
+      "element_id": "StartEvent_DecideManually",
+      "property": "outgoing",
+      "reference_id": "Flow_08vmski"
+    },
+    {
+      "element_id": "Flow_08vmski",
+      "property": "source_ref",
+      "reference_id": "StartEvent_DecideManually"
+    },
+    {
+      "element_id": "Flow_08vmski",
+      "property": "target_ref",
+      "reference_id": "UserTask_DecideOnApplication"
+    },
+    {
+      "element_id": "Flow_0vjv3ik",
+      "property": "source_ref",
+      "reference_id": "UserTask_DecideOnApplication"
+    },
+    {
+      "element_id": "Flow_0vjv3ik",
+      "property": "target_ref",
+      "reference_id": "EndEvent_ManuallyDecided"
+    },
+    {
+      "element_id": "Flow_03n7pdb",
+      "property": "source_ref",
+      "reference_id": "TimerEvent_Timeout"
+    },
+    {
+      "element_id": "Flow_03n7pdb",
+      "property": "target_ref",
+      "reference_id": "ErrorEndEvent_Timeout"
+    },
+    {
+      "element_id": "TimerEvent_Timeout",
+      "property": "outgoing",
+      "reference_id": "Flow_03n7pdb"
+    },
+    {
+      "element_id": "TimerEvent_Timeout",
+      "property": "attached_to_ref",
+      "reference_id": "UserTask_DecideOnApplication"
+    },
+    {
+      "element_id": "MessageEventDefinition_0cl167n",
+      "property": "message_ref",
+      "reference_id": "Message_0fvpzfg"
+    },
+    {
+      "element_id": "StartMessageEvent_DocumentRequested",
+      "property": "outgoing",
+      "reference_id": "Flow_0irfroh"
+    },
+    {
+      "element_id": "Flow_0irfroh",
+      "property": "source_ref",
+      "reference_id": "StartMessageEvent_DocumentRequested"
+    },
+    {
+      "element_id": "Flow_0irfroh",
+      "property": "target_ref",
+      "reference_id": "CallActivity_RequestDocument"
+    },
+    {
+      "element_id": "Flow_1wwxns6",
+      "property": "source_ref",
+      "reference_id": "CallActivity_RequestDocument"
+    },
+    {
+      "element_id": "Flow_1wwxns6",
+      "property": "target_ref",
+      "reference_id": "EndEvent_DocumentReceived"
+    },
+    {
+      "element_id": "EndEvent_DocumentReceived",
+      "property": "incoming",
+      "reference_id": "Flow_1wwxns6"
+    },
+    {
+      "element_id": "CallActivity_RequestDocument",
+      "property": "incoming",
+      "reference_id": "Flow_0irfroh"
+    },
+    {
+      "element_id": "CallActivity_RequestDocument",
+      "property": "outgoing",
+      "reference_id": "Flow_1wwxns6"
+    },
+    {
+      "element_id": "StartTimerEvent_AcceleratedDecision",
+      "property": "outgoing",
+      "reference_id": "Flow_0kaot38"
+    },
+    {
+      "element_id": "UserTask_AccelerateDecision",
+      "property": "incoming",
+      "reference_id": "Flow_1octlto"
+    },
+    {
+      "element_id": "UserTask_AccelerateDecision",
+      "property": "outgoing",
+      "reference_id": "Flow_1t18skh"
+    },
+    {
+      "element_id": "EndEvent_DecisionAccelerated",
+      "property": "incoming",
+      "reference_id": "Flow_1t18skh"
+    },
+    {
+      "element_id": "Flow_0kaot38",
+      "property": "source_ref",
+      "reference_id": "StartTimerEvent_AcceleratedDecision"
+    },
+    {
+      "element_id": "Flow_0kaot38",
+      "property": "target_ref",
+      "reference_id": "SendTask_NotifyCustomerDelay"
+    },
+    {
+      "element_id": "Flow_1t18skh",
+      "property": "source_ref",
+      "reference_id": "UserTask_AccelerateDecision"
+    },
+    {
+      "element_id": "Flow_1t18skh",
+      "property": "target_ref",
+      "reference_id": "EndEvent_DecisionAccelerated"
+    },
+    {
+      "element_id": "Flow_1octlto",
+      "property": "source_ref",
+      "reference_id": "SendTask_NotifyCustomerDelay"
+    },
+    {
+      "element_id": "Flow_1octlto",
+      "property": "target_ref",
+      "reference_id": "UserTask_AccelerateDecision"
+    },
+    {
+      "element_id": "SendTask_NotifyCustomerDelay",
+      "property": "incoming",
+      "reference_id": "Flow_0kaot38"
+    },
+    {
+      "element_id": "SendTask_NotifyCustomerDelay",
+      "property": "outgoing",
+      "reference_id": "Flow_1octlto"
+    },
+    {
+      "element_id": "UserTask_CheckForFraud",
+      "property": "incoming",
+      "reference_id": "Flow_0nttki4"
+    },
+    {
+      "element_id": "UserTask_CheckForFraud",
+      "property": "outgoing",
+      "reference_id": "Flow_1istmr0"
+    },
+    {
+      "element_id": "Flow_0nttki4",
+      "property": "source_ref",
+      "reference_id": "StartMessageEvent_FraudSuspected"
+    },
+    {
+      "element_id": "Flow_0nttki4",
+      "property": "target_ref",
+      "reference_id": "UserTask_CheckForFraud"
+    },
+    {
+      "element_id": "SequenceFlow_Yes",
+      "property": "source_ref",
+      "reference_id": "Gateway_FraudDetected"
+    },
+    {
+      "element_id": "SequenceFlow_Yes",
+      "property": "target_ref",
+      "reference_id": "ErrorEndEvent_FraudDetected"
+    },
+    {
+      "element_id": "Flow_1istmr0",
+      "property": "source_ref",
+      "reference_id": "UserTask_CheckForFraud"
+    },
+    {
+      "element_id": "Flow_1istmr0",
+      "property": "target_ref",
+      "reference_id": "Gateway_FraudDetected"
+    },
+    {
+      "element_id": "SequenceFlow_No",
+      "property": "source_ref",
+      "reference_id": "Gateway_FraudDetected"
+    },
+    {
+      "element_id": "SequenceFlow_No",
+      "property": "target_ref",
+      "reference_id": "EndEvent_FraudNoDetected"
+    },
+    {
+      "element_id": "MessageEventDefinition_1qmxrb4",
+      "property": "message_ref",
+      "reference_id": "Message_10rm6h0"
+    },
+    {
+      "element_id": "StartMessageEvent_FraudSuspected",
+      "property": "outgoing",
+      "reference_id": "Flow_0nttki4"
+    },
+    {
+      "element_id": "ErrorEventDefinition_06wkgx9",
+      "property": "error_ref",
+      "reference_id": "Error_0hvt466"
+    },
+    {
+      "element_id": "ErrorEndEvent_FraudDetected",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_Yes"
+    },
+    {
+      "element_id": "EndEvent_FraudNoDetected",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_No"
+    },
+    {
+      "element_id": "Gateway_FraudDetected",
+      "property": "incoming",
+      "reference_id": "Flow_1istmr0"
+    },
+    {
+      "element_id": "Gateway_FraudDetected",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_No"
+    },
+    {
+      "element_id": "Gateway_FraudDetected",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_Yes"
+    },
+    {
+      "element_id": "Gateway_FraudDetected",
+      "property": "default",
+      "reference_id": "SequenceFlow_No"
+    },
+    {
+      "element_id": "ErrorEventDefinition_0zy5rzo",
+      "property": "error_ref",
+      "reference_id": "Error_0hvt466"
+    },
+    {
+      "element_id": "ErrorEndEvent_Timeout",
+      "property": "incoming",
+      "reference_id": "Flow_03n7pdb"
+    },
+    {
+      "element_id": "EndEvent_ManuallyDecided",
+      "property": "incoming",
+      "reference_id": "Flow_0vjv3ik"
+    }
+  ]
 }

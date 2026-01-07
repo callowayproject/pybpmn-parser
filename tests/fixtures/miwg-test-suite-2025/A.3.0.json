@@ -517,12 +517,12 @@
             "id": "_428dcbf5-8e5e-48e0-9c0c-d93003fa8c82",
             "incoming": [],
             "link_event_definition": [],
-            "message_event_definition": [
-              null
-            ],
+            "message_event_definition": null,
             "monitoring": null,
             "name": "Boundary Intermediate Event Non-Interrupting Message",
-            "outgoing": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+            "outgoing": [
+              "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -542,9 +542,7 @@
             "data_output_association": [],
             "documentation": [],
             "error_event_definition": [],
-            "escalation_event_definition": [
-              null
-            ],
+            "escalation_event_definition": null,
             "event_definition": [],
             "event_definition_ref": [],
             "extension_elements": null,
@@ -554,7 +552,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Boundary Intermediate Event Interrupting Escalation",
-            "outgoing": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+            "outgoing": [
+              "_7742093f-cd2c-415e-be71-d2514bc559c9"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -588,7 +588,10 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_ce253897-4300-4b24-b71f-4c9535698c70",
-            "incoming": "['_719b757a-fc92-46bd-8d10-cca5a5bbf3bf', '_88b9f814-764e-492b-b38d-d5e8dfa68400']",
+            "incoming": [
+              "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+              "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -615,7 +618,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_10ce0b26-1b3e-46a2-85a5-62538ed2da13",
-            "incoming": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+            "incoming": [
+              "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -786,7 +791,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Start Event",
-            "outgoing": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+            "outgoing": [
+              "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -824,7 +831,9 @@
             "id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48",
             "implicit_throw_events": [],
             "inclusive_gateways": [],
-            "incoming": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+            "incoming": [
+              "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+            ],
             "intermediate_catch_events": [],
             "intermediate_throw_events": [],
             "io_specification": null,
@@ -835,7 +844,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Collapsed\nSub-Process",
-            "outgoing": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+            "outgoing": [
+              "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+            ],
             "parallel_gateways": [],
             "performers": [],
             "potential_owners": [],
@@ -871,14 +882,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_65f5459f-44ae-436d-a089-a91d6d78075b",
-            "incoming": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+            "incoming": [
+              "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 1",
-            "outgoing": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+            "outgoing": [
+              "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -897,14 +912,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_9fad8da5-a28c-4b6b-bb71-fbd5c65b9681",
-            "incoming": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+            "incoming": [
+              "_7742093f-cd2c-415e-be71-d2514bc559c9"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 4",
-            "outgoing": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+            "outgoing": [
+              "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -923,14 +942,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_72204cd7-709c-4656-9554-3ae29b3844ce",
-            "incoming": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+            "incoming": [
+              "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 3",
-            "outgoing": "_88b9f814-764e-492b-b38d-d5e8dfa68400",
+            "outgoing": [
+              "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -949,14 +972,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_2d2d0d29-896f-49f9-8109-77a7304309c5",
-            "incoming": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+            "incoming": [
+              "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 2",
-            "outgoing": "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+            "outgoing": [
+              "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1901,12 +1928,12 @@
           "id": "_428dcbf5-8e5e-48e0-9c0c-d93003fa8c82",
           "incoming": [],
           "link_event_definition": [],
-          "message_event_definition": [
-            null
-          ],
+          "message_event_definition": null,
           "monitoring": null,
           "name": "Boundary Intermediate Event Non-Interrupting Message",
-          "outgoing": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+          "outgoing": [
+            "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -1926,9 +1953,7 @@
           "data_output_association": [],
           "documentation": [],
           "error_event_definition": [],
-          "escalation_event_definition": [
-            null
-          ],
+          "escalation_event_definition": null,
           "event_definition": [],
           "event_definition_ref": [],
           "extension_elements": null,
@@ -1938,7 +1963,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Boundary Intermediate Event Interrupting Escalation",
-          "outgoing": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+          "outgoing": [
+            "_7742093f-cd2c-415e-be71-d2514bc559c9"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -1972,7 +1999,10 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_ce253897-4300-4b24-b71f-4c9535698c70",
-          "incoming": "['_719b757a-fc92-46bd-8d10-cca5a5bbf3bf', '_88b9f814-764e-492b-b38d-d5e8dfa68400']",
+          "incoming": [
+            "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+            "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -1999,7 +2029,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_10ce0b26-1b3e-46a2-85a5-62538ed2da13",
-          "incoming": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+          "incoming": [
+            "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -2170,7 +2202,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event",
-          "outgoing": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+          "outgoing": [
+            "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -2208,7 +2242,9 @@
           "id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48",
           "implicit_throw_events": [],
           "inclusive_gateways": [],
-          "incoming": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+          "incoming": [
+            "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+          ],
           "intermediate_catch_events": [],
           "intermediate_throw_events": [],
           "io_specification": null,
@@ -2219,7 +2255,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Collapsed\nSub-Process",
-          "outgoing": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+          "outgoing": [
+            "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+          ],
           "parallel_gateways": [],
           "performers": [],
           "potential_owners": [],
@@ -2255,14 +2293,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_65f5459f-44ae-436d-a089-a91d6d78075b",
-          "incoming": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+          "incoming": [
+            "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 1",
-          "outgoing": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+          "outgoing": [
+            "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2281,14 +2323,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_9fad8da5-a28c-4b6b-bb71-fbd5c65b9681",
-          "incoming": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+          "incoming": [
+            "_7742093f-cd2c-415e-be71-d2514bc559c9"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 4",
-          "outgoing": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+          "outgoing": [
+            "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2307,14 +2353,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_72204cd7-709c-4656-9554-3ae29b3844ce",
-          "incoming": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+          "incoming": [
+            "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 3",
-          "outgoing": "_88b9f814-764e-492b-b38d-d5e8dfa68400",
+          "outgoing": [
+            "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2333,14 +2383,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_2d2d0d29-896f-49f9-8109-77a7304309c5",
-          "incoming": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+          "incoming": [
+            "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 2",
-          "outgoing": "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+          "outgoing": [
+            "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2368,7 +2422,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_10ce0b26-1b3e-46a2-85a5-62538ed2da13",
-      "incoming": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+      "incoming": [
+        "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -2898,12 +2954,12 @@
               "id": "_428dcbf5-8e5e-48e0-9c0c-d93003fa8c82",
               "incoming": [],
               "link_event_definition": [],
-              "message_event_definition": [
-                null
-              ],
+              "message_event_definition": null,
               "monitoring": null,
               "name": "Boundary Intermediate Event Non-Interrupting Message",
-              "outgoing": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+              "outgoing": [
+                "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -2923,9 +2979,7 @@
               "data_output_association": [],
               "documentation": [],
               "error_event_definition": [],
-              "escalation_event_definition": [
-                null
-              ],
+              "escalation_event_definition": null,
               "event_definition": [],
               "event_definition_ref": [],
               "extension_elements": null,
@@ -2935,7 +2989,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Boundary Intermediate Event Interrupting Escalation",
-              "outgoing": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+              "outgoing": [
+                "_7742093f-cd2c-415e-be71-d2514bc559c9"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -2969,7 +3025,10 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_ce253897-4300-4b24-b71f-4c9535698c70",
-              "incoming": "['_719b757a-fc92-46bd-8d10-cca5a5bbf3bf', '_88b9f814-764e-492b-b38d-d5e8dfa68400']",
+              "incoming": [
+                "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+                "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -2996,7 +3055,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_10ce0b26-1b3e-46a2-85a5-62538ed2da13",
-              "incoming": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+              "incoming": [
+                "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -3167,7 +3228,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event",
-              "outgoing": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+              "outgoing": [
+                "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -3205,7 +3268,9 @@
               "id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48",
               "implicit_throw_events": [],
               "inclusive_gateways": [],
-              "incoming": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+              "incoming": [
+                "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+              ],
               "intermediate_catch_events": [],
               "intermediate_throw_events": [],
               "io_specification": null,
@@ -3216,7 +3281,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Collapsed\nSub-Process",
-              "outgoing": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+              "outgoing": [
+                "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+              ],
               "parallel_gateways": [],
               "performers": [],
               "potential_owners": [],
@@ -3252,14 +3319,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_65f5459f-44ae-436d-a089-a91d6d78075b",
-              "incoming": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+              "incoming": [
+                "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 1",
-              "outgoing": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+              "outgoing": [
+                "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3278,14 +3349,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_9fad8da5-a28c-4b6b-bb71-fbd5c65b9681",
-              "incoming": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+              "incoming": [
+                "_7742093f-cd2c-415e-be71-d2514bc559c9"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 4",
-              "outgoing": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+              "outgoing": [
+                "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3304,14 +3379,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_72204cd7-709c-4656-9554-3ae29b3844ce",
-              "incoming": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+              "incoming": [
+                "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 3",
-              "outgoing": "_88b9f814-764e-492b-b38d-d5e8dfa68400",
+              "outgoing": [
+                "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3330,14 +3409,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_2d2d0d29-896f-49f9-8109-77a7304309c5",
-              "incoming": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+              "incoming": [
+                "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 2",
-              "outgoing": "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+              "outgoing": [
+                "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3373,9 +3456,7 @@
       "data_output_association": [],
       "documentation": [],
       "error_event_definition": [],
-      "escalation_event_definition": [
-        null
-      ],
+      "escalation_event_definition": null,
       "event_definition": [],
       "event_definition_ref": [],
       "extension_elements": null,
@@ -3385,7 +3466,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Boundary Intermediate Event Interrupting Escalation",
-      "outgoing": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+      "outgoing": [
+        "_7742093f-cd2c-415e-be71-d2514bc559c9"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -3414,7 +3497,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event",
-      "outgoing": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+      "outgoing": [
+        "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -3450,7 +3535,9 @@
       "id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48",
       "implicit_throw_events": [],
       "inclusive_gateways": [],
-      "incoming": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+      "incoming": [
+        "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+      ],
       "intermediate_catch_events": [],
       "intermediate_throw_events": [],
       "io_specification": null,
@@ -3461,7 +3548,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Collapsed\nSub-Process",
-      "outgoing": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+      "outgoing": [
+        "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+      ],
       "parallel_gateways": [],
       "performers": [],
       "potential_owners": [],
@@ -3506,14 +3595,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_2d2d0d29-896f-49f9-8109-77a7304309c5",
-      "incoming": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+      "incoming": [
+        "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 2",
-      "outgoing": "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+      "outgoing": [
+        "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3540,12 +3633,12 @@
       "id": "_428dcbf5-8e5e-48e0-9c0c-d93003fa8c82",
       "incoming": [],
       "link_event_definition": [],
-      "message_event_definition": [
-        null
-      ],
+      "message_event_definition": null,
       "monitoring": null,
       "name": "Boundary Intermediate Event Non-Interrupting Message",
-      "outgoing": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+      "outgoing": [
+        "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -3564,14 +3657,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_65f5459f-44ae-436d-a089-a91d6d78075b",
-      "incoming": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+      "incoming": [
+        "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 1",
-      "outgoing": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+      "outgoing": [
+        "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3616,14 +3713,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_72204cd7-709c-4656-9554-3ae29b3844ce",
-      "incoming": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+      "incoming": [
+        "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 3",
-      "outgoing": "_88b9f814-764e-492b-b38d-d5e8dfa68400",
+      "outgoing": [
+        "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3681,14 +3782,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_9fad8da5-a28c-4b6b-bb71-fbd5c65b9681",
-      "incoming": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+      "incoming": [
+        "_7742093f-cd2c-415e-be71-d2514bc559c9"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 4",
-      "outgoing": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+      "outgoing": [
+        "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3724,7 +3829,10 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_ce253897-4300-4b24-b71f-4c9535698c70",
-      "incoming": "['_719b757a-fc92-46bd-8d10-cca5a5bbf3bf', '_88b9f814-764e-492b-b38d-d5e8dfa68400']",
+      "incoming": [
+        "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+        "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -3749,5 +3857,177 @@
       "source_ref": "_428dcbf5-8e5e-48e0-9c0c-d93003fa8c82",
       "target_ref": "_72204cd7-709c-4656-9554-3ae29b3844ce"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "_1ac4b759-40e3-4dfb-b0e3-ad1d201d6c3d",
+      "property": "outgoing",
+      "reference_id": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+    },
+    {
+      "element_id": "_65f5459f-44ae-436d-a089-a91d6d78075b",
+      "property": "incoming",
+      "reference_id": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22"
+    },
+    {
+      "element_id": "_65f5459f-44ae-436d-a089-a91d6d78075b",
+      "property": "outgoing",
+      "reference_id": "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+    },
+    {
+      "element_id": "_9fad8da5-a28c-4b6b-bb71-fbd5c65b9681",
+      "property": "incoming",
+      "reference_id": "_7742093f-cd2c-415e-be71-d2514bc559c9"
+    },
+    {
+      "element_id": "_9fad8da5-a28c-4b6b-bb71-fbd5c65b9681",
+      "property": "outgoing",
+      "reference_id": "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+    },
+    {
+      "element_id": "_72204cd7-709c-4656-9554-3ae29b3844ce",
+      "property": "incoming",
+      "reference_id": "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+    },
+    {
+      "element_id": "_72204cd7-709c-4656-9554-3ae29b3844ce",
+      "property": "outgoing",
+      "reference_id": "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+    },
+    {
+      "element_id": "_2d2d0d29-896f-49f9-8109-77a7304309c5",
+      "property": "incoming",
+      "reference_id": "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+    },
+    {
+      "element_id": "_2d2d0d29-896f-49f9-8109-77a7304309c5",
+      "property": "outgoing",
+      "reference_id": "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf"
+    },
+    {
+      "element_id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48",
+      "property": "incoming",
+      "reference_id": "_68ba9b96-b1e9-4691-bc25-a36bf5731502"
+    },
+    {
+      "element_id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48",
+      "property": "outgoing",
+      "reference_id": "_250377d0-628d-463f-95f6-1f4ceed9bd8a"
+    },
+    {
+      "element_id": "_428dcbf5-8e5e-48e0-9c0c-d93003fa8c82",
+      "property": "outgoing",
+      "reference_id": "_fe023d13-58bc-4f08-b60a-ebe4489f4190"
+    },
+    {
+      "element_id": "_428dcbf5-8e5e-48e0-9c0c-d93003fa8c82",
+      "property": "attached_to_ref",
+      "reference_id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48"
+    },
+    {
+      "element_id": "_178e16eb-4c9e-4ea0-9644-7c5fb2b71825",
+      "property": "outgoing",
+      "reference_id": "_7742093f-cd2c-415e-be71-d2514bc559c9"
+    },
+    {
+      "element_id": "_178e16eb-4c9e-4ea0-9644-7c5fb2b71825",
+      "property": "attached_to_ref",
+      "reference_id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48"
+    },
+    {
+      "element_id": "_ce253897-4300-4b24-b71f-4c9535698c70",
+      "property": "incoming",
+      "reference_id": "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf"
+    },
+    {
+      "element_id": "_ce253897-4300-4b24-b71f-4c9535698c70",
+      "property": "incoming",
+      "reference_id": "_88b9f814-764e-492b-b38d-d5e8dfa68400"
+    },
+    {
+      "element_id": "_10ce0b26-1b3e-46a2-85a5-62538ed2da13",
+      "property": "incoming",
+      "reference_id": "_c425e783-e839-4990-9a2c-28b7341d9b2e"
+    },
+    {
+      "element_id": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+      "property": "source_ref",
+      "reference_id": "_1ac4b759-40e3-4dfb-b0e3-ad1d201d6c3d"
+    },
+    {
+      "element_id": "_83f6ca65-43f7-496e-a7eb-2a4a2fc28f22",
+      "property": "target_ref",
+      "reference_id": "_65f5459f-44ae-436d-a089-a91d6d78075b"
+    },
+    {
+      "element_id": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+      "property": "source_ref",
+      "reference_id": "_65f5459f-44ae-436d-a089-a91d6d78075b"
+    },
+    {
+      "element_id": "_68ba9b96-b1e9-4691-bc25-a36bf5731502",
+      "property": "target_ref",
+      "reference_id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48"
+    },
+    {
+      "element_id": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+      "property": "source_ref",
+      "reference_id": "_178e16eb-4c9e-4ea0-9644-7c5fb2b71825"
+    },
+    {
+      "element_id": "_7742093f-cd2c-415e-be71-d2514bc559c9",
+      "property": "target_ref",
+      "reference_id": "_9fad8da5-a28c-4b6b-bb71-fbd5c65b9681"
+    },
+    {
+      "element_id": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+      "property": "source_ref",
+      "reference_id": "_428dcbf5-8e5e-48e0-9c0c-d93003fa8c82"
+    },
+    {
+      "element_id": "_fe023d13-58bc-4f08-b60a-ebe4489f4190",
+      "property": "target_ref",
+      "reference_id": "_72204cd7-709c-4656-9554-3ae29b3844ce"
+    },
+    {
+      "element_id": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+      "property": "source_ref",
+      "reference_id": "_1ae31d1b-2559-4f78-a3ec-47986a49db48"
+    },
+    {
+      "element_id": "_250377d0-628d-463f-95f6-1f4ceed9bd8a",
+      "property": "target_ref",
+      "reference_id": "_2d2d0d29-896f-49f9-8109-77a7304309c5"
+    },
+    {
+      "element_id": "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+      "property": "source_ref",
+      "reference_id": "_2d2d0d29-896f-49f9-8109-77a7304309c5"
+    },
+    {
+      "element_id": "_719b757a-fc92-46bd-8d10-cca5a5bbf3bf",
+      "property": "target_ref",
+      "reference_id": "_ce253897-4300-4b24-b71f-4c9535698c70"
+    },
+    {
+      "element_id": "_88b9f814-764e-492b-b38d-d5e8dfa68400",
+      "property": "source_ref",
+      "reference_id": "_72204cd7-709c-4656-9554-3ae29b3844ce"
+    },
+    {
+      "element_id": "_88b9f814-764e-492b-b38d-d5e8dfa68400",
+      "property": "target_ref",
+      "reference_id": "_ce253897-4300-4b24-b71f-4c9535698c70"
+    },
+    {
+      "element_id": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+      "property": "source_ref",
+      "reference_id": "_9fad8da5-a28c-4b6b-bb71-fbd5c65b9681"
+    },
+    {
+      "element_id": "_c425e783-e839-4990-9a2c-28b7341d9b2e",
+      "property": "target_ref",
+      "reference_id": "_10ce0b26-1b3e-46a2-85a5-62538ed2da13"
+    }
+  ]
 }

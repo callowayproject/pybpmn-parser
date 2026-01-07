@@ -100,7 +100,7 @@ def descriptor_from_class(element_class: Any) -> ElementDescriptor:
     return ElementDescriptor(type=element_class, name=q_name.local, q_name=q_name, properties=property_name_map)
 
 
-def type_hint_to_property(name: str, type_hint: Any, field_metadata: dict[str, str]) -> ElementProperty:
+def type_hint_to_property(name: str, type_hint: Any, field_metadata: dict[str, Any]) -> ElementProperty:
     """
     Converts a type hint represented as a dictionary into an `ElementProperty` object.
 
@@ -131,6 +131,7 @@ def type_hint_to_property(name: str, type_hint: Any, field_metadata: dict[str, s
     is_attr = field_metadata.get("type", "Element") == "Attribute"
     is_optional = origin == Union and type(None) in args
     is_many = origin is list or (origin == Union and list in args)
+    is_reference: bool = field_metadata.get("is_reference", False)
     base_type = get_base_type(type_)
     q_name = QName(uri=base_type.Meta.namespace, local=base_type.Meta.name) if hasattr(base_type, "Meta") else None
 
@@ -141,6 +142,7 @@ def type_hint_to_property(name: str, type_hint: Any, field_metadata: dict[str, s
         is_attr=is_attr,
         is_optional=is_optional,
         is_many=is_many,
+        is_reference=is_reference,
     )
 
 
@@ -235,13 +237,6 @@ def get_base_type(type_: type) -> Any:
 
     # Handle list type
     if origin is list:
-        if not args:
-            return list
-        return get_base_type(args[0])
-
+        return get_base_type(args[0]) if args else list
     # Handle dict type
-    if origin is dict:
-        return dict
-
-    # Handle other generic types
-    return type_
+    return dict if origin is dict else type_

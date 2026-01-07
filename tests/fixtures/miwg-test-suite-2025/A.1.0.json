@@ -305,7 +305,9 @@
             "event_definitions": [],
             "extension_elements": null,
             "id": "_a47df184-085b-49f7-bb82-031c84625821",
-            "incoming": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+            "incoming": [
+              "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -424,7 +426,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Start Event",
-            "outgoing": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+            "outgoing": [
+              "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -448,14 +452,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
-            "incoming": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+            "incoming": [
+              "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 1",
-            "outgoing": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+            "outgoing": [
+              "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -474,14 +482,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_820c21c0-45f3-473b-813f-06381cc637cd",
-            "incoming": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+            "incoming": [
+              "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 2",
-            "outgoing": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+            "outgoing": [
+              "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -500,14 +512,18 @@
             "extension_elements": null,
             "human_performers": [],
             "id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
-            "incoming": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+            "incoming": [
+              "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 3",
-            "outgoing": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+            "outgoing": [
+              "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1022,7 +1038,9 @@
           "event_definitions": [],
           "extension_elements": null,
           "id": "_a47df184-085b-49f7-bb82-031c84625821",
-          "incoming": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+          "incoming": [
+            "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -1141,7 +1159,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event",
-          "outgoing": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+          "outgoing": [
+            "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -1165,14 +1185,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
-          "incoming": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+          "incoming": [
+            "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 1",
-          "outgoing": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+          "outgoing": [
+            "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -1191,14 +1215,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_820c21c0-45f3-473b-813f-06381cc637cd",
-          "incoming": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+          "incoming": [
+            "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 2",
-          "outgoing": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+          "outgoing": [
+            "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -1217,14 +1245,18 @@
           "extension_elements": null,
           "human_performers": [],
           "id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
-          "incoming": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+          "incoming": [
+            "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 3",
-          "outgoing": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+          "outgoing": [
+            "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -1543,7 +1575,9 @@
               "event_definitions": [],
               "extension_elements": null,
               "id": "_a47df184-085b-49f7-bb82-031c84625821",
-              "incoming": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+              "incoming": [
+                "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -1662,7 +1696,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event",
-              "outgoing": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+              "outgoing": [
+                "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -1686,14 +1722,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
-              "incoming": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+              "incoming": [
+                "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 1",
-              "outgoing": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+              "outgoing": [
+                "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -1712,14 +1752,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_820c21c0-45f3-473b-813f-06381cc637cd",
-              "incoming": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+              "incoming": [
+                "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 2",
-              "outgoing": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+              "outgoing": [
+                "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -1738,14 +1782,18 @@
               "extension_elements": null,
               "human_performers": [],
               "id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
-              "incoming": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+              "incoming": [
+                "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 3",
-              "outgoing": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+              "outgoing": [
+                "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -1793,14 +1841,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_820c21c0-45f3-473b-813f-06381cc637cd",
-      "incoming": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "incoming": [
+        "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 2",
-      "outgoing": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "outgoing": [
+        "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -1842,7 +1894,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event",
-      "outgoing": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "outgoing": [
+        "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -1865,7 +1919,9 @@
       "event_definitions": [],
       "extension_elements": null,
       "id": "_a47df184-085b-49f7-bb82-031c84625821",
-      "incoming": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "incoming": [
+        "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -1914,14 +1970,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
-      "incoming": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "incoming": [
+        "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 3",
-      "outgoing": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "outgoing": [
+        "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -1940,14 +2000,18 @@
       "extension_elements": null,
       "human_performers": [],
       "id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
-      "incoming": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "incoming": [
+        "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 1",
-      "outgoing": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "outgoing": [
+        "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -1955,5 +2019,87 @@
       "standard_loop_characteristics": null,
       "start_quantity": 1
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "_93c466ab-b271-4376-a427-f4c353d55ce8",
+      "property": "outgoing",
+      "reference_id": "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+    },
+    {
+      "element_id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+      "property": "incoming",
+      "reference_id": "_e16564d7-0c4c-413e-95f6-f668a3f851fb"
+    },
+    {
+      "element_id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af",
+      "property": "outgoing",
+      "reference_id": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+    },
+    {
+      "element_id": "_820c21c0-45f3-473b-813f-06381cc637cd",
+      "property": "incoming",
+      "reference_id": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599"
+    },
+    {
+      "element_id": "_820c21c0-45f3-473b-813f-06381cc637cd",
+      "property": "outgoing",
+      "reference_id": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+    },
+    {
+      "element_id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+      "property": "incoming",
+      "reference_id": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4"
+    },
+    {
+      "element_id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c",
+      "property": "outgoing",
+      "reference_id": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+    },
+    {
+      "element_id": "_a47df184-085b-49f7-bb82-031c84625821",
+      "property": "incoming",
+      "reference_id": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80"
+    },
+    {
+      "element_id": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "property": "source_ref",
+      "reference_id": "_93c466ab-b271-4376-a427-f4c353d55ce8"
+    },
+    {
+      "element_id": "_e16564d7-0c4c-413e-95f6-f668a3f851fb",
+      "property": "target_ref",
+      "reference_id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af"
+    },
+    {
+      "element_id": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "property": "source_ref",
+      "reference_id": "_ec59e164-68b4-4f94-98de-ffb1c58a84af"
+    },
+    {
+      "element_id": "_d77dd5ec-e4e7-420e-bbe7-8ac9cd1df599",
+      "property": "target_ref",
+      "reference_id": "_820c21c0-45f3-473b-813f-06381cc637cd"
+    },
+    {
+      "element_id": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "property": "source_ref",
+      "reference_id": "_820c21c0-45f3-473b-813f-06381cc637cd"
+    },
+    {
+      "element_id": "_2aa47410-1b0e-4f8b-ad54-d6f798080cb4",
+      "property": "target_ref",
+      "reference_id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c"
+    },
+    {
+      "element_id": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "property": "source_ref",
+      "reference_id": "_e70a6fcb-913c-4a7b-a65d-e83adc73d69c"
+    },
+    {
+      "element_id": "_8e8fe679-eb3b-4c43-a4d6-891e7087ff80",
+      "property": "target_ref",
+      "reference_id": "_a47df184-085b-49f7-bb82-031c84625821"
+    }
+  ]
 }

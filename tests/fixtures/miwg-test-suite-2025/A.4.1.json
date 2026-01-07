@@ -1055,7 +1055,9 @@
               }
             },
             "id": "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
-            "incoming": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+            "incoming": [
+              "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1099,7 +1101,12 @@
                     "@metaValue": ""
                   }
                 },
-                "flow_node_refs": "['sid-5F0F3508-96EF-4F9B-9182-64AD17334E23', 'sid-70D2F83B-77E6-4301-835C-AFF6357344F8', 'sid-3D477D07-D669-4A26-9454-12AD775FDE70', 'sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D']",
+                "flow_node_refs": [
+                  "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
+                  "sid-70D2F83B-77E6-4301-835C-AFF6357344F8",
+                  "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
+                  "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+                ],
                 "id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
                 "name": "Lane 1",
                 "partition_element": null,
@@ -1196,7 +1203,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Start Event 1 ",
-            "outgoing": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+            "outgoing": [
+              "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1235,14 +1244,18 @@
             },
             "human_performers": [],
             "id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
-            "incoming": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+            "incoming": [
+              "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 1 ",
-            "outgoing": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+            "outgoing": [
+              "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1276,14 +1289,18 @@
             },
             "human_performers": [],
             "id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D",
-            "incoming": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+            "incoming": [
+              "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 2 ",
-            "outgoing": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+            "outgoing": [
+              "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1332,7 +1349,9 @@
               }
             },
             "id": "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
-            "incoming": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+            "incoming": [
+              "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1364,7 +1383,9 @@
               }
             },
             "id": "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
-            "incoming": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+            "incoming": [
+              "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1408,7 +1429,13 @@
                     "@metaValue": ""
                   }
                 },
-                "flow_node_refs": "['sid-78073B2D-35BB-45D5-9CF1-D446602F8E59', 'sid-34E8C3A5-5C2A-4593-AC67-038B737814D7', 'sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754', 'sid-485E1184-9951-4B41-9794-A9AFD42A3249', 'sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83']",
+                "flow_node_refs": [
+                  "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
+                  "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
+                  "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
+                  "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
+                  "sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83"
+                ],
                 "id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
                 "name": "Lane 2 ",
                 "partition_element": null,
@@ -1423,7 +1450,10 @@
                     "@metaValue": ""
                   }
                 },
-                "flow_node_refs": "['sid-93C83C6A-1122-4E0F-9F47-4027C9080456', 'sid-645780CC-D61F-4715-8B58-71679305245F']",
+                "flow_node_refs": [
+                  "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
+                  "sid-645780CC-D61F-4715-8B58-71679305245F"
+                ],
                 "id": "sid-FC452F0B-05C5-4BB2-AA79-F9195F47BD11",
                 "name": "Lane 3",
                 "partition_element": null,
@@ -1559,7 +1589,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Start Event 2 ",
-            "outgoing": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+            "outgoing": [
+              "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1607,7 +1639,9 @@
                   }
                 },
                 "id": "sid-E0D38B39-5E32-4FFA-ADC3-5E26F70C7380",
-                "incoming": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+                "incoming": [
+                  "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -1635,7 +1669,9 @@
             "id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
             "implicit_throw_events": [],
             "inclusive_gateways": [],
-            "incoming": "sid-0C093502-276D-4B83-A271-2ABE22F335A6",
+            "incoming": [
+              "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+            ],
             "intermediate_catch_events": [],
             "intermediate_throw_events": [],
             "io_specification": null,
@@ -1646,7 +1682,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Expanded Sub-Process 1 ",
-            "outgoing": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+            "outgoing": [
+              "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+            ],
             "parallel_gateways": [],
             "performers": [],
             "potential_owners": [],
@@ -1718,7 +1756,9 @@
                 "message_event_definition": [],
                 "monitoring": null,
                 "name": "Start Event 3 ",
-                "outgoing": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+                "outgoing": [
+                  "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -1756,14 +1796,18 @@
                 },
                 "human_performers": [],
                 "id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D",
-                "incoming": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+                "incoming": [
+                  "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
                 "monitoring": null,
                 "multi_instance_loop_characteristics": null,
                 "name": "Task 4 ",
-                "outgoing": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+                "outgoing": [
+                  "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -1815,7 +1859,9 @@
                   }
                 },
                 "id": "sid-46E6675F-8040-45FE-B5C3-B904596F3D4F",
-                "incoming": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+                "incoming": [
+                  "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+                ],
                 "input_set": null,
                 "link_event_definitions": [],
                 "message_event_definitions": [],
@@ -1843,7 +1889,9 @@
             "id": "sid-645780CC-D61F-4715-8B58-71679305245F",
             "implicit_throw_events": [],
             "inclusive_gateways": [],
-            "incoming": "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+            "incoming": [
+              "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759"
+            ],
             "intermediate_catch_events": [],
             "intermediate_throw_events": [],
             "io_specification": null,
@@ -1854,7 +1902,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Expanded Sub-Process 2 ",
-            "outgoing": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+            "outgoing": [
+              "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+            ],
             "parallel_gateways": [],
             "performers": [],
             "potential_owners": [],
@@ -1926,7 +1976,9 @@
                 "message_event_definition": [],
                 "monitoring": null,
                 "name": "Start Event 4 ",
-                "outgoing": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+                "outgoing": [
+                  "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+                ],
                 "output_set": null,
                 "parallel_multiple": false,
                 "properties": [],
@@ -1964,14 +2016,18 @@
                 },
                 "human_performers": [],
                 "id": "sid-B414AE83-11A2-4968-B4E4-45833D641928",
-                "incoming": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+                "incoming": [
+                  "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+                ],
                 "io_specification": null,
                 "is_for_compensation": false,
                 "loop_characteristics": null,
                 "monitoring": null,
                 "multi_instance_loop_characteristics": null,
                 "name": "Task 6 ",
-                "outgoing": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+                "outgoing": [
+                  "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+                ],
                 "performers": [],
                 "potential_owners": [],
                 "properties": [],
@@ -2015,14 +2071,19 @@
             },
             "human_performers": [],
             "id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
-            "incoming": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+            "incoming": [
+              "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 3 ",
-            "outgoing": "['sid-4052C63C-CB50-4E0C-8901-80D86A1F9759', 'sid-0C093502-276D-4B83-A271-2ABE22F335A6']",
+            "outgoing": [
+              "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+              "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2056,14 +2117,18 @@
             },
             "human_performers": [],
             "id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
-            "incoming": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+            "incoming": [
+              "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Task 5 ",
-            "outgoing": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+            "outgoing": [
+              "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2128,7 +2193,9 @@
             }
           },
           "id": "sid-E0D38B39-5E32-4FFA-ADC3-5E26F70C7380",
-          "incoming": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+          "incoming": [
+            "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -2156,7 +2223,9 @@
       "id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
       "implicit_throw_events": [],
       "inclusive_gateways": [],
-      "incoming": "sid-0C093502-276D-4B83-A271-2ABE22F335A6",
+      "incoming": [
+        "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+      ],
       "intermediate_catch_events": [],
       "intermediate_throw_events": [],
       "io_specification": null,
@@ -2167,7 +2236,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Expanded Sub-Process 1 ",
-      "outgoing": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+      "outgoing": [
+        "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+      ],
       "parallel_gateways": [],
       "performers": [],
       "potential_owners": [],
@@ -2239,7 +2310,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event 3 ",
-          "outgoing": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+          "outgoing": [
+            "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -2277,14 +2350,18 @@
           },
           "human_performers": [],
           "id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D",
-          "incoming": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+          "incoming": [
+            "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 4 ",
-          "outgoing": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+          "outgoing": [
+            "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2381,14 +2458,18 @@
       },
       "human_performers": [],
       "id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D",
-      "incoming": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+      "incoming": [
+        "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 2 ",
-      "outgoing": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+      "outgoing": [
+        "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -2486,7 +2567,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event 4 ",
-      "outgoing": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+      "outgoing": [
+        "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -2556,7 +2639,9 @@
             }
           },
           "id": "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
-          "incoming": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+          "incoming": [
+            "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -2600,7 +2685,12 @@
                   "@metaValue": ""
                 }
               },
-              "flow_node_refs": "['sid-5F0F3508-96EF-4F9B-9182-64AD17334E23', 'sid-70D2F83B-77E6-4301-835C-AFF6357344F8', 'sid-3D477D07-D669-4A26-9454-12AD775FDE70', 'sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D']",
+              "flow_node_refs": [
+                "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
+                "sid-70D2F83B-77E6-4301-835C-AFF6357344F8",
+                "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
+                "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+              ],
               "id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
               "name": "Lane 1",
               "partition_element": null,
@@ -2697,7 +2787,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event 1 ",
-          "outgoing": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+          "outgoing": [
+            "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -2736,14 +2828,18 @@
           },
           "human_performers": [],
           "id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
-          "incoming": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+          "incoming": [
+            "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 1 ",
-          "outgoing": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+          "outgoing": [
+            "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2777,14 +2873,18 @@
           },
           "human_performers": [],
           "id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D",
-          "incoming": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+          "incoming": [
+            "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 2 ",
-          "outgoing": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+          "outgoing": [
+            "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -2823,14 +2923,19 @@
       },
       "human_performers": [],
       "id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
-      "incoming": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+      "incoming": [
+        "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 3 ",
-      "outgoing": "['sid-4052C63C-CB50-4E0C-8901-80D86A1F9759', 'sid-0C093502-276D-4B83-A271-2ABE22F335A6']",
+      "outgoing": [
+        "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+        "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -2891,14 +2996,18 @@
       },
       "human_performers": [],
       "id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
-      "incoming": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+      "incoming": [
+        "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 1 ",
-      "outgoing": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+      "outgoing": [
+        "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3061,7 +3170,9 @@
         }
       },
       "id": "sid-46E6675F-8040-45FE-B5C3-B904596F3D4F",
-      "incoming": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+      "incoming": [
+        "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -3125,14 +3236,18 @@
       },
       "human_performers": [],
       "id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
-      "incoming": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+      "incoming": [
+        "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 5 ",
-      "outgoing": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+      "outgoing": [
+        "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -3207,7 +3322,12 @@
           "@metaValue": ""
         }
       },
-      "flow_node_refs": "['sid-5F0F3508-96EF-4F9B-9182-64AD17334E23', 'sid-70D2F83B-77E6-4301-835C-AFF6357344F8', 'sid-3D477D07-D669-4A26-9454-12AD775FDE70', 'sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D']",
+      "flow_node_refs": [
+        "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
+        "sid-70D2F83B-77E6-4301-835C-AFF6357344F8",
+        "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
+        "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+      ],
       "id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
       "name": "Lane 1",
       "partition_element": null,
@@ -3253,7 +3373,13 @@
               "@metaValue": ""
             }
           },
-          "flow_node_refs": "['sid-78073B2D-35BB-45D5-9CF1-D446602F8E59', 'sid-34E8C3A5-5C2A-4593-AC67-038B737814D7', 'sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754', 'sid-485E1184-9951-4B41-9794-A9AFD42A3249', 'sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83']",
+          "flow_node_refs": [
+            "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
+            "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
+            "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
+            "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
+            "sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83"
+          ],
           "id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
           "name": "Lane 2 ",
           "partition_element": null,
@@ -3268,7 +3394,10 @@
               "@metaValue": ""
             }
           },
-          "flow_node_refs": "['sid-93C83C6A-1122-4E0F-9F47-4027C9080456', 'sid-645780CC-D61F-4715-8B58-71679305245F']",
+          "flow_node_refs": [
+            "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
+            "sid-645780CC-D61F-4715-8B58-71679305245F"
+          ],
           "id": "sid-FC452F0B-05C5-4BB2-AA79-F9195F47BD11",
           "name": "Lane 3",
           "partition_element": null,
@@ -3313,7 +3442,9 @@
             }
           },
           "id": "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
-          "incoming": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+          "incoming": [
+            "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -3345,7 +3476,9 @@
             }
           },
           "id": "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
-          "incoming": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+          "incoming": [
+            "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -3389,7 +3522,13 @@
                   "@metaValue": ""
                 }
               },
-              "flow_node_refs": "['sid-78073B2D-35BB-45D5-9CF1-D446602F8E59', 'sid-34E8C3A5-5C2A-4593-AC67-038B737814D7', 'sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754', 'sid-485E1184-9951-4B41-9794-A9AFD42A3249', 'sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83']",
+              "flow_node_refs": [
+                "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
+                "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
+                "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
+                "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
+                "sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83"
+              ],
               "id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
               "name": "Lane 2 ",
               "partition_element": null,
@@ -3404,7 +3543,10 @@
                   "@metaValue": ""
                 }
               },
-              "flow_node_refs": "['sid-93C83C6A-1122-4E0F-9F47-4027C9080456', 'sid-645780CC-D61F-4715-8B58-71679305245F']",
+              "flow_node_refs": [
+                "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
+                "sid-645780CC-D61F-4715-8B58-71679305245F"
+              ],
               "id": "sid-FC452F0B-05C5-4BB2-AA79-F9195F47BD11",
               "name": "Lane 3",
               "partition_element": null,
@@ -3540,7 +3682,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event 2 ",
-          "outgoing": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+          "outgoing": [
+            "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -3588,7 +3732,9 @@
                 }
               },
               "id": "sid-E0D38B39-5E32-4FFA-ADC3-5E26F70C7380",
-              "incoming": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+              "incoming": [
+                "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -3616,7 +3762,9 @@
           "id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
           "implicit_throw_events": [],
           "inclusive_gateways": [],
-          "incoming": "sid-0C093502-276D-4B83-A271-2ABE22F335A6",
+          "incoming": [
+            "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+          ],
           "intermediate_catch_events": [],
           "intermediate_throw_events": [],
           "io_specification": null,
@@ -3627,7 +3775,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Expanded Sub-Process 1 ",
-          "outgoing": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+          "outgoing": [
+            "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+          ],
           "parallel_gateways": [],
           "performers": [],
           "potential_owners": [],
@@ -3699,7 +3849,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event 3 ",
-              "outgoing": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+              "outgoing": [
+                "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -3737,14 +3889,18 @@
               },
               "human_performers": [],
               "id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D",
-              "incoming": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+              "incoming": [
+                "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 4 ",
-              "outgoing": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+              "outgoing": [
+                "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3796,7 +3952,9 @@
                 }
               },
               "id": "sid-46E6675F-8040-45FE-B5C3-B904596F3D4F",
-              "incoming": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+              "incoming": [
+                "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -3824,7 +3982,9 @@
           "id": "sid-645780CC-D61F-4715-8B58-71679305245F",
           "implicit_throw_events": [],
           "inclusive_gateways": [],
-          "incoming": "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+          "incoming": [
+            "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759"
+          ],
           "intermediate_catch_events": [],
           "intermediate_throw_events": [],
           "io_specification": null,
@@ -3835,7 +3995,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Expanded Sub-Process 2 ",
-          "outgoing": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+          "outgoing": [
+            "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+          ],
           "parallel_gateways": [],
           "performers": [],
           "potential_owners": [],
@@ -3907,7 +4069,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event 4 ",
-              "outgoing": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+              "outgoing": [
+                "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -3945,14 +4109,18 @@
               },
               "human_performers": [],
               "id": "sid-B414AE83-11A2-4968-B4E4-45833D641928",
-              "incoming": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+              "incoming": [
+                "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 6 ",
-              "outgoing": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+              "outgoing": [
+                "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -3996,14 +4164,19 @@
           },
           "human_performers": [],
           "id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
-          "incoming": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+          "incoming": [
+            "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 3 ",
-          "outgoing": "['sid-4052C63C-CB50-4E0C-8901-80D86A1F9759', 'sid-0C093502-276D-4B83-A271-2ABE22F335A6']",
+          "outgoing": [
+            "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+            "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4037,14 +4210,18 @@
           },
           "human_performers": [],
           "id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
-          "incoming": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+          "incoming": [
+            "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 5 ",
-          "outgoing": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+          "outgoing": [
+            "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -4108,7 +4285,9 @@
         }
       },
       "id": "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
-      "incoming": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+      "incoming": [
+        "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -4160,7 +4339,12 @@
               "@metaValue": ""
             }
           },
-          "flow_node_refs": "['sid-5F0F3508-96EF-4F9B-9182-64AD17334E23', 'sid-70D2F83B-77E6-4301-835C-AFF6357344F8', 'sid-3D477D07-D669-4A26-9454-12AD775FDE70', 'sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D']",
+          "flow_node_refs": [
+            "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
+            "sid-70D2F83B-77E6-4301-835C-AFF6357344F8",
+            "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
+            "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+          ],
           "id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
           "name": "Lane 1",
           "partition_element": null,
@@ -4207,7 +4391,9 @@
             }
           },
           "id": "sid-46E6675F-8040-45FE-B5C3-B904596F3D4F",
-          "incoming": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+          "incoming": [
+            "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -4235,7 +4421,9 @@
       "id": "sid-645780CC-D61F-4715-8B58-71679305245F",
       "implicit_throw_events": [],
       "inclusive_gateways": [],
-      "incoming": "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+      "incoming": [
+        "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759"
+      ],
       "intermediate_catch_events": [],
       "intermediate_throw_events": [],
       "io_specification": null,
@@ -4246,7 +4434,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Expanded Sub-Process 2 ",
-      "outgoing": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+      "outgoing": [
+        "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+      ],
       "parallel_gateways": [],
       "performers": [],
       "potential_owners": [],
@@ -4318,7 +4508,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Start Event 4 ",
-          "outgoing": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+          "outgoing": [
+            "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -4356,14 +4548,18 @@
           },
           "human_performers": [],
           "id": "sid-B414AE83-11A2-4968-B4E4-45833D641928",
-          "incoming": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+          "incoming": [
+            "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Task 6 ",
-          "outgoing": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+          "outgoing": [
+            "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -5386,7 +5582,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event 1 ",
-      "outgoing": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+      "outgoing": [
+        "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -5502,7 +5700,9 @@
         }
       },
       "id": "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
-      "incoming": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+      "incoming": [
+        "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6510,7 +6710,9 @@
         }
       },
       "id": "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
-      "incoming": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+      "incoming": [
+        "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6610,14 +6812,18 @@
       },
       "human_performers": [],
       "id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D",
-      "incoming": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+      "incoming": [
+        "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 4 ",
-      "outgoing": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+      "outgoing": [
+        "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6684,7 +6890,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event 3 ",
-      "outgoing": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+      "outgoing": [
+        "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -6775,14 +6983,18 @@
       },
       "human_performers": [],
       "id": "sid-B414AE83-11A2-4968-B4E4-45833D641928",
-      "incoming": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+      "incoming": [
+        "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Task 6 ",
-      "outgoing": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+      "outgoing": [
+        "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -6880,7 +7092,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Start Event 2 ",
-      "outgoing": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+      "outgoing": [
+        "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -7032,7 +7246,9 @@
         }
       },
       "id": "sid-E0D38B39-5E32-4FFA-ADC3-5E26F70C7380",
-      "incoming": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+      "incoming": [
+        "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -7110,7 +7326,13 @@
           "@metaValue": ""
         }
       },
-      "flow_node_refs": "['sid-78073B2D-35BB-45D5-9CF1-D446602F8E59', 'sid-34E8C3A5-5C2A-4593-AC67-038B737814D7', 'sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754', 'sid-485E1184-9951-4B41-9794-A9AFD42A3249', 'sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83']",
+      "flow_node_refs": [
+        "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
+        "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
+        "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
+        "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
+        "sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83"
+      ],
       "id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
       "name": "Lane 2 ",
       "partition_element": null,
@@ -7151,7 +7373,10 @@
           "@metaValue": ""
         }
       },
-      "flow_node_refs": "['sid-93C83C6A-1122-4E0F-9F47-4027C9080456', 'sid-645780CC-D61F-4715-8B58-71679305245F']",
+      "flow_node_refs": [
+        "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
+        "sid-645780CC-D61F-4715-8B58-71679305245F"
+      ],
       "id": "sid-FC452F0B-05C5-4BB2-AA79-F9195F47BD11",
       "name": "Lane 3",
       "partition_element": null,
@@ -8239,7 +8464,9 @@
                 }
               },
               "id": "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
-              "incoming": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+              "incoming": [
+                "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -8283,7 +8510,12 @@
                       "@metaValue": ""
                     }
                   },
-                  "flow_node_refs": "['sid-5F0F3508-96EF-4F9B-9182-64AD17334E23', 'sid-70D2F83B-77E6-4301-835C-AFF6357344F8', 'sid-3D477D07-D669-4A26-9454-12AD775FDE70', 'sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D']",
+                  "flow_node_refs": [
+                    "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
+                    "sid-70D2F83B-77E6-4301-835C-AFF6357344F8",
+                    "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
+                    "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+                  ],
                   "id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
                   "name": "Lane 1",
                   "partition_element": null,
@@ -8380,7 +8612,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event 1 ",
-              "outgoing": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+              "outgoing": [
+                "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -8419,14 +8653,18 @@
               },
               "human_performers": [],
               "id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
-              "incoming": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+              "incoming": [
+                "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 1 ",
-              "outgoing": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+              "outgoing": [
+                "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -8460,14 +8698,18 @@
               },
               "human_performers": [],
               "id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D",
-              "incoming": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+              "incoming": [
+                "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 2 ",
-              "outgoing": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+              "outgoing": [
+                "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -8516,7 +8758,9 @@
                 }
               },
               "id": "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
-              "incoming": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+              "incoming": [
+                "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -8548,7 +8792,9 @@
                 }
               },
               "id": "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
-              "incoming": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+              "incoming": [
+                "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -8592,7 +8838,13 @@
                       "@metaValue": ""
                     }
                   },
-                  "flow_node_refs": "['sid-78073B2D-35BB-45D5-9CF1-D446602F8E59', 'sid-34E8C3A5-5C2A-4593-AC67-038B737814D7', 'sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754', 'sid-485E1184-9951-4B41-9794-A9AFD42A3249', 'sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83']",
+                  "flow_node_refs": [
+                    "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
+                    "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
+                    "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
+                    "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
+                    "sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83"
+                  ],
                   "id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
                   "name": "Lane 2 ",
                   "partition_element": null,
@@ -8607,7 +8859,10 @@
                       "@metaValue": ""
                     }
                   },
-                  "flow_node_refs": "['sid-93C83C6A-1122-4E0F-9F47-4027C9080456', 'sid-645780CC-D61F-4715-8B58-71679305245F']",
+                  "flow_node_refs": [
+                    "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
+                    "sid-645780CC-D61F-4715-8B58-71679305245F"
+                  ],
                   "id": "sid-FC452F0B-05C5-4BB2-AA79-F9195F47BD11",
                   "name": "Lane 3",
                   "partition_element": null,
@@ -8743,7 +8998,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Start Event 2 ",
-              "outgoing": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+              "outgoing": [
+                "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -8791,7 +9048,9 @@
                     }
                   },
                   "id": "sid-E0D38B39-5E32-4FFA-ADC3-5E26F70C7380",
-                  "incoming": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+                  "incoming": [
+                    "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -8819,7 +9078,9 @@
               "id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
               "implicit_throw_events": [],
               "inclusive_gateways": [],
-              "incoming": "sid-0C093502-276D-4B83-A271-2ABE22F335A6",
+              "incoming": [
+                "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+              ],
               "intermediate_catch_events": [],
               "intermediate_throw_events": [],
               "io_specification": null,
@@ -8830,7 +9091,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Expanded Sub-Process 1 ",
-              "outgoing": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+              "outgoing": [
+                "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+              ],
               "parallel_gateways": [],
               "performers": [],
               "potential_owners": [],
@@ -8902,7 +9165,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": "Start Event 3 ",
-                  "outgoing": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+                  "outgoing": [
+                    "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -8940,14 +9205,18 @@
                   },
                   "human_performers": [],
                   "id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D",
-                  "incoming": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+                  "incoming": [
+                    "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
                   "monitoring": null,
                   "multi_instance_loop_characteristics": null,
                   "name": "Task 4 ",
-                  "outgoing": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+                  "outgoing": [
+                    "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -8999,7 +9268,9 @@
                     }
                   },
                   "id": "sid-46E6675F-8040-45FE-B5C3-B904596F3D4F",
-                  "incoming": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+                  "incoming": [
+                    "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+                  ],
                   "input_set": null,
                   "link_event_definitions": [],
                   "message_event_definitions": [],
@@ -9027,7 +9298,9 @@
               "id": "sid-645780CC-D61F-4715-8B58-71679305245F",
               "implicit_throw_events": [],
               "inclusive_gateways": [],
-              "incoming": "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+              "incoming": [
+                "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759"
+              ],
               "intermediate_catch_events": [],
               "intermediate_throw_events": [],
               "io_specification": null,
@@ -9038,7 +9311,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Expanded Sub-Process 2 ",
-              "outgoing": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+              "outgoing": [
+                "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+              ],
               "parallel_gateways": [],
               "performers": [],
               "potential_owners": [],
@@ -9110,7 +9385,9 @@
                   "message_event_definition": [],
                   "monitoring": null,
                   "name": "Start Event 4 ",
-                  "outgoing": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+                  "outgoing": [
+                    "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+                  ],
                   "output_set": null,
                   "parallel_multiple": false,
                   "properties": [],
@@ -9148,14 +9425,18 @@
                   },
                   "human_performers": [],
                   "id": "sid-B414AE83-11A2-4968-B4E4-45833D641928",
-                  "incoming": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+                  "incoming": [
+                    "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+                  ],
                   "io_specification": null,
                   "is_for_compensation": false,
                   "loop_characteristics": null,
                   "monitoring": null,
                   "multi_instance_loop_characteristics": null,
                   "name": "Task 6 ",
-                  "outgoing": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+                  "outgoing": [
+                    "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+                  ],
                   "performers": [],
                   "potential_owners": [],
                   "properties": [],
@@ -9199,14 +9480,19 @@
               },
               "human_performers": [],
               "id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
-              "incoming": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+              "incoming": [
+                "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 3 ",
-              "outgoing": "['sid-4052C63C-CB50-4E0C-8901-80D86A1F9759', 'sid-0C093502-276D-4B83-A271-2ABE22F335A6']",
+              "outgoing": [
+                "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+                "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -9240,14 +9526,18 @@
               },
               "human_performers": [],
               "id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
-              "incoming": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+              "incoming": [
+                "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Task 5 ",
-              "outgoing": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+              "outgoing": [
+                "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -9295,5 +9585,352 @@
       },
       "id": "sid-b486dfff-4569-4ca7-85f3-5be00f2c3a65"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "sid-66751F1E-EEB9-4BA7-9FDA-7965A1CA9CD1",
+      "property": "process_ref",
+      "reference_id": "sid-34746A54-1D7D-46CA-B219-0C4CEAE51170"
+    },
+    {
+      "element_id": "sid-7E61DCD0-0700-4828-8A28-CD65132273D7",
+      "property": "process_ref",
+      "reference_id": "sid-54D696FD-DEDC-45F3-99DB-1404DA433FC4"
+    },
+    {
+      "element_id": "sid-96EF2D8F-C322-42B1-8C08-0DA05524C904",
+      "property": "source_ref",
+      "reference_id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249"
+    },
+    {
+      "element_id": "sid-96EF2D8F-C322-42B1-8C08-0DA05524C904",
+      "property": "target_ref",
+      "reference_id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+    },
+    {
+      "element_id": "sid-D0B859BF-CBFB-4B35-BBC8-BCA308F6455C",
+      "property": "source_ref",
+      "reference_id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70"
+    },
+    {
+      "element_id": "sid-D0B859BF-CBFB-4B35-BBC8-BCA308F6455C",
+      "property": "target_ref",
+      "reference_id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7"
+    },
+    {
+      "element_id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
+      "property": "flow_node_refs",
+      "reference_id": "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23"
+    },
+    {
+      "element_id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
+      "property": "flow_node_refs",
+      "reference_id": "sid-70D2F83B-77E6-4301-835C-AFF6357344F8"
+    },
+    {
+      "element_id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
+      "property": "flow_node_refs",
+      "reference_id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70"
+    },
+    {
+      "element_id": "sid-4F568BD0-1CB0-4F1C-8729-9DD775B5B37D",
+      "property": "flow_node_refs",
+      "reference_id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+    },
+    {
+      "element_id": "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23",
+      "property": "incoming",
+      "reference_id": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+    },
+    {
+      "element_id": "sid-70D2F83B-77E6-4301-835C-AFF6357344F8",
+      "property": "outgoing",
+      "reference_id": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+    },
+    {
+      "element_id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
+      "property": "incoming",
+      "reference_id": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7"
+    },
+    {
+      "element_id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70",
+      "property": "outgoing",
+      "reference_id": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+    },
+    {
+      "element_id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D",
+      "property": "incoming",
+      "reference_id": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE"
+    },
+    {
+      "element_id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D",
+      "property": "outgoing",
+      "reference_id": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B"
+    },
+    {
+      "element_id": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+      "property": "source_ref",
+      "reference_id": "sid-70D2F83B-77E6-4301-835C-AFF6357344F8"
+    },
+    {
+      "element_id": "sid-576A3375-50D2-4E0B-90AD-CD756E199FB7",
+      "property": "target_ref",
+      "reference_id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70"
+    },
+    {
+      "element_id": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+      "property": "source_ref",
+      "reference_id": "sid-3D477D07-D669-4A26-9454-12AD775FDE70"
+    },
+    {
+      "element_id": "sid-D1E9B201-87A2-47B9-82A0-1BA208440CAE",
+      "property": "target_ref",
+      "reference_id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+    },
+    {
+      "element_id": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+      "property": "source_ref",
+      "reference_id": "sid-1208A5BA-9E1C-49D2-82E3-5DB2C0E9887D"
+    },
+    {
+      "element_id": "sid-F9B17890-98C4-44FA-B7A8-CA940866741B",
+      "property": "target_ref",
+      "reference_id": "sid-5F0F3508-96EF-4F9B-9182-64AD17334E23"
+    },
+    {
+      "element_id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
+      "property": "flow_node_refs",
+      "reference_id": "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59"
+    },
+    {
+      "element_id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
+      "property": "flow_node_refs",
+      "reference_id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7"
+    },
+    {
+      "element_id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
+      "property": "flow_node_refs",
+      "reference_id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754"
+    },
+    {
+      "element_id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
+      "property": "flow_node_refs",
+      "reference_id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249"
+    },
+    {
+      "element_id": "sid-FBA8B122-2EFC-4DD5-B714-A13CD36AAA6E",
+      "property": "flow_node_refs",
+      "reference_id": "sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83"
+    },
+    {
+      "element_id": "sid-FC452F0B-05C5-4BB2-AA79-F9195F47BD11",
+      "property": "flow_node_refs",
+      "reference_id": "sid-93C83C6A-1122-4E0F-9F47-4027C9080456"
+    },
+    {
+      "element_id": "sid-FC452F0B-05C5-4BB2-AA79-F9195F47BD11",
+      "property": "flow_node_refs",
+      "reference_id": "sid-645780CC-D61F-4715-8B58-71679305245F"
+    },
+    {
+      "element_id": "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59",
+      "property": "incoming",
+      "reference_id": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+    },
+    {
+      "element_id": "sid-93C83C6A-1122-4E0F-9F47-4027C9080456",
+      "property": "incoming",
+      "reference_id": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+    },
+    {
+      "element_id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
+      "property": "incoming",
+      "reference_id": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+    },
+    {
+      "element_id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
+      "property": "outgoing",
+      "reference_id": "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759"
+    },
+    {
+      "element_id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7",
+      "property": "outgoing",
+      "reference_id": "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+    },
+    {
+      "element_id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
+      "property": "incoming",
+      "reference_id": "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+    },
+    {
+      "element_id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249",
+      "property": "outgoing",
+      "reference_id": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB"
+    },
+    {
+      "element_id": "sid-A9E08E89-FC9E-4519-9A6B-D9347C6AAAAE",
+      "property": "outgoing",
+      "reference_id": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+    },
+    {
+      "element_id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D",
+      "property": "incoming",
+      "reference_id": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3"
+    },
+    {
+      "element_id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D",
+      "property": "outgoing",
+      "reference_id": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+    },
+    {
+      "element_id": "sid-E0D38B39-5E32-4FFA-ADC3-5E26F70C7380",
+      "property": "incoming",
+      "reference_id": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918"
+    },
+    {
+      "element_id": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+      "property": "source_ref",
+      "reference_id": "sid-A9E08E89-FC9E-4519-9A6B-D9347C6AAAAE"
+    },
+    {
+      "element_id": "sid-70CA8C5F-FF45-4403-93C5-44DE37ED60E3",
+      "property": "target_ref",
+      "reference_id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D"
+    },
+    {
+      "element_id": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+      "property": "source_ref",
+      "reference_id": "sid-A52AFB6A-43EE-47FE-A95F-057845582F1D"
+    },
+    {
+      "element_id": "sid-DE3E0ED7-7F9B-4917-AD34-9C43A6F58918",
+      "property": "target_ref",
+      "reference_id": "sid-E0D38B39-5E32-4FFA-ADC3-5E26F70C7380"
+    },
+    {
+      "element_id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
+      "property": "incoming",
+      "reference_id": "sid-0C093502-276D-4B83-A271-2ABE22F335A6"
+    },
+    {
+      "element_id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754",
+      "property": "outgoing",
+      "reference_id": "sid-1DE02844-4989-4A6A-88E7-B75261042119"
+    },
+    {
+      "element_id": "sid-1F026F68-099F-44C9-A40E-38A6C9F83D99",
+      "property": "outgoing",
+      "reference_id": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+    },
+    {
+      "element_id": "sid-B414AE83-11A2-4968-B4E4-45833D641928",
+      "property": "incoming",
+      "reference_id": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066"
+    },
+    {
+      "element_id": "sid-B414AE83-11A2-4968-B4E4-45833D641928",
+      "property": "outgoing",
+      "reference_id": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+    },
+    {
+      "element_id": "sid-46E6675F-8040-45FE-B5C3-B904596F3D4F",
+      "property": "incoming",
+      "reference_id": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6"
+    },
+    {
+      "element_id": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+      "property": "source_ref",
+      "reference_id": "sid-1F026F68-099F-44C9-A40E-38A6C9F83D99"
+    },
+    {
+      "element_id": "sid-72E93035-EAF2-4445-AFFE-39C8C0143066",
+      "property": "target_ref",
+      "reference_id": "sid-B414AE83-11A2-4968-B4E4-45833D641928"
+    },
+    {
+      "element_id": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+      "property": "source_ref",
+      "reference_id": "sid-B414AE83-11A2-4968-B4E4-45833D641928"
+    },
+    {
+      "element_id": "sid-4B747910-16CA-4FFD-B92A-8894BB3D7AB6",
+      "property": "target_ref",
+      "reference_id": "sid-46E6675F-8040-45FE-B5C3-B904596F3D4F"
+    },
+    {
+      "element_id": "sid-645780CC-D61F-4715-8B58-71679305245F",
+      "property": "incoming",
+      "reference_id": "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759"
+    },
+    {
+      "element_id": "sid-645780CC-D61F-4715-8B58-71679305245F",
+      "property": "outgoing",
+      "reference_id": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B"
+    },
+    {
+      "element_id": "sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83",
+      "property": "outgoing",
+      "reference_id": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F"
+    },
+    {
+      "element_id": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+      "property": "source_ref",
+      "reference_id": "sid-645780CC-D61F-4715-8B58-71679305245F"
+    },
+    {
+      "element_id": "sid-77013C0C-99FE-4BCB-AA8E-1ADDB67DCB6B",
+      "property": "target_ref",
+      "reference_id": "sid-93C83C6A-1122-4E0F-9F47-4027C9080456"
+    },
+    {
+      "element_id": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+      "property": "source_ref",
+      "reference_id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754"
+    },
+    {
+      "element_id": "sid-1DE02844-4989-4A6A-88E7-B75261042119",
+      "property": "target_ref",
+      "reference_id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249"
+    },
+    {
+      "element_id": "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+      "property": "source_ref",
+      "reference_id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7"
+    },
+    {
+      "element_id": "sid-4052C63C-CB50-4E0C-8901-80D86A1F9759",
+      "property": "target_ref",
+      "reference_id": "sid-645780CC-D61F-4715-8B58-71679305245F"
+    },
+    {
+      "element_id": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+      "property": "source_ref",
+      "reference_id": "sid-C189128A-82D2-4E5F-8FB4-F6E21FF27E83"
+    },
+    {
+      "element_id": "sid-AD419767-6626-42E7-ADD5-E0EDB9C7975F",
+      "property": "target_ref",
+      "reference_id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7"
+    },
+    {
+      "element_id": "sid-0C093502-276D-4B83-A271-2ABE22F335A6",
+      "property": "source_ref",
+      "reference_id": "sid-34E8C3A5-5C2A-4593-AC67-038B737814D7"
+    },
+    {
+      "element_id": "sid-0C093502-276D-4B83-A271-2ABE22F335A6",
+      "property": "target_ref",
+      "reference_id": "sid-00A82BF4-1D0A-48DC-8389-C8AAF3E7F754"
+    },
+    {
+      "element_id": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+      "property": "source_ref",
+      "reference_id": "sid-485E1184-9951-4B41-9794-A9AFD42A3249"
+    },
+    {
+      "element_id": "sid-B57FC7E5-7709-4E81-A829-2AB8CF5AB3BB",
+      "property": "target_ref",
+      "reference_id": "sid-78073B2D-35BB-45D5-9CF1-D446602F8E59"
+    }
+  ]
 }

@@ -37,6 +37,7 @@ class ResourceParameterBinding(BaseElement):
             "name": "parameterRef",
             "type": "Attribute",
             "required": True,
+            "is_reference": True,
         }
     )
 

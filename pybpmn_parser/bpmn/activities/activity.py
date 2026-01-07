@@ -196,6 +196,7 @@ class Activity(FlowNode):  # Is Abstract
         default=None,
         metadata={
             "type": "Attribute",
+            "is_reference": True,
         },
     )
     """The Sequence Flow that receives a token when `conditionExpression`s on other outgoing Sequence Flows are false.

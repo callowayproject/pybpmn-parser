@@ -1073,7 +1073,9 @@
               }
             },
             "id": "invoiceNotProcessed",
-            "incoming": "reviewNotSuccessful",
+            "incoming": [
+              "reviewNotSuccessful"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1120,7 +1122,9 @@
               }
             },
             "id": "invoiceProcessed",
-            "incoming": "SequenceFlow_3",
+            "incoming": [
+              "SequenceFlow_3"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -1176,10 +1180,15 @@
             },
             "gateway_direction": "Diverging",
             "id": "invoice_approved",
-            "incoming": "sequenceFlow_180",
+            "incoming": [
+              "sequenceFlow_180"
+            ],
             "monitoring": null,
             "name": "Invoice\r\napproved?",
-            "outgoing": "['invoiceApproved', 'invoiceNotApproved']"
+            "outgoing": [
+              "invoiceApproved",
+              "invoiceNotApproved"
+            ]
           },
           {
             "auditing": null,
@@ -1221,10 +1230,15 @@
             },
             "gateway_direction": "Diverging",
             "id": "reviewSuccessful_gw",
-            "incoming": "sequenceFlow_183",
+            "incoming": [
+              "sequenceFlow_183"
+            ],
             "monitoring": null,
             "name": "Review\nsuccessful?",
-            "outgoing": "['reviewSuccessful', 'reviewNotSuccessful']"
+            "outgoing": [
+              "reviewSuccessful",
+              "reviewNotSuccessful"
+            ]
           }
         ],
         "extension_elements": {
@@ -1740,7 +1754,9 @@
             "human_performers": [],
             "id": "archiveInvoice",
             "implementation": "##unspecified",
-            "incoming": "SequenceFlow_2",
+            "incoming": [
+              "SequenceFlow_2"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -1748,7 +1764,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Archive\nInvoice",
             "operation_ref": null,
-            "outgoing": "SequenceFlow_3",
+            "outgoing": [
+              "SequenceFlow_3"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -1801,7 +1819,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Invoice\r\nreceived",
-            "outgoing": "SequenceFlow_1",
+            "outgoing": [
+              "SequenceFlow_1"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1846,7 +1866,9 @@
                   }
                 },
                 "id": "Bpmn_DataOutputAssociation_Y55MYrH1EeSuDf0W70XLGw",
-                "source_ref": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+                "source_ref": [
+                  "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+                ],
                 "target_ref": "Bpmn_DataObjectReference_YGA4YLH1EeSuDf0W70XLGw",
                 "transformation": null
               }
@@ -1917,7 +1939,10 @@
             "human_performers": [],
             "id": "approveInvoice",
             "implementation": "##unspecified",
-            "incoming": "['reviewSuccessful', 'sequenceFlow_178']",
+            "incoming": [
+              "reviewSuccessful",
+              "sequenceFlow_178"
+            ],
             "io_specification": {
               "data_inputs": [],
               "data_outputs": [
@@ -1952,17 +1977,23 @@
                   "id": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
                   "name": "default input set",
                   "optional_input_refs": [],
-                  "output_set_refs": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
+                  "output_set_refs": [
+                    "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw"
+                  ],
                   "while_executing_input_refs": []
                 }
               ],
               "output_sets": [
                 {
-                  "data_output_refs": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+                  "data_output_refs": [
+                    "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
-                  "input_set_refs": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
+                  "input_set_refs": [
+                    "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw"
+                  ],
                   "name": "default output set",
                   "optional_output_refs": [],
                   "while_executing_output_refs": []
@@ -1974,7 +2005,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Approve Invoice",
-            "outgoing": "sequenceFlow_180",
+            "outgoing": [
+              "sequenceFlow_180"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -2022,7 +2055,9 @@
                   }
                 },
                 "id": "Bpmn_DataOutputAssociation_assignApprover",
-                "source_ref": "Bpmn_DataOutput_assignApprover",
+                "source_ref": [
+                  "Bpmn_DataOutput_assignApprover"
+                ],
                 "target_ref": "Bpmn_DataObjectReference_assignApprover",
                 "transformation": null
               }
@@ -2093,7 +2128,9 @@
             "human_performers": [],
             "id": "assignApprover",
             "implementation": "##unspecified",
-            "incoming": "SequenceFlow_1",
+            "incoming": [
+              "SequenceFlow_1"
+            ],
             "io_specification": {
               "data_inputs": [],
               "data_outputs": [
@@ -2128,17 +2165,23 @@
                   "id": "Bpmn_InputSet_assignApprover",
                   "name": "default input set",
                   "optional_input_refs": [],
-                  "output_set_refs": "Bpmn_OutputSet_assignApprover",
+                  "output_set_refs": [
+                    "Bpmn_OutputSet_assignApprover"
+                  ],
                   "while_executing_input_refs": []
                 }
               ],
               "output_sets": [
                 {
-                  "data_output_refs": "Bpmn_DataOutput_assignApprover",
+                  "data_output_refs": [
+                    "Bpmn_DataOutput_assignApprover"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "Bpmn_OutputSet_assignApprover",
-                  "input_set_refs": "Bpmn_InputSet_assignApprover",
+                  "input_set_refs": [
+                    "Bpmn_InputSet_assignApprover"
+                  ],
                   "name": "default output set",
                   "optional_output_refs": [],
                   "while_executing_output_refs": []
@@ -2150,7 +2193,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Assign\r\nApprover",
-            "outgoing": "sequenceFlow_178",
+            "outgoing": [
+              "sequenceFlow_178"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -2198,7 +2243,9 @@
                   }
                 },
                 "id": "Bpmn_DataOutputAssociation_dB6xsrH1EeSuDf0W70XLGw",
-                "source_ref": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+                "source_ref": [
+                  "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+                ],
                 "target_ref": "Bpmn_DataObjectReference_cdsDQLH1EeSuDf0W70XLGw",
                 "transformation": null
               }
@@ -2269,7 +2316,9 @@
             "human_performers": [],
             "id": "reviewInvoice",
             "implementation": "##unspecified",
-            "incoming": "invoiceNotApproved",
+            "incoming": [
+              "invoiceNotApproved"
+            ],
             "io_specification": {
               "data_inputs": [],
               "data_outputs": [
@@ -2304,17 +2353,23 @@
                   "id": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
                   "name": "default input set",
                   "optional_input_refs": [],
-                  "output_set_refs": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
+                  "output_set_refs": [
+                    "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw"
+                  ],
                   "while_executing_input_refs": []
                 }
               ],
               "output_sets": [
                 {
-                  "data_output_refs": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+                  "data_output_refs": [
+                    "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
-                  "input_set_refs": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
+                  "input_set_refs": [
+                    "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw"
+                  ],
                   "name": "default output set",
                   "optional_output_refs": [],
                   "while_executing_output_refs": []
@@ -2326,7 +2381,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Rechnung kl\u00e4ren",
-            "outgoing": "sequenceFlow_183",
+            "outgoing": [
+              "sequenceFlow_183"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -2419,14 +2476,18 @@
             "human_performers": [],
             "id": "prepareBankTransfer",
             "implementation": "##unspecified",
-            "incoming": "invoiceApproved",
+            "incoming": [
+              "invoiceApproved"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Prepare\r\nBank\r\nTransfer",
-            "outgoing": "SequenceFlow_2",
+            "outgoing": [
+              "SequenceFlow_2"
+            ],
             "performers": [],
             "potential_owners": [
               {
@@ -2640,7 +2701,9 @@
         }
       },
       "id": "Bpmn_DataOutputAssociation_Y55MYrH1EeSuDf0W70XLGw",
-      "source_ref": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+      "source_ref": [
+        "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+      ],
       "target_ref": "Bpmn_DataObjectReference_YGA4YLH1EeSuDf0W70XLGw",
       "transformation": null
     },
@@ -2665,7 +2728,9 @@
         }
       },
       "id": "Bpmn_DataOutputAssociation_assignApprover",
-      "source_ref": "Bpmn_DataOutput_assignApprover",
+      "source_ref": [
+        "Bpmn_DataOutput_assignApprover"
+      ],
       "target_ref": "Bpmn_DataObjectReference_assignApprover",
       "transformation": null
     },
@@ -2690,7 +2755,9 @@
         }
       },
       "id": "Bpmn_DataOutputAssociation_dB6xsrH1EeSuDf0W70XLGw",
-      "source_ref": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+      "source_ref": [
+        "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+      ],
       "target_ref": "Bpmn_DataObjectReference_cdsDQLH1EeSuDf0W70XLGw",
       "transformation": null
     },
@@ -2785,17 +2852,23 @@
           "id": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
           "name": "default input set",
           "optional_input_refs": [],
-          "output_set_refs": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
+          "output_set_refs": [
+            "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw"
+          ],
           "while_executing_input_refs": []
         }
       ],
       "output_sets": [
         {
-          "data_output_refs": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+          "data_output_refs": [
+            "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+          ],
           "documentation": [],
           "extension_elements": null,
           "id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
-          "input_set_refs": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
+          "input_set_refs": [
+            "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw"
+          ],
           "name": "default output set",
           "optional_output_refs": [],
           "while_executing_output_refs": []
@@ -2836,17 +2909,23 @@
           "id": "Bpmn_InputSet_assignApprover",
           "name": "default input set",
           "optional_input_refs": [],
-          "output_set_refs": "Bpmn_OutputSet_assignApprover",
+          "output_set_refs": [
+            "Bpmn_OutputSet_assignApprover"
+          ],
           "while_executing_input_refs": []
         }
       ],
       "output_sets": [
         {
-          "data_output_refs": "Bpmn_DataOutput_assignApprover",
+          "data_output_refs": [
+            "Bpmn_DataOutput_assignApprover"
+          ],
           "documentation": [],
           "extension_elements": null,
           "id": "Bpmn_OutputSet_assignApprover",
-          "input_set_refs": "Bpmn_InputSet_assignApprover",
+          "input_set_refs": [
+            "Bpmn_InputSet_assignApprover"
+          ],
           "name": "default output set",
           "optional_output_refs": [],
           "while_executing_output_refs": []
@@ -2887,17 +2966,23 @@
           "id": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
           "name": "default input set",
           "optional_input_refs": [],
-          "output_set_refs": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
+          "output_set_refs": [
+            "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw"
+          ],
           "while_executing_input_refs": []
         }
       ],
       "output_sets": [
         {
-          "data_output_refs": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+          "data_output_refs": [
+            "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+          ],
           "documentation": [],
           "extension_elements": null,
           "id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
-          "input_set_refs": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
+          "input_set_refs": [
+            "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw"
+          ],
           "name": "default output set",
           "optional_output_refs": [],
           "while_executing_output_refs": []
@@ -2911,7 +2996,9 @@
       "id": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
       "name": "default input set",
       "optional_input_refs": [],
-      "output_set_refs": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
+      "output_set_refs": [
+        "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw"
+      ],
       "while_executing_input_refs": []
     },
     "Bpmn_InputSet_assignApprover": {
@@ -2921,7 +3008,9 @@
       "id": "Bpmn_InputSet_assignApprover",
       "name": "default input set",
       "optional_input_refs": [],
-      "output_set_refs": "Bpmn_OutputSet_assignApprover",
+      "output_set_refs": [
+        "Bpmn_OutputSet_assignApprover"
+      ],
       "while_executing_input_refs": []
     },
     "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw": {
@@ -2931,35 +3020,49 @@
       "id": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
       "name": "default input set",
       "optional_input_refs": [],
-      "output_set_refs": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
+      "output_set_refs": [
+        "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw"
+      ],
       "while_executing_input_refs": []
     },
     "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw": {
-      "data_output_refs": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+      "data_output_refs": [
+        "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
-      "input_set_refs": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
+      "input_set_refs": [
+        "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw"
+      ],
       "name": "default output set",
       "optional_output_refs": [],
       "while_executing_output_refs": []
     },
     "Bpmn_OutputSet_assignApprover": {
-      "data_output_refs": "Bpmn_DataOutput_assignApprover",
+      "data_output_refs": [
+        "Bpmn_DataOutput_assignApprover"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "Bpmn_OutputSet_assignApprover",
-      "input_set_refs": "Bpmn_InputSet_assignApprover",
+      "input_set_refs": [
+        "Bpmn_InputSet_assignApprover"
+      ],
       "name": "default output set",
       "optional_output_refs": [],
       "while_executing_output_refs": []
     },
     "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw": {
-      "data_output_refs": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+      "data_output_refs": [
+        "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
-      "input_set_refs": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
+      "input_set_refs": [
+        "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw"
+      ],
       "name": "default output set",
       "optional_output_refs": [],
       "while_executing_output_refs": []
@@ -3662,7 +3765,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Invoice\r\nreceived",
-      "outgoing": "SequenceFlow_1",
+      "outgoing": [
+        "SequenceFlow_1"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -3726,7 +3831,9 @@
             }
           },
           "id": "Bpmn_DataOutputAssociation_Y55MYrH1EeSuDf0W70XLGw",
-          "source_ref": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+          "source_ref": [
+            "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+          ],
           "target_ref": "Bpmn_DataObjectReference_YGA4YLH1EeSuDf0W70XLGw",
           "transformation": null
         }
@@ -3797,7 +3904,10 @@
       "human_performers": [],
       "id": "approveInvoice",
       "implementation": "##unspecified",
-      "incoming": "['reviewSuccessful', 'sequenceFlow_178']",
+      "incoming": [
+        "reviewSuccessful",
+        "sequenceFlow_178"
+      ],
       "io_specification": {
         "data_inputs": [],
         "data_outputs": [
@@ -3832,17 +3942,23 @@
             "id": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
             "name": "default input set",
             "optional_input_refs": [],
-            "output_set_refs": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
+            "output_set_refs": [
+              "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw"
+            ],
             "while_executing_input_refs": []
           }
         ],
         "output_sets": [
           {
-            "data_output_refs": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+            "data_output_refs": [
+              "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
-            "input_set_refs": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
+            "input_set_refs": [
+              "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw"
+            ],
             "name": "default output set",
             "optional_output_refs": [],
             "while_executing_output_refs": []
@@ -3854,7 +3970,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Approve Invoice",
-      "outgoing": "sequenceFlow_180",
+      "outgoing": [
+        "sequenceFlow_180"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -4007,7 +4125,9 @@
       "human_performers": [],
       "id": "archiveInvoice",
       "implementation": "##unspecified",
-      "incoming": "SequenceFlow_2",
+      "incoming": [
+        "SequenceFlow_2"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -4015,7 +4135,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Archive\nInvoice",
       "operation_ref": null,
-      "outgoing": "SequenceFlow_3",
+      "outgoing": [
+        "SequenceFlow_3"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -4080,7 +4202,9 @@
             }
           },
           "id": "Bpmn_DataOutputAssociation_assignApprover",
-          "source_ref": "Bpmn_DataOutput_assignApprover",
+          "source_ref": [
+            "Bpmn_DataOutput_assignApprover"
+          ],
           "target_ref": "Bpmn_DataObjectReference_assignApprover",
           "transformation": null
         }
@@ -4151,7 +4275,9 @@
       "human_performers": [],
       "id": "assignApprover",
       "implementation": "##unspecified",
-      "incoming": "SequenceFlow_1",
+      "incoming": [
+        "SequenceFlow_1"
+      ],
       "io_specification": {
         "data_inputs": [],
         "data_outputs": [
@@ -4186,17 +4312,23 @@
             "id": "Bpmn_InputSet_assignApprover",
             "name": "default input set",
             "optional_input_refs": [],
-            "output_set_refs": "Bpmn_OutputSet_assignApprover",
+            "output_set_refs": [
+              "Bpmn_OutputSet_assignApprover"
+            ],
             "while_executing_input_refs": []
           }
         ],
         "output_sets": [
           {
-            "data_output_refs": "Bpmn_DataOutput_assignApprover",
+            "data_output_refs": [
+              "Bpmn_DataOutput_assignApprover"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "Bpmn_OutputSet_assignApprover",
-            "input_set_refs": "Bpmn_InputSet_assignApprover",
+            "input_set_refs": [
+              "Bpmn_InputSet_assignApprover"
+            ],
             "name": "default output set",
             "optional_output_refs": [],
             "while_executing_output_refs": []
@@ -4208,7 +4340,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Assign\r\nApprover",
-      "outgoing": "sequenceFlow_178",
+      "outgoing": [
+        "sequenceFlow_178"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -4439,7 +4573,9 @@
             }
           },
           "id": "invoiceNotProcessed",
-          "incoming": "reviewNotSuccessful",
+          "incoming": [
+            "reviewNotSuccessful"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -4486,7 +4622,9 @@
             }
           },
           "id": "invoiceProcessed",
-          "incoming": "SequenceFlow_3",
+          "incoming": [
+            "SequenceFlow_3"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -4542,10 +4680,15 @@
           },
           "gateway_direction": "Diverging",
           "id": "invoice_approved",
-          "incoming": "sequenceFlow_180",
+          "incoming": [
+            "sequenceFlow_180"
+          ],
           "monitoring": null,
           "name": "Invoice\r\napproved?",
-          "outgoing": "['invoiceApproved', 'invoiceNotApproved']"
+          "outgoing": [
+            "invoiceApproved",
+            "invoiceNotApproved"
+          ]
         },
         {
           "auditing": null,
@@ -4587,10 +4730,15 @@
           },
           "gateway_direction": "Diverging",
           "id": "reviewSuccessful_gw",
-          "incoming": "sequenceFlow_183",
+          "incoming": [
+            "sequenceFlow_183"
+          ],
           "monitoring": null,
           "name": "Review\nsuccessful?",
-          "outgoing": "['reviewSuccessful', 'reviewNotSuccessful']"
+          "outgoing": [
+            "reviewSuccessful",
+            "reviewNotSuccessful"
+          ]
         }
       ],
       "extension_elements": {
@@ -5106,7 +5254,9 @@
           "human_performers": [],
           "id": "archiveInvoice",
           "implementation": "##unspecified",
-          "incoming": "SequenceFlow_2",
+          "incoming": [
+            "SequenceFlow_2"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -5114,7 +5264,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Archive\nInvoice",
           "operation_ref": null,
-          "outgoing": "SequenceFlow_3",
+          "outgoing": [
+            "SequenceFlow_3"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -5167,7 +5319,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Invoice\r\nreceived",
-          "outgoing": "SequenceFlow_1",
+          "outgoing": [
+            "SequenceFlow_1"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -5212,7 +5366,9 @@
                 }
               },
               "id": "Bpmn_DataOutputAssociation_Y55MYrH1EeSuDf0W70XLGw",
-              "source_ref": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+              "source_ref": [
+                "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+              ],
               "target_ref": "Bpmn_DataObjectReference_YGA4YLH1EeSuDf0W70XLGw",
               "transformation": null
             }
@@ -5283,7 +5439,10 @@
           "human_performers": [],
           "id": "approveInvoice",
           "implementation": "##unspecified",
-          "incoming": "['reviewSuccessful', 'sequenceFlow_178']",
+          "incoming": [
+            "reviewSuccessful",
+            "sequenceFlow_178"
+          ],
           "io_specification": {
             "data_inputs": [],
             "data_outputs": [
@@ -5318,17 +5477,23 @@
                 "id": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
                 "name": "default input set",
                 "optional_input_refs": [],
-                "output_set_refs": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
+                "output_set_refs": [
+                  "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw"
+                ],
                 "while_executing_input_refs": []
               }
             ],
             "output_sets": [
               {
-                "data_output_refs": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+                "data_output_refs": [
+                  "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
-                "input_set_refs": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
+                "input_set_refs": [
+                  "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw"
+                ],
                 "name": "default output set",
                 "optional_output_refs": [],
                 "while_executing_output_refs": []
@@ -5340,7 +5505,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Approve Invoice",
-          "outgoing": "sequenceFlow_180",
+          "outgoing": [
+            "sequenceFlow_180"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -5388,7 +5555,9 @@
                 }
               },
               "id": "Bpmn_DataOutputAssociation_assignApprover",
-              "source_ref": "Bpmn_DataOutput_assignApprover",
+              "source_ref": [
+                "Bpmn_DataOutput_assignApprover"
+              ],
               "target_ref": "Bpmn_DataObjectReference_assignApprover",
               "transformation": null
             }
@@ -5459,7 +5628,9 @@
           "human_performers": [],
           "id": "assignApprover",
           "implementation": "##unspecified",
-          "incoming": "SequenceFlow_1",
+          "incoming": [
+            "SequenceFlow_1"
+          ],
           "io_specification": {
             "data_inputs": [],
             "data_outputs": [
@@ -5494,17 +5665,23 @@
                 "id": "Bpmn_InputSet_assignApprover",
                 "name": "default input set",
                 "optional_input_refs": [],
-                "output_set_refs": "Bpmn_OutputSet_assignApprover",
+                "output_set_refs": [
+                  "Bpmn_OutputSet_assignApprover"
+                ],
                 "while_executing_input_refs": []
               }
             ],
             "output_sets": [
               {
-                "data_output_refs": "Bpmn_DataOutput_assignApprover",
+                "data_output_refs": [
+                  "Bpmn_DataOutput_assignApprover"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "Bpmn_OutputSet_assignApprover",
-                "input_set_refs": "Bpmn_InputSet_assignApprover",
+                "input_set_refs": [
+                  "Bpmn_InputSet_assignApprover"
+                ],
                 "name": "default output set",
                 "optional_output_refs": [],
                 "while_executing_output_refs": []
@@ -5516,7 +5693,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Assign\r\nApprover",
-          "outgoing": "sequenceFlow_178",
+          "outgoing": [
+            "sequenceFlow_178"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -5564,7 +5743,9 @@
                 }
               },
               "id": "Bpmn_DataOutputAssociation_dB6xsrH1EeSuDf0W70XLGw",
-              "source_ref": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+              "source_ref": [
+                "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+              ],
               "target_ref": "Bpmn_DataObjectReference_cdsDQLH1EeSuDf0W70XLGw",
               "transformation": null
             }
@@ -5635,7 +5816,9 @@
           "human_performers": [],
           "id": "reviewInvoice",
           "implementation": "##unspecified",
-          "incoming": "invoiceNotApproved",
+          "incoming": [
+            "invoiceNotApproved"
+          ],
           "io_specification": {
             "data_inputs": [],
             "data_outputs": [
@@ -5670,17 +5853,23 @@
                 "id": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
                 "name": "default input set",
                 "optional_input_refs": [],
-                "output_set_refs": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
+                "output_set_refs": [
+                  "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw"
+                ],
                 "while_executing_input_refs": []
               }
             ],
             "output_sets": [
               {
-                "data_output_refs": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+                "data_output_refs": [
+                  "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
-                "input_set_refs": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
+                "input_set_refs": [
+                  "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw"
+                ],
                 "name": "default output set",
                 "optional_output_refs": [],
                 "while_executing_output_refs": []
@@ -5692,7 +5881,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Rechnung kl\u00e4ren",
-          "outgoing": "sequenceFlow_183",
+          "outgoing": [
+            "sequenceFlow_183"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -5785,14 +5976,18 @@
           "human_performers": [],
           "id": "prepareBankTransfer",
           "implementation": "##unspecified",
-          "incoming": "invoiceApproved",
+          "incoming": [
+            "invoiceApproved"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Prepare\r\nBank\r\nTransfer",
-          "outgoing": "SequenceFlow_2",
+          "outgoing": [
+            "SequenceFlow_2"
+          ],
           "performers": [],
           "potential_owners": [
             {
@@ -5999,7 +6194,9 @@
         }
       },
       "id": "invoiceNotProcessed",
-      "incoming": "reviewNotSuccessful",
+      "incoming": [
+        "reviewNotSuccessful"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6073,7 +6270,9 @@
         }
       },
       "id": "invoiceProcessed",
-      "incoming": "SequenceFlow_3",
+      "incoming": [
+        "SequenceFlow_3"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -6152,10 +6351,15 @@
       },
       "gateway_direction": "Diverging",
       "id": "invoice_approved",
-      "incoming": "sequenceFlow_180",
+      "incoming": [
+        "sequenceFlow_180"
+      ],
       "monitoring": null,
       "name": "Invoice\r\napproved?",
-      "outgoing": "['invoiceApproved', 'invoiceNotApproved']"
+      "outgoing": [
+        "invoiceApproved",
+        "invoiceNotApproved"
+      ]
     },
     "invoice_approved_gui": {
       "bounds": {
@@ -6258,14 +6462,18 @@
       "human_performers": [],
       "id": "prepareBankTransfer",
       "implementation": "##unspecified",
-      "incoming": "invoiceApproved",
+      "incoming": [
+        "invoiceApproved"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Prepare\r\nBank\r\nTransfer",
-      "outgoing": "SequenceFlow_2",
+      "outgoing": [
+        "SequenceFlow_2"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -6340,7 +6548,9 @@
             }
           },
           "id": "Bpmn_DataOutputAssociation_dB6xsrH1EeSuDf0W70XLGw",
-          "source_ref": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+          "source_ref": [
+            "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+          ],
           "target_ref": "Bpmn_DataObjectReference_cdsDQLH1EeSuDf0W70XLGw",
           "transformation": null
         }
@@ -6411,7 +6621,9 @@
       "human_performers": [],
       "id": "reviewInvoice",
       "implementation": "##unspecified",
-      "incoming": "invoiceNotApproved",
+      "incoming": [
+        "invoiceNotApproved"
+      ],
       "io_specification": {
         "data_inputs": [],
         "data_outputs": [
@@ -6446,17 +6658,23 @@
             "id": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
             "name": "default input set",
             "optional_input_refs": [],
-            "output_set_refs": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
+            "output_set_refs": [
+              "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw"
+            ],
             "while_executing_input_refs": []
           }
         ],
         "output_sets": [
           {
-            "data_output_refs": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+            "data_output_refs": [
+              "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
-            "input_set_refs": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
+            "input_set_refs": [
+              "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw"
+            ],
             "name": "default output set",
             "optional_output_refs": [],
             "while_executing_output_refs": []
@@ -6468,7 +6686,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Rechnung kl\u00e4ren",
-      "outgoing": "sequenceFlow_183",
+      "outgoing": [
+        "sequenceFlow_183"
+      ],
       "performers": [],
       "potential_owners": [
         {
@@ -6700,10 +6920,15 @@
       },
       "gateway_direction": "Diverging",
       "id": "reviewSuccessful_gw",
-      "incoming": "sequenceFlow_183",
+      "incoming": [
+        "sequenceFlow_183"
+      ],
       "monitoring": null,
       "name": "Review\nsuccessful?",
-      "outgoing": "['reviewSuccessful', 'reviewNotSuccessful']"
+      "outgoing": [
+        "reviewSuccessful",
+        "reviewNotSuccessful"
+      ]
     },
     "reviewSuccessful_gw_gui": {
       "bounds": {
@@ -9519,7 +9744,9 @@
                 }
               },
               "id": "invoiceNotProcessed",
-              "incoming": "reviewNotSuccessful",
+              "incoming": [
+                "reviewNotSuccessful"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -9566,7 +9793,9 @@
                 }
               },
               "id": "invoiceProcessed",
-              "incoming": "SequenceFlow_3",
+              "incoming": [
+                "SequenceFlow_3"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -9622,10 +9851,15 @@
               },
               "gateway_direction": "Diverging",
               "id": "invoice_approved",
-              "incoming": "sequenceFlow_180",
+              "incoming": [
+                "sequenceFlow_180"
+              ],
               "monitoring": null,
               "name": "Invoice\r\napproved?",
-              "outgoing": "['invoiceApproved', 'invoiceNotApproved']"
+              "outgoing": [
+                "invoiceApproved",
+                "invoiceNotApproved"
+              ]
             },
             {
               "auditing": null,
@@ -9667,10 +9901,15 @@
               },
               "gateway_direction": "Diverging",
               "id": "reviewSuccessful_gw",
-              "incoming": "sequenceFlow_183",
+              "incoming": [
+                "sequenceFlow_183"
+              ],
               "monitoring": null,
               "name": "Review\nsuccessful?",
-              "outgoing": "['reviewSuccessful', 'reviewNotSuccessful']"
+              "outgoing": [
+                "reviewSuccessful",
+                "reviewNotSuccessful"
+              ]
             }
           ],
           "extension_elements": {
@@ -10186,7 +10425,9 @@
               "human_performers": [],
               "id": "archiveInvoice",
               "implementation": "##unspecified",
-              "incoming": "SequenceFlow_2",
+              "incoming": [
+                "SequenceFlow_2"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -10194,7 +10435,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Archive\nInvoice",
               "operation_ref": null,
-              "outgoing": "SequenceFlow_3",
+              "outgoing": [
+                "SequenceFlow_3"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -10247,7 +10490,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Invoice\r\nreceived",
-              "outgoing": "SequenceFlow_1",
+              "outgoing": [
+                "SequenceFlow_1"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -10292,7 +10537,9 @@
                     }
                   },
                   "id": "Bpmn_DataOutputAssociation_Y55MYrH1EeSuDf0W70XLGw",
-                  "source_ref": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+                  "source_ref": [
+                    "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+                  ],
                   "target_ref": "Bpmn_DataObjectReference_YGA4YLH1EeSuDf0W70XLGw",
                   "transformation": null
                 }
@@ -10363,7 +10610,10 @@
               "human_performers": [],
               "id": "approveInvoice",
               "implementation": "##unspecified",
-              "incoming": "['reviewSuccessful', 'sequenceFlow_178']",
+              "incoming": [
+                "reviewSuccessful",
+                "sequenceFlow_178"
+              ],
               "io_specification": {
                 "data_inputs": [],
                 "data_outputs": [
@@ -10398,17 +10648,23 @@
                     "id": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
                     "name": "default input set",
                     "optional_input_refs": [],
-                    "output_set_refs": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
+                    "output_set_refs": [
+                      "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw"
+                    ],
                     "while_executing_input_refs": []
                   }
                 ],
                 "output_sets": [
                   {
-                    "data_output_refs": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+                    "data_output_refs": [
+                      "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
-                    "input_set_refs": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
+                    "input_set_refs": [
+                      "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw"
+                    ],
                     "name": "default output set",
                     "optional_output_refs": [],
                     "while_executing_output_refs": []
@@ -10420,7 +10676,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Approve Invoice",
-              "outgoing": "sequenceFlow_180",
+              "outgoing": [
+                "sequenceFlow_180"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -10468,7 +10726,9 @@
                     }
                   },
                   "id": "Bpmn_DataOutputAssociation_assignApprover",
-                  "source_ref": "Bpmn_DataOutput_assignApprover",
+                  "source_ref": [
+                    "Bpmn_DataOutput_assignApprover"
+                  ],
                   "target_ref": "Bpmn_DataObjectReference_assignApprover",
                   "transformation": null
                 }
@@ -10539,7 +10799,9 @@
               "human_performers": [],
               "id": "assignApprover",
               "implementation": "##unspecified",
-              "incoming": "SequenceFlow_1",
+              "incoming": [
+                "SequenceFlow_1"
+              ],
               "io_specification": {
                 "data_inputs": [],
                 "data_outputs": [
@@ -10574,17 +10836,23 @@
                     "id": "Bpmn_InputSet_assignApprover",
                     "name": "default input set",
                     "optional_input_refs": [],
-                    "output_set_refs": "Bpmn_OutputSet_assignApprover",
+                    "output_set_refs": [
+                      "Bpmn_OutputSet_assignApprover"
+                    ],
                     "while_executing_input_refs": []
                   }
                 ],
                 "output_sets": [
                   {
-                    "data_output_refs": "Bpmn_DataOutput_assignApprover",
+                    "data_output_refs": [
+                      "Bpmn_DataOutput_assignApprover"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "Bpmn_OutputSet_assignApprover",
-                    "input_set_refs": "Bpmn_InputSet_assignApprover",
+                    "input_set_refs": [
+                      "Bpmn_InputSet_assignApprover"
+                    ],
                     "name": "default output set",
                     "optional_output_refs": [],
                     "while_executing_output_refs": []
@@ -10596,7 +10864,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Assign\r\nApprover",
-              "outgoing": "sequenceFlow_178",
+              "outgoing": [
+                "sequenceFlow_178"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -10644,7 +10914,9 @@
                     }
                   },
                   "id": "Bpmn_DataOutputAssociation_dB6xsrH1EeSuDf0W70XLGw",
-                  "source_ref": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+                  "source_ref": [
+                    "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+                  ],
                   "target_ref": "Bpmn_DataObjectReference_cdsDQLH1EeSuDf0W70XLGw",
                   "transformation": null
                 }
@@ -10715,7 +10987,9 @@
               "human_performers": [],
               "id": "reviewInvoice",
               "implementation": "##unspecified",
-              "incoming": "invoiceNotApproved",
+              "incoming": [
+                "invoiceNotApproved"
+              ],
               "io_specification": {
                 "data_inputs": [],
                 "data_outputs": [
@@ -10750,17 +11024,23 @@
                     "id": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
                     "name": "default input set",
                     "optional_input_refs": [],
-                    "output_set_refs": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
+                    "output_set_refs": [
+                      "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw"
+                    ],
                     "while_executing_input_refs": []
                   }
                 ],
                 "output_sets": [
                   {
-                    "data_output_refs": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+                    "data_output_refs": [
+                      "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
-                    "input_set_refs": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
+                    "input_set_refs": [
+                      "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw"
+                    ],
                     "name": "default output set",
                     "optional_output_refs": [],
                     "while_executing_output_refs": []
@@ -10772,7 +11052,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Rechnung kl\u00e4ren",
-              "outgoing": "sequenceFlow_183",
+              "outgoing": [
+                "sequenceFlow_183"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -10865,14 +11147,18 @@
               "human_performers": [],
               "id": "prepareBankTransfer",
               "implementation": "##unspecified",
-              "incoming": "invoiceApproved",
+              "incoming": [
+                "invoiceApproved"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Prepare\r\nBank\r\nTransfer",
-              "outgoing": "SequenceFlow_2",
+              "outgoing": [
+                "SequenceFlow_2"
+              ],
               "performers": [],
               "potential_owners": [
                 {
@@ -10962,5 +11248,327 @@
       "item_kind": "Information",
       "structure_ref": "xs:tString"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw",
+      "property": "item_subject_ref",
+      "reference_id": "xsdBool"
+    },
+    {
+      "element_id": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw",
+      "property": "output_set_refs",
+      "reference_id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
+      "property": "data_output_refs",
+      "reference_id": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_OutputSet_Y6GAsbH1EeSuDf0W70XLGw",
+      "property": "input_set_refs",
+      "reference_id": "Bpmn_InputSet_Y6GAsrH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_DataOutputAssociation_Y55MYrH1EeSuDf0W70XLGw",
+      "property": "source_ref",
+      "reference_id": "Bpmn_DataOutput_Y6S1ALH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_DataOutputAssociation_Y55MYrH1EeSuDf0W70XLGw",
+      "property": "target_ref",
+      "reference_id": "Bpmn_DataObjectReference_YGA4YLH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "approveInvoice",
+      "property": "incoming",
+      "reference_id": "reviewSuccessful"
+    },
+    {
+      "element_id": "approveInvoice",
+      "property": "incoming",
+      "reference_id": "sequenceFlow_178"
+    },
+    {
+      "element_id": "approveInvoice",
+      "property": "outgoing",
+      "reference_id": "sequenceFlow_180"
+    },
+    {
+      "element_id": "Bpmn_DataOutput_assignApprover",
+      "property": "item_subject_ref",
+      "reference_id": "xsdString"
+    },
+    {
+      "element_id": "Bpmn_InputSet_assignApprover",
+      "property": "output_set_refs",
+      "reference_id": "Bpmn_OutputSet_assignApprover"
+    },
+    {
+      "element_id": "Bpmn_OutputSet_assignApprover",
+      "property": "data_output_refs",
+      "reference_id": "Bpmn_DataOutput_assignApprover"
+    },
+    {
+      "element_id": "Bpmn_OutputSet_assignApprover",
+      "property": "input_set_refs",
+      "reference_id": "Bpmn_InputSet_assignApprover"
+    },
+    {
+      "element_id": "Bpmn_DataOutputAssociation_assignApprover",
+      "property": "source_ref",
+      "reference_id": "Bpmn_DataOutput_assignApprover"
+    },
+    {
+      "element_id": "Bpmn_DataOutputAssociation_assignApprover",
+      "property": "target_ref",
+      "reference_id": "Bpmn_DataObjectReference_assignApprover"
+    },
+    {
+      "element_id": "assignApprover",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_1"
+    },
+    {
+      "element_id": "assignApprover",
+      "property": "outgoing",
+      "reference_id": "sequenceFlow_178"
+    },
+    {
+      "element_id": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw",
+      "property": "item_subject_ref",
+      "reference_id": "xsdString"
+    },
+    {
+      "element_id": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw",
+      "property": "output_set_refs",
+      "reference_id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
+      "property": "data_output_refs",
+      "reference_id": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_OutputSet_dB6xtLH1EeSuDf0W70XLGw",
+      "property": "input_set_refs",
+      "reference_id": "Bpmn_InputSet_dB6xtbH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_DataOutputAssociation_dB6xsrH1EeSuDf0W70XLGw",
+      "property": "source_ref",
+      "reference_id": "Bpmn_DataOutput_dCG-8LH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_DataOutputAssociation_dB6xsrH1EeSuDf0W70XLGw",
+      "property": "target_ref",
+      "reference_id": "Bpmn_DataObjectReference_cdsDQLH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "reviewInvoice",
+      "property": "incoming",
+      "reference_id": "invoiceNotApproved"
+    },
+    {
+      "element_id": "reviewInvoice",
+      "property": "outgoing",
+      "reference_id": "sequenceFlow_183"
+    },
+    {
+      "element_id": "prepareBankTransfer",
+      "property": "incoming",
+      "reference_id": "invoiceApproved"
+    },
+    {
+      "element_id": "prepareBankTransfer",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_2"
+    },
+    {
+      "element_id": "invoice_approved",
+      "property": "incoming",
+      "reference_id": "sequenceFlow_180"
+    },
+    {
+      "element_id": "invoice_approved",
+      "property": "outgoing",
+      "reference_id": "invoiceApproved"
+    },
+    {
+      "element_id": "invoice_approved",
+      "property": "outgoing",
+      "reference_id": "invoiceNotApproved"
+    },
+    {
+      "element_id": "reviewSuccessful_gw",
+      "property": "incoming",
+      "reference_id": "sequenceFlow_183"
+    },
+    {
+      "element_id": "reviewSuccessful_gw",
+      "property": "outgoing",
+      "reference_id": "reviewSuccessful"
+    },
+    {
+      "element_id": "reviewSuccessful_gw",
+      "property": "outgoing",
+      "reference_id": "reviewNotSuccessful"
+    },
+    {
+      "element_id": "invoiceNotProcessed",
+      "property": "incoming",
+      "reference_id": "reviewNotSuccessful"
+    },
+    {
+      "element_id": "invoiceProcessed",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_3"
+    },
+    {
+      "element_id": "StartEvent_1",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_1"
+    },
+    {
+      "element_id": "archiveInvoice",
+      "property": "incoming",
+      "reference_id": "SequenceFlow_2"
+    },
+    {
+      "element_id": "archiveInvoice",
+      "property": "outgoing",
+      "reference_id": "SequenceFlow_3"
+    },
+    {
+      "element_id": "invoiceApproved",
+      "property": "source_ref",
+      "reference_id": "invoice_approved"
+    },
+    {
+      "element_id": "invoiceApproved",
+      "property": "target_ref",
+      "reference_id": "prepareBankTransfer"
+    },
+    {
+      "element_id": "invoiceNotApproved",
+      "property": "source_ref",
+      "reference_id": "invoice_approved"
+    },
+    {
+      "element_id": "invoiceNotApproved",
+      "property": "target_ref",
+      "reference_id": "reviewInvoice"
+    },
+    {
+      "element_id": "reviewSuccessful",
+      "property": "source_ref",
+      "reference_id": "reviewSuccessful_gw"
+    },
+    {
+      "element_id": "reviewSuccessful",
+      "property": "target_ref",
+      "reference_id": "approveInvoice"
+    },
+    {
+      "element_id": "reviewNotSuccessful",
+      "property": "source_ref",
+      "reference_id": "reviewSuccessful_gw"
+    },
+    {
+      "element_id": "reviewNotSuccessful",
+      "property": "target_ref",
+      "reference_id": "invoiceNotProcessed"
+    },
+    {
+      "element_id": "sequenceFlow_180",
+      "property": "source_ref",
+      "reference_id": "approveInvoice"
+    },
+    {
+      "element_id": "sequenceFlow_180",
+      "property": "target_ref",
+      "reference_id": "invoice_approved"
+    },
+    {
+      "element_id": "sequenceFlow_183",
+      "property": "source_ref",
+      "reference_id": "reviewInvoice"
+    },
+    {
+      "element_id": "sequenceFlow_183",
+      "property": "target_ref",
+      "reference_id": "reviewSuccessful_gw"
+    },
+    {
+      "element_id": "sequenceFlow_178",
+      "property": "source_ref",
+      "reference_id": "assignApprover"
+    },
+    {
+      "element_id": "sequenceFlow_178",
+      "property": "target_ref",
+      "reference_id": "approveInvoice"
+    },
+    {
+      "element_id": "SequenceFlow_2",
+      "property": "source_ref",
+      "reference_id": "prepareBankTransfer"
+    },
+    {
+      "element_id": "SequenceFlow_2",
+      "property": "target_ref",
+      "reference_id": "archiveInvoice"
+    },
+    {
+      "element_id": "SequenceFlow_3",
+      "property": "source_ref",
+      "reference_id": "archiveInvoice"
+    },
+    {
+      "element_id": "SequenceFlow_3",
+      "property": "target_ref",
+      "reference_id": "invoiceProcessed"
+    },
+    {
+      "element_id": "SequenceFlow_1",
+      "property": "source_ref",
+      "reference_id": "StartEvent_1"
+    },
+    {
+      "element_id": "SequenceFlow_1",
+      "property": "target_ref",
+      "reference_id": "assignApprover"
+    },
+    {
+      "element_id": "Bpmn_DataObject_approver",
+      "property": "item_subject_ref",
+      "reference_id": "xsdString"
+    },
+    {
+      "element_id": "Bpmn_DataObject_WUfQYrH1EeSuDf0W70XLGw",
+      "property": "item_subject_ref",
+      "reference_id": "xsdBool"
+    },
+    {
+      "element_id": "Bpmn_DataObject_aT_L0rH1EeSuDf0W70XLGw",
+      "property": "item_subject_ref",
+      "reference_id": "xsdString"
+    },
+    {
+      "element_id": "Bpmn_DataObjectReference_assignApprover",
+      "property": "data_object_ref",
+      "reference_id": "Bpmn_DataObject_approver"
+    },
+    {
+      "element_id": "Bpmn_DataObjectReference_YGA4YLH1EeSuDf0W70XLGw",
+      "property": "data_object_ref",
+      "reference_id": "Bpmn_DataObject_WUfQYrH1EeSuDf0W70XLGw"
+    },
+    {
+      "element_id": "Bpmn_DataObjectReference_cdsDQLH1EeSuDf0W70XLGw",
+      "property": "data_object_ref",
+      "reference_id": "Bpmn_DataObject_aT_L0rH1EeSuDf0W70XLGw"
+    }
+  ]
 }

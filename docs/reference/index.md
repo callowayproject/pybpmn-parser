@@ -1,3 +1,0 @@
-# Reference
-
-[API Reference](api/)

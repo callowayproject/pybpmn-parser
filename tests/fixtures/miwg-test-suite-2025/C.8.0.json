@@ -1517,7 +1517,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": null,
-            "outgoing": "_f250e125-23eb-45cd-9c61-191d172df093",
+            "outgoing": [
+              "_f250e125-23eb-45cd-9c61-191d172df093"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -1585,7 +1587,9 @@
                   ]
                 },
                 "id": "_d7aa7a34-bb93-49ae-87d7-f3ccd25add3f",
-                "source_ref": "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+                "source_ref": [
+                  "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323"
+                ],
                 "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
                 "transformation": null
               },
@@ -1641,7 +1645,9 @@
                   ]
                 },
                 "id": "_bfe6b00e-a1ce-4b12-b868-f445ebc77d1d",
-                "source_ref": "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db",
+                "source_ref": [
+                  "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+                ],
                 "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
                 "transformation": null
               }
@@ -1699,7 +1705,9 @@
                   ]
                 },
                 "id": "_3dcf2a50-5a30-4a47-956f-7962eb907737",
-                "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+                "source_ref": [
+                  "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+                ],
                 "target_ref": "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf",
                 "transformation": null
               },
@@ -1755,7 +1763,9 @@
                   ]
                 },
                 "id": "_66f6f24d-1cad-4c93-b9b3-b93193015a18",
-                "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
+                "source_ref": [
+                  "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+                ],
                 "target_ref": "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
                 "transformation": null
               }
@@ -2066,7 +2076,9 @@
             "human_performers": [],
             "id": "_1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
             "implementation": "##unspecified",
-            "incoming": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+            "incoming": [
+              "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+            ],
             "io_specification": {
               "data_inputs": [
                 {
@@ -2119,7 +2131,10 @@
               "id": null,
               "input_sets": [
                 {
-                  "data_input_refs": "['DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+                  "data_input_refs": [
+                    "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+                    "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_7522b1b6-fa6b-4e86-8bd7-d77f8d0db55a",
@@ -2131,7 +2146,10 @@
               ],
               "output_sets": [
                 {
-                  "data_output_refs": "['DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+                  "data_output_refs": [
+                    "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+                    "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_7821d757-2e54-4340-8286-6b138f27ca51",
@@ -2147,7 +2165,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Vacation Approval",
-            "outgoing": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+            "outgoing": [
+              "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -2387,7 +2407,9 @@
               ]
             },
             "id": "_1cd5fe29-b3ec-4f21-a1aa-57773f0729ca",
-            "incoming": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+            "incoming": [
+              "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2517,7 +2539,9 @@
               ]
             },
             "id": "_6677ef80-82df-4951-919d-1f36123b681b",
-            "incoming": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+            "incoming": [
+              "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2647,7 +2671,9 @@
               ]
             },
             "id": "_3ae826ca-5f38-43c4-be3a-35d1157aa27f",
-            "incoming": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+            "incoming": [
+              "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2777,7 +2803,9 @@
               ]
             },
             "id": "_b4d636eb-b501-4462-93c8-04652db10307",
-            "incoming": "_f250e125-23eb-45cd-9c61-191d172df093",
+            "incoming": [
+              "_f250e125-23eb-45cd-9c61-191d172df093"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2907,7 +2935,9 @@
               ]
             },
             "id": "_1688f604-5edf-4187-ad9e-18f74bfede53",
-            "incoming": "_130d903a-f211-4b3e-9711-9061f5978d94",
+            "incoming": [
+              "_130d903a-f211-4b3e-9711-9061f5978d94"
+            ],
             "input_set": null,
             "link_event_definitions": [],
             "message_event_definitions": [],
@@ -2987,10 +3017,16 @@
             },
             "gateway_direction": "Diverging",
             "id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
-            "incoming": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+            "incoming": [
+              "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+            ],
             "monitoring": null,
             "name": null,
-            "outgoing": "['_2a5ee73c-c495-48a0-945b-3dabab28ca91', '_325973e7-0bc8-4136-b6df-be1e681d8608', '_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9']",
+            "outgoing": [
+              "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+              "_325973e7-0bc8-4136-b6df-be1e681d8608",
+              "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+            ],
             "triso_read_only": "false"
           },
           {
@@ -3056,10 +3092,15 @@
             },
             "gateway_direction": "Diverging",
             "id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69",
-            "incoming": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+            "incoming": [
+              "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+            ],
             "monitoring": null,
             "name": null,
-            "outgoing": "['_d3a575d8-cd41-4246-ad7a-7a068de6679f', '_f2b0da63-d841-4457-ad85-7d86c8b5c1d2']",
+            "outgoing": [
+              "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+              "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+            ],
             "triso_read_only": "false"
           }
         ],
@@ -3951,7 +3992,11 @@
           "id": null,
           "input_sets": [
             {
-              "data_input_refs": "['dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc', 'dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323', 'dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db']",
+              "data_input_refs": [
+                "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+                "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+                "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+              ],
               "documentation": [],
               "extension_elements": null,
               "id": "_4d1f4479-b14c-4dd0-9675-607384e9dd81",
@@ -3963,7 +4008,10 @@
           ],
           "output_sets": [
             {
-              "data_output_refs": "['dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41', 'dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf']",
+              "data_output_refs": [
+                "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
+                "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf"
+              ],
               "documentation": [],
               "extension_elements": null,
               "id": "_10b372b4-3cdd-4ddd-aa58-129b5df7b2f8",
@@ -4302,7 +4350,9 @@
             "human_performers": [],
             "id": "_a97c1a48-faba-447b-bfa6-7aa81a6fe0a0",
             "implementation": "##WebService",
-            "incoming": "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2",
+            "incoming": [
+              "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -4311,7 +4361,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Notify Employee of Approval",
             "operation_ref": null,
-            "outgoing": "_a5441c65-06f8-4972-8158-e6f61f904841",
+            "outgoing": [
+              "_a5441c65-06f8-4972-8158-e6f61f904841"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -4633,7 +4685,9 @@
             "human_performers": [],
             "id": "_02232e32-c3d2-473c-a15d-9c5dca00eadc",
             "implementation": "##WebService",
-            "incoming": "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+            "incoming": [
+              "_d3a575d8-cd41-4246-ad7a-7a068de6679f"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -4642,7 +4696,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Notify Employee of Refusal",
             "operation_ref": null,
-            "outgoing": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+            "outgoing": [
+              "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -4964,7 +5020,9 @@
             "human_performers": [],
             "id": "_9ed61a6a-7cc1-4ed1-86d8-03482b0983c9",
             "implementation": "##WebService",
-            "incoming": "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+            "incoming": [
+              "_2a5ee73c-c495-48a0-945b-3dabab28ca91"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -4973,7 +5031,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Notify Employee of Refusal",
             "operation_ref": null,
-            "outgoing": "_130d903a-f211-4b3e-9711-9061f5978d94",
+            "outgoing": [
+              "_130d903a-f211-4b3e-9711-9061f5978d94"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -5295,7 +5355,9 @@
             "human_performers": [],
             "id": "_93ec9873-edf1-4549-b052-961994ec8234",
             "implementation": "##WebService",
-            "incoming": "_325973e7-0bc8-4136-b6df-be1e681d8608",
+            "incoming": [
+              "_325973e7-0bc8-4136-b6df-be1e681d8608"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -5304,7 +5366,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Notify Employee of Approval",
             "operation_ref": null,
-            "outgoing": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+            "outgoing": [
+              "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -7788,7 +7852,9 @@
             "human_performers": [],
             "id": "_5e16a4e0-0f23-482a-be47-d3edbc5741ba",
             "implementation": "##WebService",
-            "incoming": "_a5441c65-06f8-4972-8158-e6f61f904841",
+            "incoming": [
+              "_a5441c65-06f8-4972-8158-e6f61f904841"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -7796,7 +7862,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Update Remaining Vacation",
             "operation_ref": null,
-            "outgoing": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+            "outgoing": [
+              "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -8105,7 +8173,9 @@
             "human_performers": [],
             "id": "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b",
             "implementation": "##WebService",
-            "incoming": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+            "incoming": [
+              "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "loop_characteristics": null,
@@ -8113,7 +8183,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Update Remaining Vacation",
             "operation_ref": null,
-            "outgoing": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+            "outgoing": [
+              "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -8179,7 +8251,9 @@
                   ]
                 },
                 "id": "_f4f41761-cdd8-4b90-a956-9182345df488",
-                "source_ref": "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+                "source_ref": [
+                  "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc"
+                ],
                 "target_ref": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
                 "transformation": null
               }
@@ -8237,7 +8311,9 @@
                   ]
                 },
                 "id": "_40d3cb58-31bb-47a4-9591-032a38011de3",
-                "source_ref": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+                "source_ref": [
+                  "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+                ],
                 "target_ref": "Reference__775c93ab-82e5-4a62-97f0-d305eda76c92",
                 "transformation": null
               }
@@ -8567,7 +8643,9 @@
             "human_performers": [],
             "id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99",
             "implementation": "##WebService",
-            "incoming": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+            "incoming": [
+              "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+            ],
             "io_specification": {
               "data_inputs": [
                 {
@@ -8599,7 +8677,9 @@
               "id": null,
               "input_sets": [
                 {
-                  "data_input_refs": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+                  "data_input_refs": [
+                    "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_74206bda-6edc-4a98-a433-af5446be8809",
@@ -8611,7 +8691,9 @@
               ],
               "output_sets": [
                 {
-                  "data_output_refs": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+                  "data_output_refs": [
+                    "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+                  ],
                   "documentation": [],
                   "extension_elements": null,
                   "id": "_cd959c80-ff41-401a-9282-b76dcf95aaf2",
@@ -8628,7 +8710,9 @@
             "multi_instance_loop_characteristics": null,
             "name": "Fetch Vacation Information",
             "operation_ref": null,
-            "outgoing": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+            "outgoing": [
+              "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -8778,7 +8862,9 @@
             "message_event_definition": [],
             "monitoring": null,
             "name": "Vacation Request Received",
-            "outgoing": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+            "outgoing": [
+              "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+            ],
             "output_set": null,
             "parallel_multiple": false,
             "properties": [],
@@ -9086,7 +9172,9 @@
             "human_performers": [],
             "id": "_79523269-7444-4b01-90e9-e23957a9d020",
             "implementation": "##unspecified",
-            "incoming": "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9",
+            "incoming": [
+              "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+            ],
             "io_specification": null,
             "is_for_compensation": false,
             "kp_form_key": "ApproveVacation",
@@ -9094,7 +9182,9 @@
             "monitoring": null,
             "multi_instance_loop_characteristics": null,
             "name": "Manually Approve Vacation",
-            "outgoing": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+            "outgoing": [
+              "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+            ],
             "performers": [],
             "potential_owners": [],
             "properties": [],
@@ -12029,7 +12119,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": null,
-              "outgoing": "_f250e125-23eb-45cd-9c61-191d172df093",
+              "outgoing": [
+                "_f250e125-23eb-45cd-9c61-191d172df093"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -12097,7 +12189,9 @@
                     ]
                   },
                   "id": "_d7aa7a34-bb93-49ae-87d7-f3ccd25add3f",
-                  "source_ref": "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+                  "source_ref": [
+                    "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323"
+                  ],
                   "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
                   "transformation": null
                 },
@@ -12153,7 +12247,9 @@
                     ]
                   },
                   "id": "_bfe6b00e-a1ce-4b12-b868-f445ebc77d1d",
-                  "source_ref": "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db",
+                  "source_ref": [
+                    "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+                  ],
                   "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
                   "transformation": null
                 }
@@ -12211,7 +12307,9 @@
                     ]
                   },
                   "id": "_3dcf2a50-5a30-4a47-956f-7962eb907737",
-                  "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+                  "source_ref": [
+                    "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+                  ],
                   "target_ref": "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf",
                   "transformation": null
                 },
@@ -12267,7 +12365,9 @@
                     ]
                   },
                   "id": "_66f6f24d-1cad-4c93-b9b3-b93193015a18",
-                  "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
+                  "source_ref": [
+                    "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+                  ],
                   "target_ref": "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
                   "transformation": null
                 }
@@ -12578,7 +12678,9 @@
               "human_performers": [],
               "id": "_1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
               "implementation": "##unspecified",
-              "incoming": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+              "incoming": [
+                "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+              ],
               "io_specification": {
                 "data_inputs": [
                   {
@@ -12631,7 +12733,10 @@
                 "id": null,
                 "input_sets": [
                   {
-                    "data_input_refs": "['DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+                    "data_input_refs": [
+                      "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+                      "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_7522b1b6-fa6b-4e86-8bd7-d77f8d0db55a",
@@ -12643,7 +12748,10 @@
                 ],
                 "output_sets": [
                   {
-                    "data_output_refs": "['DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+                    "data_output_refs": [
+                      "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+                      "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_7821d757-2e54-4340-8286-6b138f27ca51",
@@ -12659,7 +12767,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Vacation Approval",
-              "outgoing": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+              "outgoing": [
+                "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -12899,7 +13009,9 @@
                 ]
               },
               "id": "_1cd5fe29-b3ec-4f21-a1aa-57773f0729ca",
-              "incoming": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+              "incoming": [
+                "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -13029,7 +13141,9 @@
                 ]
               },
               "id": "_6677ef80-82df-4951-919d-1f36123b681b",
-              "incoming": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+              "incoming": [
+                "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -13159,7 +13273,9 @@
                 ]
               },
               "id": "_3ae826ca-5f38-43c4-be3a-35d1157aa27f",
-              "incoming": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+              "incoming": [
+                "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -13289,7 +13405,9 @@
                 ]
               },
               "id": "_b4d636eb-b501-4462-93c8-04652db10307",
-              "incoming": "_f250e125-23eb-45cd-9c61-191d172df093",
+              "incoming": [
+                "_f250e125-23eb-45cd-9c61-191d172df093"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -13419,7 +13537,9 @@
                 ]
               },
               "id": "_1688f604-5edf-4187-ad9e-18f74bfede53",
-              "incoming": "_130d903a-f211-4b3e-9711-9061f5978d94",
+              "incoming": [
+                "_130d903a-f211-4b3e-9711-9061f5978d94"
+              ],
               "input_set": null,
               "link_event_definitions": [],
               "message_event_definitions": [],
@@ -13499,10 +13619,16 @@
               },
               "gateway_direction": "Diverging",
               "id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
-              "incoming": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+              "incoming": [
+                "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "['_2a5ee73c-c495-48a0-945b-3dabab28ca91', '_325973e7-0bc8-4136-b6df-be1e681d8608', '_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9']",
+              "outgoing": [
+                "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+                "_325973e7-0bc8-4136-b6df-be1e681d8608",
+                "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+              ],
               "triso_read_only": "false"
             },
             {
@@ -13568,10 +13694,15 @@
               },
               "gateway_direction": "Diverging",
               "id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69",
-              "incoming": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+              "incoming": [
+                "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+              ],
               "monitoring": null,
               "name": null,
-              "outgoing": "['_d3a575d8-cd41-4246-ad7a-7a068de6679f', '_f2b0da63-d841-4457-ad85-7d86c8b5c1d2']",
+              "outgoing": [
+                "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+                "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+              ],
               "triso_read_only": "false"
             }
           ],
@@ -14463,7 +14594,11 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "['dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc', 'dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323', 'dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db']",
+                "data_input_refs": [
+                  "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+                  "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+                  "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_4d1f4479-b14c-4dd0-9675-607384e9dd81",
@@ -14475,7 +14610,10 @@
             ],
             "output_sets": [
               {
-                "data_output_refs": "['dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41', 'dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf']",
+                "data_output_refs": [
+                  "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
+                  "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_10b372b4-3cdd-4ddd-aa58-129b5df7b2f8",
@@ -14814,7 +14952,9 @@
               "human_performers": [],
               "id": "_a97c1a48-faba-447b-bfa6-7aa81a6fe0a0",
               "implementation": "##WebService",
-              "incoming": "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2",
+              "incoming": [
+                "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -14823,7 +14963,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Notify Employee of Approval",
               "operation_ref": null,
-              "outgoing": "_a5441c65-06f8-4972-8158-e6f61f904841",
+              "outgoing": [
+                "_a5441c65-06f8-4972-8158-e6f61f904841"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -15145,7 +15287,9 @@
               "human_performers": [],
               "id": "_02232e32-c3d2-473c-a15d-9c5dca00eadc",
               "implementation": "##WebService",
-              "incoming": "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+              "incoming": [
+                "_d3a575d8-cd41-4246-ad7a-7a068de6679f"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -15154,7 +15298,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Notify Employee of Refusal",
               "operation_ref": null,
-              "outgoing": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+              "outgoing": [
+                "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -15476,7 +15622,9 @@
               "human_performers": [],
               "id": "_9ed61a6a-7cc1-4ed1-86d8-03482b0983c9",
               "implementation": "##WebService",
-              "incoming": "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+              "incoming": [
+                "_2a5ee73c-c495-48a0-945b-3dabab28ca91"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -15485,7 +15633,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Notify Employee of Refusal",
               "operation_ref": null,
-              "outgoing": "_130d903a-f211-4b3e-9711-9061f5978d94",
+              "outgoing": [
+                "_130d903a-f211-4b3e-9711-9061f5978d94"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -15807,7 +15957,9 @@
               "human_performers": [],
               "id": "_93ec9873-edf1-4549-b052-961994ec8234",
               "implementation": "##WebService",
-              "incoming": "_325973e7-0bc8-4136-b6df-be1e681d8608",
+              "incoming": [
+                "_325973e7-0bc8-4136-b6df-be1e681d8608"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -15816,7 +15968,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Notify Employee of Approval",
               "operation_ref": null,
-              "outgoing": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+              "outgoing": [
+                "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -18300,7 +18454,9 @@
               "human_performers": [],
               "id": "_5e16a4e0-0f23-482a-be47-d3edbc5741ba",
               "implementation": "##WebService",
-              "incoming": "_a5441c65-06f8-4972-8158-e6f61f904841",
+              "incoming": [
+                "_a5441c65-06f8-4972-8158-e6f61f904841"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -18308,7 +18464,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Update Remaining Vacation",
               "operation_ref": null,
-              "outgoing": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+              "outgoing": [
+                "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -18617,7 +18775,9 @@
               "human_performers": [],
               "id": "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b",
               "implementation": "##WebService",
-              "incoming": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+              "incoming": [
+                "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "loop_characteristics": null,
@@ -18625,7 +18785,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Update Remaining Vacation",
               "operation_ref": null,
-              "outgoing": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+              "outgoing": [
+                "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -18691,7 +18853,9 @@
                     ]
                   },
                   "id": "_f4f41761-cdd8-4b90-a956-9182345df488",
-                  "source_ref": "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+                  "source_ref": [
+                    "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc"
+                  ],
                   "target_ref": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
                   "transformation": null
                 }
@@ -18749,7 +18913,9 @@
                     ]
                   },
                   "id": "_40d3cb58-31bb-47a4-9591-032a38011de3",
-                  "source_ref": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+                  "source_ref": [
+                    "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+                  ],
                   "target_ref": "Reference__775c93ab-82e5-4a62-97f0-d305eda76c92",
                   "transformation": null
                 }
@@ -19079,7 +19245,9 @@
               "human_performers": [],
               "id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99",
               "implementation": "##WebService",
-              "incoming": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+              "incoming": [
+                "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+              ],
               "io_specification": {
                 "data_inputs": [
                   {
@@ -19111,7 +19279,9 @@
                 "id": null,
                 "input_sets": [
                   {
-                    "data_input_refs": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+                    "data_input_refs": [
+                      "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_74206bda-6edc-4a98-a433-af5446be8809",
@@ -19123,7 +19293,9 @@
                 ],
                 "output_sets": [
                   {
-                    "data_output_refs": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+                    "data_output_refs": [
+                      "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+                    ],
                     "documentation": [],
                     "extension_elements": null,
                     "id": "_cd959c80-ff41-401a-9282-b76dcf95aaf2",
@@ -19140,7 +19312,9 @@
               "multi_instance_loop_characteristics": null,
               "name": "Fetch Vacation Information",
               "operation_ref": null,
-              "outgoing": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+              "outgoing": [
+                "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -19290,7 +19464,9 @@
               "message_event_definition": [],
               "monitoring": null,
               "name": "Vacation Request Received",
-              "outgoing": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+              "outgoing": [
+                "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+              ],
               "output_set": null,
               "parallel_multiple": false,
               "properties": [],
@@ -19598,7 +19774,9 @@
               "human_performers": [],
               "id": "_79523269-7444-4b01-90e9-e23957a9d020",
               "implementation": "##unspecified",
-              "incoming": "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9",
+              "incoming": [
+                "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+              ],
               "io_specification": null,
               "is_for_compensation": false,
               "kp_form_key": "ApproveVacation",
@@ -19606,7 +19784,9 @@
               "monitoring": null,
               "multi_instance_loop_characteristics": null,
               "name": "Manually Approve Vacation",
-              "outgoing": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+              "outgoing": [
+                "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+              ],
               "performers": [],
               "potential_owners": [],
               "properties": [],
@@ -21155,7 +21335,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": null,
-          "outgoing": "_f250e125-23eb-45cd-9c61-191d172df093",
+          "outgoing": [
+            "_f250e125-23eb-45cd-9c61-191d172df093"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -21223,7 +21405,9 @@
                 ]
               },
               "id": "_d7aa7a34-bb93-49ae-87d7-f3ccd25add3f",
-              "source_ref": "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+              "source_ref": [
+                "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323"
+              ],
               "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
               "transformation": null
             },
@@ -21279,7 +21463,9 @@
                 ]
               },
               "id": "_bfe6b00e-a1ce-4b12-b868-f445ebc77d1d",
-              "source_ref": "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db",
+              "source_ref": [
+                "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+              ],
               "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
               "transformation": null
             }
@@ -21337,7 +21523,9 @@
                 ]
               },
               "id": "_3dcf2a50-5a30-4a47-956f-7962eb907737",
-              "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+              "source_ref": [
+                "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+              ],
               "target_ref": "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf",
               "transformation": null
             },
@@ -21393,7 +21581,9 @@
                 ]
               },
               "id": "_66f6f24d-1cad-4c93-b9b3-b93193015a18",
-              "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
+              "source_ref": [
+                "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+              ],
               "target_ref": "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
               "transformation": null
             }
@@ -21704,7 +21894,9 @@
           "human_performers": [],
           "id": "_1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
           "implementation": "##unspecified",
-          "incoming": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+          "incoming": [
+            "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+          ],
           "io_specification": {
             "data_inputs": [
               {
@@ -21757,7 +21949,10 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "['DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+                "data_input_refs": [
+                  "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+                  "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_7522b1b6-fa6b-4e86-8bd7-d77f8d0db55a",
@@ -21769,7 +21964,10 @@
             ],
             "output_sets": [
               {
-                "data_output_refs": "['DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+                "data_output_refs": [
+                  "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+                  "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_7821d757-2e54-4340-8286-6b138f27ca51",
@@ -21785,7 +21983,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Vacation Approval",
-          "outgoing": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+          "outgoing": [
+            "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -22025,7 +22225,9 @@
             ]
           },
           "id": "_1cd5fe29-b3ec-4f21-a1aa-57773f0729ca",
-          "incoming": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+          "incoming": [
+            "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -22155,7 +22357,9 @@
             ]
           },
           "id": "_6677ef80-82df-4951-919d-1f36123b681b",
-          "incoming": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+          "incoming": [
+            "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -22285,7 +22489,9 @@
             ]
           },
           "id": "_3ae826ca-5f38-43c4-be3a-35d1157aa27f",
-          "incoming": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+          "incoming": [
+            "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -22415,7 +22621,9 @@
             ]
           },
           "id": "_b4d636eb-b501-4462-93c8-04652db10307",
-          "incoming": "_f250e125-23eb-45cd-9c61-191d172df093",
+          "incoming": [
+            "_f250e125-23eb-45cd-9c61-191d172df093"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -22545,7 +22753,9 @@
             ]
           },
           "id": "_1688f604-5edf-4187-ad9e-18f74bfede53",
-          "incoming": "_130d903a-f211-4b3e-9711-9061f5978d94",
+          "incoming": [
+            "_130d903a-f211-4b3e-9711-9061f5978d94"
+          ],
           "input_set": null,
           "link_event_definitions": [],
           "message_event_definitions": [],
@@ -22625,10 +22835,16 @@
           },
           "gateway_direction": "Diverging",
           "id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
-          "incoming": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+          "incoming": [
+            "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "['_2a5ee73c-c495-48a0-945b-3dabab28ca91', '_325973e7-0bc8-4136-b6df-be1e681d8608', '_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9']",
+          "outgoing": [
+            "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+            "_325973e7-0bc8-4136-b6df-be1e681d8608",
+            "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+          ],
           "triso_read_only": "false"
         },
         {
@@ -22694,10 +22910,15 @@
           },
           "gateway_direction": "Diverging",
           "id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69",
-          "incoming": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+          "incoming": [
+            "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+          ],
           "monitoring": null,
           "name": null,
-          "outgoing": "['_d3a575d8-cd41-4246-ad7a-7a068de6679f', '_f2b0da63-d841-4457-ad85-7d86c8b5c1d2']",
+          "outgoing": [
+            "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+            "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+          ],
           "triso_read_only": "false"
         }
       ],
@@ -23589,7 +23810,11 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "['dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc', 'dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323', 'dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db']",
+            "data_input_refs": [
+              "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+              "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+              "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_4d1f4479-b14c-4dd0-9675-607384e9dd81",
@@ -23601,7 +23826,10 @@
         ],
         "output_sets": [
           {
-            "data_output_refs": "['dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41', 'dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf']",
+            "data_output_refs": [
+              "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
+              "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_10b372b4-3cdd-4ddd-aa58-129b5df7b2f8",
@@ -23940,7 +24168,9 @@
           "human_performers": [],
           "id": "_a97c1a48-faba-447b-bfa6-7aa81a6fe0a0",
           "implementation": "##WebService",
-          "incoming": "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2",
+          "incoming": [
+            "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -23949,7 +24179,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Notify Employee of Approval",
           "operation_ref": null,
-          "outgoing": "_a5441c65-06f8-4972-8158-e6f61f904841",
+          "outgoing": [
+            "_a5441c65-06f8-4972-8158-e6f61f904841"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -24271,7 +24503,9 @@
           "human_performers": [],
           "id": "_02232e32-c3d2-473c-a15d-9c5dca00eadc",
           "implementation": "##WebService",
-          "incoming": "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+          "incoming": [
+            "_d3a575d8-cd41-4246-ad7a-7a068de6679f"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -24280,7 +24514,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Notify Employee of Refusal",
           "operation_ref": null,
-          "outgoing": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+          "outgoing": [
+            "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -24602,7 +24838,9 @@
           "human_performers": [],
           "id": "_9ed61a6a-7cc1-4ed1-86d8-03482b0983c9",
           "implementation": "##WebService",
-          "incoming": "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+          "incoming": [
+            "_2a5ee73c-c495-48a0-945b-3dabab28ca91"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -24611,7 +24849,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Notify Employee of Refusal",
           "operation_ref": null,
-          "outgoing": "_130d903a-f211-4b3e-9711-9061f5978d94",
+          "outgoing": [
+            "_130d903a-f211-4b3e-9711-9061f5978d94"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -24933,7 +25173,9 @@
           "human_performers": [],
           "id": "_93ec9873-edf1-4549-b052-961994ec8234",
           "implementation": "##WebService",
-          "incoming": "_325973e7-0bc8-4136-b6df-be1e681d8608",
+          "incoming": [
+            "_325973e7-0bc8-4136-b6df-be1e681d8608"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -24942,7 +25184,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Notify Employee of Approval",
           "operation_ref": null,
-          "outgoing": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+          "outgoing": [
+            "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -27426,7 +27670,9 @@
           "human_performers": [],
           "id": "_5e16a4e0-0f23-482a-be47-d3edbc5741ba",
           "implementation": "##WebService",
-          "incoming": "_a5441c65-06f8-4972-8158-e6f61f904841",
+          "incoming": [
+            "_a5441c65-06f8-4972-8158-e6f61f904841"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -27434,7 +27680,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Update Remaining Vacation",
           "operation_ref": null,
-          "outgoing": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+          "outgoing": [
+            "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -27743,7 +27991,9 @@
           "human_performers": [],
           "id": "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b",
           "implementation": "##WebService",
-          "incoming": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+          "incoming": [
+            "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "loop_characteristics": null,
@@ -27751,7 +28001,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Update Remaining Vacation",
           "operation_ref": null,
-          "outgoing": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+          "outgoing": [
+            "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -27817,7 +28069,9 @@
                 ]
               },
               "id": "_f4f41761-cdd8-4b90-a956-9182345df488",
-              "source_ref": "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+              "source_ref": [
+                "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc"
+              ],
               "target_ref": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
               "transformation": null
             }
@@ -27875,7 +28129,9 @@
                 ]
               },
               "id": "_40d3cb58-31bb-47a4-9591-032a38011de3",
-              "source_ref": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+              "source_ref": [
+                "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+              ],
               "target_ref": "Reference__775c93ab-82e5-4a62-97f0-d305eda76c92",
               "transformation": null
             }
@@ -28205,7 +28461,9 @@
           "human_performers": [],
           "id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99",
           "implementation": "##WebService",
-          "incoming": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+          "incoming": [
+            "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+          ],
           "io_specification": {
             "data_inputs": [
               {
@@ -28237,7 +28495,9 @@
             "id": null,
             "input_sets": [
               {
-                "data_input_refs": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+                "data_input_refs": [
+                  "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_74206bda-6edc-4a98-a433-af5446be8809",
@@ -28249,7 +28509,9 @@
             ],
             "output_sets": [
               {
-                "data_output_refs": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+                "data_output_refs": [
+                  "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+                ],
                 "documentation": [],
                 "extension_elements": null,
                 "id": "_cd959c80-ff41-401a-9282-b76dcf95aaf2",
@@ -28266,7 +28528,9 @@
           "multi_instance_loop_characteristics": null,
           "name": "Fetch Vacation Information",
           "operation_ref": null,
-          "outgoing": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+          "outgoing": [
+            "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -28416,7 +28680,9 @@
           "message_event_definition": [],
           "monitoring": null,
           "name": "Vacation Request Received",
-          "outgoing": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+          "outgoing": [
+            "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+          ],
           "output_set": null,
           "parallel_multiple": false,
           "properties": [],
@@ -28724,7 +28990,9 @@
           "human_performers": [],
           "id": "_79523269-7444-4b01-90e9-e23957a9d020",
           "implementation": "##unspecified",
-          "incoming": "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9",
+          "incoming": [
+            "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+          ],
           "io_specification": null,
           "is_for_compensation": false,
           "kp_form_key": "ApproveVacation",
@@ -28732,7 +29000,9 @@
           "monitoring": null,
           "multi_instance_loop_characteristics": null,
           "name": "Manually Approve Vacation",
-          "outgoing": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+          "outgoing": [
+            "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+          ],
           "performers": [],
           "potential_owners": [],
           "properties": [],
@@ -29057,7 +29327,9 @@
       "human_performers": [],
       "id": "_02232e32-c3d2-473c-a15d-9c5dca00eadc",
       "implementation": "##WebService",
-      "incoming": "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+      "incoming": [
+        "_d3a575d8-cd41-4246-ad7a-7a068de6679f"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -29066,7 +29338,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Notify Employee of Refusal",
       "operation_ref": null,
-      "outgoing": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+      "outgoing": [
+        "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -29262,7 +29536,10 @@
       "xsi_type": "semantic:tFormalExpression"
     },
     "_10b372b4-3cdd-4ddd-aa58-129b5df7b2f8": {
-      "data_output_refs": "['dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41', 'dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf']",
+      "data_output_refs": [
+        "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
+        "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_10b372b4-3cdd-4ddd-aa58-129b5df7b2f8",
@@ -29509,7 +29786,9 @@
         ]
       },
       "id": "_1688f604-5edf-4187-ad9e-18f74bfede53",
-      "incoming": "_130d903a-f211-4b3e-9711-9061f5978d94",
+      "incoming": [
+        "_130d903a-f211-4b3e-9711-9061f5978d94"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -29700,7 +29979,9 @@
             ]
           },
           "id": "_d7aa7a34-bb93-49ae-87d7-f3ccd25add3f",
-          "source_ref": "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+          "source_ref": [
+            "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323"
+          ],
           "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
           "transformation": null
         },
@@ -29756,7 +30037,9 @@
             ]
           },
           "id": "_bfe6b00e-a1ce-4b12-b868-f445ebc77d1d",
-          "source_ref": "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db",
+          "source_ref": [
+            "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+          ],
           "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
           "transformation": null
         }
@@ -29814,7 +30097,9 @@
             ]
           },
           "id": "_3dcf2a50-5a30-4a47-956f-7962eb907737",
-          "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+          "source_ref": [
+            "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+          ],
           "target_ref": "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf",
           "transformation": null
         },
@@ -29870,7 +30155,9 @@
             ]
           },
           "id": "_66f6f24d-1cad-4c93-b9b3-b93193015a18",
-          "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
+          "source_ref": [
+            "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+          ],
           "target_ref": "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
           "transformation": null
         }
@@ -30181,7 +30468,9 @@
       "human_performers": [],
       "id": "_1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
       "implementation": "##unspecified",
-      "incoming": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+      "incoming": [
+        "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+      ],
       "io_specification": {
         "data_inputs": [
           {
@@ -30234,7 +30523,10 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "['DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+            "data_input_refs": [
+              "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+              "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_7522b1b6-fa6b-4e86-8bd7-d77f8d0db55a",
@@ -30246,7 +30538,10 @@
         ],
         "output_sets": [
           {
-            "data_output_refs": "['DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+            "data_output_refs": [
+              "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+              "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_7821d757-2e54-4340-8286-6b138f27ca51",
@@ -30262,7 +30557,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Vacation Approval",
-      "outgoing": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+      "outgoing": [
+        "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -30389,7 +30686,9 @@
         ]
       },
       "id": "_1cd5fe29-b3ec-4f21-a1aa-57773f0729ca",
-      "incoming": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+      "incoming": [
+        "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -30612,7 +30911,9 @@
             ]
           },
           "id": "_f4f41761-cdd8-4b90-a956-9182345df488",
-          "source_ref": "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+          "source_ref": [
+            "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc"
+          ],
           "target_ref": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
           "transformation": null
         }
@@ -30670,7 +30971,9 @@
             ]
           },
           "id": "_40d3cb58-31bb-47a4-9591-032a38011de3",
-          "source_ref": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+          "source_ref": [
+            "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+          ],
           "target_ref": "Reference__775c93ab-82e5-4a62-97f0-d305eda76c92",
           "transformation": null
         }
@@ -31000,7 +31303,9 @@
       "human_performers": [],
       "id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99",
       "implementation": "##WebService",
-      "incoming": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+      "incoming": [
+        "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+      ],
       "io_specification": {
         "data_inputs": [
           {
@@ -31032,7 +31337,9 @@
         "id": null,
         "input_sets": [
           {
-            "data_input_refs": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+            "data_input_refs": [
+              "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_74206bda-6edc-4a98-a433-af5446be8809",
@@ -31044,7 +31351,9 @@
         ],
         "output_sets": [
           {
-            "data_output_refs": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+            "data_output_refs": [
+              "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+            ],
             "documentation": [],
             "extension_elements": null,
             "id": "_cd959c80-ff41-401a-9282-b76dcf95aaf2",
@@ -31061,7 +31370,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Fetch Vacation Information",
       "operation_ref": null,
-      "outgoing": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+      "outgoing": [
+        "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -31373,7 +31684,9 @@
         ]
       },
       "id": "_3ae826ca-5f38-43c4-be3a-35d1157aa27f",
-      "incoming": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+      "incoming": [
+        "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -31559,7 +31872,9 @@
         ]
       },
       "id": "_3dcf2a50-5a30-4a47-956f-7962eb907737",
-      "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+      "source_ref": [
+        "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+      ],
       "target_ref": "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf",
       "transformation": null
     },
@@ -31615,7 +31930,9 @@
         ]
       },
       "id": "_40d3cb58-31bb-47a4-9591-032a38011de3",
-      "source_ref": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+      "source_ref": [
+        "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+      ],
       "target_ref": "Reference__775c93ab-82e5-4a62-97f0-d305eda76c92",
       "transformation": null
     },
@@ -31682,10 +31999,16 @@
       },
       "gateway_direction": "Diverging",
       "id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
-      "incoming": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+      "incoming": [
+        "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "['_2a5ee73c-c495-48a0-945b-3dabab28ca91', '_325973e7-0bc8-4136-b6df-be1e681d8608', '_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9']",
+      "outgoing": [
+        "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+        "_325973e7-0bc8-4136-b6df-be1e681d8608",
+        "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+      ],
       "triso_read_only": "false"
     },
     "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b": {
@@ -31988,7 +32311,9 @@
       "human_performers": [],
       "id": "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b",
       "implementation": "##WebService",
-      "incoming": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+      "incoming": [
+        "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -31996,7 +32321,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Update Remaining Vacation",
       "operation_ref": null,
-      "outgoing": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+      "outgoing": [
+        "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -32006,7 +32333,11 @@
       "triso_read_only": "false"
     },
     "_4d1f4479-b14c-4dd0-9675-607384e9dd81": {
-      "data_input_refs": "['dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc', 'dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323', 'dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db']",
+      "data_input_refs": [
+        "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+        "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+        "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_4d1f4479-b14c-4dd0-9675-607384e9dd81",
@@ -32315,7 +32646,9 @@
       "human_performers": [],
       "id": "_5e16a4e0-0f23-482a-be47-d3edbc5741ba",
       "implementation": "##WebService",
-      "incoming": "_a5441c65-06f8-4972-8158-e6f61f904841",
+      "incoming": [
+        "_a5441c65-06f8-4972-8158-e6f61f904841"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -32323,7 +32656,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Update Remaining Vacation",
       "operation_ref": null,
-      "outgoing": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+      "outgoing": [
+        "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -32395,10 +32730,15 @@
       },
       "gateway_direction": "Diverging",
       "id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69",
-      "incoming": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+      "incoming": [
+        "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+      ],
       "monitoring": null,
       "name": null,
-      "outgoing": "['_d3a575d8-cd41-4246-ad7a-7a068de6679f', '_f2b0da63-d841-4457-ad85-7d86c8b5c1d2']",
+      "outgoing": [
+        "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+        "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+      ],
       "triso_read_only": "false"
     },
     "_6677ef80-82df-4951-919d-1f36123b681b": {
@@ -32518,7 +32858,9 @@
         ]
       },
       "id": "_6677ef80-82df-4951-919d-1f36123b681b",
-      "incoming": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+      "incoming": [
+        "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -32583,7 +32925,9 @@
         ]
       },
       "id": "_66f6f24d-1cad-4c93-b9b3-b93193015a18",
-      "source_ref": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
+      "source_ref": [
+        "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+      ],
       "target_ref": "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41",
       "transformation": null
     },
@@ -32709,7 +33053,9 @@
       "triso_read_only": "false"
     },
     "_74206bda-6edc-4a98-a433-af5446be8809": {
-      "data_input_refs": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+      "data_input_refs": [
+        "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_74206bda-6edc-4a98-a433-af5446be8809",
@@ -32719,7 +33065,10 @@
       "while_executing_input_refs": []
     },
     "_7522b1b6-fa6b-4e86-8bd7-d77f8d0db55a": {
-      "data_input_refs": "['DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+      "data_input_refs": [
+        "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+        "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_7522b1b6-fa6b-4e86-8bd7-d77f8d0db55a",
@@ -32757,7 +33106,10 @@
       "triso_read_only": "false"
     },
     "_7821d757-2e54-4340-8286-6b138f27ca51": {
-      "data_output_refs": "['DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1', 'DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32']",
+      "data_output_refs": [
+        "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
+        "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_7821d757-2e54-4340-8286-6b138f27ca51",
@@ -33056,7 +33408,9 @@
       "human_performers": [],
       "id": "_79523269-7444-4b01-90e9-e23957a9d020",
       "implementation": "##unspecified",
-      "incoming": "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9",
+      "incoming": [
+        "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "kp_form_key": "ApproveVacation",
@@ -33064,7 +33418,9 @@
       "monitoring": null,
       "multi_instance_loop_characteristics": null,
       "name": "Manually Approve Vacation",
-      "outgoing": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+      "outgoing": [
+        "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -33629,7 +33985,9 @@
       "human_performers": [],
       "id": "_93ec9873-edf1-4549-b052-961994ec8234",
       "implementation": "##WebService",
-      "incoming": "_325973e7-0bc8-4136-b6df-be1e681d8608",
+      "incoming": [
+        "_325973e7-0bc8-4136-b6df-be1e681d8608"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -33638,7 +33996,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Notify Employee of Approval",
       "operation_ref": null,
-      "outgoing": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+      "outgoing": [
+        "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -33960,7 +34320,9 @@
       "human_performers": [],
       "id": "_9ed61a6a-7cc1-4ed1-86d8-03482b0983c9",
       "implementation": "##WebService",
-      "incoming": "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+      "incoming": [
+        "_2a5ee73c-c495-48a0-945b-3dabab28ca91"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -33969,7 +34331,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Notify Employee of Refusal",
       "operation_ref": null,
-      "outgoing": "_130d903a-f211-4b3e-9711-9061f5978d94",
+      "outgoing": [
+        "_130d903a-f211-4b3e-9711-9061f5978d94"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -34412,7 +34776,9 @@
       "human_performers": [],
       "id": "_a97c1a48-faba-447b-bfa6-7aa81a6fe0a0",
       "implementation": "##WebService",
-      "incoming": "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2",
+      "incoming": [
+        "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+      ],
       "io_specification": null,
       "is_for_compensation": false,
       "loop_characteristics": null,
@@ -34421,7 +34787,9 @@
       "multi_instance_loop_characteristics": null,
       "name": "Notify Employee of Approval",
       "operation_ref": null,
-      "outgoing": "_a5441c65-06f8-4972-8158-e6f61f904841",
+      "outgoing": [
+        "_a5441c65-06f8-4972-8158-e6f61f904841"
+      ],
       "performers": [],
       "potential_owners": [],
       "properties": [],
@@ -36161,7 +36529,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": "Vacation Request Received",
-      "outgoing": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+      "outgoing": [
+        "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -36287,7 +36657,9 @@
         ]
       },
       "id": "_b4d636eb-b501-4462-93c8-04652db10307",
-      "incoming": "_f250e125-23eb-45cd-9c61-191d172df093",
+      "incoming": [
+        "_f250e125-23eb-45cd-9c61-191d172df093"
+      ],
       "input_set": null,
       "link_event_definitions": [],
       "message_event_definitions": [],
@@ -36352,12 +36724,16 @@
         ]
       },
       "id": "_bfe6b00e-a1ce-4b12-b868-f445ebc77d1d",
-      "source_ref": "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db",
+      "source_ref": [
+        "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+      ],
       "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
       "transformation": null
     },
     "_cd959c80-ff41-401a-9282-b76dcf95aaf2": {
-      "data_output_refs": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
+      "data_output_refs": [
+        "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+      ],
       "documentation": [],
       "extension_elements": null,
       "id": "_cd959c80-ff41-401a-9282-b76dcf95aaf2",
@@ -36692,7 +37068,9 @@
         ]
       },
       "id": "_d7aa7a34-bb93-49ae-87d7-f3ccd25add3f",
-      "source_ref": "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323",
+      "source_ref": [
+        "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323"
+      ],
       "target_ref": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1",
       "transformation": null
     },
@@ -37055,7 +37433,9 @@
         ]
       },
       "id": "_f4f41761-cdd8-4b90-a956-9182345df488",
-      "source_ref": "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc",
+      "source_ref": [
+        "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc"
+      ],
       "target_ref": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99",
       "transformation": null
     },
@@ -37166,7 +37546,9 @@
       "message_event_definition": [],
       "monitoring": null,
       "name": null,
-      "outgoing": "_f250e125-23eb-45cd-9c61-191d172df093",
+      "outgoing": [
+        "_f250e125-23eb-45cd-9c61-191d172df093"
+      ],
       "output_set": null,
       "parallel_multiple": false,
       "properties": [],
@@ -37600,6 +37982,467 @@
       "item_subject_ref": null,
       "name": "Reason",
       "triso_read_only": "false"
+    },
+    "userTaskForm_1m306cp": {
+      "body": "{ \"schemaVersion\": 2, \"components\": [ { \"label\": \"Employee\",\n                \"type\": \"textfield\", \"id\": \"Field_1txxerz\", \"key\": \"Current Vacation Status.name\", \"disabled\": true }, {\n                \"label\": \"From\", \"type\": \"textfield\", \"id\": \"Field_01h0lq7\", \"key\": \"From\", \"disabled\": true }, {\n                \"label\": \"To\", \"type\": \"textfield\", \"id\": \"Field_1ynn9n3\", \"key\": \"To\", \"disabled\": true }, { \"label\":\n                \"Remaining Vacation Days\", \"type\": \"number\", \"id\": \"Field_0ymyfvx\", \"key\": \"Current Vacation\n                Status.days\", \"disabled\": true }, { \"values\": [ { \"label\": \"Approved\", \"value\": \"Approved\" }, { \"label\":\n                \"Refused\", \"value\": \"Refused\" } ], \"label\": \"Vacation Approval\", \"type\": \"radio\", \"id\": \"Field_1jxmax8\",\n                \"key\": \"Vacation Approval\", \"validate\": { \"required\": true } }, { \"label\": \"Reason\", \"type\":\n                \"textfield\", \"id\": \"Field_0iy9v6w\", \"key\": \"Reason\" } ], \"type\": \"default\", \"executionPlatform\":\n                \"Camunda Cloud\", \"executionPlatformVersion\": \"1.2\", \"id\": \"Manually_Approve_Vacation\" }",
+      "id": "userTaskForm_1m306cp"
     }
-  }
+  },
+  "references": [
+    {
+      "element_id": "_4d1f4479-b14c-4dd0-9675-607384e9dd81",
+      "property": "data_input_refs",
+      "reference_id": "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc"
+    },
+    {
+      "element_id": "_4d1f4479-b14c-4dd0-9675-607384e9dd81",
+      "property": "data_input_refs",
+      "reference_id": "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323"
+    },
+    {
+      "element_id": "_4d1f4479-b14c-4dd0-9675-607384e9dd81",
+      "property": "data_input_refs",
+      "reference_id": "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+    },
+    {
+      "element_id": "_10b372b4-3cdd-4ddd-aa58-129b5df7b2f8",
+      "property": "data_output_refs",
+      "reference_id": "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41"
+    },
+    {
+      "element_id": "_10b372b4-3cdd-4ddd-aa58-129b5df7b2f8",
+      "property": "data_output_refs",
+      "reference_id": "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf"
+    },
+    {
+      "element_id": "_1cd5fe29-b3ec-4f21-a1aa-57773f0729ca",
+      "property": "incoming",
+      "reference_id": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+    },
+    {
+      "element_id": "_6677ef80-82df-4951-919d-1f36123b681b",
+      "property": "incoming",
+      "reference_id": "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+    },
+    {
+      "element_id": "_3ae826ca-5f38-43c4-be3a-35d1157aa27f",
+      "property": "incoming",
+      "reference_id": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+    },
+    {
+      "element_id": "_b4d636eb-b501-4462-93c8-04652db10307",
+      "property": "incoming",
+      "reference_id": "_f250e125-23eb-45cd-9c61-191d172df093"
+    },
+    {
+      "element_id": "_1688f604-5edf-4187-ad9e-18f74bfede53",
+      "property": "incoming",
+      "reference_id": "_130d903a-f211-4b3e-9711-9061f5978d94"
+    },
+    {
+      "element_id": "_a97c1a48-faba-447b-bfa6-7aa81a6fe0a0",
+      "property": "incoming",
+      "reference_id": "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+    },
+    {
+      "element_id": "_a97c1a48-faba-447b-bfa6-7aa81a6fe0a0",
+      "property": "outgoing",
+      "reference_id": "_a5441c65-06f8-4972-8158-e6f61f904841"
+    },
+    {
+      "element_id": "_02232e32-c3d2-473c-a15d-9c5dca00eadc",
+      "property": "incoming",
+      "reference_id": "_d3a575d8-cd41-4246-ad7a-7a068de6679f"
+    },
+    {
+      "element_id": "_02232e32-c3d2-473c-a15d-9c5dca00eadc",
+      "property": "outgoing",
+      "reference_id": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6"
+    },
+    {
+      "element_id": "_9ed61a6a-7cc1-4ed1-86d8-03482b0983c9",
+      "property": "incoming",
+      "reference_id": "_2a5ee73c-c495-48a0-945b-3dabab28ca91"
+    },
+    {
+      "element_id": "_9ed61a6a-7cc1-4ed1-86d8-03482b0983c9",
+      "property": "outgoing",
+      "reference_id": "_130d903a-f211-4b3e-9711-9061f5978d94"
+    },
+    {
+      "element_id": "_93ec9873-edf1-4549-b052-961994ec8234",
+      "property": "incoming",
+      "reference_id": "_325973e7-0bc8-4136-b6df-be1e681d8608"
+    },
+    {
+      "element_id": "_93ec9873-edf1-4549-b052-961994ec8234",
+      "property": "outgoing",
+      "reference_id": "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+    },
+    {
+      "element_id": "_5e16a4e0-0f23-482a-be47-d3edbc5741ba",
+      "property": "incoming",
+      "reference_id": "_a5441c65-06f8-4972-8158-e6f61f904841"
+    },
+    {
+      "element_id": "_5e16a4e0-0f23-482a-be47-d3edbc5741ba",
+      "property": "outgoing",
+      "reference_id": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d"
+    },
+    {
+      "element_id": "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b",
+      "property": "incoming",
+      "reference_id": "_188d38f6-b73d-4c62-964b-affc6fe040c1"
+    },
+    {
+      "element_id": "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b",
+      "property": "outgoing",
+      "reference_id": "_68ef27a7-011e-4ec0-ad45-41f52093de68"
+    },
+    {
+      "element_id": "_74206bda-6edc-4a98-a433-af5446be8809",
+      "property": "data_input_refs",
+      "reference_id": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+    },
+    {
+      "element_id": "_cd959c80-ff41-401a-9282-b76dcf95aaf2",
+      "property": "data_output_refs",
+      "reference_id": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+    },
+    {
+      "element_id": "_f4f41761-cdd8-4b90-a956-9182345df488",
+      "property": "source_ref",
+      "reference_id": "dataInputdataInput_8b9aa28f-5974-4087-9895-0467c25635dc"
+    },
+    {
+      "element_id": "_f4f41761-cdd8-4b90-a956-9182345df488",
+      "property": "target_ref",
+      "reference_id": "DataInput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+    },
+    {
+      "element_id": "_40d3cb58-31bb-47a4-9591-032a38011de3",
+      "property": "source_ref",
+      "reference_id": "DataOutput__2b960d84-feb1-46a9-a1a1-c300dd996b99"
+    },
+    {
+      "element_id": "_40d3cb58-31bb-47a4-9591-032a38011de3",
+      "property": "target_ref",
+      "reference_id": "Reference__775c93ab-82e5-4a62-97f0-d305eda76c92"
+    },
+    {
+      "element_id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99",
+      "property": "incoming",
+      "reference_id": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+    },
+    {
+      "element_id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99",
+      "property": "outgoing",
+      "reference_id": "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+    },
+    {
+      "element_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
+      "property": "incoming",
+      "reference_id": "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+    },
+    {
+      "element_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
+      "property": "outgoing",
+      "reference_id": "_2a5ee73c-c495-48a0-945b-3dabab28ca91"
+    },
+    {
+      "element_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
+      "property": "outgoing",
+      "reference_id": "_325973e7-0bc8-4136-b6df-be1e681d8608"
+    },
+    {
+      "element_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
+      "property": "outgoing",
+      "reference_id": "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+    },
+    {
+      "element_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b",
+      "property": "default",
+      "reference_id": "_2a5ee73c-c495-48a0-945b-3dabab28ca91"
+    },
+    {
+      "element_id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69",
+      "property": "incoming",
+      "reference_id": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+    },
+    {
+      "element_id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69",
+      "property": "outgoing",
+      "reference_id": "_d3a575d8-cd41-4246-ad7a-7a068de6679f"
+    },
+    {
+      "element_id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69",
+      "property": "outgoing",
+      "reference_id": "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2"
+    },
+    {
+      "element_id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69",
+      "property": "default",
+      "reference_id": "_d3a575d8-cd41-4246-ad7a-7a068de6679f"
+    },
+    {
+      "element_id": "_79523269-7444-4b01-90e9-e23957a9d020",
+      "property": "incoming",
+      "reference_id": "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9"
+    },
+    {
+      "element_id": "_79523269-7444-4b01-90e9-e23957a9d020",
+      "property": "outgoing",
+      "reference_id": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018"
+    },
+    {
+      "element_id": "_7522b1b6-fa6b-4e86-8bd7-d77f8d0db55a",
+      "property": "data_input_refs",
+      "reference_id": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+    },
+    {
+      "element_id": "_7522b1b6-fa6b-4e86-8bd7-d77f8d0db55a",
+      "property": "data_input_refs",
+      "reference_id": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+    },
+    {
+      "element_id": "_7821d757-2e54-4340-8286-6b138f27ca51",
+      "property": "data_output_refs",
+      "reference_id": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+    },
+    {
+      "element_id": "_7821d757-2e54-4340-8286-6b138f27ca51",
+      "property": "data_output_refs",
+      "reference_id": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+    },
+    {
+      "element_id": "_d7aa7a34-bb93-49ae-87d7-f3ccd25add3f",
+      "property": "source_ref",
+      "reference_id": "dataInputdataInput_2bed4da9-f468-4fe0-a37c-ae5d4c17e323"
+    },
+    {
+      "element_id": "_d7aa7a34-bb93-49ae-87d7-f3ccd25add3f",
+      "property": "target_ref",
+      "reference_id": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+    },
+    {
+      "element_id": "_bfe6b00e-a1ce-4b12-b868-f445ebc77d1d",
+      "property": "source_ref",
+      "reference_id": "dataInputdataInput_103fd816-b422-420d-aec9-c28b54f620db"
+    },
+    {
+      "element_id": "_bfe6b00e-a1ce-4b12-b868-f445ebc77d1d",
+      "property": "target_ref",
+      "reference_id": "DataInput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+    },
+    {
+      "element_id": "_3dcf2a50-5a30-4a47-956f-7962eb907737",
+      "property": "source_ref",
+      "reference_id": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32_1"
+    },
+    {
+      "element_id": "_3dcf2a50-5a30-4a47-956f-7962eb907737",
+      "property": "target_ref",
+      "reference_id": "dataOutputdataOutput_c2d108b2-e6c0-47e6-a3cb-aa5321bcaeaf"
+    },
+    {
+      "element_id": "_66f6f24d-1cad-4c93-b9b3-b93193015a18",
+      "property": "source_ref",
+      "reference_id": "DataOutput__1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+    },
+    {
+      "element_id": "_66f6f24d-1cad-4c93-b9b3-b93193015a18",
+      "property": "target_ref",
+      "reference_id": "dataOutputdataOutput_dac8ee76-f637-4fd9-8357-6a87fd11ef41"
+    },
+    {
+      "element_id": "_1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
+      "property": "incoming",
+      "reference_id": "_d79c991e-446c-47d1-ac9d-9d0113e35b93"
+    },
+    {
+      "element_id": "_1a818a94-ba6f-413b-a7e8-6f8fd2a11e32",
+      "property": "outgoing",
+      "reference_id": "_ac1d82df-9bf6-404b-be70-b052e311f8b7"
+    },
+    {
+      "element_id": "_b1625a52-aaf0-4694-86cb-7af891212ac6",
+      "property": "outgoing",
+      "reference_id": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb"
+    },
+    {
+      "element_id": "_f8fcb377-3d7d-4138-9a7e-6ab58b97e29d",
+      "property": "outgoing",
+      "reference_id": "_f250e125-23eb-45cd-9c61-191d172df093"
+    },
+    {
+      "element_id": "_f8fcb377-3d7d-4138-9a7e-6ab58b97e29d",
+      "property": "attached_to_ref",
+      "reference_id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99"
+    },
+    {
+      "element_id": "Reference__775c93ab-82e5-4a62-97f0-d305eda76c92",
+      "property": "data_object_ref",
+      "reference_id": "_775c93ab-82e5-4a62-97f0-d305eda76c92"
+    },
+    {
+      "element_id": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+      "property": "source_ref",
+      "reference_id": "_b1625a52-aaf0-4694-86cb-7af891212ac6"
+    },
+    {
+      "element_id": "_b02b5bfa-5629-4af5-b1bc-ac2a86d88adb",
+      "property": "target_ref",
+      "reference_id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99"
+    },
+    {
+      "element_id": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+      "property": "source_ref",
+      "reference_id": "_5e16a4e0-0f23-482a-be47-d3edbc5741ba"
+    },
+    {
+      "element_id": "_81ed1b89-5a4d-4028-a245-4fd38b866b6d",
+      "property": "target_ref",
+      "reference_id": "_1cd5fe29-b3ec-4f21-a1aa-57773f0729ca"
+    },
+    {
+      "element_id": "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+      "property": "source_ref",
+      "reference_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b"
+    },
+    {
+      "element_id": "_2a5ee73c-c495-48a0-945b-3dabab28ca91",
+      "property": "target_ref",
+      "reference_id": "_9ed61a6a-7cc1-4ed1-86d8-03482b0983c9"
+    },
+    {
+      "element_id": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+      "property": "source_ref",
+      "reference_id": "_2b960d84-feb1-46a9-a1a1-c300dd996b99"
+    },
+    {
+      "element_id": "_d79c991e-446c-47d1-ac9d-9d0113e35b93",
+      "property": "target_ref",
+      "reference_id": "_1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+    },
+    {
+      "element_id": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+      "property": "source_ref",
+      "reference_id": "_02232e32-c3d2-473c-a15d-9c5dca00eadc"
+    },
+    {
+      "element_id": "_93ac178c-3efc-48ae-8a99-8d29a0c4aaf6",
+      "property": "target_ref",
+      "reference_id": "_3ae826ca-5f38-43c4-be3a-35d1157aa27f"
+    },
+    {
+      "element_id": "_130d903a-f211-4b3e-9711-9061f5978d94",
+      "property": "source_ref",
+      "reference_id": "_9ed61a6a-7cc1-4ed1-86d8-03482b0983c9"
+    },
+    {
+      "element_id": "_130d903a-f211-4b3e-9711-9061f5978d94",
+      "property": "target_ref",
+      "reference_id": "_1688f604-5edf-4187-ad9e-18f74bfede53"
+    },
+    {
+      "element_id": "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+      "property": "source_ref",
+      "reference_id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69"
+    },
+    {
+      "element_id": "_d3a575d8-cd41-4246-ad7a-7a068de6679f",
+      "property": "target_ref",
+      "reference_id": "_02232e32-c3d2-473c-a15d-9c5dca00eadc"
+    },
+    {
+      "element_id": "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2",
+      "property": "source_ref",
+      "reference_id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69"
+    },
+    {
+      "element_id": "_f2b0da63-d841-4457-ad85-7d86c8b5c1d2",
+      "property": "target_ref",
+      "reference_id": "_a97c1a48-faba-447b-bfa6-7aa81a6fe0a0"
+    },
+    {
+      "element_id": "_a5441c65-06f8-4972-8158-e6f61f904841",
+      "property": "source_ref",
+      "reference_id": "_a97c1a48-faba-447b-bfa6-7aa81a6fe0a0"
+    },
+    {
+      "element_id": "_a5441c65-06f8-4972-8158-e6f61f904841",
+      "property": "target_ref",
+      "reference_id": "_5e16a4e0-0f23-482a-be47-d3edbc5741ba"
+    },
+    {
+      "element_id": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+      "property": "source_ref",
+      "reference_id": "_93ec9873-edf1-4549-b052-961994ec8234"
+    },
+    {
+      "element_id": "_188d38f6-b73d-4c62-964b-affc6fe040c1",
+      "property": "target_ref",
+      "reference_id": "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b"
+    },
+    {
+      "element_id": "_325973e7-0bc8-4136-b6df-be1e681d8608",
+      "property": "source_ref",
+      "reference_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b"
+    },
+    {
+      "element_id": "_325973e7-0bc8-4136-b6df-be1e681d8608",
+      "property": "target_ref",
+      "reference_id": "_93ec9873-edf1-4549-b052-961994ec8234"
+    },
+    {
+      "element_id": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+      "property": "source_ref",
+      "reference_id": "_79523269-7444-4b01-90e9-e23957a9d020"
+    },
+    {
+      "element_id": "_3c50d7bb-5ecc-4d34-82a9-a5fa41d9c018",
+      "property": "target_ref",
+      "reference_id": "_64bb8b55-d348-41d6-9ea8-f333b1d8cb69"
+    },
+    {
+      "element_id": "_f250e125-23eb-45cd-9c61-191d172df093",
+      "property": "source_ref",
+      "reference_id": "_f8fcb377-3d7d-4138-9a7e-6ab58b97e29d"
+    },
+    {
+      "element_id": "_f250e125-23eb-45cd-9c61-191d172df093",
+      "property": "target_ref",
+      "reference_id": "_b4d636eb-b501-4462-93c8-04652db10307"
+    },
+    {
+      "element_id": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+      "property": "source_ref",
+      "reference_id": "_4b72053b-8ebb-4ae6-99c6-7c93cf1c1d1b"
+    },
+    {
+      "element_id": "_68ef27a7-011e-4ec0-ad45-41f52093de68",
+      "property": "target_ref",
+      "reference_id": "_6677ef80-82df-4951-919d-1f36123b681b"
+    },
+    {
+      "element_id": "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9",
+      "property": "source_ref",
+      "reference_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b"
+    },
+    {
+      "element_id": "_0a1c4f20-509f-4aeb-baf9-acc762f4fdf9",
+      "property": "target_ref",
+      "reference_id": "_79523269-7444-4b01-90e9-e23957a9d020"
+    },
+    {
+      "element_id": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+      "property": "source_ref",
+      "reference_id": "_1a818a94-ba6f-413b-a7e8-6f8fd2a11e32"
+    },
+    {
+      "element_id": "_ac1d82df-9bf6-404b-be70-b052e311f8b7",
+      "property": "target_ref",
+      "reference_id": "_42367c5f-d084-44ee-90c7-960d1ab02a3b"
+    }
+  ]
 }

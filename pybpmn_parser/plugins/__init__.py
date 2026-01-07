@@ -16,12 +16,13 @@ def load_default_plugins() -> None:
     converted to its final usable state.
     """
     import json
-    from importlib.resources import read_text
+    from importlib.resources import files
 
     from .moddle import ModdlePackage, convert_moddle_registry, registry
 
+    plugin_files = files("pybpmn_parser.plugins.moddle_models")
     for plugin in DEFAULT_PLUGINS:
-        extension_contents = json.loads(read_text("pybpmn_parser.plugins.moddle_models", plugin))
+        extension_contents = json.loads(plugin_files.joinpath(plugin).read_text(encoding="utf-8"))
         pkg = ModdlePackage(**extension_contents)
         registry.register_package(pkg)
 

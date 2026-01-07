@@ -491,14 +491,14 @@ class TestDataclassToDict:
 
 
 @dataclass
-class TestElement:
+class ExampleElement:
     id: str
     value: Any
 
 
 @dataclass
-class TestContainer:
-    elements: list[TestElement] = field(default_factory=list)
+class ExampleContainer:
+    elements: list[ExampleElement] = field(default_factory=list)
 
 
 class TestIndexIds:
@@ -522,21 +522,21 @@ class TestIndexIds:
 
     def test_single_element(self):
         """Test that a dataclass with a single element maps correctly."""
-        element = TestElement(id="123", value="test")
+        element = ExampleElement(id="123", value="test")
         result = index_ids(element)
         assert result == {"123": element}
 
     def test_list_of_elements(self):
         """Test indexing with a list of elements within a container dataclass."""
-        elements = [TestElement(id="1", value="A"), TestElement(id="2", value="B")]
-        container = TestContainer(elements=elements)
+        elements = [ExampleElement(id="1", value="A"), ExampleElement(id="2", value="B")]
+        container = ExampleContainer(elements=elements)
         result = index_ids(container)
         assert result == {"1": elements[0], "2": elements[1]}
 
     def test_nested_elements(self):
         """Test indexing with nested dataclasses."""
-        nested_element = TestElement(id="nested", value="nested_value")
-        parent_element = TestContainer(elements=[nested_element])
+        nested_element = ExampleElement(id="nested", value="nested_value")
+        parent_element = ExampleContainer(elements=[nested_element])
         result = index_ids(parent_element)
         assert result == {"nested": nested_element}
 
@@ -556,17 +556,17 @@ class TestIndexIds:
 
         @dataclass
         class MixedDataclass:
-            list_with_id: list[TestElement] = field(default_factory=list)
+            list_with_id: list[ExampleElement] = field(default_factory=list)
             list_without_id: list[Any] = field(default_factory=list)
 
-        obj = MixedDataclass(list_with_id=[TestElement(id="abc", value="has_id")], list_without_id=["no_id"])
+        obj = MixedDataclass(list_with_id=[ExampleElement(id="abc", value="has_id")], list_without_id=["no_id"])
         result = index_ids(obj)
         assert result == {"abc": obj.list_with_id[0]}
 
     def test_update_behavior(self):
         """Test that indexing works correctly when called recursively."""
-        nested_1 = TestElement(id="nested1", value="value1")
-        nested_2 = TestElement(id="nested2", value="value2")
-        container = TestContainer(elements=[nested_1, nested_2])
+        nested_1 = ExampleElement(id="nested1", value="value1")
+        nested_2 = ExampleElement(id="nested2", value="value2")
+        container = ExampleContainer(elements=[nested_1, nested_2])
         result = index_ids(container)
         assert result == {"nested1": nested_1, "nested2": nested_2}
